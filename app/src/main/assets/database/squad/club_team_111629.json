@@ -1,0 +1,596 @@
+﻿{
+    "metadata":  {
+                     "total_players":  38,
+                     "club_name":  "East Bengal FC",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111629
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Saúl Crespo",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  252088,
+                        "club_position":  "CM",
+                        "long_name":  "Saúl Crespo Prieto",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cleiton Silva",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  256998,
+                        "club_position":  "ST",
+                        "long_name":  "Cleiton Augusto Oliveira Silva",
+                        "age":  38,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Talal",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  239324,
+                        "club_position":  "SUB",
+                        "long_name":  "Madih Talal",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Miguel Ferreira",
+                        "overall":  59,
+                        "potential":  61,
+                        "club_jersey_number":  95,
+                        "nationality":  "Brazil",
+                        "player_id":  79970,
+                        "club_position":  "SUB",
+                        "long_name":  "Miguel Ferreira Damasceno",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ahadad",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  85,
+                        "nationality":  "Morocco",
+                        "player_id":  80375,
+                        "club_position":  "SUB",
+                        "long_name":  "Hamid Ahadad",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Singh",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  94,
+                        "nationality":  "India",
+                        "player_id":  248178,
+                        "club_position":  "SUB",
+                        "long_name":  "Bipin Singh Thounaojam",
+                        "age":  30,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rashid",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  96,
+                        "nationality":  "Palestine",
+                        "player_id":  79842,
+                        "club_position":  "RES",
+                        "long_name":  "Mohammed Rashid",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jeakson",
+                        "overall":  56,
+                        "potential":  59,
+                        "club_jersey_number":  6,
+                        "nationality":  "India",
+                        "player_id":  253508,
+                        "club_position":  "LCM",
+                        "long_name":  "Jeakson Singh Thounaojam",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Singh",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  29,
+                        "nationality":  "India",
+                        "player_id":  259560,
+                        "club_position":  "LW",
+                        "long_name":  "Naorem Mahesh Singh",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kumar Sekar",
+                        "overall":  57,
+                        "potential":  57,
+                        "club_jersey_number":  11,
+                        "nationality":  "India",
+                        "player_id":  248289,
+                        "club_position":  "RW",
+                        "long_name":  "Nandha Kumar Sekarநந்த குமார் சேகர்",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Sibille",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  89,
+                        "nationality":  "Argentina",
+                        "player_id":  231520,
+                        "club_position":  "LCB",
+                        "long_name":  "Kevin Leonel Sibille",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lalramsanga",
+                        "overall":  55,
+                        "potential":  59,
+                        "club_jersey_number":  98,
+                        "nationality":  "India",
+                        "player_id":  79712,
+                        "club_position":  "RES",
+                        "long_name":  "Ramsanga Tlaichhun",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Chakrabarti",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  23,
+                        "nationality":  "India",
+                        "player_id":  248177,
+                        "club_position":  "RCM",
+                        "long_name":  "Souvik Alok Chakrabarti",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ali",
+                        "overall":  58,
+                        "potential":  62,
+                        "club_jersey_number":  4,
+                        "nationality":  "India",
+                        "player_id":  253669,
+                        "club_position":  "RCB",
+                        "long_name":  "Anwar Ali",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Roshal PP",
+                        "overall":  53,
+                        "potential":  59,
+                        "club_jersey_number":  90,
+                        "nationality":  "India",
+                        "player_id":  77720,
+                        "club_position":  "RES",
+                        "long_name":  "Muhammed Roshal PP",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Mondal",
+                        "overall":  53,
+                        "potential":  53,
+                        "club_jersey_number":  38,
+                        "nationality":  "India",
+                        "player_id":  264486,
+                        "club_position":  "SUB",
+                        "long_name":  "Hira Mondal",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Lakra",
+                        "overall":  53,
+                        "potential":  53,
+                        "club_jersey_number":  3,
+                        "nationality":  "India",
+                        "player_id":  248327,
+                        "club_position":  "SUB",
+                        "long_name":  "Provat Lakra",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "CDM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Sundran",
+                        "overall":  49,
+                        "potential":  56,
+                        "club_jersey_number":  91,
+                        "nationality":  "India",
+                        "player_id":  77722,
+                        "club_position":  "RES",
+                        "long_name":  "Anandhu Nambrath Sundran",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Zothanpuia",
+                        "overall":  51,
+                        "potential":  59,
+                        "club_jersey_number":  88,
+                        "nationality":  "India",
+                        "player_id":  273879,
+                        "club_position":  "SUB",
+                        "long_name":  "Mark Zothanpuia",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Lalchungnunga",
+                        "overall":  53,
+                        "potential":  58,
+                        "club_jersey_number":  5,
+                        "nationality":  "India",
+                        "player_id":  271396,
+                        "club_position":  "LB",
+                        "long_name":  "Lalchungnunga Lalchungnunga",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Das",
+                        "overall":  48,
+                        "potential":  53,
+                        "club_jersey_number":  61,
+                        "nationality":  "India",
+                        "player_id":  71125,
+                        "club_position":  "SUB",
+                        "long_name":  "Tanmay Das",
+                        "age":  24,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rakip",
+                        "overall":  54,
+                        "potential":  59,
+                        "club_jersey_number":  12,
+                        "nationality":  "India",
+                        "player_id":  247631,
+                        "club_position":  "RB",
+                        "long_name":  "Mohamad Rakip",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Besra",
+                        "overall":  49,
+                        "potential":  57,
+                        "club_jersey_number":  66,
+                        "nationality":  "India",
+                        "player_id":  71942,
+                        "club_position":  "RES",
+                        "long_name":  "Shyamal Besra",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gupta",
+                        "overall":  55,
+                        "potential":  64,
+                        "club_jersey_number":  97,
+                        "nationality":  "India",
+                        "player_id":  277580,
+                        "club_position":  "RES",
+                        "long_name":  "Jay Gupta",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jesin TK",
+                        "overall":  50,
+                        "potential":  53,
+                        "club_jersey_number":  59,
+                        "nationality":  "India",
+                        "player_id":  71127,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesin TK Thonikkara",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Lalrindika",
+                        "overall":  51,
+                        "potential":  51,
+                        "club_jersey_number":  60,
+                        "nationality":  "India",
+                        "player_id":  248272,
+                        "club_position":  "RES",
+                        "long_name":  "Edmund Lalrindika",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Lalhlansanga Hmar",
+                        "overall":  52,
+                        "potential":  59,
+                        "club_jersey_number":  14,
+                        "nationality":  "India",
+                        "player_id":  72805,
+                        "club_position":  "SUB",
+                        "long_name":  "David Lalhlansanga",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kuzhiyil",
+                        "overall":  50,
+                        "potential":  59,
+                        "club_jersey_number":  92,
+                        "nationality":  "India",
+                        "player_id":  71438,
+                        "club_position":  "RES",
+                        "long_name":  "Aman Chama Kuzhiyil",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Puthiya Valappill",
+                        "overall":  52,
+                        "potential":  57,
+                        "club_jersey_number":  82,
+                        "nationality":  "India",
+                        "player_id":  278694,
+                        "club_position":  "SUB",
+                        "long_name":  "Vishnu Puthiya Valappill",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Banerjee",
+                        "overall":  49,
+                        "potential":  59,
+                        "club_jersey_number":  84,
+                        "nationality":  "India",
+                        "player_id":  70794,
+                        "club_position":  "RES",
+                        "long_name":  "Sayan Banerjee",
+                        "age":  18,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Dey",
+                        "overall":  49,
+                        "potential":  55,
+                        "club_jersey_number":  81,
+                        "nationality":  "India",
+                        "player_id":  76628,
+                        "club_position":  "RES",
+                        "long_name":  "Suman Dey",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Raina",
+                        "overall":  55,
+                        "potential":  60,
+                        "club_jersey_number":  99,
+                        "nationality":  "India",
+                        "player_id":  79716,
+                        "club_position":  "RES",
+                        "long_name":  "Martand Raina",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Singh",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  93,
+                        "nationality":  "India",
+                        "player_id":  248263,
+                        "club_position":  "RES",
+                        "long_name":  "Gursimrat Singh Gill",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Singh Gill",
+                        "overall":  59,
+                        "potential":  61,
+                        "club_jersey_number":  13,
+                        "nationality":  "India",
+                        "player_id":  253065,
+                        "club_position":  "GK",
+                        "long_name":  "Prabhsukhan Singh Gill",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Majumder",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  24,
+                        "nationality":  "India",
+                        "player_id":  248246,
+                        "club_position":  "SUB",
+                        "long_name":  "Debjit Majumder",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gazi",
+                        "overall":  51,
+                        "potential":  61,
+                        "club_jersey_number":  50,
+                        "nationality":  "India",
+                        "player_id":  70969,
+                        "club_position":  "RES",
+                        "long_name":  "Julfikar Gazi",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Shaw",
+                        "overall":  48,
+                        "potential":  52,
+                        "club_jersey_number":  1,
+                        "nationality":  "India",
+                        "player_id":  75534,
+                        "club_position":  "RES",
+                        "long_name":  "Gourab Shaw",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Patra",
+                        "overall":  52,
+                        "potential":  58,
+                        "club_jersey_number":  27,
+                        "nationality":  "India",
+                        "player_id":  253029,
+                        "club_position":  "RES",
+                        "long_name":  "Aditya Patra",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

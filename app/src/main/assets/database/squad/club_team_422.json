@@ -1,0 +1,414 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Cork City",
+                     "league_name":  "Premier Division",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  422
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Murray",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  16,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  200900,
+                        "club_position":  "RDM",
+                        "long_name":  "Sean Michael Murray",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Maguire",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  212223,
+                        "club_position":  "ST",
+                        "long_name":  "Sean Patrick Maguire",
+                        "age":  31,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Benny Couto",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  3,
+                        "nationality":  "Portugal",
+                        "player_id":  264493,
+                        "club_position":  "SUB",
+                        "long_name":  "Bernardo Piexoto Couto",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. McLaughlin",
+                        "overall":  57,
+                        "potential":  63,
+                        "club_jersey_number":  8,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  263030,
+                        "club_position":  "LDM",
+                        "long_name":  "Evan McLaughlin",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Drinan",
+                        "overall":  56,
+                        "potential":  61,
+                        "club_jersey_number":  15,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  276814,
+                        "club_position":  "RES",
+                        "long_name":  "Conor Drinan",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Feely",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  28,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  225873,
+                        "club_position":  "LCB",
+                        "long_name":  "Rory Michael Feely",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Bolger",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  6,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  182156,
+                        "club_position":  "SUB",
+                        "long_name":  "Gregory Bolger",
+                        "age":  36,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kamara",
+                        "overall":  54,
+                        "potential":  67,
+                        "club_jersey_number":  31,
+                        "nationality":  "England",
+                        "player_id":  272986,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaedyn Kamara",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Crowley",
+                        "overall":  57,
+                        "potential":  60,
+                        "club_jersey_number":  17,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  248429,
+                        "club_position":  "RB",
+                        "long_name":  "Darragh Crowley",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Keating",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  9,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  221810,
+                        "club_position":  "RES",
+                        "long_name":  "Ruairí Keating",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Nelson",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  277315,
+                        "club_position":  "CAM",
+                        "long_name":  "Kitt Edward Nelson",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Fitzpatrick",
+                        "overall":  57,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  277345,
+                        "club_position":  "LM",
+                        "long_name":  "Joshua Fitzpatrick",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. O\u0026amp;apos;Sullivan",
+                        "overall":  59,
+                        "potential":  80,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  278636,
+                        "club_position":  "SUB",
+                        "long_name":  "Cathal O\u0026amp;apos;Sullivan",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Lee",
+                        "overall":  52,
+                        "potential":  65,
+                        "club_jersey_number":  38,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  80219,
+                        "club_position":  "SUB",
+                        "long_name":  "Brody Lee",
+                        "age":  16,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Nolan",
+                        "overall":  57,
+                        "potential":  63,
+                        "club_jersey_number":  10,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  267425,
+                        "club_position":  "SUB",
+                        "long_name":  "Alex Nolan",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Kelleher",
+                        "overall":  59,
+                        "potential":  60,
+                        "club_jersey_number":  4,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  227948,
+                        "club_position":  "SUB",
+                        "long_name":  "Fiacre Blane Kelleher",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Lutz",
+                        "overall":  55,
+                        "potential":  63,
+                        "club_jersey_number":  29,
+                        "nationality":  "England",
+                        "player_id":  80016,
+                        "club_position":  "SUB",
+                        "long_name":  "Charlie Lutz",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kiernan",
+                        "overall":  54,
+                        "potential":  67,
+                        "club_jersey_number":  19,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  77430,
+                        "club_position":  "LB",
+                        "long_name":  "Matthew Kiernan",
+                        "age":  18,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Lyons",
+                        "overall":  56,
+                        "potential":  60,
+                        "club_jersey_number":  5,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  76419,
+                        "club_position":  "SUB",
+                        "long_name":  "Charlie Lyons",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Anderson",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  74359,
+                        "club_position":  "RCB",
+                        "long_name":  "Freddie Anderson",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Dunne",
+                        "overall":  50,
+                        "potential":  63,
+                        "club_jersey_number":  33,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  279145,
+                        "club_position":  "RES",
+                        "long_name":  "Zach Dunne",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Bailey",
+                        "overall":  51,
+                        "potential":  61,
+                        "club_jersey_number":  21,
+                        "nationality":  "Wales",
+                        "player_id":  278638,
+                        "club_position":  "RES",
+                        "long_name":  "Sam Bailey",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Nevin",
+                        "overall":  54,
+                        "potential":  63,
+                        "club_jersey_number":  2,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  77435,
+                        "club_position":  "SUB",
+                        "long_name":  "Harry Nevin",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Murray",
+                        "overall":  53,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  77436,
+                        "club_position":  "RM",
+                        "long_name":  "Matthew Murray",
+                        "age":  17,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Odumosu",
+                        "overall":  57,
+                        "potential":  60,
+                        "club_jersey_number":  1,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  260018,
+                        "club_position":  "SUB",
+                        "long_name":  "David Odumosu",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Brann",
+                        "overall":  52,
+                        "potential":  58,
+                        "club_jersey_number":  13,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  271667,
+                        "club_position":  "GK",
+                        "long_name":  "Conor Brann",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Nash",
+                        "overall":  49,
+                        "potential":  63,
+                        "club_jersey_number":  26,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  77434,
+                        "club_position":  "SUB",
+                        "long_name":  "AJ Nash",
+                        "age":  17,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

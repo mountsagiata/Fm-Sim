@@ -1,0 +1,485 @@
+﻿{
+    "metadata":  {
+                     "total_players":  32,
+                     "club_name":  "Vejle Boldklub",
+                     "league_name":  "Superliga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  822
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Hjulsager",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  17,
+                        "nationality":  "Denmark",
+                        "player_id":  217845,
+                        "club_position":  "RCM",
+                        "long_name":  "Andrew Hjulsager",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Sørensen",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  3,
+                        "nationality":  "Denmark",
+                        "player_id":  204017,
+                        "club_position":  "LB",
+                        "long_name":  "Christian Nikolaj Sørensen",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Duelund",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  10,
+                        "nationality":  "Denmark",
+                        "player_id":  225931,
+                        "club_position":  "LW",
+                        "long_name":  "Mikkel Duelund Poulsen",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Lauritsen",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  8,
+                        "nationality":  "Denmark",
+                        "player_id":  275703,
+                        "club_position":  "LCM",
+                        "long_name":  "Tobias Lauritsen",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Nielsen",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  4,
+                        "nationality":  "Denmark",
+                        "player_id":  177373,
+                        "club_position":  "LCB",
+                        "long_name":  "Lasse Ladegaard Nielsen",
+                        "age":  37,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bach",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Denmark",
+                        "player_id":  70164,
+                        "club_position":  "RES",
+                        "long_name":  "Tobias Bach",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Enggård",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  30,
+                        "nationality":  "Denmark",
+                        "player_id":  259134,
+                        "club_position":  "SUB",
+                        "long_name":  "Mads Enggård",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Hetemi",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  34,
+                        "nationality":  "Albania",
+                        "player_id":  246647,
+                        "club_position":  "RES",
+                        "long_name":  "Lundrim Hetemi",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Gundelund",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Denmark",
+                        "player_id":  243866,
+                        "club_position":  "RB",
+                        "long_name":  "Thomas Gundelund Nielsen",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Lund",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Denmark",
+                        "player_id":  259763,
+                        "club_position":  "SUB",
+                        "long_name":  "Valdemar Lund Jensen",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Chiakha",
+                        "overall":  65,
+                        "potential":  80,
+                        "club_jersey_number":  29,
+                        "nationality":  "Algeria",
+                        "player_id":  73447,
+                        "club_position":  "SUB",
+                        "long_name":  "Amin Chiakha",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Edjeodji",
+                        "overall":  62,
+                        "potential":  78,
+                        "club_jersey_number":  32,
+                        "nationality":  "Ghana",
+                        "player_id":  79554,
+                        "club_position":  "ST",
+                        "long_name":  "Bismark Junior Edjeodji",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. van Bruggen",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  14,
+                        "nationality":  "Netherlands",
+                        "player_id":  223813,
+                        "club_position":  "SUB",
+                        "long_name":  "Damian van Bruggen",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pitu",
+                        "overall":  63,
+                        "potential":  67,
+                        "club_jersey_number":  80,
+                        "nationality":  "Romania",
+                        "player_id":  248118,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexi Paul Pitu",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vestergård",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  6,
+                        "nationality":  "Denmark",
+                        "player_id":  77090,
+                        "club_position":  "CM",
+                        "long_name":  "Mike Løhde Vestergård",
+                        "age":  27,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Amon",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  241695,
+                        "club_position":  "RES",
+                        "long_name":  "Jonathan Oluwadara Amon",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Duin",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  9,
+                        "nationality":  "Netherlands",
+                        "player_id":  260825,
+                        "club_position":  "SUB",
+                        "long_name":  "Jelle Duin",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Velkov",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  13,
+                        "nationality":  "Bulgaria",
+                        "player_id":  255211,
+                        "club_position":  "RCB",
+                        "long_name":  "Stefan Ivov VelkovСтефан Велков",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jacobsen",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  18,
+                        "nationality":  "Denmark",
+                        "player_id":  184143,
+                        "club_position":  "RES",
+                        "long_name":  "Anders Kvindebjerg Jacobsen",
+                        "age":  35,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gammelgaard",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "Denmark",
+                        "player_id":  264822,
+                        "club_position":  "RW",
+                        "long_name":  "Christian William Gammelgaard Grøndal",
+                        "age":  22,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Camara",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "Guinea",
+                        "player_id":  79859,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdoulaye Camara",
+                        "age":  18,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Faghir",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  19,
+                        "nationality":  "Denmark",
+                        "player_id":  257399,
+                        "club_position":  "SUB",
+                        "long_name":  "Wahidullah Faghir",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Hujber",
+                        "overall":  61,
+                        "potential":  64,
+                        "club_jersey_number":  25,
+                        "nationality":  "Croatia",
+                        "player_id":  73642,
+                        "club_position":  "SUB",
+                        "long_name":  "Luka Hujber",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Astrup",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Denmark",
+                        "player_id":  80324,
+                        "club_position":  "RES",
+                        "long_name":  "Clemens Astrup",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Tabatadze",
+                        "overall":  56,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Georgia",
+                        "player_id":  81288,
+                        "club_position":  "RES",
+                        "long_name":  "Giorgi Tabatadze",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Lykkebak",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Denmark",
+                        "player_id":  79862,
+                        "club_position":  "RES",
+                        "long_name":  "Tobias Lykkebak",
+                        "age":  18,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Flø",
+                        "overall":  60,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Denmark",
+                        "player_id":  278362,
+                        "club_position":  "SUB",
+                        "long_name":  "Lasse Flø Borregaard",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Ravn",
+                        "overall":  56,
+                        "potential":  77,
+                        "club_jersey_number":  26,
+                        "nationality":  "Denmark",
+                        "player_id":  77395,
+                        "club_position":  "SUB",
+                        "long_name":  "Sander Skoubo Sehested Ravn",
+                        "age":  18,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sønderskov",
+                        "overall":  58,
+                        "potential":  76,
+                        "club_jersey_number":  22,
+                        "nationality":  "Denmark",
+                        "player_id":  71220,
+                        "club_position":  "RES",
+                        "long_name":  "Anders Sønderskov",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Vekić",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "Slovenia",
+                        "player_id":  262295,
+                        "club_position":  "GK",
+                        "long_name":  "Igor Vekič",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Jakobsen",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "Denmark",
+                        "player_id":  264111,
+                        "club_position":  "SUB",
+                        "long_name":  "Tobias Haahr Jakobsen",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Knudsen",
+                        "overall":  56,
+                        "potential":  76,
+                        "club_jersey_number":  33,
+                        "nationality":  "Denmark",
+                        "player_id":  70445,
+                        "club_position":  "RES",
+                        "long_name":  "Gustav Nørregaard Knudsen",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

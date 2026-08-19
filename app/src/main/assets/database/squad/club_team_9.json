@@ -1,0 +1,430 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Liverpool",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  9
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Mac Allister",
+                        "overall":  87,
+                        "potential":  88,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  239837,
+                        "club_position":  "LDM",
+                        "long_name":  "Alexis Mac Allister",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Salah",
+                        "overall":  91,
+                        "potential":  91,
+                        "club_jersey_number":  11,
+                        "nationality":  "Egypt",
+                        "player_id":  209331,
+                        "club_position":  "RM",
+                        "long_name":  "Mohamed Salah Hamed Ghalyمحمد صلاح",
+                        "age":  33,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Szoboszlai",
+                        "overall":  83,
+                        "potential":  86,
+                        "club_jersey_number":  8,
+                        "nationality":  "Hungary",
+                        "player_id":  236772,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Szoboszlai",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Gravenberch",
+                        "overall":  85,
+                        "potential":  88,
+                        "club_jersey_number":  38,
+                        "nationality":  "Netherlands",
+                        "player_id":  246104,
+                        "club_position":  "RDM",
+                        "long_name":  "Ryan Jiro Gravenberch",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Wirtz",
+                        "overall":  89,
+                        "potential":  93,
+                        "club_jersey_number":  7,
+                        "nationality":  "Germany",
+                        "player_id":  256630,
+                        "club_position":  "CAM",
+                        "long_name":  "Florian Richard Wirtz",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kerkez",
+                        "overall":  82,
+                        "potential":  86,
+                        "club_jersey_number":  6,
+                        "nationality":  "Hungary",
+                        "player_id":  260908,
+                        "club_position":  "LB",
+                        "long_name":  "Milos KerkezМилош Керкез",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gakpo",
+                        "overall":  84,
+                        "potential":  85,
+                        "club_jersey_number":  18,
+                        "nationality":  "Netherlands",
+                        "player_id":  242516,
+                        "club_position":  "LM",
+                        "long_name":  "Cody Mathès Gakpo",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Robertson",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  26,
+                        "nationality":  "Scotland",
+                        "player_id":  216267,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrew Henry Robertson",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. van Dijk",
+                        "overall":  90,
+                        "potential":  90,
+                        "club_jersey_number":  4,
+                        "nationality":  "Netherlands",
+                        "player_id":  203376,
+                        "club_position":  "LCB",
+                        "long_name":  "Virgil van Dijk",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Jones",
+                        "overall":  80,
+                        "potential":  83,
+                        "club_jersey_number":  17,
+                        "nationality":  "England",
+                        "player_id":  242434,
+                        "club_position":  "SUB",
+                        "long_name":  "Curtis Jones",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Frimpong",
+                        "overall":  83,
+                        "potential":  85,
+                        "club_jersey_number":  30,
+                        "nationality":  "Netherlands",
+                        "player_id":  253149,
+                        "club_position":  "RB",
+                        "long_name":  "Jeremie Agyekum Frimpong",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Isak",
+                        "overall":  88,
+                        "potential":  89,
+                        "club_jersey_number":  9,
+                        "nationality":  "Sweden",
+                        "player_id":  233731,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexander Isak",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Chiesa",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  14,
+                        "nationality":  "Italy",
+                        "player_id":  235805,
+                        "club_position":  "SUB",
+                        "long_name":  "Federico Chiesa",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Endo",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  3,
+                        "nationality":  "Japan",
+                        "player_id":  232487,
+                        "club_position":  "SUB",
+                        "long_name":  "Wataru Endo遠藤 航",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Bradley",
+                        "overall":  78,
+                        "potential":  84,
+                        "club_jersey_number":  12,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  264298,
+                        "club_position":  "SUB",
+                        "long_name":  "Conor Bradley",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ekitiké",
+                        "overall":  83,
+                        "potential":  88,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  257289,
+                        "club_position":  "ST",
+                        "long_name":  "Hugo Ekitiké",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Stefan Bajcetic",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  43,
+                        "nationality":  "Spain",
+                        "player_id":  271975,
+                        "club_position":  "RES",
+                        "long_name":  "Stefan Bajčetić Maquieira",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Konaté",
+                        "overall":  86,
+                        "potential":  87,
+                        "club_jersey_number":  5,
+                        "nationality":  "France",
+                        "player_id":  237678,
+                        "club_position":  "RCB",
+                        "long_name":  "Ibrahima Konaté",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gomez",
+                        "overall":  79,
+                        "potential":  80,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  225100,
+                        "club_position":  "SUB",
+                        "long_name":  "Joseph Dave Gomez",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ngumoha",
+                        "overall":  68,
+                        "potential":  88,
+                        "club_jersey_number":  73,
+                        "nationality":  "England",
+                        "player_id":  80376,
+                        "club_position":  "SUB",
+                        "long_name":  "Rio Bass Ray Ngumoha Adigun",
+                        "age":  16,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Ramsay",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  47,
+                        "nationality":  "Scotland",
+                        "player_id":  252897,
+                        "club_position":  "RES",
+                        "long_name":  "Calvin William Ramsay",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Nyoni",
+                        "overall":  64,
+                        "potential":  84,
+                        "club_jersey_number":  42,
+                        "nationality":  "England",
+                        "player_id":  279128,
+                        "club_position":  "SUB",
+                        "long_name":  "Treymaurice Nyoni",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alisson",
+                        "overall":  89,
+                        "potential":  89,
+                        "club_jersey_number":  1,
+                        "nationality":  "Brazil",
+                        "player_id":  212831,
+                        "club_position":  "GK",
+                        "long_name":  "Alisson Ramsés Becker",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Williams",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  46,
+                        "nationality":  "England",
+                        "player_id":  247601,
+                        "club_position":  "RES",
+                        "long_name":  "Rhys Williams",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Leoni",
+                        "overall":  69,
+                        "potential":  82,
+                        "club_jersey_number":  15,
+                        "nationality":  "Italy",
+                        "player_id":  70824,
+                        "club_position":  "SUB",
+                        "long_name":  "Giovanni Leoni",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Woodman",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  28,
+                        "nationality":  "England",
+                        "player_id":  222514,
+                        "club_position":  "RES",
+                        "long_name":  "Frederick John Woodman",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Mamardashvili",
+                        "overall":  84,
+                        "potential":  87,
+                        "club_jersey_number":  25,
+                        "nationality":  "Georgia",
+                        "player_id":  262621,
+                        "club_position":  "SUB",
+                        "long_name":  "Giorgi Mamardashviliგიორგი მამარდაშვილი",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Pécsi",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  41,
+                        "nationality":  "Hungary",
+                        "player_id":  79922,
+                        "club_position":  "RES",
+                        "long_name":  "Ármin Pécsi",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

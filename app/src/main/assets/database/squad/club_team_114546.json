@@ -1,0 +1,450 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Csíkszereda Miercurea Ciuc",
+                     "league_name":  "Liga I",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  114546
+                 },
+    "players":  [
+                    {
+                        "short_name":  "L. Pászka",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  6,
+                        "nationality":  "Hungary",
+                        "player_id":  267632,
+                        "club_position":  "LCM",
+                        "long_name":  "Lóránd Pászka",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Anderson Ceará",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "Brazil",
+                        "player_id":  78704,
+                        "club_position":  "RW",
+                        "long_name":  "Anderson de Jesus dos Sa",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Végh",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  97,
+                        "nationality":  "Hungary",
+                        "player_id":  79694,
+                        "club_position":  "RCM",
+                        "long_name":  "Bence Végh",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kaján",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  55,
+                        "nationality":  "Hungary",
+                        "player_id":  74392,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaján Norbert Gábor",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Dolný",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Slovakia",
+                        "player_id":  240431,
+                        "club_position":  "ST",
+                        "long_name":  "Jozef Dolný",
+                        "age":  33,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Szabó",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  80,
+                        "nationality":  "Hungary",
+                        "player_id":  245708,
+                        "club_position":  "LW",
+                        "long_name":  "Bálint Szabó",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Gál-Andrezly",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  77,
+                        "nationality":  "Slovakia",
+                        "player_id":  252099,
+                        "club_position":  "RM",
+                        "long_name":  "Peter Gál-Andrezly",
+                        "age":  35,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Szilágyi",
+                        "overall":  56,
+                        "potential":  62,
+                        "club_jersey_number":  90,
+                        "nationality":  "Romania",
+                        "player_id":  79198,
+                        "club_position":  "RES",
+                        "long_name":  "Szabolcs Szilágyi",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bakoș",
+                        "overall":  60,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Romania",
+                        "player_id":  78705,
+                        "club_position":  "SUB",
+                        "long_name":  "Ervin Bakoș",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ferenczi",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  19,
+                        "nationality":  "Hungary",
+                        "player_id":  252770,
+                        "club_position":  "LM",
+                        "long_name":  "János Ferenczi",
+                        "age":  34,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bödő",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Romania",
+                        "player_id":  78706,
+                        "club_position":  "SUB",
+                        "long_name":  "Efraim Zoltan Bödő",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Vereș",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  8,
+                        "nationality":  "Romania",
+                        "player_id":  262706,
+                        "club_position":  "SUB",
+                        "long_name":  "Szilárd Vereș",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Eppel",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  27,
+                        "nationality":  "Hungary",
+                        "player_id":  205760,
+                        "club_position":  "SUB",
+                        "long_name":  "Márton Eppel",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Csürös",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  13,
+                        "nationality":  "Romania",
+                        "player_id":  78703,
+                        "club_position":  "SUB",
+                        "long_name":  "Attila Csürös",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Szalay",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  79,
+                        "nationality":  "Hungary",
+                        "player_id":  79180,
+                        "club_position":  "SUB",
+                        "long_name":  "Szabolcs Szalay",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Babati",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  7,
+                        "nationality":  "Hungary",
+                        "player_id":  258453,
+                        "club_position":  "SUB",
+                        "long_name":  "Benjamin Babati",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Dusinszki",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  18,
+                        "nationality":  "Hungary",
+                        "player_id":  80562,
+                        "club_position":  "SUB",
+                        "long_name":  "Szabolcs Dusinszki",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Jebari",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  257800,
+                        "club_position":  "SUB",
+                        "long_name":  "Soufiane Jebari",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Nagy",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  23,
+                        "nationality":  "Romania",
+                        "player_id":  78707,
+                        "club_position":  "SUB",
+                        "long_name":  "János Nagy",
+                        "age":  32,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hegedűs",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  24,
+                        "nationality":  "Hungary",
+                        "player_id":  79125,
+                        "club_position":  "CB",
+                        "long_name":  "János Hegedűs",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bloj",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  17,
+                        "nationality":  "Romania",
+                        "player_id":  78702,
+                        "club_position":  "RES",
+                        "long_name":  "Erwin Bloj",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Erdei",
+                        "overall":  53,
+                        "potential":  66,
+                        "club_jersey_number":  96,
+                        "nationality":  "Romania",
+                        "player_id":  78711,
+                        "club_position":  "RES",
+                        "long_name":  "Ramon Erdei",
+                        "age":  16,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Palmeș",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  3,
+                        "nationality":  "Romania",
+                        "player_id":  78699,
+                        "club_position":  "RCB",
+                        "long_name":  "Raul Palmeș",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kelemen",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  5,
+                        "nationality":  "Hungary",
+                        "player_id":  78701,
+                        "club_position":  "LCB",
+                        "long_name":  "Dávid Kelemen",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ćelić",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  4,
+                        "nationality":  "Croatia",
+                        "player_id":  80868,
+                        "club_position":  "RES",
+                        "long_name":  "Maks Ćelić",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gergely",
+                        "overall":  53,
+                        "potential":  68,
+                        "club_jersey_number":  99,
+                        "nationality":  "Romania",
+                        "player_id":  79692,
+                        "club_position":  "RES",
+                        "long_name":  "Alpár Gergely",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Simon",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  33,
+                        "nationality":  "Romania",
+                        "player_id":  78700,
+                        "club_position":  "GK",
+                        "long_name":  "Máté Simon",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Pap",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  94,
+                        "nationality":  "Romania",
+                        "player_id":  248000,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduard Adrian Pap",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Karácsony",
+                        "overall":  54,
+                        "potential":  61,
+                        "club_jersey_number":  1,
+                        "nationality":  "Romania",
+                        "player_id":  78710,
+                        "club_position":  "RES",
+                        "long_name":  "Mark Karácsony",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

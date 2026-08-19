@@ -1,0 +1,411 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Adelaide United",
+                     "league_name":  "A-League Men",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111393
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Goodwin",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Australia",
+                        "player_id":  209888,
+                        "club_position":  "RM",
+                        "long_name":  "Craig Alexander Goodwin",
+                        "age":  33,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Anselmo",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Brazil",
+                        "player_id":  197402,
+                        "club_position":  "RES",
+                        "long_name":  "Anselmo de Moraes",
+                        "age":  36,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Kitto",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  7,
+                        "nationality":  "Australia",
+                        "player_id":  220819,
+                        "club_position":  "LB",
+                        "long_name":  "Ryan Kitto",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Alagich",
+                        "overall":  65,
+                        "potential":  76,
+                        "club_jersey_number":  55,
+                        "nationality":  "Australia",
+                        "player_id":  266740,
+                        "club_position":  "LDM",
+                        "long_name":  "Ethan Maya Alagich",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Pierias",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  20,
+                        "nationality":  "Australia",
+                        "player_id":  237705,
+                        "club_position":  "RB",
+                        "long_name":  "Dylan Pierias",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Yull",
+                        "overall":  60,
+                        "potential":  77,
+                        "club_jersey_number":  12,
+                        "nationality":  "Australia",
+                        "player_id":  260630,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonny Mark Yull",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Madanha",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  36,
+                        "nationality":  "Australia",
+                        "player_id":  272708,
+                        "club_position":  "SUB",
+                        "long_name":  "Panashe Peter Madanha",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Jovanović",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Australia",
+                        "player_id":  272571,
+                        "club_position":  "ST",
+                        "long_name":  "Luka Jovanović",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ayoubi",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  42,
+                        "nationality":  "Australia",
+                        "player_id":  279186,
+                        "club_position":  "LM",
+                        "long_name":  "Austin Jake Ayoubi",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Barnett",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Australia",
+                        "player_id":  250895,
+                        "club_position":  "RDM",
+                        "long_name":  "Jay Barnett",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Duzel",
+                        "overall":  56,
+                        "potential":  65,
+                        "club_jersey_number":  23,
+                        "nationality":  "Australia",
+                        "player_id":  253447,
+                        "club_position":  "CAM",
+                        "long_name":  "Luke Đuzel",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Folami",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  17,
+                        "nationality":  "Australia",
+                        "player_id":  240580,
+                        "club_position":  "SUB",
+                        "long_name":  "Gbenga Tai Folami",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kwaaitaal",
+                        "overall":  58,
+                        "potential":  68,
+                        "club_jersey_number":  43,
+                        "nationality":  "Netherlands",
+                        "player_id":  80027,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Kwaaitaal",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Dukuly",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "Australia",
+                        "player_id":  247889,
+                        "club_position":  "SUB",
+                        "long_name":  "Yaya Dukuly",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Vriends",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  3,
+                        "nationality":  "Netherlands",
+                        "player_id":  216193,
+                        "club_position":  "RCB",
+                        "long_name":  "Bart Vriends",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. White",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  44,
+                        "nationality":  "Australia",
+                        "player_id":  75510,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan White",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Crawford",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  58,
+                        "nationality":  "Australia",
+                        "player_id":  77175,
+                        "club_position":  "SUB",
+                        "long_name":  "Harry Crawford",
+                        "age":  18,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Kikianis",
+                        "overall":  63,
+                        "potential":  77,
+                        "club_jersey_number":  4,
+                        "nationality":  "Australia",
+                        "player_id":  273526,
+                        "club_position":  "LCB",
+                        "long_name":  "Panagiotis Kikianis",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Talladira",
+                        "overall":  53,
+                        "potential":  71,
+                        "club_jersey_number":  62,
+                        "nationality":  "Australia",
+                        "player_id":  71743,
+                        "club_position":  "SUB",
+                        "long_name":  "Fabian Talladira",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Tatu",
+                        "overall":  57,
+                        "potential":  82,
+                        "club_jersey_number":  74,
+                        "nationality":  "Australia",
+                        "player_id":  77174,
+                        "club_position":  "SUB",
+                        "long_name":  "Amlani Tatu",
+                        "age":  17,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Nichola",
+                        "overall":  53,
+                        "potential":  73,
+                        "club_jersey_number":  78,
+                        "nationality":  "Australia",
+                        "player_id":  81481,
+                        "club_position":  "RES",
+                        "long_name":  "Malual Nichola",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. O\u0026amp;apos;Neil",
+                        "overall":  52,
+                        "potential":  69,
+                        "club_jersey_number":  54,
+                        "nationality":  "Australia",
+                        "player_id":  71742,
+                        "club_position":  "RES",
+                        "long_name":  "Bailey O\u0026amp;apos;Neil",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Kasumovic",
+                        "overall":  54,
+                        "potential":  73,
+                        "club_jersey_number":  79,
+                        "nationality":  "Australia",
+                        "player_id":  81480,
+                        "club_position":  "SUB",
+                        "long_name":  "Feyzo Kasumovic",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Smits",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  22,
+                        "nationality":  "Netherlands",
+                        "player_id":  204931,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Gerardus Petrus Wilhelmus Smits",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vartuli",
+                        "overall":  56,
+                        "potential":  66,
+                        "club_jersey_number":  13,
+                        "nationality":  "Australia",
+                        "player_id":  74986,
+                        "club_position":  "GK",
+                        "long_name":  "Max Vartuli",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Cox",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  40,
+                        "nationality":  "Australia",
+                        "player_id":  264068,
+                        "club_position":  "SUB",
+                        "long_name":  "Ethan Anthony Robert Cox",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

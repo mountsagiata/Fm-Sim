@@ -1,0 +1,387 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "LDU Quito",
+                     "league_name":  "Serie A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  110986
+                 },
+    "players":  [
+                    {
+                        "short_name":  "L. Quiñonez",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  33,
+                        "nationality":  "Ecuador",
+                        "player_id":  253322,
+                        "club_position":  "LCB",
+                        "long_name":  "Leonel Enrique Quiñónez Padilla",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Alvarado",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Ecuador",
+                        "player_id":  254206,
+                        "club_position":  "LCM",
+                        "long_name":  "Alexander Antonio Alvarado Carriel",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Cornejo",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Chile",
+                        "player_id":  215036,
+                        "club_position":  "RCM",
+                        "long_name":  "Fernando Nicolás Cornejo Miranda",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Quintero",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  14,
+                        "nationality":  "Ecuador",
+                        "player_id":  231550,
+                        "club_position":  "RM",
+                        "long_name":  "José Alfredo Quintero Ordóñez",
+                        "age":  35,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Ramírez",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ecuador",
+                        "player_id":  273969,
+                        "club_position":  "LM",
+                        "long_name":  "Bryan Josías Ramírez León",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Alzugaray",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  9,
+                        "nationality":  "Argentina",
+                        "player_id":  245357,
+                        "club_position":  "RS",
+                        "long_name":  "Lisandro Joel Alzugaray",
+                        "age":  35,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gruezo",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  8,
+                        "nationality":  "Ecuador",
+                        "player_id":  221860,
+                        "club_position":  "CDM",
+                        "long_name":  "Carlos Armando Gruezo Arboleda",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Minda",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  5,
+                        "nationality":  "Ecuador",
+                        "player_id":  254062,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Andrés Minda Ruales",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Adé",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  4,
+                        "nationality":  "Haiti",
+                        "player_id":  265610,
+                        "club_position":  "CB",
+                        "long_name":  "Ricardo Adé",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Medina",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Colombia",
+                        "player_id":  242492,
+                        "club_position":  "LS",
+                        "long_name":  "Jeison Medina Escobar",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Villamíl",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  15,
+                        "nationality":  "Bolivia",
+                        "player_id":  259834,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Alejandro Villamíl Cortéz",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Cabeza",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Ecuador",
+                        "player_id":  253349,
+                        "club_position":  "SUB",
+                        "long_name":  "Alejandro Jair Cabeza Jiménez",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Pastrán",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "Argentina",
+                        "player_id":  269915,
+                        "club_position":  "SUB",
+                        "long_name":  "Lautaro Leonel Pastrán Tello",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. de la Cruz",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  31,
+                        "nationality":  "Ecuador",
+                        "player_id":  74515,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Isai de la Cruz de la Cruz",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Mina",
+                        "overall":  68,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "Ecuador",
+                        "player_id":  254173,
+                        "club_position":  "SUB",
+                        "long_name":  "Richard Alexander Mina Caicedo",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Díaz",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "Ecuador",
+                        "player_id":  78354,
+                        "club_position":  "SUB",
+                        "long_name":  "Melvin Fabricio Díaz Canencia",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Estrada",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Ecuador",
+                        "player_id":  240944,
+                        "club_position":  "SUB",
+                        "long_name":  "Michael Steveen Estrada Martínez",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Mina",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  17,
+                        "nationality":  "Ecuador",
+                        "player_id":  253332,
+                        "club_position":  "RES",
+                        "long_name":  "Freddy Darío Mina Quiñónez",
+                        "age":  26,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Erique",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  2,
+                        "nationality":  "Ecuador",
+                        "player_id":  274719,
+                        "club_position":  "SUB",
+                        "long_name":  "Yeltzin Hernán Erique Villigua",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Durán",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  26,
+                        "nationality":  "Ecuador",
+                        "player_id":  81470,
+                        "club_position":  "SUB",
+                        "long_name":  "Paúl Durán",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Aimar",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  6,
+                        "nationality":  "Ecuador",
+                        "player_id":  236267,
+                        "club_position":  "SUB",
+                        "long_name":  "Darío Javier Aimar Álvarez",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Allala",
+                        "overall":  65,
+                        "potential":  67,
+                        "club_jersey_number":  30,
+                        "nationality":  "Uruguay",
+                        "player_id":  272974,
+                        "club_position":  "RCB",
+                        "long_name":  "Gian Franco Allala Menéndez",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Domínguez",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  22,
+                        "nationality":  "Ecuador",
+                        "player_id":  199103,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexander Domínguez Carabalí",
+                        "age":  38,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Villa",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  12,
+                        "nationality":  "Ecuador",
+                        "player_id":  274717,
+                        "club_position":  "RES",
+                        "long_name":  "Alexis Napoleón Villa León",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Valle",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  1,
+                        "nationality":  "Ecuador",
+                        "player_id":  259904,
+                        "club_position":  "GK",
+                        "long_name":  "Gonzalo Roberto Valle Bustamante",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

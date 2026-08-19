@@ -1,0 +1,334 @@
+﻿{
+    "metadata":  {
+                     "total_players":  21,
+                     "club_name":  "Minnesota United FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111138
+                 },
+    "players":  [
+                    {
+                        "short_name":  "R. Lod",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  17,
+                        "nationality":  "Finland",
+                        "player_id":  228312,
+                        "club_position":  "RM",
+                        "long_name":  "Robin Lod",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Fitz",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  36,
+                        "nationality":  "Austria",
+                        "player_id":  242815,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Fitz",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gressel",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  237223,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Emil Kurt Gressel",
+                        "age":  31,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Pereyra",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "Argentina",
+                        "player_id":  233092,
+                        "club_position":  "LCM",
+                        "long_name":  "Joaquín Nicolás Pereyra",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Hlongwane",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  21,
+                        "nationality":  "South Africa",
+                        "player_id":  264516,
+                        "club_position":  "RB",
+                        "long_name":  "Bongokuhle Hlongwane",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Jung",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  22,
+                        "nationality":  "Korea Republic",
+                        "player_id":  266751,
+                        "club_position":  "SUB",
+                        "long_name":  "Ho-yeon Jung정호연",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Trapp",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  20,
+                        "nationality":  "United States",
+                        "player_id":  212424,
+                        "club_position":  "RCM",
+                        "long_name":  "William Alexander Trapp",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Gene",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  264137,
+                        "club_position":  "SUB",
+                        "long_name":  "Owen Gene",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Yeboah",
+                        "overall":  72,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Italy",
+                        "player_id":  251229,
+                        "club_position":  "ST",
+                        "long_name":  "Kelvin Kwarteng Yeboah",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Rosales",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "Honduras",
+                        "player_id":  264157,
+                        "club_position":  "LB",
+                        "long_name":  "Joseph Yerimid Rosales Erazo",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Dotson",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  31,
+                        "nationality":  "United States",
+                        "player_id":  247476,
+                        "club_position":  "SUB",
+                        "long_name":  "Hassani Dotson Stephenson",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Boxall",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  15,
+                        "nationality":  "New Zealand",
+                        "player_id":  202170,
+                        "club_position":  "CB",
+                        "long_name":  "Michael Joseph Boxall",
+                        "age":  36,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Romero",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  5,
+                        "nationality":  "Argentina",
+                        "player_id":  262142,
+                        "club_position":  "SUB",
+                        "long_name":  "Fernando Nicolás Romero",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Markanich Jr",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  271053,
+                        "club_position":  "LM",
+                        "long_name":  "Anthony Charles Markanich Jr.",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Díaz",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "Colombia",
+                        "player_id":  74063,
+                        "club_position":  "LCB",
+                        "long_name":  "Jefferson Abel Díaz Beleño",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Harvey",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  67,
+                        "nationality":  "Panama",
+                        "player_id":  259568,
+                        "club_position":  "RCB",
+                        "long_name":  "Carlos Miguel Harvey Cesneros",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "CM",
+                                          "RB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "DJ Taylor",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  27,
+                        "nationality":  "United States",
+                        "player_id":  261196,
+                        "club_position":  "SUB",
+                        "long_name":  "David Justin Taylor",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Duggan",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "Germany",
+                        "player_id":  73854,
+                        "club_position":  "SUB",
+                        "long_name":  "Morris Duggan",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Mesanvi",
+                        "overall":  52,
+                        "potential":  62,
+                        "club_jersey_number":  90,
+                        "nationality":  "Togo",
+                        "player_id":  71395,
+                        "club_position":  "SUB",
+                        "long_name":  "Loïc Mesanvi",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. St. Clair",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  97,
+                        "nationality":  "Canada",
+                        "player_id":  247228,
+                        "club_position":  "GK",
+                        "long_name":  "Dayne Tristan St. Clair",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Smir",
+                        "overall":  52,
+                        "potential":  57,
+                        "club_jersey_number":  1,
+                        "nationality":  "United States",
+                        "player_id":  73211,
+                        "club_position":  "SUB",
+                        "long_name":  "Alec Smir",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

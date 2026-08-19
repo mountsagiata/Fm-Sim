@@ -1,0 +1,426 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Servette FC",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  324
+                 },
+    "players":  [
+                    {
+                        "short_name":  "T. Cognat",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  244399,
+                        "club_position":  "RDM",
+                        "long_name":  "Timothé Cognat",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Stevanović",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  206254,
+                        "club_position":  "RM",
+                        "long_name":  "Miroslav Stevanović",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Morandi",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Switzerland",
+                        "player_id":  240544,
+                        "club_position":  "SUB",
+                        "long_name":  "Giotto Giuseppe Morandi",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Fomba",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  236721,
+                        "club_position":  "LDM",
+                        "long_name":  "Lamine Fomba",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bronn",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  25,
+                        "nationality":  "Tunisia",
+                        "player_id":  235565,
+                        "club_position":  "LCB",
+                        "long_name":  "Dylan Daniel Mahmoud Bronn",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Guillemenot",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  21,
+                        "nationality":  "Switzerland",
+                        "player_id":  245218,
+                        "club_position":  "ST",
+                        "long_name":  "Jérémy Bruno Guillemenot",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Antunes",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Switzerland",
+                        "player_id":  250764,
+                        "club_position":  "CAM",
+                        "long_name":  "Alexis Antunes Gomez",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ayé",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  97,
+                        "nationality":  "France",
+                        "player_id":  229448,
+                        "club_position":  "RES",
+                        "long_name":  "Florian Ayé",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Ondoua",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  5,
+                        "nationality":  "Cameroon",
+                        "player_id":  245017,
+                        "club_position":  "SUB",
+                        "long_name":  "Gaël Bella Ondoua",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jallow",
+                        "overall":  71,
+                        "potential":  72,
+                        "club_jersey_number":  30,
+                        "nationality":  "Gambia",
+                        "player_id":  239740,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdoulie Jallow",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Douline",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  212939,
+                        "club_position":  "SUB",
+                        "long_name":  "David Marc Michel Douline",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Baron",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  274439,
+                        "club_position":  "SUB",
+                        "long_name":  "Anthony Kévin Baron",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mráz",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  90,
+                        "nationality":  "Slovakia",
+                        "player_id":  244185,
+                        "club_position":  "SUB",
+                        "long_name":  "Samuel Mráz",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Mazikou",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Congo",
+                        "player_id":  234138,
+                        "club_position":  "SUB",
+                        "long_name":  "Bradley Lovelife Mazikou",
+                        "age":  29,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Njoh",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  73846,
+                        "club_position":  "LB",
+                        "long_name":  "Lilian Njoh",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Magnin",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Switzerland",
+                        "player_id":  271650,
+                        "club_position":  "RB",
+                        "long_name":  "Théo Magnin",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "LB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Keyan Varela",
+                        "overall":  60,
+                        "potential":  74,
+                        "club_jersey_number":  29,
+                        "nationality":  "Portugal",
+                        "player_id":  75462,
+                        "club_position":  "LM",
+                        "long_name":  "Keyan Anderson Pereira Varela",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Rouiller",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  4,
+                        "nationality":  "Switzerland",
+                        "player_id":  224821,
+                        "club_position":  "RCB",
+                        "long_name":  "Steve Rouiller",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Ouattara",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  17,
+                        "nationality":  "Switzerland",
+                        "player_id":  276670,
+                        "club_position":  "SUB",
+                        "long_name":  "Tiemoko Ouattara",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Severin",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "France",
+                        "player_id":  237181,
+                        "club_position":  "SUB",
+                        "long_name":  "Yoan Severin",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Anselme",
+                        "overall":  51,
+                        "potential":  68,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  78079,
+                        "club_position":  "RES",
+                        "long_name":  "Mattéo Anselme",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Zuka",
+                        "overall":  57,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Albania",
+                        "player_id":  78177,
+                        "club_position":  "SUB",
+                        "long_name":  "Leart Zuka",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Srdanović",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  2,
+                        "nationality":  "Switzerland",
+                        "player_id":  73377,
+                        "club_position":  "SUB",
+                        "long_name":  "Loun Srdanovic",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Atangana",
+                        "overall":  51,
+                        "potential":  69,
+                        "club_jersey_number":  45,
+                        "nationality":  "Switzerland",
+                        "player_id":  80265,
+                        "club_position":  "RES",
+                        "long_name":  "Jamie Atangana",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Frick",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  32,
+                        "nationality":  "Switzerland",
+                        "player_id":  206307,
+                        "club_position":  "SUB",
+                        "long_name":  "Jérémy Frick",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mall",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  1,
+                        "nationality":  "Cyprus",
+                        "player_id":  189021,
+                        "club_position":  "GK",
+                        "long_name":  "Joël Yves MallΖοέλ Μολλ",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Aubert",
+                        "overall":  53,
+                        "potential":  66,
+                        "club_jersey_number":  40,
+                        "nationality":  "Switzerland",
+                        "player_id":  80267,
+                        "club_position":  "RES",
+                        "long_name":  "Marwan Aubert",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

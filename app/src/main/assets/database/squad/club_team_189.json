@@ -1,0 +1,412 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Bologna",
+                     "league_name":  "Serie A",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  189
+                 },
+    "players":  [
+                    {
+                        "short_name":  "L. Ferguson",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Scotland",
+                        "player_id":  242280,
+                        "club_position":  "SUB",
+                        "long_name":  "Lewis Ferguson",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pobega",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  4,
+                        "nationality":  "Italy",
+                        "player_id":  252060,
+                        "club_position":  "SUB",
+                        "long_name":  "Tommaso Pobega",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Orsolini",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  7,
+                        "nationality":  "Italy",
+                        "player_id":  233556,
+                        "club_position":  "RM",
+                        "long_name":  "Riccardo Orsolini",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Freuler",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  8,
+                        "nationality":  "Switzerland",
+                        "player_id":  202024,
+                        "club_position":  "RDM",
+                        "long_name":  "Remo Marco Freuler",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Bernardeschi",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "Italy",
+                        "player_id":  212404,
+                        "club_position":  "RES",
+                        "long_name":  "Federico Bernardeschi",
+                        "age":  31,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Moro",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "Croatia",
+                        "player_id":  244270,
+                        "club_position":  "LDM",
+                        "long_name":  "Nikola Moro",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Zortea",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  20,
+                        "nationality":  "Italy",
+                        "player_id":  252440,
+                        "club_position":  "RB",
+                        "long_name":  "Nadir Zortea",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Juan Miranda",
+                        "overall":  76,
+                        "potential":  79,
+                        "club_jersey_number":  33,
+                        "nationality":  "Spain",
+                        "player_id":  240915,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Miranda González",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Lykogiannis",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  22,
+                        "nationality":  "Greece",
+                        "player_id":  210381,
+                        "club_position":  "LB",
+                        "long_name":  "Charalampos LykogiannisΧαράλαμπος Λυκογιάννης",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Fabbian",
+                        "overall":  74,
+                        "potential":  83,
+                        "club_jersey_number":  80,
+                        "nationality":  "Italy",
+                        "player_id":  271019,
+                        "club_position":  "SUB",
+                        "long_name":  "Giovanni Fabbian",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Odgaard",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  21,
+                        "nationality":  "Denmark",
+                        "player_id":  234671,
+                        "club_position":  "CAM",
+                        "long_name":  "Jens Odgaard",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. De Silvestri",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  29,
+                        "nationality":  "Italy",
+                        "player_id":  170320,
+                        "club_position":  "SUB",
+                        "long_name":  "Lorenzo De Silvestri",
+                        "age":  37,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Holm",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "Sweden",
+                        "player_id":  246656,
+                        "club_position":  "SUB",
+                        "long_name":  "Emil Alfons Holm",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Immobile",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  17,
+                        "nationality":  "Italy",
+                        "player_id":  192387,
+                        "club_position":  "SUB",
+                        "long_name":  "Ciro Immobile",
+                        "age":  35,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Sulemana",
+                        "overall":  71,
+                        "potential":  80,
+                        "club_jersey_number":  77,
+                        "nationality":  "Ghana",
+                        "player_id":  271577,
+                        "club_position":  "RES",
+                        "long_name":  "Ibrahim Sulemana Kakari",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Castro",
+                        "overall":  76,
+                        "potential":  84,
+                        "club_jersey_number":  9,
+                        "nationality":  "Argentina",
+                        "player_id":  267861,
+                        "club_position":  "ST",
+                        "long_name":  "Santiago Tomás Castro",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Casale",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Italy",
+                        "player_id":  239770,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolò Casale",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Rowe",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  266500,
+                        "club_position":  "RES",
+                        "long_name":  "Jonathan David Henry Rowe",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Cambiaghi",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  28,
+                        "nationality":  "Italy",
+                        "player_id":  268703,
+                        "club_position":  "LM",
+                        "long_name":  "Nicolò Cambiaghi",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Heggem",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  14,
+                        "nationality":  "Norway",
+                        "player_id":  248342,
+                        "club_position":  "SUB",
+                        "long_name":  "Torbjørn Lysaker Heggem",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Domínguez",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  30,
+                        "nationality":  "Argentina",
+                        "player_id":  269558,
+                        "club_position":  "RES",
+                        "long_name":  "Benjamín Domínguez",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Dallinga",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  24,
+                        "nationality":  "Netherlands",
+                        "player_id":  252021,
+                        "club_position":  "SUB",
+                        "long_name":  "Thijs Dallinga",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lucumí",
+                        "overall":  76,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Colombia",
+                        "player_id":  231207,
+                        "club_position":  "LCB",
+                        "long_name":  "Jhon Janer Lucumí Bonilla",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vitík",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  41,
+                        "nationality":  "Czechia",
+                        "player_id":  259748,
+                        "club_position":  "RCB",
+                        "long_name":  "Martin Vitík",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ł. Skorupski",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  1,
+                        "nationality":  "Poland",
+                        "player_id":  189908,
+                        "club_position":  "GK",
+                        "long_name":  "Łukasz Skorupski",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ravaglia",
+                        "overall":  70,
+                        "potential":  75,
+                        "club_jersey_number":  13,
+                        "nationality":  "Italy",
+                        "player_id":  240657,
+                        "club_position":  "SUB",
+                        "long_name":  "Federico Ravaglia",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pessina",
+                        "overall":  52,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "Italy",
+                        "player_id":  75741,
+                        "club_position":  "SUB",
+                        "long_name":  "Massimo Pessina",
+                        "age":  17,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

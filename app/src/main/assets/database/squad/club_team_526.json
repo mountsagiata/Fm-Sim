@@ -1,0 +1,385 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Rot-Weiss Essen",
+                     "league_name":  "3. Liga",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  526
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Arslan",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  6,
+                        "nationality":  "Germany",
+                        "player_id":  231424,
+                        "club_position":  "RAM",
+                        "long_name":  "Ahmet Metin Arslan",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Brumme",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "Germany",
+                        "player_id":  260186,
+                        "club_position":  "LM",
+                        "long_name":  "Lucas Brumme",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Moustier",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  72677,
+                        "club_position":  "RCM",
+                        "long_name":  "Tom Moustier",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Müsel",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  26,
+                        "nationality":  "Germany",
+                        "player_id":  239666,
+                        "club_position":  "SUB",
+                        "long_name":  "Torben Müsel",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mizuta",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Japan",
+                        "player_id":  264245,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaito Mizuta水多 海斗",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mause",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  29,
+                        "nationality":  "Germany",
+                        "player_id":  276312,
+                        "club_position":  "ST",
+                        "long_name":  "Jannik Mause",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Gjasula",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  8,
+                        "nationality":  "Albania",
+                        "player_id":  238692,
+                        "club_position":  "LCM",
+                        "long_name":  "Klaus Fatmir Gjasula",
+                        "age":  35,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Bazzoli",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  32,
+                        "nationality":  "Germany",
+                        "player_id":  264214,
+                        "club_position":  "SUB",
+                        "long_name":  "Luca Juliano Bazzoli",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Obuz",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  261528,
+                        "club_position":  "RM",
+                        "long_name":  "Marvin Ayhan Obuz",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Safi",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  7,
+                        "nationality":  "Netherlands",
+                        "player_id":  73009,
+                        "club_position":  "LAM",
+                        "long_name":  "Ramien Safi",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kaiser",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  18,
+                        "nationality":  "Germany",
+                        "player_id":  269320,
+                        "club_position":  "SUB",
+                        "long_name":  "Nils Florian Kaiser",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ríos Alonso",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  23,
+                        "nationality":  "Germany",
+                        "player_id":  269315,
+                        "club_position":  "RCB",
+                        "long_name":  "José-Enrique Ríos Alonso",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kostka",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Germany",
+                        "player_id":  269850,
+                        "club_position":  "SUB",
+                        "long_name":  "Michael Kostka",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hofmann",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  37,
+                        "nationality":  "Germany",
+                        "player_id":  274565,
+                        "club_position":  "SUB",
+                        "long_name":  "Jannik Hofmann",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Kraulich",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Germany",
+                        "player_id":  239903,
+                        "club_position":  "LCB",
+                        "long_name":  "Tobias Kraulich",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Janssen",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  20,
+                        "nationality":  "Germany",
+                        "player_id":  272909,
+                        "club_position":  "SUB",
+                        "long_name":  "Marek Janssen",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Owusu",
+                        "overall":  58,
+                        "potential":  69,
+                        "club_jersey_number":  30,
+                        "nationality":  "Germany",
+                        "player_id":  74747,
+                        "club_position":  "SUB",
+                        "long_name":  "Kelsey Owusu Aninkorah-Meisel",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Čuber Potočnik",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Slovenia",
+                        "player_id":  74003,
+                        "club_position":  "SUB",
+                        "long_name":  "Jaka Čuber Potočnik",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Bouebari",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "France",
+                        "player_id":  273533,
+                        "club_position":  "SUB",
+                        "long_name":  "Franci Clarck Bouebari Kitsamoutse",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Swajkowski",
+                        "overall":  57,
+                        "potential":  71,
+                        "club_jersey_number":  39,
+                        "nationality":  "Germany",
+                        "player_id":  71288,
+                        "club_position":  "SUB",
+                        "long_name":  "Gianluca Swajkowski",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Schultz",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  4,
+                        "nationality":  "Germany",
+                        "player_id":  217841,
+                        "club_position":  "CB",
+                        "long_name":  "Michael Schultz",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Schulte-Kellinghaus",
+                        "overall":  53,
+                        "potential":  71,
+                        "club_jersey_number":  38,
+                        "nationality":  "Germany",
+                        "player_id":  74385,
+                        "club_position":  "RES",
+                        "long_name":  "Nicolai Schulte-Kellinghaus",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Golz",
+                        "overall":  69,
+                        "potential":  73,
+                        "club_jersey_number":  1,
+                        "nationality":  "Germany",
+                        "player_id":  269269,
+                        "club_position":  "GK",
+                        "long_name":  "Jakob Karl Gerhard Golz",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Wienand",
+                        "overall":  62,
+                        "potential":  70,
+                        "club_jersey_number":  35,
+                        "nationality":  "Germany",
+                        "player_id":  265750,
+                        "club_position":  "SUB",
+                        "long_name":  "Felix Bernd Wienand",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Brüning",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  25,
+                        "nationality":  "Germany",
+                        "player_id":  79320,
+                        "club_position":  "RES",
+                        "long_name":  "Malte Brüning",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,341 @@
+﻿{
+    "metadata":  {
+                     "total_players":  22,
+                     "club_name":  "Blackpool FC",
+                     "league_name":  "League One",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1926
+                 },
+    "players":  [
+                    {
+                        "short_name":  "G. Honeyman",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  216270,
+                        "club_position":  "RM",
+                        "long_name":  "George Christopher Honeyman",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Evans",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  7,
+                        "nationality":  "Wales",
+                        "player_id":  213105,
+                        "club_position":  "LCM",
+                        "long_name":  "Lee Evans",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Morgan",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  245761,
+                        "club_position":  "RCM",
+                        "long_name":  "Albie Robert Morgan",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Hamilton",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  22,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  225734,
+                        "club_position":  "LM",
+                        "long_name":  "Christopher Nathan Hamilton",
+                        "age":  30,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Imray",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  30,
+                        "nationality":  "England",
+                        "player_id":  73615,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Edward Peter Imray",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lyons",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  2,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  241543,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrew Lyons",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Husband",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  205596,
+                        "club_position":  "SUB",
+                        "long_name":  "James Andrew Husband",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Hansson",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  29,
+                        "nationality":  "Sweden",
+                        "player_id":  222165,
+                        "club_position":  "SUB",
+                        "long_name":  "Emil Hansson",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Ennis",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  234177,
+                        "club_position":  "RS",
+                        "long_name":  "Niall Nathan Michael Ennis",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bowler",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "England",
+                        "player_id":  237809,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Luke Bowler",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Ashworth",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  26,
+                        "nationality":  "Wales",
+                        "player_id":  263906,
+                        "club_position":  "SUB",
+                        "long_name":  "Zachary Ashworth",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Brown",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  258050,
+                        "club_position":  "RB",
+                        "long_name":  "Jordan Brian Brown",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Coulson",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  230807,
+                        "club_position":  "LB",
+                        "long_name":  "Hayden Ross Coulson",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Banks",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  23,
+                        "nationality":  "Scotland",
+                        "player_id":  255312,
+                        "club_position":  "SUB",
+                        "long_name":  "Scott Brian Banks",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Fletcher",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  213699,
+                        "club_position":  "LS",
+                        "long_name":  "Ashley Michael Fletcher",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Taylor",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  18,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  265468,
+                        "club_position":  "SUB",
+                        "long_name":  "Dale Taylor",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bloxham",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  261732,
+                        "club_position":  "SUB",
+                        "long_name":  "Tom Bloxham",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ihiekwe",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  205584,
+                        "club_position":  "RCB",
+                        "long_name":  "Michael Uzoukwu Absalom Jude Ihiekwe",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Horsfall",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  230677,
+                        "club_position":  "SUB",
+                        "long_name":  "Fraser Matthew Horsfall",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Casey",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  247350,
+                        "club_position":  "LCB",
+                        "long_name":  "Oliver Joseph Casey",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Peacock-Farrell",
+                        "overall":  68,
+                        "potential":  70,
+                        "club_jersey_number":  1,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  229091,
+                        "club_position":  "GK",
+                        "long_name":  "Bailey Peacock-Farrell",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ravizzoli",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  25,
+                        "nationality":  "Argentina",
+                        "player_id":  262718,
+                        "club_position":  "SUB",
+                        "long_name":  "Franco Nahuel Ravizzoli",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

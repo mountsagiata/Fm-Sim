@@ -1,0 +1,431 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Nashville SC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  114162
+                 },
+    "players":  [
+                    {
+                        "short_name":  "G. Brugman",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Uruguay",
+                        "player_id":  205726,
+                        "club_position":  "RCM",
+                        "long_name":  "Gastón Brugman Duarte",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Acosta",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  6,
+                        "nationality":  "Honduras",
+                        "player_id":  239782,
+                        "club_position":  "SUB",
+                        "long_name":  "Bryan Josué Acosta Ramos",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Mukhtar",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  210021,
+                        "club_position":  "CAM",
+                        "long_name":  "Hany Abubakr Mukhtar",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Nájar",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  31,
+                        "nationality":  "Honduras",
+                        "player_id":  198705,
+                        "club_position":  "RB",
+                        "long_name":  "Andy Ariel Nájar Rodríguez",
+                        "age":  32,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Muyl",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  19,
+                        "nationality":  "United States",
+                        "player_id":  231886,
+                        "club_position":  "RM",
+                        "long_name":  "Alex Muyl",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Boyd",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  211672,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyler Dominic Boyd",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Tagseth",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Norway",
+                        "player_id":  252858,
+                        "club_position":  "LCM",
+                        "long_name":  "Edvard Sandvik Tagseth",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "LB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Lovitz",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  2,
+                        "nationality":  "United States",
+                        "player_id":  221713,
+                        "club_position":  "LB",
+                        "long_name":  "Daniel Harry Lovitz",
+                        "age":  33,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Yazbek",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  8,
+                        "nationality":  "Australia",
+                        "player_id":  261875,
+                        "club_position":  "SUB",
+                        "long_name":  "Patrick Yazbek",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Shaffelburg",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  14,
+                        "nationality":  "Canada",
+                        "player_id":  251352,
+                        "club_position":  "LM",
+                        "long_name":  "Jacob Everett Shaffelburg",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Zimmerman",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  212591,
+                        "club_position":  "RCB",
+                        "long_name":  "Walker Dwain Zimmerman",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Surridge",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  234249,
+                        "club_position":  "ST",
+                        "long_name":  "Samuel William Surridge",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bunbury",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  12,
+                        "nationality":  "United States",
+                        "player_id":  197716,
+                        "club_position":  "SUB",
+                        "long_name":  "Teal Alexander Bunbury",
+                        "age":  35,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Schmitt",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  3,
+                        "nationality":  "United States",
+                        "player_id":  247322,
+                        "club_position":  "SUB",
+                        "long_name":  "Tate Schmitt",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Qasem",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  37,
+                        "nationality":  "Sweden",
+                        "player_id":  261031,
+                        "club_position":  "SUB",
+                        "long_name":  "Ahmed Qasem",
+                        "age":  21,
+                        "positions":  [
+                                          "LW",
+                                          "RM",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Jones",
+                        "overall":  51,
+                        "potential":  62,
+                        "club_jersey_number":  47,
+                        "nationality":  "Sierra Leone",
+                        "player_id":  70935,
+                        "club_position":  "RES",
+                        "long_name":  "Isaiah Jones",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Maher",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "United States",
+                        "player_id":  259292,
+                        "club_position":  "LCB",
+                        "long_name":  "Jack Maher",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Palacios",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  4,
+                        "nationality":  "Colombia",
+                        "player_id":  226737,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeisson Andrés Palacios Murillo",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Applewhite",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  33,
+                        "nationality":  "United States",
+                        "player_id":  77463,
+                        "club_position":  "RES",
+                        "long_name":  "Christopher Applewhite",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bauer",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  22,
+                        "nationality":  "United States",
+                        "player_id":  261874,
+                        "club_position":  "SUB",
+                        "long_name":  "Josh Bauer",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Pérez",
+                        "overall":  56,
+                        "potential":  63,
+                        "club_jersey_number":  24,
+                        "nationality":  "Mexico",
+                        "player_id":  256039,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonathan Alexánder Pérez Lara",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Washington",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  23,
+                        "nationality":  "United States",
+                        "player_id":  231987,
+                        "club_position":  "SUB",
+                        "long_name":  "Taylor Washington",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gaines",
+                        "overall":  56,
+                        "potential":  63,
+                        "club_jersey_number":  29,
+                        "nationality":  "United States",
+                        "player_id":  264366,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Gaines",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Meyer",
+                        "overall":  53,
+                        "potential":  57,
+                        "club_jersey_number":  28,
+                        "nationality":  "United States",
+                        "player_id":  77556,
+                        "club_position":  "RES",
+                        "long_name":  "Wyatt Meyer",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sipić",
+                        "overall":  50,
+                        "potential":  61,
+                        "club_jersey_number":  77,
+                        "nationality":  "United States",
+                        "player_id":  70079,
+                        "club_position":  "RES",
+                        "long_name":  "Adem Sipić",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Willis",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  1,
+                        "nationality":  "United States",
+                        "player_id":  202215,
+                        "club_position":  "GK",
+                        "long_name":  "Joe Willis",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Schwake",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  99,
+                        "nationality":  "United States",
+                        "player_id":  261305,
+                        "club_position":  "SUB",
+                        "long_name":  "Brian Schwake",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "X. Valdez",
+                        "overall":  54,
+                        "potential":  63,
+                        "club_jersey_number":  13,
+                        "nationality":  "Dominican Republic",
+                        "player_id":  272887,
+                        "club_position":  "RES",
+                        "long_name":  "Xavier William Valdez Derrig",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

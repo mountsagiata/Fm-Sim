@@ -1,0 +1,454 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "TSV Hartberg",
+                     "league_name":  "Bundesliga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  2017
+                 },
+    "players":  [
+                    {
+                        "short_name":  "T. Kainz",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "Austria",
+                        "player_id":  203615,
+                        "club_position":  "LCM",
+                        "long_name":  "Tobias Kainz",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Diarra",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Mali",
+                        "player_id":  244438,
+                        "club_position":  "RCM",
+                        "long_name":  "Hamaciré Youba Diarra",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Heil",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  28,
+                        "nationality":  "Austria",
+                        "player_id":  244435,
+                        "club_position":  "RB",
+                        "long_name":  "Jürgen Heil",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Prokop",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Austria",
+                        "player_id":  232843,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Prokop",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Drew",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  79,
+                        "nationality":  "Australia",
+                        "player_id":  272562,
+                        "club_position":  "SUB",
+                        "long_name":  "Jed Francis Drew",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Fridrikas",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  30,
+                        "nationality":  "Austria",
+                        "player_id":  266162,
+                        "club_position":  "SUB",
+                        "long_name":  "Lukas Fridrikas",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Spendlhofer",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  19,
+                        "nationality":  "Austria",
+                        "player_id":  208247,
+                        "club_position":  "CB",
+                        "long_name":  "Lukas Spendlhofer",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fillafer",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Austria",
+                        "player_id":  276811,
+                        "club_position":  "SUB",
+                        "long_name":  "Maximilian Fillafer",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Halwachs",
+                        "overall":  60,
+                        "potential":  71,
+                        "club_jersey_number":  8,
+                        "nationality":  "Austria",
+                        "player_id":  274091,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Halwachs",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gölles",
+                        "overall":  61,
+                        "potential":  64,
+                        "club_jersey_number":  16,
+                        "nationality":  "Austria",
+                        "player_id":  251230,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Peter Gölles",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Havel",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Austria",
+                        "player_id":  276178,
+                        "club_position":  "LS",
+                        "long_name":  "Elias Havel",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Vincze",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  3,
+                        "nationality":  "Austria",
+                        "player_id":  72018,
+                        "club_position":  "LCB",
+                        "long_name":  "Dominic Vincze",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mijić",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  9,
+                        "nationality":  "Croatia",
+                        "player_id":  73607,
+                        "club_position":  "RS",
+                        "long_name":  "Patrik Mijić",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Wilfinger",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  18,
+                        "nationality":  "Austria",
+                        "player_id":  270034,
+                        "club_position":  "RCB",
+                        "long_name":  "Fabian Wilfinger",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hoffmann",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "Austria",
+                        "player_id":  73205,
+                        "club_position":  "SUB",
+                        "long_name":  "Marco Philip Hoffmann",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Markuš",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Slovenia",
+                        "player_id":  73188,
+                        "club_position":  "CDM",
+                        "long_name":  "Benjamin Markuš",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hennig",
+                        "overall":  62,
+                        "potential":  79,
+                        "club_jersey_number":  33,
+                        "nationality":  "Germany",
+                        "player_id":  74086,
+                        "club_position":  "LB",
+                        "long_name":  "Maximilian Sebastian Marc Hennig",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Hardley",
+                        "overall":  60,
+                        "potential":  70,
+                        "club_jersey_number":  2,
+                        "nationality":  "Netherlands",
+                        "player_id":  255768,
+                        "club_position":  "SUB",
+                        "long_name":  "Björn Bryan Hardley",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Aziz",
+                        "overall":  60,
+                        "potential":  78,
+                        "club_jersey_number":  61,
+                        "nationality":  "Ghana",
+                        "player_id":  81474,
+                        "club_position":  "RES",
+                        "long_name":  "Musibau Aziz",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Komposch",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Austria",
+                        "player_id":  258806,
+                        "club_position":  "RES",
+                        "long_name":  "Paul Komposch",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kovačević",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  95,
+                        "nationality":  "Austria",
+                        "player_id":  276123,
+                        "club_position":  "RES",
+                        "long_name":  "Damjan Kovacevic",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Bratschko",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Austria",
+                        "player_id":  79784,
+                        "club_position":  "RES",
+                        "long_name":  "Paul Bratschko",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Korherr",
+                        "overall":  58,
+                        "potential":  65,
+                        "club_jersey_number":  77,
+                        "nationality":  "Austria",
+                        "player_id":  77699,
+                        "club_position":  "RES",
+                        "long_name":  "David Korherr",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Karner",
+                        "overall":  53,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Austria",
+                        "player_id":  73187,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonas Karner",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Coulibaly",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  6,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  79785,
+                        "club_position":  "SUB",
+                        "long_name":  "Habib Coulibaly",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ojukwu",
+                        "overall":  54,
+                        "potential":  62,
+                        "club_jersey_number":  25,
+                        "nationality":  "Austria",
+                        "player_id":  76470,
+                        "club_position":  "RES",
+                        "long_name":  "Emmanuel Ojukwu",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Marić",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Austria",
+                        "player_id":  259678,
+                        "club_position":  "SUB",
+                        "long_name":  "Luka Marić",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hülsmann",
+                        "overall":  61,
+                        "potential":  74,
+                        "club_jersey_number":  40,
+                        "nationality":  "Germany",
+                        "player_id":  277669,
+                        "club_position":  "GK",
+                        "long_name":  "Tom Ritzy Hülsmann",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Helac",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "Austria",
+                        "player_id":  257304,
+                        "club_position":  "SUB",
+                        "long_name":  "Ammar Helac",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Postl",
+                        "overall":  52,
+                        "potential":  70,
+                        "club_jersey_number":  44,
+                        "nationality":  "Austria",
+                        "player_id":  276450,
+                        "club_position":  "RES",
+                        "long_name":  "Harald Postl",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

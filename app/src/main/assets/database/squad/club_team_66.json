@@ -1,0 +1,401 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Olympique Lyonnais",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  66
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Tolisso",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  219683,
+                        "club_position":  "CAM",
+                        "long_name":  "Corentin Tolisso",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Maitland-Niles",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  98,
+                        "nationality":  "England",
+                        "player_id":  225782,
+                        "club_position":  "RB",
+                        "long_name":  "Ainsley Cory Maitland-Niles",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Clinton Mata",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  22,
+                        "nationality":  "Angola",
+                        "player_id":  208364,
+                        "club_position":  "RCB",
+                        "long_name":  "Clinton Mukoni Mata Pedro Lourenço",
+                        "age":  32,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Tagliafico",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  3,
+                        "nationality":  "Argentina",
+                        "player_id":  211256,
+                        "club_position":  "LB",
+                        "long_name":  "Nicolás Alejandro Tagliafico",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Morton",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  265459,
+                        "club_position":  "LDM",
+                        "long_name":  "Tyler Scott Morton",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Mangala",
+                        "overall":  77,
+                        "potential":  79,
+                        "club_jersey_number":  5,
+                        "nationality":  "Belgium",
+                        "player_id":  234078,
+                        "club_position":  "RES",
+                        "long_name":  "Orel Johnson Mangala",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Abner Vinícius",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Brazil",
+                        "player_id":  263815,
+                        "club_position":  "SUB",
+                        "long_name":  "Abner Vinícius da Silva Santos",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Tessmann",
+                        "overall":  75,
+                        "potential":  81,
+                        "club_jersey_number":  6,
+                        "nationality":  "United States",
+                        "player_id":  256104,
+                        "club_position":  "RDM",
+                        "long_name":  "Francis Tanner James Tessmann",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Šulc",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Czechia",
+                        "player_id":  247050,
+                        "club_position":  "SUB",
+                        "long_name":  "Pavel Šulc",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ghezzal",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  18,
+                        "nationality":  "Algeria",
+                        "player_id":  210372,
+                        "club_position":  "SUB",
+                        "long_name":  "Rachid Ghezzalرشيد غزال",
+                        "age":  33,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fofana",
+                        "overall":  78,
+                        "potential":  86,
+                        "club_jersey_number":  11,
+                        "nationality":  "Belgium",
+                        "player_id":  256420,
+                        "club_position":  "LM",
+                        "long_name":  "Malick Martin Fofana",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Niakhaté",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  19,
+                        "nationality":  "Senegal",
+                        "player_id":  225859,
+                        "club_position":  "LCB",
+                        "long_name":  "Moussa Niakhaté",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Karabec",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Czechia",
+                        "player_id":  256970,
+                        "club_position":  "RM",
+                        "long_name":  "Adam Karabec",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Satriano",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  20,
+                        "nationality":  "Uruguay",
+                        "player_id":  264325,
+                        "club_position":  "ST",
+                        "long_name":  "Martín Adrián Satriano Costa",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Nuamah",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  37,
+                        "nationality":  "Ghana",
+                        "player_id":  268763,
+                        "club_position":  "RES",
+                        "long_name":  "Ernest Nuamah Appiah",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Afonso Moreira",
+                        "overall":  67,
+                        "potential":  77,
+                        "club_jersey_number":  17,
+                        "nationality":  "Portugal",
+                        "player_id":  276901,
+                        "club_position":  "SUB",
+                        "long_name":  "Afonso Bastardo Moreira",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Laâziri",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  36,
+                        "nationality":  "Morocco",
+                        "player_id":  276747,
+                        "club_position":  "RES",
+                        "long_name":  "Achraf Laâziriأشرف العزيري",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Merah",
+                        "overall":  66,
+                        "potential":  80,
+                        "club_jersey_number":  44,
+                        "nationality":  "France",
+                        "player_id":  80067,
+                        "club_position":  "SUB",
+                        "long_name":  "Khalis Merah",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. De Carvalho",
+                        "overall":  63,
+                        "potential":  77,
+                        "club_jersey_number":  39,
+                        "nationality":  "France",
+                        "player_id":  80690,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathys De Carvalho",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Barišić",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  41,
+                        "nationality":  "Croatia",
+                        "player_id":  77631,
+                        "club_position":  "SUB",
+                        "long_name":  "Téo Barišić",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Kluivert",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  21,
+                        "nationality":  "Netherlands",
+                        "player_id":  262102,
+                        "club_position":  "SUB",
+                        "long_name":  "Ruben Caine Kluivert",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gomes Rodríguez",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  32,
+                        "nationality":  "England",
+                        "player_id":  78145,
+                        "club_position":  "SUB",
+                        "long_name":  "Alejandro Jesús Gomes Rodríguez",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Molebe",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  74883,
+                        "club_position":  "SUB",
+                        "long_name":  "Enzo Anthony Honoré Molebe",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Descamps",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  40,
+                        "nationality":  "France",
+                        "player_id":  234371,
+                        "club_position":  "GK",
+                        "long_name":  "Rémy Descamps",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Greif",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  1,
+                        "nationality":  "Slovakia",
+                        "player_id":  263139,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Greif",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Diarra",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  50,
+                        "nationality":  "Mali",
+                        "player_id":  77093,
+                        "club_position":  "SUB",
+                        "long_name":  "Lassine Diarra",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

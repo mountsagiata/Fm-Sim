@@ -1,0 +1,464 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Real Madrid",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  243
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Bellingham",
+                        "overall":  90,
+                        "potential":  94,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  252371,
+                        "club_position":  "CAM",
+                        "long_name":  "Jude Victor William Bellingham",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Valverde",
+                        "overall":  89,
+                        "potential":  90,
+                        "club_jersey_number":  8,
+                        "nationality":  "Uruguay",
+                        "player_id":  239053,
+                        "club_position":  "RDM",
+                        "long_name":  "Federico Santiago Valverde Dipetta",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Alexander-Arnold",
+                        "overall":  86,
+                        "potential":  87,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  231281,
+                        "club_position":  "RB",
+                        "long_name":  "Trent John Alexander-Arnold",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Alaba",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  4,
+                        "nationality":  "Austria",
+                        "player_id":  197445,
+                        "club_position":  "SUB",
+                        "long_name":  "David Olatukunbo Alaba",
+                        "age":  33,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mbappé",
+                        "overall":  91,
+                        "potential":  94,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  231747,
+                        "club_position":  "ST",
+                        "long_name":  "Kylian Mbappé Lottin",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Camavinga",
+                        "overall":  83,
+                        "potential":  90,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  248243,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduardo Celmi Camavinga",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Carvajal",
+                        "overall":  85,
+                        "potential":  85,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  204963,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Carvajal Ramos",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Tchouaméni",
+                        "overall":  84,
+                        "potential":  87,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  241637,
+                        "club_position":  "LDM",
+                        "long_name":  "Aurélien Djani Tchouameni",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Mendy",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  228618,
+                        "club_position":  "SUB",
+                        "long_name":  "Ferland Sinna Mendy",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Álvaro Carreras",
+                        "overall":  80,
+                        "potential":  88,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  268889,
+                        "club_position":  "LB",
+                        "long_name":  "Álvaro Fernández Carreras",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dani Ceballos",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Spain",
+                        "player_id":  222509,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Ceballos Fernández",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Vini Jr.",
+                        "overall":  89,
+                        "potential":  92,
+                        "club_jersey_number":  7,
+                        "nationality":  "Brazil",
+                        "player_id":  238794,
+                        "club_position":  "LM",
+                        "long_name":  "Vinicius José Paixão de Oliveira Junior",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rodrygo",
+                        "overall":  85,
+                        "potential":  90,
+                        "club_jersey_number":  11,
+                        "nationality":  "Brazil",
+                        "player_id":  243812,
+                        "club_position":  "SUB",
+                        "long_name":  "Rodrygo Silva de Goes",
+                        "age":  24,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Éder Militão",
+                        "overall":  84,
+                        "potential":  87,
+                        "club_jersey_number":  3,
+                        "nationality":  "Brazil",
+                        "player_id":  240130,
+                        "club_position":  "RCB",
+                        "long_name":  "Éder Gabriel Militão",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rüdiger",
+                        "overall":  86,
+                        "potential":  86,
+                        "club_jersey_number":  22,
+                        "nationality":  "Germany",
+                        "player_id":  205452,
+                        "club_position":  "SUB",
+                        "long_name":  "Antonio Rüdiger",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Güler",
+                        "overall":  81,
+                        "potential":  89,
+                        "club_jersey_number":  15,
+                        "nationality":  "Türkiye",
+                        "player_id":  264309,
+                        "club_position":  "RM",
+                        "long_name":  "Arda Güler",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Huijsen",
+                        "overall":  82,
+                        "potential":  89,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  278349,
+                        "club_position":  "LCB",
+                        "long_name":  "Dean Donny Huijsen",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Mastantuono",
+                        "overall":  77,
+                        "potential":  88,
+                        "club_jersey_number":  30,
+                        "nationality":  "Argentina",
+                        "player_id":  279173,
+                        "club_position":  "SUB",
+                        "long_name":  "Franco Mastantuono",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fran García",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  20,
+                        "nationality":  "Spain",
+                        "player_id":  246606,
+                        "club_position":  "SUB",
+                        "long_name":  "Francisco José García Torres",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Endrick",
+                        "overall":  77,
+                        "potential":  91,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  272505,
+                        "club_position":  "SUB",
+                        "long_name":  "Endrick Felipe Moreira de Sousa",
+                        "age":  18,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Brahim",
+                        "overall":  82,
+                        "potential":  83,
+                        "club_jersey_number":  21,
+                        "nationality":  "Morocco",
+                        "player_id":  231410,
+                        "club_position":  "SUB",
+                        "long_name":  "Brahim Abdelkader Díazابراهيم عبد القادر دياز",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gonzalo",
+                        "overall":  69,
+                        "potential":  82,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  278399,
+                        "club_position":  "RES",
+                        "long_name":  "Gonzalo García Torres",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Asencio",
+                        "overall":  77,
+                        "potential":  86,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  75605,
+                        "club_position":  "RES",
+                        "long_name":  "Raúl Asencio del Rosario",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fortea",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  32,
+                        "nationality":  "Spain",
+                        "player_id":  75572,
+                        "club_position":  "RES",
+                        "long_name":  "Jesús Fortea Tejedo",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Thiago Pitarch",
+                        "overall":  60,
+                        "potential":  81,
+                        "club_jersey_number":  45,
+                        "nationality":  "Spain",
+                        "player_id":  80807,
+                        "club_position":  "RES",
+                        "long_name":  "Thiago Pitarch Pinar",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego Aguado",
+                        "overall":  59,
+                        "potential":  75,
+                        "club_jersey_number":  27,
+                        "nationality":  "Spain",
+                        "player_id":  75747,
+                        "club_position":  "RES",
+                        "long_name":  "Diego Aguado Facio",
+                        "age":  18,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Courtois",
+                        "overall":  89,
+                        "potential":  89,
+                        "club_jersey_number":  1,
+                        "nationality":  "Belgium",
+                        "player_id":  192119,
+                        "club_position":  "GK",
+                        "long_name":  "Thibaut Nicolas Marc Courtois",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lunin",
+                        "overall":  81,
+                        "potential":  86,
+                        "club_jersey_number":  13,
+                        "nationality":  "Ukraine",
+                        "player_id":  243952,
+                        "club_position":  "SUB",
+                        "long_name":  "Andriy LuninЛунін Андрій Олексійович",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergio Mestre",
+                        "overall":  60,
+                        "potential":  77,
+                        "club_jersey_number":  43,
+                        "nationality":  "Spain",
+                        "player_id":  272503,
+                        "club_position":  "RES",
+                        "long_name":  "Sergio Mestre Sánchez",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fran González",
+                        "overall":  63,
+                        "potential":  80,
+                        "club_jersey_number":  26,
+                        "nationality":  "Spain",
+                        "player_id":  278394,
+                        "club_position":  "RES",
+                        "long_name":  "Francisco Javier González Pérez",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

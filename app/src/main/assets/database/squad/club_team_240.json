@@ -1,0 +1,392 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Atlético Madrid",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  240
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Griezmann",
+                        "overall":  85,
+                        "potential":  85,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  194765,
+                        "club_position":  "SUB",
+                        "long_name":  "Antoine Griezmann",
+                        "age":  34,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Alvarez",
+                        "overall":  87,
+                        "potential":  90,
+                        "club_jersey_number":  19,
+                        "nationality":  "Argentina",
+                        "player_id":  246191,
+                        "club_position":  "LS",
+                        "long_name":  "Julián Álvarez",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marcos Llorente",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  226161,
+                        "club_position":  "RB",
+                        "long_name":  "Marcos Llorente Moreno",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gallagher",
+                        "overall":  81,
+                        "potential":  85,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  238216,
+                        "club_position":  "SUB",
+                        "long_name":  "Conor Gallagher",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Álex Baena",
+                        "overall":  84,
+                        "potential":  89,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  257279,
+                        "club_position":  "LM",
+                        "long_name":  "Alejandro Baena Rodríguez",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Koke",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  193747,
+                        "club_position":  "SUB",
+                        "long_name":  "Jorge Resurrección Merodio",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Johnny Cardoso",
+                        "overall":  81,
+                        "potential":  87,
+                        "club_jersey_number":  5,
+                        "nationality":  "United States",
+                        "player_id":  259516,
+                        "club_position":  "RCM",
+                        "long_name":  "João Lucas de Souza Cardoso",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Hancko",
+                        "overall":  83,
+                        "potential":  85,
+                        "club_jersey_number":  17,
+                        "nationality":  "Slovakia",
+                        "player_id":  247103,
+                        "club_position":  "LCB",
+                        "long_name":  "Dávid Hancko",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pablo Barrios",
+                        "overall":  82,
+                        "potential":  87,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  272449,
+                        "club_position":  "LCM",
+                        "long_name":  "Pablo Barrios Rivas",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Javi Galán",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  231591,
+                        "club_position":  "SUB",
+                        "long_name":  "Javier Galán Gil",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Molina",
+                        "overall":  79,
+                        "potential":  80,
+                        "club_jersey_number":  16,
+                        "nationality":  "Argentina",
+                        "player_id":  233084,
+                        "club_position":  "SUB",
+                        "long_name":  "Nahuel Molina Lucero",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Almada",
+                        "overall":  79,
+                        "potential":  86,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  245371,
+                        "club_position":  "SUB",
+                        "long_name":  "Thiago Ezequiel Almada",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Simeone",
+                        "overall":  81,
+                        "potential":  86,
+                        "club_jersey_number":  20,
+                        "nationality":  "Argentina",
+                        "player_id":  253396,
+                        "club_position":  "RM",
+                        "long_name":  "Giuliano Simeone Baldini",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sørloth",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  9,
+                        "nationality":  "Norway",
+                        "player_id":  216549,
+                        "club_position":  "RS",
+                        "long_name":  "Alexander Sørloth",
+                        "age":  29,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ruggeri",
+                        "overall":  75,
+                        "potential":  83,
+                        "club_jersey_number":  3,
+                        "nationality":  "Italy",
+                        "player_id":  259584,
+                        "club_position":  "LB",
+                        "long_name":  "Matteo Ruggeri",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Gonzalez",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  240690,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolás Iván González",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pubill",
+                        "overall":  73,
+                        "potential":  82,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  266039,
+                        "club_position":  "SUB",
+                        "long_name":  "Marc Pubill Pagés",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Raspadori",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  22,
+                        "nationality":  "Italy",
+                        "player_id":  253002,
+                        "club_position":  "SUB",
+                        "long_name":  "Giacomo Raspadori",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Lenglet",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  15,
+                        "nationality":  "France",
+                        "player_id":  220440,
+                        "club_position":  "SUB",
+                        "long_name":  "Clément Nicolas Laurent Lenglet",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Giménez",
+                        "overall":  83,
+                        "potential":  83,
+                        "club_jersey_number":  2,
+                        "nationality":  "Uruguay",
+                        "player_id":  216460,
+                        "club_position":  "SUB",
+                        "long_name":  "José María Giménez de Vargas",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Le Normand",
+                        "overall":  83,
+                        "potential":  85,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  233486,
+                        "club_position":  "RCB",
+                        "long_name":  "Robin Le Normand",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Carlos Martín",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  12,
+                        "nationality":  "Spain",
+                        "player_id":  265396,
+                        "club_position":  "RES",
+                        "long_name":  "Carlos Martín Domínguez",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Kostis",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Greece",
+                        "player_id":  274208,
+                        "club_position":  "RES",
+                        "long_name":  "Ilias KostisΗλίας Κωστής",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Oblak",
+                        "overall":  88,
+                        "potential":  88,
+                        "club_jersey_number":  13,
+                        "nationality":  "Slovenia",
+                        "player_id":  200389,
+                        "club_position":  "GK",
+                        "long_name":  "Jan Oblak",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Musso",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  1,
+                        "nationality":  "Argentina",
+                        "player_id":  214979,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Agustín Musso",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,408 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "SK Sturm Graz",
+                     "league_name":  "Bundesliga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  209
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Kiteishvili",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  10,
+                        "nationality":  "Georgia",
+                        "player_id":  245058,
+                        "club_position":  "CAM",
+                        "long_name":  "Otar Kiteishviliოთარ კიტეიშვილი",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Horvat",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Slovenia",
+                        "player_id":  270017,
+                        "club_position":  "RCM",
+                        "long_name":  "Tomi Horvat",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Chukwuani",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  21,
+                        "nationality":  "Denmark",
+                        "player_id":  252148,
+                        "club_position":  "LCM",
+                        "long_name":  "Tochi Phil Chukwuani",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Hierländer",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  25,
+                        "nationality":  "Austria",
+                        "player_id":  190589,
+                        "club_position":  "SUB",
+                        "long_name":  "Stefan Hierländer",
+                        "age":  34,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Malone",
+                        "overall":  70,
+                        "potential":  74,
+                        "club_jersey_number":  77,
+                        "nationality":  "Germany",
+                        "player_id":  251431,
+                        "club_position":  "SUB",
+                        "long_name":  "Maurice Maximilian Malone",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Lavalée",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "Belgium",
+                        "player_id":  236712,
+                        "club_position":  "LCB",
+                        "long_name":  "Dimitri Dominique Lavalée",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gorenc Stanković",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Slovenia",
+                        "player_id":  226129,
+                        "club_position":  "CDM",
+                        "long_name":  "Jon Gorenc Stankovič",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Karić",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  17,
+                        "nationality":  "Austria",
+                        "player_id":  244940,
+                        "club_position":  "LB",
+                        "long_name":  "Emir Karić",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Beck",
+                        "overall":  60,
+                        "potential":  77,
+                        "club_jersey_number":  22,
+                        "nationality":  "Denmark",
+                        "player_id":  262153,
+                        "club_position":  "SUB",
+                        "long_name":  "Julius Eskelund Beck",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Oermann",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "Germany",
+                        "player_id":  270033,
+                        "club_position":  "RCB",
+                        "long_name":  "Tim Oermann",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Aiwu",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  47,
+                        "nationality":  "Austria",
+                        "player_id":  243442,
+                        "club_position":  "SUB",
+                        "long_name":  "Emanuel Aiwu",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Jatta",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Norway",
+                        "player_id":  261293,
+                        "club_position":  "RS",
+                        "long_name":  "Seedyahmed Tijan Jatta",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hödl",
+                        "overall":  58,
+                        "potential":  78,
+                        "club_jersey_number":  43,
+                        "nationality":  "Austria",
+                        "player_id":  74115,
+                        "club_position":  "SUB",
+                        "long_name":  "Jacob Peter Hödl",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Rózga",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  8,
+                        "nationality":  "Poland",
+                        "player_id":  276395,
+                        "club_position":  "SUB",
+                        "long_name":  "Filip Jan Rózga",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Borković",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "Austria",
+                        "player_id":  235995,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexandar Borković",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Grgić",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  38,
+                        "nationality":  "Croatia",
+                        "player_id":  274527,
+                        "club_position":  "LS",
+                        "long_name":  "Leon Grgić",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kayombo",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  278730,
+                        "club_position":  "RES",
+                        "long_name":  "Axel Kayombo",
+                        "age":  19,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Bendra",
+                        "overall":  59,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Slovenia",
+                        "player_id":  81534,
+                        "club_position":  "RES",
+                        "long_name":  "Kristjan Bendra",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Geyrhofer",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  35,
+                        "nationality":  "Austria",
+                        "player_id":  255536,
+                        "club_position":  "SUB",
+                        "long_name":  "Niklas Geyrhofer",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mitchell",
+                        "overall":  66,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "Costa Rica",
+                        "player_id":  73238,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeyland Yahir Mitchell Baltodano",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Malić",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  73113,
+                        "club_position":  "RB",
+                        "long_name":  "Arjan Malić",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Beganović",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  26,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  269855,
+                        "club_position":  "SUB",
+                        "long_name":  "Belmin Beganović",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Haider",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  27,
+                        "nationality":  "Austria",
+                        "player_id":  262213,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Haider",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Christensen",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  1,
+                        "nationality":  "Denmark",
+                        "player_id":  236758,
+                        "club_position":  "GK",
+                        "long_name":  "Oliver Christensen",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Bignetti",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  40,
+                        "nationality":  "Austria",
+                        "player_id":  268623,
+                        "club_position":  "SUB",
+                        "long_name":  "Matteo Bignetti",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Khudyakov",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  53,
+                        "nationality":  "Russia",
+                        "player_id":  263961,
+                        "club_position":  "RES",
+                        "long_name":  "Daniil KhudyakovХудяков Даниил Дмитриевич",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Lorenz",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  41,
+                        "nationality":  "Austria",
+                        "player_id":  71290,
+                        "club_position":  "RES",
+                        "long_name":  "Elias Lorenz",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

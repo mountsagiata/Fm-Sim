@@ -1,0 +1,422 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Rodez Aveyron Football",
+                     "league_name":  "Ligue 2",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  111659
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Trouillet",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  27,
+                        "nationality":  "France",
+                        "player_id":  242753,
+                        "club_position":  "LCM",
+                        "long_name":  "Alexis Trouillet",
+                        "age":  24,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Younoussa",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "Cameroon",
+                        "player_id":  255738,
+                        "club_position":  "RCM",
+                        "long_name":  "Wilitty Younoussa",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Benchamma",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  257411,
+                        "club_position":  "SUB",
+                        "long_name":  "Samy Benchamma",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Tourraine",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Morocco",
+                        "player_id":  274845,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathys Tourraine",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Achi",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  270352,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohamed Achi Bouakline",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Arconte",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  261772,
+                        "club_position":  "LS",
+                        "long_name":  "Taïryk Arconte",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mendes",
+                        "overall":  60,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  79635,
+                        "club_position":  "CDM",
+                        "long_name":  "Jordan Mendes",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Saka",
+                        "overall":  60,
+                        "potential":  79,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  74134,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathis Saka",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Evan\u0026amp;apos;s",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  15,
+                        "nationality":  "France",
+                        "player_id":  253041,
+                        "club_position":  "LB",
+                        "long_name":  "Jean Lambert Evan\u0026amp;apos;s Allan",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Galves",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  275296,
+                        "club_position":  "RB",
+                        "long_name":  "Nolan Galves",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Baldé",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "France",
+                        "player_id":  263110,
+                        "club_position":  "RS",
+                        "long_name":  "Ibrahima Baldé",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Lipinski",
+                        "overall":  62,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "France",
+                        "player_id":  277431,
+                        "club_position":  "LCB",
+                        "long_name":  "Raphaël Lipinski",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Nagera",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  261753,
+                        "club_position":  "SUB",
+                        "long_name":  "Kenny Nagera",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Joly",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  79638,
+                        "club_position":  "SUB",
+                        "long_name":  "Octave Joly",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Tebily",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  19,
+                        "nationality":  "France",
+                        "player_id":  262156,
+                        "club_position":  "RES",
+                        "long_name":  "Hermann Tebily",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Baaloudj",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  10,
+                        "nationality":  "Algeria",
+                        "player_id":  271244,
+                        "club_position":  "SUB",
+                        "long_name":  "Mehdi Baaloudj",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Issanchou",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  13,
+                        "nationality":  "France",
+                        "player_id":  75420,
+                        "club_position":  "RES",
+                        "long_name":  "Corentin Issanchou",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Laurent",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "France",
+                        "player_id":  73086,
+                        "club_position":  "SUB",
+                        "long_name":  "Loni Laurent Quenabio",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ponti",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  20,
+                        "nationality":  "France",
+                        "player_id":  258470,
+                        "club_position":  "RES",
+                        "long_name":  "Ryan Ponti",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Dahalani",
+                        "overall":  53,
+                        "potential":  65,
+                        "club_jersey_number":  34,
+                        "nationality":  "France",
+                        "player_id":  80235,
+                        "club_position":  "RES",
+                        "long_name":  "Yanis Dahalani",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Vangi",
+                        "overall":  61,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  79637,
+                        "club_position":  "SUB",
+                        "long_name":  "Dylan Vangi",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Jolibois",
+                        "overall":  62,
+                        "potential":  64,
+                        "club_jersey_number":  5,
+                        "nationality":  "France",
+                        "player_id":  79640,
+                        "club_position":  "SUB",
+                        "long_name":  "Clément Jolibois",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Magnin",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Switzerland",
+                        "player_id":  79639,
+                        "club_position":  "CB",
+                        "long_name":  "Mathis Magnin",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Corredor",
+                        "overall":  55,
+                        "potential":  68,
+                        "club_jersey_number":  12,
+                        "nationality":  "France",
+                        "player_id":  75312,
+                        "club_position":  "RES",
+                        "long_name":  "Morgan Corredor",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pelon",
+                        "overall":  62,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "France",
+                        "player_id":  279843,
+                        "club_position":  "RCB",
+                        "long_name":  "Aurélien Pelon",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Q. Braat",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "France",
+                        "player_id":  231720,
+                        "club_position":  "GK",
+                        "long_name":  "Quentin Braat",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Margueron",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  16,
+                        "nationality":  "France",
+                        "player_id":  257142,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Margueron",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Crombez",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  276872,
+                        "club_position":  "SUB",
+                        "long_name":  "Enzo Crombez",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

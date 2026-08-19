@@ -1,0 +1,368 @@
+﻿{
+    "metadata":  {
+                     "total_players":  24,
+                     "club_name":  "FC Ingolstadt 04",
+                     "league_name":  "3. Liga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111239
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Besuschkow",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  17,
+                        "nationality":  "Germany",
+                        "player_id":  234945,
+                        "club_position":  "RCM",
+                        "long_name":  "Max BesuschkowМаксим Александрович Безушков",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Deichmann",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  20,
+                        "nationality":  "Germany",
+                        "player_id":  230607,
+                        "club_position":  "SUB",
+                        "long_name":  "Yannick Deichmann",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kaygin",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  275736,
+                        "club_position":  "SUB",
+                        "long_name":  "Dennis Kaygin",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Carlsen",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  8,
+                        "nationality":  "Denmark",
+                        "player_id":  275742,
+                        "club_position":  "LCM",
+                        "long_name":  "Fredrik Carlsen",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Costly",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  22,
+                        "nationality":  "Germany",
+                        "player_id":  241967,
+                        "club_position":  "RM",
+                        "long_name":  "Marcel Costly",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Rosenlöcher",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "Germany",
+                        "player_id":  260078,
+                        "club_position":  "LB",
+                        "long_name":  "Linus Rosenlöcher",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Fröde",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  34,
+                        "nationality":  "Germany",
+                        "player_id":  227932,
+                        "club_position":  "CDM",
+                        "long_name":  "Lukas Thomas Fröde",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Lorenz",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  32,
+                        "nationality":  "Germany",
+                        "player_id":  242383,
+                        "club_position":  "RCB",
+                        "long_name":  "Simon Lorenz",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Plath",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Germany",
+                        "player_id":  72335,
+                        "club_position":  "SUB",
+                        "long_name":  "Max Plath",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "RB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hoppe",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  2,
+                        "nationality":  "Germany",
+                        "player_id":  272557,
+                        "club_position":  "RB",
+                        "long_name":  "Mattis Hoppe",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Sturm",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "Germany",
+                        "player_id":  276697,
+                        "club_position":  "LM",
+                        "long_name":  "Yann Sturm",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Decker",
+                        "overall":  58,
+                        "potential":  69,
+                        "club_jersey_number":  4,
+                        "nationality":  "Germany",
+                        "player_id":  278190,
+                        "club_position":  "RES",
+                        "long_name":  "Elias Decker",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Christensen",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  24,
+                        "nationality":  "Denmark",
+                        "player_id":  276356,
+                        "club_position":  "SUB",
+                        "long_name":  "Gustav Ørsøe Christensen",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Gül",
+                        "overall":  57,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Germany",
+                        "player_id":  72129,
+                        "club_position":  "SUB",
+                        "long_name":  "Emre Gül",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kügel",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  29,
+                        "nationality":  "Germany",
+                        "player_id":  277805,
+                        "club_position":  "SUB",
+                        "long_name":  "Julian Kügel",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Borchers",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "Denmark",
+                        "player_id":  277624,
+                        "club_position":  "SUB",
+                        "long_name":  "Mads Borchers",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Öztürk",
+                        "overall":  53,
+                        "potential":  63,
+                        "club_jersey_number":  39,
+                        "nationality":  "Türkiye",
+                        "player_id":  75532,
+                        "club_position":  "SUB",
+                        "long_name":  "Berkay Öztürk",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Christensen",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  11,
+                        "nationality":  "Denmark",
+                        "player_id":  74966,
+                        "club_position":  "ST",
+                        "long_name":  "Frederik Rasmus Christensen",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Maljojoki",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "United States",
+                        "player_id":  80201,
+                        "club_position":  "SUB",
+                        "long_name":  "Jasper Maljojoki",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Scholz",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  15,
+                        "nationality":  "Germany",
+                        "player_id":  246264,
+                        "club_position":  "LCB",
+                        "long_name":  "Jonas Scholz",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Nduka",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  27,
+                        "nationality":  "Nigeria",
+                        "player_id":  274912,
+                        "club_position":  "SUB",
+                        "long_name":  "Donald Nduka",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ponath",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  1,
+                        "nationality":  "Germany",
+                        "player_id":  263780,
+                        "club_position":  "GK",
+                        "long_name":  "Markus Ponath",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Eisele",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  25,
+                        "nationality":  "Germany",
+                        "player_id":  239499,
+                        "club_position":  "SUB",
+                        "long_name":  "Kai Eisele",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Klein",
+                        "overall":  57,
+                        "potential":  72,
+                        "club_jersey_number":  47,
+                        "nationality":  "Germany",
+                        "player_id":  80455,
+                        "club_position":  "SUB",
+                        "long_name":  "David Klein",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

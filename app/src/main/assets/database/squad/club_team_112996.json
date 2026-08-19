@@ -1,0 +1,419 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Los Angeles FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  112996
+                 },
+    "players":  [
+                    {
+                        "short_name":  "H. Son",
+                        "overall":  85,
+                        "potential":  85,
+                        "club_jersey_number":  7,
+                        "nationality":  "Korea Republic",
+                        "player_id":  200104,
+                        "club_position":  "ST",
+                        "long_name":  "Heung-min Son손흥민 孙兴慜",
+                        "age":  32,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bouanga",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  99,
+                        "nationality":  "Gabon",
+                        "player_id":  225951,
+                        "club_position":  "LW",
+                        "long_name":  "Denis Athanase Bouanga",
+                        "age":  30,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Hollingshead",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  221488,
+                        "club_position":  "LB",
+                        "long_name":  "Ryan Michael Hollingshead",
+                        "age":  34,
+                        "positions":  [
+                                          "LB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Amaya",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  23,
+                        "nationality":  "United States",
+                        "player_id":  247582,
+                        "club_position":  "SUB",
+                        "long_name":  "Franuel \u0026amp;quot;Frankie\u0026amp;quot; Amaya",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergi Palencia",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  228321,
+                        "club_position":  "RB",
+                        "long_name":  "Sergi Palencia Hurtado",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Delgado",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  8,
+                        "nationality":  "United States",
+                        "player_id":  208592,
+                        "club_position":  "LCM",
+                        "long_name":  "Marco Antonio Delgado",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Yeboah",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  20,
+                        "nationality":  "Ghana",
+                        "player_id":  229217,
+                        "club_position":  "SUB",
+                        "long_name":  "Yaw Yeboah",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Tillman",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  240319,
+                        "club_position":  "RCM",
+                        "long_name":  "Timothy Justin Tillman",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ebobisse",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "Cameroon",
+                        "player_id":  237256,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeremy Edward Nirina Ebobisse Ebolo",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Igor Jesus",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  74939,
+                        "club_position":  "CDM",
+                        "long_name":  "Igor Jesus Lima",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Porteous",
+                        "overall":  71,
+                        "potential":  75,
+                        "club_jersey_number":  5,
+                        "nationality":  "Scotland",
+                        "player_id":  240439,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan Porteous",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Choinière",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  66,
+                        "nationality":  "Canada",
+                        "player_id":  244680,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathieu Choinière",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Holm",
+                        "overall":  64,
+                        "potential":  75,
+                        "club_jersey_number":  80,
+                        "nationality":  "Norway",
+                        "player_id":  246860,
+                        "club_position":  "RES",
+                        "long_name":  "Odin Thiago Holm",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Long",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  33,
+                        "nationality":  "United States",
+                        "player_id":  222123,
+                        "club_position":  "LCB",
+                        "long_name":  "Aaron Ray Long",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Raposo",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  21,
+                        "nationality":  "Canada",
+                        "player_id":  255772,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan Raposo",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Saldaña",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  43,
+                        "nationality":  "United States",
+                        "player_id":  260616,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Jesús Jr. Esparza Saldaña",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Smolyakov",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ukraine",
+                        "player_id":  77759,
+                        "club_position":  "RES",
+                        "long_name":  "Artem SmolyakovСмоляков Артем Геннадійович",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Tafari",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  91,
+                        "nationality":  "United States",
+                        "player_id":  256024,
+                        "club_position":  "SUB",
+                        "long_name":  "Nkosi Tafari Burgess",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Segura",
+                        "overall":  68,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Colombia",
+                        "player_id":  237245,
+                        "club_position":  "RCB",
+                        "long_name":  "Eddie Livington Segura Martínez",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Martínez",
+                        "overall":  67,
+                        "potential":  79,
+                        "club_jersey_number":  30,
+                        "nationality":  "Venezuela",
+                        "player_id":  272317,
+                        "club_position":  "RW",
+                        "long_name":  "David Emmanuel Martínez Morales",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Ordaz",
+                        "overall":  66,
+                        "potential":  79,
+                        "club_jersey_number":  27,
+                        "nationality":  "El Salvador",
+                        "player_id":  275974,
+                        "club_position":  "SUB",
+                        "long_name":  "Nathan Rafael Ordaz",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Wibowo",
+                        "overall":  52,
+                        "potential":  64,
+                        "club_jersey_number":  77,
+                        "nationality":  "United States",
+                        "player_id":  75237,
+                        "club_position":  "SUB",
+                        "long_name":  "Adrian Wibowo",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Dellavalle",
+                        "overall":  59,
+                        "potential":  69,
+                        "club_jersey_number":  15,
+                        "nationality":  "Italy",
+                        "player_id":  278502,
+                        "club_position":  "SUB",
+                        "long_name":  "Lorenzo Dellavalle",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Lloris",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  1,
+                        "nationality":  "France",
+                        "player_id":  167948,
+                        "club_position":  "GK",
+                        "long_name":  "Hugo Hadrien Dominique Lloris",
+                        "age":  38,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Nielsen",
+                        "overall":  53,
+                        "potential":  60,
+                        "club_jersey_number":  45,
+                        "nationality":  "United States",
+                        "player_id":  78204,
+                        "club_position":  "RES",
+                        "long_name":  "Kenneth Wilson Nielsen",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ochoa",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Mexico",
+                        "player_id":  247428,
+                        "club_position":  "SUB",
+                        "long_name":  "David Ochoa Ramírez",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hasal",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  12,
+                        "nationality":  "Canada",
+                        "player_id":  248216,
+                        "club_position":  "RES",
+                        "long_name":  "Thomas Hasal",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

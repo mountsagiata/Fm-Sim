@@ -1,0 +1,399 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Brighton \u0026amp;amp; Hove Albion",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1808
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. De Cuyper",
+                        "overall":  80,
+                        "potential":  86,
+                        "club_jersey_number":  29,
+                        "nationality":  "Belgium",
+                        "player_id":  251479,
+                        "club_position":  "LB",
+                        "long_name":  "Maxim De Cuyper",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Baleba",
+                        "overall":  81,
+                        "potential":  87,
+                        "club_jersey_number":  17,
+                        "nationality":  "Cameroon",
+                        "player_id":  272500,
+                        "club_position":  "RDM",
+                        "long_name":  "Carlos Noom Quomah Baleba",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Kadıoğlu",
+                        "overall":  79,
+                        "potential":  81,
+                        "club_jersey_number":  24,
+                        "nationality":  "Türkiye",
+                        "player_id":  235152,
+                        "club_position":  "SUB",
+                        "long_name":  "Ferdi Erenay Kadıoğlu",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Rutter",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  245637,
+                        "club_position":  "CAM",
+                        "long_name":  "Georginio Rutter",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mitoma",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  22,
+                        "nationality":  "Japan",
+                        "player_id":  255565,
+                        "club_position":  "LM",
+                        "long_name":  "Kaoru Mitoma三笘 薫",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Wieffer",
+                        "overall":  78,
+                        "potential":  82,
+                        "club_jersey_number":  27,
+                        "nationality":  "Netherlands",
+                        "player_id":  248793,
+                        "club_position":  "SUB",
+                        "long_name":  "Mats Wieffer",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hinshelwood",
+                        "overall":  75,
+                        "potential":  83,
+                        "club_jersey_number":  13,
+                        "nationality":  "England",
+                        "player_id":  277283,
+                        "club_position":  "SUB",
+                        "long_name":  "Jack Luca Hinshelwood",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Ayari",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  26,
+                        "nationality":  "Sweden",
+                        "player_id":  257400,
+                        "club_position":  "LDM",
+                        "long_name":  "Yasin Abbas Ayari",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Welbeck",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "England",
+                        "player_id":  186146,
+                        "club_position":  "ST",
+                        "long_name":  "Daniel Nii Tackie Mensah Welbeck",
+                        "age":  34,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Boscagli",
+                        "overall":  79,
+                        "potential":  81,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  225863,
+                        "club_position":  "SUB",
+                        "long_name":  "Olivier Maxime Boscagli",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Gómez",
+                        "overall":  73,
+                        "potential":  80,
+                        "club_jersey_number":  25,
+                        "nationality":  "Paraguay",
+                        "player_id":  269278,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Alexander Gómez Amarilla",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Milner",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  138412,
+                        "club_position":  "SUB",
+                        "long_name":  "James Philip Milner",
+                        "age":  39,
+                        "positions":  [
+                                          "CM",
+                                          "RB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. March",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  206594,
+                        "club_position":  "RES",
+                        "long_name":  "Solomon Benjamin March",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. van Hecke",
+                        "overall":  80,
+                        "potential":  83,
+                        "club_jersey_number":  6,
+                        "nationality":  "Netherlands",
+                        "player_id":  258908,
+                        "club_position":  "RCB",
+                        "long_name":  "Jan Paul van Hecke",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Minteh",
+                        "overall":  77,
+                        "potential":  85,
+                        "club_jersey_number":  11,
+                        "nationality":  "Gambia",
+                        "player_id":  271800,
+                        "club_position":  "RM",
+                        "long_name":  "Yankuba Minteh",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Veltman",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  34,
+                        "nationality":  "Netherlands",
+                        "player_id":  208004,
+                        "club_position":  "RB",
+                        "long_name":  "Joël Ivo Veltman",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Gruda",
+                        "overall":  74,
+                        "potential":  84,
+                        "club_jersey_number":  8,
+                        "nationality":  "Germany",
+                        "player_id":  272612,
+                        "club_position":  "SUB",
+                        "long_name":  "Brajan Gruda",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kostoulas",
+                        "overall":  72,
+                        "potential":  85,
+                        "club_jersey_number":  19,
+                        "nationality":  "Greece",
+                        "player_id":  73885,
+                        "club_position":  "SUB",
+                        "long_name":  "Charalampos KostoulasΧαράλαμπος Κωστούλας",
+                        "age":  18,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Dunk",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  199915,
+                        "club_position":  "LCB",
+                        "long_name":  "Lewis Carl Dunk",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Tzimas",
+                        "overall":  72,
+                        "potential":  81,
+                        "club_jersey_number":  9,
+                        "nationality":  "Greece",
+                        "player_id":  274699,
+                        "club_position":  "SUB",
+                        "long_name":  "Stefanos TzimasΣτέφανος Τζίμας",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Watson",
+                        "overall":  68,
+                        "potential":  82,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  275246,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Watson",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Coppola",
+                        "overall":  74,
+                        "potential":  81,
+                        "club_jersey_number":  42,
+                        "nationality":  "Italy",
+                        "player_id":  269181,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Coppola",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Webster",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  207616,
+                        "club_position":  "RES",
+                        "long_name":  "Adam Harry Webster",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Steele",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  188836,
+                        "club_position":  "SUB",
+                        "long_name":  "Jason Sean Steele",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Verbruggen",
+                        "overall":  78,
+                        "potential":  84,
+                        "club_jersey_number":  1,
+                        "nationality":  "Netherlands",
+                        "player_id":  258498,
+                        "club_position":  "GK",
+                        "long_name":  "Bart Verbruggen",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. McGill",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  38,
+                        "nationality":  "Canada",
+                        "player_id":  243588,
+                        "club_position":  "RES",
+                        "long_name":  "Thomas Peter Wayne McGill",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

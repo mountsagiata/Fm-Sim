@@ -1,0 +1,412 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Al Ain",
+                     "league_name":  "Pro League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111701
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Kaku",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  10,
+                        "nationality":  "Paraguay",
+                        "player_id":  226376,
+                        "club_position":  "CAM",
+                        "long_name":  "Alejandro Sebastián Romero Gamarra",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Rahimi",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  21,
+                        "nationality":  "Morocco",
+                        "player_id":  264348,
+                        "club_position":  "LS",
+                        "long_name":  "Soufiane Rahimiسفيان رحيمي",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Erik",
+                        "overall":  73,
+                        "potential":  79,
+                        "club_jersey_number":  15,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  257188,
+                        "club_position":  "LB",
+                        "long_name":  "Erik Jorgens de Menezes",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jašić",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  97,
+                        "nationality":  "Austria",
+                        "player_id":  261991,
+                        "club_position":  "RB",
+                        "long_name":  "Adis Jašić",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Laba",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  9,
+                        "nationality":  "Togo",
+                        "player_id":  251353,
+                        "club_position":  "RS",
+                        "long_name":  "Kodjo Fo Doh Laba",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Palacios",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  20,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  246107,
+                        "club_position":  "RCM",
+                        "long_name":  "Matías Damián Palacios",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Park Yong Woo",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  5,
+                        "nationality":  "Korea Republic",
+                        "player_id":  226652,
+                        "club_position":  "LCM",
+                        "long_name":  "Yong-woo Park박용우 朴镕宇",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rafa Rodrigues",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Portugal",
+                        "player_id":  73256,
+                        "club_position":  "SUB",
+                        "long_name":  "Rafael Vela Rodrigues",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Nader",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  247060,
+                        "club_position":  "SUB",
+                        "long_name":  "Yahia Nader Mostafa Sherif",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Rabia",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  25,
+                        "nationality":  "Egypt",
+                        "player_id":  220380,
+                        "club_position":  "CB",
+                        "long_name":  "Rami Hisham Abdel Aziz Rabia",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Abbas",
+                        "overall":  64,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  262175,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohammed Abbas Ahmed Abdulla Hasan Al Baloushi",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Autonne",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  3,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  263163,
+                        "club_position":  "LCB",
+                        "long_name":  "Kouame Autonne Kouadio",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Chadli",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  28,
+                        "nationality":  "Morocco",
+                        "player_id":  261202,
+                        "club_position":  "SUB",
+                        "long_name":  "Nassim Chadliنسيم سعيد الشاذلي",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Traore",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  70,
+                        "nationality":  "Mali",
+                        "player_id":  279061,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdoul Karim Traoré",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Mohammed",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  30,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  277574,
+                        "club_position":  "SUB",
+                        "long_name":  "Hazem Mohammad Abdullah Abbas",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Koumare",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  46,
+                        "nationality":  "Mali",
+                        "player_id":  74995,
+                        "club_position":  "SUB",
+                        "long_name":  "Dramane Koumare",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Udoh",
+                        "overall":  49,
+                        "potential":  65,
+                        "club_jersey_number":  80,
+                        "nationality":  "Nigeria",
+                        "player_id":  81409,
+                        "club_position":  "RES",
+                        "long_name":  "Joshua Udoh",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Rahimi",
+                        "overall":  58,
+                        "potential":  63,
+                        "club_jersey_number":  13,
+                        "nationality":  "Morocco",
+                        "player_id":  79538,
+                        "club_position":  "SUB",
+                        "long_name":  "Houssine Rahimi",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Sarki",
+                        "overall":  55,
+                        "potential":  64,
+                        "club_jersey_number":  77,
+                        "nationality":  "Nigeria",
+                        "player_id":  71653,
+                        "club_position":  "SUB",
+                        "long_name":  "Rilwanu Haliru Sarki",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ratnik",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "Slovenia",
+                        "player_id":  79533,
+                        "club_position":  "RCB",
+                        "long_name":  "Marcel Ratnik",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Benkhaleq",
+                        "overall":  57,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "Morocco",
+                        "player_id":  79535,
+                        "club_position":  "SUB",
+                        "long_name":  "Yahya Benkhaleq",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Naafo",
+                        "overall":  53,
+                        "potential":  66,
+                        "club_jersey_number":  60,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  81405,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonas Naafo",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Niang",
+                        "overall":  50,
+                        "potential":  60,
+                        "club_jersey_number":  29,
+                        "nationality":  "Senegal",
+                        "player_id":  81402,
+                        "club_position":  "RES",
+                        "long_name":  "Amadou Niang",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Eissa",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  247072,
+                        "club_position":  "GK",
+                        "long_name":  "Khalid Eisa Mohamed Bilal Saeed",
+                        "age":  35,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Bu Sanda",
+                        "overall":  60,
+                        "potential":  61,
+                        "club_jersey_number":  1,
+                        "nationality":  "United Arab Emirates",
+                        "player_id":  247067,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohammed Saeed Busanda Ahmed Al Falahi",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Alibasic",
+                        "overall":  49,
+                        "potential":  58,
+                        "club_jersey_number":  41,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  81408,
+                        "club_position":  "RES",
+                        "long_name":  "Vedad Alibasic",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Sani",
+                        "overall":  52,
+                        "potential":  66,
+                        "club_jersey_number":  35,
+                        "nationality":  "Nigeria",
+                        "player_id":  81407,
+                        "club_position":  "RES",
+                        "long_name":  "Hassan Sani",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

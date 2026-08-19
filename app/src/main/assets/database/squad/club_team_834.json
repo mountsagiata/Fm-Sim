@@ -1,0 +1,422 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Shelbourne FC",
+                     "league_name":  "Premier Division",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  834
+                 },
+    "players":  [
+                    {
+                        "short_name":  "E. Chapman",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  240535,
+                        "club_position":  "SUB",
+                        "long_name":  "Ellis Darren Chapman",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Caffrey",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  27,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  267771,
+                        "club_position":  "RB",
+                        "long_name":  "Evan Caffrey",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "RB",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. McInroy",
+                        "overall":  63,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "Scotland",
+                        "player_id":  254158,
+                        "club_position":  "LCM",
+                        "long_name":  "Kerr McInroy",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "LB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lunney",
+                        "overall":  60,
+                        "potential":  61,
+                        "club_jersey_number":  6,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  236379,
+                        "club_position":  "CDM",
+                        "long_name":  "Jonathan Lunney",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Coyle",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  8,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  246591,
+                        "club_position":  "SUB",
+                        "long_name":  "Mark Coyle",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Wilson",
+                        "overall":  62,
+                        "potential":  64,
+                        "club_jersey_number":  3,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  240473,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyreke Wilson",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Wood",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  263650,
+                        "club_position":  "RCM",
+                        "long_name":  "Harry Wood",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. O\u0026amp;apos;Sullivan",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  16,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  209475,
+                        "club_position":  "SUB",
+                        "long_name":  "John Anthony James O\u0026amp;apos;Sullivan",
+                        "age":  31,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Gannon",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  2,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  203095,
+                        "club_position":  "RCB",
+                        "long_name":  "Seán Gannon",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Martin",
+                        "overall":  60,
+                        "potential":  62,
+                        "club_jersey_number":  10,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  243127,
+                        "club_position":  "SUB",
+                        "long_name":  "John Martin",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Henry-Francis",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  21,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  274390,
+                        "club_position":  "RES",
+                        "long_name":  "Jack Henry-Francis",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Coote",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  14,
+                        "nationality":  "Scotland",
+                        "player_id":  226429,
+                        "club_position":  "SUB",
+                        "long_name":  "Alistair Coote",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Boyd",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  9,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  230722,
+                        "club_position":  "LS",
+                        "long_name":  "Seán Boyd",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Bone",
+                        "overall":  59,
+                        "potential":  61,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  238197,
+                        "club_position":  "SUB",
+                        "long_name":  "Samuel Bone",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Norris",
+                        "overall":  60,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "England",
+                        "player_id":  264561,
+                        "club_position":  "LB",
+                        "long_name":  "James Barry Norris",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kelly",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  17,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  242638,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Kelly",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Odubeko",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  258515,
+                        "club_position":  "RS",
+                        "long_name":  "Ademipo Ibrahim Odubeko",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Ledwidge",
+                        "overall":  60,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  253421,
+                        "club_position":  "LCB",
+                        "long_name":  "Kameron Malcolm Ledwidge",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Moore",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  22,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  276460,
+                        "club_position":  "RES",
+                        "long_name":  "Sean Moore",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Barrett",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  29,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  205139,
+                        "club_position":  "CB",
+                        "long_name":  "Patrick Barrett",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mbeng",
+                        "overall":  58,
+                        "potential":  63,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  77433,
+                        "club_position":  "SUB",
+                        "long_name":  "Milan Mbeng",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Healy",
+                        "overall":  57,
+                        "potential":  60,
+                        "club_jersey_number":  19,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  267736,
+                        "club_position":  "SUB",
+                        "long_name":  "Lorcan Healy",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ring",
+                        "overall":  48,
+                        "potential":  67,
+                        "club_jersey_number":  44,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  72037,
+                        "club_position":  "RES",
+                        "long_name":  "Daniel Ring",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Temple",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  270118,
+                        "club_position":  "SUB",
+                        "long_name":  "Lewis Temple",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Roche",
+                        "overall":  50,
+                        "potential":  66,
+                        "club_jersey_number":  55,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  72568,
+                        "club_position":  "RES",
+                        "long_name":  "James Roche",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kearns",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  1,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  246987,
+                        "club_position":  "GK",
+                        "long_name":  "Conor Kearns",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Speel",
+                        "overall":  57,
+                        "potential":  67,
+                        "club_jersey_number":  13,
+                        "nationality":  "Netherlands",
+                        "player_id":  79128,
+                        "club_position":  "SUB",
+                        "long_name":  "Wessel Speel",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

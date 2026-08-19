@@ -1,0 +1,418 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "New York City FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  112828
+                 },
+    "players":  [
+                    {
+                        "short_name":  "N. Fernández",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Argentina",
+                        "player_id":  257866,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolás Ezequiel Fernández Mercau",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. O\u0026amp;apos;Neill",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  21,
+                        "nationality":  "Australia",
+                        "player_id":  230888,
+                        "club_position":  "SUB",
+                        "long_name":  "Aiden Connor O\u0026amp;apos;Neill",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Wolf",
+                        "overall":  71,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Austria",
+                        "player_id":  236935,
+                        "club_position":  "RM",
+                        "long_name":  "Hannes Wolf",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Moralez",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  183895,
+                        "club_position":  "CAM",
+                        "long_name":  "Maximiliano Nicolás Moralez",
+                        "age":  38,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Parks",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  55,
+                        "nationality":  "United States",
+                        "player_id":  241783,
+                        "club_position":  "LDM",
+                        "long_name":  "Keaton Alexander Parks",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Perea",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "United States",
+                        "player_id":  246047,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrés Felipe Perea Castañeda",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Martínez",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  16,
+                        "nationality":  "Costa Rica",
+                        "player_id":  268715,
+                        "club_position":  "ST",
+                        "long_name":  "Adrián Alonso Martínez Batista",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ojeda",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Argentina",
+                        "player_id":  268330,
+                        "club_position":  "LM",
+                        "long_name":  "Axel Agustín Ojeda",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Fernández",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  267866,
+                        "club_position":  "SUB",
+                        "long_name":  "Julián Fernández",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Thiago",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  13,
+                        "nationality":  "Brazil",
+                        "player_id":  233790,
+                        "club_position":  "RCB",
+                        "long_name":  "Thiago Martins Bueno",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. O\u0026amp;apos;Toole",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  22,
+                        "nationality":  "United States",
+                        "player_id":  268009,
+                        "club_position":  "LB",
+                        "long_name":  "Kevin O\u0026amp;apos;Toole",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Raul Gustavo",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  34,
+                        "nationality":  "Brazil",
+                        "player_id":  72905,
+                        "club_position":  "SUB",
+                        "long_name":  "Raul Gustavo Pereira Bicalho",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ilenič",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  35,
+                        "nationality":  "Slovenia",
+                        "player_id":  272943,
+                        "club_position":  "RB",
+                        "long_name":  "Mitja Ilenič",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Gray",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "Jamaica",
+                        "player_id":  254492,
+                        "club_position":  "SUB",
+                        "long_name":  "Tayvon Howard Gray",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Haak",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  80,
+                        "nationality":  "United States",
+                        "player_id":  247038,
+                        "club_position":  "LCB",
+                        "long_name":  "Justin Haak",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Shore",
+                        "overall":  56,
+                        "potential":  68,
+                        "club_jersey_number":  32,
+                        "nationality":  "United States",
+                        "player_id":  274998,
+                        "club_position":  "RDM",
+                        "long_name":  "Jonathan Shore",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Cavallo",
+                        "overall":  57,
+                        "potential":  63,
+                        "club_jersey_number":  2,
+                        "nationality":  "United States",
+                        "player_id":  77879,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Cavallo",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Jones",
+                        "overall":  57,
+                        "potential":  65,
+                        "club_jersey_number":  88,
+                        "nationality":  "Sierra Leone",
+                        "player_id":  70444,
+                        "club_position":  "SUB",
+                        "long_name":  "Malachi Jones",
+                        "age":  21,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Tanasijević",
+                        "overall":  58,
+                        "potential":  60,
+                        "club_jersey_number":  19,
+                        "nationality":  "Serbia",
+                        "player_id":  246354,
+                        "club_position":  "SUB",
+                        "long_name":  "Strahinja TanasijevićСтрахиња Танасијевић",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Carrizo",
+                        "overall":  55,
+                        "potential":  69,
+                        "club_jersey_number":  29,
+                        "nationality":  "United States",
+                        "player_id":  274974,
+                        "club_position":  "RES",
+                        "long_name":  "Máximo Augusto Carrizo Ballesteros",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Yáñez",
+                        "overall":  51,
+                        "potential":  65,
+                        "club_jersey_number":  36,
+                        "nationality":  "United States",
+                        "player_id":  279712,
+                        "club_position":  "RES",
+                        "long_name":  "Zidane Antonio Yañez",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Reid",
+                        "overall":  51,
+                        "potential":  65,
+                        "club_jersey_number":  99,
+                        "nationality":  "Jamaica",
+                        "player_id":  79886,
+                        "club_position":  "RES",
+                        "long_name":  "Seymour Reid",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Baiera",
+                        "overall":  51,
+                        "potential":  63,
+                        "club_jersey_number":  38,
+                        "nationality":  "United States",
+                        "player_id":  277302,
+                        "club_position":  "RES",
+                        "long_name":  "Andrew Baiera",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Freese",
+                        "overall":  69,
+                        "potential":  73,
+                        "club_jersey_number":  49,
+                        "nationality":  "United States",
+                        "player_id":  247506,
+                        "club_position":  "GK",
+                        "long_name":  "Matthew Andrew Geary Freese",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Romero",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  30,
+                        "nationality":  "El Salvador",
+                        "player_id":  260918,
+                        "club_position":  "SUB",
+                        "long_name":  "Tomás Lían Romero Keubler",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Ranjitsingh",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  18,
+                        "nationality":  "Trinidad and Tobago",
+                        "player_id":  247448,
+                        "club_position":  "SUB",
+                        "long_name":  "Gregory Nicholas Ranjitsingh",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rando",
+                        "overall":  52,
+                        "potential":  57,
+                        "club_jersey_number":  44,
+                        "nationality":  "United States",
+                        "player_id":  69982,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexander Rando",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

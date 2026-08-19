@@ -1,0 +1,401 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "AFC Wimbledon",
+                     "league_name":  "League One",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  112259
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Smith",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  246789,
+                        "club_position":  "RCM",
+                        "long_name":  "Alistair Oluwashaun Smith",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Reeves",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  203415,
+                        "club_position":  "LCM",
+                        "long_name":  "Jake Kenny Reeves",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hippolyte",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  21,
+                        "nationality":  "Grenada",
+                        "player_id":  244322,
+                        "club_position":  "LM",
+                        "long_name":  "Myles Elliot Zach Hippolyte",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "LB",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Seddon",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  234258,
+                        "club_position":  "LB",
+                        "long_name":  "Steven Jeffrey Seddon",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Maycock",
+                        "overall":  60,
+                        "potential":  61,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  233377,
+                        "club_position":  "SUB",
+                        "long_name":  "Callum Maycock",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. McCoy-Splatt",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  18,
+                        "nationality":  "Jamaica",
+                        "player_id":  79444,
+                        "club_position":  "SUB",
+                        "long_name":  "Delano McCoy-Splatt",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Browne",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  231442,
+                        "club_position":  "RM",
+                        "long_name":  "Marcus Alexander Browne",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Bugiel",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Lebanon",
+                        "player_id":  238716,
+                        "club_position":  "SUB",
+                        "long_name":  "Omar Khaled Chaaban Bugiel",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Hutchinson",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  169708,
+                        "club_position":  "SUB",
+                        "long_name":  "Samuel Edward Hutchinson",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Stevens",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  229731,
+                        "club_position":  "ST",
+                        "long_name":  "Mathew Antony Stevens",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Ogundere",
+                        "overall":  60,
+                        "potential":  68,
+                        "club_jersey_number":  33,
+                        "nationality":  "England",
+                        "player_id":  263938,
+                        "club_position":  "RCB",
+                        "long_name":  "Isaac Ogundere",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Orsi",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  262831,
+                        "club_position":  "SUB",
+                        "long_name":  "Danilo Harley Orsi-Dadomo",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lewis",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  31,
+                        "nationality":  "Wales",
+                        "player_id":  250994,
+                        "club_position":  "CB",
+                        "long_name":  "Joe Cameron Lewis",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Foyo",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "England",
+                        "player_id":  77179,
+                        "club_position":  "RES",
+                        "long_name":  "Osman Sidibay Foyo",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Asiimwe",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  2,
+                        "nationality":  "Uganda",
+                        "player_id":  277343,
+                        "club_position":  "RB",
+                        "long_name":  "Nathan Asiimwe",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Hughes",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  17,
+                        "nationality":  "England",
+                        "player_id":  274069,
+                        "club_position":  "SUB",
+                        "long_name":  "Brodi Hughes",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Sidwell",
+                        "overall":  52,
+                        "potential":  65,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  74126,
+                        "club_position":  "SUB",
+                        "long_name":  "Harry Sidwell",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sasu",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  29,
+                        "nationality":  "Norway",
+                        "player_id":  274228,
+                        "club_position":  "SUB",
+                        "long_name":  "Aron Kwame Jolle Sasu",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Harbottle",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  241699,
+                        "club_position":  "SUB",
+                        "long_name":  "Riley-Jay Harbottle",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Johnson",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  6,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  220956,
+                        "club_position":  "LCB",
+                        "long_name":  "Ryan Anthony Johnson",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Hackford",
+                        "overall":  59,
+                        "potential":  66,
+                        "club_jersey_number":  16,
+                        "nationality":  "England",
+                        "player_id":  260192,
+                        "club_position":  "SUB",
+                        "long_name":  "Antwoine Hackford",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Bauer",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  15,
+                        "nationality":  "Germany",
+                        "player_id":  204496,
+                        "club_position":  "SUB",
+                        "long_name":  "Patrick Bauer",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Sutcliffe",
+                        "overall":  52,
+                        "potential":  64,
+                        "club_jersey_number":  25,
+                        "nationality":  "England",
+                        "player_id":  276244,
+                        "club_position":  "RES",
+                        "long_name":  "Ethan Sutcliffe",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Bishop",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  1,
+                        "nationality":  "England",
+                        "player_id":  237188,
+                        "club_position":  "GK",
+                        "long_name":  "Nathan James Bishop",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Young",
+                        "overall":  51,
+                        "potential":  61,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  74125,
+                        "club_position":  "RES",
+                        "long_name":  "Leo Young",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. McDonnell",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  223827,
+                        "club_position":  "SUB",
+                        "long_name":  "Joseph Patrick McDonnell",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

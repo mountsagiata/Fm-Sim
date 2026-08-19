@@ -1,0 +1,411 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Inter Miami",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  112893
+                 },
+    "players":  [
+                    {
+                        "short_name":  "R. De Paul",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  7,
+                        "nationality":  "Argentina",
+                        "player_id":  212616,
+                        "club_position":  "SUB",
+                        "long_name":  "Rodrigo Javier de Paul",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jordi Alba",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  189332,
+                        "club_position":  "LB",
+                        "long_name":  "Jordi Alba Ramos",
+                        "age":  36,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Messi",
+                        "overall":  86,
+                        "potential":  86,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  158023,
+                        "club_position":  "RS",
+                        "long_name":  "Lionel Andrés Messi Cuccitini",
+                        "age":  38,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Suárez",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  9,
+                        "nationality":  "Uruguay",
+                        "player_id":  176580,
+                        "club_position":  "LS",
+                        "long_name":  "Luis Alberto Suárez Díaz",
+                        "age":  38,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergio Busquets",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  189511,
+                        "club_position":  "RDM",
+                        "long_name":  "Sergio Busquets Burgos",
+                        "age":  36,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Allende",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "Argentina",
+                        "player_id":  266624,
+                        "club_position":  "RM",
+                        "long_name":  "Tadeo Allende",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Segovia",
+                        "overall":  69,
+                        "potential":  79,
+                        "club_jersey_number":  8,
+                        "nationality":  "Venezuela",
+                        "player_id":  260056,
+                        "club_position":  "LM",
+                        "long_name":  "Telasco José Segovia Pérez",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Weigandt",
+                        "overall":  69,
+                        "potential":  73,
+                        "club_jersey_number":  57,
+                        "nationality":  "Argentina",
+                        "player_id":  246263,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcelo Alexis Weigandt",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Rodríguez",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  275343,
+                        "club_position":  "SUB",
+                        "long_name":  "Baltasar Luis Gallego Rodríguez",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fafà Picault",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Haiti",
+                        "player_id":  230991,
+                        "club_position":  "SUB",
+                        "long_name":  "Fabrice Jean-Ian Picault",
+                        "age":  34,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Allen",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  32,
+                        "nationality":  "Greece",
+                        "player_id":  267872,
+                        "club_position":  "LCB",
+                        "long_name":  "Noah James AllenΝόα Τζέιμς Άλεν",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Avilés",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  6,
+                        "nationality":  "Argentina",
+                        "player_id":  274569,
+                        "club_position":  "SUB",
+                        "long_name":  "Tomás Agustín Avilés",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Luján",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  2,
+                        "nationality":  "Argentina",
+                        "player_id":  262339,
+                        "club_position":  "RB",
+                        "long_name":  "Gonzalo Luján Melli",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Silvetti",
+                        "overall":  63,
+                        "potential":  81,
+                        "club_jersey_number":  24,
+                        "nationality":  "Argentina",
+                        "player_id":  73888,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateo Thiago Silvetti",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ruíz",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  41,
+                        "nationality":  "Honduras",
+                        "player_id":  275253,
+                        "club_position":  "SUB",
+                        "long_name":  "David Antonio Ochoa Posas",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Bright",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  42,
+                        "nationality":  "Italy",
+                        "player_id":  71003,
+                        "club_position":  "LDM",
+                        "long_name":  "Yannick Bright",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Fray",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  17,
+                        "nationality":  "United States",
+                        "player_id":  260732,
+                        "club_position":  "SUB",
+                        "long_name":  "Ian Charles Michael Fray",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Obando",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ecuador",
+                        "player_id":  278856,
+                        "club_position":  "SUB",
+                        "long_name":  "Allen Aldair Obando Ayoví",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Falcón",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  37,
+                        "nationality":  "Uruguay",
+                        "player_id":  259298,
+                        "club_position":  "RCB",
+                        "long_name":  "Maximiliano Joel Falcón Picart",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Morales",
+                        "overall":  57,
+                        "potential":  76,
+                        "club_jersey_number":  81,
+                        "nationality":  "United States",
+                        "player_id":  278217,
+                        "club_position":  "SUB",
+                        "long_name":  "Santiago Morales",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hall",
+                        "overall":  57,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "United States",
+                        "player_id":  278495,
+                        "club_position":  "RES",
+                        "long_name":  "Tyler Austin Hall",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Boatwright",
+                        "overall":  57,
+                        "potential":  71,
+                        "club_jersey_number":  62,
+                        "nationality":  "Dominican Republic",
+                        "player_id":  276169,
+                        "club_position":  "RES",
+                        "long_name":  "Israel Ramón Boatwright de la Cruz",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Sailor",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  15,
+                        "nationality":  "United States",
+                        "player_id":  267801,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan Sailor",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Ustari",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Argentina",
+                        "player_id":  167435,
+                        "club_position":  "GK",
+                        "long_name":  "Oscar Alfredo Ustari",
+                        "age":  38,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Yarbrough",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  186998,
+                        "club_position":  "SUB",
+                        "long_name":  "William Paul Yarbrough Story",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ríos Novo",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  34,
+                        "nationality":  "Argentina",
+                        "player_id":  269732,
+                        "club_position":  "RES",
+                        "long_name":  "Rocco Ríos Novo",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

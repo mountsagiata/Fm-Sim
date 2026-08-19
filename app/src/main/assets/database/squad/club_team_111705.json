@@ -1,0 +1,503 @@
+﻿{
+    "metadata":  {
+                     "total_players":  33,
+                     "club_name":  "IF Brommapojkarna",
+                     "league_name":  "Allsvenskan",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  111705
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Martinsson Ngouali",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  5,
+                        "nationality":  "Gabon",
+                        "player_id":  213498,
+                        "club_position":  "RDM",
+                        "long_name":  "Serge-Junior Bertil Nicolas Martinsson Ngouali",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Timossi Andersson",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Sweden",
+                        "player_id":  255700,
+                        "club_position":  "RB",
+                        "long_name":  "Alex Emilio Timossi Andersson",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Lind",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Denmark",
+                        "player_id":  263761,
+                        "club_position":  "LM",
+                        "long_name":  "Victor Stange Lind",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Björklund",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  30,
+                        "nationality":  "Sweden",
+                        "player_id":  73364,
+                        "club_position":  "SUB",
+                        "long_name":  "Lukas Edvin Björklund",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Örqvist",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "Sweden",
+                        "player_id":  267412,
+                        "club_position":  "SUB",
+                        "long_name":  "Dennis Anders Rasmus Örqvist",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Ackermann",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "Sweden",
+                        "player_id":  239084,
+                        "club_position":  "LDM",
+                        "long_name":  "Kevin Ackermann",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Ssewankambo",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  28,
+                        "nationality":  "Sweden",
+                        "player_id":  213670,
+                        "club_position":  "SUB",
+                        "long_name":  "Isak Ssali Ssewankambo",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Bahoui",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  39,
+                        "nationality":  "Sweden",
+                        "player_id":  192126,
+                        "club_position":  "SUB",
+                        "long_name":  "Nabil Bahouiنبيل بهوي",
+                        "age":  34,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Camara",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  20,
+                        "nationality":  "Guinea",
+                        "player_id":  74478,
+                        "club_position":  "SUB",
+                        "long_name":  "Issiaga Camara",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Irandust",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "Syria",
+                        "player_id":  237152,
+                        "club_position":  "RM",
+                        "long_name":  "Daleho Irandust",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Zandén",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  6,
+                        "nationality":  "Sweden",
+                        "player_id":  261098,
+                        "club_position":  "LB",
+                        "long_name":  "Carl Oliver Zandén",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Arrhov",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  31,
+                        "nationality":  "Sweden",
+                        "player_id":  76519,
+                        "club_position":  "CAM",
+                        "long_name":  "Paul Love Arrhov",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Karlsson",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  2,
+                        "nationality":  "Iceland",
+                        "player_id":  70295,
+                        "club_position":  "SUB",
+                        "long_name":  "Hlynur Freyr Karlsson",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Björkander",
+                        "overall":  63,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "Sweden",
+                        "player_id":  225026,
+                        "club_position":  "LCB",
+                        "long_name":  "Nils Eric Roland Björkander",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Alladoh",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Ghana",
+                        "player_id":  76445,
+                        "club_position":  "ST",
+                        "long_name":  "Ezekiel Alladoh",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Jarde",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  38,
+                        "nationality":  "Sweden",
+                        "player_id":  81509,
+                        "club_position":  "RES",
+                        "long_name":  "Oskar Jarde",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Nildén",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  12,
+                        "nationality":  "Sweden",
+                        "player_id":  75661,
+                        "club_position":  "SUB",
+                        "long_name":  "Charlie Nildén",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. El-Hadji Fallou",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  15,
+                        "nationality":  "Senegal",
+                        "player_id":  77693,
+                        "club_position":  "RES",
+                        "long_name":  "Faye El-Hadji Fallou",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Barslund",
+                        "overall":  62,
+                        "potential":  75,
+                        "club_jersey_number":  27,
+                        "nationality":  "Denmark",
+                        "player_id":  271496,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaare Brøckner Barslund",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Tahwildaran",
+                        "overall":  56,
+                        "potential":  68,
+                        "club_jersey_number":  22,
+                        "nationality":  "Sweden",
+                        "player_id":  70143,
+                        "club_position":  "RES",
+                        "long_name":  "Liam Jonatan Tahwildaran",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Botchway",
+                        "overall":  60,
+                        "potential":  75,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ghana",
+                        "player_id":  72405,
+                        "club_position":  "SUB",
+                        "long_name":  "Evans Botchway",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Calisir",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  26,
+                        "nationality":  "Armenia",
+                        "player_id":  198178,
+                        "club_position":  "RES",
+                        "long_name":  "André Jack Calisir",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lohake",
+                        "overall":  55,
+                        "potential":  70,
+                        "club_jersey_number":  35,
+                        "nationality":  "Sweden",
+                        "player_id":  71158,
+                        "club_position":  "RES",
+                        "long_name":  "Alfons Lohake",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Apiiga",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  37,
+                        "nationality":  "Ghana",
+                        "player_id":  81460,
+                        "club_position":  "RES",
+                        "long_name":  "Baba Salifu Apiiga",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Otokwefor",
+                        "overall":  58,
+                        "potential":  75,
+                        "club_jersey_number":  36,
+                        "nationality":  "Nigeria",
+                        "player_id":  81463,
+                        "club_position":  "RES",
+                        "long_name":  "Courage Otokwefor",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Stroud",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  8,
+                        "nationality":  "Sweden",
+                        "player_id":  78723,
+                        "club_position":  "RES",
+                        "long_name":  "Adam Stroud",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Hedström",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  18,
+                        "nationality":  "Sweden",
+                        "player_id":  79137,
+                        "club_position":  "RES",
+                        "long_name":  "Elton Hedström",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Sever",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Sweden",
+                        "player_id":  72085,
+                        "club_position":  "SUB",
+                        "long_name":  "Kamilcan Sever",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Hovland",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "Norway",
+                        "player_id":  186101,
+                        "club_position":  "RCB",
+                        "long_name":  "Even Hovland",
+                        "age":  36,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Isso",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  34,
+                        "nationality":  "Sweden",
+                        "player_id":  78029,
+                        "club_position":  "SUB",
+                        "long_name":  "David Isso",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Cotton",
+                        "overall":  58,
+                        "potential":  72,
+                        "club_jersey_number":  32,
+                        "nationality":  "Sweden",
+                        "player_id":  76521,
+                        "club_position":  "RES",
+                        "long_name":  "Oskar Cotton",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Blažević",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  25,
+                        "nationality":  "Sweden",
+                        "player_id":  202079,
+                        "club_position":  "SUB",
+                        "long_name":  "Davor Blažević",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Cavallius",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  40,
+                        "nationality":  "Sweden",
+                        "player_id":  74621,
+                        "club_position":  "GK",
+                        "long_name":  "Leo Cavallius",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

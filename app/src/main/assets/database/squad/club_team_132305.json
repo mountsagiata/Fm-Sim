@@ -1,0 +1,464 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Dalian Yingbo",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  132305
+                 },
+    "players":  [
+                    {
+                        "short_name":  "I. Alimi",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  4,
+                        "nationality":  "North Macedonia",
+                        "player_id":  276076,
+                        "club_position":  "SUB",
+                        "long_name":  "Isnik AlimiИсник Алими",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Labyad",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "Morocco",
+                        "player_id":  198640,
+                        "club_position":  "LCM",
+                        "long_name":  "Zakaria Labyadزكريا لبيض",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Daniel Penha",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  25,
+                        "nationality":  "Brazil",
+                        "player_id":  264324,
+                        "club_position":  "RM",
+                        "long_name":  "Daniel dos Santos Penha",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Malele",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "Switzerland",
+                        "player_id":  212601,
+                        "club_position":  "LS",
+                        "long_name":  "Cephas Malele",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lü Zhuoyi",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  38,
+                        "nationality":  "China PR",
+                        "player_id":  269579,
+                        "club_position":  "RB",
+                        "long_name":  "Lü Zhuoyi吕焯毅",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Bi Jinhao",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  36,
+                        "nationality":  "China PR",
+                        "player_id":  224677,
+                        "club_position":  "SUB",
+                        "long_name":  "Bi Jinhao毕津浩",
+                        "age":  34,
+                        "positions":  [
+                                          "CB",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Liao Jintao",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  40,
+                        "nationality":  "China PR",
+                        "player_id":  77906,
+                        "club_position":  "RCM",
+                        "long_name":  "Jintao Liao",
+                        "age":  25,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Wen Jiabao",
+                        "overall":  60,
+                        "potential":  62,
+                        "club_jersey_number":  30,
+                        "nationality":  "China PR",
+                        "player_id":  240393,
+                        "club_position":  "LB",
+                        "long_name":  "Wen Jiabao温家宝",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sun Bo",
+                        "overall":  57,
+                        "potential":  57,
+                        "club_jersey_number":  29,
+                        "nationality":  "China PR",
+                        "player_id":  222191,
+                        "club_position":  "SUB",
+                        "long_name":  "Sun Bo孙铂",
+                        "age":  34,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lü Peng",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  21,
+                        "nationality":  "China PR",
+                        "player_id":  222190,
+                        "club_position":  "SUB",
+                        "long_name":  "Lü Peng吕鹏",
+                        "age":  35,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mao Weijie",
+                        "overall":  57,
+                        "potential":  71,
+                        "club_jersey_number":  22,
+                        "nationality":  "China PR",
+                        "player_id":  76498,
+                        "club_position":  "SUB",
+                        "long_name":  "Mao Weijie毛伟杰",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Traore",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  2,
+                        "nationality":  "Mali",
+                        "player_id":  237033,
+                        "club_position":  "RCB",
+                        "long_name":  "Mamadou Sekou Traoré",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Liu Zhurun",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "China PR",
+                        "player_id":  261947,
+                        "club_position":  "LM",
+                        "long_name":  "Liu Zhurun刘祝润",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jin Pengxiang",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  5,
+                        "nationality":  "China PR",
+                        "player_id":  222179,
+                        "club_position":  "SUB",
+                        "long_name":  "Jin Pengxiang晋鹏翔",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Song Yue",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  6,
+                        "nationality":  "China PR",
+                        "player_id":  257936,
+                        "club_position":  "LCB",
+                        "long_name":  "Song Yue宋岳",
+                        "age":  33,
+                        "positions":  [
+                                          "CB",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cao Haiqing",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  33,
+                        "nationality":  "China PR",
+                        "player_id":  222449,
+                        "club_position":  "SUB",
+                        "long_name":  "Cao Haiqing曹海清",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Liu Yi",
+                        "overall":  52,
+                        "potential":  53,
+                        "club_jersey_number":  18,
+                        "nationality":  "China PR",
+                        "player_id":  243108,
+                        "club_position":  "RES",
+                        "long_name":  "Liu Yi刘逸",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yan Peng",
+                        "overall":  56,
+                        "potential":  56,
+                        "club_jersey_number":  9,
+                        "nationality":  "China PR",
+                        "player_id":  241997,
+                        "club_position":  "SUB",
+                        "long_name":  "Yan Peng闫鹏",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Zhu Pengyu",
+                        "overall":  57,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "China PR",
+                        "player_id":  76503,
+                        "club_position":  "RS",
+                        "long_name":  "Zhu Pengyu朱鹏宇",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Huang Shan",
+                        "overall":  48,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "China PR",
+                        "player_id":  76494,
+                        "club_position":  "RES",
+                        "long_name":  "Huang Shan黄山",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yang Mingrui",
+                        "overall":  52,
+                        "potential":  72,
+                        "club_jersey_number":  27,
+                        "nationality":  "China PR",
+                        "player_id":  76499,
+                        "club_position":  "SUB",
+                        "long_name":  "Yang Mingrui杨铭锐",
+                        "age":  18,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cui Qi",
+                        "overall":  52,
+                        "potential":  55,
+                        "club_jersey_number":  31,
+                        "nationality":  "China PR",
+                        "player_id":  261919,
+                        "club_position":  "SUB",
+                        "long_name":  "Cui Qi崔麒",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Zhao Xuebin",
+                        "overall":  51,
+                        "potential":  51,
+                        "club_jersey_number":  8,
+                        "nationality":  "China PR",
+                        "player_id":  222195,
+                        "club_position":  "SUB",
+                        "long_name":  "Zhao Xuebin赵学斌",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yan Yihan",
+                        "overall":  47,
+                        "potential":  61,
+                        "club_jersey_number":  14,
+                        "nationality":  "China PR",
+                        "player_id":  79986,
+                        "club_position":  "RES",
+                        "long_name":  "Yihan Yan",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Zhao Jia\u0026amp;apos;nan",
+                        "overall":  49,
+                        "potential":  54,
+                        "club_jersey_number":  3,
+                        "nationality":  "China PR",
+                        "player_id":  272814,
+                        "club_position":  "RES",
+                        "long_name":  "Zhao Jianan赵佳楠",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yu Zhuowei",
+                        "overall":  47,
+                        "potential":  64,
+                        "club_jersey_number":  42,
+                        "nationality":  "China PR",
+                        "player_id":  76506,
+                        "club_position":  "RES",
+                        "long_name":  "Yu Zhuowei于卓威",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Peng Shunjie",
+                        "overall":  47,
+                        "potential":  64,
+                        "club_jersey_number":  24,
+                        "nationality":  "China PR",
+                        "player_id":  79960,
+                        "club_position":  "RES",
+                        "long_name":  "Shunjie Peng",
+                        "age":  17,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sui Weijie",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  17,
+                        "nationality":  "China PR",
+                        "player_id":  226182,
+                        "club_position":  "GK",
+                        "long_name":  "Sui Weijie隋维杰",
+                        "age":  42,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Huang Zihao",
+                        "overall":  54,
+                        "potential":  58,
+                        "club_jersey_number":  26,
+                        "nationality":  "China PR",
+                        "player_id":  251112,
+                        "club_position":  "SUB",
+                        "long_name":  "Huang Zihao黄子豪",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ge Peng",
+                        "overall":  48,
+                        "potential":  54,
+                        "club_jersey_number":  1,
+                        "nationality":  "China PR",
+                        "player_id":  76490,
+                        "club_position":  "RES",
+                        "long_name":  "Peng Ge",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,459 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Dynamo Kyiv",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  101047
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Shaparenko",
+                        "overall":  78,
+                        "potential":  79,
+                        "club_jersey_number":  10,
+                        "nationality":  "Ukraine",
+                        "player_id":  244374,
+                        "club_position":  "CAM",
+                        "long_name":  "Mykola ShaparenkoШапаренко Микола Володимирович",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Brazhko",
+                        "overall":  75,
+                        "potential":  83,
+                        "club_jersey_number":  6,
+                        "nationality":  "Ukraine",
+                        "player_id":  277439,
+                        "club_position":  "SUB",
+                        "long_name":  "Volodymyr BrazhkoБражко Володимир Володимирович",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Buyalskyi",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ukraine",
+                        "player_id":  244373,
+                        "club_position":  "SUB",
+                        "long_name":  "Vitaliy BuyalskyiБуяльський Віталій Казимирович",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Pikhalyonok",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Ukraine",
+                        "player_id":  243256,
+                        "club_position":  "RDM",
+                        "long_name":  "Oleksandr PikhalyonokПіхальонок Олександр Олександрович",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Yarmolenko",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ukraine",
+                        "player_id":  194794,
+                        "club_position":  "RM",
+                        "long_name":  "Andriy YarmolenkoЯрмоленко Андрій Миколайович",
+                        "age":  35,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Karavaiev",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "Ukraine",
+                        "player_id":  237109,
+                        "club_position":  "SUB",
+                        "long_name":  "Oleksandr KaravaevКараваєв Олександр Олександрович",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mykhailenko",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  91,
+                        "nationality":  "Ukraine",
+                        "player_id":  74069,
+                        "club_position":  "LDM",
+                        "long_name":  "Mykola MykhaylenkoМихайленко Микола Миколайович",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Dubinchak",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  44,
+                        "nationality":  "Ukraine",
+                        "player_id":  266755,
+                        "club_position":  "LB",
+                        "long_name":  "Vladyslav DubinchakДубінчак Владислав Юрійович",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Yatsyk",
+                        "overall":  69,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Ukraine",
+                        "player_id":  271544,
+                        "club_position":  "SUB",
+                        "long_name":  "Oleksandr YatsykЯцик Олександр Олександрович",
+                        "age":  22,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Vivcharenko",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  2,
+                        "nationality":  "Ukraine",
+                        "player_id":  271542,
+                        "club_position":  "SUB",
+                        "long_name":  "Kostiantyn VivcharenkoВівчаренко Костянтин Русланович",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Bragaru",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  45,
+                        "nationality":  "Ukraine",
+                        "player_id":  72669,
+                        "club_position":  "SUB",
+                        "long_name":  "Maksym BragaruБрагару Максим Ігорович",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Rubchynskyi",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  15,
+                        "nationality":  "Ukraine",
+                        "player_id":  73094,
+                        "club_position":  "SUB",
+                        "long_name":  "Valentyn RubchynskyiРубчинський Валентин Миколайович",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Tymchyk",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "Ukraine",
+                        "player_id":  258308,
+                        "club_position":  "RB",
+                        "long_name":  "Oleksandr TymchykТимчик Олександр Васильович",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Torres",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Colombia",
+                        "player_id":  278157,
+                        "club_position":  "RES",
+                        "long_name":  "Ángel Yesid Torres Quiñones",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Voloshyn",
+                        "overall":  70,
+                        "potential":  80,
+                        "club_jersey_number":  9,
+                        "nationality":  "Ukraine",
+                        "player_id":  274726,
+                        "club_position":  "SUB",
+                        "long_name":  "Nazar VoloshynВолошин Назар Ігорович",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Guerrero",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  39,
+                        "nationality":  "Panama",
+                        "player_id":  74978,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduardo Antonio Guerrero Locano",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Popov",
+                        "overall":  75,
+                        "potential":  79,
+                        "club_jersey_number":  4,
+                        "nationality":  "Ukraine",
+                        "player_id":  245132,
+                        "club_position":  "RCB",
+                        "long_name":  "Denys PopovПопов Денис Юрійович",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ramírez",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  37,
+                        "nationality":  "Venezuela",
+                        "player_id":  259252,
+                        "club_position":  "RES",
+                        "long_name":  "Eric Kleybel Ramírez Matheus",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Kabaev",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  22,
+                        "nationality":  "Ukraine",
+                        "player_id":  274724,
+                        "club_position":  "LM",
+                        "long_name":  "Vladyslav KabaevКабаєв Владислав Олександрович",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Mykhavko",
+                        "overall":  70,
+                        "potential":  83,
+                        "club_jersey_number":  32,
+                        "nationality":  "Ukraine",
+                        "player_id":  71330,
+                        "club_position":  "LCB",
+                        "long_name":  "Taras MykhavkoМихавко Тарас Васильович",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ponomarenko",
+                        "overall":  65,
+                        "potential":  82,
+                        "club_jersey_number":  99,
+                        "nationality":  "Ukraine",
+                        "player_id":  71066,
+                        "club_position":  "SUB",
+                        "long_name":  "Matviy PonomarenkoПономаренко Матвій Русланович",
+                        "age":  19,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Blănuță",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  77,
+                        "nationality":  "Romania",
+                        "player_id":  271704,
+                        "club_position":  "ST",
+                        "long_name":  "Vladislav Blănuță",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Bilovar",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  40,
+                        "nationality":  "Ukraine",
+                        "player_id":  277442,
+                        "club_position":  "SUB",
+                        "long_name":  "Bilovar Kristian RuslanovychБіловар Крістіан Русланович",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Diallo",
+                        "overall":  63,
+                        "potential":  71,
+                        "club_jersey_number":  30,
+                        "nationality":  "Senegal",
+                        "player_id":  274728,
+                        "club_position":  "RES",
+                        "long_name":  "Samba Diallo",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Thiaré",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  66,
+                        "nationality":  "Senegal",
+                        "player_id":  278569,
+                        "club_position":  "RES",
+                        "long_name":  "Aliou Thiaré",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Neshcheret",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  35,
+                        "nationality":  "Ukraine",
+                        "player_id":  252789,
+                        "club_position":  "GK",
+                        "long_name":  "Ruslan NeshcheretНещерет Руслан Олексійович",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Surkis",
+                        "overall":  54,
+                        "potential":  66,
+                        "club_jersey_number":  71,
+                        "nationality":  "Ukraine",
+                        "player_id":  80381,
+                        "club_position":  "RES",
+                        "long_name":  "Vyacheslav Surkis",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Morgun",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  51,
+                        "nationality":  "Ukraine",
+                        "player_id":  271546,
+                        "club_position":  "RES",
+                        "long_name":  "Valentyn MorgunМоргун Валентин Олегович",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ignatenko",
+                        "overall":  60,
+                        "potential":  69,
+                        "club_jersey_number":  74,
+                        "nationality":  "Ukraine",
+                        "player_id":  274730,
+                        "club_position":  "SUB",
+                        "long_name":  "Denys IgnatenkoІгнатенко Денис Володимирович",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

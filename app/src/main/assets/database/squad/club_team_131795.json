@@ -1,0 +1,399 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "San Antonio Bulo Bulo",
+                     "league_name":  "División de Fútbol Profesional",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  131795
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Terrazas",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "Bolivia",
+                        "player_id":  259797,
+                        "club_position":  "LCM",
+                        "long_name":  "Adalid Terrazas Abasto",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Suárez",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  33,
+                        "nationality":  "Venezuela",
+                        "player_id":  234061,
+                        "club_position":  "RES",
+                        "long_name":  "Carlos Luis Suárez Mendoza",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Alonso",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Uruguay",
+                        "player_id":  260739,
+                        "club_position":  "SUB",
+                        "long_name":  "Máximo David Alonso Fontes",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Sánchez",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "Bolivia",
+                        "player_id":  231574,
+                        "club_position":  "SUB",
+                        "long_name":  "Erwin Junior Sánchez Paniagua",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Rodríguez",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  24,
+                        "nationality":  "Bolivia",
+                        "player_id":  248863,
+                        "club_position":  "SUB",
+                        "long_name":  "Hernán Luis Rodríguez",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Herrera",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  7,
+                        "nationality":  "Bolivia",
+                        "player_id":  254064,
+                        "club_position":  "RCM",
+                        "long_name":  "Julio Héctor Herrera Farel",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ávalos",
+                        "overall":  63,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "Paraguay",
+                        "player_id":  80765,
+                        "club_position":  "SUB",
+                        "long_name":  "Ariel Ávalos",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Flores",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  4,
+                        "nationality":  "Bolivia",
+                        "player_id":  231335,
+                        "club_position":  "LB",
+                        "long_name":  "Jorge Enrique Flores Yrahory",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Arce",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Bolivia",
+                        "player_id":  260770,
+                        "club_position":  "SUB",
+                        "long_name":  "Santiago Arce Añazgo",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Montenegro",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  30,
+                        "nationality":  "Bolivia",
+                        "player_id":  254943,
+                        "club_position":  "RM",
+                        "long_name":  "Juan Carlos Montenegro Sedamano",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Vásquez",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  9,
+                        "nationality":  "Colombia",
+                        "player_id":  273120,
+                        "club_position":  "RS",
+                        "long_name":  "Anthony Vásquez Arcila",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Justiniano",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Bolivia",
+                        "player_id":  255896,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonardo Justiniano Valverde",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Vargas",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  18,
+                        "nationality":  "Bolivia",
+                        "player_id":  226044,
+                        "club_position":  "LS",
+                        "long_name":  "Rodrigo Mauricio Vargas Castillo",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Mendoza",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  34,
+                        "nationality":  "Bolivia",
+                        "player_id":  75358,
+                        "club_position":  "LM",
+                        "long_name":  "Gustavo Mendoza Salvatierra",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mérida",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  13,
+                        "nationality":  "Bolivia",
+                        "player_id":  75365,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Merida Gutierrez",
+                        "age":  17,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Saucedo",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  22,
+                        "nationality":  "Bolivia",
+                        "player_id":  254961,
+                        "club_position":  "RB",
+                        "long_name":  "Widen Saucedo Candia",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Vaca",
+                        "overall":  56,
+                        "potential":  65,
+                        "club_jersey_number":  40,
+                        "nationality":  "Bolivia",
+                        "player_id":  267989,
+                        "club_position":  "RES",
+                        "long_name":  "Angel Vaca Pesoa",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Yucra",
+                        "overall":  52,
+                        "potential":  58,
+                        "club_jersey_number":  29,
+                        "nationality":  "Bolivia",
+                        "player_id":  78774,
+                        "club_position":  "SUB",
+                        "long_name":  "Cesar Milton Yucra Reyes",
+                        "age":  22,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. de Lima",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  91,
+                        "nationality":  "Bolivia",
+                        "player_id":  75362,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcelo De Lima Castro",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Barbosa",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  3,
+                        "nationality":  "Bolivia",
+                        "player_id":  71091,
+                        "club_position":  "RCB",
+                        "long_name":  "Luis René Barbosa Quiroz",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Villarroel",
+                        "overall":  55,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "Bolivia",
+                        "player_id":  78189,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastián Villarroel Rojas",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Valencia",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  27,
+                        "nationality":  "Colombia",
+                        "player_id":  234919,
+                        "club_position":  "LCB",
+                        "long_name":  "Cristian Camilo Valencia Cifuentes",
+                        "age":  33,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Peñarrieta",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  31,
+                        "nationality":  "Bolivia",
+                        "player_id":  228739,
+                        "club_position":  "GK",
+                        "long_name":  "José Feliciano Peñarrieta Flores",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Salvatierra",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  12,
+                        "nationality":  "Bolivia",
+                        "player_id":  254194,
+                        "club_position":  "SUB",
+                        "long_name":  "Gustavo Salvatierra García",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Saracho",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  231167,
+                        "club_position":  "RES",
+                        "long_name":  "Rodrigo Emanuel Saracho",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Giossa",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  21,
+                        "nationality":  "Uruguay",
+                        "player_id":  80009,
+                        "club_position":  "SUB",
+                        "long_name":  "Luca Giossa",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

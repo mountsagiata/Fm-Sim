@@ -1,0 +1,474 @@
+﻿{
+    "metadata":  {
+                     "total_players":  31,
+                     "club_name":  "HJK Helsinki",
+                     "league_name":  "Veikkausliiga",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  100325
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Ring",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Finland",
+                        "player_id":  205895,
+                        "club_position":  "CAM",
+                        "long_name":  "Alexander Ring",
+                        "age":  34,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pukki",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  20,
+                        "nationality":  "Finland",
+                        "player_id":  190362,
+                        "club_position":  "ST",
+                        "long_name":  "Teemu Eino Antero Pukki",
+                        "age":  35,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Lingman",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  10,
+                        "nationality":  "Finland",
+                        "player_id":  234294,
+                        "club_position":  "RDM",
+                        "long_name":  "Lucas Lingman",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kanellopoulos",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  8,
+                        "nationality":  "Greece",
+                        "player_id":  273712,
+                        "club_position":  "SUB",
+                        "long_name":  "Georgios KanellopoulosΓεώργιος Κανελλόπουλος",
+                        "age":  25,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Hostikka",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  7,
+                        "nationality":  "Finland",
+                        "player_id":  247286,
+                        "club_position":  "LM",
+                        "long_name":  "Santeri Hostikka",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Karashima",
+                        "overall":  61,
+                        "potential":  62,
+                        "club_jersey_number":  41,
+                        "nationality":  "Japan",
+                        "player_id":  80655,
+                        "club_position":  "SUB",
+                        "long_name":  "Yukiyoshi Karashima",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kouassivi-Benissan",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  27,
+                        "nationality":  "Finland",
+                        "player_id":  242149,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Kouassivi-Benissan",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Michel",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  99,
+                        "nationality":  "United States",
+                        "player_id":  247354,
+                        "club_position":  "RM",
+                        "long_name":  "Benjamin Stanley Michel",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mentu",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  21,
+                        "nationality":  "Finland",
+                        "player_id":  75919,
+                        "club_position":  "LDM",
+                        "long_name":  "Pyry Mentu",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Antzoulas",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  3,
+                        "nationality":  "Greece",
+                        "player_id":  73722,
+                        "club_position":  "RCB",
+                        "long_name":  "Georgios AntzoulasΓεώργιος Αντζουλάς",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kallinen",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  15,
+                        "nationality":  "Finland",
+                        "player_id":  75795,
+                        "club_position":  "SUB",
+                        "long_name":  "Jere Kallinen",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Vuorinen",
+                        "overall":  57,
+                        "potential":  70,
+                        "club_jersey_number":  91,
+                        "nationality":  "Finland",
+                        "player_id":  76414,
+                        "club_position":  "RES",
+                        "long_name":  "Ville Vuorinen",
+                        "age":  20,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Besuijen",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "Netherlands",
+                        "player_id":  258389,
+                        "club_position":  "SUB",
+                        "long_name":  "Vicente Andrés Felipe Federico Besuijen",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Möller",
+                        "overall":  60,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Finland",
+                        "player_id":  275331,
+                        "club_position":  "SUB",
+                        "long_name":  "Liam Möller",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Simojoki",
+                        "overall":  60,
+                        "potential":  74,
+                        "club_jersey_number":  13,
+                        "nationality":  "Finland",
+                        "player_id":  76413,
+                        "club_position":  "LB",
+                        "long_name":  "Kaius Simojoki",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ylitolva",
+                        "overall":  60,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Finland",
+                        "player_id":  266676,
+                        "club_position":  "RB",
+                        "long_name":  "Miska Ylitolva",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. O\u0026amp;apos;Shaughnessy",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  5,
+                        "nationality":  "Finland",
+                        "player_id":  221486,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Michael O\u0026amp;apos;Shaughnessy",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ezeh",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  19,
+                        "nationality":  "Finland",
+                        "player_id":  275184,
+                        "club_position":  "SUB",
+                        "long_name":  "David Ezeh",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Sidibé",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  12,
+                        "nationality":  "Senegal",
+                        "player_id":  77954,
+                        "club_position":  "SUB",
+                        "long_name":  "Cheikh Tidiane Sidibé",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Tikkanen",
+                        "overall":  63,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "Finland",
+                        "player_id":  75794,
+                        "club_position":  "LCB",
+                        "long_name":  "Ville Tikkanen",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Lyons-Foster",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  243848,
+                        "club_position":  "SUB",
+                        "long_name":  "Brooklyn Lyons-Foster",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Soiniemi",
+                        "overall":  54,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Finland",
+                        "player_id":  73766,
+                        "club_position":  "RES",
+                        "long_name":  "Aaro Soiniemi",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Baranov",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  95,
+                        "nationality":  "Finland",
+                        "player_id":  73727,
+                        "club_position":  "RES",
+                        "long_name":  "Stanislav BaranovБаранов Станислав",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Mero",
+                        "overall":  55,
+                        "potential":  70,
+                        "club_jersey_number":  97,
+                        "nationality":  "Finland",
+                        "player_id":  78895,
+                        "club_position":  "RES",
+                        "long_name":  "Toivo Mero",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Bogićević",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  31,
+                        "nationality":  "Switzerland",
+                        "player_id":  80485,
+                        "club_position":  "SUB",
+                        "long_name":  "Mihailo Bogićević",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Boamah",
+                        "overall":  58,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Finland",
+                        "player_id":  71943,
+                        "club_position":  "RES",
+                        "long_name":  "Michael Boamah",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lietsa",
+                        "overall":  54,
+                        "potential":  62,
+                        "club_jersey_number":  98,
+                        "nationality":  "Finland",
+                        "player_id":  79256,
+                        "club_position":  "RES",
+                        "long_name":  "Johan Alexander Lietsa",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Öst",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  1,
+                        "nationality":  "Finland",
+                        "player_id":  272646,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesse Öst",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ramula",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  30,
+                        "nationality":  "Finland",
+                        "player_id":  77621,
+                        "club_position":  "RES",
+                        "long_name":  "Alex Ramula",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Henriksson",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Finland",
+                        "player_id":  262076,
+                        "club_position":  "RES",
+                        "long_name":  "Elmo Henriksson",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ricardo Friedrich",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  32,
+                        "nationality":  "Brazil",
+                        "player_id":  242159,
+                        "club_position":  "GK",
+                        "long_name":  "Ricardo Henrique Schuck Friedrich",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

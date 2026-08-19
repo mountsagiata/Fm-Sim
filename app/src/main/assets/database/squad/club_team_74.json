@@ -1,0 +1,324 @@
+﻿{
+    "metadata":  {
+                     "total_players":  21,
+                     "club_name":  "Stade Rennais FC",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  74
+                 },
+    "players":  [
+                    {
+                        "short_name":  "P. Frankowski",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  95,
+                        "nationality":  "Poland",
+                        "player_id":  212138,
+                        "club_position":  "RB",
+                        "long_name":  "Przemysław Frankowski",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Fofana",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  8,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  216320,
+                        "club_position":  "LCM",
+                        "long_name":  "Seko Mohamed Fofana",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Blas",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  231102,
+                        "club_position":  "SUB",
+                        "long_name":  "Ludovic Blas",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Camara",
+                        "overall":  78,
+                        "potential":  79,
+                        "club_jersey_number":  45,
+                        "nationality":  "France",
+                        "player_id":  243631,
+                        "club_position":  "SUB",
+                        "long_name":  "Mahdi Camara",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Rongier",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  223874,
+                        "club_position":  "RCM",
+                        "long_name":  "Valentin Rongier",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Q. Merlin",
+                        "overall":  76,
+                        "potential":  82,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  261616,
+                        "club_position":  "LB",
+                        "long_name":  "Quentin Merlin",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Hateboer",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  33,
+                        "nationality":  "Netherlands",
+                        "player_id":  220093,
+                        "club_position":  "SUB",
+                        "long_name":  "Hans Hateboer",
+                        "age":  31,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Embolo",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  7,
+                        "nationality":  "Switzerland",
+                        "player_id":  222357,
+                        "club_position":  "SUB",
+                        "long_name":  "Breel Donald Embolo",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kamara",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Finland",
+                        "player_id":  213654,
+                        "club_position":  "SUB",
+                        "long_name":  "Glen Adjei Kamara",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Al Tamari",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Jordan",
+                        "player_id":  259191,
+                        "club_position":  "RS",
+                        "long_name":  "Mousa Mohammad Mousa Sulaiman Al Tamariموسى محمد موسى سليمان",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Cissé",
+                        "overall":  73,
+                        "potential":  84,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  71114,
+                        "club_position":  "CDM",
+                        "long_name":  "Djaoui Cissé",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Lepaul",
+                        "overall":  75,
+                        "potential":  80,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  70415,
+                        "club_position":  "LS",
+                        "long_name":  "Estéban Lepaul",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Brassier",
+                        "overall":  76,
+                        "potential":  80,
+                        "club_jersey_number":  3,
+                        "nationality":  "France",
+                        "player_id":  251380,
+                        "club_position":  "SUB",
+                        "long_name":  "Lilian Brassier",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Seidu",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  36,
+                        "nationality":  "Ghana",
+                        "player_id":  257946,
+                        "club_position":  "SUB",
+                        "long_name":  "Alidu Seidu",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Nagida",
+                        "overall":  66,
+                        "potential":  80,
+                        "club_jersey_number":  18,
+                        "nationality":  "Cameroon",
+                        "player_id":  279557,
+                        "club_position":  "SUB",
+                        "long_name":  "Mahamadou Aboubakar Nagida",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rouault",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  24,
+                        "nationality":  "France",
+                        "player_id":  252512,
+                        "club_position":  "LCB",
+                        "long_name":  "Anthony Rouault",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Jacquet",
+                        "overall":  75,
+                        "potential":  84,
+                        "club_jersey_number":  97,
+                        "nationality":  "France",
+                        "player_id":  278903,
+                        "club_position":  "CB",
+                        "long_name":  "Jérémy Jacquet",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Meïté",
+                        "overall":  70,
+                        "potential":  83,
+                        "club_jersey_number":  39,
+                        "nationality":  "France",
+                        "player_id":  75598,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohamed Kader Meïté",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ait Boudlal",
+                        "overall":  68,
+                        "potential":  81,
+                        "club_jersey_number":  48,
+                        "nationality":  "Morocco",
+                        "player_id":  73192,
+                        "club_position":  "RCB",
+                        "long_name":  "Abdelhamid Ait Boudlalعبد الحميد أيت بودلال",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Samba",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  204883,
+                        "club_position":  "GK",
+                        "long_name":  "Brice Lauriche Samba",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Gallon",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  214680,
+                        "club_position":  "SUB",
+                        "long_name":  "Gauthier Gallon",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

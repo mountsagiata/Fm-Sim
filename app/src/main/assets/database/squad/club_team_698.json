@@ -1,0 +1,466 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Houston Dynamo",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  698
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Lingr",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Czechia",
+                        "player_id":  258208,
+                        "club_position":  "LM",
+                        "long_name":  "Ondřej Lingr",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bassi",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "Morocco",
+                        "player_id":  238504,
+                        "club_position":  "CAM",
+                        "long_name":  "Amine Bassiأمين باسي",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Holmes",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "United States",
+                        "player_id":  213948,
+                        "club_position":  "SUB",
+                        "long_name":  "Duane Octavious Holmes",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ponce",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  220715,
+                        "club_position":  "ST",
+                        "long_name":  "Ezequiel Ponce Martínez",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Dorsey",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  246849,
+                        "club_position":  "RB",
+                        "long_name":  "Griffin Dorsey",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Júnior Urso",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  30,
+                        "nationality":  "Brazil",
+                        "player_id":  206171,
+                        "club_position":  "RDM",
+                        "long_name":  "Ocimar de Almeida Júnior",
+                        "age":  36,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. McGlynn",
+                        "overall":  71,
+                        "potential":  81,
+                        "club_jersey_number":  21,
+                        "nationality":  "United States",
+                        "player_id":  260479,
+                        "club_position":  "RM",
+                        "long_name":  "Jack Ryan McGlynn",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "CDM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Sviatchenko",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  28,
+                        "nationality":  "Denmark",
+                        "player_id":  199745,
+                        "club_position":  "RCB",
+                        "long_name":  "Erik Sviatchenko",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Artur",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  234122,
+                        "club_position":  "LDM",
+                        "long_name":  "José Artur de Lima Júnior",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kowalczyk",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Poland",
+                        "player_id":  238775,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Kowalczyk",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Escobar",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  2,
+                        "nationality":  "Argentina",
+                        "player_id":  222587,
+                        "club_position":  "LB",
+                        "long_name":  "Franco Nicolás Escobar",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergio Santos",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  18,
+                        "nationality":  "Brazil",
+                        "player_id":  226495,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergio Henrique Santos Gomes",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Felipe Andrade",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  36,
+                        "nationality":  "Brazil",
+                        "player_id":  78686,
+                        "club_position":  "SUB",
+                        "long_name":  "Felipe de Andrade Vieira",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Ennali",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Germany",
+                        "player_id":  263068,
+                        "club_position":  "RES",
+                        "long_name":  "Lawrence Ennali",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Steres",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "United States",
+                        "player_id":  209761,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Steres",
+                        "age":  34,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Antônio Carlos",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Brazil",
+                        "player_id":  209597,
+                        "club_position":  "SUB",
+                        "long_name":  "Antônio Carlos Cunha Capocasali Junior",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Raines",
+                        "overall":  58,
+                        "potential":  75,
+                        "club_jersey_number":  35,
+                        "nationality":  "United States",
+                        "player_id":  269005,
+                        "club_position":  "RES",
+                        "long_name":  "Brooklyn Sigel Raines",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Quiñónes",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Colombia",
+                        "player_id":  270955,
+                        "club_position":  "RES",
+                        "long_name":  "Nelson Giovany Quiñónes Iturre",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Gyamfi",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  19,
+                        "nationality":  "Ghana",
+                        "player_id":  73768,
+                        "club_position":  "RES",
+                        "long_name":  "Stephen Annor Gyamfi",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "É. Dueñas",
+                        "overall":  59,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "Mexico",
+                        "player_id":  262209,
+                        "club_position":  "SUB",
+                        "long_name":  "Érik Dueñas",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ortiz",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  22,
+                        "nationality":  "Colombia",
+                        "player_id":  258804,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Antonio Ortiz Cabezas",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Halliday",
+                        "overall":  58,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "United States",
+                        "player_id":  262379,
+                        "club_position":  "RES",
+                        "long_name":  "Michael Anthony Halliday",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Segal",
+                        "overall":  57,
+                        "potential":  64,
+                        "club_jersey_number":  17,
+                        "nationality":  "United States",
+                        "player_id":  273553,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel North Segal",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Exon Arzú",
+                        "overall":  56,
+                        "potential":  67,
+                        "club_jersey_number":  33,
+                        "nationality":  "Honduras",
+                        "player_id":  74620,
+                        "club_position":  "SUB",
+                        "long_name":  "Exon Saturnino Arzú Suazo",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Awodesu",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  76912,
+                        "club_position":  "LCB",
+                        "long_name":  "Obafemi Fela Awodesu",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bartlow",
+                        "overall":  64,
+                        "potential":  66,
+                        "club_jersey_number":  4,
+                        "nationality":  "United States",
+                        "player_id":  261763,
+                        "club_position":  "SUB",
+                        "long_name":  "Ethan Bartlow",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bond",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  31,
+                        "nationality":  "England",
+                        "player_id":  197928,
+                        "club_position":  "RES",
+                        "long_name":  "Jonathan Henry Bond",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Maurer",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  1,
+                        "nationality":  "United States",
+                        "player_id":  202570,
+                        "club_position":  "SUB",
+                        "long_name":  "James Maurer",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Tarbell",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  232082,
+                        "club_position":  "GK",
+                        "long_name":  "Andrew Tarbell",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Gillingham",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  26,
+                        "nationality":  "United States",
+                        "player_id":  77822,
+                        "club_position":  "RES",
+                        "long_name":  "Blake Gillingham",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

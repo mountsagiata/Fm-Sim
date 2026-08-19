@@ -1,0 +1,435 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "FC Cincinnati",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  113149
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Evander",
+                        "overall":  79,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  234505,
+                        "club_position":  "RAM",
+                        "long_name":  "Evander da Silva Ferreira",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Bucha",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "Czechia",
+                        "player_id":  244788,
+                        "club_position":  "RCM",
+                        "long_name":  "Pavel Bucha",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Nwobodo",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Nigeria",
+                        "player_id":  258881,
+                        "club_position":  "SUB",
+                        "long_name":  "Obinna Emmanuel Nwobodo",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Kubo",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "Japan",
+                        "player_id":  217242,
+                        "club_position":  "LAM",
+                        "long_name":  "Yuya Kubo久保 裕也",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Orellano",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  246423,
+                        "club_position":  "LM",
+                        "long_name":  "Luca Nicolás Orellano",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RW",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Engel",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  29,
+                        "nationality":  "Denmark",
+                        "player_id":  260842,
+                        "club_position":  "SUB",
+                        "long_name":  "Lukas Ahlefeld Engel",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Denkey",
+                        "overall":  77,
+                        "potential":  81,
+                        "club_jersey_number":  9,
+                        "nationality":  "Togo",
+                        "player_id":  237254,
+                        "club_position":  "ST",
+                        "long_name":  "Steeve Kévin Denkey Ahoueke",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Marczuk",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  15,
+                        "nationality":  "Poland",
+                        "player_id":  276066,
+                        "club_position":  "RM",
+                        "long_name":  "Dominik Marczuk",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Brenner",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  8,
+                        "nationality":  "Brazil",
+                        "player_id":  240332,
+                        "club_position":  "SUB",
+                        "long_name":  "Brenner Souza da Silva",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kamara",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  85,
+                        "nationality":  "Sierra Leone",
+                        "player_id":  176048,
+                        "club_position":  "SUB",
+                        "long_name":  "Kei Ansu Kamara",
+                        "age":  40,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Smith",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  14,
+                        "nationality":  "Australia",
+                        "player_id":  210389,
+                        "club_position":  "SUB",
+                        "long_name":  "Bradley Shaun Smith",
+                        "age":  31,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Robinson",
+                        "overall":  73,
+                        "potential":  75,
+                        "club_jersey_number":  12,
+                        "nationality":  "United States",
+                        "player_id":  237255,
+                        "club_position":  "RCB",
+                        "long_name":  "Miles Gordon Robinson",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Powell",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  2,
+                        "nationality":  "Jamaica",
+                        "player_id":  216346,
+                        "club_position":  "SUB",
+                        "long_name":  "Alvas Elvis Powell",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Echenique",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  66,
+                        "nationality":  "Venezuela",
+                        "player_id":  275515,
+                        "club_position":  "SUB",
+                        "long_name":  "Ender Jesús Echenique Peña",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tah Anunga",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  27,
+                        "nationality":  "Cameroon",
+                        "player_id":  255177,
+                        "club_position":  "LCM",
+                        "long_name":  "Brian Anunga Tah",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hadebe",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "Zimbabwe",
+                        "player_id":  239438,
+                        "club_position":  "SUB",
+                        "long_name":  "Teenage Lingani Hadebe",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jabbari",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  26,
+                        "nationality":  "Morocco",
+                        "player_id":  258620,
+                        "club_position":  "SUB",
+                        "long_name":  "Ayoub Jabbariأيوب جباري",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Hagglund",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  4,
+                        "nationality":  "United States",
+                        "player_id":  221680,
+                        "club_position":  "CB",
+                        "long_name":  "Nicholas Stuart Hagglund",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Miazga",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  21,
+                        "nationality":  "United States",
+                        "player_id":  215565,
+                        "club_position":  "SUB",
+                        "long_name":  "Matthew Miazga",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Flores",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  3,
+                        "nationality":  "Paraguay",
+                        "player_id":  268610,
+                        "club_position":  "LCB",
+                        "long_name":  "Gilberto Ivan Flores Melgarejo",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Valenzuela",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "United States",
+                        "player_id":  275602,
+                        "club_position":  "RES",
+                        "long_name":  "Gerardo Valenzuela",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ș. Chirilă",
+                        "overall":  54,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Romania",
+                        "player_id":  77517,
+                        "club_position":  "RES",
+                        "long_name":  "Ștefan Chirilă",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Jimenez",
+                        "overall":  49,
+                        "potential":  70,
+                        "club_jersey_number":  37,
+                        "nationality":  "United States",
+                        "player_id":  274542,
+                        "club_position":  "RES",
+                        "long_name":  "Stiven Jimenez",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mboma Dem",
+                        "overall":  49,
+                        "potential":  57,
+                        "club_jersey_number":  35,
+                        "nationality":  "France",
+                        "player_id":  79420,
+                        "club_position":  "RES",
+                        "long_name":  "Kenji Mboma Dem",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kann",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "United States",
+                        "player_id":  213719,
+                        "club_position":  "SUB",
+                        "long_name":  "Alec Kann",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Louro",
+                        "overall":  59,
+                        "potential":  61,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  237399,
+                        "club_position":  "SUB",
+                        "long_name":  "Evan Michael Louro",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Celentano",
+                        "overall":  72,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "United States",
+                        "player_id":  266382,
+                        "club_position":  "GK",
+                        "long_name":  "Roman Marcello Celentano",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Walters",
+                        "overall":  51,
+                        "potential":  65,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  274269,
+                        "club_position":  "RES",
+                        "long_name":  "Paul Walters",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

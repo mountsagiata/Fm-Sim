@@ -1,0 +1,445 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Rayo Vallecano",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  480
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Pedro Díaz",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  4,
+                        "nationality":  "Spain",
+                        "player_id":  236492,
+                        "club_position":  "CAM",
+                        "long_name":  "Pedro Díaz Fanjul",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Unai López",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  222390,
+                        "club_position":  "LDM",
+                        "long_name":  "Unai López Cabrera",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rațiu",
+                        "overall":  79,
+                        "potential":  80,
+                        "club_jersey_number":  2,
+                        "nationality":  "Romania",
+                        "player_id":  248165,
+                        "club_position":  "RB",
+                        "long_name":  "Andrei Florin Rațiu",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Isi",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  7,
+                        "nationality":  "Spain",
+                        "player_id":  232498,
+                        "club_position":  "RM",
+                        "long_name":  "Isaac Palazón Camacho",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ó. Trejo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  8,
+                        "nationality":  "Argentina",
+                        "player_id":  173030,
+                        "club_position":  "SUB",
+                        "long_name":  "Óscar Guido Trejo",
+                        "age":  37,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pep Chavarría",
+                        "overall":  77,
+                        "potential":  78,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  258371,
+                        "club_position":  "LB",
+                        "long_name":  "Josep María Chavarría Pérez",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pacha Espino",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Uruguay",
+                        "player_id":  247131,
+                        "club_position":  "SUB",
+                        "long_name":  "Luis Alfonso Espino García",
+                        "age":  33,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Nteka",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  251756,
+                        "club_position":  "SUB",
+                        "long_name":  "Randy Nteka",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Balliu",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "Albania",
+                        "player_id":  203581,
+                        "club_position":  "SUB",
+                        "long_name":  "Iván Balliu Campeny",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "De Frutos",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  19,
+                        "nationality":  "Spain",
+                        "player_id":  243559,
+                        "club_position":  "ST",
+                        "long_name":  "Jorge de Frutos Sebastián",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Álvaro García",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  216447,
+                        "club_position":  "LM",
+                        "long_name":  "Álvaro García Rivera",
+                        "age":  32,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gumbau",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  15,
+                        "nationality":  "Spain",
+                        "player_id":  214944,
+                        "club_position":  "SUB",
+                        "long_name":  "Gerard Gumbau Garriga",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Lejeune",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  24,
+                        "nationality":  "France",
+                        "player_id":  197948,
+                        "club_position":  "RCB",
+                        "long_name":  "Florian Grégoire Claude Lejeune",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ciss",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  6,
+                        "nationality":  "Senegal",
+                        "player_id":  250858,
+                        "club_position":  "RDM",
+                        "long_name":  "Pathé Ismaël Ciss",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Óscar Valentín",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Spain",
+                        "player_id":  243558,
+                        "club_position":  "SUB",
+                        "long_name":  "Óscar Valentín Martín Luengo",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alemão",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  276895,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexandre Zurawski",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Mumin",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  16,
+                        "nationality":  "Ghana",
+                        "player_id":  235662,
+                        "club_position":  "SUB",
+                        "long_name":  "Khalid Abdul Mumin Suleman",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergio Camello",
+                        "overall":  73,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  248805,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergio Camello Pérez",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Vertrouwd",
+                        "overall":  67,
+                        "potential":  78,
+                        "club_jersey_number":  33,
+                        "nationality":  "Netherlands",
+                        "player_id":  73316,
+                        "club_position":  "SUB",
+                        "long_name":  "Jozhua Tomayo Vertrouwd",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fran Pérez",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  271373,
+                        "club_position":  "SUB",
+                        "long_name":  "Francisco Pérez Martínez",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Luiz Felipe",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Italy",
+                        "player_id":  236355,
+                        "club_position":  "LCB",
+                        "long_name":  "Luiz Felipe Ramos Marchi",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mendy",
+                        "overall":  66,
+                        "potential":  74,
+                        "club_jersey_number":  32,
+                        "nationality":  "France",
+                        "player_id":  276633,
+                        "club_position":  "RES",
+                        "long_name":  "Nobel Mendy",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Samu Becerra",
+                        "overall":  59,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "Spain",
+                        "player_id":  79474,
+                        "club_position":  "RES",
+                        "long_name":  "Samuel Becerra Gómez",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego Méndez",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  29,
+                        "nationality":  "Spain",
+                        "player_id":  272486,
+                        "club_position":  "RES",
+                        "long_name":  "Diego Méndez Molero",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "De las Sías",
+                        "overall":  59,
+                        "potential":  69,
+                        "club_jersey_number":  26,
+                        "nationality":  "Spain",
+                        "player_id":  74551,
+                        "club_position":  "RES",
+                        "long_name":  "Marco de las Sías López",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Batalla",
+                        "overall":  79,
+                        "potential":  80,
+                        "club_jersey_number":  13,
+                        "nationality":  "Argentina",
+                        "player_id":  227186,
+                        "club_position":  "GK",
+                        "long_name":  "Augusto Martín Batalla Barga",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dani Cárdenas",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  236033,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Cárdenas Lindez",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Juanpe Gil",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  30,
+                        "nationality":  "Spain",
+                        "player_id":  267577,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Pedro Gil Bueno",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Adrián Molina",
+                        "overall":  54,
+                        "potential":  64,
+                        "club_jersey_number":  40,
+                        "nationality":  "Spain",
+                        "player_id":  81393,
+                        "club_position":  "RES",
+                        "long_name":  "Adrián Molina Colorado",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

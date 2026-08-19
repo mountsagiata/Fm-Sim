@@ -1,0 +1,386 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Universitario de Deportes",
+                     "league_name":  "Liga 1",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111014
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Pérez Guedes",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Argentina",
+                        "player_id":  211274,
+                        "club_position":  "RCM",
+                        "long_name":  "Martín Pérez Guedes De Leo",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Polo",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "Peru",
+                        "player_id":  223637,
+                        "club_position":  "RM",
+                        "long_name":  "Andy Jorman Polo Andrade",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Concha",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Peru",
+                        "player_id":  264796,
+                        "club_position":  "LCM",
+                        "long_name":  "Jairo Jair Concha Gonzales",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Santamaría",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  40,
+                        "nationality":  "Peru",
+                        "player_id":  236260,
+                        "club_position":  "SUB",
+                        "long_name":  "Anderson Santamaría Bardales",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Calcaterra",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  10,
+                        "nationality":  "Peru",
+                        "player_id":  246013,
+                        "club_position":  "SUB",
+                        "long_name":  "Horacio Martín Calcaterra Thomas",
+                        "age":  36,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Corzo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  29,
+                        "nationality":  "Peru",
+                        "player_id":  196688,
+                        "club_position":  "RCB",
+                        "long_name":  "Aldo Sebastián Corzo Chávez",
+                        "age":  36,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Rivera",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Peru",
+                        "player_id":  265627,
+                        "club_position":  "SUB",
+                        "long_name":  "José Daniel Rivera Martínez",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Flores",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  19,
+                        "nationality":  "Peru",
+                        "player_id":  210951,
+                        "club_position":  "LS",
+                        "long_name":  "Edison Michael Flores Peralta",
+                        "age":  31,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Carabalí",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Ecuador",
+                        "player_id":  255098,
+                        "club_position":  "SUB",
+                        "long_name":  "José Joel Carabalí Prado",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Reyna",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Peru",
+                        "player_id":  254204,
+                        "club_position":  "SUB",
+                        "long_name":  "Paolo Alessandro Reyna Lea",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ureña",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  18,
+                        "nationality":  "Chile",
+                        "player_id":  214414,
+                        "club_position":  "CDM",
+                        "long_name":  "Rodrigo Andrés Ureña Reyes",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Vélez",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ecuador",
+                        "player_id":  222065,
+                        "club_position":  "SUB",
+                        "long_name":  "Jairo David Vélez Cedeño",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Inga",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  33,
+                        "nationality":  "Peru",
+                        "player_id":  279076,
+                        "club_position":  "LM",
+                        "long_name":  "César Johan Inga Velásquez",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Valera",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Peru",
+                        "player_id":  259251,
+                        "club_position":  "RS",
+                        "long_name":  "Álex Eduardo Valera Sandoval",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Castillo",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  55,
+                        "nationality":  "Peru",
+                        "player_id":  259612,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesús Abdallah Castillo Molina",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Murrugarra",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Peru",
+                        "player_id":  259941,
+                        "club_position":  "SUB",
+                        "long_name":  "Jorge Salvador Murrugarra Torres",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Riveros",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "Paraguay",
+                        "player_id":  240138,
+                        "club_position":  "CB",
+                        "long_name":  "Williams Ismael Riveros Ibáñez",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Costa",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  8,
+                        "nationality":  "Peru",
+                        "player_id":  247423,
+                        "club_position":  "SUB",
+                        "long_name":  "Basilio Gabriel Costa Heredia",
+                        "age":  35,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ancajima",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  26,
+                        "nationality":  "Peru",
+                        "player_id":  274503,
+                        "club_position":  "RES",
+                        "long_name":  "Hugo Axell Ancajima Effio",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Churín",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Argentina",
+                        "player_id":  223099,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Churín Puyo",
+                        "age":  35,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Di Benedetto",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Argentina",
+                        "player_id":  266554,
+                        "club_position":  "LCB",
+                        "long_name":  "Matías Ezequiel Di Benedetto Mazzei",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Flores",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  36,
+                        "nationality":  "Peru",
+                        "player_id":  81451,
+                        "club_position":  "RES",
+                        "long_name":  "Sebastian Flores",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vargas",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  25,
+                        "nationality":  "Chile",
+                        "player_id":  229397,
+                        "club_position":  "SUB",
+                        "long_name":  "Miguel Angel Vargas Mañán",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Calderón",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  12,
+                        "nationality":  "Peru",
+                        "player_id":  253837,
+                        "club_position":  "SUB",
+                        "long_name":  "Aamet José Guillermo Calderón Tello",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Britos",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "Uruguay",
+                        "player_id":  227154,
+                        "club_position":  "GK",
+                        "long_name":  "Sebastián Javier Britos Rodríguez",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

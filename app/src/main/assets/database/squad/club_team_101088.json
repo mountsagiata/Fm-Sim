@@ -1,0 +1,521 @@
+﻿{
+    "metadata":  {
+                     "total_players":  34,
+                     "club_name":  "Vélez Sarsfield",
+                     "league_name":  "Liga Profesional de Fútbol",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  101088
+                 },
+    "players":  [
+                    {
+                        "short_name":  "E. Gómez",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  3,
+                        "nationality":  "Argentina",
+                        "player_id":  221053,
+                        "club_position":  "LB",
+                        "long_name":  "Elías José Gómez",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Aliendro",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "Argentina",
+                        "player_id":  233029,
+                        "club_position":  "SUB",
+                        "long_name":  "Rodrigo Germán Aliendro",
+                        "age":  34,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Romero",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Argentina",
+                        "player_id":  227528,
+                        "club_position":  "ST",
+                        "long_name":  "Braian Ezequiel Romero",
+                        "age":  34,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bouzat",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  26,
+                        "nationality":  "Argentina",
+                        "player_id":  232255,
+                        "club_position":  "RDM",
+                        "long_name":  "Agustín Bouzat",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Baeza",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Chile",
+                        "player_id":  214302,
+                        "club_position":  "LDM",
+                        "long_name":  "Claudio Andrés Baeza Baeza",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Valdés",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  10,
+                        "nationality":  "Chile",
+                        "player_id":  213597,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Alfonso Valdés Contreras",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Fernández",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  27,
+                        "nationality":  "Argentina",
+                        "player_id":  275205,
+                        "club_position":  "SUB",
+                        "long_name":  "Thiago Cruz Fernández",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lanzini",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Argentina",
+                        "player_id":  188988,
+                        "club_position":  "SUB",
+                        "long_name":  "Manuel Lanzini",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lagos",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  14,
+                        "nationality":  "Argentina",
+                        "player_id":  252192,
+                        "club_position":  "RB",
+                        "long_name":  "Álvaro Agustín Lagos",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Pizzini",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Argentina",
+                        "player_id":  214971,
+                        "club_position":  "LM",
+                        "long_name":  "Francisco Andrés Pizzini",
+                        "age":  31,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. García",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  4,
+                        "nationality":  "Argentina",
+                        "player_id":  256524,
+                        "club_position":  "RES",
+                        "long_name":  "Roberto Joaquín García",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pellegrini",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  244884,
+                        "club_position":  "SUB",
+                        "long_name":  "Matías Pellegrini",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Mammana",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Argentina",
+                        "player_id":  221551,
+                        "club_position":  "RCB",
+                        "long_name":  "Emanuel Hernán Mammana",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Santos",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "Uruguay",
+                        "player_id":  230964,
+                        "club_position":  "SUB",
+                        "long_name":  "Michael Nicolás Santos Rosadilla",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Carrizo",
+                        "overall":  72,
+                        "potential":  86,
+                        "club_jersey_number":  28,
+                        "nationality":  "Argentina",
+                        "player_id":  279841,
+                        "club_position":  "RM",
+                        "long_name":  "Maher Mauricio Carrizo",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Quirós",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "Argentina",
+                        "player_id":  261769,
+                        "club_position":  "LCB",
+                        "long_name":  "Aarón Facundo Quirós",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Roldán",
+                        "overall":  67,
+                        "potential":  77,
+                        "club_jersey_number":  19,
+                        "nationality":  "Argentina",
+                        "player_id":  74232,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonel David Roldán",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Machuca",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  39,
+                        "nationality":  "Malaysia",
+                        "player_id":  259790,
+                        "club_position":  "SUB",
+                        "long_name":  "Imanol Javier Machuca",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Vázquez",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  33,
+                        "nationality":  "Argentina",
+                        "player_id":  70203,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Alejandro Vázquez",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Galván",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "Argentina",
+                        "player_id":  262240,
+                        "club_position":  "CAM",
+                        "long_name":  "Tomás Ezequiel Galván",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Cavanagh",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  37,
+                        "nationality":  "Argentina",
+                        "player_id":  260238,
+                        "club_position":  "RES",
+                        "long_name":  "Tomás Bernardo Cavanagh",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gordon",
+                        "overall":  69,
+                        "potential":  79,
+                        "club_jersey_number":  21,
+                        "nationality":  "Argentina",
+                        "player_id":  74857,
+                        "club_position":  "SUB",
+                        "long_name":  "Jano Jeremía Gordon",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Andrada",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  43,
+                        "nationality":  "Argentina",
+                        "player_id":  74854,
+                        "club_position":  "RES",
+                        "long_name":  "Isaías Alejandro Andrada",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Monzón",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  29,
+                        "nationality":  "Argentina",
+                        "player_id":  255217,
+                        "club_position":  "RES",
+                        "long_name":  "Florián Gonzalo de Jesús Monzón",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Cabral",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  30,
+                        "nationality":  "Argentina",
+                        "player_id":  76731,
+                        "club_position":  "RES",
+                        "long_name":  "Raúl Ignacio Cabral",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Andrada",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  16,
+                        "nationality":  "Argentina",
+                        "player_id":  79246,
+                        "club_position":  "RES",
+                        "long_name":  "Tobías Luciano Andrada",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Montoro",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  36,
+                        "nationality":  "Argentina",
+                        "player_id":  279838,
+                        "club_position":  "RES",
+                        "long_name":  "Francisco Montoro",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Magallán",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  13,
+                        "nationality":  "Argentina",
+                        "player_id":  211263,
+                        "club_position":  "SUB",
+                        "long_name":  "Lisandro Magallán",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Pernicone",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  273987,
+                        "club_position":  "RES",
+                        "long_name":  "Patricio Ezequiel Pernicone",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Silvero",
+                        "overall":  63,
+                        "potential":  77,
+                        "club_jersey_number":  40,
+                        "nationality":  "Argentina",
+                        "player_id":  74853,
+                        "club_position":  "RES",
+                        "long_name":  "Thiago Ariel Silvero",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Arias",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  24,
+                        "nationality":  "Argentina",
+                        "player_id":  80123,
+                        "club_position":  "RES",
+                        "long_name":  "Matías Arias",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Montero",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  31,
+                        "nationality":  "Colombia",
+                        "player_id":  229541,
+                        "club_position":  "SUB",
+                        "long_name":  "Álvaro David Montero Perales",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Garzón",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  42,
+                        "nationality":  "Argentina",
+                        "player_id":  278841,
+                        "club_position":  "RES",
+                        "long_name":  "Lautaro Miguel Ángel Garzón",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Marchiori",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Argentina",
+                        "player_id":  259273,
+                        "club_position":  "GK",
+                        "long_name":  "Tomás Ignacio Marchiori Carreño",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

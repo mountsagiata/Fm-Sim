@@ -1,0 +1,387 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Sydney FC",
+                     "league_name":  "A-League Men",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111400
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Lolley",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  221587,
+                        "club_position":  "RM",
+                        "long_name":  "Joseph Lolley",
+                        "age":  32,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Tisserand",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  2,
+                        "nationality":  "Congo DR",
+                        "player_id":  216247,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcel Jany Emile Tisserand",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Grant",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "Australia",
+                        "player_id":  192241,
+                        "club_position":  "LCB",
+                        "long_name":  "Rhyan Bert Grant",
+                        "age":  34,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Courtney-Perkins",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Australia",
+                        "player_id":  252698,
+                        "club_position":  "LB",
+                        "long_name":  "Jordan Alan Courtney-Perkins",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Grant",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Australia",
+                        "player_id":  209210,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexander Ian Grant",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Touré",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  35,
+                        "nationality":  "Australia",
+                        "player_id":  252468,
+                        "club_position":  "LM",
+                        "long_name":  "Al Hassan Touré",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Hollman",
+                        "overall":  60,
+                        "potential":  71,
+                        "club_jersey_number":  6,
+                        "nationality":  "Australia",
+                        "player_id":  266148,
+                        "club_position":  "RDM",
+                        "long_name":  "Corey John Hollman",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Wood",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  13,
+                        "nationality":  "Australia",
+                        "player_id":  259629,
+                        "club_position":  "ST",
+                        "long_name":  "Patrick James Wood",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. King",
+                        "overall":  63,
+                        "potential":  67,
+                        "club_jersey_number":  16,
+                        "nationality":  "Australia",
+                        "player_id":  246005,
+                        "club_position":  "SUB",
+                        "long_name":  "Joel Bruce King",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Popović",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  41,
+                        "nationality":  "Australia",
+                        "player_id":  264070,
+                        "club_position":  "RCB",
+                        "long_name":  "Alexandar Popović",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Youlley",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  36,
+                        "nationality":  "Australia",
+                        "player_id":  272461,
+                        "club_position":  "RES",
+                        "long_name":  "Rhys Youlley",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Alfaro",
+                        "overall":  54,
+                        "potential":  76,
+                        "club_jersey_number":  26,
+                        "nationality":  "Australia",
+                        "player_id":  81482,
+                        "club_position":  "RES",
+                        "long_name":  "Nickolas Alfaro",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Middleton",
+                        "overall":  51,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Australia",
+                        "player_id":  72164,
+                        "club_position":  "SUB",
+                        "long_name":  "Lachlan Middleton",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Quintal",
+                        "overall":  57,
+                        "potential":  77,
+                        "club_jersey_number":  20,
+                        "nationality":  "Australia",
+                        "player_id":  71482,
+                        "club_position":  "CAM",
+                        "long_name":  "Tiago Quintal",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. De Jesus",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  21,
+                        "nationality":  "Australia",
+                        "player_id":  276656,
+                        "club_position":  "RB",
+                        "long_name":  "Zachary Payne De Jesus",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Okon-Engstler",
+                        "overall":  52,
+                        "potential":  61,
+                        "club_jersey_number":  38,
+                        "nationality":  "Australia",
+                        "player_id":  80236,
+                        "club_position":  "SUB",
+                        "long_name":  "Paul Okon-Engstler",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Kamijo",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "Australia",
+                        "player_id":  278224,
+                        "club_position":  "LDM",
+                        "long_name":  "Wataru Kamijo",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lacey",
+                        "overall":  51,
+                        "potential":  73,
+                        "club_jersey_number":  29,
+                        "nationality":  "Australia",
+                        "player_id":  279478,
+                        "club_position":  "SUB",
+                        "long_name":  "Joseph Steven Colin Lacey",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Kennedy",
+                        "overall":  52,
+                        "potential":  68,
+                        "club_jersey_number":  37,
+                        "nationality":  "Australia",
+                        "player_id":  75513,
+                        "club_position":  "SUB",
+                        "long_name":  "Will Patrick Jardine Kennedy",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. France",
+                        "overall":  52,
+                        "potential":  73,
+                        "club_jersey_number":  33,
+                        "nationality":  "Australia",
+                        "player_id":  71987,
+                        "club_position":  "SUB",
+                        "long_name":  "Marin Robert France",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Williams",
+                        "overall":  54,
+                        "potential":  75,
+                        "club_jersey_number":  34,
+                        "nationality":  "Australia",
+                        "player_id":  81484,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyler Williams",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gurd",
+                        "overall":  58,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "Australia",
+                        "player_id":  271971,
+                        "club_position":  "SUB",
+                        "long_name":  "Aaron Bradley Gurd",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Macallister",
+                        "overall":  51,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Australia",
+                        "player_id":  77553,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathias Langeland Macallister",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Devenish-Meares",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  12,
+                        "nationality":  "Australia",
+                        "player_id":  262434,
+                        "club_position":  "GK",
+                        "long_name":  "Harrison Stuart Devenish-Meares",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Hoefsloot",
+                        "overall":  52,
+                        "potential":  72,
+                        "club_jersey_number":  30,
+                        "nationality":  "Australia",
+                        "player_id":  276187,
+                        "club_position":  "SUB",
+                        "long_name":  "Gus Tinus Hoefsloot",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

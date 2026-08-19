@@ -1,0 +1,441 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "SV Ried",
+                     "league_name":  "Bundesliga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  780
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Wernitznig",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  24,
+                        "nationality":  "Austria",
+                        "player_id":  202518,
+                        "club_position":  "SUB",
+                        "long_name":  "Christopher Wernitznig",
+                        "age":  35,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Grosse",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "Austria",
+                        "player_id":  78793,
+                        "club_position":  "CAM",
+                        "long_name":  "Mark Grosse",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mayer",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  26,
+                        "nationality":  "Austria",
+                        "player_id":  275446,
+                        "club_position":  "RCM",
+                        "long_name":  "Jonas Mayer",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bajić",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  12,
+                        "nationality":  "Austria",
+                        "player_id":  256545,
+                        "club_position":  "RM",
+                        "long_name":  "Ante Bajic",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Pomer",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  17,
+                        "nationality":  "Austria",
+                        "player_id":  263049,
+                        "club_position":  "LM",
+                        "long_name":  "Philipp Pomer",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Maart",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "South Africa",
+                        "player_id":  238086,
+                        "club_position":  "LCM",
+                        "long_name":  "Moegamat Yusuf Maart",
+                        "age":  29,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rasner",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  8,
+                        "nationality":  "Austria",
+                        "player_id":  229819,
+                        "club_position":  "SUB",
+                        "long_name":  "Martin Rasner",
+                        "age":  30,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Scherzer",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "Austria",
+                        "player_id":  242547,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonathan Scherzer",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Berger",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  19,
+                        "nationality":  "Austria",
+                        "player_id":  78799,
+                        "club_position":  "RES",
+                        "long_name":  "David Berger",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mutandwa",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  7,
+                        "nationality":  "Zambia",
+                        "player_id":  70049,
+                        "club_position":  "LS",
+                        "long_name":  "Kingstone Mutandwa",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. van Wyk",
+                        "overall":  62,
+                        "potential":  66,
+                        "club_jersey_number":  29,
+                        "nationality":  "South Africa",
+                        "player_id":  78797,
+                        "club_position":  "SUB",
+                        "long_name":  "Antonio van Wyk",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Rossdorfer",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  18,
+                        "nationality":  "Austria",
+                        "player_id":  78795,
+                        "club_position":  "SUB",
+                        "long_name":  "Fabian Hubert Rossdorfer",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ekain Azkune",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  11,
+                        "nationality":  "Spain",
+                        "player_id":  79941,
+                        "club_position":  "RES",
+                        "long_name":  "Ekain Azkune Astarloza",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Ondoa",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  21,
+                        "nationality":  "Cameroon",
+                        "player_id":  79943,
+                        "club_position":  "SUB",
+                        "long_name":  "Loiange Ondoa",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Bajlicz",
+                        "overall":  59,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Austria",
+                        "player_id":  276129,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolas Bajlicz",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Sané",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  9,
+                        "nationality":  "Germany",
+                        "player_id":  216387,
+                        "club_position":  "RS",
+                        "long_name":  "Saliou Sané",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Zotz",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Austria",
+                        "player_id":  79940,
+                        "club_position":  "RES",
+                        "long_name":  "Nevio Zotz",
+                        "age":  17,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Steurer",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  30,
+                        "nationality":  "Germany",
+                        "player_id":  241993,
+                        "club_position":  "RCB",
+                        "long_name":  "Oliver Steurer",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Weissenbacher",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  14,
+                        "nationality":  "Austria",
+                        "player_id":  78792,
+                        "club_position":  "SUB",
+                        "long_name":  "Philip Weissenbacher",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mešić",
+                        "overall":  54,
+                        "potential":  68,
+                        "club_jersey_number":  38,
+                        "nationality":  "Germany",
+                        "player_id":  79945,
+                        "club_position":  "RES",
+                        "long_name":  "Nermin Mešić",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Scholl",
+                        "overall":  54,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "Germany",
+                        "player_id":  79944,
+                        "club_position":  "SUB",
+                        "long_name":  "Conrad Scholl",
+                        "age":  17,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Kiedl",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  13,
+                        "nationality":  "Austria",
+                        "player_id":  79942,
+                        "club_position":  "SUB",
+                        "long_name":  "Peter Kiedl",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Boguo",
+                        "overall":  59,
+                        "potential":  79,
+                        "club_jersey_number":  15,
+                        "nationality":  "Austria",
+                        "player_id":  80328,
+                        "club_position":  "RES",
+                        "long_name":  "Joris Boguo",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Sollbauer",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  23,
+                        "nationality":  "Austria",
+                        "player_id":  190592,
+                        "club_position":  "LCB",
+                        "long_name":  "Michael Sollbauer",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kirnbauer",
+                        "overall":  55,
+                        "potential":  64,
+                        "club_jersey_number":  25,
+                        "nationality":  "Austria",
+                        "player_id":  257029,
+                        "club_position":  "RES",
+                        "long_name":  "Dominik Kirnbauer",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Havenaar",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  5,
+                        "nationality":  "Japan",
+                        "player_id":  251658,
+                        "club_position":  "CB",
+                        "long_name":  "Nikki Havenaarハーフナー ニッキ",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Leitner",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  1,
+                        "nationality":  "Austria",
+                        "player_id":  204922,
+                        "club_position":  "GK",
+                        "long_name":  "Andreas Leitner",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Stöger",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  34,
+                        "nationality":  "Austria",
+                        "player_id":  78787,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Stöger",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Wimmer",
+                        "overall":  60,
+                        "potential":  62,
+                        "club_jersey_number":  77,
+                        "nationality":  "Austria",
+                        "player_id":  78786,
+                        "club_position":  "SUB",
+                        "long_name":  "Felix Wimmer",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

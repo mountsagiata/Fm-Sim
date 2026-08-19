@@ -1,0 +1,435 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "FC Barcelona",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  241
+                 },
+    "players":  [
+                    {
+                        "short_name":  "F. de Jong",
+                        "overall":  87,
+                        "potential":  87,
+                        "club_jersey_number":  21,
+                        "nationality":  "Netherlands",
+                        "player_id":  228702,
+                        "club_position":  "RDM",
+                        "long_name":  "Frenkie de Jong",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Raphinha",
+                        "overall":  89,
+                        "potential":  89,
+                        "club_jersey_number":  11,
+                        "nationality":  "Brazil",
+                        "player_id":  233419,
+                        "club_position":  "LM",
+                        "long_name":  "Raphael Dias Belloli",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedri",
+                        "overall":  89,
+                        "potential":  93,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  251854,
+                        "club_position":  "LDM",
+                        "long_name":  "Pedro González López",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Lewandowski",
+                        "overall":  88,
+                        "potential":  88,
+                        "club_jersey_number":  9,
+                        "nationality":  "Poland",
+                        "player_id":  188545,
+                        "club_position":  "ST",
+                        "long_name":  "Robert Lewandowski",
+                        "age":  36,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dani Olmo",
+                        "overall":  85,
+                        "potential":  86,
+                        "club_jersey_number":  20,
+                        "nationality":  "Spain",
+                        "player_id":  244260,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Olmo Carvajal",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gavi",
+                        "overall":  83,
+                        "potential":  89,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  264240,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Martín Páez Gavira",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Koundé",
+                        "overall":  87,
+                        "potential":  88,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  241486,
+                        "club_position":  "RB",
+                        "long_name":  "Jules Olivier Koundé",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ferran Torres",
+                        "overall":  83,
+                        "potential":  86,
+                        "club_jersey_number":  7,
+                        "nationality":  "Spain",
+                        "player_id":  241461,
+                        "club_position":  "SUB",
+                        "long_name":  "Ferran Torres García",
+                        "age":  25,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fermín",
+                        "overall":  80,
+                        "potential":  87,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  277179,
+                        "club_position":  "CAM",
+                        "long_name":  "Fermín López Marín",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rashford",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  231677,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcus Rashford",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marc Casadó",
+                        "overall":  79,
+                        "potential":  86,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  272600,
+                        "club_position":  "SUB",
+                        "long_name":  "Marc Casadó Torras",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Balde",
+                        "overall":  83,
+                        "potential":  87,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  263578,
+                        "club_position":  "LB",
+                        "long_name":  "Alejandro Balde Martínez",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lamine Yamal",
+                        "overall":  89,
+                        "potential":  95,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  277643,
+                        "club_position":  "RM",
+                        "long_name":  "Lamine Yamal Nasraoui Ebanaلامين يامال نصراوي إبانا",
+                        "age":  17,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Araujo",
+                        "overall":  83,
+                        "potential":  86,
+                        "club_jersey_number":  4,
+                        "nationality":  "Uruguay",
+                        "player_id":  253163,
+                        "club_position":  "SUB",
+                        "long_name":  "Ronald Federico Araújo da Silva",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gerard Martín",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  74462,
+                        "club_position":  "SUB",
+                        "long_name":  "Gerard Martín Langreo",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pau Cubarsí",
+                        "overall":  82,
+                        "potential":  88,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  278046,
+                        "club_position":  "LCB",
+                        "long_name":  "Pau Cubarsí Paredes",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Eric García",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  245037,
+                        "club_position":  "RCB",
+                        "long_name":  "Eric García Martret",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marc Bernal",
+                        "overall":  73,
+                        "potential":  85,
+                        "club_jersey_number":  22,
+                        "nationality":  "Spain",
+                        "player_id":  74463,
+                        "club_position":  "SUB",
+                        "long_name":  "Marc Bernal Casas",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Christensen",
+                        "overall":  80,
+                        "potential":  81,
+                        "club_jersey_number":  15,
+                        "nationality":  "Denmark",
+                        "player_id":  213661,
+                        "club_position":  "SUB",
+                        "long_name":  "Andreas Bødtker Christensen",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Bardghji",
+                        "overall":  69,
+                        "potential":  82,
+                        "club_jersey_number":  28,
+                        "nationality":  "Sweden",
+                        "player_id":  265600,
+                        "club_position":  "SUB",
+                        "long_name":  "Roony Bardghjiروني بردغجي",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Guille Fernández",
+                        "overall":  60,
+                        "potential":  80,
+                        "club_jersey_number":  30,
+                        "nationality":  "Spain",
+                        "player_id":  75068,
+                        "club_position":  "RES",
+                        "long_name":  "Guillermo Fernández Casino",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jofre Torrents",
+                        "overall":  61,
+                        "potential":  79,
+                        "club_jersey_number":  26,
+                        "nationality":  "Spain",
+                        "player_id":  80663,
+                        "club_position":  "RES",
+                        "long_name":  "Jofre Torrents Salvat",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Toni Fernández",
+                        "overall":  64,
+                        "potential":  83,
+                        "club_jersey_number":  29,
+                        "nationality":  "Spain",
+                        "player_id":  75156,
+                        "club_position":  "SUB",
+                        "long_name":  "Antonio Fernández Casino",
+                        "age":  16,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dro",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  27,
+                        "nationality":  "Spain",
+                        "player_id":  80674,
+                        "club_position":  "RES",
+                        "long_name":  "Pedro Fernández",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. ter Stegen",
+                        "overall":  86,
+                        "potential":  86,
+                        "club_jersey_number":  1,
+                        "nationality":  "Germany",
+                        "player_id":  192448,
+                        "club_position":  "RES",
+                        "long_name":  "Marc-André ter Stegen",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Szczęsny",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  25,
+                        "nationality":  "Poland",
+                        "player_id":  186153,
+                        "club_position":  "SUB",
+                        "long_name":  "Wojciech Tomasz Szczęsny",
+                        "age":  35,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Joan García",
+                        "overall":  83,
+                        "potential":  89,
+                        "club_jersey_number":  13,
+                        "nationality":  "Spain",
+                        "player_id":  259532,
+                        "club_position":  "GK",
+                        "long_name":  "Joan García Pons",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kochen",
+                        "overall":  58,
+                        "potential":  77,
+                        "club_jersey_number":  31,
+                        "nationality":  "United States",
+                        "player_id":  277908,
+                        "club_position":  "RES",
+                        "long_name":  "Diego Kochen",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

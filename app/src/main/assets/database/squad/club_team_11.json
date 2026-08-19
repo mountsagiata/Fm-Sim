@@ -1,0 +1,399 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Manchester United",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  11
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Bruno Fernandes",
+                        "overall":  87,
+                        "potential":  87,
+                        "club_jersey_number":  8,
+                        "nationality":  "Portugal",
+                        "player_id":  212198,
+                        "club_position":  "LCM",
+                        "long_name":  "Bruno Miguel Borges Fernandes",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Mbeumo",
+                        "overall":  85,
+                        "potential":  86,
+                        "club_jersey_number":  19,
+                        "nationality":  "Cameroon",
+                        "player_id":  243014,
+                        "club_position":  "RW",
+                        "long_name":  "Bryan Tetsadong Marceau Mbeumo",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Matheus Cunha",
+                        "overall":  83,
+                        "potential":  85,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  240243,
+                        "club_position":  "LW",
+                        "long_name":  "Matheus Santos Carneiro da Cunha",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Martínez",
+                        "overall":  81,
+                        "potential":  82,
+                        "club_jersey_number":  6,
+                        "nationality":  "Argentina",
+                        "player_id":  239301,
+                        "club_position":  "RES",
+                        "long_name":  "Lisandro Martínez",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diogo Dalot",
+                        "overall":  79,
+                        "potential":  81,
+                        "club_jersey_number":  2,
+                        "nationality":  "Portugal",
+                        "player_id":  234574,
+                        "club_position":  "SUB",
+                        "long_name":  "José Diogo Dalot Teixeira",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mazraoui",
+                        "overall":  80,
+                        "potential":  81,
+                        "club_jersey_number":  3,
+                        "nationality":  "Morocco",
+                        "player_id":  236401,
+                        "club_position":  "RB",
+                        "long_name":  "Noussair Mazraouiنصير مزراوي",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mainoo",
+                        "overall":  77,
+                        "potential":  85,
+                        "club_jersey_number":  37,
+                        "nationality":  "England",
+                        "player_id":  269136,
+                        "club_position":  "SUB",
+                        "long_name":  "Kobbie Mainoo",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Shaw",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  205988,
+                        "club_position":  "LCB",
+                        "long_name":  "Luke Paul Hoare Shaw",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mount",
+                        "overall":  77,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  233064,
+                        "club_position":  "SUB",
+                        "long_name":  "Mason Tony Mount",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Casemiro",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  18,
+                        "nationality":  "Brazil",
+                        "player_id":  200145,
+                        "club_position":  "RCM",
+                        "long_name":  "Carlos Henrique Casimiro",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ugarte",
+                        "overall":  79,
+                        "potential":  83,
+                        "club_jersey_number":  25,
+                        "nationality":  "Uruguay",
+                        "player_id":  253306,
+                        "club_position":  "SUB",
+                        "long_name":  "Manuel Ugarte Ribeiro",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Amad",
+                        "overall":  79,
+                        "potential":  85,
+                        "club_jersey_number":  16,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  254088,
+                        "club_position":  "SUB",
+                        "long_name":  "Amad Diallo Traoré",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Šeško",
+                        "overall":  80,
+                        "potential":  88,
+                        "club_jersey_number":  30,
+                        "nationality":  "Slovenia",
+                        "player_id":  260592,
+                        "club_position":  "ST",
+                        "long_name":  "Benjamin Šeško",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zirkzee",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  11,
+                        "nationality":  "Netherlands",
+                        "player_id":  250961,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Orobosa Zirkzee",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Dorgu",
+                        "overall":  74,
+                        "potential":  84,
+                        "club_jersey_number":  13,
+                        "nationality":  "Denmark",
+                        "player_id":  277432,
+                        "club_position":  "LB",
+                        "long_name":  "Patrick Chinazaekpere Dorgu",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. de Ligt",
+                        "overall":  82,
+                        "potential":  84,
+                        "club_jersey_number":  4,
+                        "nationality":  "Netherlands",
+                        "player_id":  235243,
+                        "club_position":  "CB",
+                        "long_name":  "Matthijs de Ligt",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Malacia",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  12,
+                        "nationality":  "Netherlands",
+                        "player_id":  238041,
+                        "club_position":  "RES",
+                        "long_name":  "Tyrell Johannes Chicco Malacia",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Maguire",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  203263,
+                        "club_position":  "SUB",
+                        "long_name":  "Jacob Harry Maguire",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Yoro",
+                        "overall":  78,
+                        "potential":  86,
+                        "club_jersey_number":  15,
+                        "nationality":  "France",
+                        "player_id":  269087,
+                        "club_position":  "RCB",
+                        "long_name":  "Leny Yoro",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. León",
+                        "overall":  64,
+                        "potential":  85,
+                        "club_jersey_number":  35,
+                        "nationality":  "Paraguay",
+                        "player_id":  74142,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Basilio León Blanco",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Obi",
+                        "overall":  65,
+                        "potential":  84,
+                        "club_jersey_number":  32,
+                        "nationality":  "Denmark",
+                        "player_id":  77354,
+                        "club_position":  "RES",
+                        "long_name":  "Chidozie Obi-Martin",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Heaven",
+                        "overall":  69,
+                        "potential":  84,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  75087,
+                        "club_position":  "SUB",
+                        "long_name":  "Ayden Edford Heaven",
+                        "age":  18,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Fredricson",
+                        "overall":  65,
+                        "potential":  78,
+                        "club_jersey_number":  33,
+                        "nationality":  "England",
+                        "player_id":  269233,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyler Fredricson",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Heaton",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  22,
+                        "nationality":  "England",
+                        "player_id":  163264,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas David Heaton",
+                        "age":  39,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bayındır",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  1,
+                        "nationality":  "Türkiye",
+                        "player_id":  243647,
+                        "club_position":  "GK",
+                        "long_name":  "Altay Bayındır",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Lammens",
+                        "overall":  78,
+                        "potential":  87,
+                        "club_jersey_number":  31,
+                        "nationality":  "Belgium",
+                        "player_id":  254803,
+                        "club_position":  "SUB",
+                        "long_name":  "Senne Lammens",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,436 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "GKS Katowice",
+                     "league_name":  "Ekstraklasa",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  110206
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Bosch",
+                        "overall":  66,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Netherlands",
+                        "player_id":  252382,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesse Bosch",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kowalczyk",
+                        "overall":  68,
+                        "potential":  79,
+                        "club_jersey_number":  77,
+                        "nationality":  "Poland",
+                        "player_id":  275233,
+                        "club_position":  "RCM",
+                        "long_name":  "Mateusz Kowalczyk",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Błąd",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  11,
+                        "nationality":  "Poland",
+                        "player_id":  194769,
+                        "club_position":  "RW",
+                        "long_name":  "Adrian Błąd",
+                        "age":  34,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Nowak",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Poland",
+                        "player_id":  235471,
+                        "club_position":  "LW",
+                        "long_name":  "Bartosz Nowak",
+                        "age":  31,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Wasielewski",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Poland",
+                        "player_id":  236459,
+                        "club_position":  "RM",
+                        "long_name":  "Marcin Wasielewski",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Czerwiński",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  30,
+                        "nationality":  "Poland",
+                        "player_id":  239768,
+                        "club_position":  "RCB",
+                        "long_name":  "Alan Czerwiński",
+                        "age":  32,
+                        "positions":  [
+                                          "CB",
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Shkurin",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  80,
+                        "nationality":  "Belarus",
+                        "player_id":  255105,
+                        "club_position":  "SUB",
+                        "long_name":  "Ilya ShkurinШкурин Илья Сергеевич",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Łukasiak",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  19,
+                        "nationality":  "Poland",
+                        "player_id":  73311,
+                        "club_position":  "LCM",
+                        "long_name":  "Kacper Łukasiak",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Milewski",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  22,
+                        "nationality":  "Poland",
+                        "player_id":  244167,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Milewski",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Rogala",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  16,
+                        "nationality":  "Poland",
+                        "player_id":  72598,
+                        "club_position":  "RES",
+                        "long_name":  "Grzegorz Rogala",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Marković",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "Norway",
+                        "player_id":  240499,
+                        "club_position":  "SUB",
+                        "long_name":  "Eman Marković",
+                        "age":  26,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Łukowski",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  14,
+                        "nationality":  "Poland",
+                        "player_id":  215581,
+                        "club_position":  "SUB",
+                        "long_name":  "Jakub Łukowski",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Borja Galán",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  233470,
+                        "club_position":  "LM",
+                        "long_name":  "Borja Galán González",
+                        "age":  32,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rosołek",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Poland",
+                        "player_id":  252209,
+                        "club_position":  "ST",
+                        "long_name":  "Maciej Rosołek",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Rejczyk",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Poland",
+                        "player_id":  276681,
+                        "club_position":  "RES",
+                        "long_name":  "Filip Rejczyk",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Wędrychowski",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Poland",
+                        "player_id":  252509,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcel Wędrychowski",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Gruszkowski",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Poland",
+                        "player_id":  258691,
+                        "club_position":  "SUB",
+                        "long_name":  "Konrad Gruszkowski",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Zreľák",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  99,
+                        "nationality":  "Slovakia",
+                        "player_id":  239627,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Zreľák",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jędrych",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  4,
+                        "nationality":  "Poland",
+                        "player_id":  244160,
+                        "club_position":  "CB",
+                        "long_name":  "Arkadiusz Jędrych",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Marzec",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  17,
+                        "nationality":  "Poland",
+                        "player_id":  257664,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateusz Marzec",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kuusk",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  2,
+                        "nationality":  "Estonia",
+                        "player_id":  70928,
+                        "club_position":  "SUB",
+                        "long_name":  "Märten Kuusk",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Klemenz",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  6,
+                        "nationality":  "Poland",
+                        "player_id":  227738,
+                        "club_position":  "LCB",
+                        "long_name":  "Lukas Klemenz",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bród",
+                        "overall":  55,
+                        "potential":  65,
+                        "club_jersey_number":  28,
+                        "nationality":  "Poland",
+                        "player_id":  72601,
+                        "club_position":  "RES",
+                        "long_name":  "Alan Bród",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Paluszek",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "Poland",
+                        "player_id":  252223,
+                        "club_position":  "SUB",
+                        "long_name":  "Aleksander Paluszek",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kudła",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  1,
+                        "nationality":  "Poland",
+                        "player_id":  216110,
+                        "club_position":  "GK",
+                        "long_name":  "Dawid Kudła",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Jaroszek",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  13,
+                        "nationality":  "Poland",
+                        "player_id":  72593,
+                        "club_position":  "RES",
+                        "long_name":  "Bartosz Jaroszek",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Strączek",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  12,
+                        "nationality":  "Poland",
+                        "player_id":  257669,
+                        "club_position":  "SUB",
+                        "long_name":  "Rafał Strączek",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Szczuka",
+                        "overall":  53,
+                        "potential":  62,
+                        "club_jersey_number":  33,
+                        "nationality":  "Poland",
+                        "player_id":  72590,
+                        "club_position":  "RES",
+                        "long_name":  "Patryk Szczuka",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

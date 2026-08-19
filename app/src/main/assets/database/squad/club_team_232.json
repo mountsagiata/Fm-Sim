@@ -1,0 +1,445 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Standard de Liège",
+                     "league_name":  "Pro League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  232
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Nielsen",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  94,
+                        "nationality":  "Denmark",
+                        "player_id":  210739,
+                        "club_position":  "RES",
+                        "long_name":  "Casper Mørup Nielsen",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. El Hankouri",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  27,
+                        "nationality":  "Morocco",
+                        "player_id":  234740,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohammed El Hankouri",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Mohr",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Germany",
+                        "player_id":  243887,
+                        "club_position":  "LM",
+                        "long_name":  "Tobias Mohr",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ilaimaharitra",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  23,
+                        "nationality":  "Madagascar",
+                        "player_id":  220782,
+                        "club_position":  "LDM",
+                        "long_name":  "Marco Ilaimaharitra",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fossey",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  238409,
+                        "club_position":  "RB",
+                        "long_name":  "Marlon Joseph Fossey",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Bolingoli",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "Belgium",
+                        "player_id":  215970,
+                        "club_position":  "SUB",
+                        "long_name":  "Boli Bolingoli-Mbombo",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Kuavita",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  14,
+                        "nationality":  "Belgium",
+                        "player_id":  272776,
+                        "club_position":  "SUB",
+                        "long_name":  "Léandre Filipe Kuavita",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Henry",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  231835,
+                        "club_position":  "ST",
+                        "long_name":  "Thomas Henry",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mehssatou",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  8,
+                        "nationality":  "Chile",
+                        "player_id":  262024,
+                        "club_position":  "SUB",
+                        "long_name":  "Nayel Rayan Mehssatou Sepúlveda",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Doumbia",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  236454,
+                        "club_position":  "RES",
+                        "long_name":  "Souleyman Keli Doumbia",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Lawrence",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  88,
+                        "nationality":  "England",
+                        "player_id":  263703,
+                        "club_position":  "SUB",
+                        "long_name":  "Henry Michael Lawrence",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Saïd",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Comoros",
+                        "player_id":  257112,
+                        "club_position":  "SUB",
+                        "long_name":  "Rafiki Saïd Ahamada",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Eckert Ayensa",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  239323,
+                        "club_position":  "CAM",
+                        "long_name":  "Dennis-Yerai Eckert Ayensa",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Nkada",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  59,
+                        "nationality":  "France",
+                        "player_id":  248784,
+                        "club_position":  "SUB",
+                        "long_name":  "Timothé Ralph Olivier Zogo Nkada",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kyei",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  99,
+                        "nationality":  "France",
+                        "player_id":  222636,
+                        "club_position":  "RES",
+                        "long_name":  "Grejohn Kyei",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Karamoko",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  20,
+                        "nationality":  "France",
+                        "player_id":  248694,
+                        "club_position":  "SUB",
+                        "long_name":  "Ibrahim Karamoko",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Sahabo",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Rwanda",
+                        "player_id":  279509,
+                        "club_position":  "RDM",
+                        "long_name":  "Hakim Sahabo",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Hautekiet",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  25,
+                        "nationality":  "Belgium",
+                        "player_id":  270700,
+                        "club_position":  "SUB",
+                        "long_name":  "Ibe Tom Hautekiet",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Mitongo Muteba",
+                        "overall":  61,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Belgium",
+                        "player_id":  80182,
+                        "club_position":  "RES",
+                        "long_name":  "René Mitongo Muteba",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Homawoo",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Togo",
+                        "player_id":  239011,
+                        "club_position":  "LCB",
+                        "long_name":  "Josué Homawoo",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Calut",
+                        "overall":  60,
+                        "potential":  71,
+                        "club_jersey_number":  22,
+                        "nationality":  "Belgium",
+                        "player_id":  262141,
+                        "club_position":  "LB",
+                        "long_name":  "Alexandro Calut",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Dierckx",
+                        "overall":  65,
+                        "potential":  76,
+                        "club_jersey_number":  29,
+                        "nationality":  "Belgium",
+                        "player_id":  260586,
+                        "club_position":  "RCB",
+                        "long_name":  "Daan Dierckx",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bates",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  44,
+                        "nationality":  "Scotland",
+                        "player_id":  235729,
+                        "club_position":  "SUB",
+                        "long_name":  "David Robert Bates",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Nam James",
+                        "overall":  52,
+                        "potential":  64,
+                        "club_jersey_number":  73,
+                        "nationality":  "Belgium",
+                        "player_id":  80817,
+                        "club_position":  "RES",
+                        "long_name":  "Bradley Nam James",
+                        "age":  18,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Abid",
+                        "overall":  60,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Belgium",
+                        "player_id":  268519,
+                        "club_position":  "RM",
+                        "long_name":  "Adnane Abid",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ouedraogo",
+                        "overall":  58,
+                        "potential":  75,
+                        "club_jersey_number":  32,
+                        "nationality":  "Burkina Faso",
+                        "player_id":  78223,
+                        "club_position":  "RES",
+                        "long_name":  "Abdramane Farouz Mawurobi Ouedraogo",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Pirard",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  21,
+                        "nationality":  "Belgium",
+                        "player_id":  223957,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Frédéric Pirard",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Epolo",
+                        "overall":  73,
+                        "potential":  85,
+                        "club_jersey_number":  40,
+                        "nationality":  "Belgium",
+                        "player_id":  262265,
+                        "club_position":  "GK",
+                        "long_name":  "Matthieu Luka Epolo",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Godfroid",
+                        "overall":  52,
+                        "potential":  66,
+                        "club_jersey_number":  45,
+                        "nationality":  "Belgium",
+                        "player_id":  257210,
+                        "club_position":  "SUB",
+                        "long_name":  "Mattéo Alexis Godfroid",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,424 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Como",
+                     "league_name":  "Serie A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1745
+                 },
+    "players":  [
+                    {
+                        "short_name":  "L. Da Cunha",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  33,
+                        "nationality":  "France",
+                        "player_id":  254579,
+                        "club_position":  "LDM",
+                        "long_name":  "Lucas Da Cunha",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Caqueret",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  246646,
+                        "club_position":  "SUB",
+                        "long_name":  "Maxence Caqueret",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergi Roberto",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  199564,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergio Roberto Carnicer",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Baturina",
+                        "overall":  78,
+                        "potential":  83,
+                        "club_jersey_number":  20,
+                        "nationality":  "Croatia",
+                        "player_id":  262842,
+                        "club_position":  "SUB",
+                        "long_name":  "Martin Baturina",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alberto Moreno",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  205566,
+                        "club_position":  "SUB",
+                        "long_name":  "Alberto Moreno Pérez",
+                        "age":  32,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kühn",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Germany",
+                        "player_id":  239977,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolas-Gerrit Kühn",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Morata",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  7,
+                        "nationality":  "Spain",
+                        "player_id":  201153,
+                        "club_position":  "SUB",
+                        "long_name":  "Álvaro Borja Morata Martín",
+                        "age":  32,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Álex Valle",
+                        "overall":  72,
+                        "potential":  82,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  273875,
+                        "club_position":  "LB",
+                        "long_name":  "Álex Valle Gómez",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vojvoda",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  31,
+                        "nationality":  "Kosovo",
+                        "player_id":  228349,
+                        "club_position":  "RM",
+                        "long_name":  "Mërgim Vojvoda",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Nico Paz",
+                        "overall":  79,
+                        "potential":  89,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  277846,
+                        "club_position":  "CAM",
+                        "long_name":  "Nicolás Paz Martínez",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Posch",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  27,
+                        "nationality":  "Austria",
+                        "player_id":  223671,
+                        "club_position":  "RES",
+                        "long_name":  "Stefan Posch",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Perrone",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  267991,
+                        "club_position":  "RDM",
+                        "long_name":  "Máximo Perrone",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Verdi",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  90,
+                        "nationality":  "Italy",
+                        "player_id":  196889,
+                        "club_position":  "RES",
+                        "long_name":  "Simone Verdi",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Smolčić",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  28,
+                        "nationality":  "Croatia",
+                        "player_id":  77163,
+                        "club_position":  "SUB",
+                        "long_name":  "Ivan Smolčić",
+                        "age":  24,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Diao",
+                        "overall":  76,
+                        "potential":  87,
+                        "club_jersey_number":  38,
+                        "nationality":  "Senegal",
+                        "player_id":  275324,
+                        "club_position":  "RES",
+                        "long_name":  "Assane Diao Diaoune",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Van der Brempt",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  77,
+                        "nationality":  "Belgium",
+                        "player_id":  251464,
+                        "club_position":  "RB",
+                        "long_name":  "Ignace Van der Brempt",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego Carlos",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  34,
+                        "nationality":  "Brazil",
+                        "player_id":  219693,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Carlos Santos Silva",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Douvikas",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  11,
+                        "nationality":  "Greece",
+                        "player_id":  261478,
+                        "club_position":  "ST",
+                        "long_name":  "Anastasios DouvikasΑναστάσιος Δουβίκας",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jesús Rodríguez",
+                        "overall":  74,
+                        "potential":  85,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  75055,
+                        "club_position":  "LM",
+                        "long_name":  "Jesús Rodriguez Caraballo",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kempf",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Germany",
+                        "player_id":  210719,
+                        "club_position":  "LCB",
+                        "long_name":  "Marc Oliver Kempf",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Dossena",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  13,
+                        "nationality":  "Italy",
+                        "player_id":  237586,
+                        "club_position":  "RES",
+                        "long_name":  "Alberto Dossena",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Addai",
+                        "overall":  67,
+                        "potential":  84,
+                        "club_jersey_number":  42,
+                        "nationality":  "Netherlands",
+                        "player_id":  279239,
+                        "club_position":  "RES",
+                        "long_name":  "Jayden Osei Addai",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Goldaniga",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  5,
+                        "nationality":  "Italy",
+                        "player_id":  223524,
+                        "club_position":  "SUB",
+                        "long_name":  "Edoardo Goldaniga",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jacobo Ramón",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  70966,
+                        "club_position":  "RCB",
+                        "long_name":  "Jacobo Ramón Naveros",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Butez",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  1,
+                        "nationality":  "France",
+                        "player_id":  225149,
+                        "club_position":  "GK",
+                        "long_name":  "Jean Butez",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Vigorito",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  22,
+                        "nationality":  "Italy",
+                        "player_id":  186611,
+                        "club_position":  "SUB",
+                        "long_name":  "Mauro Vigorito",
+                        "age":  35,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Čavlina",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  44,
+                        "nationality":  "Croatia",
+                        "player_id":  270463,
+                        "club_position":  "SUB",
+                        "long_name":  "Nikola Čavlina",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Henrique Menke",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  12,
+                        "nationality":  "Brazil",
+                        "player_id":  80504,
+                        "club_position":  "SUB",
+                        "long_name":  "Henrique Menke Lopes",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,401 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Kocaelispor",
+                     "league_name":  "Süper Lig",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  101032
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Oğuz",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  22,
+                        "nationality":  "Türkiye",
+                        "player_id":  225555,
+                        "club_position":  "RB",
+                        "long_name":  "Ahmet Oğuz",
+                        "age":  32,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Petković",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Croatia",
+                        "player_id":  215455,
+                        "club_position":  "ST",
+                        "long_name":  "Bruno Petković",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Haïdara",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "Mali",
+                        "player_id":  201955,
+                        "club_position":  "LB",
+                        "long_name":  "Massadio Haïdara",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Linetty",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  10,
+                        "nationality":  "Poland",
+                        "player_id":  211408,
+                        "club_position":  "SUB",
+                        "long_name":  "Karol Linetty",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Keïta",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  16,
+                        "nationality":  "Mali",
+                        "player_id":  262137,
+                        "club_position":  "SUB",
+                        "long_name":  "Habib Ali Keita",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Churlinov",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "North Macedonia",
+                        "player_id":  251545,
+                        "club_position":  "LW",
+                        "long_name":  "Darko ChurlinovДарко Чурлинов",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bingöl",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  75,
+                        "nationality":  "Türkiye",
+                        "player_id":  224724,
+                        "club_position":  "SUB",
+                        "long_name":  "Tayfur Bingöl",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "RB",
+                                          "LB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Serbest",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Türkiye",
+                        "player_id":  222930,
+                        "club_position":  "SUB",
+                        "long_name":  "Tarkan Serbest",
+                        "age":  31,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Dursun",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "Türkiye",
+                        "player_id":  206104,
+                        "club_position":  "SUB",
+                        "long_name":  "Serdar Dursun",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Nonge",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  98,
+                        "nationality":  "Belgium",
+                        "player_id":  278926,
+                        "club_position":  "LCM",
+                        "long_name":  "Joseph Nonge Boende",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Agyei",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  228382,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Ebenezer Kwasi Agyei",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Keleş",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  70,
+                        "nationality":  "Türkiye",
+                        "player_id":  263132,
+                        "club_position":  "SUB",
+                        "long_name":  "Can Keleş",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Dijksteel",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  2,
+                        "nationality":  "Suriname",
+                        "player_id":  232413,
+                        "club_position":  "SUB",
+                        "long_name":  "Anfernee Jamal Dijksteel",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Show",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "Angola",
+                        "player_id":  251894,
+                        "club_position":  "CDM",
+                        "long_name":  "Manuel Luís da Silva Cafumana",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Rivas",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  99,
+                        "nationality":  "Honduras",
+                        "player_id":  241094,
+                        "club_position":  "SUB",
+                        "long_name":  "Rigoberto Manuel Rivas Vindel",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Wieteska",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Poland",
+                        "player_id":  224302,
+                        "club_position":  "RCB",
+                        "long_name":  "Mateusz Wieteska",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Smolčić",
+                        "overall":  72,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "Croatia",
+                        "player_id":  269402,
+                        "club_position":  "LCB",
+                        "long_name":  "Hrvoje Smolčić",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Yalçın",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  23,
+                        "nationality":  "Türkiye",
+                        "player_id":  72731,
+                        "club_position":  "RCM",
+                        "long_name":  "Samet Yalçın",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Cinan",
+                        "overall":  60,
+                        "potential":  61,
+                        "club_jersey_number":  3,
+                        "nationality":  "Türkiye",
+                        "player_id":  79131,
+                        "club_position":  "RES",
+                        "long_name":  "Muharrem Cinan",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Syrota",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  34,
+                        "nationality":  "Ukraine",
+                        "player_id":  257170,
+                        "club_position":  "SUB",
+                        "long_name":  "Oleksandr SyrotaСирота Олександр Михайлович",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Balogh",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  5,
+                        "nationality":  "Hungary",
+                        "player_id":  258708,
+                        "club_position":  "SUB",
+                        "long_name":  "Botond Balogh",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Gedik",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  18,
+                        "nationality":  "Türkiye",
+                        "player_id":  79135,
+                        "club_position":  "RW",
+                        "long_name":  "Furkan Gedik",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sağat",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  11,
+                        "nationality":  "Türkiye",
+                        "player_id":  276394,
+                        "club_position":  "RES",
+                        "long_name":  "Ahmet Sağat",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Değirmenci",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  35,
+                        "nationality":  "Türkiye",
+                        "player_id":  166963,
+                        "club_position":  "SUB",
+                        "long_name":  "Gökhan Değirmenci",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jovanović",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "Serbia",
+                        "player_id":  234735,
+                        "club_position":  "GK",
+                        "long_name":  "Aleksandar Jovanović",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Öztaşdelen",
+                        "overall":  51,
+                        "potential":  67,
+                        "club_jersey_number":  31,
+                        "nationality":  "Türkiye",
+                        "player_id":  80001,
+                        "club_position":  "RES",
+                        "long_name":  "Serhat Öztaşdelen",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

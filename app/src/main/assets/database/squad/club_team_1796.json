@@ -1,0 +1,494 @@
+﻿{
+    "metadata":  {
+                     "total_players":  32,
+                     "club_name":  "Burnley",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1796
+                 },
+    "players":  [
+                    {
+                        "short_name":  "K. Walker",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  188377,
+                        "club_position":  "RB",
+                        "long_name":  "Kyle Andrew Walker",
+                        "age":  35,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Hannibal",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  28,
+                        "nationality":  "Tunisia",
+                        "player_id":  258171,
+                        "club_position":  "CAM",
+                        "long_name":  "Hannibal Mejbriحنبعل المجبري",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Q. Hartman",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  3,
+                        "nationality":  "Netherlands",
+                        "player_id":  271121,
+                        "club_position":  "LB",
+                        "long_name":  "Quilindschy Hartman",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Cullen",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  228151,
+                        "club_position":  "LDM",
+                        "long_name":  "Joshua Jon Cullen",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Flemming",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  19,
+                        "nationality":  "Netherlands",
+                        "player_id":  239373,
+                        "club_position":  "SUB",
+                        "long_name":  "Zian Flemming",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Laurent",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  29,
+                        "nationality":  "England",
+                        "player_id":  217826,
+                        "club_position":  "RDM",
+                        "long_name":  "Joshua Ishaele Jacob-Heron Hunt-Laurent",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Larsen",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Denmark",
+                        "player_id":  227503,
+                        "club_position":  "SUB",
+                        "long_name":  "Jacob Bruun Larsen",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Roberts",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  14,
+                        "nationality":  "Wales",
+                        "player_id":  225147,
+                        "club_position":  "SUB",
+                        "long_name":  "Connor Richard John Roberts",
+                        "age":  29,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Amdouni",
+                        "overall":  75,
+                        "potential":  81,
+                        "club_jersey_number":  25,
+                        "nationality":  "Switzerland",
+                        "player_id":  262642,
+                        "club_position":  "RES",
+                        "long_name":  "Mohamed Zeki Amdouni",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lucas Pires",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Brazil",
+                        "player_id":  277068,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Pires Silva",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Florentino",
+                        "overall":  80,
+                        "potential":  83,
+                        "club_jersey_number":  16,
+                        "nationality":  "Portugal",
+                        "player_id":  234569,
+                        "club_position":  "SUB",
+                        "long_name":  "Florentino Ibrain Morris Luís",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Ugochukwu",
+                        "overall":  73,
+                        "potential":  82,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  257084,
+                        "club_position":  "SUB",
+                        "long_name":  "Lesley Chimuanya Ugochukwu",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Barnes",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  35,
+                        "nationality":  "England",
+                        "player_id":  186905,
+                        "club_position":  "RES",
+                        "long_name":  "Ashley Luke Barnes",
+                        "age":  35,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Humphreys",
+                        "overall":  73,
+                        "potential":  82,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  272777,
+                        "club_position":  "SUB",
+                        "long_name":  "Bashir Humphreys",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Trésor",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  31,
+                        "nationality":  "Belgium",
+                        "player_id":  253150,
+                        "club_position":  "RES",
+                        "long_name":  "Mike Trésor Ndayishimiye",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Anthony",
+                        "overall":  74,
+                        "potential":  76,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  243669,
+                        "club_position":  "LM",
+                        "long_name":  "Jaidon Kya Denley Anthony",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Tuanzebe",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "Congo DR",
+                        "player_id":  231485,
+                        "club_position":  "RES",
+                        "long_name":  "Axel Tuanzebe",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Edwards",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  235619,
+                        "club_position":  "RM",
+                        "long_name":  "Marcus Edwards",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Foster",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  9,
+                        "nationality":  "South Africa",
+                        "player_id":  241173,
+                        "club_position":  "ST",
+                        "long_name":  "Lyle Brent Foster",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Beyer",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  36,
+                        "nationality":  "Germany",
+                        "player_id":  242660,
+                        "club_position":  "RES",
+                        "long_name":  "Louis Jordan Beyer",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Sonne",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  22,
+                        "nationality":  "Peru",
+                        "player_id":  262794,
+                        "club_position":  "SUB",
+                        "long_name":  "Oliver Sonne Christensen",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Tchaouna",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  17,
+                        "nationality":  "France",
+                        "player_id":  264880,
+                        "club_position":  "SUB",
+                        "long_name":  "Loum Tchaouna",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Estève",
+                        "overall":  76,
+                        "potential":  82,
+                        "club_jersey_number":  5,
+                        "nationality":  "France",
+                        "player_id":  262042,
+                        "club_position":  "LCB",
+                        "long_name":  "Maxime Estève",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Broja",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  27,
+                        "nationality":  "Albania",
+                        "player_id":  256268,
+                        "club_position":  "SUB",
+                        "long_name":  "Armando Broja",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Delcroix",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  44,
+                        "nationality":  "Belgium",
+                        "player_id":  237440,
+                        "club_position":  "RES",
+                        "long_name":  "Hannes Delcroix",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ekdal",
+                        "overall":  72,
+                        "potential":  74,
+                        "club_jersey_number":  18,
+                        "nationality":  "Sweden",
+                        "player_id":  252316,
+                        "club_position":  "RCB",
+                        "long_name":  "Hjalmar Ekdal",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Banel",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  34,
+                        "nationality":  "Netherlands",
+                        "player_id":  272983,
+                        "club_position":  "RES",
+                        "long_name":  "Jaydon Amauri Banel",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Agyei",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  48,
+                        "nationality":  "Belgium",
+                        "player_id":  273927,
+                        "club_position":  "RES",
+                        "long_name":  "Enock Atta Agyei",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Worrall",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  230708,
+                        "club_position":  "SUB",
+                        "long_name":  "Joseph Adrian Worrall",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Hladký",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  32,
+                        "nationality":  "Czechia",
+                        "player_id":  202617,
+                        "club_position":  "RES",
+                        "long_name":  "Václav Hladký",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dúbravka",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  1,
+                        "nationality":  "Slovakia",
+                        "player_id":  220407,
+                        "club_position":  "GK",
+                        "long_name":  "Martin Dúbravka",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Weiß",
+                        "overall":  68,
+                        "potential":  80,
+                        "club_jersey_number":  13,
+                        "nationality":  "Germany",
+                        "player_id":  269096,
+                        "club_position":  "SUB",
+                        "long_name":  "Max Weiß",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

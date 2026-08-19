@@ -1,0 +1,439 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Orlando City SC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  112606
+                 },
+    "players":  [
+                    {
+                        "short_name":  "E. Atuesta",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Colombia",
+                        "player_id":  236298,
+                        "club_position":  "RCM",
+                        "long_name":  "Eduard Andrés Atuesta Velasco",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Muriel",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Colombia",
+                        "player_id":  199110,
+                        "club_position":  "ST",
+                        "long_name":  "Luis Fernando Muriel Fruto",
+                        "age":  34,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ojeda",
+                        "overall":  74,
+                        "potential":  76,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  240744,
+                        "club_position":  "CAM",
+                        "long_name":  "Martín Ezequiel Ojeda",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Cartagena",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "Peru",
+                        "player_id":  221664,
+                        "club_position":  "SUB",
+                        "long_name":  "Wilder José Cartagena Mendoza",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pašalić",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  87,
+                        "nationality":  "Croatia",
+                        "player_id":  262740,
+                        "club_position":  "RM",
+                        "long_name":  "Marco Pašalić",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Adrián Marín",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  224921,
+                        "club_position":  "SUB",
+                        "long_name":  "Adrián Marín Gómez",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Freeman",
+                        "overall":  65,
+                        "potential":  79,
+                        "club_jersey_number":  30,
+                        "nationality":  "United States",
+                        "player_id":  267920,
+                        "club_position":  "RB",
+                        "long_name":  "Alexander Michael Freeman",
+                        "age":  20,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Angulo",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  77,
+                        "nationality":  "Colombia",
+                        "player_id":  236800,
+                        "club_position":  "LM",
+                        "long_name":  "Iván Darío Angulo Cortés",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Thorhallsson",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "Iceland",
+                        "player_id":  248168,
+                        "club_position":  "LCM",
+                        "long_name":  "Dagur Dan ThórhallssonDagur Dan Þórhallsson",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Araújo",
+                        "overall":  69,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Uruguay",
+                        "player_id":  259874,
+                        "club_position":  "SUB",
+                        "long_name":  "César Nahuel Araújo Vilches",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Brekalo",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Slovenia",
+                        "player_id":  264085,
+                        "club_position":  "LB",
+                        "long_name":  "David Brekalo",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Spicer",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Trinidad and Tobago",
+                        "player_id":  71618,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyrese Spicer",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Jansson",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  6,
+                        "nationality":  "Sweden",
+                        "player_id":  203137,
+                        "club_position":  "LCB",
+                        "long_name":  "Per Tony Robin Jansson",
+                        "age":  33,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Smith",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  247356,
+                        "club_position":  "SUB",
+                        "long_name":  "Kyle Smith",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gerbet",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  35,
+                        "nationality":  "France",
+                        "player_id":  77663,
+                        "club_position":  "SUB",
+                        "long_name":  "Joran Gerbet",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mohammed",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Ghana",
+                        "player_id":  274665,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdul Shakur Mohammed",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. McGuire",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  274841,
+                        "club_position":  "SUB",
+                        "long_name":  "Duncan MacAllister McGuire",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Rodríguez",
+                        "overall":  56,
+                        "potential":  66,
+                        "club_jersey_number":  11,
+                        "nationality":  "Colombia",
+                        "player_id":  77502,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolás Santiago Rodríguez Calderón",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Loyola",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  95,
+                        "nationality":  "United States",
+                        "player_id":  272756,
+                        "club_position":  "RES",
+                        "long_name":  "Favian Loyola",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Schlegel",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  15,
+                        "nationality":  "Argentina",
+                        "player_id":  237875,
+                        "club_position":  "RCB",
+                        "long_name":  "Rodrigo Adrián Schlegel",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Guske",
+                        "overall":  54,
+                        "potential":  70,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  77464,
+                        "club_position":  "RES",
+                        "long_name":  "Colin Guske",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Williams",
+                        "overall":  53,
+                        "potential":  68,
+                        "club_jersey_number":  68,
+                        "nationality":  "United States",
+                        "player_id":  263237,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Ivory Williams III",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Tsukada",
+                        "overall":  49,
+                        "potential":  55,
+                        "club_jersey_number":  34,
+                        "nationality":  "Japan",
+                        "player_id":  74438,
+                        "club_position":  "RES",
+                        "long_name":  "Yutaro Tsukada塚田 悠太郎",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Gallese",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  1,
+                        "nationality":  "Peru",
+                        "player_id":  225701,
+                        "club_position":  "GK",
+                        "long_name":  "Pedro David Gallese Quiroz",
+                        "age":  35,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Reid-Brown",
+                        "overall":  48,
+                        "potential":  68,
+                        "club_jersey_number":  29,
+                        "nationality":  "United States",
+                        "player_id":  70442,
+                        "club_position":  "RES",
+                        "long_name":  "Tahir Yazid Reid-Brown",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Caraballo",
+                        "overall":  50,
+                        "potential":  76,
+                        "club_jersey_number":  65,
+                        "nationality":  "Venezuela",
+                        "player_id":  78207,
+                        "club_position":  "RES",
+                        "long_name":  "Gustavo Andres Caraballo Delgado",
+                        "age":  16,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Mercado",
+                        "overall":  56,
+                        "potential":  59,
+                        "club_jersey_number":  99,
+                        "nationality":  "United States",
+                        "player_id":  75540,
+                        "club_position":  "SUB",
+                        "long_name":  "Jose Carlos Mercado",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Otero",
+                        "overall":  55,
+                        "potential":  64,
+                        "club_jersey_number":  12,
+                        "nationality":  "Venezuela",
+                        "player_id":  277189,
+                        "club_position":  "SUB",
+                        "long_name":  "Javier Alejandro Otero León",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

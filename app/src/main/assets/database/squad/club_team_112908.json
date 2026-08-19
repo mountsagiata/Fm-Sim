@@ -1,0 +1,433 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Independiente del Valle",
+                     "league_name":  "Serie A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  112908
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Alcívar",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Ecuador",
+                        "player_id":  254039,
+                        "club_position":  "RCM",
+                        "long_name":  "Jordy José Alcívar Macías",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ibarra",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  30,
+                        "nationality":  "Ecuador",
+                        "player_id":  204738,
+                        "club_position":  "RM",
+                        "long_name":  "Alex Renato Ibarra Mina",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Méndez",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  32,
+                        "nationality":  "Ecuador",
+                        "player_id":  246057,
+                        "club_position":  "CDM",
+                        "long_name":  "Jhegson Sebastián Méndez Carabalí",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sornoza",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  10,
+                        "nationality":  "Ecuador",
+                        "player_id":  220739,
+                        "club_position":  "LCM",
+                        "long_name":  "Júnior Nazareno Sornoza Moreira",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mercado",
+                        "overall":  70,
+                        "potential":  81,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ecuador",
+                        "player_id":  271741,
+                        "club_position":  "SUB",
+                        "long_name":  "Patrik Kleiver Mercado Altamirano",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hoyos",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  198628,
+                        "club_position":  "SUB",
+                        "long_name":  "Michael Ryan Hoyos",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Loor",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  19,
+                        "nationality":  "Ecuador",
+                        "player_id":  266668,
+                        "club_position":  "SUB",
+                        "long_name":  "Layan Manuel Loor Requelme",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Arroyo",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  21,
+                        "nationality":  "Ecuador",
+                        "player_id":  77450,
+                        "club_position":  "SUB",
+                        "long_name":  "Jean Pierre Arroyo Vernaza",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Zabala",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  18,
+                        "nationality":  "Argentina",
+                        "player_id":  266310,
+                        "club_position":  "RES",
+                        "long_name":  "Cristian Exequiel Zabala",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Santamaría",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Argentina",
+                        "player_id":  70670,
+                        "club_position":  "SUB",
+                        "long_name":  "Thiago Santamaría",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lerma",
+                        "overall":  64,
+                        "potential":  85,
+                        "club_jersey_number":  53,
+                        "nationality":  "Ecuador",
+                        "player_id":  72419,
+                        "club_position":  "RES",
+                        "long_name":  "Justin Armando Lerma Soliz",
+                        "age":  17,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Carabajal",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Argentina",
+                        "player_id":  241064,
+                        "club_position":  "RCB",
+                        "long_name":  "Mateo Carabajal",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Velasco",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  33,
+                        "nationality":  "Ecuador",
+                        "player_id":  268283,
+                        "club_position":  "SUB",
+                        "long_name":  "Andy René Velasco García",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fernández",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  13,
+                        "nationality":  "Chile",
+                        "player_id":  230118,
+                        "club_position":  "RB",
+                        "long_name":  "Matías Ignacio Fernández Cordero",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Cortéz",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Ecuador",
+                        "player_id":  253366,
+                        "club_position":  "LB",
+                        "long_name":  "Gustavo Orlando Cortez Quiñónez",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Briones",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Ecuador",
+                        "player_id":  261552,
+                        "club_position":  "RES",
+                        "long_name":  "Ronald Elain Briones Legarda",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Cazares",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  26,
+                        "nationality":  "Ecuador",
+                        "player_id":  208504,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Ramón Cazares Sevillano",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rodríguez",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "Ecuador",
+                        "player_id":  259825,
+                        "club_position":  "SUB",
+                        "long_name":  "Aron David Rodríguez Franco",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Spinelli",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  77,
+                        "nationality":  "Argentina",
+                        "player_id":  238180,
+                        "club_position":  "ST",
+                        "long_name":  "Claudio Paul Spinelli",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Schunke",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  5,
+                        "nationality":  "Argentina",
+                        "player_id":  253341,
+                        "club_position":  "LCB",
+                        "long_name":  "Richard Hernán Schunke",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ó. Quiñónez",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Ecuador",
+                        "player_id":  70176,
+                        "club_position":  "SUB",
+                        "long_name":  "Óscar Esteban Quiñónez Mendoza",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Guagua",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  55,
+                        "nationality":  "Ecuador",
+                        "player_id":  79281,
+                        "club_position":  "SUB",
+                        "long_name":  "Darwin Johan Guagua Silva",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ruiz",
+                        "overall":  57,
+                        "potential":  75,
+                        "club_jersey_number":  56,
+                        "nationality":  "Ecuador",
+                        "player_id":  279487,
+                        "club_position":  "RES",
+                        "long_name":  "Elkin Eduardo Ruiz Congo",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Pata",
+                        "overall":  60,
+                        "potential":  75,
+                        "club_jersey_number":  31,
+                        "nationality":  "Ecuador",
+                        "player_id":  77449,
+                        "club_position":  "LM",
+                        "long_name":  "Emerson Iván Pata Rodríguez",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Zárate",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Paraguay",
+                        "player_id":  266699,
+                        "club_position":  "SUB",
+                        "long_name":  "Luis Felipe Zárate Cardozo",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bores",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  12,
+                        "nationality":  "Venezuela",
+                        "player_id":  273984,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduardo David Bores Díaz",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Villar",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "Argentina",
+                        "player_id":  237046,
+                        "club_position":  "GK",
+                        "long_name":  "Guido Emanuel Villar",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Peralta",
+                        "overall":  54,
+                        "potential":  74,
+                        "club_jersey_number":  1,
+                        "nationality":  "Ecuador",
+                        "player_id":  79419,
+                        "club_position":  "RES",
+                        "long_name":  "Miguel Ángel Peralta Quiñónez",
+                        "age":  17,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

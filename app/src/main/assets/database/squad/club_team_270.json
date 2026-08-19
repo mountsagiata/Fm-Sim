@@ -1,0 +1,427 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Silkeborg IF",
+                     "league_name":  "Superliga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  270
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Andersen",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  8,
+                        "nationality":  "Denmark",
+                        "player_id":  216286,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeppe Andrup Andersen",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. McCowatt",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "New Zealand",
+                        "player_id":  243666,
+                        "club_position":  "RW",
+                        "long_name":  "Callum William McCowatt",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Al Hajj",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Sweden",
+                        "player_id":  247658,
+                        "club_position":  "CM",
+                        "long_name":  "Rami Al Hajjرامي الحاج",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gammelby",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  19,
+                        "nationality":  "Denmark",
+                        "player_id":  213835,
+                        "club_position":  "RB",
+                        "long_name":  "Jens Martin Gammelby",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Larsen",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "Denmark",
+                        "player_id":  243891,
+                        "club_position":  "RCM",
+                        "long_name":  "Mads Larsen",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Bakiz",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Denmark",
+                        "player_id":  262538,
+                        "club_position":  "LW",
+                        "long_name":  "Younes Bakiz",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Adamsen",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  23,
+                        "nationality":  "Denmark",
+                        "player_id":  271320,
+                        "club_position":  "ST",
+                        "long_name":  "Tonni Adamsen",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Montano",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Denmark",
+                        "player_id":  256846,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonel Caicedo Montano Dahl",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Poulsen",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  2,
+                        "nationality":  "Denmark",
+                        "player_id":  236875,
+                        "club_position":  "LB",
+                        "long_name":  "Andreas Poulsen",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Freundlich",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Denmark",
+                        "player_id":  73644,
+                        "club_position":  "LCM",
+                        "long_name":  "Mads Lautrup Freundlich",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Østrøm",
+                        "overall":  66,
+                        "potential":  74,
+                        "club_jersey_number":  3,
+                        "nationality":  "Norway",
+                        "player_id":  257036,
+                        "club_position":  "RCB",
+                        "long_name":  "Robin Dahl Østrøm",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Berger",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Denmark",
+                        "player_id":  262537,
+                        "club_position":  "SUB",
+                        "long_name":  "Sofus Berger Brix",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bøndergaard",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  15,
+                        "nationality":  "Denmark",
+                        "player_id":  275332,
+                        "club_position":  "SUB",
+                        "long_name":  "Asbjørn Bøndergaard",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Nielsen",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  36,
+                        "nationality":  "Denmark",
+                        "player_id":  73641,
+                        "club_position":  "SUB",
+                        "long_name":  "Julius Lorents Nielsen",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Boesen",
+                        "overall":  61,
+                        "potential":  78,
+                        "club_jersey_number":  41,
+                        "nationality":  "Denmark",
+                        "player_id":  275271,
+                        "club_position":  "SUB",
+                        "long_name":  "Oskar Adam Rudkjøbing Boesen",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Simmelhack",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Denmark",
+                        "player_id":  267783,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexander Illum Simmelhack",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Øxenberg",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  26,
+                        "nationality":  "Denmark",
+                        "player_id":  79957,
+                        "club_position":  "SUB",
+                        "long_name":  "Mikkel Øxenberg",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Rödin",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  25,
+                        "nationality":  "Sweden",
+                        "player_id":  252737,
+                        "club_position":  "RES",
+                        "long_name":  "Pontus Rödin",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Busch",
+                        "overall":  68,
+                        "potential":  80,
+                        "club_jersey_number":  40,
+                        "nationality":  "Denmark",
+                        "player_id":  262588,
+                        "club_position":  "RES",
+                        "long_name":  "Alexander Magnus Busch",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Stüker",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  28,
+                        "nationality":  "Denmark",
+                        "player_id":  79956,
+                        "club_position":  "SUB",
+                        "long_name":  "Simon Stüker",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Westh",
+                        "overall":  53,
+                        "potential":  65,
+                        "club_jersey_number":  7,
+                        "nationality":  "Denmark",
+                        "player_id":  278363,
+                        "club_position":  "RES",
+                        "long_name":  "Villads Westh",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Ganchas",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Portugal",
+                        "player_id":  266890,
+                        "club_position":  "LCB",
+                        "long_name":  "Pedro Luís Machado Ganchas",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Biller",
+                        "overall":  57,
+                        "potential":  77,
+                        "club_jersey_number":  35,
+                        "nationality":  "Denmark",
+                        "player_id":  74531,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Biller Mikkelsen",
+                        "age":  18,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Madsen",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  24,
+                        "nationality":  "Denmark",
+                        "player_id":  73988,
+                        "club_position":  "RES",
+                        "long_name":  "Alexander Priesborg Madsen",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Larsen",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  1,
+                        "nationality":  "Denmark",
+                        "player_id":  200209,
+                        "club_position":  "GK",
+                        "long_name":  "Nicolai Oppen Larsen",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Clemmensen",
+                        "overall":  53,
+                        "potential":  68,
+                        "club_jersey_number":  21,
+                        "nationality":  "Denmark",
+                        "player_id":  73880,
+                        "club_position":  "RES",
+                        "long_name":  "Benjamin Clemmensen",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Andresen",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  30,
+                        "nationality":  "Denmark",
+                        "player_id":  265179,
+                        "club_position":  "SUB",
+                        "long_name":  "Aske Leth Andrésen",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Holm",
+                        "overall":  57,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Denmark",
+                        "player_id":  79551,
+                        "club_position":  "SUB",
+                        "long_name":  "Bastian Lykkegaard Holm",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

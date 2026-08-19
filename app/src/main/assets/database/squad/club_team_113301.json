@@ -1,0 +1,395 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Hyderabad FC",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  113301
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Andrei Alba",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  5,
+                        "nationality":  "Brazil",
+                        "player_id":  234374,
+                        "club_position":  "LDM",
+                        "long_name":  "Andrei Alba",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Rodrigues",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  24,
+                        "nationality":  "India",
+                        "player_id":  211476,
+                        "club_position":  "RDM",
+                        "long_name":  "Lenny Rodrigues",
+                        "age":  38,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Vanmalsawma",
+                        "overall":  53,
+                        "potential":  53,
+                        "club_jersey_number":  28,
+                        "nationality":  "India",
+                        "player_id":  248280,
+                        "club_position":  "SUB",
+                        "long_name":  "Issac Vanmalsawma Chhakchhuak",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Allan Paulista",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  75222,
+                        "club_position":  "ST",
+                        "long_name":  "Allan de Souza Miranda",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Edmilson Correia",
+                        "overall":  59,
+                        "potential":  60,
+                        "club_jersey_number":  7,
+                        "nationality":  "Guinea-Bissau",
+                        "player_id":  254683,
+                        "club_position":  "SUB",
+                        "long_name":  "Edmilson Indjai Correia",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Adhikari",
+                        "overall":  53,
+                        "potential":  57,
+                        "club_jersey_number":  8,
+                        "nationality":  "India",
+                        "player_id":  259561,
+                        "club_position":  "SUB",
+                        "long_name":  "Ayush Adhikari",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sailo",
+                        "overall":  54,
+                        "potential":  61,
+                        "club_jersey_number":  92,
+                        "nationality":  "India",
+                        "player_id":  278054,
+                        "club_position":  "SUB",
+                        "long_name":  "Lalchhanhima Sailo",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ramhlunchhunga",
+                        "overall":  56,
+                        "potential":  59,
+                        "club_jersey_number":  10,
+                        "nationality":  "India",
+                        "player_id":  277567,
+                        "club_position":  "LM",
+                        "long_name":  "Ramhlunchhunga Ramhlunchhunga",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Murgaonkar",
+                        "overall":  53,
+                        "potential":  53,
+                        "club_jersey_number":  29,
+                        "nationality":  "India",
+                        "player_id":  259137,
+                        "club_position":  "SUB",
+                        "long_name":  "Devendra Dhaku Murgaokar",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Saji",
+                        "overall":  55,
+                        "potential":  62,
+                        "club_jersey_number":  4,
+                        "nationality":  "India",
+                        "player_id":  270742,
+                        "club_position":  "LCB",
+                        "long_name":  "Alex Saji",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Abhijith PA",
+                        "overall":  52,
+                        "potential":  62,
+                        "club_jersey_number":  17,
+                        "nationality":  "India",
+                        "player_id":  70658,
+                        "club_position":  "CAM",
+                        "long_name":  "Abhijith PA",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CDM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mohammad",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  41,
+                        "nationality":  "India",
+                        "player_id":  270743,
+                        "club_position":  "SUB",
+                        "long_name":  "Manoj Mohammad",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Shrivas",
+                        "overall":  53,
+                        "potential":  53,
+                        "club_jersey_number":  6,
+                        "nationality":  "India",
+                        "player_id":  256304,
+                        "club_position":  "LB",
+                        "long_name":  "Parag Satish Shrivas",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sourav K",
+                        "overall":  53,
+                        "potential":  58,
+                        "club_jersey_number":  27,
+                        "nationality":  "India",
+                        "player_id":  75136,
+                        "club_position":  "SUB",
+                        "long_name":  "Sourav K",
+                        "age":  24,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. D\u0026amp;apos;Cunha",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  25,
+                        "nationality":  "India",
+                        "player_id":  257685,
+                        "club_position":  "SUB",
+                        "long_name":  "Leander D\u0026amp;apos;Cunha",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sunny",
+                        "overall":  52,
+                        "potential":  60,
+                        "club_jersey_number":  23,
+                        "nationality":  "India",
+                        "player_id":  70661,
+                        "club_position":  "RM",
+                        "long_name":  "Joseph Sunny",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Šapić",
+                        "overall":  56,
+                        "potential":  56,
+                        "club_jersey_number":  65,
+                        "nationality":  "Serbia",
+                        "player_id":  75253,
+                        "club_position":  "RCB",
+                        "long_name":  "Stefan ŠapićСтефан Шапић",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rafi",
+                        "overall":  53,
+                        "potential":  61,
+                        "club_jersey_number":  3,
+                        "nationality":  "India",
+                        "player_id":  278697,
+                        "club_position":  "RB",
+                        "long_name":  "Mohammed Rafi",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Joshy",
+                        "overall":  50,
+                        "potential":  57,
+                        "club_jersey_number":  43,
+                        "nationality":  "India",
+                        "player_id":  270838,
+                        "club_position":  "SUB",
+                        "long_name":  "Soyal Joshy",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Hrangthankima",
+                        "overall":  49,
+                        "potential":  56,
+                        "club_jersey_number":  90,
+                        "nationality":  "India",
+                        "player_id":  74869,
+                        "club_position":  "SUB",
+                        "long_name":  "Laldanmawia Hrangthankima",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Vanlalrinchhana",
+                        "overall":  47,
+                        "potential":  58,
+                        "club_jersey_number":  22,
+                        "nationality":  "India",
+                        "player_id":  70654,
+                        "club_position":  "SUB",
+                        "long_name":  "Aron Vanlalrinchhana",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Singh",
+                        "overall":  52,
+                        "potential":  52,
+                        "club_jersey_number":  31,
+                        "nationality":  "India",
+                        "player_id":  208481,
+                        "club_position":  "RES",
+                        "long_name":  "Karanjit Singh",
+                        "age":  39,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Singh",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  1,
+                        "nationality":  "India",
+                        "player_id":  253672,
+                        "club_position":  "GK",
+                        "long_name":  "Arshdeep Singh",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Jongte",
+                        "overall":  52,
+                        "potential":  57,
+                        "club_jersey_number":  33,
+                        "nationality":  "India",
+                        "player_id":  259313,
+                        "club_position":  "SUB",
+                        "long_name":  "Lalbiakhlua Jongte",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Saroha",
+                        "overall":  49,
+                        "potential":  56,
+                        "club_jersey_number":  50,
+                        "nationality":  "India",
+                        "player_id":  74868,
+                        "club_position":  "RES",
+                        "long_name":  "Aaryan Anjaneya",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

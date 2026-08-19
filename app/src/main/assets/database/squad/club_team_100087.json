@@ -1,0 +1,457 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Oud-Heverlee Leuven",
+                     "league_name":  "Pro League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  100087
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Schrijvers",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  8,
+                        "nationality":  "Belgium",
+                        "player_id":  209780,
+                        "club_position":  "LDM",
+                        "long_name":  "Siebe Schrijvers",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Verstraete",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  4,
+                        "nationality":  "Belgium",
+                        "player_id":  210831,
+                        "club_position":  "RDM",
+                        "long_name":  "Birger Danny Verstraete",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Maertens",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  33,
+                        "nationality":  "Belgium",
+                        "player_id":  220847,
+                        "club_position":  "CAM",
+                        "long_name":  "Mathieu Maertens",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Akimoto",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  30,
+                        "nationality":  "Japan",
+                        "player_id":  260282,
+                        "club_position":  "LB",
+                        "long_name":  "Takahiro Akimoto明本 考浩",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ł. Łakomy",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  24,
+                        "nationality":  "Poland",
+                        "player_id":  260501,
+                        "club_position":  "RES",
+                        "long_name":  "Łukasz Łakomy",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Maziz",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  237138,
+                        "club_position":  "SUB",
+                        "long_name":  "Youssef Maziz",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Óscar Gil",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  27,
+                        "nationality":  "Spain",
+                        "player_id":  246284,
+                        "club_position":  "RB",
+                        "long_name":  "Óscar Gil Regaño",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Ikwuemesi",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  19,
+                        "nationality":  "Nigeria",
+                        "player_id":  277832,
+                        "club_position":  "SUB",
+                        "long_name":  "Charles Chukwubuikem Ikwuemesi",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Vlietinck",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  77,
+                        "nationality":  "Belgium",
+                        "player_id":  236617,
+                        "club_position":  "SUB",
+                        "long_name":  "Thibault Vlietinck",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Balikwisha",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Congo DR",
+                        "player_id":  244843,
+                        "club_position":  "RM",
+                        "long_name":  "William Muhoya Balikwisha",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Teklab",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  14,
+                        "nationality":  "Germany",
+                        "player_id":  276316,
+                        "club_position":  "RES",
+                        "long_name":  "Henok Teklab",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Kayo",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  93,
+                        "nationality":  "United States",
+                        "player_id":  263275,
+                        "club_position":  "RES",
+                        "long_name":  "Bryang William Kayo",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Nsingi",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Belgium",
+                        "player_id":  270864,
+                        "club_position":  "SUB",
+                        "long_name":  "Nachon Nsingi Nguidi",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Verlinden",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "Belgium",
+                        "player_id":  237337,
+                        "club_position":  "LM",
+                        "long_name":  "Thibaud Christa Philippe Verlinden",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kaba",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  98,
+                        "nationality":  "Guinea",
+                        "player_id":  237524,
+                        "club_position":  "RES",
+                        "long_name":  "Sory Kaba",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Terho",
+                        "overall":  66,
+                        "potential":  77,
+                        "club_jersey_number":  11,
+                        "nationality":  "Finland",
+                        "player_id":  258489,
+                        "club_position":  "SUB",
+                        "long_name":  "Casper Mikael Terho",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Dussenne",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  3,
+                        "nationality":  "Belgium",
+                        "player_id":  201841,
+                        "club_position":  "SUB",
+                        "long_name":  "Noë Georges Dussenne",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Ominami",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Japan",
+                        "player_id":  232704,
+                        "club_position":  "LCB",
+                        "long_name":  "Takuma Ominami大南 拓磨",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Damjanić",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  55,
+                        "nationality":  "Croatia",
+                        "player_id":  80004,
+                        "club_position":  "SUB",
+                        "long_name":  "Viktor Damjanić",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. George",
+                        "overall":  59,
+                        "potential":  66,
+                        "club_jersey_number":  6,
+                        "nationality":  "Belgium",
+                        "player_id":  259640,
+                        "club_position":  "SUB",
+                        "long_name":  "Wouter George",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Traoré",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  9,
+                        "nationality":  "Guinea",
+                        "player_id":  79820,
+                        "club_position":  "ST",
+                        "long_name":  "Abdoul Karim Traoré",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Pletinckx",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  28,
+                        "nationality":  "Belgium",
+                        "player_id":  246157,
+                        "club_position":  "RCB",
+                        "long_name":  "Ewoud Pletinckx",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mijatović",
+                        "overall":  60,
+                        "potential":  75,
+                        "club_jersey_number":  22,
+                        "nationality":  "Serbia",
+                        "player_id":  71191,
+                        "club_position":  "SUB",
+                        "long_name":  "Jovan MijatovićЈован Мијатовић",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Azzouz",
+                        "overall":  55,
+                        "potential":  75,
+                        "club_jersey_number":  60,
+                        "nationality":  "Morocco",
+                        "player_id":  76132,
+                        "club_position":  "RES",
+                        "long_name":  "Mohamed Yassine Azzouzمحمد ياسين عزوز",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Opoku",
+                        "overall":  58,
+                        "potential":  77,
+                        "club_jersey_number":  99,
+                        "nationality":  "Belgium",
+                        "player_id":  75776,
+                        "club_position":  "SUB",
+                        "long_name":  "Davis Opoku",
+                        "age":  17,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Nyakossi",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  34,
+                        "nationality":  "Switzerland",
+                        "player_id":  263655,
+                        "club_position":  "SUB",
+                        "long_name":  "Roggerio Nyakossi",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Souanga",
+                        "overall":  55,
+                        "potential":  75,
+                        "club_jersey_number":  63,
+                        "nationality":  "Belgium",
+                        "player_id":  73918,
+                        "club_position":  "RES",
+                        "long_name":  "Moyé Christ Souanga",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Leysen",
+                        "overall":  73,
+                        "potential":  80,
+                        "club_jersey_number":  1,
+                        "nationality":  "Belgium",
+                        "player_id":  243294,
+                        "club_position":  "GK",
+                        "long_name":  "Tobe Leysen",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Prévot",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  16,
+                        "nationality":  "France",
+                        "player_id":  231841,
+                        "club_position":  "SUB",
+                        "long_name":  "Maxence André Prévot",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Jochmans",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  61,
+                        "nationality":  "Belgium",
+                        "player_id":  258399,
+                        "club_position":  "RES",
+                        "long_name":  "Owen Jochmans",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

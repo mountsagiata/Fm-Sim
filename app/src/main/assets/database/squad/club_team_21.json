@@ -1,0 +1,407 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "FC Bayern München",
+                     "league_name":  "Bundesliga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  21
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Kimmich",
+                        "overall":  89,
+                        "potential":  89,
+                        "club_jersey_number":  6,
+                        "nationality":  "Germany",
+                        "player_id":  212622,
+                        "club_position":  "RDM",
+                        "long_name":  "Joshua Walter Kimmich",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Goretzka",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  8,
+                        "nationality":  "Germany",
+                        "player_id":  209658,
+                        "club_position":  "LDM",
+                        "long_name":  "Leon Christoph Goretzka",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Kane",
+                        "overall":  89,
+                        "potential":  89,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  202126,
+                        "club_position":  "ST",
+                        "long_name":  "Harry Edward Kane",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Musiala",
+                        "overall":  88,
+                        "potential":  92,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  256790,
+                        "club_position":  "SUB",
+                        "long_name":  "Jamal Musiala",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Davies",
+                        "overall":  84,
+                        "potential":  87,
+                        "club_jersey_number":  19,
+                        "nationality":  "Canada",
+                        "player_id":  234396,
+                        "club_position":  "SUB",
+                        "long_name":  "Alphonso Boyle Davies",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Guerreiro",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  22,
+                        "nationality":  "Portugal",
+                        "player_id":  209889,
+                        "club_position":  "SUB",
+                        "long_name":  "Raphaël Adelino José Guerreiro",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "CM",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Laimer",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  27,
+                        "nationality":  "Austria",
+                        "player_id":  225375,
+                        "club_position":  "RB",
+                        "long_name":  "Konrad Laimer",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Díaz",
+                        "overall":  85,
+                        "potential":  85,
+                        "club_jersey_number":  14,
+                        "nationality":  "Colombia",
+                        "player_id":  241084,
+                        "club_position":  "LM",
+                        "long_name":  "Luis Fernando Díaz Marulanda",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Olise",
+                        "overall":  86,
+                        "potential":  88,
+                        "club_jersey_number":  17,
+                        "nationality":  "France",
+                        "player_id":  247827,
+                        "club_position":  "RM",
+                        "long_name":  "Michael Akpovie Olise",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pavlović",
+                        "overall":  79,
+                        "potential":  87,
+                        "club_jersey_number":  45,
+                        "nationality":  "Germany",
+                        "player_id":  275298,
+                        "club_position":  "SUB",
+                        "long_name":  "Aleksandar Pavlović",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Gnabry",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  7,
+                        "nationality":  "Germany",
+                        "player_id":  206113,
+                        "club_position":  "CAM",
+                        "long_name":  "Serge David Gnabry",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ito",
+                        "overall":  78,
+                        "potential":  82,
+                        "club_jersey_number":  21,
+                        "nationality":  "Japan",
+                        "player_id":  234205,
+                        "club_position":  "SUB",
+                        "long_name":  "Hiroki Ito伊藤 洋輝",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Jackson",
+                        "overall":  80,
+                        "potential":  84,
+                        "club_jersey_number":  11,
+                        "nationality":  "Senegal",
+                        "player_id":  259197,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolas Jackson",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Boey",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  248266,
+                        "club_position":  "SUB",
+                        "long_name":  "Sacha Boey",
+                        "age":  24,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bischof",
+                        "overall":  76,
+                        "potential":  86,
+                        "club_jersey_number":  20,
+                        "nationality":  "Germany",
+                        "player_id":  263765,
+                        "club_position":  "SUB",
+                        "long_name":  "Tom Bischof",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Upamecano",
+                        "overall":  85,
+                        "potential":  88,
+                        "club_jersey_number":  2,
+                        "nationality":  "France",
+                        "player_id":  229558,
+                        "club_position":  "RCB",
+                        "long_name":  "Dayotchanculle Oswald Upamecano",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Stanišić",
+                        "overall":  78,
+                        "potential":  82,
+                        "club_jersey_number":  44,
+                        "nationality":  "Croatia",
+                        "player_id":  250955,
+                        "club_position":  "LB",
+                        "long_name":  "Josip Stanišić",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Tah",
+                        "overall":  87,
+                        "potential":  87,
+                        "club_jersey_number":  4,
+                        "nationality":  "Germany",
+                        "player_id":  213331,
+                        "club_position":  "LCB",
+                        "long_name":  "Jonathan Glao Tah",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kim Min Jae",
+                        "overall":  82,
+                        "potential":  83,
+                        "club_jersey_number":  3,
+                        "nationality":  "Korea Republic",
+                        "player_id":  237086,
+                        "club_position":  "SUB",
+                        "long_name":  "Min-jae Kim김민재 金敏在",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Karl",
+                        "overall":  63,
+                        "potential":  86,
+                        "club_jersey_number":  46,
+                        "nationality":  "Germany",
+                        "player_id":  78063,
+                        "club_position":  "SUB",
+                        "long_name":  "Lennart Karl",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "David Santos Daiber",
+                        "overall":  59,
+                        "potential":  79,
+                        "club_jersey_number":  47,
+                        "nationality":  "Portugal",
+                        "player_id":  79317,
+                        "club_position":  "SUB",
+                        "long_name":  "David Michael Santos Daiber",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Neuer",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  1,
+                        "nationality":  "Germany",
+                        "player_id":  167495,
+                        "club_position":  "GK",
+                        "long_name":  "Manuel Peter Neuer",
+                        "age":  39,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Ulreich",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  26,
+                        "nationality":  "Germany",
+                        "player_id":  186569,
+                        "club_position":  "RES",
+                        "long_name":  "Sven Ulreich",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Urbig",
+                        "overall":  74,
+                        "potential":  84,
+                        "club_jersey_number":  40,
+                        "nationality":  "Germany",
+                        "player_id":  263887,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonas Kurt Urbig",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bärtl",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  35,
+                        "nationality":  "Germany",
+                        "player_id":  81240,
+                        "club_position":  "RES",
+                        "long_name":  "Jannis Bärtl",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Klanac",
+                        "overall":  56,
+                        "potential":  75,
+                        "club_jersey_number":  48,
+                        "nationality":  "Germany",
+                        "player_id":  76337,
+                        "club_position":  "RES",
+                        "long_name":  "Leon Klanac",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

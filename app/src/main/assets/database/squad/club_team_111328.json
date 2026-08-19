@@ -1,0 +1,430 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "CD Palestino",
+                     "league_name":  "Primera Division",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111328
+                 },
+    "players":  [
+                    {
+                        "short_name":  "B. Carrasco",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Chile",
+                        "player_id":  207641,
+                        "club_position":  "RM",
+                        "long_name":  "Bryan Paul Carrasco Santos",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Fernández",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "Argentina",
+                        "player_id":  219452,
+                        "club_position":  "LDM",
+                        "long_name":  "Julián Rodrigo Fernández",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Meza",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  42,
+                        "nationality":  "Argentina",
+                        "player_id":  214986,
+                        "club_position":  "RCB",
+                        "long_name":  "Fernando Nicolás Meza",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Suárez",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  13,
+                        "nationality":  "Chile",
+                        "player_id":  213846,
+                        "club_position":  "LCB",
+                        "long_name":  "Cristian Fernando Suárez Figueroa",
+                        "age":  38,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Benítez",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Argentina",
+                        "player_id":  229209,
+                        "club_position":  "LM",
+                        "long_name":  "Jonathan Óscar Benítez",
+                        "age":  33,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Zúñiga",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  28,
+                        "nationality":  "Chile",
+                        "player_id":  214333,
+                        "club_position":  "LB",
+                        "long_name":  "Dilan Patricio Zúñiga Espinoza",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Abrigo",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Chile",
+                        "player_id":  236956,
+                        "club_position":  "CAM",
+                        "long_name":  "Joe Axel Abrigo Navarro",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Martínez",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  10,
+                        "nationality":  "Chile",
+                        "player_id":  214308,
+                        "club_position":  "RDM",
+                        "long_name":  "Ariel Elías Martínez Arce",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Parra",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  8,
+                        "nationality":  "Chile",
+                        "player_id":  214238,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Alejandro Parra Rubilar",
+                        "age":  31,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bizama",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  16,
+                        "nationality":  "Chile",
+                        "player_id":  229713,
+                        "club_position":  "SUB",
+                        "long_name":  "José Carlos Bizama Venegas",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Fernández",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  12,
+                        "nationality":  "Chile",
+                        "player_id":  214835,
+                        "club_position":  "SUB",
+                        "long_name":  "Ronnie Alan Fernández Sáez",
+                        "age":  34,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Marabel",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Paraguay",
+                        "player_id":  260030,
+                        "club_position":  "SUB",
+                        "long_name":  "Junior Osvaldo Marabel Jara",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Arias",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  18,
+                        "nationality":  "Uruguay",
+                        "player_id":  240168,
+                        "club_position":  "ST",
+                        "long_name":  "Junior Gabriel Arias Cáceres",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Castro",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  9,
+                        "nationality":  "Uruguay",
+                        "player_id":  244902,
+                        "club_position":  "SUB",
+                        "long_name":  "Facundo Ismael Castro Souto",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. León",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "Chile",
+                        "player_id":  255415,
+                        "club_position":  "SUB",
+                        "long_name":  "Jason Matías León Alvear",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Meza",
+                        "overall":  60,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "Chile",
+                        "player_id":  264412,
+                        "club_position":  "RES",
+                        "long_name":  "Nicolás Alonso Meza Muñoz",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Espinoza",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Chile",
+                        "player_id":  78101,
+                        "club_position":  "RES",
+                        "long_name":  "Vicente Ariel Espinoza Hevia",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Salgado",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  24,
+                        "nationality":  "Chile",
+                        "player_id":  275461,
+                        "club_position":  "SUB",
+                        "long_name":  "Dilan Amaro Salgado Soto",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Tapia",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  20,
+                        "nationality":  "Chile",
+                        "player_id":  75923,
+                        "club_position":  "SUB",
+                        "long_name":  "Gonzalo Alejandro Tapia Pérez",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Montes",
+                        "overall":  55,
+                        "potential":  64,
+                        "club_jersey_number":  15,
+                        "nationality":  "Chile",
+                        "player_id":  74979,
+                        "club_position":  "SUB",
+                        "long_name":  "Francisco Tomás Montes Romero",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Soto",
+                        "overall":  56,
+                        "potential":  64,
+                        "club_jersey_number":  22,
+                        "nationality":  "Chile",
+                        "player_id":  77769,
+                        "club_position":  "RES",
+                        "long_name":  "Benjamín Ignacio Soto Bustos",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Garguez",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  29,
+                        "nationality":  "Chile",
+                        "player_id":  74543,
+                        "club_position":  "RB",
+                        "long_name":  "Ian Álex Garguez Gómez",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Alegría",
+                        "overall":  54,
+                        "potential":  77,
+                        "club_jersey_number":  41,
+                        "nationality":  "Chile",
+                        "player_id":  80616,
+                        "club_position":  "RES",
+                        "long_name":  "Ian Zohar Alegría Pindal",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ceza",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  4,
+                        "nationality":  "Chile",
+                        "player_id":  263141,
+                        "club_position":  "SUB",
+                        "long_name":  "Antonio Alejandro Ceza Gavilán",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Araneda",
+                        "overall":  54,
+                        "potential":  68,
+                        "club_jersey_number":  21,
+                        "nationality":  "Chile",
+                        "player_id":  70340,
+                        "club_position":  "RES",
+                        "long_name":  "Benjamín Sebastián Araneda Aravena",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Pérez",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "Chile",
+                        "player_id":  234717,
+                        "club_position":  "GK",
+                        "long_name":  "Sebastián Andrés Pérez Kirby",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Salas",
+                        "overall":  56,
+                        "potential":  62,
+                        "club_jersey_number":  1,
+                        "nationality":  "Chile",
+                        "player_id":  76134,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastián Rodrigo Salas Aránguiz",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Contreras",
+                        "overall":  57,
+                        "potential":  67,
+                        "club_jersey_number":  26,
+                        "nationality":  "Chile",
+                        "player_id":  256923,
+                        "club_position":  "SUB",
+                        "long_name":  "Dixon Andrés Contreras Salvo",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

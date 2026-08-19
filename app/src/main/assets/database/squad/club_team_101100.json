@@ -1,0 +1,463 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Atlético Nacional",
+                     "league_name":  "Categoría Primera A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  101100
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Uribe",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  8,
+                        "nationality":  "Colombia",
+                        "player_id":  214047,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrés Mateus Uribe Villa",
+                        "age":  34,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Morelos",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Colombia",
+                        "player_id":  221714,
+                        "club_position":  "ST",
+                        "long_name":  "Alfredo José Morelos Aviléz",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zapata",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  80,
+                        "nationality":  "Colombia",
+                        "player_id":  251841,
+                        "club_position":  "RDM",
+                        "long_name":  "Juan Manuel Zapata Zumaque",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Román",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  6,
+                        "nationality":  "Colombia",
+                        "player_id":  237242,
+                        "club_position":  "RB",
+                        "long_name":  "Andrés Felipe Román Mosquera",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Asprilla",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Colombia",
+                        "player_id":  214354,
+                        "club_position":  "SUB",
+                        "long_name":  "Dairon Estibens Asprilla Rivas",
+                        "age":  33,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Cándido",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  13,
+                        "nationality":  "Uruguay",
+                        "player_id":  242335,
+                        "club_position":  "LB",
+                        "long_name":  "Camilo Damián Cándido Aquino",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Cardona",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Colombia",
+                        "player_id":  192342,
+                        "club_position":  "CAM",
+                        "long_name":  "Edwin Andrés Cardona Bedoya",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bauza",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  30,
+                        "nationality":  "Argentina",
+                        "player_id":  236633,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Francisco Bauza",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Campuzano",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "Colombia",
+                        "player_id":  242267,
+                        "club_position":  "LDM",
+                        "long_name":  "Jorman David Campuzano Puentes",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Arce",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Ecuador",
+                        "player_id":  245231,
+                        "club_position":  "SUB",
+                        "long_name":  "Billy Vladimir Arce Mina",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Castro",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Colombia",
+                        "player_id":  228136,
+                        "club_position":  "SUB",
+                        "long_name":  "Joan Sebastián Castro Dinas",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Rengifo",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  38,
+                        "nationality":  "Colombia",
+                        "player_id":  81233,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Manuel Rengifo",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Tesillo",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  16,
+                        "nationality":  "Colombia",
+                        "player_id":  214169,
+                        "club_position":  "LCB",
+                        "long_name":  "William José Tesillo Gutiérrez",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sarmiento",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  29,
+                        "nationality":  "Colombia",
+                        "player_id":  234955,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrés de Jesús Sarmiento Salas",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. García",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  28,
+                        "nationality":  "Colombia",
+                        "player_id":  74044,
+                        "club_position":  "SUB",
+                        "long_name":  "Simón García",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hinestroza",
+                        "overall":  72,
+                        "potential":  81,
+                        "club_jersey_number":  18,
+                        "nationality":  "Colombia",
+                        "player_id":  279786,
+                        "club_position":  "RM",
+                        "long_name":  "Marino Hinestroza Angulo",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Batista",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  19,
+                        "nationality":  "Uruguay",
+                        "player_id":  264820,
+                        "club_position":  "SUB",
+                        "long_name":  "Facundo Agustín Batista Ochoa",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Rivero",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  26,
+                        "nationality":  "Colombia",
+                        "player_id":  76934,
+                        "club_position":  "RES",
+                        "long_name":  "Elkin Rivero",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Moreno",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  7,
+                        "nationality":  "Colombia",
+                        "player_id":  225811,
+                        "club_position":  "LM",
+                        "long_name":  "Marlos Moreno Durán",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Salazar",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Colombia",
+                        "player_id":  275042,
+                        "club_position":  "RES",
+                        "long_name":  "Andrés Salazar Osorio",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Toscano",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  5,
+                        "nationality":  "Colombia",
+                        "player_id":  271633,
+                        "club_position":  "SUB",
+                        "long_name":  "Kilian David Toscano Bassa",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Uribe",
+                        "overall":  60,
+                        "potential":  79,
+                        "club_jersey_number":  36,
+                        "nationality":  "Colombia",
+                        "player_id":  78000,
+                        "club_position":  "RES",
+                        "long_name":  "Cristian Uribe",
+                        "age":  17,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Obando",
+                        "overall":  60,
+                        "potential":  82,
+                        "club_jersey_number":  44,
+                        "nationality":  "Colombia",
+                        "player_id":  80018,
+                        "club_position":  "RES",
+                        "long_name":  "Juan David Obando",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Haydar",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  4,
+                        "nationality":  "Colombia",
+                        "player_id":  248133,
+                        "club_position":  "SUB",
+                        "long_name":  "César Rafael Haydar Villarreal",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Rosa",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  35,
+                        "nationality":  "Colombia",
+                        "player_id":  78589,
+                        "club_position":  "RES",
+                        "long_name":  "Juan José Rosa",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Arias",
+                        "overall":  68,
+                        "potential":  79,
+                        "club_jersey_number":  23,
+                        "nationality":  "Colombia",
+                        "player_id":  271632,
+                        "club_position":  "RCB",
+                        "long_name":  "Juan José Arias Henao",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Caicedo",
+                        "overall":  60,
+                        "potential":  79,
+                        "club_jersey_number":  33,
+                        "nationality":  "Colombia",
+                        "player_id":  76933,
+                        "club_position":  "RES",
+                        "long_name":  "Royer Caicedo",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ospina",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  1,
+                        "nationality":  "Colombia",
+                        "player_id":  176550,
+                        "club_position":  "GK",
+                        "long_name":  "David Ospina Ramírez",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Castillo",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  15,
+                        "nationality":  "Colombia",
+                        "player_id":  255605,
+                        "club_position":  "SUB",
+                        "long_name":  "Harlen Alfred Castillo Moreno",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Marquínez",
+                        "overall":  67,
+                        "potential":  79,
+                        "club_jersey_number":  25,
+                        "nationality":  "Colombia",
+                        "player_id":  264588,
+                        "club_position":  "SUB",
+                        "long_name":  "Luis Miguel Marquinez Preciado",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

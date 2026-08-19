@@ -1,0 +1,41 @@
+{
+  "MATCH_START": [
+    "Kick off dimulai!",
+    "Pertandingan resmi dimulai!",
+    "Peluit kick off dibunyikan!"
+  ],
+
+  "SHOT": [
+    "{player} mencoba tendangan!",
+    "Peluang untuk {player}!",
+    "{player} melepaskan tembakan!"
+  ],
+
+  "GOAL": [
+    "GOOOOL! {player} mencetak gol!",
+    "{player} menjebol gawang!",
+    "Gol luar biasa dari {player}!",
+    "{player} membuat skor menjadi {score}!"
+  ],
+
+  "YELLOW_CARD": [
+    "{player} mendapat kartu kuning.",
+    "Kartu kuning untuk {player}.",
+    "Pelanggaran keras dari {player}."
+  ],
+
+  "RED_CARD": [
+    "Kartu merah untuk {player}!",
+    "{player} diusir keluar lapangan!"
+  ],
+
+  "HALFTIME": [
+    "Babak pertama selesai.",
+    "Peluit akhir babak pertama dibunyikan."
+  ],
+
+  "MATCH_END": [
+    "Pertandingan selesai!",
+    "Full time!"
+  ]
+}

@@ -1,0 +1,329 @@
+﻿{
+    "metadata":  {
+                     "total_players":  21,
+                     "club_name":  "Carabobo FC",
+                     "league_name":  "Primera Division",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  110991
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Pérez",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "Venezuela",
+                        "player_id":  272699,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Camilo Pérez Vasco",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. González",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "Venezuela",
+                        "player_id":  272329,
+                        "club_position":  "RCM",
+                        "long_name":  "Gustavo Junior González Pérez",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Bonilla",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  28,
+                        "nationality":  "Venezuela",
+                        "player_id":  257068,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Alejandro Bonilla Serrada",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Tortolero",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  7,
+                        "nationality":  "Venezuela",
+                        "player_id":  253579,
+                        "club_position":  "RW",
+                        "long_name":  "Edson Alejandro Tortolero Toro",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Hernández",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  10,
+                        "nationality":  "Venezuela",
+                        "player_id":  253895,
+                        "club_position":  "SUB",
+                        "long_name":  "Robert Enrique Hernández Aguado",
+                        "age":  31,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. López",
+                        "overall":  64,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Venezuela",
+                        "player_id":  274522,
+                        "club_position":  "SUB",
+                        "long_name":  "Franner Xavier López Castillo",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Núñez",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  26,
+                        "nationality":  "Argentina",
+                        "player_id":  78085,
+                        "club_position":  "CDM",
+                        "long_name":  "Matías Adrián Núñez",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pernía",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  13,
+                        "nationality":  "Venezuela",
+                        "player_id":  272328,
+                        "club_position":  "LB",
+                        "long_name":  "Miguel Ángel Pernía Almao",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Guaramato",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  2,
+                        "nationality":  "Venezuela",
+                        "player_id":  254672,
+                        "club_position":  "RB",
+                        "long_name":  "Marcel Daniel Guaramato García",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Londoño",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  9,
+                        "nationality":  "Colombia",
+                        "player_id":  266725,
+                        "club_position":  "ST",
+                        "long_name":  "Flabián Londoño Bedoya",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Aponte",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  4,
+                        "nationality":  "Venezuela",
+                        "player_id":  254826,
+                        "club_position":  "RCB",
+                        "long_name":  "Leonardo Jesús Aponte Matute",
+                        "age":  31,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Berríos",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  14,
+                        "nationality":  "Colombia",
+                        "player_id":  78086,
+                        "club_position":  "LW",
+                        "long_name":  "Joshuan Javier Berríos Mora",
+                        "age":  28,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Ramos",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  18,
+                        "nationality":  "Venezuela",
+                        "player_id":  253607,
+                        "club_position":  "LCM",
+                        "long_name":  "Carlos Ignacio Ramos Rodríguez",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Riasco",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  99,
+                        "nationality":  "Venezuela",
+                        "player_id":  264547,
+                        "club_position":  "SUB",
+                        "long_name":  "José Alexander Riasco Brizuela",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mendoza",
+                        "overall":  54,
+                        "potential":  66,
+                        "club_jersey_number":  15,
+                        "nationality":  "Venezuela",
+                        "player_id":  78121,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastián Mendoza Yépez",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ruíz",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  21,
+                        "nationality":  "Venezuela",
+                        "player_id":  70626,
+                        "club_position":  "SUB",
+                        "long_name":  "Freiver Stiven Ruíz Vallecilla",
+                        "age":  22,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Rodríguez",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Uruguay",
+                        "player_id":  279805,
+                        "club_position":  "LCB",
+                        "long_name":  "Norman Exzequiel Rodríguez Olivera",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Neira",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  32,
+                        "nationality":  "Argentina",
+                        "player_id":  78087,
+                        "club_position":  "SUB",
+                        "long_name":  "Ezequiel Nicolás Neira",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Oliveros",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "Venezuela",
+                        "player_id":  274525,
+                        "club_position":  "SUB",
+                        "long_name":  "Franyer José Oliveros Infante",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Bruera",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "Argentina",
+                        "player_id":  236608,
+                        "club_position":  "GK",
+                        "long_name":  "Lucas Mariano Bruera",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Gil",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "Venezuela",
+                        "player_id":  260299,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Javier Gil Malavé",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

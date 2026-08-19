@@ -1,0 +1,418 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "UTA Arad",
+                     "league_name":  "Liga I",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  110750
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Popescu",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "Romania",
+                        "player_id":  239980,
+                        "club_position":  "RDM",
+                        "long_name":  "Ovidiu Marian Popescu",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Van Durmen",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  30,
+                        "nationality":  "Belgium",
+                        "player_id":  228715,
+                        "club_position":  "LDM",
+                        "long_name":  "Benjamin Van Durmen",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Costache",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  19,
+                        "nationality":  "Romania",
+                        "player_id":  244143,
+                        "club_position":  "RM",
+                        "long_name":  "Valentin Ionuț Costache",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Roman",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  8,
+                        "nationality":  "Romania",
+                        "player_id":  275225,
+                        "club_position":  "CAM",
+                        "long_name":  "Alin Roman",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mino",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "Japan",
+                        "player_id":  269424,
+                        "club_position":  "SUB",
+                        "long_name":  "Sota Mino三野 草太",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Abdallah",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "Madagascar",
+                        "player_id":  237666,
+                        "club_position":  "ST",
+                        "long_name":  "Hakim Djamel Abdallah",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Hrezdac",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  97,
+                        "nationality":  "Romania",
+                        "player_id":  257812,
+                        "club_position":  "SUB",
+                        "long_name":  "Denis Lucian Hrezdac",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Pospelov",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  60,
+                        "nationality":  "Ukraine",
+                        "player_id":  72620,
+                        "club_position":  "RCB",
+                        "long_name":  "Dmytro PospelovПоспєлов Дмитро Олексійович",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Mihai",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  17,
+                        "nationality":  "Romania",
+                        "player_id":  277019,
+                        "club_position":  "SUB",
+                        "long_name":  "Luca Alessandro Mihai",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Poulolo",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "Luxembourg",
+                        "player_id":  254265,
+                        "club_position":  "LCB",
+                        "long_name":  "Florent Gregoire Poulolo",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Alomerović",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  3,
+                        "nationality":  "North Macedonia",
+                        "player_id":  79123,
+                        "club_position":  "SUB",
+                        "long_name":  "Din Alomerović",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Țuțu",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  2,
+                        "nationality":  "Romania",
+                        "player_id":  79343,
+                        "club_position":  "RB",
+                        "long_name":  "Mark Țuțu",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Vlăsceanu",
+                        "overall":  60,
+                        "potential":  68,
+                        "club_jersey_number":  29,
+                        "nationality":  "Romania",
+                        "player_id":  72621,
+                        "club_position":  "SUB",
+                        "long_name":  "Laurențiu Constantin Vlăsceanu",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Coman",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Romania",
+                        "player_id":  72404,
+                        "club_position":  "SUB",
+                        "long_name":  "Marius Cătălin Coman",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Padula",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  72,
+                        "nationality":  "Romania",
+                        "player_id":  258740,
+                        "club_position":  "LB",
+                        "long_name":  "Andrea Padula",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Zsóri",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  7,
+                        "nationality":  "Hungary",
+                        "player_id":  75027,
+                        "club_position":  "SUB",
+                        "long_name":  "Dániel Zsóri",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Iacob",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  13,
+                        "nationality":  "Romania",
+                        "player_id":  74641,
+                        "club_position":  "SUB",
+                        "long_name":  "Flavius Iacob",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Tzionis",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  10,
+                        "nationality":  "Cyprus",
+                        "player_id":  266734,
+                        "club_position":  "LM",
+                        "long_name":  "Marinos TzionisΜαρίνος Τζιωνής",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Benga",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "Romania",
+                        "player_id":  242500,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexandru Constantin Benga",
+                        "age":  36,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Danciu",
+                        "overall":  60,
+                        "potential":  64,
+                        "club_jersey_number":  37,
+                        "nationality":  "Romania",
+                        "player_id":  258373,
+                        "club_position":  "SUB",
+                        "long_name":  "Marian Danciu",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Barbu",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Romania",
+                        "player_id":  73396,
+                        "club_position":  "SUB",
+                        "long_name":  "David Andrei Barbu",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Țăroi",
+                        "overall":  56,
+                        "potential":  67,
+                        "club_jersey_number":  20,
+                        "nationality":  "Romania",
+                        "player_id":  75786,
+                        "club_position":  "RES",
+                        "long_name":  "Denis Alberto Ionuț Țăroi",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Matei",
+                        "overall":  51,
+                        "potential":  63,
+                        "club_jersey_number":  21,
+                        "nationality":  "Romania",
+                        "player_id":  76763,
+                        "club_position":  "RES",
+                        "long_name":  "Alexandru Marian Matei",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Dragoș",
+                        "overall":  52,
+                        "potential":  65,
+                        "club_jersey_number":  22,
+                        "nationality":  "Romania",
+                        "player_id":  75627,
+                        "club_position":  "RES",
+                        "long_name":  "Adrian Cristian Dragoș",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Iliev",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "North Macedonia",
+                        "player_id":  213649,
+                        "club_position":  "GK",
+                        "long_name":  "Dejan IlievДејан Илиев",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gorcea",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  33,
+                        "nationality":  "Romania",
+                        "player_id":  269406,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrei Cristian Gorcea",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Roșu",
+                        "overall":  51,
+                        "potential":  61,
+                        "club_jersey_number":  12,
+                        "nationality":  "Romania",
+                        "player_id":  77113,
+                        "club_position":  "RES",
+                        "long_name":  "Lucas Jonathan Roşu",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

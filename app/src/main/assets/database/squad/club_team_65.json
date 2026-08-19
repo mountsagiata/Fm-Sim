@@ -1,0 +1,444 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Lille OSC",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  65
+                 },
+    "players":  [
+                    {
+                        "short_name":  "R. Perraud",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  15,
+                        "nationality":  "France",
+                        "player_id":  231318,
+                        "club_position":  "LB",
+                        "long_name":  "Romain Paul Jean-Michel Perraud",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Meunier",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  12,
+                        "nationality":  "Belgium",
+                        "player_id":  202371,
+                        "club_position":  "RB",
+                        "long_name":  "Thomas Andre A. Meunier",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. André",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  190674,
+                        "club_position":  "RDM",
+                        "long_name":  "Benjamin André",
+                        "age":  34,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Bentaleb",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  6,
+                        "nationality":  "Algeria",
+                        "player_id":  213296,
+                        "club_position":  "SUB",
+                        "long_name":  "Nabil Bentalebنبيل بن طالب",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Haraldsson",
+                        "overall":  78,
+                        "potential":  84,
+                        "club_jersey_number":  10,
+                        "nationality":  "Iceland",
+                        "player_id":  262088,
+                        "club_position":  "CAM",
+                        "long_name":  "Hákon Arnar Haraldsson",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tiago Santos",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  22,
+                        "nationality":  "Portugal",
+                        "player_id":  270559,
+                        "club_position":  "SUB",
+                        "long_name":  "Tiago Carvalho Santos",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "André Gomes",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "Portugal",
+                        "player_id":  211575,
+                        "club_position":  "SUB",
+                        "long_name":  "André Filipe Tavares Gomes",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Giroud",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  178509,
+                        "club_position":  "ST",
+                        "long_name":  "Olivier Jonathan Giroud",
+                        "age":  38,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Verdonk",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "Indonesia",
+                        "player_id":  227794,
+                        "club_position":  "RES",
+                        "long_name":  "Calvin Ronald Verdonk",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bouaddi",
+                        "overall":  75,
+                        "potential":  86,
+                        "club_jersey_number":  32,
+                        "nationality":  "France",
+                        "player_id":  278901,
+                        "club_position":  "LDM",
+                        "long_name":  "Ayyoub Bouaddi",
+                        "age":  17,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Mandi",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Algeria",
+                        "player_id":  201143,
+                        "club_position":  "SUB",
+                        "long_name":  "Aïssa Mandiعيسى ماندي",
+                        "age":  33,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mukau",
+                        "overall":  74,
+                        "potential":  83,
+                        "club_jersey_number":  17,
+                        "nationality":  "Congo DR",
+                        "player_id":  274447,
+                        "club_position":  "SUB",
+                        "long_name":  "Ngal\u0026amp;apos;ayel Mukau",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Félix Correia",
+                        "overall":  75,
+                        "potential":  80,
+                        "club_jersey_number":  27,
+                        "nationality":  "Portugal",
+                        "player_id":  253167,
+                        "club_position":  "LM",
+                        "long_name":  "Félix Alexandre Andrade Sanches Correia",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Mbemba",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  18,
+                        "nationality":  "Congo DR",
+                        "player_id":  210897,
+                        "club_position":  "SUB",
+                        "long_name":  "Chancel Mbemba Mangulu",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Igamane",
+                        "overall":  73,
+                        "potential":  82,
+                        "club_jersey_number":  29,
+                        "nationality":  "Morocco",
+                        "player_id":  73449,
+                        "club_position":  "SUB",
+                        "long_name":  "Hamza Igamaneحمزة اغامان",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fernandez-Pardo",
+                        "overall":  75,
+                        "potential":  84,
+                        "club_jersey_number":  7,
+                        "nationality":  "Spain",
+                        "player_id":  276048,
+                        "club_position":  "RM",
+                        "long_name":  "Matias Fernandez-Pardo",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Sahraoui",
+                        "overall":  76,
+                        "potential":  82,
+                        "club_jersey_number":  11,
+                        "nationality":  "Morocco",
+                        "player_id":  246548,
+                        "club_position":  "SUB",
+                        "long_name":  "Osame Sahraoui",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "U. Raghouber",
+                        "overall":  69,
+                        "potential":  79,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  74774,
+                        "club_position":  "SUB",
+                        "long_name":  "Ugo Raghouber",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Mbappé",
+                        "overall":  69,
+                        "potential":  80,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  278172,
+                        "club_position":  "SUB",
+                        "long_name":  "Ethan Mbappé Lottin",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alexsandro",
+                        "overall":  80,
+                        "potential":  84,
+                        "club_jersey_number":  4,
+                        "nationality":  "Brazil",
+                        "player_id":  269493,
+                        "club_position":  "LCB",
+                        "long_name":  "Alexsandro Victor de Souza Ribeiro",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Broholm",
+                        "overall":  69,
+                        "potential":  81,
+                        "club_jersey_number":  14,
+                        "nationality":  "Norway",
+                        "player_id":  268738,
+                        "club_position":  "SUB",
+                        "long_name":  "Marius Sivertsen Broholm",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Ngoy",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  3,
+                        "nationality":  "Belgium",
+                        "player_id":  262071,
+                        "club_position":  "RCB",
+                        "long_name":  "Nathan Ngoy",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Goffi",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  38,
+                        "nationality":  "France",
+                        "player_id":  80688,
+                        "club_position":  "RES",
+                        "long_name":  "Maxima Goffi",
+                        "age":  17,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Dago",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  37,
+                        "nationality":  "France",
+                        "player_id":  276324,
+                        "club_position":  "RES",
+                        "long_name":  "Trévis Dago",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rafael Fernandes",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  45,
+                        "nationality":  "Portugal",
+                        "player_id":  271317,
+                        "club_position":  "RES",
+                        "long_name":  "Rafael Tavares Gomes Fernandes",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Touré",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  36,
+                        "nationality":  "France",
+                        "player_id":  278261,
+                        "club_position":  "RES",
+                        "long_name":  "Ousmane Touré",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Özer",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  1,
+                        "nationality":  "Türkiye",
+                        "player_id":  239254,
+                        "club_position":  "GK",
+                        "long_name":  "Berke Özer",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bodart",
+                        "overall":  73,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Belgium",
+                        "player_id":  237525,
+                        "club_position":  "SUB",
+                        "long_name":  "Arnaud Bodart",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Caillard",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  211398,
+                        "club_position":  "RES",
+                        "long_name":  "Marc-Aurèle Caillard",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

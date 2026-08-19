@@ -1,0 +1,491 @@
+﻿{
+    "metadata":  {
+                     "total_players":  32,
+                     "club_name":  "AEK Athens",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  278
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Pineda",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  13,
+                        "nationality":  "Mexico",
+                        "player_id":  224574,
+                        "club_position":  "RCM",
+                        "long_name":  "Orbelín Pineda Alvarado",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Mário",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  10,
+                        "nationality":  "Portugal",
+                        "player_id":  212814,
+                        "club_position":  "RES",
+                        "long_name":  "João Mário Naval da Costa Eduardo",
+                        "age":  32,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Marin",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  18,
+                        "nationality":  "Romania",
+                        "player_id":  235813,
+                        "club_position":  "SUB",
+                        "long_name":  "Răzvan Gabriel Marin",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Pereyra",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  37,
+                        "nationality":  "Argentina",
+                        "player_id":  193061,
+                        "club_position":  "LCM",
+                        "long_name":  "Roberto Maximiliano Pereyra",
+                        "age":  34,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Koita",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Mauritania",
+                        "player_id":  239028,
+                        "club_position":  "SUB",
+                        "long_name":  "Aboubakary Yeli Koita",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mantalos",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  20,
+                        "nationality":  "Greece",
+                        "player_id":  208224,
+                        "club_position":  "SUB",
+                        "long_name":  "Petros MantalosΠέτρος Μάνταλος",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Grujić",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Serbia",
+                        "player_id":  232099,
+                        "club_position":  "RES",
+                        "long_name":  "Marko GrujićМарко Грујић",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Ljubičić",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  23,
+                        "nationality":  "Croatia",
+                        "player_id":  243525,
+                        "club_position":  "SUB",
+                        "long_name":  "Robert Ljubičić",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Gaćinović",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "Serbia",
+                        "player_id":  230564,
+                        "club_position":  "SUB",
+                        "long_name":  "Mijat GaćinovićМијат Гаћиновић",
+                        "age":  30,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Martial",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  211300,
+                        "club_position":  "LW",
+                        "long_name":  "Anthony Jordan Martial",
+                        "age":  29,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Jønsson",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Denmark",
+                        "player_id":  204152,
+                        "club_position":  "CDM",
+                        "long_name":  "Jens Jønsson",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Eliasson",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Sweden",
+                        "player_id":  220969,
+                        "club_position":  "RW",
+                        "long_name":  "Niclas Eliasson Santana",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Jović",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Serbia",
+                        "player_id":  232432,
+                        "club_position":  "ST",
+                        "long_name":  "Luka JovićЛука Јовић",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Odubajo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  28,
+                        "nationality":  "England",
+                        "player_id":  202113,
+                        "club_position":  "SUB",
+                        "long_name":  "Moses OdubajoMoses Adeshina Ayoola Junior Odubajo",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Rota",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  12,
+                        "nationality":  "Greece",
+                        "player_id":  255541,
+                        "club_position":  "RB",
+                        "long_name":  "Lazaros RotaΛάζαρος Ρότα",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Penrice",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  29,
+                        "nationality":  "Scotland",
+                        "player_id":  232212,
+                        "club_position":  "RES",
+                        "long_name":  "James Penrice",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kutesa",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Switzerland",
+                        "player_id":  233917,
+                        "club_position":  "RES",
+                        "long_name":  "Dereck Germano Kutesa",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Zine",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  90,
+                        "nationality":  "Angola",
+                        "player_id":  278660,
+                        "club_position":  "SUB",
+                        "long_name":  "Ambrosini António Cabaça Salvador",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Pilios",
+                        "overall":  70,
+                        "potential":  75,
+                        "club_jersey_number":  3,
+                        "nationality":  "Greece",
+                        "player_id":  279064,
+                        "club_position":  "LB",
+                        "long_name":  "Stavros PiliosΣταύρος Πήλιος",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Callens",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "Peru",
+                        "player_id":  211522,
+                        "club_position":  "RES",
+                        "long_name":  "Alexander Martín Marquinho Callens Asín",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Vida",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  21,
+                        "nationality":  "Croatia",
+                        "player_id":  199206,
+                        "club_position":  "RCB",
+                        "long_name":  "Domagoj Vida",
+                        "age":  36,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Filipe Relvas",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  44,
+                        "nationality":  "Portugal",
+                        "player_id":  263897,
+                        "club_position":  "SUB",
+                        "long_name":  "Filipe do Bem Relvas Vitó Oliveira",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kaloskamis",
+                        "overall":  67,
+                        "potential":  80,
+                        "club_jersey_number":  17,
+                        "nationality":  "Greece",
+                        "player_id":  78469,
+                        "club_position":  "RES",
+                        "long_name":  "Dimitrios KaloskamisΔημήτριος Καλοσκάμης",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Pierrot",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Haiti",
+                        "player_id":  244949,
+                        "club_position":  "SUB",
+                        "long_name":  "Frantzdy Pierrot",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Moukoudi",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  2,
+                        "nationality":  "Cameroon",
+                        "player_id":  228732,
+                        "club_position":  "LCB",
+                        "long_name":  "Harold Desty Moukoudi",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kolimatsis",
+                        "overall":  61,
+                        "potential":  77,
+                        "club_jersey_number":  73,
+                        "nationality":  "Greece",
+                        "player_id":  80285,
+                        "club_position":  "RES",
+                        "long_name":  "Christoforos Kolimatsis",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Mitoglou",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  24,
+                        "nationality":  "Greece",
+                        "player_id":  262822,
+                        "club_position":  "SUB",
+                        "long_name":  "Gerasimos MitoglouΓεράσιμος Μήτογλου",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kosidis",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  34,
+                        "nationality":  "Greece",
+                        "player_id":  79916,
+                        "club_position":  "RES",
+                        "long_name":  "Christos Kosidis",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Chrysopoulos",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  55,
+                        "nationality":  "Greece",
+                        "player_id":  79381,
+                        "club_position":  "SUB",
+                        "long_name":  "Konstantinos Chrysopoulos",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Brignoli",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  91,
+                        "nationality":  "Italy",
+                        "player_id":  210358,
+                        "club_position":  "GK",
+                        "long_name":  "Alberto Brignoli",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Strakosha",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Albania",
+                        "player_id":  212151,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Fotaq StrakoshaΘωμάς Στρακόσια",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Angelopoulos",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  81,
+                        "nationality":  "Greece",
+                        "player_id":  79262,
+                        "club_position":  "RES",
+                        "long_name":  "Angelos Angelopoulos",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

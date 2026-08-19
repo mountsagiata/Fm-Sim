@@ -1,0 +1,494 @@
+﻿{
+    "metadata":  {
+                     "total_players":  32,
+                     "club_name":  "Hearts",
+                     "league_name":  "Premiership",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  80
+                 },
+    "players":  [
+                    {
+                        "short_name":  "B. Spittal",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "Scotland",
+                        "player_id":  223663,
+                        "club_position":  "LCM",
+                        "long_name":  "Blair Spittal",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Nieuwenhof",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Australia",
+                        "player_id":  257890,
+                        "club_position":  "RES",
+                        "long_name":  "Calem Nieuwenhof",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ageu",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  40,
+                        "nationality":  "Brazil",
+                        "player_id":  78971,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduardo Ageu Almeida Santos",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Devlin",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Australia",
+                        "player_id":  246006,
+                        "club_position":  "CDM",
+                        "long_name":  "Cameron Peter Devlin",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Shankland",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Scotland",
+                        "player_id":  216218,
+                        "club_position":  "RS",
+                        "long_name":  "Lawrence Shankland",
+                        "age":  29,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kingsley",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  3,
+                        "nationality":  "Scotland",
+                        "player_id":  223747,
+                        "club_position":  "SUB",
+                        "long_name":  "Stephen Kingsley",
+                        "age":  30,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kartum",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  27,
+                        "nationality":  "Norway",
+                        "player_id":  261456,
+                        "club_position":  "SUB",
+                        "long_name":  "Sander Erik Kartum",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Baningime",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "Congo DR",
+                        "player_id":  238062,
+                        "club_position":  "RES",
+                        "long_name":  "Beni Tangama Baningime",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Halkett",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  4,
+                        "nationality":  "Scotland",
+                        "player_id":  222045,
+                        "club_position":  "CB",
+                        "long_name":  "Craig Halkett",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Borchgrevink",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  12,
+                        "nationality":  "Norway",
+                        "player_id":  238091,
+                        "club_position":  "RB",
+                        "long_name":  "Christian Dahle Borchgrevink",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Forrest",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  17,
+                        "nationality":  "Scotland",
+                        "player_id":  256421,
+                        "club_position":  "SUB",
+                        "long_name":  "Alan Forrest",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kyziridis",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  89,
+                        "nationality":  "Greece",
+                        "player_id":  276211,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexandros Kyziridis",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. McEntee",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  31,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  253111,
+                        "club_position":  "RCM",
+                        "long_name":  "Oisin Michael McEntee",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cláudio Braga",
+                        "overall":  68,
+                        "potential":  72,
+                        "club_jersey_number":  10,
+                        "nationality":  "Portugal",
+                        "player_id":  79274,
+                        "club_position":  "LS",
+                        "long_name":  "Cláudio Rafael Soares Braga",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Kabangu",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  7,
+                        "nationality":  "Belgium",
+                        "player_id":  231322,
+                        "club_position":  "SUB",
+                        "long_name":  "Elton Daniël Kabangu",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Magnússon",
+                        "overall":  58,
+                        "potential":  67,
+                        "club_jersey_number":  22,
+                        "nationality":  "Iceland",
+                        "player_id":  80377,
+                        "club_position":  "SUB",
+                        "long_name":  "Tómas Bent Magnússon",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Kent",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  220140,
+                        "club_position":  "RCB",
+                        "long_name":  "Frankie James Kent",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Kabore",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Burkina Faso",
+                        "player_id":  80456,
+                        "club_position":  "SUB",
+                        "long_name":  "Pierre Landry Kabore",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Findlay",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  19,
+                        "nationality":  "Scotland",
+                        "player_id":  227945,
+                        "club_position":  "LCB",
+                        "long_name":  "Stuart John Findlay",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Vargas",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  77,
+                        "nationality":  "Costa Rica",
+                        "player_id":  268710,
+                        "club_position":  "RES",
+                        "long_name":  "Kenneth Gerardo Vargas Vargas",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Milne",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  18,
+                        "nationality":  "Scotland",
+                        "player_id":  77043,
+                        "club_position":  "LB",
+                        "long_name":  "Harry Milne",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. McCart",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  5,
+                        "nationality":  "Scotland",
+                        "player_id":  227951,
+                        "club_position":  "RES",
+                        "long_name":  "Jamie Daniel McCart",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Wilson",
+                        "overall":  63,
+                        "potential":  82,
+                        "club_jersey_number":  21,
+                        "nationality":  "Scotland",
+                        "player_id":  278600,
+                        "club_position":  "SUB",
+                        "long_name":  "James Wilson",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Pollock",
+                        "overall":  59,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "Scotland",
+                        "player_id":  263293,
+                        "club_position":  "RES",
+                        "long_name":  "Finlay Pollock",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kerjota",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  29,
+                        "nationality":  "Albania",
+                        "player_id":  80080,
+                        "club_position":  "SUB",
+                        "long_name":  "Sabah Kerjota",
+                        "age":  23,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Steinwender",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  15,
+                        "nationality":  "Austria",
+                        "player_id":  245233,
+                        "club_position":  "SUB",
+                        "long_name":  "Michael Steinwender",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Clark",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  28,
+                        "nationality":  "Scotland",
+                        "player_id":  204269,
+                        "club_position":  "SUB",
+                        "long_name":  "Zander Clark",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gordon",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  1,
+                        "nationality":  "Scotland",
+                        "player_id":  53110,
+                        "club_position":  "RES",
+                        "long_name":  "Craig Sinclair Gordon",
+                        "age":  42,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Schwolow",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  25,
+                        "nationality":  "Germany",
+                        "player_id":  202789,
+                        "club_position":  "GK",
+                        "long_name":  "Alexander Schwolow",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Fulton",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  30,
+                        "nationality":  "Scotland",
+                        "player_id":  219482,
+                        "club_position":  "RES",
+                        "long_name":  "Ryan William Fulton",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. McFarlane",
+                        "overall":  57,
+                        "potential":  66,
+                        "club_jersey_number":  80,
+                        "nationality":  "Scotland",
+                        "player_id":  79260,
+                        "club_position":  "RES",
+                        "long_name":  "Liam McFarlane",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Stone",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  70,
+                        "nationality":  "Scotland",
+                        "player_id":  262989,
+                        "club_position":  "RES",
+                        "long_name":  "Harry Stone",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

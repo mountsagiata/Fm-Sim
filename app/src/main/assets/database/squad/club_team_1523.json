@@ -1,0 +1,382 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Bryne FK",
+                     "league_name":  "Eliteserien",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  1523
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Grødem",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  10,
+                        "nationality":  "Norway",
+                        "player_id":  235906,
+                        "club_position":  "SUB",
+                        "long_name":  "Magnus Retsius Grødem",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Landu-Landu",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  4,
+                        "nationality":  "Norway",
+                        "player_id":  186507,
+                        "club_position":  "SUB",
+                        "long_name":  "Christian Tamba Landu-Landu",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Thellufsen",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  24,
+                        "nationality":  "Denmark",
+                        "player_id":  234677,
+                        "club_position":  "SUB",
+                        "long_name":  "Rasmus Thellufsen Pedersen",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Svindland",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  6,
+                        "nationality":  "Norway",
+                        "player_id":  279735,
+                        "club_position":  "SUB",
+                        "long_name":  "Remi-André Svindland",
+                        "age":  27,
+                        "positions":  [
+                                          "RW",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Tveita",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  15,
+                        "nationality":  "Norway",
+                        "player_id":  206584,
+                        "club_position":  "SUB",
+                        "long_name":  "Jon-Helge Tveita",
+                        "age":  32,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Strunck",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  19,
+                        "nationality":  "Denmark",
+                        "player_id":  242600,
+                        "club_position":  "LCM",
+                        "long_name":  "Nicklas Strunck Jakobsen",
+                        "age":  25,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sødal",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  8,
+                        "nationality":  "Norway",
+                        "player_id":  256809,
+                        "club_position":  "RCM",
+                        "long_name":  "Lars Erik Sødal",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Gaye",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  16,
+                        "nationality":  "Gambia",
+                        "player_id":  277991,
+                        "club_position":  "RB",
+                        "long_name":  "Dadi Dodou Gaye",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gregersen",
+                        "overall":  59,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Norway",
+                        "player_id":  73922,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesper Gregersen",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Duarte Moreira",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "Portugal",
+                        "player_id":  76646,
+                        "club_position":  "RS",
+                        "long_name":  "Duarte Miguel Ramos Moreira",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Thornes",
+                        "overall":  60,
+                        "potential":  68,
+                        "club_jersey_number":  7,
+                        "nationality":  "Norway",
+                        "player_id":  76643,
+                        "club_position":  "LM",
+                        "long_name":  "Mats Thornes",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Scriven",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  11,
+                        "nationality":  "Norway",
+                        "player_id":  247107,
+                        "club_position":  "RM",
+                        "long_name":  "Alfred Richard Scriven",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Saunes",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "Norway",
+                        "player_id":  76638,
+                        "club_position":  "LB",
+                        "long_name":  "Eirik Saunes",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "RM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Bojadžić",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  9,
+                        "nationality":  "Germany",
+                        "player_id":  76645,
+                        "club_position":  "LS",
+                        "long_name":  "Sanel Bojadžić",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lye",
+                        "overall":  55,
+                        "potential":  78,
+                        "club_jersey_number":  29,
+                        "nationality":  "Norway",
+                        "player_id":  78032,
+                        "club_position":  "SUB",
+                        "long_name":  "Martin Åmot Lye",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Østrem",
+                        "overall":  56,
+                        "potential":  76,
+                        "club_jersey_number":  28,
+                        "nationality":  "Norway",
+                        "player_id":  78726,
+                        "club_position":  "RES",
+                        "long_name":  "Jaran Eike Østrem",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Qvigstad",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Norway",
+                        "player_id":  76639,
+                        "club_position":  "SUB",
+                        "long_name":  "Lasse Qvigstad",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Jonassen",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  32,
+                        "nationality":  "Norway",
+                        "player_id":  76647,
+                        "club_position":  "SUB",
+                        "long_name":  "Sjur Torgersen Jonassen",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Skovgaard",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  2,
+                        "nationality":  "Denmark",
+                        "player_id":  233212,
+                        "club_position":  "LCB",
+                        "long_name":  "Andreas Skovgaard Larsen",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Håland",
+                        "overall":  57,
+                        "potential":  77,
+                        "club_jersey_number":  23,
+                        "nationality":  "Norway",
+                        "player_id":  76644,
+                        "club_position":  "SUB",
+                        "long_name":  "Kristian Håland",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Haahr",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  5,
+                        "nationality":  "Denmark",
+                        "player_id":  247490,
+                        "club_position":  "RCB",
+                        "long_name":  "Jacob Haahr Steffensen",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Wik",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  3,
+                        "nationality":  "Norway",
+                        "player_id":  80528,
+                        "club_position":  "RES",
+                        "long_name":  "Patrick Wik",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Cajtoft",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  1,
+                        "nationality":  "Sweden",
+                        "player_id":  231509,
+                        "club_position":  "SUB",
+                        "long_name":  "Björn Anton Cajtoft",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. de Boer",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  12,
+                        "nationality":  "Netherlands",
+                        "player_id":  253110,
+                        "club_position":  "GK",
+                        "long_name":  "Jan Pieter Lambertus Martinus de Boer",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Spiridonov",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  99,
+                        "nationality":  "Lithuania",
+                        "player_id":  76635,
+                        "club_position":  "SUB",
+                        "long_name":  "Igor Spiridonov",
+                        "age":  36,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

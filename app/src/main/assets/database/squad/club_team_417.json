@@ -1,0 +1,437 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Molde FK",
+                     "league_name":  "Eliteserien",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  417
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Dæhli",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  17,
+                        "nationality":  "Norway",
+                        "player_id":  201877,
+                        "club_position":  "RDM",
+                        "long_name":  "Mats Møller Dæhli",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Linnes",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  21,
+                        "nationality":  "Norway",
+                        "player_id":  198599,
+                        "club_position":  "RB",
+                        "long_name":  "Martin Linnes",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Eriksen",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Norway",
+                        "player_id":  267685,
+                        "club_position":  "SUB",
+                        "long_name":  "Kristian Eriksen",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Gulbrandsen",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "Norway",
+                        "player_id":  188091,
+                        "club_position":  "ST",
+                        "long_name":  "Fredrik Aasmundrud Gulbrandsen",
+                        "age":  32,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Breivik",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  16,
+                        "nationality":  "Norway",
+                        "player_id":  246063,
+                        "club_position":  "LDM",
+                        "long_name":  "Emil Varhaugvik Breivik",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Risa",
+                        "overall":  68,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Norway",
+                        "player_id":  241737,
+                        "club_position":  "LCB",
+                        "long_name":  "Birk Risa",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Christensen",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Denmark",
+                        "player_id":  244692,
+                        "club_position":  "SUB",
+                        "long_name":  "Jacob Steen Christensen",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Stenevik",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  18,
+                        "nationality":  "Norway",
+                        "player_id":  236634,
+                        "club_position":  "SUB",
+                        "long_name":  "Halldor Østervold Stenevik",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Hestad",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "Norway",
+                        "player_id":  211365,
+                        "club_position":  "RM",
+                        "long_name":  "Eirik Hestad",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "CM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Eikrem",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Norway",
+                        "player_id":  153048,
+                        "club_position":  "CAM",
+                        "long_name":  "Magnus Wolff Eikrem",
+                        "age":  34,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kasanwirjo",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  24,
+                        "nationality":  "Netherlands",
+                        "player_id":  261652,
+                        "club_position":  "SUB",
+                        "long_name":  "Neraysho Meritchio Kasanwirjo",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Granaas",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  23,
+                        "nationality":  "Norway",
+                        "player_id":  70328,
+                        "club_position":  "SUB",
+                        "long_name":  "Sondre Milian Granaas",
+                        "age":  18,
+                        "positions":  [
+                                          "LW",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Zady Sery",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  247534,
+                        "club_position":  "LM",
+                        "long_name":  "Caleb Zady Sery",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Abdullai",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  9,
+                        "nationality":  "Ghana",
+                        "player_id":  276567,
+                        "club_position":  "SUB",
+                        "long_name":  "Wolji Jalal Abdulai",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Øyvann",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "Norway",
+                        "player_id":  244056,
+                        "club_position":  "SUB",
+                        "long_name":  "Casper Øyvann",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Daga",
+                        "overall":  61,
+                        "potential":  81,
+                        "club_jersey_number":  27,
+                        "nationality":  "Nigeria",
+                        "player_id":  77083,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Demenenge Daga",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Haugan",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Norway",
+                        "player_id":  223253,
+                        "club_position":  "RCB",
+                        "long_name":  "Eirik Haugan",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Amundsen",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Norway",
+                        "player_id":  256384,
+                        "club_position":  "SUB",
+                        "long_name":  "Isak Helstad Amundsen",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Spiten-Nysæter",
+                        "overall":  62,
+                        "potential":  79,
+                        "club_jersey_number":  25,
+                        "nationality":  "Norway",
+                        "player_id":  278710,
+                        "club_position":  "SUB",
+                        "long_name":  "Oskar Spiten-Nysæter",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Isufi",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  30,
+                        "nationality":  "Kosovo",
+                        "player_id":  80263,
+                        "club_position":  "RES",
+                        "long_name":  "Blerton Isufi",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kabini",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "South Africa",
+                        "player_id":  77951,
+                        "club_position":  "LB",
+                        "long_name":  "Samukelo Kabini",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Nyheim",
+                        "overall":  57,
+                        "potential":  78,
+                        "club_jersey_number":  29,
+                        "nationality":  "Norway",
+                        "player_id":  266552,
+                        "club_position":  "RES",
+                        "long_name":  "Gustav Kjølstad Nyheim",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ndayizeye",
+                        "overall":  56,
+                        "potential":  76,
+                        "club_jersey_number":  56,
+                        "nationality":  "Norway",
+                        "player_id":  78441,
+                        "club_position":  "SUB",
+                        "long_name":  "Faveur Ndayizeye",
+                        "age":  17,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Løvik",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  36,
+                        "nationality":  "Norway",
+                        "player_id":  78054,
+                        "club_position":  "RES",
+                        "long_name":  "Magnus Fjørtoft Løvik",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mork",
+                        "overall":  55,
+                        "potential":  75,
+                        "club_jersey_number":  46,
+                        "nationality":  "Norway",
+                        "player_id":  78034,
+                        "club_position":  "RES",
+                        "long_name":  "Mathias Silseth Mork",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Gosik",
+                        "overall":  55,
+                        "potential":  75,
+                        "club_jersey_number":  53,
+                        "nationality":  "Norway",
+                        "player_id":  78573,
+                        "club_position":  "RES",
+                        "long_name":  "Igor Fabian Gosik",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Karlstrøm",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "Norway",
+                        "player_id":  235606,
+                        "club_position":  "GK",
+                        "long_name":  "Jacob Karlstrøm",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. McDermott",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  34,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  202810,
+                        "club_position":  "SUB",
+                        "long_name":  "Sean McDermott",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

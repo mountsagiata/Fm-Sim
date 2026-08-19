@@ -1,0 +1,450 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Sporting Clube de Braga",
+                     "league_name":  "Primeira Liga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  1896
+                 },
+    "players":  [
+                    {
+                        "short_name":  "R. Zalazar",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  10,
+                        "nationality":  "Uruguay",
+                        "player_id":  251377,
+                        "club_position":  "LM",
+                        "long_name":  "Rodrigo Zalazar Martínez",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ricardo Horta",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  21,
+                        "nationality":  "Portugal",
+                        "player_id":  213516,
+                        "club_position":  "CAM",
+                        "long_name":  "Ricardo Jorge da Luz Horta",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Víctor Gómez",
+                        "overall":  76,
+                        "potential":  79,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  245597,
+                        "club_position":  "RB",
+                        "long_name":  "Víctor Gómez Perea",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Moutinho",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  8,
+                        "nationality":  "Portugal",
+                        "player_id":  162347,
+                        "club_position":  "LDM",
+                        "long_name":  "João Filipe Iria Santos Moutinho",
+                        "age":  38,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Leonardo Lelo",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  5,
+                        "nationality":  "Portugal",
+                        "player_id":  269420,
+                        "club_position":  "LB",
+                        "long_name":  "Leonardo Filipe da Cruz Lelo",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Vitor Carvalho",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  255471,
+                        "club_position":  "SUB",
+                        "long_name":  "Vitor Carvalho Vieira",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Banza",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  64,
+                        "nationality":  "Congo DR",
+                        "player_id":  231652,
+                        "club_position":  "RES",
+                        "long_name":  "Simon Bokoté Banza",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Grillitsch",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  27,
+                        "nationality":  "Austria",
+                        "player_id":  228336,
+                        "club_position":  "SUB",
+                        "long_name":  "Florian Grillitsch",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gabri Martínez",
+                        "overall":  73,
+                        "potential":  81,
+                        "club_jersey_number":  77,
+                        "nationality":  "Spain",
+                        "player_id":  264438,
+                        "club_position":  "RM",
+                        "long_name":  "Gabriel Martínez Aguilera",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gabriel Moscardo",
+                        "overall":  72,
+                        "potential":  82,
+                        "club_jersey_number":  17,
+                        "nationality":  "Brazil",
+                        "player_id":  279731,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Silva Moscardo de Salles",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pau Víctor",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  259070,
+                        "club_position":  "SUB",
+                        "long_name":  "Pau Víctor Delgado",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gorby",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  264418,
+                        "club_position":  "RDM",
+                        "long_name":  "Jean-Baptiste Gorby",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fran Navarro",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  39,
+                        "nationality":  "Spain",
+                        "player_id":  247138,
+                        "club_position":  "ST",
+                        "long_name":  "Francisco José Navarro Aliaga",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Marques",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  33,
+                        "nationality":  "Portugal",
+                        "player_id":  274465,
+                        "club_position":  "RES",
+                        "long_name":  "João Miguel Vieira Freitas da Silva Marques",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dorgeles",
+                        "overall":  69,
+                        "potential":  81,
+                        "club_jersey_number":  20,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  271495,
+                        "club_position":  "SUB",
+                        "long_name":  "Maho Yepie Dorgeles Guy-Mario Bocha",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Niakaté",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  4,
+                        "nationality":  "Mali",
+                        "player_id":  240453,
+                        "club_position":  "SUB",
+                        "long_name":  "Sikou Niakaté",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Robson Bambu",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  3,
+                        "nationality":  "Brazil",
+                        "player_id":  256343,
+                        "club_position":  "SUB",
+                        "long_name":  "Robson Alves de Barros",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego Rodrigues",
+                        "overall":  66,
+                        "potential":  81,
+                        "club_jersey_number":  50,
+                        "nationality":  "Portugal",
+                        "player_id":  76240,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego Henrique Oliveira Rodrigues",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. El Ouazzani",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "Morocco",
+                        "player_id":  272668,
+                        "club_position":  "SUB",
+                        "long_name":  "Amine El Ouazzaniأمين الوزاني",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Arrey-Mbi",
+                        "overall":  71,
+                        "potential":  81,
+                        "club_jersey_number":  26,
+                        "nationality":  "Germany",
+                        "player_id":  258315,
+                        "club_position":  "SUB",
+                        "long_name":  "Bright Akwo Arrey-Mbi",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Paulo Oliveira",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  15,
+                        "nationality":  "Portugal",
+                        "player_id":  210679,
+                        "club_position":  "RCB",
+                        "long_name":  "Paulo André Rodrigues de Oliveira",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Afonso Patrão",
+                        "overall":  66,
+                        "potential":  79,
+                        "club_jersey_number":  67,
+                        "nationality":  "Portugal",
+                        "player_id":  77730,
+                        "club_position":  "RES",
+                        "long_name":  "Afonso da Cruz Patrão",
+                        "age":  18,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yanis da Rocha",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  41,
+                        "nationality":  "Portugal",
+                        "player_id":  80290,
+                        "club_position":  "RES",
+                        "long_name":  "Yanis Franklin da Rocha",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Lagerbielke",
+                        "overall":  71,
+                        "potential":  75,
+                        "club_jersey_number":  14,
+                        "nationality":  "Sweden",
+                        "player_id":  264191,
+                        "club_position":  "LCB",
+                        "long_name":  "Gustaf Johan Lagerbielke",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sandro Vidigal",
+                        "overall":  65,
+                        "potential":  82,
+                        "club_jersey_number":  95,
+                        "nationality":  "Portugal",
+                        "player_id":  77349,
+                        "club_position":  "SUB",
+                        "long_name":  "Sandro Miguel Rodrigues Vidigal",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tiago Sá",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  12,
+                        "nationality":  "Portugal",
+                        "player_id":  241976,
+                        "club_position":  "RES",
+                        "long_name":  "Tiago Magalhães de Sá",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bellaarouch",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  36,
+                        "nationality":  "Morocco",
+                        "player_id":  276988,
+                        "club_position":  "SUB",
+                        "long_name":  "Alaa Bellaarouchعلاء بلعروش",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Hornicek",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  1,
+                        "nationality":  "Czechia",
+                        "player_id":  258936,
+                        "club_position":  "GK",
+                        "long_name":  "Lukáš Horníček",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Carvalho",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  78,
+                        "nationality":  "Portugal",
+                        "player_id":  77188,
+                        "club_position":  "RES",
+                        "long_name":  "João Gonçalo Carapinha Carvalho",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

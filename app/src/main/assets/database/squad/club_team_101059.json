@@ -1,0 +1,524 @@
+﻿{
+    "metadata":  {
+                     "total_players":  33,
+                     "club_name":  "Shakhtar Donetsk",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  101059
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Bondarenko",
+                        "overall":  77,
+                        "potential":  79,
+                        "club_jersey_number":  21,
+                        "nationality":  "Ukraine",
+                        "player_id":  255074,
+                        "club_position":  "RCM",
+                        "long_name":  "Artem BondarenkoБондаренко Артем Юрійович",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Matviienko",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  22,
+                        "nationality":  "Ukraine",
+                        "player_id":  229528,
+                        "club_position":  "LCB",
+                        "long_name":  "Mykola MatvienkoМатвієнко Микола Олександрович",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marlon Gomes",
+                        "overall":  71,
+                        "potential":  83,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  70845,
+                        "club_position":  "SUB",
+                        "long_name":  "Marlon Gomes Claudino",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kryskiv",
+                        "overall":  72,
+                        "potential":  78,
+                        "club_jersey_number":  8,
+                        "nationality":  "Ukraine",
+                        "player_id":  274732,
+                        "club_position":  "CM",
+                        "long_name":  "Dmytro KryskivКриськів Дмитро Ігорович",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Korniienko",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  99,
+                        "nationality":  "Ukraine",
+                        "player_id":  259036,
+                        "club_position":  "RES",
+                        "long_name":  "Viktor KornienkoКорнієнко Віктор Валерійович",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Nazaryna",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  29,
+                        "nationality":  "Ukraine",
+                        "player_id":  242021,
+                        "club_position":  "LCM",
+                        "long_name":  "Yegor NazarynaНазарина Єгор Анатолійович",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Konoplia",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "Ukraine",
+                        "player_id":  263804,
+                        "club_position":  "SUB",
+                        "long_name":  "Yukhym KonoplyaКонопля Юхим Дмитрович",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kauã Elias",
+                        "overall":  71,
+                        "potential":  83,
+                        "club_jersey_number":  19,
+                        "nationality":  "Brazil",
+                        "player_id":  77760,
+                        "club_position":  "SUB",
+                        "long_name":  "Kauã Elias Nogueira",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedrinho",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  38,
+                        "nationality":  "Brazil",
+                        "player_id":  255472,
+                        "club_position":  "SUB",
+                        "long_name":  "Pedro Victor Delmino da Silva",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Vinícius Tobías",
+                        "overall":  70,
+                        "potential":  81,
+                        "club_jersey_number":  17,
+                        "nationality":  "Brazil",
+                        "player_id":  268411,
+                        "club_position":  "RB",
+                        "long_name":  "Vinicius Augusto Tobias da Silva",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alisson",
+                        "overall":  70,
+                        "potential":  80,
+                        "club_jersey_number":  30,
+                        "nationality":  "Brazil",
+                        "player_id":  77883,
+                        "club_position":  "SUB",
+                        "long_name":  "Alisson Santana Lopes da Fonseca",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marlon",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  4,
+                        "nationality":  "Brazil",
+                        "player_id":  215703,
+                        "club_position":  "SUB",
+                        "long_name":  "Marlon Santos da Silva Barbosa",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Traoré",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  2,
+                        "nationality":  "Burkina Faso",
+                        "player_id":  246728,
+                        "club_position":  "SUB",
+                        "long_name":  "Lassina Chamste Soudine Franck Traoré",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Tsukanov",
+                        "overall":  65,
+                        "potential":  83,
+                        "club_jersey_number":  24,
+                        "nationality":  "Ukraine",
+                        "player_id":  70862,
+                        "club_position":  "RES",
+                        "long_name":  "Viktor TsukanovЦуканов Віктор Михайлович",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Bondar",
+                        "overall":  75,
+                        "potential":  79,
+                        "club_jersey_number":  5,
+                        "nationality":  "Ukraine",
+                        "player_id":  248698,
+                        "club_position":  "RCB",
+                        "long_name":  "Valeriy BondarБондар Валерій Юрійович",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Henrique",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  13,
+                        "nationality":  "Brazil",
+                        "player_id":  277193,
+                        "club_position":  "LB",
+                        "long_name":  "Pedro Henrique Azevedo Pereira",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Shved",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  9,
+                        "nationality":  "Ukraine",
+                        "player_id":  230559,
+                        "club_position":  "RW",
+                        "long_name":  "Maryan ShvedШвед Мар\u0026amp;apos;ян Васильович",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Azarov",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  16,
+                        "nationality":  "Georgia",
+                        "player_id":  278075,
+                        "club_position":  "SUB",
+                        "long_name":  "Irakli Azaroviირაკლი აზაროვი",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Eguinaldo",
+                        "overall":  70,
+                        "potential":  82,
+                        "club_jersey_number":  7,
+                        "nationality":  "Brazil",
+                        "player_id":  277448,
+                        "club_position":  "ST",
+                        "long_name":  "Eguinaldo de Sousa Lemos",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ghram",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  18,
+                        "nationality":  "Tunisia",
+                        "player_id":  72919,
+                        "club_position":  "SUB",
+                        "long_name":  "Alaa Ghramعلاء غرام",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Petryak",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  34,
+                        "nationality":  "Ukraine",
+                        "player_id":  76604,
+                        "club_position":  "SUB",
+                        "long_name":  "Ivan PetryakПетряк Іван Євгенійович",
+                        "age":  31,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Newerton",
+                        "overall":  70,
+                        "potential":  82,
+                        "club_jersey_number":  39,
+                        "nationality":  "Brazil",
+                        "player_id":  277194,
+                        "club_position":  "LW",
+                        "long_name":  "Newerton Martins da Silva",
+                        "age":  20,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Ocheretko",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  27,
+                        "nationality":  "Ukraine",
+                        "player_id":  271548,
+                        "club_position":  "RES",
+                        "long_name":  "Oleg OcheretkoОчеретько Олег Андрійович",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Hluschenko",
+                        "overall":  64,
+                        "potential":  75,
+                        "club_jersey_number":  20,
+                        "nationality":  "Ukraine",
+                        "player_id":  74097,
+                        "club_position":  "RES",
+                        "long_name":  "Anton GlushchenkoГлущенко Антон Ігорович",
+                        "age":  21,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Luca Meirelles",
+                        "overall":  65,
+                        "potential":  80,
+                        "club_jersey_number":  41,
+                        "nationality":  "Brazil",
+                        "player_id":  80916,
+                        "club_position":  "RES",
+                        "long_name":  "Luca Oliveira Meirelles",
+                        "age":  18,
+                        "positions":  [
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lucas Ferreira",
+                        "overall":  67,
+                        "potential":  82,
+                        "club_jersey_number":  42,
+                        "nationality":  "Brazil",
+                        "player_id":  80882,
+                        "club_position":  "RES",
+                        "long_name":  "Lucas dos Santos Ferreira",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "LM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Faryna",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  74,
+                        "nationality":  "Ukraine",
+                        "player_id":  271549,
+                        "club_position":  "RES",
+                        "long_name":  "Maryan FarynaФарина Мар\u0026amp;apos;ян Іванович",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Isaque",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  40,
+                        "nationality":  "Brazil",
+                        "player_id":  80917,
+                        "club_position":  "SUB",
+                        "long_name":  "Isaque Severino Silva",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Toirov",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  77,
+                        "nationality":  "Tajikistan",
+                        "player_id":  274723,
+                        "club_position":  "RES",
+                        "long_name":  "Khusrav ToirovТоиров Хусрав",
+                        "age":  20,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Arroyo",
+                        "overall":  57,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Bolivia",
+                        "player_id":  75802,
+                        "club_position":  "RES",
+                        "long_name":  "Diego Junior Arroyo Maldonado",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Riznyk",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  31,
+                        "nationality":  "Ukraine",
+                        "player_id":  265628,
+                        "club_position":  "GK",
+                        "long_name":  "Dmytro RiznykРізник Дмитро Григорович",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Fesiun",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  72,
+                        "nationality":  "Ukraine",
+                        "player_id":  72917,
+                        "club_position":  "SUB",
+                        "long_name":  "Kiril FesyunФесюн Кіріл Вадимович",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Tvardovskyi",
+                        "overall":  61,
+                        "potential":  73,
+                        "club_jersey_number":  48,
+                        "nationality":  "Ukraine",
+                        "player_id":  71331,
+                        "club_position":  "RES",
+                        "long_name":  "Denys TvardovskyiТвардовський Денис Дмитрович",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,358 @@
+﻿{
+    "metadata":  {
+                     "total_players":  23,
+                     "club_name":  "Paris Saint-Germain",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  73
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Hakimi",
+                        "overall":  89,
+                        "potential":  90,
+                        "club_jersey_number":  2,
+                        "nationality":  "Morocco",
+                        "player_id":  235212,
+                        "club_position":  "RB",
+                        "long_name":  "Achraf Hakimi Mouhأشرف حكيمي",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Vitinha",
+                        "overall":  89,
+                        "potential":  91,
+                        "club_jersey_number":  17,
+                        "nationality":  "Portugal",
+                        "player_id":  255253,
+                        "club_position":  "CM",
+                        "long_name":  "Vítor Machado Ferreira",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Dembélé",
+                        "overall":  90,
+                        "potential":  90,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  231443,
+                        "club_position":  "ST",
+                        "long_name":  "Masour Ousmane Dembélé",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Neves",
+                        "overall":  85,
+                        "potential":  90,
+                        "club_jersey_number":  87,
+                        "nationality":  "Portugal",
+                        "player_id":  272834,
+                        "club_position":  "RCM",
+                        "long_name":  "João Pedro Gonçalves Neves",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kvaratskhelia",
+                        "overall":  87,
+                        "potential":  90,
+                        "club_jersey_number":  7,
+                        "nationality":  "Georgia",
+                        "player_id":  247635,
+                        "club_position":  "LW",
+                        "long_name":  "Khvicha Kvaratskheliaხვიჩა კვარაცხელია",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Nuno Mendes",
+                        "overall":  86,
+                        "potential":  89,
+                        "club_jersey_number":  25,
+                        "nationality":  "Portugal",
+                        "player_id":  252145,
+                        "club_position":  "LB",
+                        "long_name":  "Nuno Alexandre Tavares Mendes",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fabián Ruiz",
+                        "overall":  85,
+                        "potential":  85,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  226271,
+                        "club_position":  "LCM",
+                        "long_name":  "Fabián Ruiz Peña",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Doué",
+                        "overall":  85,
+                        "potential":  91,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  271421,
+                        "club_position":  "RW",
+                        "long_name":  "Désiré Doué",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Zaïre-Emery",
+                        "overall":  80,
+                        "potential":  87,
+                        "club_jersey_number":  33,
+                        "nationality":  "France",
+                        "player_id":  270673,
+                        "club_position":  "SUB",
+                        "long_name":  "Warren Zaïre-Emery",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marquinhos",
+                        "overall":  87,
+                        "potential":  87,
+                        "club_jersey_number":  5,
+                        "nationality":  "Brazil",
+                        "player_id":  207865,
+                        "club_position":  "RCB",
+                        "long_name":  "Marcos Aoás Corrêa",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lee Kang In",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  19,
+                        "nationality":  "Korea Republic",
+                        "player_id":  243780,
+                        "club_position":  "SUB",
+                        "long_name":  "Kang-in Lee이강인",
+                        "age":  24,
+                        "positions":  [
+                                          "RW",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Barcola",
+                        "overall":  84,
+                        "potential":  88,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  264652,
+                        "club_position":  "SUB",
+                        "long_name":  "Bradley Barcola",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gonçalo Ramos",
+                        "overall":  80,
+                        "potential":  84,
+                        "club_jersey_number":  9,
+                        "nationality":  "Portugal",
+                        "player_id":  256903,
+                        "club_position":  "SUB",
+                        "long_name":  "Gonçalo Matias Ramos",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Hernández",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  220814,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas François Bernard Hernández Pi",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mayulu",
+                        "overall":  75,
+                        "potential":  85,
+                        "club_jersey_number":  24,
+                        "nationality":  "France",
+                        "player_id":  70004,
+                        "club_position":  "SUB",
+                        "long_name":  "Senny Mayulu",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Pacho",
+                        "overall":  86,
+                        "potential":  89,
+                        "club_jersey_number":  51,
+                        "nationality":  "Ecuador",
+                        "player_id":  256196,
+                        "club_position":  "LCB",
+                        "long_name":  "Willian Joel Pacho Tenorio",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Zabarnyi",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  6,
+                        "nationality":  "Ukraine",
+                        "player_id":  258781,
+                        "club_position":  "SUB",
+                        "long_name":  "Illia ZabarnyiЗабарний Ілля Борисович",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lucas Beraldo",
+                        "overall":  78,
+                        "potential":  84,
+                        "club_jersey_number":  4,
+                        "nationality":  "Brazil",
+                        "player_id":  279709,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Lopes Beraldo",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Mbaye",
+                        "overall":  68,
+                        "potential":  83,
+                        "club_jersey_number":  49,
+                        "nationality":  "France",
+                        "player_id":  74449,
+                        "club_position":  "SUB",
+                        "long_name":  "Ibrahim Mbaye",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Kamara",
+                        "overall":  62,
+                        "potential":  80,
+                        "club_jersey_number":  43,
+                        "nationality":  "France",
+                        "player_id":  78216,
+                        "club_position":  "SUB",
+                        "long_name":  "Noham Kamara",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Safonov",
+                        "overall":  78,
+                        "potential":  82,
+                        "club_jersey_number":  39,
+                        "nationality":  "Russia",
+                        "player_id":  240225,
+                        "club_position":  "SUB",
+                        "long_name":  "Matvey SafonovСафонов Матвей Евгеньевич",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Chevalier",
+                        "overall":  83,
+                        "potential":  88,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  251752,
+                        "club_position":  "GK",
+                        "long_name":  "Lucas Chevalier",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Renato Marin",
+                        "overall":  62,
+                        "potential":  78,
+                        "club_jersey_number":  89,
+                        "nationality":  "Italy",
+                        "player_id":  279880,
+                        "club_position":  "SUB",
+                        "long_name":  "Renato Bellucci Marin",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

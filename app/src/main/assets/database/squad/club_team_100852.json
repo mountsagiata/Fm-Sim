@@ -1,0 +1,442 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "CD Castellón",
+                     "league_name":  "La Liga 2",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  100852
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Álex Calatrava",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  73505,
+                        "club_position":  "RCM",
+                        "long_name":  "Álex Calatrava Torrado",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mamah",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Nigeria",
+                        "player_id":  72890,
+                        "club_position":  "SUB",
+                        "long_name":  "Kenneth Obinna Mamah",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Douglas Aurélio",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Brazil",
+                        "player_id":  252083,
+                        "club_position":  "ST",
+                        "long_name":  "Douglas Aurélio",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Israel Suero",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  269306,
+                        "club_position":  "LM",
+                        "long_name":  "Israel Suero Fernández",
+                        "age":  31,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Mabil",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  7,
+                        "nationality":  "Australia",
+                        "player_id":  212830,
+                        "club_position":  "RM",
+                        "long_name":  "Awer Bul Mabil",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gerenabarrena",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  15,
+                        "nationality":  "Spain",
+                        "player_id":  80342,
+                        "club_position":  "LCM",
+                        "long_name":  "Beñat Gerenabarrena",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mellot",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  248777,
+                        "club_position":  "RB",
+                        "long_name":  "Jérémy Mellot",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alberto Jiménez",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  215572,
+                        "club_position":  "RCB",
+                        "long_name":  "Alberto Jiménez Benítez",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jakobsen",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Denmark",
+                        "player_id":  243795,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Emil Skaanning Jakobsen",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Willmann",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  32,
+                        "nationality":  "Poland",
+                        "player_id":  80152,
+                        "club_position":  "SUB",
+                        "long_name":  "Michał Willmann",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Serpeta",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  80660,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergio Sanchís Hernández",
+                        "age":  25,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Óscar Gil",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  216461,
+                        "club_position":  "SUB",
+                        "long_name":  "Óscar Gil Osés",
+                        "age":  30,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Cipenga",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  16,
+                        "nationality":  "Congo DR",
+                        "player_id":  73317,
+                        "club_position":  "SUB",
+                        "long_name":  "Brian Kibambe Cipenga",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Doué",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "France",
+                        "player_id":  246184,
+                        "club_position":  "SUB",
+                        "long_name":  "Marc-Olivier Doué Séné",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sienra",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  4,
+                        "nationality":  "Argentina",
+                        "player_id":  256528,
+                        "club_position":  "LCB",
+                        "long_name":  "Agustín Sienra",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lucas Alcázar",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  12,
+                        "nationality":  "Spain",
+                        "player_id":  74584,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Alcázar Moreno",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego Barri",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  241172,
+                        "club_position":  "CDM",
+                        "long_name":  "Diego Hernández Barriuso",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Salva Ruíz",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  210747,
+                        "club_position":  "LB",
+                        "long_name":  "Salvador Ruiz Rodríguez",
+                        "age":  30,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Wehbe",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  30,
+                        "nationality":  "Dominican Republic",
+                        "player_id":  266145,
+                        "club_position":  "RES",
+                        "long_name":  "Charbel Anthuan Wehbe González",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Brignani",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Italy",
+                        "player_id":  240652,
+                        "club_position":  "SUB",
+                        "long_name":  "Fabrizio Brignani",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pablo Santiago",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  80808,
+                        "club_position":  "RES",
+                        "long_name":  "Pablo Santiago López",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tincho",
+                        "overall":  60,
+                        "potential":  71,
+                        "club_jersey_number":  26,
+                        "nationality":  "Spain",
+                        "player_id":  76946,
+                        "club_position":  "RES",
+                        "long_name":  "Martín Conde Gómez",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Camara",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  9,
+                        "nationality":  "Guinea",
+                        "player_id":  272908,
+                        "club_position":  "SUB",
+                        "long_name":  "Ousmane Nana Camara",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Markanich",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "United States",
+                        "player_id":  267869,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Markanich",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. De Nipoti",
+                        "overall":  59,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Italy",
+                        "player_id":  266655,
+                        "club_position":  "RES",
+                        "long_name":  "Tommaso De Nipoti",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Abedzadeh",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  1,
+                        "nationality":  "Iran",
+                        "player_id":  237419,
+                        "club_position":  "GK",
+                        "long_name":  "Amir Abedzadehامیر عابدزاده",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Matthys",
+                        "overall":  63,
+                        "potential":  67,
+                        "club_jersey_number":  13,
+                        "nationality":  "Belgium",
+                        "player_id":  251910,
+                        "club_position":  "SUB",
+                        "long_name":  "Romain Matthys",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergi Torner",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  34,
+                        "nationality":  "Spain",
+                        "player_id":  75935,
+                        "club_position":  "RES",
+                        "long_name":  "Sergi Torner Rosell",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

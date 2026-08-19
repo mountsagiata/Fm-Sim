@@ -1,0 +1,365 @@
+﻿{
+    "metadata":  {
+                     "total_players":  23,
+                     "club_name":  "Wellington Phoenix",
+                     "league_name":  "A-League Men",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111766
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Rufer",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  14,
+                        "nationality":  "New Zealand",
+                        "player_id":  219392,
+                        "club_position":  "RCM",
+                        "long_name":  "Alex Arthur Rufer",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ishige",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  9,
+                        "nationality":  "Japan",
+                        "player_id":  242764,
+                        "club_position":  "LS",
+                        "long_name":  "Hideki Ishige石毛 秀樹",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Payne",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  6,
+                        "nationality":  "New Zealand",
+                        "player_id":  209361,
+                        "club_position":  "RB",
+                        "long_name":  "Timothy John Payne",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Nagasawa",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  25,
+                        "nationality":  "Japan",
+                        "player_id":  221425,
+                        "club_position":  "LCM",
+                        "long_name":  "Kazuki Nagasawa長澤 和輝",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Piper",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "New Zealand",
+                        "player_id":  75112,
+                        "club_position":  "RM",
+                        "long_name":  "Corban Piper",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Mileusnić",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  10,
+                        "nationality":  "Australia",
+                        "player_id":  236342,
+                        "club_position":  "SUB",
+                        "long_name":  "Nikola Mileusnić",
+                        "age":  31,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Armiento",
+                        "overall":  60,
+                        "potential":  61,
+                        "club_jersey_number":  12,
+                        "nationality":  "Australia",
+                        "player_id":  248227,
+                        "club_position":  "SUB",
+                        "long_name":  "Carlo Armiento",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Roa Conchie",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  5,
+                        "nationality":  "New Zealand",
+                        "player_id":  277324,
+                        "club_position":  "SUB",
+                        "long_name":  "Fin Ngahina Roa Conchie",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Brooke-Smith",
+                        "overall":  57,
+                        "potential":  80,
+                        "club_jersey_number":  29,
+                        "nationality":  "New Zealand",
+                        "player_id":  76117,
+                        "club_position":  "SUB",
+                        "long_name":  "Luke Brooke-Smith",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Retre",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  8,
+                        "nationality":  "Australia",
+                        "player_id":  213281,
+                        "club_position":  "SUB",
+                        "long_name":  "Paulo Ricardo Pereira Retre",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Sheridan",
+                        "overall":  58,
+                        "potential":  67,
+                        "club_jersey_number":  27,
+                        "nationality":  "New Zealand",
+                        "player_id":  279201,
+                        "club_position":  "LCB",
+                        "long_name":  "Matthew Benjamin Sheridan",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Eze",
+                        "overall":  59,
+                        "potential":  60,
+                        "club_jersey_number":  16,
+                        "nationality":  "Nigeria",
+                        "player_id":  79711,
+                        "club_position":  "SUB",
+                        "long_name":  "Ifeanyi Eze",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. James",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  4,
+                        "nationality":  "Canada",
+                        "player_id":  227847,
+                        "club_position":  "SUB",
+                        "long_name":  "Manjrekar James",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Edwards",
+                        "overall":  57,
+                        "potential":  57,
+                        "club_jersey_number":  2,
+                        "nationality":  "New Zealand",
+                        "player_id":  81520,
+                        "club_position":  "SUB",
+                        "long_name":  "Dan Edwards",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Hughes",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "New Zealand",
+                        "player_id":  274055,
+                        "club_position":  "RCB",
+                        "long_name":  "Isaac Robert Hughes",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Kelly-Heald",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  18,
+                        "nationality":  "New Zealand",
+                        "player_id":  276461,
+                        "club_position":  "LM",
+                        "long_name":  "Lukas Eric Kelly-Heald",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "CM",
+                                          "LM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Walker",
+                        "overall":  55,
+                        "potential":  69,
+                        "club_jersey_number":  41,
+                        "nationality":  "New Zealand",
+                        "player_id":  75456,
+                        "club_position":  "SUB",
+                        "long_name":  "Nathan Barry Walker",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "X. Loke",
+                        "overall":  55,
+                        "potential":  69,
+                        "club_jersey_number":  36,
+                        "nationality":  "New Zealand",
+                        "player_id":  76613,
+                        "club_position":  "LB",
+                        "long_name":  "Tze-xuan Loke",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Supyk",
+                        "overall":  54,
+                        "potential":  70,
+                        "club_jersey_number":  23,
+                        "nationality":  "New Zealand",
+                        "player_id":  278249,
+                        "club_position":  "RS",
+                        "long_name":  "Luke Stuart Supyk",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Sloane-Rodrigues",
+                        "overall":  56,
+                        "potential":  77,
+                        "club_jersey_number":  17,
+                        "nationality":  "New Zealand",
+                        "player_id":  70066,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Edward Sloane-Rodrigues",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Smith",
+                        "overall":  51,
+                        "potential":  68,
+                        "club_jersey_number":  39,
+                        "nationality":  "New Zealand",
+                        "player_id":  75459,
+                        "club_position":  "SUB",
+                        "long_name":  "Jayden Smith",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Oluwayemi",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  1,
+                        "nationality":  "Nigeria",
+                        "player_id":  252477,
+                        "club_position":  "GK",
+                        "long_name":  "Joshua Oluwayemi",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kelly-Heald",
+                        "overall":  58,
+                        "potential":  74,
+                        "club_jersey_number":  30,
+                        "nationality":  "New Zealand",
+                        "player_id":  279014,
+                        "club_position":  "SUB",
+                        "long_name":  "Albert Otto Kelly-Heald",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

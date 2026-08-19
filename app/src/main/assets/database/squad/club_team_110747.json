@@ -1,0 +1,429 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Cracovia",
+                     "league_name":  "Ekstraklasa",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  110747
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Klich",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  43,
+                        "nationality":  "Poland",
+                        "player_id":  192955,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateusz Andrzej Klich",
+                        "age":  35,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Praszelik",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Poland",
+                        "player_id":  248147,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateusz Jakub Praszelik",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Kakabadze",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "Georgia",
+                        "player_id":  235005,
+                        "club_position":  "RB",
+                        "long_name":  "Otar Kakabadzeოთარ კაკაბაძე",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Maigaard",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Denmark",
+                        "player_id":  225133,
+                        "club_position":  "RCM",
+                        "long_name":  "Mikkel Maigaard Jakobsen",
+                        "age":  29,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ólafsson",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  19,
+                        "nationality":  "Iceland",
+                        "player_id":  254537,
+                        "club_position":  "LB",
+                        "long_name":  "Davíð Kristján Ólafsson",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Al-Ammari",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  6,
+                        "nationality":  "Iraq",
+                        "player_id":  261298,
+                        "club_position":  "LCM",
+                        "long_name":  "Amir Al Ammariأمير فؤاد عبود العماري",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kameri",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  70,
+                        "nationality":  "Austria",
+                        "player_id":  270999,
+                        "club_position":  "SUB",
+                        "long_name":  "Dijon Kameri",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Rakoczy",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Poland",
+                        "player_id":  244550,
+                        "club_position":  "SUB",
+                        "long_name":  "Michał Rakoczy",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Minchev",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "Bulgaria",
+                        "player_id":  248201,
+                        "club_position":  "LW",
+                        "long_name":  "Martin Yankov MinchevМартин Янков Минчев",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Hasić",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  254333,
+                        "club_position":  "RW",
+                        "long_name":  "Ajdin Hasić",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Knap",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  20,
+                        "nationality":  "Poland",
+                        "player_id":  262825,
+                        "club_position":  "RES",
+                        "long_name":  "Karol Knap",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Piła",
+                        "overall":  66,
+                        "potential":  71,
+                        "club_jersey_number":  79,
+                        "nationality":  "Poland",
+                        "player_id":  269506,
+                        "club_position":  "RCB",
+                        "long_name":  "Dominik Piła",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Šutalo",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Croatia",
+                        "player_id":  255891,
+                        "club_position":  "SUB",
+                        "long_name":  "Boško Šutalo",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Aleksić",
+                        "overall":  61,
+                        "potential":  78,
+                        "club_jersey_number":  8,
+                        "nationality":  "Serbia",
+                        "player_id":  74917,
+                        "club_position":  "RES",
+                        "long_name":  "Milan AleksićМилан Алексић",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Stojilković",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  9,
+                        "nationality":  "Switzerland",
+                        "player_id":  255562,
+                        "club_position":  "ST",
+                        "long_name":  "Filip StojilkovićФилип Стојилковић",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Perković",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  39,
+                        "nationality":  "Croatia",
+                        "player_id":  274369,
+                        "club_position":  "SUB",
+                        "long_name":  "Mauro Perković",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Biedrzycki",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  22,
+                        "nationality":  "Poland",
+                        "player_id":  72976,
+                        "club_position":  "SUB",
+                        "long_name":  "Bartosz Biedrzycki",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Zahiroleslam",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  18,
+                        "nationality":  "United States",
+                        "player_id":  277457,
+                        "club_position":  "SUB",
+                        "long_name":  "Kahveh Zahiroleslam",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Henriksson",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Sweden",
+                        "player_id":  245722,
+                        "club_position":  "CB",
+                        "long_name":  "Gustav Niklas Henriksson",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Jugas",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  24,
+                        "nationality":  "Czechia",
+                        "player_id":  238940,
+                        "club_position":  "SUB",
+                        "long_name":  "Jakub Jugas",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Charpentier",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  99,
+                        "nationality":  "Congo",
+                        "player_id":  268464,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel André Joseph Charpentier",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Polak",
+                        "overall":  55,
+                        "potential":  68,
+                        "club_jersey_number":  28,
+                        "nationality":  "Poland",
+                        "player_id":  78374,
+                        "club_position":  "RES",
+                        "long_name":  "Dawid Polak",
+                        "age":  17,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Traoré",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  61,
+                        "nationality":  "France",
+                        "player_id":  261675,
+                        "club_position":  "SUB",
+                        "long_name":  "Brahim Traoré",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Wójcik",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  66,
+                        "nationality":  "Poland",
+                        "player_id":  270382,
+                        "club_position":  "LCB",
+                        "long_name":  "Oskar Wójcik",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Glik",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  15,
+                        "nationality":  "Poland",
+                        "player_id":  190547,
+                        "club_position":  "RES",
+                        "long_name":  "Kamil Jacek Glik",
+                        "age":  37,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Madejski",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  13,
+                        "nationality":  "Poland",
+                        "player_id":  222908,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Madejski",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ravas",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Slovakia",
+                        "player_id":  232131,
+                        "club_position":  "GK",
+                        "long_name":  "Henrich Ravas",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Golonka",
+                        "overall":  52,
+                        "potential":  62,
+                        "club_jersey_number":  91,
+                        "nationality":  "Poland",
+                        "player_id":  72094,
+                        "club_position":  "RES",
+                        "long_name":  "Konrad Golonka",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

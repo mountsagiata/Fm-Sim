@@ -1,0 +1,453 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Ulsan HD FC",
+                     "league_name":  "K League 1",
+                     "extract_date":  "2026-05-13 22:22:45",
+                     "club_team_id":  1473
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Ko Seung Beom",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Korea Republic",
+                        "player_id":  232595,
+                        "club_position":  "RCM",
+                        "long_name":  "Seung-beom Ko고승범 高承范",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bojanić",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Sweden",
+                        "player_id":  213471,
+                        "club_position":  "LCM",
+                        "long_name":  "Darijan Bojanić",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kang Sang Woo",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  13,
+                        "nationality":  "Korea Republic",
+                        "player_id":  222734,
+                        "club_position":  "LB",
+                        "long_name":  "Sang-woo Kang강상우 姜祥佑",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lee Hee Kyun",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  16,
+                        "nationality":  "Korea Republic",
+                        "player_id":  247748,
+                        "club_position":  "SUB",
+                        "long_name":  "Heui-kyun Lee이희균 李熙均",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Ludwigson",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Sweden",
+                        "player_id":  256370,
+                        "club_position":  "LM",
+                        "long_name":  "Gustav Erik Ludwigson",
+                        "age":  31,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Um Won Sang",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "Korea Republic",
+                        "player_id":  246937,
+                        "club_position":  "SUB",
+                        "long_name":  "Won-sang Um엄원상",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lee Jin Hyun",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  14,
+                        "nationality":  "Korea Republic",
+                        "player_id":  238578,
+                        "club_position":  "SUB",
+                        "long_name":  "Jin-hyun Lee이진현",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kim Young Gwon",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "Korea Republic",
+                        "player_id":  201528,
+                        "club_position":  "LCB",
+                        "long_name":  "Young-gwon Kim김영권 金英权",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kim Min Hyeok",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  22,
+                        "nationality":  "Korea Republic",
+                        "player_id":  226651,
+                        "club_position":  "RES",
+                        "long_name":  "Min-hyuk Kim김민혁 金敏赫",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Trojak",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  66,
+                        "nationality":  "Poland",
+                        "player_id":  220616,
+                        "club_position":  "SUB",
+                        "long_name":  "Miłosz Trojak",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marcão",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  238224,
+                        "club_position":  "LS",
+                        "long_name":  "Marcos Vinicius Amaral Alves",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jung Woo Young",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "Korea Republic",
+                        "player_id":  211003,
+                        "club_position":  "SUB",
+                        "long_name":  "Woo-young Jung정우영 郑又荣",
+                        "age":  35,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lee Chung Yong",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  27,
+                        "nationality":  "Korea Republic",
+                        "player_id":  155355,
+                        "club_position":  "SUB",
+                        "long_name":  "Chung-yong Lee이청용 李青龙",
+                        "age":  36,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Heo Yul",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Korea Republic",
+                        "player_id":  255868,
+                        "club_position":  "SUB",
+                        "long_name":  "Yool Heo허율",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CB",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Park Min Seo",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  26,
+                        "nationality":  "Korea Republic",
+                        "player_id":  252643,
+                        "club_position":  "RES",
+                        "long_name":  "Min-seo Park박민서",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cho Hyun Taek",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Korea Republic",
+                        "player_id":  255035,
+                        "club_position":  "SUB",
+                        "long_name":  "Hyun-taek Cho조현택",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yoon Jong Gyu",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  24,
+                        "nationality":  "Korea Republic",
+                        "player_id":  237965,
+                        "club_position":  "SUB",
+                        "long_name":  "Jong-gyu Yoon윤종규",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Erick Farias",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  97,
+                        "nationality":  "Brazil",
+                        "player_id":  77840,
+                        "club_position":  "RS",
+                        "long_name":  "Erick Samuel Corrêa Farias",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lacava",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  36,
+                        "nationality":  "Venezuela",
+                        "player_id":  260257,
+                        "club_position":  "RM",
+                        "long_name":  "Matías Rafael Lacava González",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yoon Jae Seok",
+                        "overall":  62,
+                        "potential":  70,
+                        "club_jersey_number":  30,
+                        "nationality":  "Korea Republic",
+                        "player_id":  70631,
+                        "club_position":  "SUB",
+                        "long_name":  "Jae-seok Yoon윤재석",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jeong Seung Hyun",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  15,
+                        "nationality":  "Korea Republic",
+                        "player_id":  227790,
+                        "club_position":  "SUB",
+                        "long_name":  "Seung-hyun Jung정승현 郑承铉",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Lee Jae Ik",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  28,
+                        "nationality":  "Korea Republic",
+                        "player_id":  242826,
+                        "club_position":  "RES",
+                        "long_name":  "Jae-ik Lee이재익",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Seo Myeong Kwan",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  4,
+                        "nationality":  "Korea Republic",
+                        "player_id":  274672,
+                        "club_position":  "RCB",
+                        "long_name":  "Myeong-kwan Seo서명관",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Choi Seok Hyun",
+                        "overall":  57,
+                        "potential":  60,
+                        "club_jersey_number":  96,
+                        "nationality":  "Korea Republic",
+                        "player_id":  71412,
+                        "club_position":  "RB",
+                        "long_name":  "Seok-hyeon Choi최석현",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Baek In Woo",
+                        "overall":  48,
+                        "potential":  68,
+                        "club_jersey_number":  72,
+                        "nationality":  "Korea Republic",
+                        "player_id":  77190,
+                        "club_position":  "RES",
+                        "long_name":  "In-woo Back백인우",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jo Hyeon Woo",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Korea Republic",
+                        "player_id":  212432,
+                        "club_position":  "GK",
+                        "long_name":  "Hyeon-woo Jo조현우 崔永宇",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Moon Jung In",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  23,
+                        "nationality":  "Korea Republic",
+                        "player_id":  237097,
+                        "club_position":  "SUB",
+                        "long_name":  "Jung-in Moon문정인 文政仁",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kim Se Hyoung",
+                        "overall":  51,
+                        "potential":  67,
+                        "club_jersey_number":  25,
+                        "nationality":  "Korea Republic",
+                        "player_id":  80197,
+                        "club_position":  "RES",
+                        "long_name":  "Se Hyoung Kim",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ryu Seong Min",
+                        "overall":  48,
+                        "potential":  55,
+                        "club_jersey_number":  31,
+                        "nationality":  "Korea Republic",
+                        "player_id":  77218,
+                        "club_position":  "RES",
+                        "long_name":  "Seong-min Ryu류성민",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

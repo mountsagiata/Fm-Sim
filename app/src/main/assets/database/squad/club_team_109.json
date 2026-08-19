@@ -1,0 +1,375 @@
+﻿{
+    "metadata":  {
+                     "total_players":  24,
+                     "club_name":  "West Bromwich Albion",
+                     "league_name":  "Championship",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  109
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Mowatt",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  27,
+                        "nationality":  "England",
+                        "player_id":  213798,
+                        "club_position":  "LDM",
+                        "long_name":  "Alex James Mowatt",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Iling-Junior",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  22,
+                        "nationality":  "England",
+                        "player_id":  272379,
+                        "club_position":  "SUB",
+                        "long_name":  "Samuel Iling-Junior",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Styles",
+                        "overall":  70,
+                        "potential":  75,
+                        "club_jersey_number":  4,
+                        "nationality":  "Hungary",
+                        "player_id":  234087,
+                        "club_position":  "LB",
+                        "long_name":  "Callum John Styles",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Price",
+                        "overall":  69,
+                        "potential":  79,
+                        "club_jersey_number":  21,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  268630,
+                        "club_position":  "CAM",
+                        "long_name":  "Isaac Jude Price",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Wallace",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  205970,
+                        "club_position":  "RM",
+                        "long_name":  "Jed Fearnley Wallace",
+                        "age":  31,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Taylor",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  29,
+                        "nationality":  "England",
+                        "player_id":  204760,
+                        "club_position":  "SUB",
+                        "long_name":  "Charles James Taylor",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Grant",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  225668,
+                        "club_position":  "SUB",
+                        "long_name":  "Karlan Ahearne-Grant",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Collyer",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  13,
+                        "nationality":  "England",
+                        "player_id":  268439,
+                        "club_position":  "SUB",
+                        "long_name":  "Tobias Christopher Collyer",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Diakité",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  17,
+                        "nationality":  "Mali",
+                        "player_id":  251497,
+                        "club_position":  "SUB",
+                        "long_name":  "Ousmane Diakité",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Bielik",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  5,
+                        "nationality":  "Poland",
+                        "player_id":  224763,
+                        "club_position":  "SUB",
+                        "long_name":  "Krystian Bielik",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Maja",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Nigeria",
+                        "player_id":  235161,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Erowoli Orisunmihare Oluwaseun Maja",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Molumby",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  8,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  236344,
+                        "club_position":  "RDM",
+                        "long_name":  "Jayson Patrick Molumby",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Johnston",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  238505,
+                        "club_position":  "LM",
+                        "long_name":  "Michael Andrew Johnston",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gilchrist",
+                        "overall":  71,
+                        "potential":  80,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  278286,
+                        "club_position":  "RB",
+                        "long_name":  "Alfie Gilchrist",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Heggebø",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  19,
+                        "nationality":  "Norway",
+                        "player_id":  253441,
+                        "club_position":  "ST",
+                        "long_name":  "Aune Selland Heggebø",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Mepham",
+                        "overall":  73,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Wales",
+                        "player_id":  233201,
+                        "club_position":  "SUB",
+                        "long_name":  "Christopher James Mepham",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Dike",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  12,
+                        "nationality":  "United States",
+                        "player_id":  255043,
+                        "club_position":  "SUB",
+                        "long_name":  "Daryl Dike",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bany",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  26,
+                        "nationality":  "Denmark",
+                        "player_id":  70860,
+                        "club_position":  "SUB",
+                        "long_name":  "Tammer Bany Odeh",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Campbell",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  6,
+                        "nationality":  "United States",
+                        "player_id":  255824,
+                        "club_position":  "LCB",
+                        "long_name":  "George Campbell",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Phillips",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  240926,
+                        "club_position":  "RCB",
+                        "long_name":  "Nathaniel Harry Phillips",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Williams",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  41,
+                        "nationality":  "Wales",
+                        "player_id":  80852,
+                        "club_position":  "SUB",
+                        "long_name":  "Alex Williams",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Wildsmith",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  220944,
+                        "club_position":  "SUB",
+                        "long_name":  "Joseph Charles Wildsmith",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Griffiths",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  252773,
+                        "club_position":  "GK",
+                        "long_name":  "Joshua James Griffiths",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Wallis",
+                        "overall":  54,
+                        "potential":  68,
+                        "club_jersey_number":  45,
+                        "nationality":  "New Zealand",
+                        "player_id":  81286,
+                        "club_position":  "RES",
+                        "long_name":  "Joe Wallis",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,387 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Motor Lublin",
+                     "league_name":  "Ekstraklasa",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111097
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Ivo Rodrigues",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  7,
+                        "nationality":  "Portugal",
+                        "player_id":  226877,
+                        "club_position":  "CAM",
+                        "long_name":  "Ivo Tiago dos Santos Rodrigues",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fábio Ronaldo",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "Portugal",
+                        "player_id":  269489,
+                        "club_position":  "SUB",
+                        "long_name":  "Fábio Ronaldo Costa Conceição",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Wolski",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  68,
+                        "nationality":  "Poland",
+                        "player_id":  236363,
+                        "club_position":  "LCM",
+                        "long_name":  "Bartosz Wolski",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Król",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  26,
+                        "nationality":  "Poland",
+                        "player_id":  263303,
+                        "club_position":  "RW",
+                        "long_name":  "Michał Król",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Łabojko",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  21,
+                        "nationality":  "Poland",
+                        "player_id":  243921,
+                        "club_position":  "RCM",
+                        "long_name":  "Jakub Jan Łabojko",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Scalet",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  244511,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathieu Scalet",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Matthys",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  3,
+                        "nationality":  "Belgium",
+                        "player_id":  223931,
+                        "club_position":  "LCB",
+                        "long_name":  "Hervé Jean Matthys",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Stolarski",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  28,
+                        "nationality":  "Poland",
+                        "player_id":  213449,
+                        "club_position":  "SUB",
+                        "long_name":  "Paweł Stolarski",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ndiaye",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  30,
+                        "nationality":  "Senegal",
+                        "player_id":  72613,
+                        "club_position":  "LW",
+                        "long_name":  "Mbaye Jacques Ndiaye",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Luberecki",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  24,
+                        "nationality":  "Poland",
+                        "player_id":  72618,
+                        "club_position":  "LB",
+                        "long_name":  "Filip Luberecki",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergi Samper",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  208088,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergi Samper Montaña",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Dadashov",
+                        "overall":  66,
+                        "potential":  68,
+                        "club_jersey_number":  77,
+                        "nationality":  "Azerbaijan",
+                        "player_id":  238736,
+                        "club_position":  "SUB",
+                        "long_name":  "Renat Oleq Oğlu Dadaşov",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Wójcik",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  17,
+                        "nationality":  "Poland",
+                        "player_id":  72617,
+                        "club_position":  "RB",
+                        "long_name":  "Filip Wójcik",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Karasek",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Poland",
+                        "player_id":  269340,
+                        "club_position":  "SUB",
+                        "long_name":  "Kacper Karasek",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Haxha",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  23,
+                        "nationality":  "Kosovo",
+                        "player_id":  79197,
+                        "club_position":  "SUB",
+                        "long_name":  "Florian Haxha",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. van Hoeven",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  19,
+                        "nationality":  "Netherlands",
+                        "player_id":  262400,
+                        "club_position":  "SUB",
+                        "long_name":  "Bradly van Hoeven",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Meyer",
+                        "overall":  58,
+                        "potential":  66,
+                        "club_jersey_number":  2,
+                        "nationality":  "Poland",
+                        "player_id":  79561,
+                        "club_position":  "RES",
+                        "long_name":  "Paskal Konrad Meyer",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Palacz",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  47,
+                        "nationality":  "Poland",
+                        "player_id":  261088,
+                        "club_position":  "SUB",
+                        "long_name":  "Krystian Palacz",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Bartoš",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  39,
+                        "nationality":  "Slovakia",
+                        "player_id":  72981,
+                        "club_position":  "SUB",
+                        "long_name":  "Marek Kristián Bartoš",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Czubak",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  9,
+                        "nationality":  "Poland",
+                        "player_id":  76863,
+                        "club_position":  "ST",
+                        "long_name":  "Karol Czubak",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Najemski",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  18,
+                        "nationality":  "Poland",
+                        "player_id":  72616,
+                        "club_position":  "RCB",
+                        "long_name":  "Arkadiusz Najemski",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Ede",
+                        "overall":  61,
+                        "potential":  80,
+                        "club_jersey_number":  42,
+                        "nationality":  "Poland",
+                        "player_id":  76409,
+                        "club_position":  "SUB",
+                        "long_name":  "Bright Ede",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Tratnik",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  33,
+                        "nationality":  "Slovenia",
+                        "player_id":  76408,
+                        "club_position":  "GK",
+                        "long_name":  "Gašper Tratnik",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Brkić",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  1,
+                        "nationality":  "Croatia",
+                        "player_id":  73285,
+                        "club_position":  "SUB",
+                        "long_name":  "Ivan Brkić",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Kukulski",
+                        "overall":  52,
+                        "potential":  62,
+                        "club_jersey_number":  99,
+                        "nationality":  "Poland",
+                        "player_id":  80175,
+                        "club_position":  "RES",
+                        "long_name":  "Patryk Kukulski",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

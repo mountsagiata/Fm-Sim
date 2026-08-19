@@ -1,0 +1,437 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Libertad",
+                     "league_name":  "División Profesional",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  111008
+                 },
+    "players":  [
+                    {
+                        "short_name":  "L. Melgarejo",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Paraguay",
+                        "player_id":  204699,
+                        "club_position":  "LS",
+                        "long_name":  "Lorenzo Antonio Melgarejo Sanabria",
+                        "age":  34,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Rojas",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Paraguay",
+                        "player_id":  246914,
+                        "club_position":  "RB",
+                        "long_name":  "Robert Samuel Rojas Chávez",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Cardozo Lucena",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Paraguay",
+                        "player_id":  255963,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángel Rodrigo Cardozo Lucena",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Ramírez",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  2,
+                        "nationality":  "Paraguay",
+                        "player_id":  244946,
+                        "club_position":  "SUB",
+                        "long_name":  "Iván Rodrigo Ramírez Segovia",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Franco",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  18,
+                        "nationality":  "Paraguay",
+                        "player_id":  253240,
+                        "club_position":  "RM",
+                        "long_name":  "Iván René Franco Díaz",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Espinoza",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Paraguay",
+                        "player_id":  253239,
+                        "club_position":  "LB",
+                        "long_name":  "Matías David Espinoza Acosta",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Campuzano",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  6,
+                        "nationality":  "Paraguay",
+                        "player_id":  259410,
+                        "club_position":  "RDM",
+                        "long_name":  "Álvaro Marcial Campuzano",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Martínez",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Paraguay",
+                        "player_id":  256149,
+                        "club_position":  "SUB",
+                        "long_name":  "Hugo Javier Martínez Cantero",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sanabria",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "Paraguay",
+                        "player_id":  255436,
+                        "club_position":  "SUB",
+                        "long_name":  "Lucas Daniel Sanabria Brítez",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Caballero",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  26,
+                        "nationality":  "Paraguay",
+                        "player_id":  248868,
+                        "club_position":  "LDM",
+                        "long_name":  "Hernesto Ezequiel Caballero Benítez",
+                        "age":  34,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Fernández",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  20,
+                        "nationality":  "Paraguay",
+                        "player_id":  248869,
+                        "club_position":  "LM",
+                        "long_name":  "Hugo Francisco Fernández Martínez",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ó. Cardozo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Paraguay",
+                        "player_id":  179752,
+                        "club_position":  "SUB",
+                        "long_name":  "Oscar René Cardozo Marín",
+                        "age":  42,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Recalde",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Paraguay",
+                        "player_id":  255169,
+                        "club_position":  "SUB",
+                        "long_name":  "Jorge Eduardo Recalde Ramírez",
+                        "age":  33,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Santa Cruz",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Paraguay",
+                        "player_id":  25798,
+                        "club_position":  "SUB",
+                        "long_name":  "Roque Luis Santa Cruz Cantero",
+                        "age":  43,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Fretes",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  14,
+                        "nationality":  "Paraguay",
+                        "player_id":  75224,
+                        "club_position":  "RES",
+                        "long_name":  "Alexis Fretes",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Aguilar",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Paraguay",
+                        "player_id":  268527,
+                        "club_position":  "RS",
+                        "long_name":  "Gustavo Ángel Aguilar Encina",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fernández",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Paraguay",
+                        "player_id":  274378,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcelo Fabián Fernández Benítez",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Giménez",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Paraguay",
+                        "player_id":  254703,
+                        "club_position":  "LCB",
+                        "long_name":  "Néstor Rafael Giménez Florentín",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Villalba",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  32,
+                        "nationality":  "Paraguay",
+                        "player_id":  270842,
+                        "club_position":  "SUB",
+                        "long_name":  "Rodrigo Javier Villalba Benítez",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Viera",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  5,
+                        "nationality":  "Paraguay",
+                        "player_id":  227550,
+                        "club_position":  "RCB",
+                        "long_name":  "Diego Francisco Viera Ruiz Díaz",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Jacquet",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  27,
+                        "nationality":  "Paraguay",
+                        "player_id":  252962,
+                        "club_position":  "SUB",
+                        "long_name":  "Miguel Isaías Jacquet Duarte",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Villalba",
+                        "overall":  58,
+                        "potential":  82,
+                        "club_jersey_number":  23,
+                        "nationality":  "Paraguay",
+                        "player_id":  72247,
+                        "club_position":  "RES",
+                        "long_name":  "Pedro André Villalba Gaona",
+                        "age":  16,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bogarin",
+                        "overall":  53,
+                        "potential":  75,
+                        "club_jersey_number":  42,
+                        "nationality":  "Paraguay",
+                        "player_id":  79421,
+                        "club_position":  "SUB",
+                        "long_name":  "Joaquín Andrés Bogarín Gómez",
+                        "age":  17,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Troche",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  35,
+                        "nationality":  "Paraguay",
+                        "player_id":  78539,
+                        "club_position":  "RES",
+                        "long_name":  "Aarón Josué Troche Martínez",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Silva",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  1,
+                        "nationality":  "Uruguay",
+                        "player_id":  198653,
+                        "club_position":  "GK",
+                        "long_name":  "Martín Andrés Silva Leites",
+                        "age":  42,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Morínigo",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  12,
+                        "nationality":  "Paraguay",
+                        "player_id":  256156,
+                        "club_position":  "RES",
+                        "long_name":  "Rodrigo Mario Morínigo Acosta",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. González",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  25,
+                        "nationality":  "Paraguay",
+                        "player_id":  261703,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángel Ariel González González",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Rojas",
+                        "overall":  56,
+                        "potential":  71,
+                        "club_jersey_number":  29,
+                        "nationality":  "Paraguay",
+                        "player_id":  75874,
+                        "club_position":  "RES",
+                        "long_name":  "Víctor Rojas",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

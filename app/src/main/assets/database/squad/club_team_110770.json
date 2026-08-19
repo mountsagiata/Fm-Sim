@@ -1,0 +1,456 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "FC Sion",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:45",
+                     "club_team_id":  110770
+                 },
+    "players":  [
+                    {
+                        "short_name":  "N. Lavanchy",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  14,
+                        "nationality":  "Switzerland",
+                        "player_id":  199890,
+                        "club_position":  "RB",
+                        "long_name":  "Numa Lavanchy",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Kololli",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  70,
+                        "nationality":  "Kosovo",
+                        "player_id":  211903,
+                        "club_position":  "RM",
+                        "long_name":  "Benjamin Kololli",
+                        "age":  33,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Diack",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  25,
+                        "nationality":  "Senegal",
+                        "player_id":  270894,
+                        "club_position":  "SUB",
+                        "long_name":  "Lamine Diack",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Rrudhani",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  19,
+                        "nationality":  "Kosovo",
+                        "player_id":  270328,
+                        "club_position":  "RES",
+                        "long_name":  "Donat Rrudhani",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Chouaref",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Malta",
+                        "player_id":  246729,
+                        "club_position":  "LS",
+                        "long_name":  "Ilyas Chouaref",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Baltazar",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "Brazil",
+                        "player_id":  243898,
+                        "club_position":  "SUB",
+                        "long_name":  "Baltazar Costa Rodrigues de Oliveira",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marquinhos Cipriano",
+                        "overall":  65,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  244497,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcos Robson Cipriano",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bouchlarhem",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  272875,
+                        "club_position":  "LM",
+                        "long_name":  "Théo Bouchlarhem",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Hefti",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  20,
+                        "nationality":  "Switzerland",
+                        "player_id":  244131,
+                        "club_position":  "LB",
+                        "long_name":  "Nias Hefti",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kabacalman",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  88,
+                        "nationality":  "Switzerland",
+                        "player_id":  234687,
+                        "club_position":  "RCM",
+                        "long_name":  "Ali Kabacalman",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Chipperfield",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  21,
+                        "nationality":  "Switzerland",
+                        "player_id":  266623,
+                        "club_position":  "SUB",
+                        "long_name":  "Liam Scott Chipperfield",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Hajrizi",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "Kosovo",
+                        "player_id":  263740,
+                        "club_position":  "RCB",
+                        "long_name":  "Kreshnik Hajrizi",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Mulazzi",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Italy",
+                        "player_id":  77424,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriele Mulazzi",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Londja",
+                        "overall":  62,
+                        "potential":  75,
+                        "club_jersey_number":  55,
+                        "nationality":  "Switzerland",
+                        "player_id":  73609,
+                        "club_position":  "SUB",
+                        "long_name":  "Ruben Londja",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lukembila",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  39,
+                        "nationality":  "Switzerland",
+                        "player_id":  256698,
+                        "club_position":  "SUB",
+                        "long_name":  "Josias Tusevo Lukembila",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Berdayes",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  29,
+                        "nationality":  "Switzerland",
+                        "player_id":  264423,
+                        "club_position":  "SUB",
+                        "long_name":  "Théo Berdayes Marques",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Nivokazi",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  33,
+                        "nationality":  "Kosovo",
+                        "player_id":  79212,
+                        "club_position":  "RS",
+                        "long_name":  "Rilind Nivokazi",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Shala",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Kosovo",
+                        "player_id":  79161,
+                        "club_position":  "SUB",
+                        "long_name":  "Altin Shala",
+                        "age":  22,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Sow",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  5,
+                        "nationality":  "France",
+                        "player_id":  264033,
+                        "club_position":  "LCM",
+                        "long_name":  "Noé Sow",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Joseph",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Haiti",
+                        "player_id":  74646,
+                        "club_position":  "RES",
+                        "long_name":  "Joseph Belmar",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dinis Rodrigues",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Portugal",
+                        "player_id":  79835,
+                        "club_position":  "RES",
+                        "long_name":  "José Dinis Rodrigues",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kronig",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  17,
+                        "nationality":  "Switzerland",
+                        "player_id":  243860,
+                        "club_position":  "LCB",
+                        "long_name":  "Jan Kronig",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Boteli",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  13,
+                        "nationality":  "Switzerland",
+                        "player_id":  79663,
+                        "club_position":  "SUB",
+                        "long_name":  "Winsley Boteli Mokango",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Biner",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  44,
+                        "nationality":  "Switzerland",
+                        "player_id":  79214,
+                        "club_position":  "SUB",
+                        "long_name":  "Nevio Biner",
+                        "age":  18,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Llukes",
+                        "overall":  57,
+                        "potential":  77,
+                        "club_jersey_number":  22,
+                        "nationality":  "Switzerland",
+                        "player_id":  78852,
+                        "club_position":  "RES",
+                        "long_name":  "Adrien Llukes",
+                        "age":  16,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dubosson",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  24,
+                        "nationality":  "Switzerland",
+                        "player_id":  75777,
+                        "club_position":  "RES",
+                        "long_name":  "Maxime Dubosson",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Savonnier",
+                        "overall":  50,
+                        "potential":  74,
+                        "club_jersey_number":  56,
+                        "nationality":  "Switzerland",
+                        "player_id":  80592,
+                        "club_position":  "RES",
+                        "long_name":  "Nelson Savonnier",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Ruberto",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  12,
+                        "nationality":  "Switzerland",
+                        "player_id":  216779,
+                        "club_position":  "SUB",
+                        "long_name":  "Francesco Ruberto",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Racioppi",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  1,
+                        "nationality":  "Switzerland",
+                        "player_id":  243573,
+                        "club_position":  "GK",
+                        "long_name":  "Anthony Racioppi",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,503 @@
+﻿{
+    "metadata":  {
+                     "total_players":  33,
+                     "club_name":  "Panathinaikos FC",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  1884
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Bakasetas",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  11,
+                        "nationality":  "Greece",
+                        "player_id":  208250,
+                        "club_position":  "CM",
+                        "long_name":  "Anastasios BakasetasΑναστάσιος Μπακασέτας",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Renato Sanches",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Portugal",
+                        "player_id":  230767,
+                        "club_position":  "SUB",
+                        "long_name":  "Renato Júnior Luz Sanches",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Vilhena",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  52,
+                        "nationality":  "Netherlands",
+                        "player_id":  203535,
+                        "club_position":  "RES",
+                        "long_name":  "Tonny Emílio Trindade de Vilhena",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Mladenović",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  25,
+                        "nationality":  "Serbia",
+                        "player_id":  221969,
+                        "club_position":  "LB",
+                        "long_name":  "Filip MladenovićФилип Mлaдeнoвић",
+                        "age":  33,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Calabria",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "Italy",
+                        "player_id":  228881,
+                        "club_position":  "RB",
+                        "long_name":  "Davide Calabria",
+                        "age":  28,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Čerin",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Slovenia",
+                        "player_id":  247861,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Gnezda Čerin",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kyriakopoulos",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  77,
+                        "nationality":  "Greece",
+                        "player_id":  253213,
+                        "club_position":  "SUB",
+                        "long_name":  "Giorgos KyriakopoulosΓεώργιος Κυριακόπουλος",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Max",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Germany",
+                        "player_id":  212187,
+                        "club_position":  "LM",
+                        "long_name":  "Philipp Martin Max",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Mancini",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Argentina",
+                        "player_id":  229575,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Mancini",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Siopis",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "Greece",
+                        "player_id":  236773,
+                        "club_position":  "CDM",
+                        "long_name":  "Emmanouil \u0026amp;quot;Manolis\u0026amp;quot; SiopisΜανώλης Σιώπης",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Đuričić",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  31,
+                        "nationality":  "Serbia",
+                        "player_id":  193881,
+                        "club_position":  "RES",
+                        "long_name":  "Filip DjuricicФилип Ђуричић",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tetê",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  247641,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateus Cardoso Lemos Martins",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Nikas",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  44,
+                        "nationality":  "Greece",
+                        "player_id":  278137,
+                        "club_position":  "SUB",
+                        "long_name":  "Georgios NikasΓεώργιος Νίκας",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kotsiras",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  27,
+                        "nationality":  "Greece",
+                        "player_id":  262815,
+                        "club_position":  "SUB",
+                        "long_name":  "Giannis KotsirasΓιάννης Κώτσιρας",
+                        "age":  32,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Taborda",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  20,
+                        "nationality":  "Argentina",
+                        "player_id":  263693,
+                        "club_position":  "RES",
+                        "long_name":  "Vicente Taborda",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Pellistri",
+                        "overall":  73,
+                        "potential":  81,
+                        "club_jersey_number":  28,
+                        "nationality":  "Uruguay",
+                        "player_id":  253283,
+                        "club_position":  "RM",
+                        "long_name":  "Facundo Pellistri Rebollo",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Touba",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Algeria",
+                        "player_id":  236535,
+                        "club_position":  "RES",
+                        "long_name":  "Ahmed Toubaأحمد توبة",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Chirivella",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Spain",
+                        "player_id":  224019,
+                        "club_position":  "RES",
+                        "long_name":  "Pedro Chirivella Burgos",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Zaroury",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  9,
+                        "nationality":  "Morocco",
+                        "player_id":  260843,
+                        "club_position":  "SUB",
+                        "long_name":  "Anass Zarouryأنس الزعروري",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Świderski",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  19,
+                        "nationality":  "Poland",
+                        "player_id":  224301,
+                        "club_position":  "SUB",
+                        "long_name":  "Karol Grzegorz Świderski",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Jedvaj",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Croatia",
+                        "player_id":  215930,
+                        "club_position":  "RES",
+                        "long_name":  "Tin Jedvaj",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Ingason",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  15,
+                        "nationality":  "Iceland",
+                        "player_id":  221422,
+                        "club_position":  "RCB",
+                        "long_name":  "Sverrir Ingi Ingason",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Dessers",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  33,
+                        "nationality":  "Nigeria",
+                        "player_id":  222262,
+                        "club_position":  "RS",
+                        "long_name":  "Cyriel Kolawole Dessers",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pantovic",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  72,
+                        "nationality":  "Serbia",
+                        "player_id":  81306,
+                        "club_position":  "SUB",
+                        "long_name":  "Milos Pantovic",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jeremejeff",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  29,
+                        "nationality":  "Sweden",
+                        "player_id":  221605,
+                        "club_position":  "LS",
+                        "long_name":  "Alexander Thomas Jeremejeff",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Palmer-Brown",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  14,
+                        "nationality":  "United States",
+                        "player_id":  219461,
+                        "club_position":  "LCB",
+                        "long_name":  "Erik Ross Palmer-Brown",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kyriopoulos",
+                        "overall":  65,
+                        "potential":  79,
+                        "club_jersey_number":  22,
+                        "nationality":  "Greece",
+                        "player_id":  79804,
+                        "club_position":  "RES",
+                        "long_name":  "Georgios Kyriopoulos",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bregou",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  30,
+                        "nationality":  "Greece",
+                        "player_id":  78127,
+                        "club_position":  "RES",
+                        "long_name":  "Adriano Bregou",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Bokos",
+                        "overall":  63,
+                        "potential":  79,
+                        "club_jersey_number":  39,
+                        "nationality":  "Greece",
+                        "player_id":  79813,
+                        "club_position":  "SUB",
+                        "long_name":  "Giannis Bokos",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Fikaj",
+                        "overall":  62,
+                        "potential":  79,
+                        "club_jersey_number":  26,
+                        "nationality":  "Albania",
+                        "player_id":  77338,
+                        "club_position":  "RES",
+                        "long_name":  "Elton Fikaj",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lafont",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  40,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  231691,
+                        "club_position":  "SUB",
+                        "long_name":  "Alban Lafont",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Drągowski",
+                        "overall":  76,
+                        "potential":  79,
+                        "club_jersey_number":  69,
+                        "nationality":  "Poland",
+                        "player_id":  215502,
+                        "club_position":  "GK",
+                        "long_name":  "Bartłomiej Drągowski",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kotsaris",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  70,
+                        "nationality":  "Greece",
+                        "player_id":  224846,
+                        "club_position":  "RES",
+                        "long_name":  "Konstantinos KotsarisΚωνσταντίνος Κότσαρης",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

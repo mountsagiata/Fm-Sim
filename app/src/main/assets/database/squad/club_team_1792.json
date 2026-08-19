@@ -1,0 +1,487 @@
+﻿{
+    "metadata":  {
+                     "total_players":  31,
+                     "club_name":  "Norwich City",
+                     "league_name":  "Championship",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1792
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Schlupp",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  27,
+                        "nationality":  "Ghana",
+                        "player_id":  200759,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeffrey Schlupp",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "CM",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kvistgaarden",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  30,
+                        "nationality":  "Denmark",
+                        "player_id":  257167,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathias Damm Kvistgaarden",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. McLean",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  23,
+                        "nationality":  "Scotland",
+                        "player_id":  201368,
+                        "club_position":  "SUB",
+                        "long_name":  "Kenneth McLean",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Jurásek",
+                        "overall":  73,
+                        "potential":  81,
+                        "club_jersey_number":  10,
+                        "nationality":  "Czechia",
+                        "player_id":  271296,
+                        "club_position":  "SUB",
+                        "long_name":  "Matěj Jurásek",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sargent",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "United States",
+                        "player_id":  242075,
+                        "club_position":  "ST",
+                        "long_name":  "Joshua Thomas Sargent",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Marcondes",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "Denmark",
+                        "player_id":  210644,
+                        "club_position":  "RAM",
+                        "long_name":  "Emiliano Marcondes Camargo Hansen",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Stacey",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  221282,
+                        "club_position":  "RM",
+                        "long_name":  "Jack William Stacey",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Forson",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  18,
+                        "nationality":  "Ghana",
+                        "player_id":  261004,
+                        "club_position":  "SUB",
+                        "long_name":  "Forson Amankwah",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Gibbs",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  256620,
+                        "club_position":  "SUB",
+                        "long_name":  "Liam Geoffrey Gibbs",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Slimane",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  20,
+                        "nationality":  "Tunisia",
+                        "player_id":  255210,
+                        "club_position":  "RES",
+                        "long_name":  "Anis Ben Slimaneأنيس بن سليمان",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mattsson",
+                        "overall":  71,
+                        "potential":  80,
+                        "club_jersey_number":  7,
+                        "nationality":  "Denmark",
+                        "player_id":  250853,
+                        "club_position":  "SUB",
+                        "long_name":  "Pelle Elkjær Mattsson",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Wright",
+                        "overall":  67,
+                        "potential":  80,
+                        "club_jersey_number":  16,
+                        "nationality":  "England",
+                        "player_id":  70996,
+                        "club_position":  "RCM",
+                        "long_name":  "Jacob Wright",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Topić",
+                        "overall":  71,
+                        "potential":  78,
+                        "club_jersey_number":  22,
+                        "nationality":  "Serbia",
+                        "player_id":  276302,
+                        "club_position":  "LCM",
+                        "long_name":  "Mirko TopićМирко Топић",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Darling",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  236551,
+                        "club_position":  "CB",
+                        "long_name":  "Harry Jack Darling",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Medić",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Croatia",
+                        "player_id":  251288,
+                        "club_position":  "RCB",
+                        "long_name":  "Jakov Medić",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Fisher",
+                        "overall":  69,
+                        "potential":  77,
+                        "club_jersey_number":  35,
+                        "nationality":  "England",
+                        "player_id":  275988,
+                        "club_position":  "SUB",
+                        "long_name":  "Kellen Fisher",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Chrisene",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  256556,
+                        "club_position":  "SUB",
+                        "long_name":  "Benjamin Joshua Chrisene",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Crnac",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Croatia",
+                        "player_id":  278049,
+                        "club_position":  "LAM",
+                        "long_name":  "Ante Crnac",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Schwartau",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  29,
+                        "nationality":  "Denmark",
+                        "player_id":  269903,
+                        "club_position":  "SUB",
+                        "long_name":  "Oscar Schwartau",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Mahovo",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  47,
+                        "nationality":  "England",
+                        "player_id":  275351,
+                        "club_position":  "RES",
+                        "long_name":  "Lucien Mahovo",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Diallo",
+                        "overall":  68,
+                        "potential":  82,
+                        "club_jersey_number":  19,
+                        "nationality":  "Senegal",
+                        "player_id":  275372,
+                        "club_position":  "LM",
+                        "long_name":  "Papa Amadou Diallo",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Springett",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  42,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  268909,
+                        "club_position":  "RES",
+                        "long_name":  "Tony Gary Springett",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Córdoba",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  33,
+                        "nationality":  "Panama",
+                        "player_id":  72708,
+                        "club_position":  "LCB",
+                        "long_name":  "José Ángel Córdoba Chambers",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Makama",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  263115,
+                        "club_position":  "SUB",
+                        "long_name":  "Jovon Willesley Makama",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Duffy",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  4,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  192622,
+                        "club_position":  "RES",
+                        "long_name":  "Shane Patrick Michael Duffy",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Forsyth",
+                        "overall":  60,
+                        "potential":  77,
+                        "club_jersey_number":  41,
+                        "nationality":  "Scotland",
+                        "player_id":  276943,
+                        "club_position":  "RES",
+                        "long_name":  "Gabriel Forsyth",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Myles",
+                        "overall":  55,
+                        "potential":  76,
+                        "club_jersey_number":  44,
+                        "nationality":  "Wales",
+                        "player_id":  74358,
+                        "club_position":  "RES",
+                        "long_name":  "Elliot Josh Myles",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. McConville",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  15,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  75768,
+                        "club_position":  "RES",
+                        "long_name":  "Ruairi McConville",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Moulden",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  31,
+                        "nationality":  "England",
+                        "player_id":  254328,
+                        "club_position":  "RES",
+                        "long_name":  "Louie Moulden",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Grimshaw",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  32,
+                        "nationality":  "England",
+                        "player_id":  224947,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel James Grimshaw",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Kovacević",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  1,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  263032,
+                        "club_position":  "GK",
+                        "long_name":  "Vladan Kovačević",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

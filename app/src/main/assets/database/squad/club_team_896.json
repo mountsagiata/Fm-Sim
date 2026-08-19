@@ -1,0 +1,481 @@
+﻿{
+    "metadata":  {
+                     "total_players":  31,
+                     "club_name":  "FC Basel 1893",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  896
+                 },
+    "players":  [
+                    {
+                        "short_name":  "X. Shaqiri",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  10,
+                        "nationality":  "Switzerland",
+                        "player_id":  193348,
+                        "club_position":  "CAM",
+                        "long_name":  "Xherdan Shaqiri",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Schmid",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  31,
+                        "nationality":  "Switzerland",
+                        "player_id":  239016,
+                        "club_position":  "LB",
+                        "long_name":  "Dominik Robin Schmid",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Koindredi",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  252025,
+                        "club_position":  "RDM",
+                        "long_name":  "Koba Leïn Koindredi",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Traoré",
+                        "overall":  75,
+                        "potential":  83,
+                        "club_jersey_number":  11,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  260651,
+                        "club_position":  "RM",
+                        "long_name":  "Bénie Adama Traoré",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Otele",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Nigeria",
+                        "player_id":  266395,
+                        "club_position":  "LM",
+                        "long_name":  "Philip Porwei Otele",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Leroy",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  247599,
+                        "club_position":  "LDM",
+                        "long_name":  "Léo Patrick Pierre Leroy",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Metinho",
+                        "overall":  69,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "Brazil",
+                        "player_id":  262062,
+                        "club_position":  "SUB",
+                        "long_name":  "Abemly Meto Silu",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Tsunemoto",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "Japan",
+                        "player_id":  258880,
+                        "club_position":  "RB",
+                        "long_name":  "Keigo Tsunemoto常本 佳吾",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Rüegg",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  27,
+                        "nationality":  "Switzerland",
+                        "player_id":  240099,
+                        "club_position":  "RES",
+                        "long_name":  "Kevin Rüegg",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Broschinski",
+                        "overall":  69,
+                        "potential":  73,
+                        "club_jersey_number":  17,
+                        "nationality":  "Germany",
+                        "player_id":  243960,
+                        "club_position":  "SUB",
+                        "long_name":  "Moritz Broschinski",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Salah",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  21,
+                        "nationality":  "Morocco",
+                        "player_id":  270828,
+                        "club_position":  "SUB",
+                        "long_name":  "Ibrahim Salahابراهيم صلاح",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ajeti",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Switzerland",
+                        "player_id":  222352,
+                        "club_position":  "ST",
+                        "long_name":  "Albian Afrim Ajeti",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Daniliuc",
+                        "overall":  72,
+                        "potential":  78,
+                        "club_jersey_number":  24,
+                        "nationality":  "Austria",
+                        "player_id":  252017,
+                        "club_position":  "RES",
+                        "long_name":  "Flavius David Daniliuc",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gauto",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  33,
+                        "nationality":  "Argentina",
+                        "player_id":  269599,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Carlos Gauto",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Agbonifo",
+                        "overall":  66,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "Sweden",
+                        "player_id":  71343,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeremy Nosakhare Agbonifo",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kacuri",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  28,
+                        "nationality":  "Switzerland",
+                        "player_id":  270847,
+                        "club_position":  "SUB",
+                        "long_name":  "Dion Kacuri",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Cissé",
+                        "overall":  64,
+                        "potential":  75,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  263881,
+                        "club_position":  "SUB",
+                        "long_name":  "Moussa Cissé",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Vouilloz",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  3,
+                        "nationality":  "Switzerland",
+                        "player_id":  257005,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolas Vouilloz",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. van Breemen",
+                        "overall":  69,
+                        "potential":  80,
+                        "club_jersey_number":  25,
+                        "nationality":  "Netherlands",
+                        "player_id":  276173,
+                        "club_position":  "RES",
+                        "long_name":  "Finn van Breemen",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Soticek",
+                        "overall":  66,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Croatia",
+                        "player_id":  73582,
+                        "club_position":  "SUB",
+                        "long_name":  "Marin Šotiček",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Adjetey",
+                        "overall":  70,
+                        "potential":  82,
+                        "club_jersey_number":  32,
+                        "nationality":  "Ghana",
+                        "player_id":  276634,
+                        "club_position":  "LCB",
+                        "long_name":  "Jonas Adjei Adjetey",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Barišić",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  26,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  268468,
+                        "club_position":  "RCB",
+                        "long_name":  "Leon Adrian Barišić",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Onyegbule",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  66,
+                        "nationality":  "Germany",
+                        "player_id":  276638,
+                        "club_position":  "RES",
+                        "long_name":  "Brian Adriano Ogechukwu Onyegbule",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zé",
+                        "overall":  59,
+                        "potential":  77,
+                        "club_jersey_number":  39,
+                        "nationality":  "Switzerland",
+                        "player_id":  277270,
+                        "club_position":  "SUB",
+                        "long_name":  "Arlet Junior Zé",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kaio Eduardo",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  46,
+                        "nationality":  "Brazil",
+                        "player_id":  76618,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaio Eduardo do Nascimento Pereira dos Santos",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bacanin",
+                        "overall":  54,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Serbia",
+                        "player_id":  80343,
+                        "club_position":  "RES",
+                        "long_name":  "Andrej Bacanin",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Akahomen",
+                        "overall":  58,
+                        "potential":  75,
+                        "club_jersey_number":  43,
+                        "nationality":  "Switzerland",
+                        "player_id":  275600,
+                        "club_position":  "RES",
+                        "long_name":  "Marvin Akahomen",
+                        "age":  17,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hitz",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  1,
+                        "nationality":  "Switzerland",
+                        "player_id":  190243,
+                        "club_position":  "GK",
+                        "long_name":  "Marwin Hitz",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Salvi",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  13,
+                        "nationality":  "Switzerland",
+                        "player_id":  209332,
+                        "club_position":  "SUB",
+                        "long_name":  "Mirko Salvi",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pfeiffer",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  47,
+                        "nationality":  "Germany",
+                        "player_id":  71838,
+                        "club_position":  "RES",
+                        "long_name":  "Tim Pfeiffer",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Spycher",
+                        "overall":  55,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "Switzerland",
+                        "player_id":  275721,
+                        "club_position":  "RES",
+                        "long_name":  "Tim Spycher",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

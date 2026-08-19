@@ -1,0 +1,382 @@
+﻿{
+    "metadata":  {
+                     "total_players":  24,
+                     "club_name":  "Trabzonspor",
+                     "league_name":  "Süper Lig",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  436
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Tufan",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "Türkiye",
+                        "player_id":  223154,
+                        "club_position":  "SUB",
+                        "long_name":  "Ozan Tufan",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Yokuşlu",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  5,
+                        "nationality":  "Türkiye",
+                        "player_id":  205201,
+                        "club_position":  "LDM",
+                        "long_name":  "Okay Yokuşlu",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Višća",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  205678,
+                        "club_position":  "RM",
+                        "long_name":  "Edin Višća",
+                        "age":  35,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Eskihellaç",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  19,
+                        "nationality":  "Türkiye",
+                        "player_id":  244486,
+                        "club_position":  "LB",
+                        "long_name":  "Mustafa Eskihellaç",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Nwakaeme",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Nigeria",
+                        "player_id":  241771,
+                        "club_position":  "SUB",
+                        "long_name":  "Anthony Nnaduzor Nwakaeme",
+                        "age":  36,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Zubkov",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  22,
+                        "nationality":  "Ukraine",
+                        "player_id":  237055,
+                        "club_position":  "LM",
+                        "long_name":  "Oleksandr ZubkovЗубков Олександр Валерійович",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Wagner Pina",
+                        "overall":  72,
+                        "potential":  82,
+                        "club_jersey_number":  20,
+                        "nationality":  "Cabo Verde",
+                        "player_id":  276909,
+                        "club_position":  "RB",
+                        "long_name":  "Wagner Fabrício Cardoso de Pina",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Bouchouari",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  6,
+                        "nationality":  "Morocco",
+                        "player_id":  271452,
+                        "club_position":  "SUB",
+                        "long_name":  "Benjamin Bouchouariبنيامين بوشواري",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Muçi",
+                        "overall":  75,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Albania",
+                        "player_id":  261195,
+                        "club_position":  "SUB",
+                        "long_name":  "Ernest Muçi",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Jabol-Folcarelli",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  276946,
+                        "club_position":  "RDM",
+                        "long_name":  "Tim Jabol-Folcarelli",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Sikan",
+                        "overall":  74,
+                        "potential":  81,
+                        "club_jersey_number":  14,
+                        "nationality":  "Ukraine",
+                        "player_id":  247122,
+                        "club_position":  "SUB",
+                        "long_name":  "Danylo SikanСікан Данило Ярославович",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Onuachu",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  30,
+                        "nationality":  "Nigeria",
+                        "player_id":  212382,
+                        "club_position":  "LS",
+                        "long_name":  "Paul Ebere Onuachu",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Çanak",
+                        "overall":  66,
+                        "potential":  81,
+                        "club_jersey_number":  61,
+                        "nationality":  "Türkiye",
+                        "player_id":  266474,
+                        "club_position":  "SUB",
+                        "long_name":  "Cihan Çanak",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Inao Oulaï",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  42,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  74735,
+                        "club_position":  "SUB",
+                        "long_name":  "Christ Ravynel Inao Oulaï",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Olaigbe",
+                        "overall":  67,
+                        "potential":  77,
+                        "club_jersey_number":  70,
+                        "nationality":  "Belgium",
+                        "player_id":  268787,
+                        "club_position":  "SUB",
+                        "long_name":  "Kazeem Aderemi Olaigbe",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Savić",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  15,
+                        "nationality":  "Montenegro",
+                        "player_id":  204639,
+                        "club_position":  "RCB",
+                        "long_name":  "Stefan Savić",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Batagov",
+                        "overall":  73,
+                        "potential":  80,
+                        "club_jersey_number":  44,
+                        "nationality":  "Ukraine",
+                        "player_id":  74295,
+                        "club_position":  "LCB",
+                        "long_name":  "Arseniy BatagovБатагов Арсеній Павлович",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Malkoçoğlu",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  74,
+                        "nationality":  "Türkiye",
+                        "player_id":  70552,
+                        "club_position":  "RES",
+                        "long_name":  "Salih Malkoçoğlu",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Boşluk",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  77,
+                        "nationality":  "Türkiye",
+                        "player_id":  275258,
+                        "club_position":  "SUB",
+                        "long_name":  "Arif Boşluk",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Felipe Augusto",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  99,
+                        "nationality":  "Brazil",
+                        "player_id":  279930,
+                        "club_position":  "RS",
+                        "long_name":  "Felipe Augusto da Silva",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Saatçı",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  29,
+                        "nationality":  "Türkiye",
+                        "player_id":  264066,
+                        "club_position":  "SUB",
+                        "long_name":  "Serdar Saatçı",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Baniya",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  23,
+                        "nationality":  "Türkiye",
+                        "player_id":  264284,
+                        "club_position":  "SUB",
+                        "long_name":  "Rayyan Baniya",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Onana",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  24,
+                        "nationality":  "Cameroon",
+                        "player_id":  226753,
+                        "club_position":  "GK",
+                        "long_name":  "André Onana",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Çevikkan",
+                        "overall":  62,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "Türkiye",
+                        "player_id":  279001,
+                        "club_position":  "SUB",
+                        "long_name":  "Onuralp Çevikkan",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

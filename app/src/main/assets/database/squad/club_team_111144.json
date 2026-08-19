@@ -1,0 +1,466 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Seattle Sounders FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111144
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Roldan",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "United States",
+                        "player_id":  226807,
+                        "club_position":  "RCM",
+                        "long_name":  "Cristian Roldán",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "RM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. De la Vega",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Argentina",
+                        "player_id":  246045,
+                        "club_position":  "RM",
+                        "long_name":  "Pedro de la Vega",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rusnák",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Slovakia",
+                        "player_id":  210423,
+                        "club_position":  "RAM",
+                        "long_name":  "Albert Rusnák",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Kent",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  77,
+                        "nationality":  "England",
+                        "player_id":  224520,
+                        "club_position":  "LM",
+                        "long_name":  "Ryan Kent",
+                        "age":  28,
+                        "positions":  [
+                                          "LW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Arriola",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "United States",
+                        "player_id":  217714,
+                        "club_position":  "RES",
+                        "long_name":  "Paul Joseph Arriola Hendricks",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ferreira",
+                        "overall":  72,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "United States",
+                        "player_id":  241487,
+                        "club_position":  "LAM",
+                        "long_name":  "Jesús David Ferreira Castro",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Paulo",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  205953,
+                        "club_position":  "SUB",
+                        "long_name":  "João Paulo Mior",
+                        "age":  34,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Roldan",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "El Salvador",
+                        "player_id":  242648,
+                        "club_position":  "SUB",
+                        "long_name":  "Álexander Roldán León",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Morris",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  226035,
+                        "club_position":  "SUB",
+                        "long_name":  "Jordan Perry Morris",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Vargas",
+                        "overall":  69,
+                        "potential":  79,
+                        "club_jersey_number":  18,
+                        "nationality":  "Mexico",
+                        "player_id":  263701,
+                        "club_position":  "LCM",
+                        "long_name":  "Obed Gómez Vargas",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Tolo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Cameroon",
+                        "player_id":  237469,
+                        "club_position":  "LCB",
+                        "long_name":  "Nouhou Tolo",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kim Kee-Hee",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  20,
+                        "nationality":  "Korea Republic",
+                        "player_id":  203002,
+                        "club_position":  "SUB",
+                        "long_name":  "Kee-hee Kim김기희 金基熙",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Brunell",
+                        "overall":  61,
+                        "potential":  79,
+                        "club_jersey_number":  37,
+                        "nationality":  "United States",
+                        "player_id":  80610,
+                        "club_position":  "RES",
+                        "long_name":  "Snyder Brunell",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Leyva",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  75,
+                        "nationality":  "United States",
+                        "player_id":  248856,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Ulises Leyva",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kossa-Rienzi",
+                        "overall":  63,
+                        "potential":  71,
+                        "club_jersey_number":  85,
+                        "nationality":  "United States",
+                        "player_id":  77671,
+                        "club_position":  "SUB",
+                        "long_name":  "Kalani Kossa-Rienzi",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Gómez Andrade",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  28,
+                        "nationality":  "Colombia",
+                        "player_id":  224396,
+                        "club_position":  "RCB",
+                        "long_name":  "Yeimar Pastor Gómez Andrade",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Rothrock",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  14,
+                        "nationality":  "United States",
+                        "player_id":  260657,
+                        "club_position":  "SUB",
+                        "long_name":  "Paul Rothrock",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Baker-Whiting",
+                        "overall":  60,
+                        "potential":  76,
+                        "club_jersey_number":  21,
+                        "nationality":  "United States",
+                        "player_id":  262208,
+                        "club_position":  "RES",
+                        "long_name":  "Reed Vanarthur Baker-Whiting",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Musovski",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  19,
+                        "nationality":  "United States",
+                        "player_id":  243302,
+                        "club_position":  "ST",
+                        "long_name":  "Danny MusovskiДени Мусовски",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ragen",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "United States",
+                        "player_id":  267995,
+                        "club_position":  "CB",
+                        "long_name":  "Jackson Ragen",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bell",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  15,
+                        "nationality":  "Jamaica",
+                        "player_id":  261565,
+                        "club_position":  "SUB",
+                        "long_name":  "Jonathan Bell",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Minoungou",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  93,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  72379,
+                        "club_position":  "SUB",
+                        "long_name":  "Georgi Minoungou",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Baker",
+                        "overall":  57,
+                        "potential":  68,
+                        "club_jersey_number":  33,
+                        "nationality":  "United States",
+                        "player_id":  275338,
+                        "club_position":  "SUB",
+                        "long_name":  "Cody William Baker",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. De Rosario",
+                        "overall":  58,
+                        "potential":  65,
+                        "club_jersey_number":  95,
+                        "nationality":  "Guyana",
+                        "player_id":  78714,
+                        "club_position":  "RES",
+                        "long_name":  "Osaze Tafari De Rosario",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Sousa",
+                        "overall":  54,
+                        "potential":  61,
+                        "club_jersey_number":  3,
+                        "nationality":  "United States",
+                        "player_id":  275686,
+                        "club_position":  "RES",
+                        "long_name":  "Travian Anthony Sousa",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Hawkins",
+                        "overall":  55,
+                        "potential":  74,
+                        "club_jersey_number":  39,
+                        "nationality":  "United States",
+                        "player_id":  278151,
+                        "club_position":  "RES",
+                        "long_name":  "Stuart Russell Hawkins",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Burney",
+                        "overall":  55,
+                        "potential":  65,
+                        "club_jersey_number":  4,
+                        "nationality":  "United States",
+                        "player_id":  77351,
+                        "club_position":  "SUB",
+                        "long_name":  "Leo Burney",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Frei",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  190569,
+                        "club_position":  "GK",
+                        "long_name":  "Stefan Frei",
+                        "age":  39,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Thomas",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  26,
+                        "nationality":  "Russia",
+                        "player_id":  262530,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrew Delmos Thomas",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Castro",
+                        "overall":  55,
+                        "potential":  61,
+                        "club_jersey_number":  29,
+                        "nationality":  "United States",
+                        "player_id":  272755,
+                        "club_position":  "RES",
+                        "long_name":  "Jacob Alex Castro",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

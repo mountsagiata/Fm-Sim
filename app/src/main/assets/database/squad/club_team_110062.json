@@ -1,0 +1,422 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Girona FC",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  110062
+                 },
+    "players":  [
+                    {
+                        "short_name":  "T. Lemar",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  213565,
+                        "club_position":  "LCM",
+                        "long_name":  "Thomas Lemar",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Portu",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  205070,
+                        "club_position":  "SUB",
+                        "long_name":  "Cristian Portugués Manzanera",
+                        "age":  33,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Blind",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  17,
+                        "nationality":  "Netherlands",
+                        "player_id":  190815,
+                        "club_position":  "LCB",
+                        "long_name":  "Daley Blind",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. van de Beek",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "Netherlands",
+                        "player_id":  221363,
+                        "club_position":  "SUB",
+                        "long_name":  "Donny van de Beek",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Iván Martín",
+                        "overall":  77,
+                        "potential":  80,
+                        "club_jersey_number":  23,
+                        "nationality":  "Spain",
+                        "player_id":  246928,
+                        "club_position":  "RCM",
+                        "long_name":  "Iván Martín Núñez",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Álex Moreno",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  217036,
+                        "club_position":  "LB",
+                        "long_name":  "Alexandre Moreno Lopera",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Tsygankov",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  15,
+                        "nationality":  "Ukraine",
+                        "player_id":  244369,
+                        "club_position":  "RW",
+                        "long_name":  "Viktor TsygankovЦиганков Віктор Віталійович",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Arnau Martínez",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  4,
+                        "nationality":  "Spain",
+                        "player_id":  260815,
+                        "club_position":  "RB",
+                        "long_name":  "Arnau Martínez López",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Stuani",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  7,
+                        "nationality":  "Uruguay",
+                        "player_id":  186537,
+                        "club_position":  "ST",
+                        "long_name":  "Cristhian Ricardo Stuani Curbelo",
+                        "age":  38,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Witsel",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  20,
+                        "nationality":  "Belgium",
+                        "player_id":  177413,
+                        "club_position":  "SUB",
+                        "long_name":  "Axel Laurent Angel Lambert Witsel",
+                        "age":  36,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ounahi",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  18,
+                        "nationality":  "Morocco",
+                        "player_id":  255125,
+                        "club_position":  "CM",
+                        "long_name":  "Azzedine Ounahiعز الدين اوناهي",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Asprilla",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  10,
+                        "nationality":  "Colombia",
+                        "player_id":  271464,
+                        "club_position":  "SUB",
+                        "long_name":  "Yaser Esneider Asprilla Martínez",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Hugo Rincón",
+                        "overall":  73,
+                        "potential":  81,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  279026,
+                        "club_position":  "SUB",
+                        "long_name":  "Hugo Rincón Lumbreras",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Francés",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  254310,
+                        "club_position":  "SUB",
+                        "long_name":  "Alejandro Francés Torrijo",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Abel Ruiz",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "Spain",
+                        "player_id":  239250,
+                        "club_position":  "SUB",
+                        "long_name":  "Abel Ruiz Ortega",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "David López",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  201505,
+                        "club_position":  "RCB",
+                        "long_name":  "David López Silva",
+                        "age":  35,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Bryan Gil",
+                        "overall":  78,
+                        "potential":  82,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  246785,
+                        "club_position":  "LW",
+                        "long_name":  "Bryan Gil Salvatierra",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Solís",
+                        "overall":  71,
+                        "potential":  81,
+                        "club_jersey_number":  22,
+                        "nationality":  "Colombia",
+                        "player_id":  267894,
+                        "club_position":  "RES",
+                        "long_name":  "Jhon Elmer Solís Romero",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Vanat",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  19,
+                        "nationality":  "Ukraine",
+                        "player_id":  271541,
+                        "club_position":  "SUB",
+                        "long_name":  "Vladyslav VanatВанат Владислав Андрійович",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Joel Roca",
+                        "overall":  69,
+                        "potential":  81,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  272718,
+                        "club_position":  "SUB",
+                        "long_name":  "Joel Roca Casals",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Vitor Reis",
+                        "overall":  70,
+                        "potential":  84,
+                        "club_jersey_number":  12,
+                        "nationality":  "Brazil",
+                        "player_id":  76624,
+                        "club_position":  "SUB",
+                        "long_name":  "Vitor de Oliveira Nunes dos Reis",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ba",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  44,
+                        "nationality":  "Senegal",
+                        "player_id":  81380,
+                        "club_position":  "RES",
+                        "long_name":  "Papa Dame Ba",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gibi",
+                        "overall":  61,
+                        "potential":  78,
+                        "club_jersey_number":  28,
+                        "nationality":  "Spain",
+                        "player_id":  81378,
+                        "club_position":  "RES",
+                        "long_name":  "Gilbert Jordana Cámara",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Gazzaniga",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  13,
+                        "nationality":  "Argentina",
+                        "player_id":  205186,
+                        "club_position":  "GK",
+                        "long_name":  "Paulo Dino Gazzaniga Farias",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Livaković",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  1,
+                        "nationality":  "Croatia",
+                        "player_id":  241671,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Livaković",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Juan Carlos",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  35,
+                        "nationality":  "Spain",
+                        "player_id":  194730,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Carlos Martín Corral",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Krapyvtsov",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  25,
+                        "nationality":  "Ukraine",
+                        "player_id":  76012,
+                        "club_position":  "RES",
+                        "long_name":  "Vladyslav KrapyvtsovКрапивцов Владислав Андрійович",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

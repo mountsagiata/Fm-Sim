@@ -1,0 +1,402 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Vancouver Whitecaps FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  101112
+                 },
+    "players":  [
+                    {
+                        "short_name":  "T. Müller",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  13,
+                        "nationality":  "Germany",
+                        "player_id":  189596,
+                        "club_position":  "CAM",
+                        "long_name":  "Thomas Müller",
+                        "age":  35,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Gauld",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  25,
+                        "nationality":  "Scotland",
+                        "player_id":  208919,
+                        "club_position":  "LM",
+                        "long_name":  "Ryan Gauld",
+                        "age":  29,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Berhalter",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  16,
+                        "nationality":  "United States",
+                        "player_id":  255205,
+                        "club_position":  "RDM",
+                        "long_name":  "Sebastian Berhalter",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "CDM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Cubas",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Paraguay",
+                        "player_id":  222429,
+                        "club_position":  "LDM",
+                        "long_name":  "Adrián Andrés Cubas",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ahmed",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Canada",
+                        "player_id":  272604,
+                        "club_position":  "SUB",
+                        "long_name":  "Ali Ahmed",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. White",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  24,
+                        "nationality":  "United States",
+                        "player_id":  243456,
+                        "club_position":  "ST",
+                        "long_name":  "Brian White",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Sabbi",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  241002,
+                        "club_position":  "RM",
+                        "long_name":  "Emmanuel Afriyie Mario Sabbi",
+                        "age":  27,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Blackmon",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  33,
+                        "nationality":  "United States",
+                        "player_id":  242596,
+                        "club_position":  "LCB",
+                        "long_name":  "Tristan Michael Blackmon",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Nelson",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "Canada",
+                        "player_id":  255339,
+                        "club_position":  "SUB",
+                        "long_name":  "Jayden Nelson",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Adekugbe",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  3,
+                        "nationality":  "Canada",
+                        "player_id":  220028,
+                        "club_position":  "SUB",
+                        "long_name":  "Samuel Ayomide Adekugbe",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Cabrera",
+                        "overall":  71,
+                        "potential":  79,
+                        "club_jersey_number":  17,
+                        "nationality":  "Peru",
+                        "player_id":  259543,
+                        "club_position":  "SUB",
+                        "long_name":  "Kenji Giovanni Cabrera Nakamura",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Laborda",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Uruguay",
+                        "player_id":  253296,
+                        "club_position":  "RB",
+                        "long_name":  "Mathías Nicolás Laborda Malseñido",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ocampo",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "Colombia",
+                        "player_id":  275054,
+                        "club_position":  "SUB",
+                        "long_name":  "Édier Ocampo Vidal",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ngando",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  26,
+                        "nationality":  "Cameroon",
+                        "player_id":  245867,
+                        "club_position":  "SUB",
+                        "long_name":  "Jean-Claude Ngando Mbende",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Bovalina",
+                        "overall":  60,
+                        "potential":  74,
+                        "club_jersey_number":  27,
+                        "nationality":  "Australia",
+                        "player_id":  278889,
+                        "club_position":  "RES",
+                        "long_name":  "Giuseppe Bovalina",
+                        "age":  20,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Johnson",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "United States",
+                        "player_id":  77035,
+                        "club_position":  "LB",
+                        "long_name":  "Tate Johnson",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Veselinović",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Serbia",
+                        "player_id":  255827,
+                        "club_position":  "RCB",
+                        "long_name":  "Ranko VeselinovićРанко Веселиновић",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Priso",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  6,
+                        "nationality":  "Canada",
+                        "player_id":  259280,
+                        "club_position":  "SUB",
+                        "long_name":  "Ralph-William Johnson Priso-Mbongue",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ríos",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  14,
+                        "nationality":  "Mexico",
+                        "player_id":  235184,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Armando Ríos Calderón",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Halbouni",
+                        "overall":  64,
+                        "potential":  66,
+                        "club_jersey_number":  12,
+                        "nationality":  "Syria",
+                        "player_id":  269963,
+                        "club_position":  "SUB",
+                        "long_name":  "Belal Halbouniبلال حلبوني",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Badwal",
+                        "overall":  56,
+                        "potential":  74,
+                        "club_jersey_number":  59,
+                        "nationality":  "Canada",
+                        "player_id":  75232,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeevan Singh Badwal",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. MacKenzie",
+                        "overall":  55,
+                        "potential":  72,
+                        "club_jersey_number":  97,
+                        "nationality":  "Canada",
+                        "player_id":  77968,
+                        "club_position":  "RES",
+                        "long_name":  "Liam MacKenzie",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Pierre",
+                        "overall":  54,
+                        "potential":  69,
+                        "club_jersey_number":  42,
+                        "nationality":  "United States",
+                        "player_id":  274574,
+                        "club_position":  "RES",
+                        "long_name":  "Nelson Pierre",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Zendejas",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  30,
+                        "nationality":  "United States",
+                        "player_id":  229433,
+                        "club_position":  "SUB",
+                        "long_name":  "Adrián Zendejas Rodríguez",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Takaoka",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  1,
+                        "nationality":  "Japan",
+                        "player_id":  244656,
+                        "club_position":  "GK",
+                        "long_name":  "Yohei Takaoka高丘 陽平",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Boehmer",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  32,
+                        "nationality":  "Canada",
+                        "player_id":  258351,
+                        "club_position":  "SUB",
+                        "long_name":  "Isaac Boehmer",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

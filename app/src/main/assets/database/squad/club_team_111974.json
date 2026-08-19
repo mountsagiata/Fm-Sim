@@ -1,0 +1,449 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Sassuolo",
+                     "league_name":  "Serie A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111974
+                 },
+    "players":  [
+                    {
+                        "short_name":  "D. Berardi",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  10,
+                        "nationality":  "Italy",
+                        "player_id":  210935,
+                        "club_position":  "RW",
+                        "long_name":  "Domenico Berardi",
+                        "age":  30,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Thorstvedt",
+                        "overall":  75,
+                        "potential":  76,
+                        "club_jersey_number":  42,
+                        "nationality":  "Norway",
+                        "player_id":  242725,
+                        "club_position":  "SUB",
+                        "long_name":  "Kristian Thorstvedt",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Vranckx",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  40,
+                        "nationality":  "Belgium",
+                        "player_id":  252027,
+                        "club_position":  "RCM",
+                        "long_name":  "Aster Jan Vranckx",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Laurienté",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  45,
+                        "nationality":  "France",
+                        "player_id":  243593,
+                        "club_position":  "LW",
+                        "long_name":  "Armand Gaëtan Laurienté",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Matić",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  18,
+                        "nationality":  "Serbia",
+                        "player_id":  191202,
+                        "club_position":  "CM",
+                        "long_name":  "Nemanja MatićНемања Матић",
+                        "age":  36,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Doig",
+                        "overall":  73,
+                        "potential":  78,
+                        "club_jersey_number":  3,
+                        "nationality":  "Scotland",
+                        "player_id":  255561,
+                        "club_position":  "LB",
+                        "long_name":  "Josh Thomas Doig",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fali Candé",
+                        "overall":  71,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Guinea-Bissau",
+                        "player_id":  256856,
+                        "club_position":  "SUB",
+                        "long_name":  "Fali Candé",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Fadera",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  20,
+                        "nationality":  "Gambia",
+                        "player_id":  263882,
+                        "club_position":  "RES",
+                        "long_name":  "Alieu Fadera",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Boloca",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  11,
+                        "nationality":  "Romania",
+                        "player_id":  268462,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Boloca",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Koné",
+                        "overall":  72,
+                        "potential":  79,
+                        "club_jersey_number":  90,
+                        "nationality":  "Canada",
+                        "player_id":  264207,
+                        "club_position":  "LCM",
+                        "long_name":  "Ismaël Kenneth Jordan Koné",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Coulibaly",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  251335,
+                        "club_position":  "SUB",
+                        "long_name":  "Woyo Coulibaly",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Pierini",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  77,
+                        "nationality":  "Italy",
+                        "player_id":  241628,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Pierini",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Cheddira",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Morocco",
+                        "player_id":  268511,
+                        "club_position":  "RES",
+                        "long_name":  "Walid Cheddira",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pinamonti",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  99,
+                        "nationality":  "Italy",
+                        "player_id":  235842,
+                        "club_position":  "ST",
+                        "long_name":  "Andrea Pinamonti",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Iannoni",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  44,
+                        "nationality":  "Italy",
+                        "player_id":  270657,
+                        "club_position":  "RES",
+                        "long_name":  "Edoardo Iannoni",
+                        "age":  24,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Paz",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  17,
+                        "nationality":  "Colombia",
+                        "player_id":  271006,
+                        "club_position":  "RES",
+                        "long_name":  "Yeferson Paz Blandón",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Idzes",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  21,
+                        "nationality":  "Indonesia",
+                        "player_id":  262396,
+                        "club_position":  "RCB",
+                        "long_name":  "Jay Noah Idzes",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Volpato",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Italy",
+                        "player_id":  265761,
+                        "club_position":  "SUB",
+                        "long_name":  "Cristian Volpato",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Skjellerup",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Denmark",
+                        "player_id":  257324,
+                        "club_position":  "RES",
+                        "long_name":  "Laurs Østerby Skjellerup",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Lipani",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  35,
+                        "nationality":  "Italy",
+                        "player_id":  274702,
+                        "club_position":  "SUB",
+                        "long_name":  "Luca Lipani",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Odenthal",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  26,
+                        "nationality":  "Netherlands",
+                        "player_id":  262474,
+                        "club_position":  "RES",
+                        "long_name":  "Cas Odenthal",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Pieragnolo",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "Italy",
+                        "player_id":  276705,
+                        "club_position":  "SUB",
+                        "long_name":  "Edoardo Pieragnolo",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Walukiewicz",
+                        "overall":  71,
+                        "potential":  76,
+                        "club_jersey_number":  6,
+                        "nationality":  "Poland",
+                        "player_id":  243497,
+                        "club_position":  "RB",
+                        "long_name":  "Sebastian Wiktor Walukiewicz",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Moro",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "Italy",
+                        "player_id":  248787,
+                        "club_position":  "RES",
+                        "long_name":  "Luca Moro",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Romagna",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "Italy",
+                        "player_id":  226108,
+                        "club_position":  "SUB",
+                        "long_name":  "Filippo Romagna",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Muharemović",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  80,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  262027,
+                        "club_position":  "LCB",
+                        "long_name":  "Tarik Muharemović",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Murić",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  49,
+                        "nationality":  "Kosovo",
+                        "player_id":  233164,
+                        "club_position":  "SUB",
+                        "long_name":  "Arijanet Anan Murić",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Turati",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  13,
+                        "nationality":  "Italy",
+                        "player_id":  254502,
+                        "club_position":  "GK",
+                        "long_name":  "Stefano Turati",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Zacchi",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Italy",
+                        "player_id":  80811,
+                        "club_position":  "SUB",
+                        "long_name":  "Gioele Zacchi",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Satalino",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  12,
+                        "nationality":  "Italy",
+                        "player_id":  235806,
+                        "club_position":  "SUB",
+                        "long_name":  "Giacomo Satalino",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

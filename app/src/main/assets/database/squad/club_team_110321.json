@@ -1,0 +1,366 @@
+﻿{
+    "metadata":  {
+                     "total_players":  24,
+                     "club_name":  "Pau FC",
+                     "league_name":  "Ligue 2",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  110321
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Bobichon",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  225855,
+                        "club_position":  "CAM",
+                        "long_name":  "Antonin Bobichon",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Beusnard",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  244736,
+                        "club_position":  "LDM",
+                        "long_name":  "Steeve Beusnard",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Touzghar",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  84,
+                        "nationality":  "Morocco",
+                        "player_id":  74445,
+                        "club_position":  "SUB",
+                        "long_name":  "Rayan Touzgharريان توزغار",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ruiz",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  234814,
+                        "club_position":  "LCB",
+                        "long_name":  "Jean Ruiz",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pouilly",
+                        "overall":  66,
+                        "potential":  74,
+                        "club_jersey_number":  35,
+                        "nationality":  "France",
+                        "player_id":  70473,
+                        "club_position":  "RB",
+                        "long_name":  "Tom Tony Pouilly",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Meddah",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  97,
+                        "nationality":  "France",
+                        "player_id":  252011,
+                        "club_position":  "RDM",
+                        "long_name":  "Daylam Meddah",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Briançon",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  223138,
+                        "club_position":  "RCB",
+                        "long_name":  "Anthony Briançon",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kalulu",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  3,
+                        "nationality":  "France",
+                        "player_id":  74442,
+                        "club_position":  "LB",
+                        "long_name":  "Joseph Kalulu Kyatengwa",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Gasnier",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "France",
+                        "player_id":  74734,
+                        "club_position":  "SUB",
+                        "long_name":  "Kyllian Gasnier",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Zuliani",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  87,
+                        "nationality":  "Algeria",
+                        "player_id":  70014,
+                        "club_position":  "SUB",
+                        "long_name":  "Edhy Yvan Zuliani",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Sadik",
+                        "overall":  63,
+                        "potential":  77,
+                        "club_jersey_number":  18,
+                        "nationality":  "Morocco",
+                        "player_id":  278996,
+                        "club_position":  "ST",
+                        "long_name":  "Omar Sadikعمر صديق",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Dong",
+                        "overall":  64,
+                        "potential":  76,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  270886,
+                        "club_position":  "SUB",
+                        "long_name":  "Kyliane Dong",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Lebouath",
+                        "overall":  58,
+                        "potential":  64,
+                        "club_jersey_number":  34,
+                        "nationality":  "France",
+                        "player_id":  77292,
+                        "club_position":  "SUB",
+                        "long_name":  "Salif Lebouath",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Fall",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "Senegal",
+                        "player_id":  278279,
+                        "club_position":  "RES",
+                        "long_name":  "Cheikh Fall",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Versini",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  79624,
+                        "club_position":  "RM",
+                        "long_name":  "Giovani Versini",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Messi",
+                        "overall":  62,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  75421,
+                        "club_position":  "LM",
+                        "long_name":  "Rayane Messi Tanfouri",
+                        "age":  18,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Derouin",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  33,
+                        "nationality":  "France",
+                        "player_id":  79625,
+                        "club_position":  "SUB",
+                        "long_name":  "Enzo Derouin",
+                        "age":  17,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Kanté",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  19,
+                        "nationality":  "Guinea",
+                        "player_id":  243867,
+                        "club_position":  "SUB",
+                        "long_name":  "Ousmane Kanté",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Glossoa",
+                        "overall":  60,
+                        "potential":  72,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  76758,
+                        "club_position":  "SUB",
+                        "long_name":  "Neil Glossoa",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Sissoko",
+                        "overall":  60,
+                        "potential":  74,
+                        "club_jersey_number":  17,
+                        "nationality":  "France",
+                        "player_id":  278283,
+                        "club_position":  "SUB",
+                        "long_name":  "Omar Sissoko",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Karamoko",
+                        "overall":  59,
+                        "potential":  65,
+                        "club_jersey_number":  4,
+                        "nationality":  "France",
+                        "player_id":  256789,
+                        "club_position":  "SUB",
+                        "long_name":  "Setigui Guillaume Karamoko",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Paradowski",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  77,
+                        "nationality":  "France",
+                        "player_id":  73967,
+                        "club_position":  "SUB",
+                        "long_name":  "Tao Paradowski",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Salles",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  30,
+                        "nationality":  "France",
+                        "player_id":  222820,
+                        "club_position":  "GK",
+                        "long_name":  "Esteban Salles",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Raveyre",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  271236,
+                        "club_position":  "SUB",
+                        "long_name":  "Noah Joseph Guy Raveyre",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,438 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Aberdeen",
+                     "league_name":  "Premiership",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  77
+                 },
+    "players":  [
+                    {
+                        "short_name":  "G. Shinnie",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "Scotland",
+                        "player_id":  200302,
+                        "club_position":  "LB",
+                        "long_name":  "Graeme Shinnie",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Armstrong",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Scotland",
+                        "player_id":  202282,
+                        "club_position":  "SUB",
+                        "long_name":  "Stuart Armstrong",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Karlsson",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Sweden",
+                        "player_id":  231836,
+                        "club_position":  "LM",
+                        "long_name":  "Karl Jesper Karlsson",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Clarkson",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  252134,
+                        "club_position":  "RDM",
+                        "long_name":  "Leighton Owen Clarkson",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Devlin",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  2,
+                        "nationality":  "Scotland",
+                        "player_id":  204033,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Devlin",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Nisbet",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "Scotland",
+                        "player_id":  225317,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Nisbet",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Aouchiche",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  253102,
+                        "club_position":  "CAM",
+                        "long_name":  "Adil Aouchiche",
+                        "age":  22,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Nilsen",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  6,
+                        "nationality":  "Norway",
+                        "player_id":  221552,
+                        "club_position":  "LDM",
+                        "long_name":  "Sivert Heltne Nilsen",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jensen",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Denmark",
+                        "player_id":  274134,
+                        "club_position":  "RB",
+                        "long_name":  "Alexander Jensen",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Milanović",
+                        "overall":  71,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Australia",
+                        "player_id":  257326,
+                        "club_position":  "RM",
+                        "long_name":  "Nicolas Petar Milanović",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Palaversa",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  18,
+                        "nationality":  "Croatia",
+                        "player_id":  247185,
+                        "club_position":  "SUB",
+                        "long_name":  "Ante Palaversa",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Polvara",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  8,
+                        "nationality":  "United States",
+                        "player_id":  242791,
+                        "club_position":  "SUB",
+                        "long_name":  "Dante Polvara",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Keskinen",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  81,
+                        "nationality":  "Finland",
+                        "player_id":  272648,
+                        "club_position":  "SUB",
+                        "long_name":  "Topi Keskinen",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Yengi",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "Australia",
+                        "player_id":  253383,
+                        "club_position":  "ST",
+                        "long_name":  "Kusini Boja Yengi",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Duncan",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  23,
+                        "nationality":  "Scotland",
+                        "player_id":  259669,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan Andrew Duncan",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Molloy",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  21,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  266210,
+                        "club_position":  "RES",
+                        "long_name":  "Gavin Molloy",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lazetić",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  27,
+                        "nationality":  "Serbia",
+                        "player_id":  266891,
+                        "club_position":  "SUB",
+                        "long_name":  "Marko LazetićМарко Лазетић",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Gyamfi",
+                        "overall":  58,
+                        "potential":  68,
+                        "club_jersey_number":  77,
+                        "nationality":  "Germany",
+                        "player_id":  72378,
+                        "club_position":  "SUB",
+                        "long_name":  "Emmanuel Gyamfi",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Tobers",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "Latvia",
+                        "player_id":  255557,
+                        "club_position":  "SUB",
+                        "long_name":  "Kristers Tobers",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Knoester",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Netherlands",
+                        "player_id":  238040,
+                        "club_position":  "LCB",
+                        "long_name":  "Mats Knoester",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Bilalović",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Sweden",
+                        "player_id":  275080,
+                        "club_position":  "RES",
+                        "long_name":  "Kenan Bilalović",
+                        "age":  20,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Frame",
+                        "overall":  55,
+                        "potential":  75,
+                        "club_jersey_number":  3,
+                        "nationality":  "Scotland",
+                        "player_id":  279827,
+                        "club_position":  "RES",
+                        "long_name":  "Mitchel Frame",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Dorrington",
+                        "overall":  61,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  279117,
+                        "club_position":  "RCB",
+                        "long_name":  "Alfie Dorrington",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Milne",
+                        "overall":  58,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "Scotland",
+                        "player_id":  267800,
+                        "club_position":  "SUB",
+                        "long_name":  "Jack Milne",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ambrose",
+                        "overall":  59,
+                        "potential":  67,
+                        "club_jersey_number":  32,
+                        "nationality":  "Nigeria",
+                        "player_id":  74147,
+                        "club_position":  "RES",
+                        "long_name":  "Peter Ambrose",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kjartansson",
+                        "overall":  53,
+                        "potential":  67,
+                        "club_jersey_number":  29,
+                        "nationality":  "Iceland",
+                        "player_id":  79780,
+                        "club_position":  "RES",
+                        "long_name":  "Kjartan Már Kjartansson",
+                        "age":  18,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Mitov",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  1,
+                        "nationality":  "Bulgaria",
+                        "player_id":  225280,
+                        "club_position":  "GK",
+                        "long_name":  "Dimitar MitovДимитър Веселинов Митов",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Suman",
+                        "overall":  57,
+                        "potential":  63,
+                        "club_jersey_number":  13,
+                        "nationality":  "Australia",
+                        "player_id":  236919,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Suman",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

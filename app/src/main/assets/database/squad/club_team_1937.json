@@ -1,0 +1,415 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Notts County",
+                     "league_name":  "League Two",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1937
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Norburn",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  8,
+                        "nationality":  "Grenada",
+                        "player_id":  206202,
+                        "club_position":  "RCM",
+                        "long_name":  "Oliver Lewis Norburn",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Palmer",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  18,
+                        "nationality":  "England",
+                        "player_id":  211228,
+                        "club_position":  "CDM",
+                        "long_name":  "Matthew Thomas Palmer",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Jones",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  10,
+                        "nationality":  "Malta",
+                        "player_id":  227764,
+                        "club_position":  "SUB",
+                        "long_name":  "Jodi Jay Felice Jones",
+                        "age":  27,
+                        "positions":  [
+                                          "RW",
+                                          "LB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Cotter",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  37,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  237975,
+                        "club_position":  "RB",
+                        "long_name":  "Barry Noel Cotter",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Tsaroulla",
+                        "overall":  62,
+                        "potential":  64,
+                        "club_jersey_number":  25,
+                        "nationality":  "Cyprus",
+                        "player_id":  241039,
+                        "club_position":  "LB",
+                        "long_name":  "Nicholas Andrew TsaroullaΝικόλαος Ανδρέας Τσαρούλλα",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Robertson",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  20,
+                        "nationality":  "Scotland",
+                        "player_id":  253974,
+                        "club_position":  "SUB",
+                        "long_name":  "Scott Alexander Cameron Robertson",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Gordon",
+                        "overall":  61,
+                        "potential":  62,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  231615,
+                        "club_position":  "SUB",
+                        "long_name":  "Kellan Sheene Gordon",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Bennetts",
+                        "overall":  63,
+                        "potential":  64,
+                        "club_jersey_number":  47,
+                        "nationality":  "England",
+                        "player_id":  241038,
+                        "club_position":  "SUB",
+                        "long_name":  "Keanan Bennetts",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Grant",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  254496,
+                        "club_position":  "SUB",
+                        "long_name":  "Conor Michael Grant",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hall",
+                        "overall":  62,
+                        "potential":  79,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  72284,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyrese Hall",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Iorpenda",
+                        "overall":  60,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  278986,
+                        "club_position":  "LCM",
+                        "long_name":  "Thomas Achi Iorpenda",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Luker",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "England",
+                        "player_id":  278895,
+                        "club_position":  "SUB",
+                        "long_name":  "Jayden Luker",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Jatta",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  29,
+                        "nationality":  "Gambia",
+                        "player_id":  256738,
+                        "club_position":  "RS",
+                        "long_name":  "Alassana Jatta",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dennis",
+                        "overall":  59,
+                        "potential":  62,
+                        "club_jersey_number":  19,
+                        "nationality":  "England",
+                        "player_id":  257614,
+                        "club_position":  "LS",
+                        "long_name":  "Matthew Timothy Dennis",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Jarvis",
+                        "overall":  63,
+                        "potential":  71,
+                        "club_jersey_number":  36,
+                        "nationality":  "England",
+                        "player_id":  263840,
+                        "club_position":  "RES",
+                        "long_name":  "William Robert Jarvis",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hinchy",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  271603,
+                        "club_position":  "RES",
+                        "long_name":  "Jack Samuel Lawrence Hinchy",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kouhyar",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  17,
+                        "nationality":  "Afghanistan",
+                        "player_id":  233128,
+                        "club_position":  "SUB",
+                        "long_name":  "Qamaruddin Maziar Kouhyar",
+                        "age":  27,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bedeau",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  4,
+                        "nationality":  "Grenada",
+                        "player_id":  235808,
+                        "club_position":  "LCB",
+                        "long_name":  "Jacob Mitchell Bedeau",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Macari",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  28,
+                        "nationality":  "Scotland",
+                        "player_id":  263739,
+                        "club_position":  "SUB",
+                        "long_name":  "Lewis Jon Macari",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Aljofree",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  278121,
+                        "club_position":  "RCB",
+                        "long_name":  "Sonny Aljofree",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Traoré",
+                        "overall":  61,
+                        "potential":  64,
+                        "club_jersey_number":  7,
+                        "nationality":  "Guinea",
+                        "player_id":  261454,
+                        "club_position":  "SUB",
+                        "long_name":  "Maï Traoré",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Platt",
+                        "overall":  63,
+                        "potential":  64,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  234261,
+                        "club_position":  "SUB",
+                        "long_name":  "Matthew James Platt",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Ness",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  272672,
+                        "club_position":  "RES",
+                        "long_name":  "Lucas Benjamin Ness",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. McDonald",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  200633,
+                        "club_position":  "CB",
+                        "long_name":  "Rodney Troy McDonald",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Roos",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  1,
+                        "nationality":  "Netherlands",
+                        "player_id":  211299,
+                        "club_position":  "GK",
+                        "long_name":  "Kelle Willem Roos",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Perott",
+                        "overall":  52,
+                        "potential":  62,
+                        "club_jersey_number":  13,
+                        "nationality":  "Bermuda",
+                        "player_id":  77875,
+                        "club_position":  "RES",
+                        "long_name":  "Milai Perott",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Griffiths",
+                        "overall":  54,
+                        "potential":  66,
+                        "club_jersey_number":  21,
+                        "nationality":  "England",
+                        "player_id":  271751,
+                        "club_position":  "SUB",
+                        "long_name":  "Harry Griffiths",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

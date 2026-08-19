@@ -1,0 +1,419 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Sparta Praha",
+                     "league_name":  "První liga",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  267
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Ryneš",
+                        "overall":  73,
+                        "potential":  78,
+                        "club_jersey_number":  11,
+                        "nationality":  "Czechia",
+                        "player_id":  266374,
+                        "club_position":  "LM",
+                        "long_name":  "Matěj Ryneš",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kairinen",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  6,
+                        "nationality":  "Finland",
+                        "player_id":  232446,
+                        "club_position":  "LCM",
+                        "long_name":  "Kasper Kaan Özden Kairinen",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Preciado",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Ecuador",
+                        "player_id":  246055,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángelo Smit Preciado Quiñónez",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zelený",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  30,
+                        "nationality":  "Czechia",
+                        "player_id":  199323,
+                        "club_position":  "SUB",
+                        "long_name":  "Jaroslav Zelený",
+                        "age":  32,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sadílek",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  18,
+                        "nationality":  "Czechia",
+                        "player_id":  270046,
+                        "club_position":  "RCM",
+                        "long_name":  "Lukáš Sadílek",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Haraslín",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  22,
+                        "nationality":  "Slovakia",
+                        "player_id":  227562,
+                        "club_position":  "LW",
+                        "long_name":  "Lukáš Haraslín",
+                        "age":  29,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Vydra",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  26,
+                        "nationality":  "Czechia",
+                        "player_id":  275241,
+                        "club_position":  "SUB",
+                        "long_name":  "Patrik Vydra",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Kadeřábek",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  3,
+                        "nationality":  "Czechia",
+                        "player_id":  203605,
+                        "club_position":  "RM",
+                        "long_name":  "Pavel Kadeřábek",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Andersen",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  8,
+                        "nationality":  "Denmark",
+                        "player_id":  237840,
+                        "club_position":  "SUB",
+                        "long_name":  "Magnus Kofod Andersen",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Birmančević",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  14,
+                        "nationality":  "Serbia",
+                        "player_id":  261307,
+                        "club_position":  "RW",
+                        "long_name":  "Veljko BirmančevićВељко Бирманчевић",
+                        "age":  27,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kuchta",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  10,
+                        "nationality":  "Czechia",
+                        "player_id":  257536,
+                        "club_position":  "ST",
+                        "long_name":  "Jan Kuchta",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Panák",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  27,
+                        "nationality":  "Czechia",
+                        "player_id":  247643,
+                        "club_position":  "CB",
+                        "long_name":  "Filip Panák",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Mannsverk",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "Norway",
+                        "player_id":  263823,
+                        "club_position":  "SUB",
+                        "long_name":  "Sivert Heggheim Mannsverk",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Cobbaut",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  33,
+                        "nationality":  "Belgium",
+                        "player_id":  232526,
+                        "club_position":  "SUB",
+                        "long_name":  "Elias Cobbaut",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Suchomel",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Czechia",
+                        "player_id":  267720,
+                        "club_position":  "SUB",
+                        "long_name":  "Martin Suchomel",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rrahmani",
+                        "overall":  73,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "Kosovo",
+                        "player_id":  277565,
+                        "club_position":  "SUB",
+                        "long_name":  "Albion Rrahmani",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sørensen",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "Denmark",
+                        "player_id":  221024,
+                        "club_position":  "LCB",
+                        "long_name":  "Asger Strømgaard Sørensen",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Uchenna",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  16,
+                        "nationality":  "Nigeria",
+                        "player_id":  76097,
+                        "club_position":  "RCB",
+                        "long_name":  "Emmanuel Uchenna Aririerisim",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Mercado",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ecuador",
+                        "player_id":  72656,
+                        "club_position":  "SUB",
+                        "long_name":  "John Anthony Mercado Cuero",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ševínský",
+                        "overall":  67,
+                        "potential":  74,
+                        "club_jersey_number":  19,
+                        "nationality":  "Czechia",
+                        "player_id":  76864,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Ševínský",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Hollý",
+                        "overall":  56,
+                        "potential":  62,
+                        "club_jersey_number":  21,
+                        "nationality":  "Slovakia",
+                        "player_id":  70867,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Hollý",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Kuol",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  36,
+                        "nationality":  "Australia",
+                        "player_id":  268460,
+                        "club_position":  "RES",
+                        "long_name":  "Garang Mawien Kuol",
+                        "age":  20,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Milla",
+                        "overall":  58,
+                        "potential":  67,
+                        "club_jersey_number":  28,
+                        "nationality":  "Cameroon",
+                        "player_id":  72543,
+                        "club_position":  "RES",
+                        "long_name":  "Kevin-Prince Milla",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Santiago Eneme",
+                        "overall":  60,
+                        "potential":  65,
+                        "club_jersey_number":  5,
+                        "nationality":  "Equatorial Guinea",
+                        "player_id":  256728,
+                        "club_position":  "RES",
+                        "long_name":  "Santiago Eneme Bocari",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Vindahl",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  1,
+                        "nationality":  "Denmark",
+                        "player_id":  231237,
+                        "club_position":  "GK",
+                        "long_name":  "Peter Vindahl Jensen",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Surovčík",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  44,
+                        "nationality":  "Slovakia",
+                        "player_id":  276347,
+                        "club_position":  "SUB",
+                        "long_name":  "Jakub Surovčík",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Vorel",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "Czechia",
+                        "player_id":  240283,
+                        "club_position":  "RES",
+                        "long_name":  "Vojtěch Vorel",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

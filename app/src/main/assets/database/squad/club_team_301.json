@@ -1,0 +1,447 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Widzew Łódź",
+                     "league_name":  "Ekstraklasa",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  301
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Shehu",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  6,
+                        "nationality":  "Albania",
+                        "player_id":  269616,
+                        "club_position":  "RCM",
+                        "long_name":  "Juljan Shehu",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Selahi",
+                        "overall":  71,
+                        "potential":  75,
+                        "club_jersey_number":  18,
+                        "nationality":  "Albania",
+                        "player_id":  242222,
+                        "club_position":  "CDM",
+                        "long_name":  "Lindon Selahi",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fran Álvarez",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  269632,
+                        "club_position":  "LCM",
+                        "long_name":  "Francisco Javier Álvarez Rodríguez",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Zeqiri",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Switzerland",
+                        "player_id":  234683,
+                        "club_position":  "SUB",
+                        "long_name":  "Andi Avdi Zeqiri",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Pawłowski",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "Poland",
+                        "player_id":  201114,
+                        "club_position":  "SUB",
+                        "long_name":  "Bartłomiej Pawłowski",
+                        "age":  32,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Kozlovský",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "Slovakia",
+                        "player_id":  73048,
+                        "club_position":  "LB",
+                        "long_name":  "Samuel Kozlovský",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Czyż",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  55,
+                        "nationality":  "Poland",
+                        "player_id":  259456,
+                        "club_position":  "SUB",
+                        "long_name":  "Szymon Czyż",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hanousek",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  25,
+                        "nationality":  "Czechia",
+                        "player_id":  204111,
+                        "club_position":  "SUB",
+                        "long_name":  "Marek Hanousek",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Teklić",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  8,
+                        "nationality":  "Croatia",
+                        "player_id":  262583,
+                        "club_position":  "SUB",
+                        "long_name":  "Tonio Teklić",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Cybulski",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  78,
+                        "nationality":  "Poland",
+                        "player_id":  70968,
+                        "club_position":  "RES",
+                        "long_name":  "Kamil Cybulski",
+                        "age":  19,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Gallapeni",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  13,
+                        "nationality":  "Kosovo",
+                        "player_id":  79252,
+                        "club_position":  "SUB",
+                        "long_name":  "Dion Gallapeni",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Therkildsen",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  16,
+                        "nationality":  "Denmark",
+                        "player_id":  251594,
+                        "club_position":  "SUB",
+                        "long_name":  "Peter Nysted Therkildsen",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fornalczyk",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "Poland",
+                        "player_id":  257473,
+                        "club_position":  "LM",
+                        "long_name":  "Mariusz Fornalczyk",
+                        "age":  22,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Żyro",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Poland",
+                        "player_id":  244891,
+                        "club_position":  "RCB",
+                        "long_name":  "Mateusz Żyro",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Andreou",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "Cyprus",
+                        "player_id":  262938,
+                        "club_position":  "SUB",
+                        "long_name":  "Stelios AndreouΣτέλιος Ανδρέου",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Bergier",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  99,
+                        "nationality":  "Poland",
+                        "player_id":  241921,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Bergier",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Krajewski",
+                        "overall":  64,
+                        "potential":  75,
+                        "club_jersey_number":  91,
+                        "nationality":  "Poland",
+                        "player_id":  72907,
+                        "club_position":  "RB",
+                        "long_name":  "Marcel Krajewski",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ángel Baena",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  77,
+                        "nationality":  "Spain",
+                        "player_id":  256894,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángel Baena Pérez",
+                        "age":  24,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Akere",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  57,
+                        "nationality":  "Nigeria",
+                        "player_id":  79007,
+                        "club_position":  "RM",
+                        "long_name":  "Samuel Akere",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ba",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  27,
+                        "nationality":  "Senegal",
+                        "player_id":  254501,
+                        "club_position":  "ST",
+                        "long_name":  "Pape Meïssa Ba",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Polydefkis",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  24,
+                        "nationality":  "Greece",
+                        "player_id":  76686,
+                        "club_position":  "RES",
+                        "long_name":  "Polydefkis VolanakisΠολυδεύκης Βολανάκης",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Klukowski",
+                        "overall":  59,
+                        "potential":  72,
+                        "club_jersey_number":  20,
+                        "nationality":  "Canada",
+                        "player_id":  276689,
+                        "club_position":  "RES",
+                        "long_name":  "Antoni Klukowski",
+                        "age":  18,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ricardo Visus",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  278628,
+                        "club_position":  "LCB",
+                        "long_name":  "Ricardo Visus Contreras",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Madej",
+                        "overall":  52,
+                        "potential":  64,
+                        "club_jersey_number":  43,
+                        "nationality":  "Poland",
+                        "player_id":  76971,
+                        "club_position":  "RES",
+                        "long_name":  "Leon Madej",
+                        "age":  19,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Gryzio",
+                        "overall":  52,
+                        "potential":  65,
+                        "club_jersey_number":  47,
+                        "nationality":  "Poland",
+                        "player_id":  75920,
+                        "club_position":  "RES",
+                        "long_name":  "Daniel Gryzio",
+                        "age":  17,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Gikiewicz",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "Poland",
+                        "player_id":  194333,
+                        "club_position":  "SUB",
+                        "long_name":  "Rafał Gikiewicz",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kikolski",
+                        "overall":  66,
+                        "potential":  74,
+                        "club_jersey_number":  98,
+                        "nationality":  "Poland",
+                        "player_id":  72923,
+                        "club_position":  "SUB",
+                        "long_name":  "Maciej Kikolski",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Ilić",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  30,
+                        "nationality":  "Serbia",
+                        "player_id":  81342,
+                        "club_position":  "GK",
+                        "long_name":  "Veljko Ilić",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Krzywański",
+                        "overall":  54,
+                        "potential":  60,
+                        "club_jersey_number":  33,
+                        "nationality":  "Poland",
+                        "player_id":  276354,
+                        "club_position":  "RES",
+                        "long_name":  "Jan Krzywański",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

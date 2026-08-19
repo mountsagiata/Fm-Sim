@@ -1,0 +1,553 @@
+﻿{
+    "metadata":  {
+                     "total_players":  36,
+                     "club_name":  "Al Hilal",
+                     "league_name":  "Pro League",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  605
+                 },
+    "players":  [
+                    {
+                        "short_name":  "T. Hernández",
+                        "overall":  84,
+                        "potential":  85,
+                        "club_jersey_number":  19,
+                        "nationality":  "France",
+                        "player_id":  232656,
+                        "club_position":  "LB",
+                        "long_name":  "Theo Bernard François Hernández",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Cancelo",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  20,
+                        "nationality":  "Portugal",
+                        "player_id":  210514,
+                        "club_position":  "RB",
+                        "long_name":  "João Pedro Cavaco Cancelo",
+                        "age":  31,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Milinković-Savić",
+                        "overall":  84,
+                        "potential":  84,
+                        "club_jersey_number":  22,
+                        "nationality":  "Serbia",
+                        "player_id":  223848,
+                        "club_position":  "RCM",
+                        "long_name":  "Sergej Milinković-SavićСергеј Милинковић-Савић",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rúben Neves",
+                        "overall":  84,
+                        "potential":  85,
+                        "club_jersey_number":  8,
+                        "nationality":  "Portugal",
+                        "player_id":  224293,
+                        "club_position":  "CDM",
+                        "long_name":  "Rúben Diogo da Silva Neves",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Al Dawsari",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  29,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  210602,
+                        "club_position":  "LM",
+                        "long_name":  "Salem Al Dawsariسالم الدوسري",
+                        "age":  33,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Malcom",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  222737,
+                        "club_position":  "RM",
+                        "long_name":  "Malcom Filipe Silva de Oliveira",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Renan Lodi",
+                        "overall":  78,
+                        "potential":  79,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  251573,
+                        "club_position":  "RES",
+                        "long_name":  "Renan Augusto Lodi dos Santos",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Núñez",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  7,
+                        "nationality":  "Uruguay",
+                        "player_id":  253072,
+                        "club_position":  "ST",
+                        "long_name":  "Darwin Gabriel Núñez Ribeiro",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kanno",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  28,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  220075,
+                        "club_position":  "LCM",
+                        "long_name":  "Mohamed Ibrahim Abdullah Kannoمحمد كنو",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Al Dawsari",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  241938,
+                        "club_position":  "SUB",
+                        "long_name":  "Nasser Essa Shafi Al Shardan Al Dawsariناصر عيسى الدوسري",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "LB",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Koulibaly",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  3,
+                        "nationality":  "Senegal",
+                        "player_id":  201024,
+                        "club_position":  "RCB",
+                        "long_name":  "Kalidou Koulibaly",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marcos Leonardo",
+                        "overall":  79,
+                        "potential":  85,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  277797,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcos Leonardo Santos Almeida",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lajami",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  78,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  228783,
+                        "club_position":  "SUB",
+                        "long_name":  "Ali Mohammed Ali Lajamiعلي محمد لاجامي",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Al Harbi",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  24,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  256331,
+                        "club_position":  "SUB",
+                        "long_name":  "Moteb Saad Al Harbiمتعب سعد الحربي",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Al Yami",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  88,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  245268,
+                        "club_position":  "SUB",
+                        "long_name":  "Hamad Turki Al Tuhayfan Al Yamiحمد تركي اليامي",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Tombakti",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  87,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  245751,
+                        "club_position":  "LCB",
+                        "long_name":  "Hassan Mohammed Tambaktiحسان محمد تمبكتي",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kaio César",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  27,
+                        "nationality":  "Brazil",
+                        "player_id":  70651,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaio César Andrade Lima",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Al Malki",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  89,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  230713,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdulelah Saad Hamid Al Wahbi Al Malkiعبدالإله المالكي",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Al Hamdan",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  99,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  242223,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdullah Abdulrahman Al Hamdanعبدالله الحمدان",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Al Zaid",
+                        "overall":  57,
+                        "potential":  72,
+                        "club_jersey_number":  93,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  275570,
+                        "club_position":  "RES",
+                        "long_name":  "Suhayb Ayman Al Zaid",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Al Zaid",
+                        "overall":  55,
+                        "potential":  67,
+                        "club_jersey_number":  94,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  78944,
+                        "club_position":  "RES",
+                        "long_name":  "Abdullah Al Zaid",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Hadhood",
+                        "overall":  53,
+                        "potential":  69,
+                        "club_jersey_number":  39,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  78872,
+                        "club_position":  "RES",
+                        "long_name":  "Abdulaziz Hadhood",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Al Qahtani",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  265407,
+                        "club_position":  "RES",
+                        "long_name":  "Mohammed Hamad Al Qahtaniمحمد القحطاني",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Akçiçek",
+                        "overall":  65,
+                        "potential":  81,
+                        "club_jersey_number":  4,
+                        "nationality":  "Türkiye",
+                        "player_id":  279000,
+                        "club_position":  "SUB",
+                        "long_name":  "Yusuf Akçiçek",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Al Bulayhi",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  229851,
+                        "club_position":  "SUB",
+                        "long_name":  "Ali Hadi Mohammed Al Bulaihiعلي هادي محمد البليهي",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Al Hamlan",
+                        "overall":  53,
+                        "potential":  67,
+                        "club_jersey_number":  96,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  77870,
+                        "club_position":  "RES",
+                        "long_name":  "Ibrahim Talal Al Hamlan",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Al Ghumail",
+                        "overall":  54,
+                        "potential":  70,
+                        "club_jersey_number":  38,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  76425,
+                        "club_position":  "RES",
+                        "long_name":  "Turki Mashour Al Ghamil",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Darisi",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  98,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  277487,
+                        "club_position":  "RES",
+                        "long_name":  "Abdulkarim Mohamed Darisiعبدالكريم محمد دارسي",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Radif",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  21,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  261357,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdullah Hadi Jaber Radifعبدالله رديف",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Al Mutairi",
+                        "overall":  53,
+                        "potential":  70,
+                        "club_jersey_number":  92,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  78887,
+                        "club_position":  "RES",
+                        "long_name":  "Saad Al Mutairi",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Muhaysh",
+                        "overall":  52,
+                        "potential":  66,
+                        "club_jersey_number":  91,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  78850,
+                        "club_position":  "RES",
+                        "long_name":  "Mohammed Muhaysh",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Barnawi",
+                        "overall":  51,
+                        "potential":  66,
+                        "club_jersey_number":  90,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  78732,
+                        "club_position":  "RES",
+                        "long_name":  "Saleh Barnawi",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Bounou",
+                        "overall":  82,
+                        "potential":  82,
+                        "club_jersey_number":  37,
+                        "nationality":  "Morocco",
+                        "player_id":  209981,
+                        "club_position":  "GK",
+                        "long_name":  "Yassine Bounouياسين بونو",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Al Rubaie",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  17,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  245276,
+                        "club_position":  "SUB",
+                        "long_name":  "Mohammed Faraj Al Rubaie Al Yamiمحمد الربيعي اليامي",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Abo Rasain",
+                        "overall":  52,
+                        "potential":  66,
+                        "club_jersey_number":  40,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  277063,
+                        "club_position":  "RES",
+                        "long_name":  "Ahmad Saud Ahmad Abu Rasen",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Patouillet",
+                        "overall":  64,
+                        "potential":  77,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  275317,
+                        "club_position":  "RES",
+                        "long_name":  "Mathieu Patouillet",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

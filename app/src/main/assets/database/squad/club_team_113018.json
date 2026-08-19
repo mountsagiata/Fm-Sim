@@ -1,0 +1,486 @@
+﻿{
+    "metadata":  {
+                     "total_players":  31,
+                     "club_name":  "St. Louis CITY SC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  113018
+                 },
+    "players":  [
+                    {
+                        "short_name":  "E. Löwen",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Germany",
+                        "player_id":  238072,
+                        "club_position":  "SUB",
+                        "long_name":  "Eduard Löwen",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hartel",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Germany",
+                        "player_id":  233125,
+                        "club_position":  "LAM",
+                        "long_name":  "Marcel Hartel",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Wallem",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Norway",
+                        "player_id":  260734,
+                        "club_position":  "LM",
+                        "long_name":  "Conrad Wallem",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Klauss",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  242998,
+                        "club_position":  "ST",
+                        "long_name":  "João Klauss de Mello",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Morales",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  27,
+                        "nationality":  "United States",
+                        "player_id":  202107,
+                        "club_position":  "RCM",
+                        "long_name":  "Alfredo Eloy Galo Morales",
+                        "age":  35,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Durkin",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "United States",
+                        "player_id":  237407,
+                        "club_position":  "LCM",
+                        "long_name":  "Christopher James Durkin",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Teuchert",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  36,
+                        "nationality":  "Germany",
+                        "player_id":  226050,
+                        "club_position":  "RAM",
+                        "long_name":  "Cedric Teuchert",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Ostrák",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Czechia",
+                        "player_id":  247245,
+                        "club_position":  "SUB",
+                        "long_name":  "Tomáš Ostrák",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CM",
+                                          "CDM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Alm",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  21,
+                        "nationality":  "Sweden",
+                        "player_id":  242092,
+                        "club_position":  "SUB",
+                        "long_name":  "Rasmus Alm",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Watts",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  20,
+                        "nationality":  "United States",
+                        "player_id":  273122,
+                        "club_position":  "SUB",
+                        "long_name":  "Akil Amen-Diop Watts",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jeong Sang Bin",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  77,
+                        "nationality":  "Korea Republic",
+                        "player_id":  260485,
+                        "club_position":  "SUB",
+                        "long_name":  "Sang-bin Jeong정상빈",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Perez",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  28,
+                        "nationality":  "United States",
+                        "player_id":  274492,
+                        "club_position":  "RES",
+                        "long_name":  "Miguel Perez",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Girdwood-Reich",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  3,
+                        "nationality":  "Australia",
+                        "player_id":  272324,
+                        "club_position":  "SUB",
+                        "long_name":  "Jake Max Girdwood-Reich",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Célio Pompeu",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  12,
+                        "nationality":  "Brazil",
+                        "player_id":  273124,
+                        "club_position":  "SUB",
+                        "long_name":  "Célio Antonio Pompeu Pinheiro Martins",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "RW",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Totland",
+                        "overall":  64,
+                        "potential":  66,
+                        "club_jersey_number":  14,
+                        "nationality":  "Norway",
+                        "player_id":  240150,
+                        "club_position":  "RM",
+                        "long_name":  "Tomas Olai Totland",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Baumgartl",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  32,
+                        "nationality":  "Germany",
+                        "player_id":  223641,
+                        "club_position":  "SUB",
+                        "long_name":  "Timo Baumgartl",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Kessler",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "United States",
+                        "player_id":  255110,
+                        "club_position":  "CB",
+                        "long_name":  "Frederick Henry Kessler",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Fall",
+                        "overall":  66,
+                        "potential":  79,
+                        "club_jersey_number":  88,
+                        "nationality":  "Senegal",
+                        "player_id":  276257,
+                        "club_position":  "SUB",
+                        "long_name":  "Fallou Fall",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Yaro",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  15,
+                        "nationality":  "Ghana",
+                        "player_id":  232083,
+                        "club_position":  "RCB",
+                        "long_name":  "Joshua Yaro",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Reid",
+                        "overall":  58,
+                        "potential":  65,
+                        "club_jersey_number":  99,
+                        "nationality":  "United States",
+                        "player_id":  272813,
+                        "club_position":  "RES",
+                        "long_name":  "Jayden Reid",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Hiebert",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "Canada",
+                        "player_id":  271143,
+                        "club_position":  "LCB",
+                        "long_name":  "Kyle Anthony Hiebert",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zalinsky",
+                        "overall":  58,
+                        "potential":  65,
+                        "club_jersey_number":  71,
+                        "nationality":  "United States",
+                        "player_id":  78212,
+                        "club_position":  "RES",
+                        "long_name":  "Joseph Zalinsky",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Padelford",
+                        "overall":  62,
+                        "potential":  72,
+                        "club_jersey_number":  2,
+                        "nationality":  "United States",
+                        "player_id":  271106,
+                        "club_position":  "SUB",
+                        "long_name":  "Devin Padelford",
+                        "age":  22,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Becher",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  271293,
+                        "club_position":  "SUB",
+                        "long_name":  "Simon Becher",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pearce",
+                        "overall":  53,
+                        "potential":  76,
+                        "club_jersey_number":  33,
+                        "nationality":  "United States",
+                        "player_id":  73881,
+                        "club_position":  "RES",
+                        "long_name":  "Tyson Pearce",
+                        "age":  17,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Joyner",
+                        "overall":  55,
+                        "potential":  72,
+                        "club_jersey_number":  59,
+                        "nationality":  "United States",
+                        "player_id":  77499,
+                        "club_position":  "RES",
+                        "long_name":  "Mykhi Joyner",
+                        "age":  18,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Wentzel",
+                        "overall":  55,
+                        "potential":  62,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  72900,
+                        "club_position":  "RES",
+                        "long_name":  "Michael Wentzel",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Orozco",
+                        "overall":  53,
+                        "potential":  68,
+                        "club_jersey_number":  91,
+                        "nationality":  "United States",
+                        "player_id":  266610,
+                        "club_position":  "RES",
+                        "long_name":  "Jaziel Alberto Orozco Landeros",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Bürki",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  1,
+                        "nationality":  "Switzerland",
+                        "player_id":  189117,
+                        "club_position":  "GK",
+                        "long_name":  "Roman Bürki",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Glover",
+                        "overall":  50,
+                        "potential":  72,
+                        "club_jersey_number":  46,
+                        "nationality":  "United States",
+                        "player_id":  274942,
+                        "club_position":  "RES",
+                        "long_name":  "Caden Edward Glover",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Lundt",
+                        "overall":  58,
+                        "potential":  60,
+                        "club_jersey_number":  39,
+                        "nationality":  "Germany",
+                        "player_id":  211387,
+                        "club_position":  "SUB",
+                        "long_name":  "Benjamin Maximilian Lundt",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

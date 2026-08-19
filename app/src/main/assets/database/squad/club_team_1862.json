@@ -1,0 +1,387 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "FC Lausanne-Sport",
+                     "league_name":  "Super League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1862
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Roche",
+                        "overall":  70,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Sweden",
+                        "player_id":  256874,
+                        "club_position":  "CDM",
+                        "long_name":  "Jamie John Roche",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Beloko",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  42,
+                        "nationality":  "Switzerland",
+                        "player_id":  252967,
+                        "club_position":  "RCM",
+                        "long_name":  "Nicky Stéphane Medja Beloko",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Poaty",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  18,
+                        "nationality":  "Congo",
+                        "player_id":  231307,
+                        "club_position":  "LB",
+                        "long_name":  "Morgan Paul Poaty",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Soppy",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  2,
+                        "nationality":  "France",
+                        "player_id":  258407,
+                        "club_position":  "SUB",
+                        "long_name":  "Beanou-Junior Brandon Deflorent Soppy",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Custodio",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  10,
+                        "nationality":  "Switzerland",
+                        "player_id":  218887,
+                        "club_position":  "LCM",
+                        "long_name":  "Olivier Custodio Da Costa",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ajdini",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  7,
+                        "nationality":  "Kosovo",
+                        "player_id":  257692,
+                        "club_position":  "LS",
+                        "long_name":  "Alban Ajdini",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Bair",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Canada",
+                        "player_id":  245563,
+                        "club_position":  "SUB",
+                        "long_name":  "Thelonius Alston Bradley Bair",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Diakité",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  70,
+                        "nationality":  "Mali",
+                        "player_id":  70511,
+                        "club_position":  "SUB",
+                        "long_name":  "Gaoussou Diakité",
+                        "age":  19,
+                        "positions":  [
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Polster",
+                        "overall":  61,
+                        "potential":  68,
+                        "club_jersey_number":  43,
+                        "nationality":  "Austria",
+                        "player_id":  269888,
+                        "club_position":  "SUB",
+                        "long_name":  "Manuel Polster",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Al Saad",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  77,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  278206,
+                        "club_position":  "SUB",
+                        "long_name":  "Muhannad Yahya Saeed Al Saadمهند يحيى آل سعد",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Sigua",
+                        "overall":  60,
+                        "potential":  77,
+                        "club_jersey_number":  38,
+                        "nationality":  "Georgia",
+                        "player_id":  277060,
+                        "club_position":  "RES",
+                        "long_name":  "Gabriel Siguaგაბრიელ სიგუა",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Lekoueiry",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  27,
+                        "nationality":  "Mauritania",
+                        "player_id":  77114,
+                        "club_position":  "CAM",
+                        "long_name":  "Beyatt Lekoueiry",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Okoh",
+                        "overall":  64,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Switzerland",
+                        "player_id":  263028,
+                        "club_position":  "LCB",
+                        "long_name":  "Bryan Ikemefuna Okoh",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Butler-Oyedeji",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  273926,
+                        "club_position":  "RS",
+                        "long_name":  "Nathan Jerome Chatoyer Butler-Oyedeji",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Bruchez",
+                        "overall":  57,
+                        "potential":  74,
+                        "club_jersey_number":  49,
+                        "nationality":  "Switzerland",
+                        "player_id":  78059,
+                        "club_position":  "SUB",
+                        "long_name":  "Ethan Bruchez",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mouanga",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  247407,
+                        "club_position":  "RB",
+                        "long_name":  "Kévin Mouanga",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Sow",
+                        "overall":  67,
+                        "potential":  80,
+                        "club_jersey_number":  71,
+                        "nationality":  "Switzerland",
+                        "player_id":  263968,
+                        "club_position":  "RCB",
+                        "long_name":  "Abdou Karim Sow",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Fofana",
+                        "overall":  60,
+                        "potential":  68,
+                        "club_jersey_number":  93,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  263031,
+                        "club_position":  "SUB",
+                        "long_name":  "Sékou Fofana",
+                        "age":  22,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Kana-Biyik",
+                        "overall":  58,
+                        "potential":  78,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  77147,
+                        "club_position":  "SUB",
+                        "long_name":  "Enzo Kana-Biyik",
+                        "age":  18,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. N\u0026amp;apos;Diaye",
+                        "overall":  53,
+                        "potential":  68,
+                        "club_jersey_number":  47,
+                        "nationality":  "Switzerland",
+                        "player_id":  73656,
+                        "club_position":  "SUB",
+                        "long_name":  "Papa Souleymane N\u0026amp;apos;Diaye",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Abdallah",
+                        "overall":  57,
+                        "potential":  64,
+                        "club_jersey_number":  20,
+                        "nationality":  "France",
+                        "player_id":  279052,
+                        "club_position":  "RES",
+                        "long_name":  "Hamza Abdallah",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Traoré",
+                        "overall":  56,
+                        "potential":  67,
+                        "club_jersey_number":  17,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  276679,
+                        "club_position":  "SUB",
+                        "long_name":  "Seydou Traoré",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Castella",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  1,
+                        "nationality":  "Switzerland",
+                        "player_id":  210509,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Castella",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Letica",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  25,
+                        "nationality":  "Croatia",
+                        "player_id":  243538,
+                        "club_position":  "GK",
+                        "long_name":  "Karlo Letica",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hottiger",
+                        "overall":  56,
+                        "potential":  67,
+                        "club_jersey_number":  94,
+                        "nationality":  "Switzerland",
+                        "player_id":  73968,
+                        "club_position":  "SUB",
+                        "long_name":  "Tim Hottiger",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

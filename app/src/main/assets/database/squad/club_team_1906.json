@@ -1,0 +1,441 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "AZ Alkmaar",
+                     "league_name":  "Eredivisie",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1906
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Mijnans",
+                        "overall":  75,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Netherlands",
+                        "player_id":  254789,
+                        "club_position":  "CAM",
+                        "long_name":  "Sven Mijnans",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Clasie",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  8,
+                        "nationality":  "Netherlands",
+                        "player_id":  199422,
+                        "club_position":  "RCM",
+                        "long_name":  "Jordy Clasie",
+                        "age":  34,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Maikuma",
+                        "overall":  74,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Japan",
+                        "player_id":  266071,
+                        "club_position":  "RES",
+                        "long_name":  "Seiya Maikuma毎熊 晟矢",
+                        "age":  27,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Parrott",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  9,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  245902,
+                        "club_position":  "ST",
+                        "long_name":  "Troy Daniel Parrott",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Koopmeiners",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  6,
+                        "nationality":  "Netherlands",
+                        "player_id":  260076,
+                        "club_position":  "SUB",
+                        "long_name":  "Peer Koopmeiners",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Šín",
+                        "overall":  74,
+                        "potential":  83,
+                        "club_jersey_number":  7,
+                        "nationality":  "Czechia",
+                        "player_id":  81231,
+                        "club_position":  "SUB",
+                        "long_name":  "Matěj Šín",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Smit",
+                        "overall":  72,
+                        "potential":  87,
+                        "club_jersey_number":  26,
+                        "nationality":  "Netherlands",
+                        "player_id":  71532,
+                        "club_position":  "LCM",
+                        "long_name":  "Kees Smit",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. de Wit",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  34,
+                        "nationality":  "Netherlands",
+                        "player_id":  263099,
+                        "club_position":  "LB",
+                        "long_name":  "Mees De Wit",
+                        "age":  27,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Meerdink",
+                        "overall":  73,
+                        "potential":  83,
+                        "club_jersey_number":  35,
+                        "nationality":  "Netherlands",
+                        "player_id":  267974,
+                        "club_position":  "SUB",
+                        "long_name":  "Mexx Meerdink",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Sadiq",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  11,
+                        "nationality":  "Ghana",
+                        "player_id":  244513,
+                        "club_position":  "RM",
+                        "long_name":  "Ibrahim Sadiq",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kasius",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  30,
+                        "nationality":  "Netherlands",
+                        "player_id":  267446,
+                        "club_position":  "RB",
+                        "long_name":  "Denso Kasius",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Patati",
+                        "overall":  72,
+                        "potential":  83,
+                        "club_jersey_number":  33,
+                        "nationality":  "Brazil",
+                        "player_id":  80911,
+                        "club_position":  "SUB",
+                        "long_name":  "Weslley Pinto Batista",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Chávez",
+                        "overall":  72,
+                        "potential":  79,
+                        "club_jersey_number":  15,
+                        "nationality":  "Mexico",
+                        "player_id":  78784,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateo Chávez García",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kwakman",
+                        "overall":  66,
+                        "potential":  78,
+                        "club_jersey_number":  21,
+                        "nationality":  "Netherlands",
+                        "player_id":  277864,
+                        "club_position":  "SUB",
+                        "long_name":  "Dave Kwakman",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "CDM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Goes",
+                        "overall":  77,
+                        "potential":  85,
+                        "club_jersey_number":  3,
+                        "nationality":  "Netherlands",
+                        "player_id":  273752,
+                        "club_position":  "RCB",
+                        "long_name":  "Wouter Goes",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Jensen",
+                        "overall":  70,
+                        "potential":  83,
+                        "club_jersey_number":  17,
+                        "nationality":  "Denmark",
+                        "player_id":  259465,
+                        "club_position":  "SUB",
+                        "long_name":  "Isak Steiner Jensen",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alexandre Penetra",
+                        "overall":  74,
+                        "potential":  82,
+                        "club_jersey_number":  5,
+                        "nationality":  "Portugal",
+                        "player_id":  264288,
+                        "club_position":  "LCB",
+                        "long_name":  "Alexandre Manuel Penetra Correia",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Daal",
+                        "overall":  68,
+                        "potential":  79,
+                        "club_jersey_number":  27,
+                        "nationality":  "Netherlands",
+                        "player_id":  75519,
+                        "club_position":  "LM",
+                        "long_name":  "Ro-Zangelo Daal",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Dijkstra",
+                        "overall":  64,
+                        "potential":  82,
+                        "club_jersey_number":  22,
+                        "nationality":  "Netherlands",
+                        "player_id":  75516,
+                        "club_position":  "SUB",
+                        "long_name":  "Elijah Dijkstra",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Zeefuik",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  25,
+                        "nationality":  "Netherlands",
+                        "player_id":  269259,
+                        "club_position":  "SUB",
+                        "long_name":  "Lequincio Zeefuik",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dekker",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  4,
+                        "nationality":  "Netherlands",
+                        "player_id":  268106,
+                        "club_position":  "SUB",
+                        "long_name":  "Maxim Dekker",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. van Duijn",
+                        "overall":  61,
+                        "potential":  74,
+                        "club_jersey_number":  60,
+                        "nationality":  "Netherlands",
+                        "player_id":  77169,
+                        "club_position":  "RES",
+                        "long_name":  "Sem van Duijn",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hartog",
+                        "overall":  60,
+                        "potential":  78,
+                        "club_jersey_number":  63,
+                        "nationality":  "Netherlands",
+                        "player_id":  80671,
+                        "club_position":  "RES",
+                        "long_name":  "Jasper Hartog",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Natali",
+                        "overall":  60,
+                        "potential":  82,
+                        "club_jersey_number":  84,
+                        "nationality":  "Italy",
+                        "player_id":  76396,
+                        "club_position":  "RES",
+                        "long_name":  "Andrea Natali",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. van Duijl",
+                        "overall":  62,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Netherlands",
+                        "player_id":  271147,
+                        "club_position":  "RES",
+                        "long_name":  "Billy van Duijl",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zoet",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  41,
+                        "nationality":  "Netherlands",
+                        "player_id":  190778,
+                        "club_position":  "SUB",
+                        "long_name":  "Jeroen Zoet",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Verhulst",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  12,
+                        "nationality":  "Netherlands",
+                        "player_id":  200696,
+                        "club_position":  "SUB",
+                        "long_name":  "Hobie Verhulst",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Owusu-Oduro",
+                        "overall":  71,
+                        "potential":  84,
+                        "club_jersey_number":  1,
+                        "nationality":  "Netherlands",
+                        "player_id":  272958,
+                        "club_position":  "GK",
+                        "long_name":  "Rome Jayden Owusu-Oduro",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Virginio Deen",
+                        "overall":  60,
+                        "potential":  70,
+                        "club_jersey_number":  31,
+                        "nationality":  "Netherlands",
+                        "player_id":  272961,
+                        "club_position":  "RES",
+                        "long_name":  "Daniël Virginio Deen",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

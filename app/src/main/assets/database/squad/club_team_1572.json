@@ -1,0 +1,417 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Drogheda United",
+                     "league_name":  "Premier Division",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1572
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Farrell",
+                        "overall":  60,
+                        "potential":  63,
+                        "club_jersey_number":  17,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  255628,
+                        "club_position":  "SUB",
+                        "long_name":  "Shane Farrell",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Brennan",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  19,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  198990,
+                        "club_position":  "RCM",
+                        "long_name":  "Ryan Brennan",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Markey",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  7,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  227082,
+                        "club_position":  "CAM",
+                        "long_name":  "Darragh Markey",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kane",
+                        "overall":  59,
+                        "potential":  62,
+                        "club_jersey_number":  3,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  236845,
+                        "club_position":  "LB",
+                        "long_name":  "Conor Kane",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Lambe",
+                        "overall":  59,
+                        "potential":  62,
+                        "club_jersey_number":  23,
+                        "nationality":  "United States",
+                        "player_id":  77410,
+                        "club_position":  "RB",
+                        "long_name":  "Owen Lambe",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Doyle",
+                        "overall":  57,
+                        "potential":  59,
+                        "club_jersey_number":  6,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  234375,
+                        "club_position":  "SUB",
+                        "long_name":  "Paul Doyle",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Cruise",
+                        "overall":  55,
+                        "potential":  63,
+                        "club_jersey_number":  31,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  270706,
+                        "club_position":  "SUB",
+                        "long_name":  "Kieran Cruise",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Thomas",
+                        "overall":  58,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Wales",
+                        "player_id":  277353,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua John Thomas",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Ahui",
+                        "overall":  60,
+                        "potential":  67,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  271099,
+                        "club_position":  "SUB",
+                        "long_name":  "Elicha Ahui",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. O\u0026amp;apos;Sullivan",
+                        "overall":  54,
+                        "potential":  69,
+                        "club_jersey_number":  8,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  271556,
+                        "club_position":  "SUB",
+                        "long_name":  "John O\u0026amp;apos;Reilly-O\u0026amp;apos;Sullivan",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Davis",
+                        "overall":  58,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  274456,
+                        "club_position":  "LS",
+                        "long_name":  "Warren Davis",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Oluwa",
+                        "overall":  57,
+                        "potential":  60,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  252251,
+                        "club_position":  "RS",
+                        "long_name":  "Thomas Oluwa",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Heeney",
+                        "overall":  58,
+                        "potential":  61,
+                        "club_jersey_number":  21,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  260881,
+                        "club_position":  "LCM",
+                        "long_name":  "Luke Heeney",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "RB",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Keeley",
+                        "overall":  62,
+                        "potential":  64,
+                        "club_jersey_number":  22,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  273027,
+                        "club_position":  "CB",
+                        "long_name":  "Conor Keeley",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Brady",
+                        "overall":  50,
+                        "potential":  62,
+                        "club_jersey_number":  28,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  72988,
+                        "club_position":  "SUB",
+                        "long_name":  "Scott Brady",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Stretton",
+                        "overall":  58,
+                        "potential":  64,
+                        "club_jersey_number":  14,
+                        "nationality":  "Scotland",
+                        "player_id":  259976,
+                        "club_position":  "RES",
+                        "long_name":  "Jack Kirk Stretton",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Quinn",
+                        "overall":  59,
+                        "potential":  63,
+                        "club_jersey_number":  4,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  259300,
+                        "club_position":  "LCB",
+                        "long_name":  "Andrew Quinn",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Bawa",
+                        "overall":  54,
+                        "potential":  59,
+                        "club_jersey_number":  16,
+                        "nationality":  "Nigeria",
+                        "player_id":  71134,
+                        "club_position":  "SUB",
+                        "long_name":  "Steve Zishim Bawa",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Cardo",
+                        "overall":  54,
+                        "potential":  65,
+                        "club_jersey_number":  10,
+                        "nationality":  "United States",
+                        "player_id":  80160,
+                        "club_position":  "RES",
+                        "long_name":  "Michael Cardo",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bolger",
+                        "overall":  58,
+                        "potential":  62,
+                        "club_jersey_number":  18,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  73542,
+                        "club_position":  "RCB",
+                        "long_name":  "James Bolger",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Cooper",
+                        "overall":  58,
+                        "potential":  64,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  262636,
+                        "club_position":  "SUB",
+                        "long_name":  "Frank George Cooper",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Kareem",
+                        "overall":  53,
+                        "potential":  65,
+                        "club_jersey_number":  34,
+                        "nationality":  "Nigeria",
+                        "player_id":  77752,
+                        "club_position":  "SUB",
+                        "long_name":  "Dare Kareem",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. McCarthy",
+                        "overall":  50,
+                        "potential":  60,
+                        "club_jersey_number":  29,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  74123,
+                        "club_position":  "RES",
+                        "long_name":  "Sean McCarthy",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Harper-Bailey",
+                        "overall":  56,
+                        "potential":  61,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  73946,
+                        "club_position":  "SUB",
+                        "long_name":  "Aaron Harper-Bailey",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Brady",
+                        "overall":  55,
+                        "potential":  57,
+                        "club_jersey_number":  27,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  244701,
+                        "club_position":  "SUB",
+                        "long_name":  "Jack Brady",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Dennison",
+                        "overall":  61,
+                        "potential":  63,
+                        "club_jersey_number":  45,
+                        "nationality":  "United States",
+                        "player_id":  261284,
+                        "club_position":  "GK",
+                        "long_name":  "Luke Dennison",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Hennessy",
+                        "overall":  49,
+                        "potential":  63,
+                        "club_jersey_number":  36,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  76094,
+                        "club_position":  "RES",
+                        "long_name":  "Theo Hennessy",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

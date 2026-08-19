@@ -1,0 +1,388 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "CF Montréal",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  111139
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Longstaff",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  243828,
+                        "club_position":  "SUB",
+                        "long_name":  "Matthew Ben Longstaff",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Herbers",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  21,
+                        "nationality":  "Germany",
+                        "player_id":  232166,
+                        "club_position":  "SUB",
+                        "long_name":  "Fabian Herbers",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Loturi",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "Canada",
+                        "player_id":  269758,
+                        "club_position":  "LDM",
+                        "long_name":  "Victor Lokai Loturi",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Pearce",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  235347,
+                        "club_position":  "LM",
+                        "long_name":  "Tom Mark Pearce",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Opoku",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ghana",
+                        "player_id":  259288,
+                        "club_position":  "SUB",
+                        "long_name":  "Kwadwo Opoku",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Vrioni",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Albania",
+                        "player_id":  235194,
+                        "club_position":  "SUB",
+                        "long_name":  "Giacomo Vrioni",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Sealy",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "Trinidad and Tobago",
+                        "player_id":  247612,
+                        "club_position":  "RM",
+                        "long_name":  "Dante Isiah Sealy",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Duke",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "United States",
+                        "player_id":  255411,
+                        "club_position":  "CAM",
+                        "long_name":  "Bryce Duke",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Petrasso",
+                        "overall":  62,
+                        "potential":  66,
+                        "club_jersey_number":  13,
+                        "nationality":  "Canada",
+                        "player_id":  266335,
+                        "club_position":  "LB",
+                        "long_name":  "Luca Allan Petrasso",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Owusu",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "Germany",
+                        "player_id":  244250,
+                        "club_position":  "ST",
+                        "long_name":  "Prince Osei Owusu",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Ibrahim",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Nigeria",
+                        "player_id":  260443,
+                        "club_position":  "SUB",
+                        "long_name":  "Sunusi Ibrahim",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Guboglo",
+                        "overall":  59,
+                        "potential":  76,
+                        "club_jersey_number":  39,
+                        "nationality":  "Haiti",
+                        "player_id":  77609,
+                        "club_position":  "SUB",
+                        "long_name":  "Yuri Aleksandr Guboglo",
+                        "age":  18,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Hidalgo",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  19,
+                        "nationality":  "United States",
+                        "player_id":  259039,
+                        "club_position":  "RES",
+                        "long_name":  "Bode Davis",
+                        "age":  23,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Piette",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "Canada",
+                        "player_id":  213092,
+                        "club_position":  "RDM",
+                        "long_name":  "Samuel Piette",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Synchuk",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  18,
+                        "nationality":  "Ukraine",
+                        "player_id":  76908,
+                        "club_position":  "SUB",
+                        "long_name":  "Hennadiy Hennadiyovych SynchukСинчук Геннадій Геннадійович",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Álvarez",
+                        "overall":  64,
+                        "potential":  72,
+                        "club_jersey_number":  4,
+                        "nationality":  "Colombia",
+                        "player_id":  263628,
+                        "club_position":  "LCB",
+                        "long_name":  "Fernando Antonio Álvarez Amador",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bugaj",
+                        "overall":  58,
+                        "potential":  64,
+                        "club_jersey_number":  27,
+                        "nationality":  "Poland",
+                        "player_id":  74623,
+                        "club_position":  "RB",
+                        "long_name":  "Dawid Bugaj",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Neal",
+                        "overall":  66,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "United States",
+                        "player_id":  260635,
+                        "club_position":  "RCB",
+                        "long_name":  "Jalen Christopher Neal",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Escobar",
+                        "overall":  61,
+                        "potential":  78,
+                        "club_jersey_number":  29,
+                        "nationality":  "Guatemala",
+                        "player_id":  78355,
+                        "club_position":  "SUB",
+                        "long_name":  "Olger Armando Escobar Real",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Craig",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "United States",
+                        "player_id":  260545,
+                        "club_position":  "SUB",
+                        "long_name":  "Brandan Andrew Craig",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Morales",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  24,
+                        "nationality":  "Bolivia",
+                        "player_id":  259934,
+                        "club_position":  "RES",
+                        "long_name":  "Efraín Andrés Morales Badillo",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Graham-Roache",
+                        "overall":  52,
+                        "potential":  76,
+                        "club_jersey_number":  35,
+                        "nationality":  "Canada",
+                        "player_id":  77091,
+                        "club_position":  "SUB",
+                        "long_name":  "Owen Graham-Roache",
+                        "age":  17,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Breza",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  1,
+                        "nationality":  "Canada",
+                        "player_id":  261687,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Jean-Baptiste Breza",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sirois",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  40,
+                        "nationality":  "Canada",
+                        "player_id":  247494,
+                        "club_position":  "GK",
+                        "long_name":  "Jonathan Sirois",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Gillier",
+                        "overall":  65,
+                        "potential":  79,
+                        "club_jersey_number":  31,
+                        "nationality":  "Chile",
+                        "player_id":  268394,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Clemente Philippe Gillier Correa",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

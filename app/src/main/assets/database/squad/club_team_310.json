@@ -1,0 +1,483 @@
+﻿{
+    "metadata":  {
+                     "total_players":  31,
+                     "club_name":  "Rapid Bucuresti",
+                     "league_name":  "Liga I",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  310
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Dobre",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  29,
+                        "nationality":  "Romania",
+                        "player_id":  237378,
+                        "club_position":  "RM",
+                        "long_name":  "Mihai-Alexandru Dobre",
+                        "age":  26,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Borza",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  24,
+                        "nationality":  "Romania",
+                        "player_id":  270863,
+                        "club_position":  "LB",
+                        "long_name":  "Sebastian Andrei Borza",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Grameni",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "Romania",
+                        "player_id":  248680,
+                        "club_position":  "SUB",
+                        "long_name":  "Constantin Grameni",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Christensen",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  17,
+                        "nationality":  "Norway",
+                        "player_id":  242640,
+                        "club_position":  "RCM",
+                        "long_name":  "Tobias Christensen",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hromada",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  14,
+                        "nationality":  "Slovakia",
+                        "player_id":  227706,
+                        "club_position":  "LCM",
+                        "long_name":  "Jakub Hromada",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Petrila",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Romania",
+                        "player_id":  248049,
+                        "club_position":  "LM",
+                        "long_name":  "Claudiu Adrian Mihai Petrila",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Onea",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "Romania",
+                        "player_id":  253076,
+                        "club_position":  "SUB",
+                        "long_name":  "Răzvan Philippe Onea",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Manea",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  23,
+                        "nationality":  "Romania",
+                        "player_id":  223229,
+                        "club_position":  "SUB",
+                        "long_name":  "Cristian Marian Manea",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Burmaz",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Serbia",
+                        "player_id":  70249,
+                        "club_position":  "SUB",
+                        "long_name":  "Borisav BurmazБорисав Бурмаз",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "CAM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diogo Mendes",
+                        "overall":  64,
+                        "potential":  66,
+                        "club_jersey_number":  66,
+                        "nationality":  "Cabo Verde",
+                        "player_id":  243918,
+                        "club_position":  "RES",
+                        "long_name":  "Diogo Alexandre de Almeida Mendes",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Braun",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  47,
+                        "nationality":  "Germany",
+                        "player_id":  243398,
+                        "club_position":  "RB",
+                        "long_name":  "Christopher Braun",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Micovschi",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  99,
+                        "nationality":  "Romania",
+                        "player_id":  277377,
+                        "club_position":  "RES",
+                        "long_name":  "Claudiu Valentin Micovschi",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Vulturar",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  15,
+                        "nationality":  "Romania",
+                        "player_id":  257805,
+                        "club_position":  "RES",
+                        "long_name":  "Cătălin Alin Vulturar",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pașcanu",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Romania",
+                        "player_id":  237630,
+                        "club_position":  "SUB",
+                        "long_name":  "Alexandru Ștefan Pașcanu",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Keïta",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  18,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  264696,
+                        "club_position":  "CDM",
+                        "long_name":  "Abdul Kader Keita",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Baroan",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  90,
+                        "nationality":  "France",
+                        "player_id":  245749,
+                        "club_position":  "SUB",
+                        "long_name":  "Antoine Baroan",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Jambor",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  9,
+                        "nationality":  "Slovakia",
+                        "player_id":  72978,
+                        "club_position":  "SUB",
+                        "long_name":  "Timotej Jambor",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Gojković",
+                        "overall":  65,
+                        "potential":  69,
+                        "club_jersey_number":  28,
+                        "nationality":  "Serbia",
+                        "player_id":  72694,
+                        "club_position":  "SUB",
+                        "long_name":  "Luka GojkovićЛука Гојковић",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Koljić",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  95,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  242494,
+                        "club_position":  "ST",
+                        "long_name":  "Elvir Koljić",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ciobotariu",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  13,
+                        "nationality":  "Romania",
+                        "player_id":  246563,
+                        "club_position":  "RCB",
+                        "long_name":  "Denis Ciobotariu",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Hazrollaj",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  27,
+                        "nationality":  "Kosovo",
+                        "player_id":  78778,
+                        "club_position":  "SUB",
+                        "long_name":  "Drilon Hazrollaj",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Leo Bolgado",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  35,
+                        "nationality":  "Brazil",
+                        "player_id":  271620,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonardo da Costa Bolgado",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Pop",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  55,
+                        "nationality":  "Romania",
+                        "player_id":  271172,
+                        "club_position":  "SUB",
+                        "long_name":  "Rareș Mihai Pop",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Gheorghe",
+                        "overall":  59,
+                        "potential":  69,
+                        "club_jersey_number":  98,
+                        "nationality":  "Romania",
+                        "player_id":  273678,
+                        "club_position":  "RES",
+                        "long_name":  "Gabriel Gheorghe",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Kramer",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  6,
+                        "nationality":  "Netherlands",
+                        "player_id":  241812,
+                        "club_position":  "LCB",
+                        "long_name":  "Lars Kramer",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Badescu",
+                        "overall":  57,
+                        "potential":  66,
+                        "club_jersey_number":  3,
+                        "nationality":  "Romania",
+                        "player_id":  272944,
+                        "club_position":  "RES",
+                        "long_name":  "Robert Gabriel Bădescu",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Ignat",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Romania",
+                        "player_id":  262465,
+                        "club_position":  "RES",
+                        "long_name":  "Cristian Ignat",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Banu",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  52,
+                        "nationality":  "Romania",
+                        "player_id":  79006,
+                        "club_position":  "RES",
+                        "long_name":  "Sebastian Banu",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Aioani",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  16,
+                        "nationality":  "Romania",
+                        "player_id":  251036,
+                        "club_position":  "SUB",
+                        "long_name":  "Marian Mihai Aioani",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Stolz",
+                        "overall":  66,
+                        "potential":  71,
+                        "club_jersey_number":  1,
+                        "nationality":  "Austria",
+                        "player_id":  70524,
+                        "club_position":  "GK",
+                        "long_name":  "Franz Valentin Stolz",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Briciu",
+                        "overall":  52,
+                        "potential":  65,
+                        "club_jersey_number":  31,
+                        "nationality":  "Romania",
+                        "player_id":  75978,
+                        "club_position":  "RES",
+                        "long_name":  "Adrian Briciu",
+                        "age":  17,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

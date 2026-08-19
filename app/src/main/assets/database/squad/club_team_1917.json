@@ -1,0 +1,475 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Wigan Athletic",
+                     "league_name":  "League One",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1917
+                 },
+    "players":  [
+                    {
+                        "short_name":  "O. Cooper",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  31,
+                        "nationality":  "Wales",
+                        "player_id":  248688,
+                        "club_position":  "SUB",
+                        "long_name":  "Oliver Joseph Cooper",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Wright",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  242423,
+                        "club_position":  "RCM",
+                        "long_name":  "Callum Wright",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Saydee",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  254858,
+                        "club_position":  "RS",
+                        "long_name":  "Christian Saydee",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Mullin",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  214896,
+                        "club_position":  "SUB",
+                        "long_name":  "Paul Philip Mullin",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Weir",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  246054,
+                        "club_position":  "SUB",
+                        "long_name":  "Jensen Guy Weir",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Smith",
+                        "overall":  64,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "England",
+                        "player_id":  247731,
+                        "club_position":  "SUB",
+                        "long_name":  "Matthew Gerrard Smith",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Murray",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  7,
+                        "nationality":  "Scotland",
+                        "player_id":  240808,
+                        "club_position":  "RM",
+                        "long_name":  "Fraser Murray",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "LB",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Trevitt",
+                        "overall":  62,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  262569,
+                        "club_position":  "LCM",
+                        "long_name":  "Ryan Joseph Trevitt",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hungbo",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  44,
+                        "nationality":  "England",
+                        "player_id":  245020,
+                        "club_position":  "LM",
+                        "long_name":  "Joseph Oluwagbemiga Mayowa Hungbo",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kerr",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "Scotland",
+                        "player_id":  225589,
+                        "club_position":  "CB",
+                        "long_name":  "Jason Kerr",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Sessegnon",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  239800,
+                        "club_position":  "SUB",
+                        "long_name":  "Zeze Steven Sessegnon",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Fox",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  3,
+                        "nationality":  "Wales",
+                        "player_id":  208806,
+                        "club_position":  "LCB",
+                        "long_name":  "Morgan Alexander Fox",
+                        "age":  31,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Adams",
+                        "overall":  60,
+                        "potential":  70,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  70030,
+                        "club_position":  "RES",
+                        "long_name":  "Joe Adams",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Adeeko",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  263211,
+                        "club_position":  "SUB",
+                        "long_name":  "Babajide Ezekiel Adeeko",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Raphael",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Australia",
+                        "player_id":  253403,
+                        "club_position":  "SUB",
+                        "long_name":  "Raphael Borges Rodrigues",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Francois",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  35,
+                        "nationality":  "Australia",
+                        "player_id":  241825,
+                        "club_position":  "CDM",
+                        "long_name":  "Tyrese Jay Francois",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Costelloe",
+                        "overall":  60,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  271018,
+                        "club_position":  "LS",
+                        "long_name":  "Dara James Morgan Costelloe",
+                        "age":  22,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Mabaya",
+                        "overall":  61,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Zimbabwe",
+                        "player_id":  278104,
+                        "club_position":  "SUB",
+                        "long_name":  "Isaac Angus Mabaya",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. McManaman",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  190852,
+                        "club_position":  "RES",
+                        "long_name":  "Callum Henry McManaman",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. McHugh",
+                        "overall":  57,
+                        "potential":  66,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  262049,
+                        "club_position":  "RES",
+                        "long_name":  "Harry McHugh",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Brenan",
+                        "overall":  56,
+                        "potential":  72,
+                        "club_jersey_number":  27,
+                        "nationality":  "England",
+                        "player_id":  80349,
+                        "club_position":  "RES",
+                        "long_name":  "Tobias Brenan",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Asamoah",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  37,
+                        "nationality":  "England",
+                        "player_id":  277532,
+                        "club_position":  "SUB",
+                        "long_name":  "Maleace Kobby Afriyie Asamoah",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Robinson",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  19,
+                        "nationality":  "Scotland",
+                        "player_id":  259389,
+                        "club_position":  "SUB",
+                        "long_name":  "Luke James Robinson",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "CB",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Carragher",
+                        "overall":  63,
+                        "potential":  74,
+                        "club_jersey_number":  23,
+                        "nationality":  "Malta",
+                        "player_id":  264305,
+                        "club_position":  "SUB",
+                        "long_name":  "James Lee Carragher",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Aimson",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  218576,
+                        "club_position":  "RCB",
+                        "long_name":  "William Stewart Aimson",
+                        "age":  31,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Sze",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  34,
+                        "nationality":  "England",
+                        "player_id":  265694,
+                        "club_position":  "RES",
+                        "long_name":  "Christopher John Bernard Sze",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Miller",
+                        "overall":  54,
+                        "potential":  69,
+                        "club_jersey_number":  41,
+                        "nationality":  "England",
+                        "player_id":  75432,
+                        "club_position":  "RES",
+                        "long_name":  "K\u0026amp;apos;Marni Miller",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Savin",
+                        "overall":  61,
+                        "potential":  66,
+                        "club_jersey_number":  30,
+                        "nationality":  "England",
+                        "player_id":  251165,
+                        "club_position":  "RES",
+                        "long_name":  "Toby Savin",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Tickle",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "England",
+                        "player_id":  263214,
+                        "club_position":  "GK",
+                        "long_name":  "Samuel Lloyd Tickle",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Watson",
+                        "overall":  54,
+                        "potential":  67,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  74298,
+                        "club_position":  "SUB",
+                        "long_name":  "Thomas Watson",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

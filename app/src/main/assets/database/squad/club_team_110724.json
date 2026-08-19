@@ -1,0 +1,417 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "KV Mechelen",
+                     "league_name":  "Pro League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  110724
+                 },
+    "players":  [
+                    {
+                        "short_name":  "K. Mrabti",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  19,
+                        "nationality":  "Sweden",
+                        "player_id":  227689,
+                        "club_position":  "CAM",
+                        "long_name":  "Abdallah Kerim Mrabti",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Raman",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Belgium",
+                        "player_id":  200429,
+                        "club_position":  "SUB",
+                        "long_name":  "Benito Dirk Raman",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Hammar",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  6,
+                        "nationality":  "Sweden",
+                        "player_id":  244224,
+                        "club_position":  "RCM",
+                        "long_name":  "Fredrik Hammar",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Lauberbach",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  20,
+                        "nationality":  "Germany",
+                        "player_id":  239418,
+                        "club_position":  "RS",
+                        "long_name":  "Lion Lauberbach",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Teague",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  5,
+                        "nationality":  "Australia",
+                        "player_id":  246007,
+                        "club_position":  "SUB",
+                        "long_name":  "Ryan Graham Pun Teague",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Koudou",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  276258,
+                        "club_position":  "SUB",
+                        "long_name":  "Thérence Ange Koudou",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Servais",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  17,
+                        "nationality":  "Belgium",
+                        "player_id":  257174,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathis Servais",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "José Marsà",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  269089,
+                        "club_position":  "LCB",
+                        "long_name":  "José Martínez Marsà",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "LM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. van Brederode",
+                        "overall":  70,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "Netherlands",
+                        "player_id":  269159,
+                        "club_position":  "LM",
+                        "long_name":  "Myron van Brederode",
+                        "age":  21,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Bafdili",
+                        "overall":  67,
+                        "potential":  77,
+                        "club_jersey_number":  35,
+                        "nationality":  "Belgium",
+                        "player_id":  277072,
+                        "club_position":  "SUB",
+                        "long_name":  "Bilal Bafdili",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Konaté",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  8,
+                        "nationality":  "Guinea",
+                        "player_id":  253039,
+                        "club_position":  "LCM",
+                        "long_name":  "Mory Konaté",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Struyf",
+                        "overall":  60,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "Belgium",
+                        "player_id":  80128,
+                        "club_position":  "SUB",
+                        "long_name":  "Ian Struyf",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Vanrafelghem",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  27,
+                        "nationality":  "Belgium",
+                        "player_id":  76568,
+                        "club_position":  "LS",
+                        "long_name":  "Keano Giovanni Vanrafelghem",
+                        "age":  21,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. St. Jago",
+                        "overall":  66,
+                        "potential":  70,
+                        "club_jersey_number":  33,
+                        "nationality":  "Netherlands",
+                        "player_id":  253376,
+                        "club_position":  "SUB",
+                        "long_name":  "Tommy Luciano St. Jago",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Antonio",
+                        "overall":  62,
+                        "potential":  70,
+                        "club_jersey_number":  38,
+                        "nationality":  "Zimbabwe",
+                        "player_id":  279050,
+                        "club_position":  "RM",
+                        "long_name":  "Bill Leeroy Antonio",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Yeboah",
+                        "overall":  57,
+                        "potential":  70,
+                        "club_jersey_number":  36,
+                        "nationality":  "Belgium",
+                        "player_id":  73912,
+                        "club_position":  "RES",
+                        "long_name":  "Elton Wiredu Yeboah",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kireev",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  10,
+                        "nationality":  "Belarus",
+                        "player_id":  80876,
+                        "club_position":  "RES",
+                        "long_name":  "Maxim Kireev",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Diouf",
+                        "overall":  66,
+                        "potential":  77,
+                        "club_jersey_number":  4,
+                        "nationality":  "Senegal",
+                        "player_id":  275027,
+                        "club_position":  "RCB",
+                        "long_name":  "Gora Diouf",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Özdemir",
+                        "overall":  58,
+                        "potential":  75,
+                        "club_jersey_number":  21,
+                        "nationality":  "Belgium",
+                        "player_id":  80034,
+                        "club_position":  "SUB",
+                        "long_name":  "Halil Özdemir",
+                        "age":  19,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Golič",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  22,
+                        "nationality":  "Slovenia",
+                        "player_id":  279797,
+                        "club_position":  "SUB",
+                        "long_name":  "Lovro Golič",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ouahabi",
+                        "overall":  55,
+                        "potential":  79,
+                        "club_jersey_number":  40,
+                        "nationality":  "Belgium",
+                        "player_id":  80032,
+                        "club_position":  "RES",
+                        "long_name":  "Amine Ouahabiأمين الوهابي",
+                        "age":  16,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Halhal",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Morocco",
+                        "player_id":  264657,
+                        "club_position":  "CB",
+                        "long_name":  "Redouane Halhalرضوان هلهال",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Baert",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  30,
+                        "nationality":  "Belgium",
+                        "player_id":  74967,
+                        "club_position":  "RES",
+                        "long_name":  "Lukas Baert",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. De Wolf",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Belgium",
+                        "player_id":  235629,
+                        "club_position":  "GK",
+                        "long_name":  "Ortwin De Wolf",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Nacho Miras",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  13,
+                        "nationality":  "Spain",
+                        "player_id":  76567,
+                        "club_position":  "SUB",
+                        "long_name":  "Ignacio Miras Blanco",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Van Ingelgom",
+                        "overall":  57,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Belgium",
+                        "player_id":  79336,
+                        "club_position":  "SUB",
+                        "long_name":  "Tijn Van Ingelgom",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Willockx",
+                        "overall":  55,
+                        "potential":  73,
+                        "club_jersey_number":  32,
+                        "nationality":  "Belgium",
+                        "player_id":  79337,
+                        "club_position":  "SUB",
+                        "long_name":  "Axel Willockx",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

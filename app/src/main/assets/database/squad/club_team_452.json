@@ -1,0 +1,393 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "RCD Espanyol",
+                     "league_name":  "La Liga",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  452
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Edu Expósito",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  229862,
+                        "club_position":  "RDM",
+                        "long_name":  "Eduardo Expósito Jaén",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Puado",
+                        "overall":  78,
+                        "potential":  79,
+                        "club_jersey_number":  7,
+                        "nationality":  "Spain",
+                        "player_id":  244622,
+                        "club_position":  "LM",
+                        "long_name":  "Javier Puado Díaz",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Carlos Romero",
+                        "overall":  75,
+                        "potential":  81,
+                        "club_jersey_number":  22,
+                        "nationality":  "Spain",
+                        "player_id":  270728,
+                        "club_position":  "LB",
+                        "long_name":  "Carlos Romero Serrano",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Terrats",
+                        "overall":  77,
+                        "potential":  82,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  259521,
+                        "club_position":  "SUB",
+                        "long_name":  "Ramón Terrats Espacio",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "RM",
+                                          "CDM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Pickel",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  18,
+                        "nationality":  "Congo DR",
+                        "player_id":  233884,
+                        "club_position":  "SUB",
+                        "long_name":  "Charles Monginda Pickel",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pere Milla",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "Spain",
+                        "player_id":  225926,
+                        "club_position":  "CAM",
+                        "long_name":  "Pere Milla Peña",
+                        "age":  32,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pol Lozano",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  244407,
+                        "club_position":  "LDM",
+                        "long_name":  "Pol Lozano Vizuete",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. El Hilali",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  23,
+                        "nationality":  "Morocco",
+                        "player_id":  261654,
+                        "club_position":  "RB",
+                        "long_name":  "Omar El Hilaliعمر الهلالي",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jofre",
+                        "overall":  74,
+                        "potential":  78,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  258949,
+                        "club_position":  "SUB",
+                        "long_name":  "Jofre Carreras Pagès",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Roberto",
+                        "overall":  74,
+                        "potential":  81,
+                        "club_jersey_number":  9,
+                        "nationality":  "Spain",
+                        "player_id":  263676,
+                        "club_position":  "ST",
+                        "long_name":  "Roberto Fernández Jaén",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Salinas",
+                        "overall":  72,
+                        "potential":  79,
+                        "club_jersey_number":  12,
+                        "nationality":  "Spain",
+                        "player_id":  258684,
+                        "club_position":  "SUB",
+                        "long_name":  "José Salinas Morán",
+                        "age":  24,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rubén Sánchez",
+                        "overall":  69,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  262479,
+                        "club_position":  "SUB",
+                        "long_name":  "Rubén Sánchez Sáez",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kike García",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Spain",
+                        "player_id":  192678,
+                        "club_position":  "SUB",
+                        "long_name":  "Enrique García Martínez",
+                        "age":  35,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Antoniu Roca",
+                        "overall":  73,
+                        "potential":  80,
+                        "club_jersey_number":  20,
+                        "nationality":  "Spain",
+                        "player_id":  263133,
+                        "club_position":  "SUB",
+                        "long_name":  "Antoniu Roca Vives",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Calero",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  240289,
+                        "club_position":  "RCB",
+                        "long_name":  "Fernando Calero Villa",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Dolan",
+                        "overall":  69,
+                        "potential":  78,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  257063,
+                        "club_position":  "RM",
+                        "long_name":  "Tyrhys Dolan",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Cabrera",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  6,
+                        "nationality":  "Uruguay",
+                        "player_id":  192816,
+                        "club_position":  "LCB",
+                        "long_name":  "Leandro Daniel Cabrera Sasía",
+                        "age":  34,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Koleosho",
+                        "overall":  72,
+                        "potential":  82,
+                        "club_jersey_number":  16,
+                        "nationality":  "Italy",
+                        "player_id":  266041,
+                        "club_position":  "SUB",
+                        "long_name":  "Luca Warrick Daeovie Koleosho",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Urko González",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  4,
+                        "nationality":  "Spain",
+                        "player_id":  260546,
+                        "club_position":  "SUB",
+                        "long_name":  "Urko González de Zarate Quirós",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Javi Hernández",
+                        "overall":  68,
+                        "potential":  81,
+                        "club_jersey_number":  29,
+                        "nationality":  "Spain",
+                        "player_id":  276976,
+                        "club_position":  "RES",
+                        "long_name":  "Francisco Javier Hernández Coarasa",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Riedel",
+                        "overall":  69,
+                        "potential":  81,
+                        "club_jersey_number":  38,
+                        "nationality":  "Germany",
+                        "player_id":  263575,
+                        "club_position":  "SUB",
+                        "long_name":  "Clemens Riedel",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Miguel Rubio",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  15,
+                        "nationality":  "Spain",
+                        "player_id":  243431,
+                        "club_position":  "SUB",
+                        "long_name":  "Miguel Ángel Rubio Lestan",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dmitrović",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  13,
+                        "nationality":  "Serbia",
+                        "player_id":  227290,
+                        "club_position":  "GK",
+                        "long_name":  "Marko DmitrovićМарко Дмитровић",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fortuño",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  258948,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángel Fortuño Viñas",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tristán",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  30,
+                        "nationality":  "Spain",
+                        "player_id":  279605,
+                        "club_position":  "RES",
+                        "long_name":  "Pol Tristán Jiménez",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

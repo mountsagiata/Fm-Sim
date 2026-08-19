@@ -1,0 +1,418 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "AD Ceuta FC",
+                     "league_name":  "La Liga 2",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1894
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Anuar",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  23,
+                        "nationality":  "Morocco",
+                        "player_id":  225699,
+                        "club_position":  "LM",
+                        "long_name":  "Anuar Mohamed Tuhamiأنور محمد تهامي",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "CM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cristian",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  10,
+                        "nationality":  "Spain",
+                        "player_id":  245986,
+                        "club_position":  "RDM",
+                        "long_name":  "Cristian Rodríguez Pérez",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rubén Díez",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  19,
+                        "nationality":  "Spain",
+                        "player_id":  257558,
+                        "club_position":  "RM",
+                        "long_name":  "Rubén Díez Adán",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Bodiger",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  224591,
+                        "club_position":  "LDM",
+                        "long_name":  "Yann Yves Laurent Bodiger",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "José Matos",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  233911,
+                        "club_position":  "LB",
+                        "long_name":  "José Joaquín Matos García",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Aisar",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Morocco",
+                        "player_id":  78837,
+                        "club_position":  "RB",
+                        "long_name":  "Aisar Ahmed Ahmed",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kuki Zalazar",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  225738,
+                        "club_position":  "CAM",
+                        "long_name":  "José Luis Zalazar Martínez",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bassinga",
+                        "overall":  62,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  74370,
+                        "club_position":  "SUB",
+                        "long_name":  "Aboubacar Bassinga",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Lachhab",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  5,
+                        "nationality":  "Morocco",
+                        "player_id":  276742,
+                        "club_position":  "SUB",
+                        "long_name":  "Youness Lachhab Didiيونس لشهب ديدي",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Salvi Sánchez",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "Spain",
+                        "player_id":  234772,
+                        "club_position":  "RES",
+                        "long_name":  "Salvador Sánchez Ponce",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Koné",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  22,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  78836,
+                        "club_position":  "SUB",
+                        "long_name":  "Kialy Abdoul Koné",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Manu Sánchez",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  251642,
+                        "club_position":  "SUB",
+                        "long_name":  "Manuel Sánchez García",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Manu Vallejo",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  241686,
+                        "club_position":  "SUB",
+                        "long_name":  "Manuel Javier Vallejo Galván",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Obeng",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  12,
+                        "nationality":  "Ghana",
+                        "player_id":  252485,
+                        "club_position":  "RES",
+                        "long_name":  "Samuel Obeng Gyabaa",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Juanto Ortuño",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Spain",
+                        "player_id":  208157,
+                        "club_position":  "ST",
+                        "long_name":  "Juan Tomás Ortuño Martínez",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Josema",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  30,
+                        "nationality":  "Spain",
+                        "player_id":  80662,
+                        "club_position":  "RES",
+                        "long_name":  "José Manuel López Pérez",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marcos Fernández",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Spain",
+                        "player_id":  78282,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcos Fernández Sánchez",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Andy Escudero",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  20,
+                        "nationality":  "Spain",
+                        "player_id":  78839,
+                        "club_position":  "SUB",
+                        "long_name":  "Andy Escudero Jara",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. de la Fuente",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "United States",
+                        "player_id":  257025,
+                        "club_position":  "RES",
+                        "long_name":  "Konrad de la Fuente",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego González",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  15,
+                        "nationality":  "Spain",
+                        "player_id":  269223,
+                        "club_position":  "SUB",
+                        "long_name":  "Diego González Cabanes",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Redru",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  241682,
+                        "club_position":  "SUB",
+                        "long_name":  "Carlos Redruello Nimo",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yago Cantero",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Spain",
+                        "player_id":  78838,
+                        "club_position":  "LCB",
+                        "long_name":  "Yago Cantero Pérez",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Almenara",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  80084,
+                        "club_position":  "SUB",
+                        "long_name":  "Gonzalo Almenara Hernández",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Carlos Hernández",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  211556,
+                        "club_position":  "RCB",
+                        "long_name":  "Carlos Hernández Alarcón",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Albert Caparrós",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  4,
+                        "nationality":  "Spain",
+                        "player_id":  79655,
+                        "club_position":  "SUB",
+                        "long_name":  "Albert Caparrós Guzmán",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro López",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  220346,
+                        "club_position":  "GK",
+                        "long_name":  "Pedro López Galisteo",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Guille Vallejo",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  13,
+                        "nationality":  "Spain",
+                        "player_id":  223571,
+                        "club_position":  "SUB",
+                        "long_name":  "Guillermo Vallejo Delgado",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

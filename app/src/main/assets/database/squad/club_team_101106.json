@@ -1,0 +1,413 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Once Caldas",
+                     "league_name":  "Categoría Primera A",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  101106
+                 },
+    "players":  [
+                    {
+                        "short_name":  "D. Moreno",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  17,
+                        "nationality":  "Colombia",
+                        "player_id":  187075,
+                        "club_position":  "ST",
+                        "long_name":  "Dayro Mauricio Moreno Galindo",
+                        "age":  39,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Quiñones",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  70,
+                        "nationality":  "Colombia",
+                        "player_id":  219595,
+                        "club_position":  "SUB",
+                        "long_name":  "Déinner Alexander Quiñones Quiñones",
+                        "age":  29,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Barrios",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Colombia",
+                        "player_id":  221306,
+                        "club_position":  "RM",
+                        "long_name":  "Michael David Barrios Puerta",
+                        "age":  34,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "LM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Zuleta",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  28,
+                        "nationality":  "Colombia",
+                        "player_id":  74002,
+                        "club_position":  "LM",
+                        "long_name":  "Mateo Zuleta García",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Díaz",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  6,
+                        "nationality":  "Colombia",
+                        "player_id":  246348,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Carlos Díaz Mena",
+                        "age":  24,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. García",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  19,
+                        "nationality":  "Colombia",
+                        "player_id":  245908,
+                        "club_position":  "CDM",
+                        "long_name":  "Mateo García Rojas",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Rojas",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  5,
+                        "nationality":  "Colombia",
+                        "player_id":  233404,
+                        "club_position":  "SUB",
+                        "long_name":  "Iván Andrés Rojas Vásquez",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sánchez",
+                        "overall":  66,
+                        "potential":  71,
+                        "club_jersey_number":  10,
+                        "nationality":  "Colombia",
+                        "player_id":  246396,
+                        "club_position":  "RCM",
+                        "long_name":  "Luis Francisco Sánchez Mosquera",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Cuesta",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  22,
+                        "nationality":  "Colombia",
+                        "player_id":  259588,
+                        "club_position":  "LB",
+                        "long_name":  "Juan David Cuesta Santos",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. García",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "Colombia",
+                        "player_id":  246018,
+                        "club_position":  "LCM",
+                        "long_name":  "Alejandro García Castillo",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Zapata",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Colombia",
+                        "player_id":  75959,
+                        "club_position":  "SUB",
+                        "long_name":  "Jefry Arley Zapata Ramírez",
+                        "age":  25,
+                        "positions":  [
+                                          "LW",
+                                          "RM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Palacios",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  24,
+                        "nationality":  "Colombia",
+                        "player_id":  76403,
+                        "club_position":  "RB",
+                        "long_name":  "Luis Ángel Palacios Mena",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. García",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  2,
+                        "nationality":  "Colombia",
+                        "player_id":  248458,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Camilo García Soto",
+                        "age":  28,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Gómez",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "Colombia",
+                        "player_id":  246170,
+                        "club_position":  "SUB",
+                        "long_name":  "Luis Felipe Gómez Miranda",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Beltrán",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  8,
+                        "nationality":  "Colombia",
+                        "player_id":  77141,
+                        "club_position":  "SUB",
+                        "long_name":  "Johan Esteban Beltrán Montano",
+                        "age":  25,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Garcia",
+                        "overall":  55,
+                        "potential":  72,
+                        "club_jersey_number":  32,
+                        "nationality":  "Colombia",
+                        "player_id":  79616,
+                        "club_position":  "RES",
+                        "long_name":  "Tomás García Rojas",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Valencia",
+                        "overall":  61,
+                        "potential":  70,
+                        "club_jersey_number":  29,
+                        "nationality":  "Colombia",
+                        "player_id":  77827,
+                        "club_position":  "SUB",
+                        "long_name":  "Yeiler Stith Valencia Banguero",
+                        "age":  21,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Riquett",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  18,
+                        "nationality":  "Colombia",
+                        "player_id":  240352,
+                        "club_position":  "LCB",
+                        "long_name":  "Jáider Alfonso Riquett Molina",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Malagón",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  3,
+                        "nationality":  "Colombia",
+                        "player_id":  214356,
+                        "club_position":  "SUB",
+                        "long_name":  "Jerson Andrés Malagón Piracún",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Rincón",
+                        "overall":  56,
+                        "potential":  79,
+                        "club_jersey_number":  39,
+                        "nationality":  "Colombia",
+                        "player_id":  80657,
+                        "club_position":  "RES",
+                        "long_name":  "Hian Rincón",
+                        "age":  17,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Cuesta",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  23,
+                        "nationality":  "Colombia",
+                        "player_id":  75611,
+                        "club_position":  "RCB",
+                        "long_name":  "Kevin Cuesta",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Castaño",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  15,
+                        "nationality":  "Colombia",
+                        "player_id":  77134,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Felipe Castaño Zuluaga",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Cardona",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  34,
+                        "nationality":  "Colombia",
+                        "player_id":  77122,
+                        "club_position":  "SUB",
+                        "long_name":  "Jorge Luis Cardona Gutiérrez",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Tamayo",
+                        "overall":  57,
+                        "potential":  61,
+                        "club_jersey_number":  30,
+                        "nationality":  "Colombia",
+                        "player_id":  79615,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Tamayo",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Aguirre",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  12,
+                        "nationality":  "Colombia",
+                        "player_id":  231664,
+                        "club_position":  "GK",
+                        "long_name":  "James José Aguirre Hernández",
+                        "age":  33,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Parra",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  35,
+                        "nationality":  "Colombia",
+                        "player_id":  256467,
+                        "club_position":  "SUB",
+                        "long_name":  "Joan Felipe Parra Marin",
+                        "age":  25,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gallego",
+                        "overall":  57,
+                        "potential":  69,
+                        "club_jersey_number":  25,
+                        "nationality":  "Colombia",
+                        "player_id":  77136,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Esteban Muñoz Gallego",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

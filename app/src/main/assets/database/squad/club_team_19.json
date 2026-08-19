@@ -1,0 +1,404 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "West Ham United",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  19
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Lucas Paquetá",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Brazil",
+                        "player_id":  233927,
+                        "club_position":  "CAM",
+                        "long_name":  "Lucas Tolentino Coelho de Lima",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bowen",
+                        "overall":  83,
+                        "potential":  83,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  224371,
+                        "club_position":  "RS",
+                        "long_name":  "Jarrod Bowen",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ward-Prowse",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  205569,
+                        "club_position":  "LCM",
+                        "long_name":  "James Michael Edward Ward-Prowse",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Diouf",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  12,
+                        "nationality":  "Senegal",
+                        "player_id":  274915,
+                        "club_position":  "LB",
+                        "long_name":  "El Hadji Malick Diouf",
+                        "age":  20,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Souček",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  28,
+                        "nationality":  "Czechia",
+                        "player_id":  236792,
+                        "club_position":  "RCM",
+                        "long_name":  "Tomáš Souček",
+                        "age":  30,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mateus Fernandes",
+                        "overall":  76,
+                        "potential":  85,
+                        "club_jersey_number":  18,
+                        "nationality":  "Portugal",
+                        "player_id":  270857,
+                        "club_position":  "SUB",
+                        "long_name":  "Mateus Gonçalo Espanha Fernandes",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Wan-Bissaka",
+                        "overall":  80,
+                        "potential":  81,
+                        "club_jersey_number":  29,
+                        "nationality":  "Congo DR",
+                        "player_id":  229880,
+                        "club_position":  "RB",
+                        "long_name":  "Aaron Wan-Bissaka",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Füllkrug",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  11,
+                        "nationality":  "Germany",
+                        "player_id":  205431,
+                        "club_position":  "LS",
+                        "long_name":  "Niclas Füllkrug",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Irving",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  39,
+                        "nationality":  "Scotland",
+                        "player_id":  242271,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrew Irving",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Wilson",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  196978,
+                        "club_position":  "SUB",
+                        "long_name":  "Callum Eddie Graham Wilson",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Rodríguez",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  24,
+                        "nationality":  "Argentina",
+                        "player_id":  225659,
+                        "club_position":  "SUB",
+                        "long_name":  "Guido Rodríguez",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Potts",
+                        "overall":  70,
+                        "potential":  80,
+                        "club_jersey_number":  32,
+                        "nationality":  "England",
+                        "player_id":  264579,
+                        "club_position":  "SUB",
+                        "long_name":  "Freddie Potts",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Walker-Peters",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "England",
+                        "player_id":  227927,
+                        "club_position":  "SUB",
+                        "long_name":  "Kyle Leonardus Walker-Peters",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Todibo",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  25,
+                        "nationality":  "France",
+                        "player_id":  245388,
+                        "club_position":  "RCB",
+                        "long_name":  "Jean-Clair Dimitri Roger Todibo",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Summerville",
+                        "overall":  76,
+                        "potential":  84,
+                        "club_jersey_number":  7,
+                        "nationality":  "Netherlands",
+                        "player_id":  251954,
+                        "club_position":  "SUB",
+                        "long_name":  "Crysencio Jilbert Sylverio Summerville",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Scarles",
+                        "overall":  70,
+                        "potential":  80,
+                        "club_jersey_number":  30,
+                        "nationality":  "England",
+                        "player_id":  274102,
+                        "club_position":  "SUB",
+                        "long_name":  "Oliver Scarles",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Magassa",
+                        "overall":  73,
+                        "potential":  80,
+                        "club_jersey_number":  27,
+                        "nationality":  "France",
+                        "player_id":  275102,
+                        "club_position":  "SUB",
+                        "long_name":  "Soungoutou Magassa",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Kilman",
+                        "overall":  77,
+                        "potential":  79,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  245336,
+                        "club_position":  "CB",
+                        "long_name":  "Maximilian William Kilman",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Mavropanos",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  15,
+                        "nationality":  "Greece",
+                        "player_id":  242000,
+                        "club_position":  "SUB",
+                        "long_name":  "Konstantinos MavropanosΚωνσταντίνος Μαυροπάνος",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Marshall",
+                        "overall":  66,
+                        "potential":  79,
+                        "club_jersey_number":  50,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  278101,
+                        "club_position":  "SUB",
+                        "long_name":  "Callum Marshall",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Luis Guilherme",
+                        "overall":  71,
+                        "potential":  84,
+                        "club_jersey_number":  17,
+                        "nationality":  "Brazil",
+                        "player_id":  72754,
+                        "club_position":  "RES",
+                        "long_name":  "Luis Guilherme Lira dos Santos",
+                        "age":  19,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Earthy",
+                        "overall":  67,
+                        "potential":  78,
+                        "club_jersey_number":  40,
+                        "nationality":  "England",
+                        "player_id":  278097,
+                        "club_position":  "RES",
+                        "long_name":  "George Robert Earthy",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Igor Julio",
+                        "overall":  76,
+                        "potential":  78,
+                        "club_jersey_number":  5,
+                        "nationality":  "Brazil",
+                        "player_id":  241585,
+                        "club_position":  "LCB",
+                        "long_name":  "Igor Júlio dos Santos de Paulo",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Areola",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  23,
+                        "nationality":  "France",
+                        "player_id":  193105,
+                        "club_position":  "SUB",
+                        "long_name":  "Alphonse Francis Aréola",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Hermansen",
+                        "overall":  76,
+                        "potential":  81,
+                        "club_jersey_number":  1,
+                        "nationality":  "Denmark",
+                        "player_id":  246158,
+                        "club_position":  "GK",
+                        "long_name":  "Mads Hermansen",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ł. Fabiański",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  22,
+                        "nationality":  "Poland",
+                        "player_id":  164835,
+                        "club_position":  "RES",
+                        "long_name":  "Łukasz Marek Fabiański",
+                        "age":  40,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

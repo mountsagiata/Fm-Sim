@@ -1,0 +1,405 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "Atlanta United",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  112885
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Almirón",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  10,
+                        "nationality":  "Paraguay",
+                        "player_id":  230977,
+                        "club_position":  "CAM",
+                        "long_name":  "Miguel Ángel Almirón Rejala",
+                        "age":  31,
+                        "positions":  [
+                                          "RW",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Lobjanidze",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  9,
+                        "nationality":  "Georgia",
+                        "player_id":  239755,
+                        "club_position":  "RW",
+                        "long_name":  "Saba Lobjanidzeსაბა ლობჟანიძე",
+                        "age":  30,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Alzate",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  7,
+                        "nationality":  "Colombia",
+                        "player_id":  236529,
+                        "club_position":  "SUB",
+                        "long_name":  "Steven Alzate",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Lennon",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  237662,
+                        "club_position":  "RB",
+                        "long_name":  "Brooks Howard Lennon",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Miranchuk",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  59,
+                        "nationality":  "Russia",
+                        "player_id":  214092,
+                        "club_position":  "LW",
+                        "long_name":  "Aleksey MiranchukМиранчук Алексей Андреевич",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Slisz",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  99,
+                        "nationality":  "Poland",
+                        "player_id":  243222,
+                        "club_position":  "RCM",
+                        "long_name":  "Bartosz Slisz",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Latte Lath",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  237295,
+                        "club_position":  "ST",
+                        "long_name":  "Emmanuel Delan Junior Latte Lath",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Amador",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "Portugal",
+                        "player_id":  256044,
+                        "club_position":  "LB",
+                        "long_name":  "Pedro Miguel Santos Amador",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Muyumba",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  235885,
+                        "club_position":  "LCM",
+                        "long_name":  "Tristan Muyumba Nkita",
+                        "age":  28,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Thiaré",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  14,
+                        "nationality":  "Senegal",
+                        "player_id":  212790,
+                        "club_position":  "SUB",
+                        "long_name":  "Jamal Thiaré",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Hernández",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  2,
+                        "nationality":  "Venezuela",
+                        "player_id":  240921,
+                        "club_position":  "LCB",
+                        "long_name":  "Ronald José Hernández Pimentel",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Gregersen",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  5,
+                        "nationality":  "Norway",
+                        "player_id":  216730,
+                        "club_position":  "RCB",
+                        "long_name":  "Stian Rode Gregersen",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Berrocal",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  240859,
+                        "club_position":  "SUB",
+                        "long_name":  "Juan Berrocal González",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Mihaj",
+                        "overall":  72,
+                        "potential":  75,
+                        "club_jersey_number":  4,
+                        "nationality":  "Albania",
+                        "player_id":  251446,
+                        "club_position":  "SUB",
+                        "long_name":  "Enea MihajΕνέα Μιχάι",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Togashi",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  30,
+                        "nationality":  "Japan",
+                        "player_id":  232785,
+                        "club_position":  "SUB",
+                        "long_name":  "Cayman Graybill Togashi富樫 敬真",
+                        "age":  31,
+                        "positions":  [
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Fortune",
+                        "overall":  61,
+                        "potential":  72,
+                        "club_jersey_number":  35,
+                        "nationality":  "Trinidad and Tobago",
+                        "player_id":  274273,
+                        "club_position":  "SUB",
+                        "long_name":  "Ajani Fortune",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Reilly",
+                        "overall":  56,
+                        "potential":  67,
+                        "club_jersey_number":  28,
+                        "nationality":  "United States",
+                        "player_id":  76454,
+                        "club_position":  "SUB",
+                        "long_name":  "William James Reilly",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Brennan",
+                        "overall":  59,
+                        "potential":  74,
+                        "club_jersey_number":  20,
+                        "nationality":  "United States",
+                        "player_id":  278490,
+                        "club_position":  "SUB",
+                        "long_name":  "Luke Brennan",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Leo Afonso",
+                        "overall":  61,
+                        "potential":  67,
+                        "club_jersey_number":  13,
+                        "nationality":  "Brazil",
+                        "player_id":  71005,
+                        "club_position":  "RES",
+                        "long_name":  "Leonardo Frugis Afonso",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "RM",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Edwards",
+                        "overall":  55,
+                        "potential":  66,
+                        "club_jersey_number":  47,
+                        "nationality":  "United States",
+                        "player_id":  74622,
+                        "club_position":  "SUB",
+                        "long_name":  "Matthew Edwards",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gordon",
+                        "overall":  55,
+                        "potential":  71,
+                        "club_jersey_number":  27,
+                        "nationality":  "Jamaica",
+                        "player_id":  76453,
+                        "club_position":  "SUB",
+                        "long_name":  "Ashton J\u0026amp;apos;Kingston Gordon",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Chong-Qui",
+                        "overall":  52,
+                        "potential":  75,
+                        "club_jersey_number":  50,
+                        "nationality":  "United States",
+                        "player_id":  78044,
+                        "club_position":  "SUB",
+                        "long_name":  "Dominik Chong Qui",
+                        "age":  17,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Sessock",
+                        "overall":  52,
+                        "potential":  55,
+                        "club_jersey_number":  66,
+                        "nationality":  "United States",
+                        "player_id":  79840,
+                        "club_position":  "RES",
+                        "long_name":  "Nyk Sessock",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Guzan",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  1,
+                        "nationality":  "United States",
+                        "player_id":  164505,
+                        "club_position":  "GK",
+                        "long_name":  "Bradley Edwin Guzan",
+                        "age":  40,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Cohen",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  22,
+                        "nationality":  "United States",
+                        "player_id":  279705,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Cohen",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hibbert",
+                        "overall":  51,
+                        "potential":  62,
+                        "club_jersey_number":  42,
+                        "nationality":  "Jamaica",
+                        "player_id":  77491,
+                        "club_position":  "RES",
+                        "long_name":  "Jayden Hibbert",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

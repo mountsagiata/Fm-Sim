@@ -1,0 +1,421 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Charlotte FC",
+                     "league_name":  "Major League Soccer",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  114640
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Westwood",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  189280,
+                        "club_position":  "LDM",
+                        "long_name":  "Ashley Roy Westwood",
+                        "age":  35,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Zaha",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  10,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  198717,
+                        "club_position":  "LM",
+                        "long_name":  "Dazet Wilfried Armel Zaha",
+                        "age":  32,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pep Biel",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  241985,
+                        "club_position":  "CAM",
+                        "long_name":  "Pep Biel Mas Jaume",
+                        "age":  28,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Abada",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  11,
+                        "nationality":  "Israel",
+                        "player_id":  263377,
+                        "club_position":  "RM",
+                        "long_name":  "Liel Abada",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Bronico",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  13,
+                        "nationality":  "United States",
+                        "player_id":  237920,
+                        "club_position":  "RDM",
+                        "long_name":  "Brandt James Bronico",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Toffolo",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  206086,
+                        "club_position":  "SUB",
+                        "long_name":  "Harry Stefano Toffolo",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Williamson",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  19,
+                        "nationality":  "United States",
+                        "player_id":  242503,
+                        "club_position":  "SUB",
+                        "long_name":  "Eryk Tyrek Williamson",
+                        "age":  28,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Byrne",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  202814,
+                        "club_position":  "RB",
+                        "long_name":  "Nathan William Byrne",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Ream",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "United States",
+                        "player_id":  198261,
+                        "club_position":  "RCB",
+                        "long_name":  "Timothy Michael Ream",
+                        "age":  37,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Tuiloma",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  6,
+                        "nationality":  "New Zealand",
+                        "player_id":  220886,
+                        "club_position":  "SUB",
+                        "long_name":  "Bill Poni Tuiloma",
+                        "age":  30,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Vargas",
+                        "overall":  68,
+                        "potential":  76,
+                        "club_jersey_number":  18,
+                        "nationality":  "Colombia",
+                        "player_id":  269913,
+                        "club_position":  "SUB",
+                        "long_name":  "Kerwin Andrés Calderón Vargas",
+                        "age":  23,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Diani",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  246299,
+                        "club_position":  "SUB",
+                        "long_name":  "Djibril Diani",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Marshall-Rutty",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  2,
+                        "nationality":  "Canada",
+                        "player_id":  255335,
+                        "club_position":  "LB",
+                        "long_name":  "Jahkeele Stanford Jack Marshall-Rutty",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Goodwin",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Australia",
+                        "player_id":  262648,
+                        "club_position":  "SUB",
+                        "long_name":  "Archie Stuart Wayne Goodwin",
+                        "age":  20,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Petković",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  23,
+                        "nationality":  "Serbia",
+                        "player_id":  71218,
+                        "club_position":  "SUB",
+                        "long_name":  "Nikola PetkovicНикола Петковић",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Privett",
+                        "overall":  66,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "United States",
+                        "player_id":  274534,
+                        "club_position":  "LCB",
+                        "long_name":  "Andrew Privett",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Toklomati",
+                        "overall":  66,
+                        "potential":  80,
+                        "club_jersey_number":  17,
+                        "nationality":  "Israel",
+                        "player_id":  75295,
+                        "club_position":  "ST",
+                        "long_name":  "Idan Toklomati Jorno",
+                        "age":  20,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Scardina",
+                        "overall":  60,
+                        "potential":  65,
+                        "club_jersey_number":  35,
+                        "nationality":  "United States",
+                        "player_id":  274684,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicholas Scardina",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Malanda",
+                        "overall":  69,
+                        "potential":  80,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  262597,
+                        "club_position":  "SUB",
+                        "long_name":  "Adilson Malanda",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Cambridge",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  36,
+                        "nationality":  "United States",
+                        "player_id":  272817,
+                        "club_position":  "RES",
+                        "long_name":  "Brandon Cambridge",
+                        "age":  23,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Berchimas",
+                        "overall":  57,
+                        "potential":  79,
+                        "club_jersey_number":  27,
+                        "nationality":  "United States",
+                        "player_id":  274686,
+                        "club_position":  "RES",
+                        "long_name":  "Nimfasha Berchimas",
+                        "age":  17,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Smalls",
+                        "overall":  60,
+                        "potential":  66,
+                        "club_jersey_number":  25,
+                        "nationality":  "England",
+                        "player_id":  72167,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyger Smalls",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "RM",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Neeley",
+                        "overall":  56,
+                        "potential":  73,
+                        "club_jersey_number":  39,
+                        "nationality":  "United States",
+                        "player_id":  275008,
+                        "club_position":  "RES",
+                        "long_name":  "Jack Neeley",
+                        "age":  20,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Bingham",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  22,
+                        "nationality":  "United States",
+                        "player_id":  202469,
+                        "club_position":  "SUB",
+                        "long_name":  "David Bingham",
+                        "age":  35,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kahlina",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Croatia",
+                        "player_id":  266282,
+                        "club_position":  "GK",
+                        "long_name":  "Kristijan Kahlina",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Callender",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  99,
+                        "nationality":  "United States",
+                        "player_id":  254962,
+                        "club_position":  "SUB",
+                        "long_name":  "Drake Steven Callender",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Odunze",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  26,
+                        "nationality":  "United States",
+                        "player_id":  259550,
+                        "club_position":  "RES",
+                        "long_name":  "Chituru Ethan Odunze",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

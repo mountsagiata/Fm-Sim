@@ -1,0 +1,426 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "RC Lens",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  64
+                 },
+    "players":  [
+                    {
+                        "short_name":  "D. Machado",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  3,
+                        "nationality":  "Colombia",
+                        "player_id":  220837,
+                        "club_position":  "LM",
+                        "long_name":  "Deiver Andrés Machado Mena",
+                        "age":  31,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Thomasson",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  28,
+                        "nationality":  "France",
+                        "player_id":  208787,
+                        "club_position":  "LCM",
+                        "long_name":  "Adrien Thomasson",
+                        "age":  31,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Thauvin",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  204970,
+                        "club_position":  "RW",
+                        "long_name":  "Florian Tristan Mariano Thauvin",
+                        "age":  32,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Sotoca",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  227232,
+                        "club_position":  "SUB",
+                        "long_name":  "Florian Sotoca",
+                        "age":  34,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Sangaré",
+                        "overall":  72,
+                        "potential":  81,
+                        "club_jersey_number":  8,
+                        "nationality":  "Mali",
+                        "player_id":  258601,
+                        "club_position":  "RCM",
+                        "long_name":  "Mamadou Sangaré",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Aguilar",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  2,
+                        "nationality":  "France",
+                        "player_id":  223597,
+                        "club_position":  "RM",
+                        "long_name":  "Ruben Aguilar",
+                        "age":  32,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Udol",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "France",
+                        "player_id":  229236,
+                        "club_position":  "LCB",
+                        "long_name":  "Matthieu Udol",
+                        "age":  29,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sima",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  19,
+                        "nationality":  "Senegal",
+                        "player_id":  259816,
+                        "club_position":  "LW",
+                        "long_name":  "Abdallah Dipo Sima",
+                        "age":  24,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Chávez",
+                        "overall":  72,
+                        "potential":  78,
+                        "club_jersey_number":  13,
+                        "nationality":  "Ecuador",
+                        "player_id":  259027,
+                        "club_position":  "SUB",
+                        "long_name":  "Jhoanner Stalin Chávez Quintero",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Abdulhamid",
+                        "overall":  75,
+                        "potential":  78,
+                        "club_jersey_number":  23,
+                        "nationality":  "Saudi Arabia",
+                        "player_id":  246688,
+                        "club_position":  "SUB",
+                        "long_name":  "Saud Abdullah Abdul Hamidسعود عبدالحميد",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Edouard",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  11,
+                        "nationality":  "France",
+                        "player_id":  233866,
+                        "club_position":  "ST",
+                        "long_name":  "Odsonne Édouard",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Saïd",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "France",
+                        "player_id":  212613,
+                        "club_position":  "SUB",
+                        "long_name":  "Wesley Saïd",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Guilavogui",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  29,
+                        "nationality":  "Guinea",
+                        "player_id":  257020,
+                        "club_position":  "SUB",
+                        "long_name":  "Morgan Guilavogui",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Ojediran",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  15,
+                        "nationality":  "Nigeria",
+                        "player_id":  276207,
+                        "club_position":  "SUB",
+                        "long_name":  "Hamzat-Basit Ojediran",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gradit",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  24,
+                        "nationality":  "France",
+                        "player_id":  221284,
+                        "club_position":  "RCB",
+                        "long_name":  "Jonathan Gradit",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Sarr",
+                        "overall":  73,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "France",
+                        "player_id":  235454,
+                        "club_position":  "CB",
+                        "long_name":  "Malang Mamadou William Sarr",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Ganiou",
+                        "overall":  66,
+                        "potential":  77,
+                        "club_jersey_number":  25,
+                        "nationality":  "Burkina Faso",
+                        "player_id":  75320,
+                        "club_position":  "SUB",
+                        "long_name":  "Pierre-Ismaëlo Ganiou",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Sylla",
+                        "overall":  65,
+                        "potential":  78,
+                        "club_jersey_number":  33,
+                        "nationality":  "France",
+                        "player_id":  277935,
+                        "club_position":  "SUB",
+                        "long_name":  "Fodé Sanassy Sylla",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bulatović",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  5,
+                        "nationality":  "Montenegro",
+                        "player_id":  77105,
+                        "club_position":  "RES",
+                        "long_name":  "Andrija BulatovicАндрија Булатовић",
+                        "age":  18,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bermont",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  26,
+                        "nationality":  "France",
+                        "player_id":  70005,
+                        "club_position":  "SUB",
+                        "long_name":  "Anthony Bermont",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Diallo",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  31,
+                        "nationality":  "France",
+                        "player_id":  74429,
+                        "club_position":  "RES",
+                        "long_name":  "Alpha Diallo",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Fofana",
+                        "overall":  65,
+                        "potential":  78,
+                        "club_jersey_number":  38,
+                        "nationality":  "France",
+                        "player_id":  77633,
+                        "club_position":  "SUB",
+                        "long_name":  "Rayan Fofana",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Baidoo",
+                        "overall":  70,
+                        "potential":  81,
+                        "club_jersey_number":  6,
+                        "nationality":  "Austria",
+                        "player_id":  270997,
+                        "club_position":  "SUB",
+                        "long_name":  "Samson Baidoo",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Antonio",
+                        "overall":  64,
+                        "potential":  79,
+                        "club_jersey_number":  32,
+                        "nationality":  "France",
+                        "player_id":  75319,
+                        "club_position":  "RES",
+                        "long_name":  "Kyllian Anderson Antonio",
+                        "age":  17,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Čelik",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  4,
+                        "nationality":  "Bosnia and Herzegovina",
+                        "player_id":  77056,
+                        "club_position":  "RES",
+                        "long_name":  "Nidal Čelik",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Gurtner",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  1,
+                        "nationality":  "France",
+                        "player_id":  176994,
+                        "club_position":  "SUB",
+                        "long_name":  "Régis Gurtner",
+                        "age":  38,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Risser",
+                        "overall":  72,
+                        "potential":  82,
+                        "club_jersey_number":  40,
+                        "nationality":  "France",
+                        "player_id":  271918,
+                        "club_position":  "GK",
+                        "long_name":  "Robin Risser Birckel",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Jourdren",
+                        "overall":  60,
+                        "potential":  78,
+                        "club_jersey_number":  50,
+                        "nationality":  "France",
+                        "player_id":  78547,
+                        "club_position":  "RES",
+                        "long_name":  "Ilan Jourdren",
+                        "age":  16,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

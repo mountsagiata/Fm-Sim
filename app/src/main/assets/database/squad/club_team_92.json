@@ -1,0 +1,421 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Grimsby Town",
+                     "league_name":  "League Two",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  92
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Walker",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  7,
+                        "nationality":  "Scotland",
+                        "player_id":  206565,
+                        "club_position":  "SUB",
+                        "long_name":  "James Walker",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Rose",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  32,
+                        "nationality":  "England",
+                        "player_id":  203500,
+                        "club_position":  "SUB",
+                        "long_name":  "Daniel Antony Rose",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Svanþórs­son",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  11,
+                        "nationality":  "Iceland",
+                        "player_id":  73260,
+                        "club_position":  "RES",
+                        "long_name":  "Jason Dadi SvanthórssonJa­son Daði Svanþórs­son",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Khouri",
+                        "overall":  60,
+                        "potential":  65,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  261897,
+                        "club_position":  "LCM",
+                        "long_name":  "Evan Marley Khouri",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "LB",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. McEachran",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  241160,
+                        "club_position":  "CDM",
+                        "long_name":  "George James McEachran",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Oduor",
+                        "overall":  60,
+                        "potential":  62,
+                        "club_jersey_number":  29,
+                        "nationality":  "Kenya",
+                        "player_id":  237503,
+                        "club_position":  "SUB",
+                        "long_name":  "Clarke Sydney Omondi Oduor",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "LB",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Green",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  225772,
+                        "club_position":  "RCM",
+                        "long_name":  "Kieran Thomas Green",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Burns",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  18,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  251219,
+                        "club_position":  "RM",
+                        "long_name":  "Darragh Burns",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Amaluzor",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  14,
+                        "nationality":  "England",
+                        "player_id":  230032,
+                        "club_position":  "SUB",
+                        "long_name":  "Justin Ikechukwu Obiora Amaluzor",
+                        "age":  28,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Vernam",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  30,
+                        "nationality":  "England",
+                        "player_id":  212167,
+                        "club_position":  "LM",
+                        "long_name":  "Charles Terence Priestley Vernam",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kabia",
+                        "overall":  59,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  255980,
+                        "club_position":  "ST",
+                        "long_name":  "Jaze Kabia",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sweeney",
+                        "overall":  62,
+                        "potential":  64,
+                        "club_jersey_number":  3,
+                        "nationality":  "England",
+                        "player_id":  252385,
+                        "club_position":  "LB",
+                        "long_name":  "Jayden Deslandes Sweeney",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Soonsup-Bell",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  273930,
+                        "club_position":  "SUB",
+                        "long_name":  "Jude Jacob Soonsup-Bell",
+                        "age":  21,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Eccleston",
+                        "overall":  62,
+                        "potential":  70,
+                        "club_jersey_number":  12,
+                        "nationality":  "England",
+                        "player_id":  72212,
+                        "club_position":  "SUB",
+                        "long_name":  "Neo Arlee Ifny Eccleston",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Rodgers",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  229087,
+                        "club_position":  "RB",
+                        "long_name":  "Harvey James Rodgers",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. McJannet",
+                        "overall":  63,
+                        "potential":  65,
+                        "club_jersey_number":  17,
+                        "nationality":  "England",
+                        "player_id":  236465,
+                        "club_position":  "LCB",
+                        "long_name":  "Cameron McJannett",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Turi",
+                        "overall":  57,
+                        "potential":  64,
+                        "club_jersey_number":  15,
+                        "nationality":  "Faroe Islands",
+                        "player_id":  77037,
+                        "club_position":  "SUB",
+                        "long_name":  "Géza Dávid Turi",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Gilsenan",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  256366,
+                        "club_position":  "RES",
+                        "long_name":  "Zak Thomas Gilsenan",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Warren",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  21,
+                        "nationality":  "England",
+                        "player_id":  237696,
+                        "club_position":  "RCB",
+                        "long_name":  "Tyrell Nathaniel Warren",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Staunton",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  16,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  256672,
+                        "club_position":  "SUB",
+                        "long_name":  "Reece Jospeh Staunton",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Brown",
+                        "overall":  53,
+                        "potential":  67,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  77789,
+                        "club_position":  "SUB",
+                        "long_name":  "Henry Brown",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gardner",
+                        "overall":  55,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "England",
+                        "player_id":  278213,
+                        "club_position":  "SUB",
+                        "long_name":  "Cameron Gardner",
+                        "age":  19,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Lavelle",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  6,
+                        "nationality":  "Scotland",
+                        "player_id":  228928,
+                        "club_position":  "RES",
+                        "long_name":  "Samuel Mark Lavelle",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Tharme",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  271028,
+                        "club_position":  "SUB",
+                        "long_name":  "Douglas John Tharme",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Pym",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  1,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  206555,
+                        "club_position":  "GK",
+                        "long_name":  "Christy Pym",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Auton",
+                        "overall":  55,
+                        "potential":  60,
+                        "club_jersey_number":  41,
+                        "nationality":  "England",
+                        "player_id":  75302,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Auton",
+                        "age":  18,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Casper",
+                        "overall":  56,
+                        "potential":  72,
+                        "club_jersey_number":  33,
+                        "nationality":  "England",
+                        "player_id":  274121,
+                        "club_position":  "RES",
+                        "long_name":  "Charlie Casper",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,466 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Chelsea",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  5
+                 },
+    "players":  [
+                    {
+                        "short_name":  "R. James",
+                        "overall":  81,
+                        "potential":  84,
+                        "club_jersey_number":  24,
+                        "nationality":  "England",
+                        "player_id":  238074,
+                        "club_position":  "RB",
+                        "long_name":  "Reece James",
+                        "age":  25,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Fernández",
+                        "overall":  84,
+                        "potential":  87,
+                        "club_jersey_number":  8,
+                        "nationality":  "Argentina",
+                        "player_id":  247090,
+                        "club_position":  "LDM",
+                        "long_name":  "Enzo Jeremías Fernández",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marc Cucurella",
+                        "overall":  84,
+                        "potential":  85,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  239231,
+                        "club_position":  "LB",
+                        "long_name":  "Marc Cucurella Saseta",
+                        "age":  26,
+                        "positions":  [
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Caicedo",
+                        "overall":  87,
+                        "potential":  89,
+                        "club_jersey_number":  25,
+                        "nationality":  "Ecuador",
+                        "player_id":  256079,
+                        "club_position":  "RDM",
+                        "long_name":  "Moisés Isaac Caicedo Corozo",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Palmer",
+                        "overall":  87,
+                        "potential":  90,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  257534,
+                        "club_position":  "CAM",
+                        "long_name":  "Cole Jermaine Palmer",
+                        "age":  23,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Andrey Santos",
+                        "overall":  80,
+                        "potential":  87,
+                        "club_jersey_number":  17,
+                        "nationality":  "Brazil",
+                        "player_id":  273018,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrey Nascimento dos Santos",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Gusto",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  27,
+                        "nationality":  "France",
+                        "player_id":  259307,
+                        "club_position":  "SUB",
+                        "long_name":  "Malo Gusto",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Neto",
+                        "overall":  80,
+                        "potential":  82,
+                        "club_jersey_number":  7,
+                        "nationality":  "Portugal",
+                        "player_id":  238616,
+                        "club_position":  "RM",
+                        "long_name":  "Pedro Lomba Neto",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Lavia",
+                        "overall":  78,
+                        "potential":  85,
+                        "club_jersey_number":  45,
+                        "nationality":  "Belgium",
+                        "player_id":  263620,
+                        "club_position":  "SUB",
+                        "long_name":  "Roméo Lavia",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Pedro",
+                        "overall":  79,
+                        "potential":  84,
+                        "club_jersey_number":  20,
+                        "nationality":  "Brazil",
+                        "player_id":  252042,
+                        "club_position":  "ST",
+                        "long_name":  "João Pedro Junqueira de Jesus",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dário Essugo",
+                        "overall":  75,
+                        "potential":  85,
+                        "club_jersey_number":  14,
+                        "nationality":  "Portugal",
+                        "player_id":  261530,
+                        "club_position":  "RES",
+                        "long_name":  "Dário Cassia Luís Essugo",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Sterling",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  202652,
+                        "club_position":  "RES",
+                        "long_name":  "Raheem Shaquille Sterling",
+                        "age":  30,
+                        "positions":  [
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Estêvão",
+                        "overall":  78,
+                        "potential":  89,
+                        "club_jersey_number":  41,
+                        "nationality":  "Brazil",
+                        "player_id":  76687,
+                        "club_position":  "SUB",
+                        "long_name":  "Estêvão Willian Almeida",
+                        "age":  18,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Garnacho",
+                        "overall":  77,
+                        "potential":  84,
+                        "club_jersey_number":  49,
+                        "nationality":  "Argentina",
+                        "player_id":  268438,
+                        "club_position":  "RES",
+                        "long_name":  "Alejandro Garnacho Ferreyra",
+                        "age":  21,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Colwill",
+                        "overall":  80,
+                        "potential":  84,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  262859,
+                        "club_position":  "SUB",
+                        "long_name":  "Levi Lemar Samuel Colwill",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Chalobah",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  23,
+                        "nationality":  "England",
+                        "player_id":  230918,
+                        "club_position":  "RCB",
+                        "long_name":  "Trevoh Thomas Chalobah",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Hato",
+                        "overall":  78,
+                        "potential":  89,
+                        "club_jersey_number":  21,
+                        "nationality":  "Netherlands",
+                        "player_id":  272978,
+                        "club_position":  "SUB",
+                        "long_name":  "Jorrel Hato",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Delap",
+                        "overall":  78,
+                        "potential":  85,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  259031,
+                        "club_position":  "SUB",
+                        "long_name":  "Liam Rory Delap",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Fofana",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  248695,
+                        "club_position":  "SUB",
+                        "long_name":  "Wesley Fofana",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Acheampong",
+                        "overall":  70,
+                        "potential":  85,
+                        "club_jersey_number":  34,
+                        "nationality":  "England",
+                        "player_id":  71651,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Kofi Acheampong",
+                        "age":  19,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Gittens",
+                        "overall":  78,
+                        "potential":  85,
+                        "club_jersey_number":  11,
+                        "nationality":  "England",
+                        "player_id":  266032,
+                        "club_position":  "LM",
+                        "long_name":  "Jamie Jermaine Bynoe-Gittens",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Adarabioyo",
+                        "overall":  78,
+                        "potential":  80,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  222104,
+                        "club_position":  "LCB",
+                        "long_name":  "Abdul-Nasir Oluwatosin Oluwadoyinsolami Adarabioyo",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Buonanotte",
+                        "overall":  75,
+                        "potential":  82,
+                        "club_jersey_number":  40,
+                        "nationality":  "Argentina",
+                        "player_id":  269495,
+                        "club_position":  "RES",
+                        "long_name":  "Facundo Valentín Buonanotte",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Badiashile",
+                        "overall":  76,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "France",
+                        "player_id":  242578,
+                        "club_position":  "RES",
+                        "long_name":  "Benoît Badiashile Mukinayi",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. George",
+                        "overall":  71,
+                        "potential":  84,
+                        "club_jersey_number":  32,
+                        "nationality":  "England",
+                        "player_id":  71998,
+                        "club_position":  "SUB",
+                        "long_name":  "Tyrique George",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marc Guiu",
+                        "overall":  71,
+                        "potential":  84,
+                        "club_jersey_number":  38,
+                        "nationality":  "Spain",
+                        "player_id":  278813,
+                        "club_position":  "RES",
+                        "long_name":  "Marc Guiu Paz",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Disasi",
+                        "overall":  77,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "France",
+                        "player_id":  229942,
+                        "club_position":  "RES",
+                        "long_name":  "Axel Arthur Disasi",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Robert Sánchez",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  228789,
+                        "club_position":  "GK",
+                        "long_name":  "Robert Lynch Sánchez",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Jörgensen",
+                        "overall":  77,
+                        "potential":  83,
+                        "club_jersey_number":  12,
+                        "nationality":  "Denmark",
+                        "player_id":  258485,
+                        "club_position":  "SUB",
+                        "long_name":  "Filip Jørgensen",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Slonina",
+                        "overall":  68,
+                        "potential":  80,
+                        "club_jersey_number":  44,
+                        "nationality":  "United States",
+                        "player_id":  248158,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Paweł Słonina",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

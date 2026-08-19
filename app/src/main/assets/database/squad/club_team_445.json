@@ -1,0 +1,366 @@
+﻿{
+    "metadata":  {
+                     "total_players":  23,
+                     "club_name":  "Derry City",
+                     "league_name":  "Premier Division",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  445
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. Winchester",
+                        "overall":  63,
+                        "potential":  63,
+                        "club_jersey_number":  20,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  201901,
+                        "club_position":  "LCM",
+                        "long_name":  "Carl Winchester",
+                        "age":  32,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Duffy",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  7,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  210263,
+                        "club_position":  "LW",
+                        "long_name":  "Michael Duffy",
+                        "age":  30,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. O\u0026amp;apos;Reilly",
+                        "overall":  62,
+                        "potential":  68,
+                        "club_jersey_number":  8,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  246136,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Kieran O\u0026amp;apos;Reilly",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Benson",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  13,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  200134,
+                        "club_position":  "SUB",
+                        "long_name":  "Robert Benson",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Doherty",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  14,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  235650,
+                        "club_position":  "SUB",
+                        "long_name":  "Ben Doherty",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Boyce",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  27,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  201346,
+                        "club_position":  "ST",
+                        "long_name":  "Liam Boyce",
+                        "age":  34,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Fleming",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  19,
+                        "nationality":  "England",
+                        "player_id":  237933,
+                        "club_position":  "LB",
+                        "long_name":  "Brandon James Fleming",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Ferguson",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  3,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  192624,
+                        "club_position":  "SUB",
+                        "long_name":  "Shane Kevin Ferguson",
+                        "age":  33,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Whyte",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  11,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  244655,
+                        "club_position":  "RW",
+                        "long_name":  "Gavin Whyte",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "RW",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Boyce",
+                        "overall":  61,
+                        "potential":  65,
+                        "club_jersey_number":  2,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  253943,
+                        "club_position":  "RB",
+                        "long_name":  "Ronan Boyce",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Mullen",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  21,
+                        "nationality":  "Scotland",
+                        "player_id":  244321,
+                        "club_position":  "SUB",
+                        "long_name":  "Danny Mullen",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Frizzell",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  17,
+                        "nationality":  "Scotland",
+                        "player_id":  230163,
+                        "club_position":  "SUB",
+                        "long_name":  "Adam Frizzell",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Diallo",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  230081,
+                        "club_position":  "RCM",
+                        "long_name":  "Sadou Diallo",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Dummigan",
+                        "overall":  58,
+                        "potential":  58,
+                        "club_jersey_number":  23,
+                        "nationality":  "Northern Ireland",
+                        "player_id":  221167,
+                        "club_position":  "SUB",
+                        "long_name":  "Cameron Dummigan",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Akinyemi",
+                        "overall":  57,
+                        "potential":  57,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  229921,
+                        "club_position":  "SUB",
+                        "long_name":  "Afolabi Oladipo Christopher Akinyemi",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Bannon",
+                        "overall":  55,
+                        "potential":  68,
+                        "club_jersey_number":  25,
+                        "nationality":  "Scotland",
+                        "player_id":  274636,
+                        "club_position":  "SUB",
+                        "long_name":  "Alex Bannon",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "RB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Stott",
+                        "overall":  59,
+                        "potential":  60,
+                        "club_jersey_number":  22,
+                        "nationality":  "England",
+                        "player_id":  238260,
+                        "club_position":  "LCB",
+                        "long_name":  "Jamie Garry Stott",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Connolly",
+                        "overall":  59,
+                        "potential":  59,
+                        "club_jersey_number":  6,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  198497,
+                        "club_position":  "CB",
+                        "long_name":  "Mark Gerard Connolly",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Cann",
+                        "overall":  58,
+                        "potential":  63,
+                        "club_jersey_number":  16,
+                        "nationality":  "England",
+                        "player_id":  259234,
+                        "club_position":  "RCB",
+                        "long_name":  "Hayden James Cann",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Todd",
+                        "overall":  59,
+                        "potential":  60,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  235704,
+                        "club_position":  "SUB",
+                        "long_name":  "Sam Todd",
+                        "age":  27,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Heaney",
+                        "overall":  48,
+                        "potential":  62,
+                        "club_jersey_number":  33,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  74353,
+                        "club_position":  "SUB",
+                        "long_name":  "Aaron Heaney",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Maher",
+                        "overall":  62,
+                        "potential":  66,
+                        "club_jersey_number":  1,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  242229,
+                        "club_position":  "GK",
+                        "long_name":  "Brian Philip Maher",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Doherty",
+                        "overall":  54,
+                        "potential":  64,
+                        "club_jersey_number":  26,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  75916,
+                        "club_position":  "SUB",
+                        "long_name":  "Arlo Ricky Hugh Doherty",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

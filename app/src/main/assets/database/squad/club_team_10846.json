@@ -1,0 +1,415 @@
+﻿{
+    "metadata":  {
+                     "total_players":  27,
+                     "club_name":  "Burgos CF",
+                     "league_name":  "La Liga 2",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  10846
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Iñigo Córdoba",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Spain",
+                        "player_id":  229764,
+                        "club_position":  "LM",
+                        "long_name":  "Iñigo Córdoba Querejeta",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Appin",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  10,
+                        "nationality":  "France",
+                        "player_id":  239451,
+                        "club_position":  "SUB",
+                        "long_name":  "Kévin Appin",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mollejo",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  11,
+                        "nationality":  "Spain",
+                        "player_id":  245999,
+                        "club_position":  "SUB",
+                        "long_name":  "Víctor Mollejo Carpintero",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Curro Sánchez",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  16,
+                        "nationality":  "Spain",
+                        "player_id":  231733,
+                        "club_position":  "CAM",
+                        "long_name":  "Francisco José Sánchez Rodríguez",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Miguel",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  12,
+                        "nationality":  "France",
+                        "player_id":  226130,
+                        "club_position":  "LB",
+                        "long_name":  "Florian Jérémie Miguel",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Iván Morante",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  23,
+                        "nationality":  "Spain",
+                        "player_id":  255468,
+                        "club_position":  "RDM",
+                        "long_name":  "Iván Morante Ruiz",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Sergio González",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  246097,
+                        "club_position":  "SUB",
+                        "long_name":  "Sergio González Martínez",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "David González",
+                        "overall":  65,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Spain",
+                        "player_id":  73518,
+                        "club_position":  "SUB",
+                        "long_name":  "David González Ballesteros",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "ST",
+                                          "RM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fer Niño",
+                        "overall":  70,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Spain",
+                        "player_id":  252590,
+                        "club_position":  "ST",
+                        "long_name":  "Fernando Niño Rodríguez",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Atienza",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  254786,
+                        "club_position":  "LDM",
+                        "long_name":  "Miguel Ángel Atienza Villa",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mario Cantero",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Spain",
+                        "player_id":  75697,
+                        "club_position":  "RES",
+                        "long_name":  "Mario Cantero Mariño",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Chapela",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  19,
+                        "nationality":  "Spain",
+                        "player_id":  263941,
+                        "club_position":  "RM",
+                        "long_name":  "Iván Chapela López",
+                        "age":  26,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Aitor Buñuel",
+                        "overall":  66,
+                        "potential":  67,
+                        "club_jersey_number":  29,
+                        "nationality":  "Spain",
+                        "player_id":  228790,
+                        "club_position":  "SUB",
+                        "long_name":  "Aitor Buñuel Redrado",
+                        "age":  27,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mario González",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  20,
+                        "nationality":  "Spain",
+                        "player_id":  235970,
+                        "club_position":  "SUB",
+                        "long_name":  "Mario González Gutiérrez",
+                        "age":  29,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Marcelo",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  33,
+                        "nationality":  "Spain",
+                        "player_id":  73927,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcelo Expósito Jiménez",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ethan",
+                        "overall":  58,
+                        "potential":  67,
+                        "club_jersey_number":  32,
+                        "nationality":  "Spain",
+                        "player_id":  80658,
+                        "club_position":  "RES",
+                        "long_name":  "Ethan Ventosa González",
+                        "age":  21,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Brais Martínez",
+                        "overall":  66,
+                        "potential":  72,
+                        "club_jersey_number":  22,
+                        "nationality":  "Spain",
+                        "player_id":  275497,
+                        "club_position":  "SUB",
+                        "long_name":  "Brais Martínez Prado",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "del Cerro",
+                        "overall":  63,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Spain",
+                        "player_id":  271358,
+                        "club_position":  "SUB",
+                        "long_name":  "Saúl del Cerro García",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Aitor Córdoba",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  18,
+                        "nationality":  "Spain",
+                        "player_id":  262423,
+                        "club_position":  "RCB",
+                        "long_name":  "Aitor Córdoba Querejeta",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gregorio Sierra",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  8,
+                        "nationality":  "Spain",
+                        "player_id":  224981,
+                        "club_position":  "LCB",
+                        "long_name":  "Gregorio Sierra Pérez",
+                        "age":  32,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Alex Lizancos",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  2,
+                        "nationality":  "Spain",
+                        "player_id":  79736,
+                        "club_position":  "RB",
+                        "long_name":  "Alejandro Lizancos Saldaña",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mateo Mejía",
+                        "overall":  61,
+                        "potential":  73,
+                        "club_jersey_number":  7,
+                        "nationality":  "Colombia",
+                        "player_id":  258172,
+                        "club_position":  "SUB",
+                        "long_name":  "José Mateo Mejía Piedrahita",
+                        "age":  22,
+                        "positions":  [
+                                          "RW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Fermín García",
+                        "overall":  59,
+                        "potential":  66,
+                        "club_jersey_number":  31,
+                        "nationality":  "Spain",
+                        "player_id":  80697,
+                        "club_position":  "SUB",
+                        "long_name":  "Fermín García Murillo",
+                        "age":  21,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Cantero",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  13,
+                        "nationality":  "Spain",
+                        "player_id":  219637,
+                        "club_position":  "GK",
+                        "long_name":  "Ander Cantero Armendariz",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jesús Ruiz",
+                        "overall":  71,
+                        "potential":  73,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  257027,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesús Ruiz Suárez",
+                        "age":  28,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Monedero",
+                        "overall":  62,
+                        "potential":  79,
+                        "club_jersey_number":  37,
+                        "nationality":  "Spain",
+                        "player_id":  75567,
+                        "club_position":  "RES",
+                        "long_name":  "Marc Monedero Sánchez",
+                        "age":  20,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diego González",
+                        "overall":  57,
+                        "potential":  75,
+                        "club_jersey_number":  35,
+                        "nationality":  "Spain",
+                        "player_id":  76415,
+                        "club_position":  "RES",
+                        "long_name":  "Diego González Presencio",
+                        "age":  19,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

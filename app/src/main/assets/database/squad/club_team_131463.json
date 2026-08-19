@@ -1,0 +1,405 @@
+﻿{
+    "metadata":  {
+                     "total_players":  26,
+                     "club_name":  "AVS Futebol SAD",
+                     "league_name":  "Primeira Liga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  131463
+                 },
+    "players":  [
+                    {
+                        "short_name":  "Jaume Grau",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  15,
+                        "nationality":  "Spain",
+                        "player_id":  246918,
+                        "club_position":  "RDM",
+                        "long_name":  "Jaume Grau Ciscar",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kiki",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  24,
+                        "nationality":  "Portugal",
+                        "player_id":  213795,
+                        "club_position":  "SUB",
+                        "long_name":  "Christian Neiva Afonso",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Bruno Lourenço",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "Portugal",
+                        "player_id":  248811,
+                        "club_position":  "SUB",
+                        "long_name":  "Bruno Miguel Ponces Lourenço",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "CM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Galletto",
+                        "overall":  66,
+                        "potential":  76,
+                        "club_jersey_number":  19,
+                        "nationality":  "Uruguay",
+                        "player_id":  255730,
+                        "club_position":  "SUB",
+                        "long_name":  "Tiago Galletto López",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Algobia",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  27,
+                        "nationality":  "Spain",
+                        "player_id":  246592,
+                        "club_position":  "LDM",
+                        "long_name":  "Ángel Algobia Esteves",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Rivas",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  12,
+                        "nationality":  "Paraguay",
+                        "player_id":  253713,
+                        "club_position":  "LB",
+                        "long_name":  "Leonardo Daniel Rivas Conge",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gustavo",
+                        "overall":  66,
+                        "potential":  77,
+                        "club_jersey_number":  23,
+                        "nationality":  "Portugal",
+                        "player_id":  72654,
+                        "club_position":  "SUB",
+                        "long_name":  "Gustavo Pinto Mendonça",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Lima",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "Brazil",
+                        "player_id":  277971,
+                        "club_position":  "SUB",
+                        "long_name":  "Pedro Lima Barros",
+                        "age":  22,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Aderllan Santos",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  33,
+                        "nationality":  "Brazil",
+                        "player_id":  213374,
+                        "club_position":  "RCB",
+                        "long_name":  "Aderllan Leandro de Jesus Santos",
+                        "age":  36,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Tomané",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Portugal",
+                        "player_id":  175851,
+                        "club_position":  "RES",
+                        "long_name":  "António Manuel Fernandes Mendes",
+                        "age":  32,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kodisang",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  16,
+                        "nationality":  "South Africa",
+                        "player_id":  264304,
+                        "club_position":  "SUB",
+                        "long_name":  "Kobamelo Kodisang",
+                        "age":  25,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Akinsola",
+                        "overall":  68,
+                        "potential":  77,
+                        "club_jersey_number":  11,
+                        "nationality":  "Nigeria",
+                        "player_id":  275487,
+                        "club_position":  "LM",
+                        "long_name":  "Babatunde Jimoh Akinsola",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Diogo Spencer",
+                        "overall":  64,
+                        "potential":  78,
+                        "club_jersey_number":  2,
+                        "nationality":  "Portugal",
+                        "player_id":  71981,
+                        "club_position":  "RM",
+                        "long_name":  "Diogo Filipe Spencer Marques",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Bane",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  4,
+                        "nationality":  "Senegal",
+                        "player_id":  74416,
+                        "club_position":  "SUB",
+                        "long_name":  "Sidi Bane",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Rafael Barbosa",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  10,
+                        "nationality":  "Portugal",
+                        "player_id":  242389,
+                        "club_position":  "CAM",
+                        "long_name":  "Rafael Avelino Pereira Pinto Barbosa",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "CAM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Ó. Perea",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  14,
+                        "nationality":  "Colombia",
+                        "player_id":  274231,
+                        "club_position":  "SUB",
+                        "long_name":  "Óscar Andrés Perea Abonce",
+                        "age":  19,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Duarte",
+                        "overall":  67,
+                        "potential":  76,
+                        "club_jersey_number":  20,
+                        "nationality":  "Paraguay",
+                        "player_id":  258194,
+                        "club_position":  "ST",
+                        "long_name":  "Diego Ariel Duarte Garcete",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Neiva",
+                        "overall":  63,
+                        "potential":  69,
+                        "club_jersey_number":  21,
+                        "nationality":  "Brazil",
+                        "player_id":  79396,
+                        "club_position":  "SUB",
+                        "long_name":  "Guilherme Neiva Silva",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jordi Escobar",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  9,
+                        "nationality":  "Spain",
+                        "player_id":  245331,
+                        "club_position":  "SUB",
+                        "long_name":  "Jordi Escobar Fernández",
+                        "age":  23,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "António Machado",
+                        "overall":  58,
+                        "potential":  70,
+                        "club_jersey_number":  77,
+                        "nationality":  "Portugal",
+                        "player_id":  79506,
+                        "club_position":  "RES",
+                        "long_name":  "António Sousa Machado",
+                        "age":  18,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Guillem Molina",
+                        "overall":  67,
+                        "potential":  72,
+                        "club_jersey_number":  5,
+                        "nationality":  "Spain",
+                        "player_id":  258747,
+                        "club_position":  "RB",
+                        "long_name":  "Guillem Molina Gutiérrez",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Devenish",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  42,
+                        "nationality":  "Colombia",
+                        "player_id":  259053,
+                        "club_position":  "LCB",
+                        "long_name":  "Cristian David Castro Devenish",
+                        "age":  24,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Paulo Vitor",
+                        "overall":  65,
+                        "potential":  71,
+                        "club_jersey_number":  3,
+                        "nationality":  "Brazil",
+                        "player_id":  80024,
+                        "club_position":  "RES",
+                        "long_name":  "Paulo Vitor Sousa Lima",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Trigueira",
+                        "overall":  65,
+                        "potential":  65,
+                        "club_jersey_number":  88,
+                        "nationality":  "Portugal",
+                        "player_id":  193870,
+                        "club_position":  "SUB",
+                        "long_name":  "Pedro José da Silva Trigueira",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Simão Bertelli",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  93,
+                        "nationality":  "Brazil",
+                        "player_id":  252284,
+                        "club_position":  "GK",
+                        "long_name":  "Simão Verza Bertelli",
+                        "age":  31,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "João Gonçalves",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  99,
+                        "nationality":  "Portugal",
+                        "player_id":  251995,
+                        "club_position":  "SUB",
+                        "long_name":  "João Pedro Oliveira Gonçalves",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

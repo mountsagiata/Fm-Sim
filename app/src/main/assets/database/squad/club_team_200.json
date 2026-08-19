@@ -1,0 +1,441 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Pescara",
+                     "league_name":  "Serie B",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  200
+                 },
+    "players":  [
+                    {
+                        "short_name":  "F. Caligara",
+                        "overall":  67,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Italy",
+                        "player_id":  243527,
+                        "club_position":  "RES",
+                        "long_name":  "Fabrizio Caligara",
+                        "age":  25,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Letizia",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  3,
+                        "nationality":  "Italy",
+                        "player_id":  216072,
+                        "club_position":  "LB",
+                        "long_name":  "Gaetano Letizia",
+                        "age":  35,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Okwonkwo",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  17,
+                        "nationality":  "Nigeria",
+                        "player_id":  236836,
+                        "club_position":  "RES",
+                        "long_name":  "Orji Okwonkwo",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Corazza",
+                        "overall":  67,
+                        "potential":  77,
+                        "club_jersey_number":  16,
+                        "nationality":  "Italy",
+                        "player_id":  277704,
+                        "club_position":  "SUB",
+                        "long_name":  "Tommaso Corazza",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Valzania",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Italy",
+                        "player_id":  222355,
+                        "club_position":  "RCM",
+                        "long_name":  "Luca Valzania",
+                        "age":  29,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Oliveri",
+                        "overall":  63,
+                        "potential":  72,
+                        "club_jersey_number":  33,
+                        "nationality":  "Italy",
+                        "player_id":  271399,
+                        "club_position":  "RB",
+                        "long_name":  "Andrea Oliveri",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RB",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Dagasso",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  8,
+                        "nationality":  "Italy",
+                        "player_id":  79093,
+                        "club_position":  "LCM",
+                        "long_name":  "Matteo Dagasso",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Olzer",
+                        "overall":  64,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Italy",
+                        "player_id":  260456,
+                        "club_position":  "RW",
+                        "long_name":  "Giacomo Olzer",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "RW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Tsadjout",
+                        "overall":  68,
+                        "potential":  70,
+                        "club_jersey_number":  74,
+                        "nationality":  "Italy",
+                        "player_id":  253071,
+                        "club_position":  "RES",
+                        "long_name":  "Frank Cédric Tsadjout",
+                        "age":  25,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Meazzi",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "Italy",
+                        "player_id":  79090,
+                        "club_position":  "SUB",
+                        "long_name":  "Lorenzo Meazzi",
+                        "age":  24,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gravillon",
+                        "overall":  70,
+                        "potential":  72,
+                        "club_jersey_number":  76,
+                        "nationality":  "France",
+                        "player_id":  239550,
+                        "club_position":  "SUB",
+                        "long_name":  "Andreaw Rayan Gravillon",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Brandes",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  5,
+                        "nationality":  "Netherlands",
+                        "player_id":  278912,
+                        "club_position":  "RES",
+                        "long_name":  "Julian Christiaan Brandes",
+                        "age":  21,
+                        "positions":  [
+                                          "CDM",
+                                          "CB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Kraja",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  73,
+                        "nationality":  "Albania",
+                        "player_id":  276940,
+                        "club_position":  "SUB",
+                        "long_name":  "Erdis Kraja",
+                        "age":  24,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Squizzato",
+                        "overall":  66,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "Italy",
+                        "player_id":  79089,
+                        "club_position":  "CDM",
+                        "long_name":  "Niccolò Squizzato",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Vinciguerra",
+                        "overall":  61,
+                        "potential":  76,
+                        "club_jersey_number":  31,
+                        "nationality":  "Italy",
+                        "player_id":  70050,
+                        "club_position":  "RES",
+                        "long_name":  "Alessandro Vinciguerra",
+                        "age":  19,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Sgarbi",
+                        "overall":  65,
+                        "potential":  70,
+                        "club_jersey_number":  18,
+                        "nationality":  "Italy",
+                        "player_id":  73333,
+                        "club_position":  "LW",
+                        "long_name":  "Lorenzo Sgarbi",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Merola",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  10,
+                        "nationality":  "Italy",
+                        "player_id":  247887,
+                        "club_position":  "SUB",
+                        "long_name":  "Davide Merola",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Corbo",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  95,
+                        "nationality":  "Italy",
+                        "player_id":  243513,
+                        "club_position":  "LCB",
+                        "long_name":  "Gabriele Corbo",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Capellini",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  2,
+                        "nationality":  "Italy",
+                        "player_id":  263550,
+                        "club_position":  "SUB",
+                        "long_name":  "Riccardo Capellini",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Tonin",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  15,
+                        "nationality":  "Italy",
+                        "player_id":  73138,
+                        "club_position":  "SUB",
+                        "long_name":  "Riccardo Tonin",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Graziani",
+                        "overall":  59,
+                        "potential":  71,
+                        "club_jersey_number":  20,
+                        "nationality":  "Italy",
+                        "player_id":  80085,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonardo Graziani",
+                        "age":  20,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Cangiano",
+                        "overall":  60,
+                        "potential":  65,
+                        "club_jersey_number":  11,
+                        "nationality":  "Italy",
+                        "player_id":  257217,
+                        "club_position":  "SUB",
+                        "long_name":  "Gianmarco Cangiano",
+                        "age":  23,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Brosco",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  13,
+                        "nationality":  "Italy",
+                        "player_id":  190602,
+                        "club_position":  "RCB",
+                        "long_name":  "Riccardo Brosco",
+                        "age":  34,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Di Nardo",
+                        "overall":  61,
+                        "potential":  62,
+                        "club_jersey_number":  9,
+                        "nationality":  "Italy",
+                        "player_id":  238413,
+                        "club_position":  "ST",
+                        "long_name":  "Antonio Di Nardo",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Giannini",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  35,
+                        "nationality":  "Italy",
+                        "player_id":  80838,
+                        "club_position":  "SUB",
+                        "long_name":  "Davide Giannini",
+                        "age":  20,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Berardi",
+                        "overall":  56,
+                        "potential":  66,
+                        "club_jersey_number":  36,
+                        "nationality":  "Italy",
+                        "player_id":  80840,
+                        "club_position":  "RES",
+                        "long_name":  "Lorenzo Berardi",
+                        "age":  20,
+                        "positions":  [
+                                          "LM",
+                                          "CM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Pellacani",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  23,
+                        "nationality":  "Italy",
+                        "player_id":  79086,
+                        "club_position":  "SUB",
+                        "long_name":  "Filippo Pellacani",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Desplanches",
+                        "overall":  71,
+                        "potential":  81,
+                        "club_jersey_number":  1,
+                        "nationality":  "Italy",
+                        "player_id":  276839,
+                        "club_position":  "GK",
+                        "long_name":  "Sebastiano Desplanches",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Saio",
+                        "overall":  61,
+                        "potential":  69,
+                        "club_jersey_number":  22,
+                        "nationality":  "Italy",
+                        "player_id":  277634,
+                        "club_position":  "SUB",
+                        "long_name":  "Ivan Saio",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

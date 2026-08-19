@@ -1,0 +1,371 @@
+﻿{
+    "metadata":  {
+                     "total_players":  24,
+                     "club_name":  "Arsenal",
+                     "league_name":  "Premier League",
+                     "extract_date":  "2026-05-13 22:22:43",
+                     "club_team_id":  1
+                 },
+    "players":  [
+                    {
+                        "short_name":  "D. Rice",
+                        "overall":  87,
+                        "potential":  88,
+                        "club_jersey_number":  41,
+                        "nationality":  "England",
+                        "player_id":  234378,
+                        "club_position":  "LCM",
+                        "long_name":  "Declan Rice",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Saka",
+                        "overall":  88,
+                        "potential":  90,
+                        "club_jersey_number":  7,
+                        "nationality":  "England",
+                        "player_id":  246669,
+                        "club_position":  "RW",
+                        "long_name":  "Bukayo Saka",
+                        "age":  23,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mikel Merino",
+                        "overall":  83,
+                        "potential":  83,
+                        "club_jersey_number":  23,
+                        "nationality":  "Spain",
+                        "player_id":  225193,
+                        "club_position":  "SUB",
+                        "long_name":  "Mikel Merino Zazón",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Ødegaard",
+                        "overall":  87,
+                        "potential":  89,
+                        "club_jersey_number":  8,
+                        "nationality":  "Norway",
+                        "player_id":  222665,
+                        "club_position":  "RCM",
+                        "long_name":  "Martin Ødegaard",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Gyökeres",
+                        "overall":  87,
+                        "potential":  88,
+                        "club_jersey_number":  14,
+                        "nationality":  "Sweden",
+                        "player_id":  241651,
+                        "club_position":  "ST",
+                        "long_name":  "Viktor Einar Gyökeres",
+                        "age":  27,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Zubimendi",
+                        "overall":  83,
+                        "potential":  87,
+                        "club_jersey_number":  36,
+                        "nationality":  "Spain",
+                        "player_id":  248148,
+                        "club_position":  "CDM",
+                        "long_name":  "Martín Zubimendi Ibáñez",
+                        "age":  26,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Eze",
+                        "overall":  83,
+                        "potential":  84,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  235794,
+                        "club_position":  "SUB",
+                        "long_name":  "Eberechi Oluchi Eze",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gabriel Martinelli",
+                        "overall":  81,
+                        "potential":  84,
+                        "club_jersey_number":  11,
+                        "nationality":  "Brazil",
+                        "player_id":  251566,
+                        "club_position":  "SUB",
+                        "long_name":  "Gabriel Teodoro Martinelli Silva",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lewis-Skelly",
+                        "overall":  78,
+                        "potential":  87,
+                        "club_jersey_number":  49,
+                        "nationality":  "England",
+                        "player_id":  278773,
+                        "club_position":  "SUB",
+                        "long_name":  "Myles Anthony Lewis-Skelly",
+                        "age":  18,
+                        "positions":  [
+                                          "LB",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Calafiori",
+                        "overall":  78,
+                        "potential":  84,
+                        "club_jersey_number":  33,
+                        "nationality":  "Italy",
+                        "player_id":  257711,
+                        "club_position":  "LB",
+                        "long_name":  "Riccardo Calafiori",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Havertz",
+                        "overall":  82,
+                        "potential":  84,
+                        "club_jersey_number":  29,
+                        "nationality":  "Germany",
+                        "player_id":  235790,
+                        "club_position":  "SUB",
+                        "long_name":  "Kai Lukas Havertz",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gabriel Jesus",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  9,
+                        "nationality":  "Brazil",
+                        "player_id":  230666,
+                        "club_position":  "RES",
+                        "long_name":  "Gabriel Fernando de Jesus",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Nørgaard",
+                        "overall":  80,
+                        "potential":  80,
+                        "club_jersey_number":  16,
+                        "nationality":  "Denmark",
+                        "player_id":  210697,
+                        "club_position":  "SUB",
+                        "long_name":  "Christian Thers Nørgaard",
+                        "age":  31,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Madueke",
+                        "overall":  80,
+                        "potential":  84,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  254796,
+                        "club_position":  "SUB",
+                        "long_name":  "Chukwunonso Tristan Madueke",
+                        "age":  23,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Trossard",
+                        "overall":  83,
+                        "potential":  83,
+                        "club_jersey_number":  19,
+                        "nationality":  "Belgium",
+                        "player_id":  207421,
+                        "club_position":  "LW",
+                        "long_name":  "Leandro Trossard",
+                        "age":  30,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Timber",
+                        "overall":  82,
+                        "potential":  85,
+                        "club_jersey_number":  12,
+                        "nationality":  "Netherlands",
+                        "player_id":  251805,
+                        "club_position":  "RB",
+                        "long_name":  "Jurriën David Norman Timber",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Hincapié",
+                        "overall":  83,
+                        "potential":  89,
+                        "club_jersey_number":  5,
+                        "nationality":  "Ecuador",
+                        "player_id":  256197,
+                        "club_position":  "SUB",
+                        "long_name":  "Piero Martín Hincapié Reyna",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Saliba",
+                        "overall":  87,
+                        "potential":  89,
+                        "club_jersey_number":  2,
+                        "nationality":  "France",
+                        "player_id":  243715,
+                        "club_position":  "RCB",
+                        "long_name":  "William Alain André Gabriel Saliba",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Nwaneri",
+                        "overall":  76,
+                        "potential":  87,
+                        "club_jersey_number":  22,
+                        "nationality":  "England",
+                        "player_id":  271807,
+                        "club_position":  "SUB",
+                        "long_name":  "Ethan Chidiebere Nwaneri",
+                        "age":  18,
+                        "positions":  [
+                                          "RW",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. White",
+                        "overall":  83,
+                        "potential":  83,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  231936,
+                        "club_position":  "SUB",
+                        "long_name":  "Benjamin William White",
+                        "age":  27,
+                        "positions":  [
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Gabriel",
+                        "overall":  88,
+                        "potential":  88,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  232580,
+                        "club_position":  "LCB",
+                        "long_name":  "Gabriel dos Santos Magalhães",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Mosquera",
+                        "overall":  77,
+                        "potential":  85,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  264846,
+                        "club_position":  "SUB",
+                        "long_name":  "Cristhian Andrey Mosquera Ibarguen",
+                        "age":  21,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "David Raya",
+                        "overall":  87,
+                        "potential":  87,
+                        "club_jersey_number":  1,
+                        "nationality":  "Spain",
+                        "player_id":  220901,
+                        "club_position":  "GK",
+                        "long_name":  "David Raya Martín",
+                        "age":  29,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Kepa",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  13,
+                        "nationality":  "Spain",
+                        "player_id":  206585,
+                        "club_position":  "SUB",
+                        "long_name":  "Kepa Arrizabalaga Revuelta",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

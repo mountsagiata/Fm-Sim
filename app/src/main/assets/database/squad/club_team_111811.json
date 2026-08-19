@@ -1,0 +1,425 @@
+﻿{
+    "metadata":  {
+                     "total_players":  28,
+                     "club_name":  "Monza",
+                     "league_name":  "Serie B",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111811
+                 },
+    "players":  [
+                    {
+                        "short_name":  "A. Colpani",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  28,
+                        "nationality":  "Italy",
+                        "player_id":  251988,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrea Colpani",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Pessina",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  32,
+                        "nationality":  "Italy",
+                        "player_id":  239613,
+                        "club_position":  "LCM",
+                        "long_name":  "Matteo Pessina",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ciurria",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  26,
+                        "nationality":  "Italy",
+                        "player_id":  219812,
+                        "club_position":  "LAM",
+                        "long_name":  "Patrick Ciurria",
+                        "age":  30,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Paulo Azzi",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Brazil",
+                        "player_id":  222388,
+                        "club_position":  "LM",
+                        "long_name":  "Paulo Daniel Dentello Azzi",
+                        "age":  30,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Birindelli",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  19,
+                        "nationality":  "Italy",
+                        "player_id":  237003,
+                        "club_position":  "RM",
+                        "long_name":  "Samuele Birindelli",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Caprari",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  10,
+                        "nationality":  "Italy",
+                        "player_id":  202848,
+                        "club_position":  "RAM",
+                        "long_name":  "Gianluca Caprari",
+                        "age":  31,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Dany Mota",
+                        "overall":  75,
+                        "potential":  75,
+                        "club_jersey_number":  47,
+                        "nationality":  "Portugal",
+                        "player_id":  234147,
+                        "club_position":  "ST",
+                        "long_name":  "Dany Mota Carvalho",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Álvarez",
+                        "overall":  72,
+                        "potential":  78,
+                        "club_jersey_number":  25,
+                        "nationality":  "Uruguay",
+                        "player_id":  258846,
+                        "club_position":  "RES",
+                        "long_name":  "Agustín Álvarez Martínez",
+                        "age":  24,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Pedro Obiang",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  14,
+                        "nationality":  "Equatorial Guinea",
+                        "player_id":  200054,
+                        "club_position":  "RCM",
+                        "long_name":  "Pedro Mba Obiang Avomo",
+                        "age":  33,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Baldé",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  17,
+                        "nationality":  "Senegal",
+                        "player_id":  215785,
+                        "club_position":  "SUB",
+                        "long_name":  "Keita Baldé Diao",
+                        "age":  30,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Zeroli",
+                        "overall":  65,
+                        "potential":  78,
+                        "club_jersey_number":  18,
+                        "nationality":  "Italy",
+                        "player_id":  278351,
+                        "club_position":  "RES",
+                        "long_name":  "Kevin Zeroli",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Galazzi",
+                        "overall":  67,
+                        "potential":  73,
+                        "club_jersey_number":  23,
+                        "nationality":  "Italy",
+                        "player_id":  264372,
+                        "club_position":  "SUB",
+                        "long_name":  "Nicolas Galazzi",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Petagna",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  37,
+                        "nationality":  "Italy",
+                        "player_id":  215689,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrea Petagna",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Brorsson",
+                        "overall":  66,
+                        "potential":  69,
+                        "club_jersey_number":  2,
+                        "nationality":  "Sweden",
+                        "player_id":  238703,
+                        "club_position":  "SUB",
+                        "long_name":  "Arvid Brorsson",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Izzo",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  4,
+                        "nationality":  "Italy",
+                        "player_id":  216145,
+                        "club_position":  "CB",
+                        "long_name":  "Armando Izzo",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Antov",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  74,
+                        "nationality":  "Bulgaria",
+                        "player_id":  248199,
+                        "club_position":  "SUB",
+                        "long_name":  "Valentin AntovВалентин Ивайлов Антов",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Carboni",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  44,
+                        "nationality":  "Italy",
+                        "player_id":  257000,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrea Carboni",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Marić",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  9,
+                        "nationality":  "Croatia",
+                        "player_id":  258027,
+                        "club_position":  "RES",
+                        "long_name":  "Mirko Marić",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Colombo",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  21,
+                        "nationality":  "Italy",
+                        "player_id":  71805,
+                        "club_position":  "SUB",
+                        "long_name":  "Leonardo Colombo",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Forson",
+                        "overall":  65,
+                        "potential":  77,
+                        "club_jersey_number":  75,
+                        "nationality":  "England",
+                        "player_id":  268437,
+                        "club_position":  "RES",
+                        "long_name":  "Omari Nathan Forson",
+                        "age":  20,
+                        "positions":  [
+                                          "RM",
+                                          "CAM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Ravanelli",
+                        "overall":  70,
+                        "potential":  71,
+                        "club_jersey_number":  13,
+                        "nationality":  "Italy",
+                        "player_id":  245091,
+                        "club_position":  "RCB",
+                        "long_name":  "Luca Ravanelli",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Martins",
+                        "overall":  62,
+                        "potential":  74,
+                        "club_jersey_number":  70,
+                        "nationality":  "Italy",
+                        "player_id":  75256,
+                        "club_position":  "RES",
+                        "long_name":  "Kevin Maussi Martins",
+                        "age":  20,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Sardo",
+                        "overall":  58,
+                        "potential":  73,
+                        "club_jersey_number":  16,
+                        "nationality":  "Italy",
+                        "player_id":  74010,
+                        "club_position":  "SUB",
+                        "long_name":  "Jacopo Sardo",
+                        "age":  20,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Delli Carri",
+                        "overall":  69,
+                        "potential":  72,
+                        "club_jersey_number":  15,
+                        "nationality":  "Italy",
+                        "player_id":  237612,
+                        "club_position":  "SUB",
+                        "long_name":  "Filippo Delli Carri",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Lucchesi",
+                        "overall":  65,
+                        "potential":  76,
+                        "club_jersey_number":  3,
+                        "nationality":  "Italy",
+                        "player_id":  278305,
+                        "club_position":  "LCB",
+                        "long_name":  "Lorenzo Lucchesi",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Pizzignacco",
+                        "overall":  67,
+                        "potential":  75,
+                        "club_jersey_number":  1,
+                        "nationality":  "Italy",
+                        "player_id":  268875,
+                        "club_position":  "SUB",
+                        "long_name":  "Semuel Pizzignacco",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Thiam",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  20,
+                        "nationality":  "Senegal",
+                        "player_id":  237127,
+                        "club_position":  "GK",
+                        "long_name":  "Demba Thiam Ngagne",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Mazza",
+                        "overall":  56,
+                        "potential":  68,
+                        "club_jersey_number":  69,
+                        "nationality":  "Italy",
+                        "player_id":  70251,
+                        "club_position":  "SUB",
+                        "long_name":  "Andrea Sergio Mazza",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

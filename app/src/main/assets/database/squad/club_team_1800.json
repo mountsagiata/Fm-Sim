@@ -1,0 +1,357 @@
+﻿{
+    "metadata":  {
+                     "total_players":  23,
+                     "club_name":  "Coventry City",
+                     "league_name":  "Championship",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  1800
+                 },
+    "players":  [
+                    {
+                        "short_name":  "J. Rudoni",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  5,
+                        "nationality":  "England",
+                        "player_id":  251690,
+                        "club_position":  "CAM",
+                        "long_name":  "Jack Edward Rudoni",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. van Ewijk",
+                        "overall":  74,
+                        "potential":  79,
+                        "club_jersey_number":  27,
+                        "nationality":  "Netherlands",
+                        "player_id":  251626,
+                        "club_position":  "RB",
+                        "long_name":  "Milan Fabrizio van Ewijk",
+                        "age":  24,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Grimes",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  6,
+                        "nationality":  "England",
+                        "player_id":  212118,
+                        "club_position":  "LDM",
+                        "long_name":  "Matthew Jacob Grimes",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Torp",
+                        "overall":  70,
+                        "potential":  73,
+                        "club_jersey_number":  29,
+                        "nationality":  "Denmark",
+                        "player_id":  241645,
+                        "club_position":  "RDM",
+                        "long_name":  "VIctor Torp Overgaard",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Sakamoto",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  7,
+                        "nationality":  "Japan",
+                        "player_id":  254910,
+                        "club_position":  "RM",
+                        "long_name":  "Tatsuhiro Sakamoto坂元 達裕",
+                        "age":  28,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Allen",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  8,
+                        "nationality":  "England",
+                        "player_id":  213147,
+                        "club_position":  "SUB",
+                        "long_name":  "Jamie Paul Allen",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Eccles",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  28,
+                        "nationality":  "England",
+                        "player_id":  251555,
+                        "club_position":  "SUB",
+                        "long_name":  "Joshua Elliot Eccles",
+                        "age":  25,
+                        "positions":  [
+                                          "CDM",
+                                          "CM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Kesler-Hayden",
+                        "overall":  72,
+                        "potential":  79,
+                        "club_jersey_number":  20,
+                        "nationality":  "England",
+                        "player_id":  261335,
+                        "club_position":  "SUB",
+                        "long_name":  "Kaine Kesler-Hayden",
+                        "age":  22,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Mason-Clark",
+                        "overall":  71,
+                        "potential":  72,
+                        "club_jersey_number":  10,
+                        "nationality":  "England",
+                        "player_id":  236784,
+                        "club_position":  "LM",
+                        "long_name":  "Ephron Jardell Mason-Clark",
+                        "age":  25,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Wright",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  11,
+                        "nationality":  "United States",
+                        "player_id":  238743,
+                        "club_position":  "ST",
+                        "long_name":  "Haji Amir Wright",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Thomas-Asante",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  23,
+                        "nationality":  "Ghana",
+                        "player_id":  235744,
+                        "club_position":  "SUB",
+                        "long_name":  "Solomon Brandon Michael Clarke Thomas-Asante",
+                        "age":  26,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Bidwell",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  21,
+                        "nationality":  "England",
+                        "player_id":  196952,
+                        "club_position":  "SUB",
+                        "long_name":  "Jake Brian Bidwell",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Dasilva",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "Wales",
+                        "player_id":  232755,
+                        "club_position":  "LB",
+                        "long_name":  "Jay Rhys Dasilva",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Brau",
+                        "overall":  68,
+                        "potential":  74,
+                        "club_jersey_number":  33,
+                        "nationality":  "Spain",
+                        "player_id":  72423,
+                        "club_position":  "SUB",
+                        "long_name":  "Miguel Ángel Brau Blánquez",
+                        "age":  23,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Simms",
+                        "overall":  70,
+                        "potential":  77,
+                        "club_jersey_number":  9,
+                        "nationality":  "England",
+                        "player_id":  251198,
+                        "club_position":  "SUB",
+                        "long_name":  "Ellis Reco Simms",
+                        "age":  24,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Woolfenden",
+                        "overall":  73,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "England",
+                        "player_id":  240500,
+                        "club_position":  "SUB",
+                        "long_name":  "Luke Matthew Woolfenden",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Andrews",
+                        "overall":  60,
+                        "potential":  75,
+                        "club_jersey_number":  54,
+                        "nationality":  "Wales",
+                        "player_id":  277657,
+                        "club_position":  "SUB",
+                        "long_name":  "Kai Andrews",
+                        "age":  18,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Thomas",
+                        "overall":  71,
+                        "potential":  77,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  257253,
+                        "club_position":  "RCB",
+                        "long_name":  "Bobby Craig Thomas",
+                        "age":  24,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Latibeaudiere",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  22,
+                        "nationality":  "Jamaica",
+                        "player_id":  233047,
+                        "club_position":  "SUB",
+                        "long_name":  "Joel Owen Latibeaudiere",
+                        "age":  25,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Kitching",
+                        "overall":  70,
+                        "potential":  76,
+                        "club_jersey_number":  15,
+                        "nationality":  "England",
+                        "player_id":  246873,
+                        "club_position":  "LCB",
+                        "long_name":  "Liam James Kitching",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Rushworth",
+                        "overall":  72,
+                        "potential":  80,
+                        "club_jersey_number":  19,
+                        "nationality":  "England",
+                        "player_id":  263339,
+                        "club_position":  "GK",
+                        "long_name":  "Carl Andrew Rushworth",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Wilson",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  13,
+                        "nationality":  "England",
+                        "player_id":  204825,
+                        "club_position":  "SUB",
+                        "long_name":  "Ben Wilson",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Dovin",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  1,
+                        "nationality":  "Sweden",
+                        "player_id":  255976,
+                        "club_position":  "SUB",
+                        "long_name":  "Oliver Lukas Dozae Nnonyelu Dovin",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

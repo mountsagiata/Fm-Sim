@@ -1,0 +1,462 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Alianza Lima",
+                     "league_name":  "Liga 1",
+                     "extract_date":  "2026-05-13 22:22:42",
+                     "club_team_id":  111010
+                 },
+    "players":  [
+                    {
+                        "short_name":  "S. Peña",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  18,
+                        "nationality":  "Peru",
+                        "player_id":  236259,
+                        "club_position":  "LCM",
+                        "long_name":  "Sergio Fernando Peña Flores",
+                        "age":  29,
+                        "positions":  [
+                                          "CM",
+                                          "CAM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Gaibor",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Ecuador",
+                        "player_id":  233529,
+                        "club_position":  "RCM",
+                        "long_name":  "Fernando Vicente Gaibor Orellana",
+                        "age":  33,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Trauco",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  21,
+                        "nationality":  "Peru",
+                        "player_id":  225706,
+                        "club_position":  "LB",
+                        "long_name":  "Miguel Ángel Trauco Saavedra",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Archimbaud",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Peru",
+                        "player_id":  254373,
+                        "club_position":  "SUB",
+                        "long_name":  "Jean Pierre Archimbaud Arriarán",
+                        "age":  30,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Lavandeira",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  20,
+                        "nationality":  "Uruguay",
+                        "player_id":  253771,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Damián Lavandeira Hernández",
+                        "age":  35,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Ceppelini",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  10,
+                        "nationality":  "Uruguay",
+                        "player_id":  202558,
+                        "club_position":  "SUB",
+                        "long_name":  "Pablo Daniel Ceppelini Gatto",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Gentile",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  25,
+                        "nationality":  "Argentina",
+                        "player_id":  240211,
+                        "club_position":  "RES",
+                        "long_name":  "Gaspar Gentile",
+                        "age":  30,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Barcos",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  9,
+                        "nationality":  "Argentina",
+                        "player_id":  191856,
+                        "club_position":  "ST",
+                        "long_name":  "Hernán Barcos",
+                        "age":  41,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "E. Castillo",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  8,
+                        "nationality":  "Ecuador",
+                        "player_id":  244464,
+                        "club_position":  "RM",
+                        "long_name":  "Eryc Leonel Castillo Arroyo",
+                        "age":  30,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Enrique",
+                        "overall":  69,
+                        "potential":  73,
+                        "club_jersey_number":  22,
+                        "nationality":  "Argentina",
+                        "player_id":  265609,
+                        "club_position":  "RB",
+                        "long_name":  "Guillermo Nicolás Enrique",
+                        "age":  25,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Estrada",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  3,
+                        "nationality":  "Peru",
+                        "player_id":  259802,
+                        "club_position":  "RES",
+                        "long_name":  "Josué Daniel Estrada Aguilar",
+                        "age":  28,
+                        "positions":  [
+                                          "RB",
+                                          "LB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Zambrano",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  5,
+                        "nationality":  "Peru",
+                        "player_id":  187132,
+                        "club_position":  "RCB",
+                        "long_name":  "Carlos Augusto Zambrano Ochandarte",
+                        "age":  35,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Quevedo",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  27,
+                        "nationality":  "Peru",
+                        "player_id":  253549,
+                        "club_position":  "LM",
+                        "long_name":  "Kevin Martín Quevedo Mathey",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "ST",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Guerrero",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  34,
+                        "nationality":  "Peru",
+                        "player_id":  150525,
+                        "club_position":  "SUB",
+                        "long_name":  "José Paolo Guerrero Gonzáles",
+                        "age":  41,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Huamán",
+                        "overall":  65,
+                        "potential":  73,
+                        "club_jersey_number":  14,
+                        "nationality":  "Peru",
+                        "player_id":  261563,
+                        "club_position":  "SUB",
+                        "long_name":  "Marco Lenhyn Huamán Asís",
+                        "age":  22,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Lagos",
+                        "overall":  66,
+                        "potential":  66,
+                        "club_jersey_number":  13,
+                        "nationality":  "Peru",
+                        "player_id":  259776,
+                        "club_position":  "SUB",
+                        "long_name":  "Ricardo César Lagos Puyén",
+                        "age":  29,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Cantero",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  19,
+                        "nationality":  "Argentina",
+                        "player_id":  258149,
+                        "club_position":  "SUB",
+                        "long_name":  "Alan Martín Cantero",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Castillo",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  15,
+                        "nationality":  "Peru",
+                        "player_id":  274011,
+                        "club_position":  "SUB",
+                        "long_name":  "Jesús Castillo Peña",
+                        "age":  29,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Gómez",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  44,
+                        "nationality":  "Peru",
+                        "player_id":  77603,
+                        "club_position":  "SUB",
+                        "long_name":  "Carlos Daniel Gómez Cassani",
+                        "age":  20,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Burlamaqui",
+                        "overall":  64,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Peru",
+                        "player_id":  263825,
+                        "club_position":  "CDM",
+                        "long_name":  "Alessandro Burlamaqui Apaolaza",
+                        "age":  23,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Garcés",
+                        "overall":  71,
+                        "potential":  72,
+                        "club_jersey_number":  6,
+                        "nationality":  "Peru",
+                        "player_id":  259657,
+                        "club_position":  "LCB",
+                        "long_name":  "Renzo Renato Garcés Mori",
+                        "age":  29,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Succar",
+                        "overall":  64,
+                        "potential":  67,
+                        "club_jersey_number":  16,
+                        "nationality":  "Peru",
+                        "player_id":  260643,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Matías Succar Cañote",
+                        "age":  26,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Chávez",
+                        "overall":  68,
+                        "potential":  71,
+                        "club_jersey_number":  24,
+                        "nationality":  "Peru",
+                        "player_id":  253586,
+                        "club_position":  "SUB",
+                        "long_name":  "Gianfranco Chávez Massoni",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Cari",
+                        "overall":  63,
+                        "potential":  76,
+                        "club_jersey_number":  51,
+                        "nationality":  "Peru",
+                        "player_id":  79230,
+                        "club_position":  "RES",
+                        "long_name":  "Mart Piero Cari Velarde",
+                        "age":  17,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Delgado",
+                        "overall":  59,
+                        "potential":  72,
+                        "club_jersey_number":  37,
+                        "nationality":  "Peru",
+                        "player_id":  81452,
+                        "club_position":  "RES",
+                        "long_name":  "Juan Delgado",
+                        "age":  20,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Velásquez",
+                        "overall":  59,
+                        "potential":  73,
+                        "club_jersey_number":  35,
+                        "nationality":  "Peru",
+                        "player_id":  77604,
+                        "club_position":  "RES",
+                        "long_name":  "Jhoao Velásquez Chumpitazi",
+                        "age":  19,
+                        "positions":  [
+                                          "CB",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Arias",
+                        "overall":  56,
+                        "potential":  70,
+                        "club_jersey_number":  29,
+                        "nationality":  "Peru",
+                        "player_id":  81453,
+                        "club_position":  "RES",
+                        "long_name":  "Brian Arias",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. Campos",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  1,
+                        "nationality":  "Peru",
+                        "player_id":  254198,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángelo Ademir Campos Turriate",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "G. Viscarra",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  23,
+                        "nationality":  "Bolivia",
+                        "player_id":  236241,
+                        "club_position":  "GK",
+                        "long_name":  "Guillermo Viscarra Bruckner",
+                        "age":  32,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Á. De La Cruz",
+                        "overall":  61,
+                        "potential":  71,
+                        "club_jersey_number":  12,
+                        "nationality":  "Peru",
+                        "player_id":  270939,
+                        "club_position":  "SUB",
+                        "long_name":  "Ángel Alberto de la Cruz Arias",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

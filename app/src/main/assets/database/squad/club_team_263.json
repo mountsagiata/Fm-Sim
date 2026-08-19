@@ -1,0 +1,458 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Hajduk Split",
+                     "league_name":  "Hrvatska nogometna liga",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  263
+                 },
+    "players":  [
+                    {
+                        "short_name":  "M. Livaja",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  10,
+                        "nationality":  "Croatia",
+                        "player_id":  205855,
+                        "club_position":  "ST",
+                        "long_name":  "Marko Livaja",
+                        "age":  31,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Rebić",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  9,
+                        "nationality":  "Croatia",
+                        "player_id":  220018,
+                        "club_position":  "RES",
+                        "long_name":  "Ante Rebić",
+                        "age":  31,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Pukštas",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  21,
+                        "nationality":  "United States",
+                        "player_id":  272346,
+                        "club_position":  "SUB",
+                        "long_name":  "Rokas Pukštas",
+                        "age":  20,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Hugo Guillamón",
+                        "overall":  72,
+                        "potential":  77,
+                        "club_jersey_number":  6,
+                        "nationality":  "Spain",
+                        "player_id":  246352,
+                        "club_position":  "SUB",
+                        "long_name":  "Hugo Guillamón Sanmartín",
+                        "age":  25,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Kalik",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  7,
+                        "nationality":  "Australia",
+                        "player_id":  225054,
+                        "club_position":  "RCM",
+                        "long_name":  "Anthony Kalik",
+                        "age":  27,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Sigur",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  8,
+                        "nationality":  "Canada",
+                        "player_id":  275238,
+                        "club_position":  "RW",
+                        "long_name":  "Niko Kristian Sigur",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "CDM",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Krovinović",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  23,
+                        "nationality":  "Croatia",
+                        "player_id":  230988,
+                        "club_position":  "LCM",
+                        "long_name":  "Filip Krovinović",
+                        "age":  29,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Melnjak",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  17,
+                        "nationality":  "Croatia",
+                        "player_id":  227584,
+                        "club_position":  "SUB",
+                        "long_name":  "Dario Melnjak",
+                        "age":  32,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Š. Hrgović",
+                        "overall":  70,
+                        "potential":  82,
+                        "club_jersey_number":  32,
+                        "nationality":  "Croatia",
+                        "player_id":  279188,
+                        "club_position":  "LB",
+                        "long_name":  "Šimun Hrgović",
+                        "age":  21,
+                        "positions":  [
+                                          "LB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Šego",
+                        "overall":  69,
+                        "potential":  71,
+                        "club_jersey_number":  15,
+                        "nationality":  "Croatia",
+                        "player_id":  76461,
+                        "club_position":  "SUB",
+                        "long_name":  "Michele Šego",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pajaziti",
+                        "overall":  65,
+                        "potential":  75,
+                        "club_jersey_number":  4,
+                        "nationality":  "Albania",
+                        "player_id":  270680,
+                        "club_position":  "CM",
+                        "long_name":  "Adrion Pajaziti",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "LM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Y. Benrahou",
+                        "overall":  67,
+                        "potential":  69,
+                        "club_jersey_number":  45,
+                        "nationality":  "Morocco",
+                        "player_id":  244863,
+                        "club_position":  "SUB",
+                        "long_name":  "Yassine Benrahouياسين بنرحو",
+                        "age":  26,
+                        "positions":  [
+                                          "CAM",
+                                          "RM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "F. Karačić",
+                        "overall":  68,
+                        "potential":  68,
+                        "club_jersey_number":  29,
+                        "nationality":  "Australia",
+                        "player_id":  243473,
+                        "club_position":  "RB",
+                        "long_name":  "Fran Karačić",
+                        "age":  29,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Edgar",
+                        "overall":  71,
+                        "potential":  72,
+                        "club_jersey_number":  3,
+                        "nationality":  "Spain",
+                        "player_id":  247500,
+                        "club_position":  "SUB",
+                        "long_name":  "Edgar González Estrada",
+                        "age":  28,
+                        "positions":  [
+                                          "CB",
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Diallo",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  231527,
+                        "club_position":  "RCB",
+                        "long_name":  "Ismaël Jean Chester Diallo",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "CB",
+                                          "RB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Sanyang",
+                        "overall":  67,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Gambia",
+                        "player_id":  257831,
+                        "club_position":  "SUB",
+                        "long_name":  "Abdoulie Bamba Sanyang",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Durdov",
+                        "overall":  64,
+                        "potential":  84,
+                        "club_jersey_number":  34,
+                        "nationality":  "Croatia",
+                        "player_id":  74626,
+                        "club_position":  "RES",
+                        "long_name":  "Bruno Durdov",
+                        "age":  17,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Jurak",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  35,
+                        "nationality":  "Croatia",
+                        "player_id":  72384,
+                        "club_position":  "SUB",
+                        "long_name":  "Luka Jurak",
+                        "age":  19,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Skoko",
+                        "overall":  62,
+                        "potential":  76,
+                        "club_jersey_number":  37,
+                        "nationality":  "Croatia",
+                        "player_id":  74070,
+                        "club_position":  "SUB",
+                        "long_name":  "Noa Skoko",
+                        "age":  19,
+                        "positions":  [
+                                          "CAM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Capan",
+                        "overall":  63,
+                        "potential":  75,
+                        "club_jersey_number":  26,
+                        "nationality":  "Croatia",
+                        "player_id":  274220,
+                        "club_position":  "SUB",
+                        "long_name":  "Marko Capan",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Brajković",
+                        "overall":  62,
+                        "potential":  77,
+                        "club_jersey_number":  28,
+                        "nationality":  "Croatia",
+                        "player_id":  274554,
+                        "club_position":  "LW",
+                        "long_name":  "Roko Brajković",
+                        "age":  19,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "ST",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Z. Šarlija",
+                        "overall":  69,
+                        "potential":  70,
+                        "club_jersey_number":  31,
+                        "nationality":  "Croatia",
+                        "player_id":  251343,
+                        "club_position":  "LCB",
+                        "long_name":  "Zvonimir Šarlija",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Raçi",
+                        "overall":  65,
+                        "potential":  72,
+                        "club_jersey_number":  14,
+                        "nationality":  "Kosovo",
+                        "player_id":  80216,
+                        "club_position":  "SUB",
+                        "long_name":  "Ron Raçi",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Mlačić",
+                        "overall":  61,
+                        "potential":  76,
+                        "club_jersey_number":  22,
+                        "nationality":  "Croatia",
+                        "player_id":  80380,
+                        "club_position":  "RES",
+                        "long_name":  "Branimir Mlačić",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Iker Almena",
+                        "overall":  63,
+                        "potential":  78,
+                        "club_jersey_number":  30,
+                        "nationality":  "Spain",
+                        "player_id":  278759,
+                        "club_position":  "RES",
+                        "long_name":  "Iker Almena Horcajo",
+                        "age":  21,
+                        "positions":  [
+                                          "RM",
+                                          "LM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Skelin",
+                        "overall":  60,
+                        "potential":  80,
+                        "club_jersey_number":  36,
+                        "nationality":  "Croatia",
+                        "player_id":  80405,
+                        "club_position":  "RES",
+                        "long_name":  "Marino Skelin",
+                        "age":  18,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Lučić",
+                        "overall":  68,
+                        "potential":  69,
+                        "club_jersey_number":  13,
+                        "nationality":  "Austria",
+                        "player_id":  210347,
+                        "club_position":  "SUB",
+                        "long_name":  "Ivan Lučić",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Ivušić",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  1,
+                        "nationality":  "Croatia",
+                        "player_id":  242288,
+                        "club_position":  "GK",
+                        "long_name":  "Ivica Ivušić",
+                        "age":  30,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Silić",
+                        "overall":  62,
+                        "potential":  75,
+                        "club_jersey_number":  33,
+                        "nationality":  "Croatia",
+                        "player_id":  263057,
+                        "club_position":  "RES",
+                        "long_name":  "Toni Silić",
+                        "age":  21,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

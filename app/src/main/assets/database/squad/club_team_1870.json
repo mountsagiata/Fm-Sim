@@ -1,0 +1,382 @@
+﻿{
+    "metadata":  {
+                     "total_players":  25,
+                     "club_name":  "Östers IF",
+                     "league_name":  "Allsvenskan",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  1870
+                 },
+    "players":  [
+                    {
+                        "short_name":  "D. Ask",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  8,
+                        "nationality":  "Sweden",
+                        "player_id":  73051,
+                        "club_position":  "CDM",
+                        "long_name":  "Daniel Ask",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Rodić",
+                        "overall":  62,
+                        "potential":  62,
+                        "club_jersey_number":  23,
+                        "nationality":  "Montenegro",
+                        "player_id":  229620,
+                        "club_position":  "SUB",
+                        "long_name":  "Vladimir RodićВладимир Родић",
+                        "age":  31,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Lindahl",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  2,
+                        "nationality":  "Sweden",
+                        "player_id":  259920,
+                        "club_position":  "SUB",
+                        "long_name":  "Karl Axel Lindahl",
+                        "age":  30,
+                        "positions":  [
+                                          "RB",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Christensen",
+                        "overall":  63,
+                        "potential":  64,
+                        "club_jersey_number":  26,
+                        "nationality":  "Denmark",
+                        "player_id":  234982,
+                        "club_position":  "SUB",
+                        "long_name":  "Magnus Christensen",
+                        "age":  27,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Kouakou",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  29,
+                        "nationality":  "Sweden",
+                        "player_id":  202925,
+                        "club_position":  "SUB",
+                        "long_name":  "Onil Christian Kouakou",
+                        "age":  30,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Söderberg",
+                        "overall":  62,
+                        "potential":  69,
+                        "club_jersey_number":  6,
+                        "nationality":  "Sweden",
+                        "player_id":  261100,
+                        "club_position":  "SUB",
+                        "long_name":  "Noah Söderberg",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Olsson",
+                        "overall":  61,
+                        "potential":  64,
+                        "club_jersey_number":  14,
+                        "nationality":  "Sweden",
+                        "player_id":  260727,
+                        "club_position":  "RES",
+                        "long_name":  "Kim Dennis Olsson",
+                        "age":  26,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Ljung",
+                        "overall":  63,
+                        "potential":  66,
+                        "club_jersey_number":  18,
+                        "nationality":  "Sweden",
+                        "player_id":  76672,
+                        "club_position":  "RCM",
+                        "long_name":  "Daniel Ljung",
+                        "age":  26,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Sejdiu",
+                        "overall":  65,
+                        "potential":  68,
+                        "club_jersey_number":  24,
+                        "nationality":  "Sweden",
+                        "player_id":  255002,
+                        "club_position":  "RM",
+                        "long_name":  "Patriot Sejdiu",
+                        "age":  25,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Suhonen",
+                        "overall":  66,
+                        "potential":  71,
+                        "club_jersey_number":  7,
+                        "nationality":  "Finland",
+                        "player_id":  263310,
+                        "club_position":  "LCM",
+                        "long_name":  "Anssi Tapio Suhonen",
+                        "age":  24,
+                        "positions":  [
+                                          "CAM",
+                                          "CM",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Bergquist",
+                        "overall":  62,
+                        "potential":  67,
+                        "club_jersey_number":  21,
+                        "nationality":  "Sweden",
+                        "player_id":  76667,
+                        "club_position":  "LB",
+                        "long_name":  "Lukas Bergquist",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Söderberg",
+                        "overall":  60,
+                        "potential":  60,
+                        "club_jersey_number":  9,
+                        "nationality":  "Sweden",
+                        "player_id":  76676,
+                        "club_position":  "SUB",
+                        "long_name":  "Niklas Söderberg",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Aliev",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  20,
+                        "nationality":  "Sweden",
+                        "player_id":  227427,
+                        "club_position":  "ST",
+                        "long_name":  "Alibek Aliev",
+                        "age":  28,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Bladh Pijaca",
+                        "overall":  56,
+                        "potential":  69,
+                        "club_jersey_number":  11,
+                        "nationality":  "Sweden",
+                        "player_id":  76673,
+                        "club_position":  "RES",
+                        "long_name":  "Hannes Bladh Pijaca",
+                        "age":  19,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Uddenäs",
+                        "overall":  63,
+                        "potential":  70,
+                        "club_jersey_number":  10,
+                        "nationality":  "Sweden",
+                        "player_id":  266430,
+                        "club_position":  "LM",
+                        "long_name":  "Fredrik Oscar Olle Uddenäs",
+                        "age":  22,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "LM",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Tamminen",
+                        "overall":  63,
+                        "potential":  71,
+                        "club_jersey_number":  19,
+                        "nationality":  "Finland",
+                        "player_id":  76865,
+                        "club_position":  "SUB",
+                        "long_name":  "Matias Tamminen",
+                        "age":  23,
+                        "positions":  [
+                                          "RM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Voelkerling Persson",
+                        "overall":  62,
+                        "potential":  71,
+                        "club_jersey_number":  34,
+                        "nationality":  "Sweden",
+                        "player_id":  271494,
+                        "club_position":  "SUB",
+                        "long_name":  "Joel Axel Krister Voelkerling Persson",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Varmanen",
+                        "overall":  62,
+                        "potential":  63,
+                        "club_jersey_number":  33,
+                        "nationality":  "Sweden",
+                        "player_id":  76668,
+                        "club_position":  "RB",
+                        "long_name":  "Tatu Varmanen",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Kričak",
+                        "overall":  64,
+                        "potential":  65,
+                        "club_jersey_number":  15,
+                        "nationality":  "Serbia",
+                        "player_id":  261606,
+                        "club_position":  "LCB",
+                        "long_name":  "Ivan KričakИван Кричак",
+                        "age":  28,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Gyamfi",
+                        "overall":  64,
+                        "potential":  74,
+                        "club_jersey_number":  3,
+                        "nationality":  "Ghana",
+                        "player_id":  70577,
+                        "club_position":  "SUB",
+                        "long_name":  "Kingsley Gyamfi",
+                        "age":  21,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Adjei",
+                        "overall":  59,
+                        "potential":  68,
+                        "club_jersey_number":  16,
+                        "nationality":  "Sweden",
+                        "player_id":  76670,
+                        "club_position":  "SUB",
+                        "long_name":  "Raymond Adjei",
+                        "age":  21,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Adolfsson",
+                        "overall":  64,
+                        "potential":  69,
+                        "club_jersey_number":  5,
+                        "nationality":  "Sweden",
+                        "player_id":  76666,
+                        "club_position":  "RCB",
+                        "long_name":  "Mattis Adolfsson",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Starke Hedlund",
+                        "overall":  61,
+                        "potential":  61,
+                        "club_jersey_number":  4,
+                        "nationality":  "Sweden",
+                        "player_id":  232170,
+                        "club_position":  "SUB",
+                        "long_name":  "Björn Sebastian Starke Hedlund",
+                        "age":  30,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Wallinder",
+                        "overall":  63,
+                        "potential":  68,
+                        "club_jersey_number":  13,
+                        "nationality":  "Sweden",
+                        "player_id":  76663,
+                        "club_position":  "GK",
+                        "long_name":  "Robin Wallinder",
+                        "age":  26,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Lundahl Persson",
+                        "overall":  59,
+                        "potential":  65,
+                        "club_jersey_number":  32,
+                        "nationality":  "Sweden",
+                        "player_id":  76664,
+                        "club_position":  "SUB",
+                        "long_name":  "Carl Lundahl Persson",
+                        "age":  24,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

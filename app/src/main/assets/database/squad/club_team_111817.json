@@ -1,0 +1,447 @@
+﻿{
+    "metadata":  {
+                     "total_players":  29,
+                     "club_name":  "Paris FC",
+                     "league_name":  "Ligue 1",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  111817
+                 },
+    "players":  [
+                    {
+                        "short_name":  "P. Lees-Melou",
+                        "overall":  78,
+                        "potential":  78,
+                        "club_jersey_number":  33,
+                        "nationality":  "France",
+                        "player_id":  230020,
+                        "club_position":  "CDM",
+                        "long_name":  "Pierre Lees-Melou",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Traoré",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  14,
+                        "nationality":  "Mali",
+                        "player_id":  219789,
+                        "club_position":  "RB",
+                        "long_name":  "Hamari Traoré",
+                        "age":  33,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Lopez",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  21,
+                        "nationality":  "France",
+                        "player_id":  224030,
+                        "club_position":  "RCM",
+                        "long_name":  "Maxime Baila Lopez",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Simon",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  27,
+                        "nationality":  "Nigeria",
+                        "player_id":  216820,
+                        "club_position":  "LM",
+                        "long_name":  "Moses Daddy-Ajala Simon",
+                        "age":  29,
+                        "positions":  [
+                                          "LM",
+                                          "LW",
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Cafaro",
+                        "overall":  73,
+                        "potential":  73,
+                        "club_jersey_number":  13,
+                        "nationality":  "France",
+                        "player_id":  231236,
+                        "club_position":  "SUB",
+                        "long_name":  "Mathieu Cafaro",
+                        "age":  28,
+                        "positions":  [
+                                          "LM",
+                                          "RM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Marchetti",
+                        "overall":  70,
+                        "potential":  70,
+                        "club_jersey_number":  4,
+                        "nationality":  "France",
+                        "player_id":  228774,
+                        "club_position":  "LCM",
+                        "long_name":  "Vincent Marchetti",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Ikoné",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  93,
+                        "nationality":  "France",
+                        "player_id":  234612,
+                        "club_position":  "SUB",
+                        "long_name":  "Nanitamo Jonathan Ikoné",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Camara",
+                        "overall":  71,
+                        "potential":  71,
+                        "club_jersey_number":  17,
+                        "nationality":  "France",
+                        "player_id":  276398,
+                        "club_position":  "SUB",
+                        "long_name":  "Adama Mohamed Camara",
+                        "age":  28,
+                        "positions":  [
+                                          "CM",
+                                          "CDM",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Ollila",
+                        "overall":  68,
+                        "potential":  73,
+                        "club_jersey_number":  2,
+                        "nationality":  "Finland",
+                        "player_id":  272599,
+                        "club_position":  "RES",
+                        "long_name":  "Tuomas Ollila",
+                        "age":  25,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "I. Kebbal",
+                        "overall":  76,
+                        "potential":  76,
+                        "club_jersey_number":  10,
+                        "nationality":  "Algeria",
+                        "player_id":  257118,
+                        "club_position":  "RM",
+                        "long_name":  "Ilan Kais Kebbal",
+                        "age":  26,
+                        "positions":  [
+                                          "RM",
+                                          "RW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. De Smet",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  28,
+                        "nationality":  "Belgium",
+                        "player_id":  237331,
+                        "club_position":  "LB",
+                        "long_name":  "Thibault De Smet",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "W. Geubbels",
+                        "overall":  72,
+                        "potential":  79,
+                        "club_jersey_number":  9,
+                        "nationality":  "France",
+                        "player_id":  241266,
+                        "club_position":  "ST",
+                        "long_name":  "Willem Davnis Louis Didier Geubbels",
+                        "age":  23,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Dicko",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  12,
+                        "nationality":  "Mali",
+                        "player_id":  205559,
+                        "club_position":  "RES",
+                        "long_name":  "Nouha Dicko",
+                        "age":  33,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Otávio",
+                        "overall":  75,
+                        "potential":  81,
+                        "club_jersey_number":  6,
+                        "nationality":  "Brazil",
+                        "player_id":  275070,
+                        "club_position":  "LCB",
+                        "long_name":  "Otávio Ataíde da Silva",
+                        "age":  23,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Lopez",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  20,
+                        "nationality":  "Algeria",
+                        "player_id":  211240,
+                        "club_position":  "SUB",
+                        "long_name":  "Julien Yves Rémi Lopez Baila",
+                        "age":  33,
+                        "positions":  [
+                                          "CAM",
+                                          "LM",
+                                          "ST",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Krasso",
+                        "overall":  74,
+                        "potential":  74,
+                        "club_jersey_number":  11,
+                        "nationality":  "Côte d\u0026amp;apos;Ivoire",
+                        "player_id":  256731,
+                        "club_position":  "SUB",
+                        "long_name":  "Jean-Philippe Krasso",
+                        "age":  27,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Doucet",
+                        "overall":  68,
+                        "potential":  75,
+                        "club_jersey_number":  8,
+                        "nationality":  "France",
+                        "player_id":  270355,
+                        "club_position":  "SUB",
+                        "long_name":  "Lohann Doucet",
+                        "age":  22,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "T. Kolodziejczak",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  15,
+                        "nationality":  "France",
+                        "player_id":  190034,
+                        "club_position":  "SUB",
+                        "long_name":  "Timothée Christian Kolodziejczak",
+                        "age":  33,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "N. Sangui",
+                        "overall":  67,
+                        "potential":  79,
+                        "club_jersey_number":  19,
+                        "nationality":  "France",
+                        "player_id":  70012,
+                        "club_position":  "SUB",
+                        "long_name":  "Nhoa Ryan Sangui",
+                        "age":  19,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Gory",
+                        "overall":  69,
+                        "potential":  69,
+                        "club_jersey_number":  7,
+                        "nationality":  "France",
+                        "player_id":  234158,
+                        "club_position":  "SUB",
+                        "long_name":  "Alimami Gory",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "RM",
+                                          "LM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Alakouch",
+                        "overall":  65,
+                        "potential":  66,
+                        "club_jersey_number":  22,
+                        "nationality":  "Morocco",
+                        "player_id":  233767,
+                        "club_position":  "RES",
+                        "long_name":  "Sofiane Alakouchسفيان علكوش",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Chergui",
+                        "overall":  67,
+                        "potential":  70,
+                        "club_jersey_number":  31,
+                        "nationality":  "France",
+                        "player_id":  248477,
+                        "club_position":  "SUB",
+                        "long_name":  "Samir Sophian Chergui",
+                        "age":  26,
+                        "positions":  [
+                                          "CB",
+                                          "RB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Gueye",
+                        "overall":  64,
+                        "potential":  64,
+                        "club_jersey_number":  26,
+                        "nationality":  "Senegal",
+                        "player_id":  256689,
+                        "club_position":  "RES",
+                        "long_name":  "Mamadou Lamine Gueye",
+                        "age":  27,
+                        "positions":  [
+                                          "RM",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "P. Hamel",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  29,
+                        "nationality":  "France",
+                        "player_id":  236621,
+                        "club_position":  "SUB",
+                        "long_name":  "Pierre-Yves Hamel",
+                        "age":  31,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Mbow",
+                        "overall":  72,
+                        "potential":  76,
+                        "club_jersey_number":  5,
+                        "nationality":  "Senegal",
+                        "player_id":  247248,
+                        "club_position":  "RCB",
+                        "long_name":  "Mamadou Moustapha Mbow",
+                        "age":  25,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Pembélé",
+                        "overall":  62,
+                        "potential":  65,
+                        "club_jersey_number":  77,
+                        "nationality":  "France",
+                        "player_id":  258843,
+                        "club_position":  "RES",
+                        "long_name":  "Andy Pembélé",
+                        "age":  24,
+                        "positions":  [
+                                          "RM",
+                                          "ST",
+                                          "RW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Trapp",
+                        "overall":  81,
+                        "potential":  81,
+                        "club_jersey_number":  35,
+                        "nationality":  "Germany",
+                        "player_id":  188943,
+                        "club_position":  "SUB",
+                        "long_name":  "Kevin Christian Trapp",
+                        "age":  34,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Riou",
+                        "overall":  67,
+                        "potential":  67,
+                        "club_jersey_number":  1,
+                        "nationality":  "France",
+                        "player_id":  168965,
+                        "club_position":  "RES",
+                        "long_name":  "Rémy Riou",
+                        "age":  37,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "O. Nkambadio",
+                        "overall":  73,
+                        "potential":  81,
+                        "club_jersey_number":  16,
+                        "nationality":  "France",
+                        "player_id":  255266,
+                        "club_position":  "GK",
+                        "long_name":  "Obed Nkambadio",
+                        "age":  22,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}

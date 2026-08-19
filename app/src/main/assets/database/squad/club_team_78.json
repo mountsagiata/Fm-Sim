@@ -1,0 +1,458 @@
+﻿{
+    "metadata":  {
+                     "total_players":  30,
+                     "club_name":  "Celtic",
+                     "league_name":  "Premiership",
+                     "extract_date":  "2026-05-13 22:22:44",
+                     "club_team_id":  78
+                 },
+    "players":  [
+                    {
+                        "short_name":  "C. McGregor",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  42,
+                        "nationality":  "Scotland",
+                        "player_id":  211093,
+                        "club_position":  "CDM",
+                        "long_name":  "Callum William McGregor",
+                        "age":  32,
+                        "positions":  [
+                                          "CDM",
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Maeda",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  38,
+                        "nationality":  "Japan",
+                        "player_id":  246321,
+                        "club_position":  "ST",
+                        "long_name":  "Daizen Maeda前田 大然",
+                        "age":  27,
+                        "positions":  [
+                                          "LW",
+                                          "ST",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Engels",
+                        "overall":  75,
+                        "potential":  84,
+                        "club_jersey_number":  27,
+                        "nationality":  "Belgium",
+                        "player_id":  272874,
+                        "club_position":  "RCM",
+                        "long_name":  "Arne Engels",
+                        "age":  21,
+                        "positions":  [
+                                          "CM",
+                                          "CDM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Hatate",
+                        "overall":  76,
+                        "potential":  77,
+                        "club_jersey_number":  41,
+                        "nationality":  "Japan",
+                        "player_id":  255742,
+                        "club_position":  "LCM",
+                        "long_name":  "Reo Hatate旗手 怜央",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Paulo Bernardo",
+                        "overall":  73,
+                        "potential":  82,
+                        "club_jersey_number":  28,
+                        "nationality":  "Portugal",
+                        "player_id":  263439,
+                        "club_position":  "SUB",
+                        "long_name":  "Paulo Guilherme Gonçalves Bernardo",
+                        "age":  23,
+                        "positions":  [
+                                          "CM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Johnston",
+                        "overall":  78,
+                        "potential":  81,
+                        "club_jersey_number":  2,
+                        "nationality":  "Canada",
+                        "player_id":  256107,
+                        "club_position":  "RES",
+                        "long_name":  "Alistair William Johnston",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Tierney",
+                        "overall":  77,
+                        "potential":  77,
+                        "club_jersey_number":  63,
+                        "nationality":  "Scotland",
+                        "player_id":  226491,
+                        "club_position":  "LB",
+                        "long_name":  "Kieran Tierney",
+                        "age":  28,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. McCowan",
+                        "overall":  73,
+                        "potential":  74,
+                        "club_jersey_number":  14,
+                        "nationality":  "Scotland",
+                        "player_id":  262525,
+                        "club_position":  "SUB",
+                        "long_name":  "Luke McCowan",
+                        "age":  27,
+                        "positions":  [
+                                          "CM",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "B. Nygren",
+                        "overall":  73,
+                        "potential":  79,
+                        "club_jersey_number":  8,
+                        "nationality":  "Sweden",
+                        "player_id":  243646,
+                        "club_position":  "RW",
+                        "long_name":  "Erik Benjamin Nygren",
+                        "age":  23,
+                        "positions":  [
+                                          "CM",
+                                          "RW",
+                                          "LW",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Saracchi",
+                        "overall":  72,
+                        "potential":  73,
+                        "club_jersey_number":  36,
+                        "nationality":  "Uruguay",
+                        "player_id":  240976,
+                        "club_position":  "SUB",
+                        "long_name":  "Marcelo Josemir Saracchi Pintos",
+                        "age":  27,
+                        "positions":  [
+                                          "LB",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "M. Balikwisha",
+                        "overall":  74,
+                        "potential":  80,
+                        "club_jersey_number":  10,
+                        "nationality":  "Belgium",
+                        "player_id":  257208,
+                        "club_position":  "LW",
+                        "long_name":  "Michel-Ange Balikwisha",
+                        "age":  24,
+                        "positions":  [
+                                          "LW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Ralston",
+                        "overall":  71,
+                        "potential":  74,
+                        "club_jersey_number":  56,
+                        "nationality":  "Scotland",
+                        "player_id":  234072,
+                        "club_position":  "RB",
+                        "long_name":  "Anthony Ralston",
+                        "age":  26,
+                        "positions":  [
+                                          "RB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Jota",
+                        "overall":  77,
+                        "potential":  78,
+                        "club_jersey_number":  7,
+                        "nationality":  "Portugal",
+                        "player_id":  234570,
+                        "club_position":  "RES",
+                        "long_name":  "João Pedro Neves Filipe",
+                        "age":  26,
+                        "positions":  [
+                                          "LW",
+                                          "RW",
+                                          "LM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "L. Scales",
+                        "overall":  75,
+                        "potential":  77,
+                        "club_jersey_number":  5,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  246991,
+                        "club_position":  "LCB",
+                        "long_name":  "Liam Scales",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Iheanacho",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  17,
+                        "nationality":  "Nigeria",
+                        "player_id":  225719,
+                        "club_position":  "SUB",
+                        "long_name":  "Kelechi Promise Iheanacho",
+                        "age":  28,
+                        "positions":  [
+                                          "ST",
+                                          "CAM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "Yang Hyun Jun",
+                        "overall":  70,
+                        "potential":  79,
+                        "club_jersey_number":  13,
+                        "nationality":  "Korea Republic",
+                        "player_id":  260397,
+                        "club_position":  "SUB",
+                        "long_name":  "Hyun-jun Yang양현준",
+                        "age":  23,
+                        "positions":  [
+                                          "RW",
+                                          "LW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Forrest",
+                        "overall":  72,
+                        "potential":  72,
+                        "club_jersey_number":  49,
+                        "nationality":  "Scotland",
+                        "player_id":  200630,
+                        "club_position":  "SUB",
+                        "long_name":  "James Forrest",
+                        "age":  33,
+                        "positions":  [
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Carter-Vickers",
+                        "overall":  79,
+                        "potential":  82,
+                        "club_jersey_number":  20,
+                        "nationality":  "United States",
+                        "player_id":  228174,
+                        "club_position":  "RCB",
+                        "long_name":  "Cameron Robert Carter-Vickers",
+                        "age":  27,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "A. Trusty",
+                        "overall":  74,
+                        "potential":  77,
+                        "club_jersey_number":  6,
+                        "nationality":  "United States",
+                        "player_id":  235755,
+                        "club_position":  "SUB",
+                        "long_name":  "Auston Levi-Jesaiah Trusty",
+                        "age":  26,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Kenny",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  24,
+                        "nationality":  "Republic of Ireland",
+                        "player_id":  260951,
+                        "club_position":  "SUB",
+                        "long_name":  "Johnny Kenny",
+                        "age":  22,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Yamada",
+                        "overall":  69,
+                        "potential":  74,
+                        "club_jersey_number":  18,
+                        "nationality":  "Japan",
+                        "player_id":  269842,
+                        "club_position":  "SUB",
+                        "long_name":  "Shin Yamada",
+                        "age":  25,
+                        "positions":  [
+                                          "ST",
+                                          "RW",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Donovan",
+                        "overall":  64,
+                        "potential":  83,
+                        "club_jersey_number":  51,
+                        "nationality":  "Scotland",
+                        "player_id":  76125,
+                        "club_position":  "RES",
+                        "long_name":  "Colby Donovan",
+                        "age":  18,
+                        "positions":  [
+                                          "RB",
+                                          "CB",
+                                          "RM"
+                                      ]
+                    },
+                    {
+                        "short_name":  "H. Inamura",
+                        "overall":  66,
+                        "potential":  75,
+                        "club_jersey_number":  25,
+                        "nationality":  "Japan",
+                        "player_id":  79781,
+                        "club_position":  "RES",
+                        "long_name":  "Hayato Inamura",
+                        "age":  23,
+                        "positions":  [
+                                          "CB",
+                                          "LB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "S. Tounekti",
+                        "overall":  69,
+                        "potential":  76,
+                        "club_jersey_number":  23,
+                        "nationality":  "Tunisia",
+                        "player_id":  256383,
+                        "club_position":  "SUB",
+                        "long_name":  "Sebastian Tounektiسيباستيان توناكتي",
+                        "age":  22,
+                        "positions":  [
+                                          "LM",
+                                          "LW"
+                                      ]
+                    },
+                    {
+                        "short_name":  "D. Murray",
+                        "overall":  68,
+                        "potential":  78,
+                        "club_jersey_number":  47,
+                        "nationality":  "Scotland",
+                        "player_id":  263561,
+                        "club_position":  "SUB",
+                        "long_name":  "Dane Murray",
+                        "age":  22,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "J. Simpson-Pusey",
+                        "overall":  68,
+                        "potential":  79,
+                        "club_jersey_number":  4,
+                        "nationality":  "England",
+                        "player_id":  75577,
+                        "club_position":  "RES",
+                        "long_name":  "Jahmai Simpson-Pusey",
+                        "age":  19,
+                        "positions":  [
+                                          "CB"
+                                      ]
+                    },
+                    {
+                        "short_name":  "C. Osmand",
+                        "overall":  62,
+                        "potential":  80,
+                        "club_jersey_number":  19,
+                        "nationality":  "Wales",
+                        "player_id":  79342,
+                        "club_position":  "RES",
+                        "long_name":  "Callum James Osmand",
+                        "age":  19,
+                        "positions":  [
+                                          "ST"
+                                      ]
+                    },
+                    {
+                        "short_name":  "K. Schmeichel",
+                        "overall":  79,
+                        "potential":  79,
+                        "club_jersey_number":  1,
+                        "nationality":  "Denmark",
+                        "player_id":  163587,
+                        "club_position":  "GK",
+                        "long_name":  "Kasper Peter Schmeichel",
+                        "age":  38,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "R. Doohan",
+                        "overall":  61,
+                        "potential":  63,
+                        "club_jersey_number":  31,
+                        "nationality":  "Scotland",
+                        "player_id":  257237,
+                        "club_position":  "RES",
+                        "long_name":  "Ross Doohan",
+                        "age":  27,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    },
+                    {
+                        "short_name":  "V. Sinisalo",
+                        "overall":  69,
+                        "potential":  77,
+                        "club_jersey_number":  12,
+                        "nationality":  "Finland",
+                        "player_id":  258928,
+                        "club_position":  "SUB",
+                        "long_name":  "Viljami Kari Veikko Sinisalo",
+                        "age":  23,
+                        "positions":  [
+                                          "GK"
+                                      ]
+                    }
+                ]
+}
