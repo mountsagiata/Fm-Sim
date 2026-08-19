@@ -18,6 +18,12 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Download large database asset
+        run: |
+          mkdir -p app/src/main/assets/database
+          curl -L -o app/src/main/assets/database/database_players.json \
+            https://github.com/mountsagiata/Fm-Sim/releases/download/assets-v1/database_players.json
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
@@ -27,5 +33,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: FM2027-debug-apk
+          name: FmSimulation-debug-apk
           path: app/build/outputs/apk/debug/*.apk

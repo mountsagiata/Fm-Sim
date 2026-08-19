@@ -17,15 +17,20 @@ class AITransferEngine @Inject constructor(
 ) {
     /**
      * AI Clubs analyze their squad and decide whether to buy or sell players.
+     *
+     * Only a random sample of clubs is processed each day (instead of every club
+     * in the database). Scanning every club's full squad every day was the main
+     * cause of "Advancing to next day" feeling slow during transfer windows.
      */
     suspend fun processAIClubsTransfers() {
         val career = repository.getCareer().firstOrNull() ?: return
         val userClubId = career.selectedClubId
         val clubs = repository.getAllClubsSync()
+            .filter { it.id != userClubId }
+            .shuffled()
+            .take(25)
 
         for (club in clubs) {
-            if (club.id == userClubId) continue 
-
             val players = repository.getPlayersByClubSync(club.id)
             
             // Item 12: AI Logic - Buy weak position or replace aging player

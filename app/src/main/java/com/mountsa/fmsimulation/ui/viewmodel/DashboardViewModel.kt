@@ -341,7 +341,7 @@ class DashboardViewModel @Inject constructor(
                     _loadingMessage.value = "Advancing to next day..."
 
                     // Delay buatan agar user melihat loading (Efek FM)
-                    delay(1200)
+                    delay(500)
 
                     processor.continueDay()
                 }
@@ -446,6 +446,18 @@ class DashboardViewModel @Inject constructor(
                 generateMatchResultInbox(session.match)
                 
                 delay(500)
+
+                // 5. Process the rest of the day: this simulates the OTHER league
+                // matches scheduled on the same date (AI vs AI), runs training /
+                // injury / morale / transfer updates, and advances to the next day.
+                // Without this, other clubs never play on days the user has a
+                // match, so their standings stay stuck at 0.
+                _loadingMessage.value = "Processing other results..."
+                try {
+                    processor.continueDay()
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
             }
             
             _matchFlowState.value = MatchFlow.NONE

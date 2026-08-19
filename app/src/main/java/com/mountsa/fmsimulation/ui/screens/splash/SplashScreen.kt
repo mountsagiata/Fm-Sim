@@ -2,6 +2,7 @@ package com.mountsa.fmsimulation.ui.screens.splash
 
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
@@ -11,16 +12,23 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.CompositingStrategy
 import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.graphics.drawscope.clipRect
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.mountsa.fmsimulation.R
 import com.mountsa.fmsimulation.ui.components.LogoHeader
 import com.mountsa.fmsimulation.ui.theme.FM_Green
 import com.mountsa.fmsimulation.ui.viewmodel.SplashViewModel
@@ -59,6 +67,24 @@ fun FmSplashScreen(viewModel: SplashViewModel) {
     }
 
     Box(modifier = Modifier.fillMaxSize().background(colorScheme.background)) {
+        // Background image (same one used on ProfileScreen), faded
+        Image(
+            painter = painterResource(id = R.drawable.splashscreen),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxSize()
+                .graphicsLayer(compositingStrategy = CompositingStrategy.Offscreen)
+                .drawWithContent {
+                    drawContent()
+                    drawRect(
+                        brush = Brush.linearGradient(0.3f to Color.Black, 0.45f to Color.Transparent),
+                        blendMode = BlendMode.DstIn
+                    )
+                }
+                .graphicsLayer(alpha = 0.15f)
+        )
+
         // Gradient Background Overlay
         Box(
             modifier = Modifier.fillMaxSize()

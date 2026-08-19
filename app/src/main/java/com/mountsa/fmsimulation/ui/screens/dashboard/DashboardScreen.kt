@@ -3,7 +3,9 @@ package com.mountsa.fmsimulation.ui.screens.dashboard
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -39,6 +41,7 @@ import com.mountsa.fmsimulation.ui.screens.match.*
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.MatchFlow
 import com.mountsa.fmsimulation.ui.viewmodel.SquadViewModel
+import com.mountsa.fmsimulation.utils.AudioManager
 import java.util.Locale
 
 val FM_GREEN = Color(0xFF00FF5F)
@@ -59,6 +62,8 @@ fun DashboardScreen(
     val club by dashboardViewModel.club.collectAsStateWithLifecycle()
     val career by dashboardViewModel.career.collectAsStateWithLifecycle()
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+    val audioManager = remember { AudioManager(context) }
 
     Box(modifier = Modifier.fillMaxSize()) {
         Row(modifier = Modifier.fillMaxSize().background(Color.Black)) {
@@ -97,30 +102,38 @@ fun DashboardScreen(
 
                 Spacer(Modifier.height(20.dp))
 
-                // Menu Items
-                val menuItems = listOf(
-                    Triple("Home", Icons.Default.Home, "Home"),
-                    Triple("Squad", Icons.Default.Groups, "Squad"),
-                    Triple("League", Icons.Default.TableRows, "League"),
-                    Triple("Training", Icons.Default.FitnessCenter, "Training"),
-                    Triple("Transfer", Icons.Default.SwapHoriz, "Transfers"),
-                    Triple("Scouting", Icons.Default.PersonSearch, "Scouting"),
-                    Triple("Club", Icons.Default.Shield, "Club"),
-                    Triple("Shop", Icons.Default.ShoppingCart, "Shop")
-                )
-
-                menuItems.forEach { (id, icon, label) ->
-                    val isSelected = selectedTab == id
-                    SidebarItem(
-                        icon = icon,
-                        label = label,
-                        isSelected = isSelected,
-                        onClick = { selectedTab = id }
+                // Menu Items (scrollable so items never overlap/get clipped on short screens)
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .verticalScroll(rememberScrollState()),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    val menuItems = listOf(
+                        Triple("Home", Icons.Default.Home, "Home"),
+                        Triple("Squad", Icons.Default.Groups, "Squad"),
+                        Triple("League", Icons.Default.TableRows, "League"),
+                        Triple("Training", Icons.Default.FitnessCenter, "Training"),
+                        Triple("Transfer", Icons.Default.SwapHoriz, "Transfers"),
+                        Triple("Scouting", Icons.Default.PersonSearch, "Scouting"),
+                        Triple("Club", Icons.Default.Shield, "Club"),
+                        Triple("Shop", Icons.Default.ShoppingCart, "Shop")
                     )
-                    Spacer(Modifier.height(10.dp))
-                }
 
-                Spacer(modifier = Modifier.weight(1f))
+                    menuItems.forEach { (id, icon, label) ->
+                        val isSelected = selectedTab == id
+                        SidebarItem(
+                            icon = icon,
+                            label = label,
+                            isSelected = isSelected,
+                            onClick = {
+                                audioManager.playClickSound()
+                                selectedTab = id
+                            }
+                        )
+                        Spacer(Modifier.height(10.dp))
+                    }
+                }
             }
 
             // --- MAIN CONTENT AREA ---
