@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -21,6 +22,7 @@ import com.mountsa.fmsimulation.core.match.event.MatchEvent
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
+import com.mountsa.fmsimulation.utils.AudioManager
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.delay
 
@@ -43,6 +45,14 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     var currentMinute by remember { mutableIntStateOf(0) }
     val listState = rememberLazyListState()
+
+    // Crowd ambience: starts when the live match screen appears, stops when it's left.
+    val context = LocalContext.current
+    val audioManager = remember { AudioManager(context) }
+    DisposableEffect(Unit) {
+        audioManager.playCrowdAmbience()
+        onDispose { audioManager.stopCrowdAmbience() }
+    }
 
     LaunchedEffect(Unit) {
         while (currentMinute < 90) {

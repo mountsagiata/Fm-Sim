@@ -65,6 +65,20 @@ fun DashboardScreen(
     val context = LocalContext.current
     val audioManager = remember { AudioManager(context) }
 
+    // Background music: plays while on the dashboard, pauses during the live
+    // match simulation (crowd ambience takes over then), resumes afterwards.
+    DisposableEffect(Unit) {
+        audioManager.playBackgroundMusic()
+        onDispose { audioManager.stopBackgroundMusic() }
+    }
+    LaunchedEffect(matchFlow) {
+        if (matchFlow == MatchFlow.SIMULATION) {
+            audioManager.stopBackgroundMusic()
+        } else {
+            audioManager.playBackgroundMusic()
+        }
+    }
+
     Box(modifier = Modifier.fillMaxSize()) {
         Row(modifier = Modifier.fillMaxSize().background(Color.Black)) {
             // --- LEFT SIDEBAR ---
