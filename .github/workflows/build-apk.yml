@@ -20,8 +20,8 @@ jobs:
 
       - name: Download large database asset
         run: |
-          mkdir -p app/src/main/assets/database/news
-          curl -L -o app/src/main/assets/database/news/database_players.json \
+          mkdir -p app/src/main/assets/database
+          curl -L -o app/src/main/assets/database/database_players.json \
             https://github.com/mountsagiata/Fm-Sim/releases/download/assets-v1/database_players.json
 
       - name: Grant execute permission for gradlew
@@ -35,3 +35,4 @@ jobs:
         with:
           name: FmSimulation-debug-apk
           path: app/build/outputs/apk/debug/*.apk
+          
