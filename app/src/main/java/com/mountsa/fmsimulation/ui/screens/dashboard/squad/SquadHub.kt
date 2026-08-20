@@ -6,6 +6,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -162,15 +164,32 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
         modifier = Modifier.fillMaxSize(),
         title = "PLAYER DETAILS"
     ) {
-        Row(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(12.dp), // Sedikit dinaikkan agar tidak terlalu mepet tepi
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
-        ) {
-            // --- Kolom 1: Avatar & Info Dasar (Center Aligned) ---
+        Column(modifier = Modifier.fillMaxSize().padding(12.dp)) {
+            // Tombol Back: elemen TETAP (bukan didorong via weight-spacer), jadi
+            // selalu terlihat di layar sekecil apapun, tidak pernah ikut hilang.
+            Button(
+                onClick = onClose,
+                colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.1f)),
+                shape = RoundedCornerShape(6.dp),
+                modifier = Modifier.fillMaxWidth().height(38.dp),
+                contentPadding = PaddingValues(0.dp)
+            ) {
+                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null, modifier = Modifier.size(16.dp))
+                Spacer(Modifier.width(6.dp))
+                Text("BACK", color = Color.White, fontSize = 12.sp)
+            }
+
+            Spacer(Modifier.height(12.dp))
+
+            Row(
+                modifier = Modifier.fillMaxSize(),
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+            // --- Kolom 1: Avatar & Info Dasar (Center Aligned), scrollable jika layar pendek ---
             Column(
-                modifier = Modifier.weight(1.2f),
+                modifier = Modifier
+                    .weight(1.2f)
+                    .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Box(
@@ -229,20 +248,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                     modifier = Modifier.fillMaxWidth()
                 )
 
-                Spacer(Modifier.weight(1f))
-
-                // Tombol Back
-                Button(
-                    onClick = onClose,
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.1f)),
-                    shape = RoundedCornerShape(6.dp),
-                    modifier = Modifier.fillMaxWidth().height(38.dp),
-                    contentPadding = PaddingValues(0.dp)
-                ) {
-                    Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null, modifier = Modifier.size(16.dp))
-                    Spacer(Modifier.width(6.dp))
-                    Text("BACK", color = Color.White, fontSize = 12.sp)
-                }
+                Spacer(Modifier.height(16.dp))
             }
 
             // --- Pengelompokan Data Statistik Berdasarkan Kategori ---
@@ -363,6 +369,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                         }
                     }
                 }
+            }
             }
         }
     }

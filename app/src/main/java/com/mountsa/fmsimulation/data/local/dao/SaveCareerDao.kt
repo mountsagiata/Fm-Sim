@@ -24,4 +24,7 @@ interface SaveCareerDao {
     )
     fun getCareer():
             Flow<SaveCareerEntity?>
+
+    @Query("DELETE FROM save_career")
+    suspend fun deleteCareer()
 }

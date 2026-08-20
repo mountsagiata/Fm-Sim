@@ -44,4 +44,7 @@ interface StandingDao {
         leagueId: Long
     )
 
+    @Query("DELETE FROM standings")
+    suspend fun deleteAllStandings()
+
 }

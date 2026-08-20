@@ -47,8 +47,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     val listState = rememberLazyListState()
 
     // Crowd ambience: starts when the live match screen appears, stops when it's left.
-    val context = LocalContext.current
-    val audioManager = remember { AudioManager(context) }
+    val audioManager = viewModel.audioManager
     DisposableEffect(Unit) {
         audioManager.playCrowdAmbience()
         onDispose { audioManager.stopCrowdAmbience() }

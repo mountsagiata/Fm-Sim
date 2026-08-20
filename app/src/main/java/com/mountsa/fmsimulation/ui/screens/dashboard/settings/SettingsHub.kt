@@ -1,6 +1,8 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.settings
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +19,13 @@ import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 fun SettingsHub(viewModel: DashboardViewModel) {
     Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         AppColumn(modifier = Modifier.weight(2f), title = "GAME SETTINGS") {
-            Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(20.dp)
+            ) {
                 SettingToggle("Auto-Save after Match", true)
                 SettingToggle("Show Attributes as Progress Bars", true)
                 SettingToggle("Enable Match Commentary", true)
@@ -35,14 +43,20 @@ fun SettingsHub(viewModel: DashboardViewModel) {
             }
         }
         AppColumn(modifier = Modifier.weight(1f), title = "ABOUT") {
-            Column(modifier = Modifier.padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
                 Text("Football Manager Simulation", fontWeight = FontWeight.Bold, fontSize = 14.sp, color = Color.White)
                 Text("Version 1.9.0", fontSize = 11.sp, color = Color.Gray)
                 Spacer(Modifier.height(24.dp))
                 Text("Developed by Mountsa", fontSize = 10.sp, color = Color.Gray)
                 Text("© 2024 All Rights Reserved", fontSize = 10.sp, color = Color.Gray)
                 
-                Spacer(Modifier.weight(1f))
+                Spacer(Modifier.height(24.dp))
                 
                 Text(
                     "Support & Feedback",

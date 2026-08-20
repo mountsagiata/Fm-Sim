@@ -55,7 +55,8 @@ class DashboardViewModel @Inject constructor(
     private val leagueManager: LeagueManager,
     private val transferManager: TransferManager,
     private val managerRatingService: ManagerRatingService,
-    private val pressConferenceGenerator: PressConferenceGenerator
+    private val pressConferenceGenerator: PressConferenceGenerator,
+    val audioManager: com.mountsa.fmsimulation.utils.AudioManager
 ) : ViewModel() {
 
     private val gson = Gson()

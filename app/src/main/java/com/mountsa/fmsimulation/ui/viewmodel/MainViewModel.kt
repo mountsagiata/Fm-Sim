@@ -37,8 +37,12 @@ class MainViewModel @Inject constructor(
         viewModelScope.launch {
             repository.getCareer().collect { career ->
                 val current = _screen.value
-                // If a career is active and we are in setup phases, go to dashboard
-                if (career != null && (current == Screen.CareerSetup || current == Screen.Profile)) {
+                // Only auto-advance while actively completing a NEW career setup.
+                // Do NOT auto-skip the Profile screen just because a save already
+                // exists — the user should see it and explicitly press
+                // "CONTINUE CAREER" (or start a new one) instead of being
+                // dropped straight into the dashboard.
+                if (career != null && current == Screen.CareerSetup) {
                     _screen.value = Screen.Dashboard
                 }
             }
@@ -55,7 +59,9 @@ class MainViewModel @Inject constructor(
             val career = repository.getCareer().first()
             
             _screen.value = when {
-                career != null -> Screen.Dashboard
+                // Even if a save already exists, go to Profile first so the
+                // user can see it and choose CONTINUE CAREER / START NEW.
+                career != null -> Screen.Profile
                 checkpoint == "TEAM_SELECTION" -> Screen.CareerSetup
                 else -> Screen.Profile
             }

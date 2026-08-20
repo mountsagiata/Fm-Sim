@@ -56,7 +56,7 @@ fun ProfileScreen(
     var showCreateForm by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableIntStateOf(0) }
     val context = LocalContext.current
-    val audioManager = remember { AudioManager(context) }
+    val audioManager = viewModel.audioManager
     val colorScheme = MaterialTheme.colorScheme
 
     // Handle initial selection and sync index

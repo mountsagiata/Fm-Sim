@@ -16,7 +16,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ProfileViewModel @Inject constructor(
-    private val repository: DataRepository
+    private val repository: DataRepository,
+    val audioManager: com.mountsa.fmsimulation.utils.AudioManager
 ) : ViewModel() {
 
     val profiles: StateFlow<List<UserProfileEntity>> = repository.getAllProfiles()
@@ -68,6 +69,8 @@ class ProfileViewModel @Inject constructor(
 
     fun startNewCareer(onNext: () -> Unit) {
         viewModelScope.launch {
+            // Wipe any existing save so we truly start fresh, not resume the old one.
+            repository.resetCareerData()
             // Checkpoint: Player has a profile and is now moving to team selection
             repository.saveMetadata("CAREER_FLOW_STEP", "TEAM_SELECTION")
             onNext()

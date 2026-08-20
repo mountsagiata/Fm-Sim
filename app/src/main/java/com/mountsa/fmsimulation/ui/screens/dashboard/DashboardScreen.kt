@@ -41,6 +41,7 @@ import com.mountsa.fmsimulation.ui.screens.match.*
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.MatchFlow
 import com.mountsa.fmsimulation.ui.viewmodel.SquadViewModel
+import androidx.compose.foundation.layout.BoxWithConstraints
 import com.mountsa.fmsimulation.utils.AudioManager
 import java.util.Locale
 
@@ -49,9 +50,13 @@ val FM_DARK_BG = Color(0xFF080808)
 val FM_CARD_BG = Color(0xFF111111)
 
 private val SIDEBAR_WIDTH = 72.dp
-private val ITEM_SIZE = 46.dp
+private val ITEM_SIZE_MAX = 46.dp
+private val ITEM_SIZE_MIN = 32.dp
 private val ICON_SIZE = 22.dp
 private val CORNER_RADIUS = 12.dp
+
+/** Number of items in the sidebar (logo + 8 menu entries), used to size items to fit. */
+private const val SIDEBAR_SLOT_COUNT = 9
 
 @Composable
 fun DashboardScreen(
@@ -63,7 +68,7 @@ fun DashboardScreen(
     val career by dashboardViewModel.career.collectAsStateWithLifecycle()
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
     val context = LocalContext.current
-    val audioManager = remember { AudioManager(context) }
+    val audioManager = dashboardViewModel.audioManager
 
     // Background music: plays while on the dashboard, pauses during the live
     // match simulation (crowd ambience takes over then), resumes afterwards.
@@ -79,6 +84,15 @@ fun DashboardScreen(
         }
     }
 
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+    // Compute a sidebar item size that actually fits the available screen
+    // height, so nothing overlaps/gets clipped on small screens, and items
+    // don't awkwardly float with huge gaps on large screens either.
+    val estimatedChromeHeight = 24.dp // top/bottom padding of the sidebar column
+    val availableForItems = maxHeight - estimatedChromeHeight
+    val rawItemSize = availableForItems / SIDEBAR_SLOT_COUNT
+    val itemSize = rawItemSize.coerceIn(ITEM_SIZE_MIN, ITEM_SIZE_MAX)
+
     Box(modifier = Modifier.fillMaxSize()) {
         Row(modifier = Modifier.fillMaxSize().background(Color.Black)) {
             // --- LEFT SIDEBAR ---
@@ -92,7 +106,7 @@ fun DashboardScreen(
             ) {
                 // Club Logo
                 Surface(
-                    modifier = Modifier.size(ITEM_SIZE),
+                    modifier = Modifier.size(itemSize),
                     shape = RoundedCornerShape(CORNER_RADIUS),
                     color = FM_CARD_BG,
                     border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.1f))
@@ -140,12 +154,13 @@ fun DashboardScreen(
                             icon = icon,
                             label = label,
                             isSelected = isSelected,
+                            size = itemSize,
                             onClick = {
                                 audioManager.playClickSound()
                                 selectedTab = id
                             }
                         )
-                        Spacer(Modifier.height(10.dp))
+                        Spacer(Modifier.height((itemSize / 4.6f).coerceIn(4.dp, 10.dp)))
                     }
                 }
             }
@@ -231,6 +246,7 @@ fun DashboardScreen(
             }
         }
     }
+    } // end BoxWithConstraints
 }
 
 @Composable
@@ -238,11 +254,12 @@ fun SidebarItem(
     icon: androidx.compose.ui.graphics.vector.ImageVector,
     label: String,
     isSelected: Boolean,
+    size: androidx.compose.ui.unit.Dp = ITEM_SIZE_MAX,
     onClick: () -> Unit
 ) {
     Box(
         modifier = Modifier
-            .requiredSize(ITEM_SIZE)
+            .requiredSize(size)
             .padding(horizontal = 2.dp),
         contentAlignment = Alignment.Center
     ) {
@@ -259,7 +276,7 @@ fun SidebarItem(
                     imageVector = icon,
                     contentDescription = label,
                     tint = if (isSelected) FM_GREEN else Color.White.copy(alpha = 0.4f),
-                    modifier = Modifier.requiredSize(ICON_SIZE)
+                    modifier = Modifier.size((size.value * 0.48f).dp)
                 )
             }
         }

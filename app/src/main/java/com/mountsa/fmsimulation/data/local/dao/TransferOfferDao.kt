@@ -32,4 +32,7 @@ interface TransferOfferDao {
     fun getOffersForClub(
         clubId: Long
     ): Flow<List<TransferOfferEntity>>
+
+    @Query("DELETE FROM transfer_offers")
+    suspend fun deleteAllOffers()
 }

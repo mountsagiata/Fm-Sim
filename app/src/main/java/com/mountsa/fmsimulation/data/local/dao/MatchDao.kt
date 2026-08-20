@@ -50,4 +50,7 @@ interface MatchDao {
 
     @Query("DELETE FROM matches WHERE leagueId = :leagueId AND season = :season")
     suspend fun deleteMatchesByLeagueAndSeason(leagueId: Long, season: String)
+
+    @Query("DELETE FROM matches")
+    suspend fun deleteAllMatches()
 }

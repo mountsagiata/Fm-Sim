@@ -49,4 +49,10 @@ interface InboxDao {
     fun unreadCount(
         clubId: Long
     ): Flow<Int>
+
+    @Query("DELETE FROM inbox WHERE id = :id")
+    suspend fun deleteMessage(id: Long)
+
+    @Query("DELETE FROM inbox")
+    suspend fun deleteAllInbox()
 }

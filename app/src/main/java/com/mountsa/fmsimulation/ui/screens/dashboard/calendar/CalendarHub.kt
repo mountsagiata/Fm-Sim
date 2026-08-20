@@ -27,7 +27,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -102,7 +105,10 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
     ) {
         // --- TOP BAR ---
         Row(
-            modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .horizontalScroll(rememberScrollState())
+                .padding(bottom = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             IconButton(
@@ -128,7 +134,7 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
 
             // Month Slider
-            Box(modifier = Modifier.weight(1f).height(40.dp)) {
+            Box(modifier = Modifier.width(260.dp).height(40.dp)) {
                 val listState = rememberLazyListState()
                 LaunchedEffect(selectedMonthIndex) {
                     listState.animateScrollToItem(index = maxOf(0, selectedMonthIndex - 2))
@@ -178,7 +184,10 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
                             text = uiState.club?.name?.uppercase() ?: "",
                             color = Color.White,
                             fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                            modifier = Modifier.widthIn(max = 140.dp)
                         )
                     }
                 }

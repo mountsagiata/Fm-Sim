@@ -177,6 +177,22 @@ class DataRepository @Inject constructor(
     suspend fun updateOffer(offer: TransferOfferEntity) = transferDao.updateOffer(offer)
 
     suspend fun saveCareer(career: SaveCareerEntity) = saveCareerDao.saveCareer(career)
+
+    /**
+     * Wipes all progress from the current save so a brand-new career can be
+     * started cleanly: the career record itself, all played/scheduled
+     * matches, standings, inbox messages, and open transfer offers. The
+     * shared football world data (nations/leagues/clubs/players) is left
+     * intact and will be re-used/reseeded by DatabaseSeeder as needed.
+     */
+    suspend fun resetCareerData() {
+        saveCareerDao.deleteCareer()
+        matchDao.deleteAllMatches()
+        standingDao.deleteAllStandings()
+        inboxDao.deleteAllInbox()
+        transferDao.deleteAllOffers()
+        metadataDao.deleteMetadata("CAREER_FLOW_STEP")
+    }
     fun getCareer(): Flow<SaveCareerEntity?> = saveCareerDao.getCareer()
 
     suspend fun getClubName(clubId: Long): String = clubDao.getClubById(clubId)?.name ?: "Unknown Club"
