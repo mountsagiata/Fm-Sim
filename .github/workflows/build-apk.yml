@@ -33,36 +33,39 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
 
-      - name: Rename APK with commit hash
+      - name: Prepare APK file
         run: |
           mkdir -p release-out
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          cp app/build/outputs/apk/debug/*.apk release-out/FmSimulation-${COMMIT_HASH}.apk
-          cp app/build/outputs/apk/debug/*.apk release-out/FmSimulation-latest.apk
+          echo "SHORT_HASH=$COMMIT_HASH" >> $GITHUB_ENV
+          
+          cp app/build/outputs/apk/debug/*.apk "release-out/FmSimulation-V1.0.${{ github.run_number }}.apk"
+          
+          ls -la release-out/
 
-      - name: Create Release with timestamp
+      - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: build-${{ github.run_number }}
-          name: Build #${{ github.run_number }} - ${{ github.sha }}
-          files: release-out/FmSimulation-*.apk
+          tag_name: v1.0.${{ github.run_number }}
+          name: "FM Simulation V1.0.${{ github.run_number }}"
+          files: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
           body: |
-            Auto-built from commit ${{ github.sha }}
-            Date: ${{ github.event.head_commit.timestamp }}
-            Trigger: ${{ github.event_name }}
-
-      - name: Update latest Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: latest
-          name: Latest Build
-          files: release-out/FmSimulation-latest.apk
-          body: "Latest auto-build from main branch"
-          prerelease: false
+            **Info:**
+            - Trigger: ${{ github.event_name }}
+            - Commit Hash: ${{ env.SHORT_HASH }}
+            
+            **Version:**
+            Build #${{ github.run_number }}
+            
+            **Date & Time:**
+            ${{ github.event.head_commit.timestamp }}
+            
+            **Changelog:**
+            ${{ github.event.head_commit.message }}
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: FmSimulation-debug-apk-${{ github.run_number }}
-          path: release-out/FmSimulation-*.apk
+          name: FmSimulation-V1.0.${{ github.run_number }}
+          path: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
