@@ -108,13 +108,13 @@ class MatchSimulator @Inject constructor(
                         
                         val penaltyRand = Random.nextFloat()
                         if (penaltyRand < 0.05f) {
-                            events.add(EventFactory.create(minute, EventType.FREE_KICK, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name).copy(commentary = "PENALTY awarded to ${actingTeam.name}!"))
+                            events.add(EventFactory.create(minute, EventType.FREEKICK, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name).copy(commentary = "PENALTY awarded to ${actingTeam.name}!"))
                             if (Random.nextFloat() < 0.8f) {
                                 if (isHomeEvent) hGoals++ else aGoals++
                                 playerStats[shooter.id]?.goals = (playerStats[shooter.id]?.goals ?: 0) + 1
                                 events.add(EventFactory.create(minute, EventType.PENALTY_GOAL, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name))
                             } else {
-                                events.add(EventFactory.create(minute, EventType.MISSED_CHANCE, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name).copy(commentary = "Penalty MISSED!"))
+                                events.add(EventFactory.create(minute, EventType.MISS, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name).copy(commentary = "Penalty MISSED!"))
                             }
                         } else {
                             val xG = (actingAtt / (actingAtt + defendingDef + 0.1f)) * 0.35f
@@ -126,7 +126,7 @@ class MatchSimulator @Inject constructor(
                                 if (isOwnGoal) {
                                     val culprit = opponentXI.random()
                                     if (isHomeEvent) hGoals++ else aGoals++
-                                    events.add(EventFactory.create(minute, EventType.OWN_GOAL, EventCategory.ATTACK, hGoals, aGoals, culprit, actingTeam.id, actingTeam.name))
+                                    events.add(EventFactory.create(minute, EventType.GOAL_OWN, EventCategory.ATTACK, hGoals, aGoals, culprit, actingTeam.id, actingTeam.name))
                                 } else {
                                     if (isHomeEvent) hGoals++ else aGoals++
                                     if (isHomeEvent) hOnTarget++ else aOnTarget++

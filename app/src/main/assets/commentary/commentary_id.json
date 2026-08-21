@@ -2,40 +2,545 @@
   "MATCH_START": [
     "Kick off dimulai!",
     "Pertandingan resmi dimulai!",
-    "Peluit kick off dibunyikan!"
+    "Peluit kick off dibunyikan!",
+    "Laga dimulai dengan sorak sorai penonton!",
+    "Wasit meniup peluit, pertandingan dimulai!"
   ],
 
   "SHOT": [
     "{player} mencoba tendangan!",
     "Peluang untuk {player}!",
-    "{player} melepaskan tembakan!"
+    "{player} melepaskan tembakan!",
+    "Tendangan keras dari {player}!",
+    "{player} mengancam gawang!",
+    "Sundulan {player} masih melebar!",
+    "Tembakan {player} membentur pemain bertahan!",
+    "{player} melepaskan tembakan jarak jauh!",
+    "Percobaan {player} masih melambung!",
+    "Tendangan {player} tepat ke arah kiper!"
+  ],
+
+  "SHOT_ON_TARGET": [
+    "Tembakan {player} mengarah ke gawang!",
+    "Kiper menepis tembakan {player}!",
+    "Tendangan {player} membentur tiang gawang!",
+    "{player} melepaskan tembakan terukur!",
+    "Percobaan {player} ditepis kiper!"
   ],
 
   "GOAL": [
     "GOOOOL! {player} mencetak gol!",
     "{player} menjebol gawang!",
     "Gol luar biasa dari {player}!",
-    "{player} membuat skor menjadi {score}!"
+    "{player} membuat skor menjadi {score}!",
+    "GOAL! {player} berhasil menaklukkan kiper!",
+    "Sundulan {player} menjadi gol!",
+    "Tendangan voli {player} bersarang di gawang!",
+    "{player} mencetak gol spektakuler!",
+    "GOOOOL! {player} membawa tim unggul!"
+  ],
+
+  "GOAL_OWN": [
+    "Gol bunuh diri! {player} mencetak gol ke gawang sendiri!",
+    "Malapetaka! {player} menjebol gawang sendiri!",
+    "OG! {player} tidak sengaja mencetak gol!"
   ],
 
   "YELLOW_CARD": [
     "{player} mendapat kartu kuning.",
     "Kartu kuning untuk {player}.",
-    "Pelanggaran keras dari {player}."
+    "Pelanggaran keras dari {player}.",
+    "{player} dicatat oleh wasit.",
+    "Kartu kuning diberikan kepada {player}!",
+    "{player} melakukan pelanggaran taktis."
   ],
 
   "RED_CARD": [
     "Kartu merah untuk {player}!",
-    "{player} diusir keluar lapangan!"
+    "{player} diusir keluar lapangan!",
+    "Wasit mengeluarkan kartu merah untuk {player}!",
+    "{player} harus pergi! Kartu merah!",
+    "Pemain tersisa 10 orang! {player} mendapat kartu merah!"
+  ],
+
+  "INJURY": [
+    "{player} mengalami cedera!",
+    "{player} terjatuh dan membutuhkan perawatan.",
+    "Cedera menimpa {player}!",
+    "{player} terlihat kesakitan."
+  ],
+
+  "SUBSTITUTION": [
+    "Pergantian pemain: {player_in} menggantikan {player_out}.",
+    "{player_out} diganti oleh {player_in}.",
+    "Pelatih melakukan pergantian. {player_in} masuk!",
+    "{player_in} masuk menggantikan {player_out}."
+  ],
+
+  "PENALTY": [
+    "Penalti! Wasit menunjuk titik putih!",
+    "Keputusan penalti untuk tim {team}!",
+    "Wasit memberikan hadiah penalti!"
+  ],
+
+  "PENALTY_GOAL": [
+    "GOOOOL! {player} menjalankan tugas penalti dengan sempurna!",
+    "Kiper terkecoh! {player} mencetak gol dari titik putih!",
+    "{player} sukses mengeksekusi penalti!"
+  ],
+
+  "PENALTY_MISS": [
+    "{player} gagal mencetak penalti!",
+    "Penalti {player} masih melambung!",
+    "Kiper menepis penalti {player}!",
+    "Penalti {player} membentur tiang!"
   ],
 
   "HALFTIME": [
     "Babak pertama selesai.",
-    "Peluit akhir babak pertama dibunyikan."
+    "Peluit akhir babak pertama dibunyikan.",
+    "Turun minum! Skor sementara {score}.",
+    "Babak pertama berakhir dengan skor {score}."
+  ],
+
+  "SECOND_HALF": [
+    "Babak kedua dimulai!",
+    "Peluit babak kedua dibunyikan!",
+    "Pertandingan dilanjutkan ke babak kedua!"
   ],
 
   "MATCH_END": [
     "Pertandingan selesai!",
-    "Full time!"
+    "Full time!",
+    "Skor akhir {score}!",
+    "Peluit panjang berbunyi, pertandingan berakhir!",
+    "Tiga poin untuk {team}!"
+  ],
+
+  "GOAL_DISALLOWED": [
+    "Gol dianulir! {player} offside!",
+    "Wasit membatalkan gol {player}!",
+    "Gol tidak sah! Pelanggaran sebelumnya!"
+  ],
+
+  "CORNER": [
+    "Tendangan sudut untuk tim {team}!",
+    "{team} mendapatkan corner kick!",
+    "Wasit memberikan tendangan sudut!"
+  ],
+
+  "FREEKICK": [
+    "Tendangan bebas untuk {team}!",
+    "Wasit memberikan tendangan bebas!",
+    "Posisi tendangan bebas yang berbahaya!"
+  ],
+
+  "OFFSIDE": [
+    "{player} terperangkap offside!",
+    "Wasit mengangkat bendera offside!",
+    "Offside! {player} berada di posisi tidak sah."
+  ],
+
+  "SAVE": [
+    "Kiper melakukan penyelamatan gemilang!",
+    "Tendangan ditepis oleh kiper!",
+    "Kiper {team} berhasil mengamankan gawang!",
+    "Penyelamatan luar biasa dari kiper!"
+  ],
+
+  "MISS": [
+    "{player} melepaskan peluang emas!",
+    "Tendangan {player} melenceng!",
+    "{player} gagal memanfaatkan peluang!",
+    "Sial! {player} membuang kesempatan!"
+  ],
+
+  "POST_HIT": [
+    "Bola membentur tiang gawang!",
+    "Tiang gawang menyelamatkan {team}!",
+    "Tendangan {player} mengenai mistar!"
+  ],
+
+  "POSSESSION": [
+    "{team} menguasai bola.",
+    "Penguasaan bola oleh {team}.",
+    "{team} membangun serangan dengan sabar."
+  ],
+
+  "FOUL": [
+    "Pelanggaran oleh {player}!",
+    "Wasit meniup peluit untuk pelanggaran {player}.",
+    "{player} melakukan pelanggaran."
+  ],
+
+  "HALF_CHANCE": [
+    "Peluang setengah matang untuk {player}.",
+    "Kesempatan tercipta, tetapi belum berbahaya.",
+    "Serangan {team} masih bisa digagalkan."
+  ],
+
+  "GOALKICK": [
+    "Tendangan gawang untuk {team}.",
+    "Kiper mengambil tendangan gawang."
+  ],
+
+  "THROWIN": [
+    "Lemparan ke dalam untuk {team}.",
+    "{team} mendapatkan lemparan ke dalam.",
+    "Bola keluar - lemparan ke dalam untuk {team}."
+  ],
+
+  "DRIBBLE": [
+    "{player} melewati penjaganya!",
+    "Lari yang bagus dari {player}!",
+    "{player} membawa bola ke depan!",
+    "{player} mengalahkan lawannya!"
+  ],
+
+  "PASS": [
+    "Operan hebat dari {player}!",
+    "{player} melebar permainan.",
+    "Bola yang sangat baik dari {player}.",
+    "Operan presisi dari {player}."
+  ],
+
+  "CROSS": [
+    "{player} mengirim umpan silang!",
+    "Umpan silang yang bagus dari {player}!",
+    "Umpan silang dari {player} - disapu bersih.",
+    "{player} mengirim bola ke kotak penalti!"
+  ],
+
+  "CLEARANCE": [
+    "Disapu bersih oleh {player}!",
+    "{player} melakukan sapuan vital!",
+    "Pertahanan yang baik dari {player}.",
+    "{player} menyundul bola keluar!"
+  ],
+
+  "TACKLE": [
+    "Tackle hebat dari {player}!",
+    "{player} merebut bola dengan bersih!",
+    "Timing sempurna dari {player}!",
+    "{player} merebut bola dari lawannya!"
+  ],
+
+  "INTERCEPTION": [
+    "{player} memotong operan!",
+    "Bacaan yang bagus dari {player}!",
+    "{player} memotong laju bola!"
+  ],
+
+  "HEADER": [
+    "{player} melompat tinggi untuk menyundul!",
+    "Sundulan kuat dari {player}!",
+    "{player} memenangkan duel udara!",
+    "Lompatan hebat dari {player}!"
+  ],
+
+  "VOLLEY": [
+    "Voli dari {player}!",
+    "Percobaan voli spektakuler dari {player}!",
+    "{player} menendang dengan voli!",
+    "Teknik indah dari {player}!"
+  ],
+
+  "LONGSHOT": [
+    "Tembakan jarak jauh dari {player}!",
+    "{player} mencoba dari kejauhan!",
+    "Roket dari luar kotak penalti!",
+    "Usaha spekulatif dari {player}!"
+  ],
+
+  "NEAR_MISS": [
+    "Hampir saja dari {player}!",
+    "Selisih beberapa inci!",
+    "{player} hampir mencetak gol!",
+    "Penonton menahan nafas - sangat dekat!"
+  ],
+
+  "COUNTER_ATTACK": [
+    "Serangan balik dari {team}!",
+    "Serangan cepat dari {team}!",
+    "Serangan balik berbahaya dari {team}!",
+    "{team} menyerang dengan cepat!"
+  ],
+
+  "GOAL_LINE_CLEARANCE": [
+    "Sapuan di garis gawang dari {player}!",
+    "Dia menyelamatkannya di garis!",
+    "Pertahanan luar biasa dari {player}!",
+    "Itu pasti gol - tapi {player} menyapu di garis!"
+  ],
+
+  "SIDE_NETTING": [
+    "{player} mengenai jaring samping!",
+    "Bola masuk ke jaring samping.",
+    "Hampir saja dari {player}."
+  ],
+
+  "HAND_BALL": [
+    "Handball oleh {player}!",
+    "Wasit melihat handball dari {player}.",
+    "Itu handball - tendangan bebas diberikan."
+  ],
+
+  "DIVING": [
+    "{player} jatuh dengan mudah.",
+    "Wasit membiarkan permainan berlanjut - tidak ada pelanggaran.",
+    "{player} dituduh melakukan diving.",
+    "Itu terlihat seperti simulasi dari {player}."
+  ],
+
+  "TIME_WASTING": [
+    "{player} memperlambat permainan.",
+    "Kiper menunda tendangan gawang.",
+    "{team} menghabiskan waktu.",
+    "Permainan lambat dari {team} di dekat sudut lapangan."
+  ],
+
+  "FAN_CHANT": [
+    "Suporter tuan rumah bersorak dengan keras!",
+    "Penonton bergemuruh memberi dukungan!",
+    "Anda bisa merasakan energi dari tribun!",
+    "Suporter tim tamu bersuara lantang!"
+  ],
+
+  "WEATHER": [
+    "Hujan turun dengan deras sekarang.",
+    "Kondisi lapangan licin.",
+    "Matahari bersinar terik di lapangan.",
+    "Angin kencang membuat permainan sulit.",
+    "Kondisi sempurna untuk sepak bola malam ini."
+  ],
+
+  "TIME_ADDED": [
+    "{minutes} menit waktu tambahan.",
+    "Wasit memberi isyarat {minutes} menit injury time.",
+    "Kita akan bermain {minutes} menit tambahan."
+  ],
+
+  "SUBSTITUTION_READY": [
+    "{player} sedang pemanasan di pinggir lapangan.",
+    "{player} bersiap untuk masuk.",
+    "Pemain pengganti {player} sedang bersiap."
+  ],
+
+  "CAPTAIN": [
+    "{player} memimpin timnya keluar.",
+    "{player} adalah kapten untuk {team} hari ini.",
+    "Toss koin dimenangkan oleh {player} dari {team}."
+  ],
+
+  "FORMATION": [
+    "{team} bermain dengan formasi {formation}.",
+    "Pelatih menyusun {team} dengan {formation}.",
+    "{team} bermain dengan bentuk {formation}."
+  ],
+
+  "STATS": [
+    "{team} telah melepaskan {shots} tembakan.",
+    "{team} memiliki {possession}% penguasaan bola.",
+    "{player} telah menyelesaikan {passes} operan.",
+    "Tembakan ke gawang: {team_a} vs {team_b}."
+  ],
+
+  "CELEBRATION": [
+    "{player} merayakan dengan rekan-rekannya!",
+    "Perayaan luar biasa dari {player}!",
+    "Tim memadati {player} setelah gol itu!",
+    "Kegembiraan dari pencetak gol!"
+  ],
+
+  "PLAYER_RATING": [
+    "{player} tampil luar biasa hari ini.",
+    "Penampilan tenang dari {player} sejauh ini.",
+    "{player} tampil sebagai pemain terbaik.",
+    "Suporter pasti senang dengan penampilan {player}."
+  ],
+
+  "TACTICS": [
+    "{team} menekan tinggi di lapangan.",
+    "{team} bermain bertahan.",
+    "Pelatih memberi instruksi dari pinggir lapangan.",
+    "{team} bermain dengan serangan balik.",
+    "Kita melihat permainan berbasis penguasaan bola dari {team}.",
+    "{team} menggunakan sayap dengan efektif."
+  ],
+
+  "NUTMEG": [
+    "{player} mengecoh lawannya dengan nutmeg!",
+    "Melalui celah kaki! Brilian dari {player}!",
+    "{player} menunjukkan skill luar biasa!"
+  ],
+
+  "STEPOVER": [
+    "{player} dengan gerakan tipuan!",
+    "Permainan skill dari {player}!",
+    "{player} meninggalkan bek lawannya!"
+  ],
+
+  "SECOND_YELLOW": [
+    "Kartu kuning kedua untuk {player}! Dia keluar!",
+    "{player} menerima kartu kuning kedua - kartu merah!",
+    "Itu kartu kuning kedua bagi {player}! Diusir!",
+    "{player} diusir setelah kartu kuning kedua!"
+  ],
+
+  "EXTRA_TIME_START": [
+    "Perpanjangan waktu dimulai!",
+    "Kita masuk perpanjangan waktu!",
+    "Babak pertama perpanjangan waktu dimulai!"
+  ],
+
+  "EXTRA_TIME_END": [
+    "Perpanjangan waktu selesai!",
+    "Itulah akhir dari perpanjangan waktu!"
+  ],
+
+  "PENALTY_SHOOTOUT_START": [
+    "Adu penalti dimulai!",
+    "Kita lanjut ke adu penalti!",
+    "Saatnya adu penalti!"
+  ],
+
+  "PENALTY_SHOOTOUT_GOAL": [
+    "{player} mencetak dari titik putih!",
+    "Finis tenang dari {player}!"
+  ],
+
+  "PENALTY_SHOOTOUT_MISS": [
+    "{player} gagal!",
+    "Penalti {player} diselamatkan!",
+    "{player} mengenai tiang!"
+  ],
+
+  "INJURY_TIME_GOAL": [
+    "GOL DI MENIT AKHIR! {player} mencetak!",
+    "Dramatis! {player} mencetak di injury time!",
+    "Gol kemenangan di masa tambahan waktu!"
+  ],
+
+  "HATTRICK": [
+    "HATTRICK! {player} mencetak tiga gol!",
+    "Luar biasa! {player} mencetak hattrick!",
+    "Bola pertandingan untuk {player} - hattrick!"
+  ],
+
+  "BRACE": [
+    "Dua gol untuk {player}!",
+    "{player} mencetak brace!",
+    "Gol kedua bagi {player} malam ini!"
+  ],
+
+  "ASSIST": [
+    "Assist dari {player}!",
+    "{player} memberikan umpan gol!",
+    "Assist cantik dari {player}!",
+    "{player} memberi umpan untuk {player2} mencetak gol!"
+  ],
+
+  "KICKOFF_FIRST": [
+    "{team} memulai kick off.",
+    "{team} melakukan tendangan pertama."
+  ],
+
+  "VAR_CHECK": [
+    "Pengecekan VAR sedang berlangsung...",
+    "Wasit memeriksa VAR.",
+    "VAR sedang diperiksa... Mohon tunggu!"
+  ],
+
+  "VAR_OVERTURN": [
+    "Keputusan dibatalkan oleh VAR!",
+    "VAR mengubah keputusan wasit!"
+  ],
+
+  "WOODWORK": [
+    "Bola mengenai tiang!",
+    "Tiang gawang menyelamatkan!",
+    "Mengenai tiang dan keluar!",
+    "Tiang menyelamatkan kiper!"
+  ],
+
+  "GREAT_CHANCE": [
+    "PELUANG BESAR untuk {player}!",
+    "Kesempatan emas untuk {player}!",
+    "Peluang terbuang oleh {player}!"
+  ],
+
+  "GOAL_KEEPER_SAVE": [
+    "Kiper melakukan penyelamatan luar biasa!",
+    "Monster! Kiper menyelamatkan segalanya!",
+    "Kiper {team} adalah penyelamat!"
+  ],
+
+  "DEFENSIVE_MISTAKE": [
+    "Kesalahan pertahanan oleh {player}!",
+    "Kelengahan pertahanan {team}!",
+    "{player} melakukan kesalahan besar!"
+  ],
+
+  "COACH_SPEAK": [
+    "Pelatih {team} sedang memberi arahan kepada para pemain.",
+    "Pelatih meminta timnya untuk tenang.",
+    "Pelatih tidak puas dengan performa tim."
+  ],
+
+  "SUSPENSION": [
+    "{player} diskors untuk pertandingan berikutnya.",
+    "Kartu ini berarti skorsing untuk {player}."
+  ],
+
+  "RECORD": [
+    "{player} memecahkan rekor gol!",
+    "Momen bersejarah bagi {player}!",
+    "Rekor baru untuk {player}!"
+  ],
+
+  "DERBY": [
+    "Ini adalah laga derby! Rivalitas memuncak!",
+    "Derby tidak mengecewakan!",
+    "Ketegangan terasa di udara dalam derby ini!"
+  ],
+
+  "FINAL": [
+    "Ini adalah pertandingan final!",
+    "Perebutan gelar! Siapa yang akan menjadi juara?",
+    "Trofi dipertaruhkan di final ini!"
+  ],
+
+  "CELEBRATION_TEAM": [
+    "Seluruh tim merayakan gol tersebut!",
+    "Para pemain saling berpelukan!",
+    "Kegembiraan meledak di lapangan!"
+  ],
+
+  "FAN_REACTION": [
+    "Suporter tuan rumah bergemuruh!",
+    "Sorak sorai dari tribun penonton!",
+    "Suporter kecewa dengan hasil ini.",
+    "Suporter tim tamu merayakan dengan histeris!"
+  ],
+
+  "MANAGER_REACTION": [
+    "Pelatih marah di pinggir lapangan!",
+    "Pelatih memberikan tepuk tangan.",
+    "Pelatih terlihat tegang.",
+    "Pelatih sedang mencatat - merencanakan strategi."
+  ],
+
+  "PRE_MATCH": [
+    "Para tim sedang melakukan pemanasan.",
+    "Pemain berjalan keluar ke lapangan.",
+    "Lagu kebangsaan berkumandang.",
+    "Suasana luar biasa di stadion malam ini."
+  ],
+
+  "POST_MATCH": [
+    "Para pemain saling bersalaman.",
+    "Pelatih bersalaman dengan wasit.",
+    "Emosi memuncak di akhir pertandingan.",
+    "Trofi diberikan kepada tim pemenang!"
   ]
 }

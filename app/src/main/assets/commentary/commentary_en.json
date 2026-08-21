@@ -1,0 +1,546 @@
+{
+  "MATCH_START": [
+    "Kick off!",
+    "The match is underway!",
+    "The referee blows the whistle!",
+    "We're off at the stadium!",
+    "The game begins!"
+  ],
+
+  "SHOT": [
+    "{player} shoots!",
+    "Chance for {player}!",
+    "{player} fires a shot!",
+    "{player} tries his luck!",
+    "Shot from {player}!",
+    "{player} with a header!",
+    "{player}'s shot is blocked!",
+    "Long-range effort from {player}!",
+    "{player}'s shot goes high!",
+    "{player} shoots straight at the keeper!"
+  ],
+
+  "SHOT_ON_TARGET": [
+    "{player}'s shot is on target!",
+    "The keeper saves {player}'s shot!",
+    "{player} hits the target!",
+    "{player} forces a save!",
+    "Keeper tips it wide from {player}!"
+  ],
+
+  "GOAL": [
+    "GOAL! {player} scores!",
+    "{player} finds the net!",
+    "What a goal from {player}!",
+    "{player} makes it {score}!",
+    "GOAL! {player} beats the keeper!",
+    "{player} heads it home!",
+    "Volley from {player} goes in!",
+    "Spectacular goal from {player}!",
+    "GOAL! {player} puts his team ahead!"
+  ],
+
+  "GOAL_OWN": [
+    "Own goal! {player} scores against his own team!",
+    "Disaster! {player} puts it in his own net!",
+    "OG! {player} with a terrible mistake!"
+  ],
+
+  "YELLOW_CARD": [
+    "{player} receives a yellow card.",
+    "Yellow card for {player}.",
+    "Harsh tackle from {player}.",
+    "{player} is booked by the referee.",
+    "{player} goes into the book!",
+    "Tactical foul from {player}."
+  ],
+
+  "RED_CARD": [
+    "Red card for {player}!",
+    "{player} is sent off!",
+    "{player} sees red!",
+    "Off you go! {player} receives a red card!",
+    "Down to ten men! {player} is dismissed!"
+  ],
+
+  "INJURY": [
+    "{player} is down injured!",
+    "{player} needs medical attention.",
+    "Injury for {player}!",
+    "{player} looks in serious pain."
+  ],
+
+  "SUBSTITUTION": [
+    "Substitution: {player_in} replaces {player_out}.",
+    "{player_out} is replaced by {player_in}.",
+    "The manager makes a change. {player_in} comes on!",
+    "{player_in} enters the pitch for {player_out}."
+  ],
+
+  "PENALTY": [
+    "Penalty! The referee points to the spot!",
+    "Penalty awarded to {team}!",
+    "The referee gives a penalty!"
+  ],
+
+  "PENALTY_GOAL": [
+    "GOAL! {player} scores from the spot!",
+    "{player} sends the keeper the wrong way!",
+    "Perfect penalty from {player}!"
+  ],
+
+  "PENALTY_MISS": [
+    "{player} misses the penalty!",
+    "{player}'s penalty goes over the bar!",
+    "The keeper saves {player}'s penalty!",
+    "{player} hits the post from the spot!"
+  ],
+
+  "HALFTIME": [
+    "Half time.",
+    "The first half is over.",
+    "Half time with the score {score}.",
+    "The referee blows for half time."
+  ],
+
+  "SECOND_HALF": [
+    "The second half begins!",
+    "We're back underway for the second half!",
+    "The game resumes!"
+  ],
+
+  "MATCH_END": [
+    "Full time!",
+    "The match is over!",
+    "Final score {score}!",
+    "That's it! The referee blows the final whistle!",
+    "Three points for {team}!"
+  ],
+
+  "GOAL_DISALLOWED": [
+    "Goal disallowed! {player} was offside!",
+    "The referee rules out {player}'s goal!",
+    "No goal! Foul in the build-up!"
+  ],
+
+  "CORNER": [
+    "Corner for {team}!",
+    "{team} win a corner kick!",
+    "The referee signals for a corner!"
+  ],
+
+  "FREEKICK": [
+    "Free kick for {team}!",
+    "A dangerous free kick position!",
+    "{team} awarded a free kick!"
+  ],
+
+  "OFFSIDE": [
+    "{player} is caught offside!",
+    "The flag goes up for offside!",
+    "Offside! {player} was in an illegal position."
+  ],
+
+  "SAVE": [
+    "Great save by the keeper!",
+    "The keeper tips it over!",
+    "{team}'s keeper makes a brilliant stop!",
+    "Wonderful save from the goalkeeper!"
+  ],
+
+  "MISS": [
+    "{player} misses a golden opportunity!",
+    "{player}'s shot goes wide!",
+    "{player} wastes that chance!",
+    "Unlucky! {player} should have scored!"
+  ],
+
+  "POST_HIT": [
+    "Off the post!",
+    "The woodwork saves {team}!",
+    "{player}'s shot hits the crossbar!"
+  ],
+
+  "POSSESSION": [
+    "{team} are keeping the ball.",
+    "{team} in possession.",
+    "{team} building up play patiently."
+  ],
+
+  "FOUL": [
+    "Foul by {player}!",
+    "The referee calls a foul on {player}.",
+    "{player} commits a foul."
+  ],
+
+  "HALF_CHANCE": [
+    "Half chance for {player}.",
+    "A chance created but not dangerous.",
+    "{team}'s attack is broken down."
+  ],
+
+  "GOALKICK": [
+    "Goal kick for {team}.",
+    "The keeper takes the goal kick."
+  ],
+
+  "THROWIN": [
+    "Throw in for {team}.",
+    "{team} get the throw in.",
+    "The ball goes out - throw in for {team}."
+  ],
+
+  "DRIBBLE": [
+    "{player} dribbles past his marker!",
+    "Great run from {player}!",
+    "{player} drives forward with the ball!",
+    "{player} beats his man!"
+  ],
+
+  "PASS": [
+    "Great pass from {player}!",
+    "{player} spreads the play wide.",
+    "Excellent ball from {player}.",
+    "Precise pass by {player}."
+  ],
+
+  "CROSS": [
+    "{player} whips in a cross!",
+    "Excellent delivery from {player}!",
+    "Cross from {player} - cleared away.",
+    "{player} sends it into the box!"
+  ],
+
+  "CLEARANCE": [
+    "Cleared away by {player}!",
+    "{player} makes a vital clearance!",
+    "Good defending from {player}.",
+    "{player} heads it clear!"
+  ],
+
+  "TACKLE": [
+    "Great tackle from {player}!",
+    "{player} wins the ball cleanly!",
+    "Perfect timing from {player}!",
+    "{player} dispossess his opponent!"
+  ],
+
+  "INTERCEPTION": [
+    "{player} intercepts the pass!",
+    "Great read by {player}!",
+    "{player} cuts out the ball!"
+  ],
+
+  "HEADER": [
+    "{player} rises high to head the ball!",
+    "Powerful header from {player}!",
+    "{player} wins the aerial battle!",
+    "Great leap from {player}!"
+  ],
+
+  "VOLLEY": [
+    "Volley from {player}!",
+    "Spectacular volley attempt from {player}!",
+    "{player} hits it on the volley!",
+    "Beautiful technique from {player}!"
+  ],
+
+  "LONGSHOT": [
+    "Long range shot from {player}!",
+    "{player} tries from distance!",
+    "Rocket from outside the box!",
+    "Speculative effort from {player}!"
+  ],
+
+  "NEAR_MISS": [
+    "So close from {player}!",
+    "That was inches away!",
+    "{player} almost scored there!",
+    "The crowd holds its breath - so close!"
+  ],
+
+  "COUNTER_ATTACK": [
+    "Counter-attack from {team}!",
+    "Quick break by {team}!",
+    "Dangerous counter from {team}!",
+    "{team} hit on the break!"
+  ],
+
+  "GOAL_LINE_CLEARANCE": [
+    "Goal line clearance from {player}!",
+    "He's saved it on the line!",
+    "Unbelievable defending from {player}!",
+    "That was going in - but {player} clears it off the line!"
+  ],
+
+  "SIDE_NETTING": [
+    "{player} hits the side netting!",
+    "That's gone into the side netting.",
+    "Close but no cigar from {player}."
+  ],
+
+  "HAND_BALL": [
+    "Hand ball by {player}!",
+    "The referee spots a hand ball from {player}.",
+    "That's a hand ball - free kick awarded."
+  ],
+
+  "DIVING": [
+    "{player} goes down easily.",
+    "The referee waves play on - no foul.",
+    "{player} accused of diving there.",
+    "That looked like a simulation from {player}."
+  ],
+
+  "TIME_WASTING": [
+    "{player} taking his time with the ball.",
+    "The goalkeeper delays the goal kick.",
+    "{team} are running down the clock.",
+    "Slow play from {team} near the corner flag."
+  ],
+
+  "FAN_CHANT": [
+    "The home fans are in full voice!",
+    "The crowd roars their support!",
+    "You can feel the energy from the stands!",
+    "The away fans make themselves heard!"
+  ],
+
+  "WEATHER": [
+    "The rain is falling heavily now.",
+    "Slippery conditions out there.",
+    "The sun is beating down on the pitch.",
+    "Windy conditions making it difficult.",
+    "Perfect conditions for football tonight."
+  ],
+
+  "TIME_ADDED": [
+    "{minutes} minutes of added time.",
+    "The referee signals {minutes} minutes stoppage time.",
+    "We'll play {minutes} minutes of extra time."
+  ],
+
+  "SUBSTITUTION_READY": [
+    "{player} is warming up on the sidelines.",
+    "{player} prepares to come on.",
+    "The substitute {player} is getting ready."
+  ],
+
+  "CAPTAIN": [
+    "{player} leads his team out.",
+    "{player} is captain for {team} today.",
+    "The coin toss is won by {player} of {team}."
+  ],
+
+  "FORMATION": [
+    "{team} lines up in a {formation} formation.",
+    "The manager sets up {team} in {formation}.",
+    "{team} playing with a {formation} shape."
+  ],
+
+  "STATS": [
+    "{team} have had {shots} shots.",
+    "{team} have {possession}% possession.",
+    "{player} has completed {passes} passes.",
+    "Shots on goal: {team_a} vs {team_b}."
+  ],
+
+  "CELEBRATION": [
+    "{player} celebrates with his teammates!",
+    "What a celebration from {player}!",
+    "The squad mobs {player} after that goal!",
+    "Pure joy from the goalscorer!"
+  ],
+
+  "PLAYER_RATING": [
+    "{player} has been outstanding today.",
+    "Quiet game from {player} so far.",
+    "{player} is having a man-of-the-match performance.",
+    "The fans will be pleased with {player}'s display."
+  ],
+
+  "TACTICS": [
+    "{team} are pressing high up the pitch.",
+    "{team} sitting deep and defending.",
+    "The manager is shouting instructions from the touchline.",
+    "{team} are playing on the counter-attack.",
+    "We're seeing a possession-based game from {team}.",
+    "{team} are using the flanks effectively."
+  ],
+
+  "NUTMEG": [
+    "{player} nutmegs his opponent!",
+    "Through the legs! Brilliant from {player}!",
+    "{player} shows great skill there!"
+  ],
+
+  "STEPOVER": [
+    "{player} with a stepover!",
+    "Skillful play from {player}!",
+    "{player} leaves his defender for dead!"
+  ],
+
+  "SECOND_YELLOW": [
+    "Second yellow card for {player}! He's off!",
+    "{player} receives his second yellow - red card!",
+    "That's two yellows for {player}! Sent off!",
+    "{player} is dismissed after a second booking!"
+  ],
+
+  "EXTRA_TIME_START": [
+    "Extra time begins!",
+    "We're into extra time!",
+    "The first period of extra time starts!"
+  ],
+
+  "EXTRA_TIME_END": [
+    "Extra time is over!",
+    "That's the end of extra time!"
+  ],
+
+  "PENALTY_SHOOTOUT_START": [
+    "Penalty shootout begins!",
+    "We go to penalties!",
+    "It's penalty shootout time!"
+  ],
+
+  "PENALTY_SHOOTOUT_GOAL": [
+    "{player} scores from the spot!",
+    "Calm finish from {player}!"
+  ],
+
+  "PENALTY_SHOOTOUT_MISS": [
+    "{player} misses!",
+    "{player}'s penalty is saved!",
+    "{player} hits the post!"
+  ],
+
+  "INJURY_TIME_GOAL": [
+    "INJURY TIME GOAL! {player} scores!",
+    "Dramatic! {player} scores in injury time!",
+    "Last-minute winner from {player}!"
+  ],
+
+  "HATTRICK": [
+    "HAT-TRICK! {player} scores three goals!",
+    "Unbelievable! {player} scores a hat-trick!",
+    "Match ball for {player} - hat-trick!"
+  ],
+
+  "BRACE": [
+    "Two goals for {player}!",
+    "{player} scores a brace!",
+    "Second goal for {player} tonight!"
+  ],
+
+  "ASSIST": [
+    "Assist from {player}!",
+    "{player} provides the pass for the goal!",
+    "Beautiful assist from {player}!",
+    "{player} sets up {player2} for the goal!"
+  ],
+
+  "KICKOFF_FIRST": [
+    "{team} kicks off first.",
+    "{team} takes the first kick."
+  ],
+
+  "VAR_CHECK": [
+    "VAR check in progress...",
+    "The referee is checking VAR.",
+    "VAR being reviewed... Please wait!"
+  ],
+
+  "VAR_OVERTURN": [
+    "Decision overturned by VAR!",
+    "VAR changes the referee's decision!"
+  ],
+
+  "WOODWORK": [
+    "Off the woodwork!",
+    "The woodwork saves!",
+    "Hits the post and out!",
+    "The post saves the keeper!"
+  ],
+
+  "GREAT_CHANCE": [
+    "GREAT CHANCE for {player}!",
+    "Golden opportunity for {player}!",
+    "What a miss from {player}!"
+  ],
+
+  "GOAL_KEEPER_SAVE": [
+    "The keeper makes an incredible save!",
+    "Monster! The keeper saved everything!",
+    "{team}'s keeper is the savior!"
+  ],
+
+  "DEFENSIVE_MISTAKE": [
+    "Defensive mistake by {player}!",
+    "Sloppy defending from {team}!",
+    "{player} makes a huge error!"
+  ],
+
+  "COACH_SPEAK": [
+    "{team}'s manager is giving instructions.",
+    "The coach calls for calm.",
+    "The manager is unhappy with the performance."
+  ],
+
+  "SUSPENSION": [
+    "{player} is suspended for the next match.",
+    "This card means suspension for {player}."
+  ],
+
+  "RECORD": [
+    "{player} breaks the goal record!",
+    "Historical moment for {player}!",
+    "A new record for {player}!"
+  ],
+
+  "DERBY": [
+    "It's a derby match! The rivalry is intense!",
+    "The derby doesn't disappoint!",
+    "Tension is high in this derby!"
+  ],
+
+  "FINAL": [
+    "It's the final match!",
+    "Title decider! Who will be champion?",
+    "The trophy is at stake in this final!"
+  ],
+
+  "CELEBRATION_TEAM": [
+    "The whole team celebrates the goal!",
+    "Players embrace each other!",
+    "Joy explodes on the pitch!"
+  ],
+
+  "FAN_REACTION": [
+    "The home fans are roaring!",
+    "Cheers from the stands!",
+    "Fans are disappointed with this result.",
+    "Away fans are celebrating wildly!"
+  ],
+
+  "MANAGER_REACTION": [
+    "The manager is furious on the touchline!",
+    "The manager applauds the team.",
+    "The manager looks tense.",
+    "The manager is taking notes - planning changes."
+  ],
+
+  "PRE_MATCH": [
+    "The teams are warming up.",
+    "Players walk out onto the pitch.",
+    "The national anthems are playing.",
+    "A magnificent atmosphere at the stadium tonight."
+  ],
+
+  "POST_MATCH": [
+    "The players shake hands.",
+    "The manager shakes hands with the referee.",
+    "Emotions are high at full time.",
+    "The trophy is presented to the winning team!"
+  ]
+}

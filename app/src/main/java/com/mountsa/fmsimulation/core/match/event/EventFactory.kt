@@ -13,7 +13,10 @@ object EventFactory {
         awayScore: Int,
         player: PlayerEntity? = null,
         teamId: Long? = null,
-        teamName: String = ""
+        teamName: String = "",
+        playerIn: PlayerEntity? = null,
+        playerOut: PlayerEntity? = null,
+        minutesAdded: Int = 0
     ): MatchEvent {
         val event = MatchEvent(
             minute = minute,
@@ -31,7 +34,10 @@ object EventFactory {
             commentary = CommentaryEngine.generate(
                 event = event,
                 playerName = event.playerName,
-                teamName = event.teamName
+                teamName = event.teamName,
+                playerIn = playerIn?.shortName ?: "",
+                playerOut = playerOut?.shortName ?: "",
+                minutesAdded = minutesAdded
             )
         )
     }

@@ -1,42 +1,122 @@
 package com.mountsa.fmsimulation.core.match.event
 
-
 enum class EventType {
-
+    // MATCH
     MATCH_START,
     MATCH_END,
     HALFTIME,
+    SECOND_HALF,
+    PRE_MATCH,
+    POST_MATCH,
 
+    // ATTACK
     SHOT,
     SHOT_ON_TARGET,
-    MISSED_CHANCE,
-
+    MISS,
     GOAL,
-    OWN_GOAL,
+    GOAL_OWN,
     PENALTY_GOAL,
-
-    SAVE,
-    BIG_SAVE,
-
-    PASS,
-    KEY_PASS,
+    PENALTY_MISS,
+    GOAL_DISALLOWED,
+    INJURY_TIME_GOAL,
+    HATTRICK,
+    BRACE,
     ASSIST,
 
+    // DEFENSE
+    SAVE,
+    BIG_SAVE,
+    GOAL_KEEPER_SAVE,
+    GOAL_LINE_CLEARANCE,
+    CLEARANCE,
     TACKLE,
     INTERCEPTION,
 
+    // SET PIECES
+    CORNER,
+    FREEKICK,
+    PENALTY,
+
+    // DISCIPLINE
     FOUL,
     YELLOW_CARD,
     RED_CARD,
+    SECOND_YELLOW,
+    SUSPENSION,
 
-    OFFSIDE,
-    CORNER,
-    FREE_KICK,
-
+    // PLAYER
     SUBSTITUTION,
+    SUBSTITUTION_READY,
     INJURY,
 
+    // PASSING
+    PASS,
+    KEY_PASS,
+    CROSS,
+
+    // SKILLS
+    DRIBBLE,
+    HEADER,
+    VOLLEY,
+    LONGSHOT,
+    NUTMEG,
+    STEPOVER,
+
+    // EVENTS
+    OFFSIDE,
+    POST_HIT,
+    WOODWORK,
+    HAND_BALL,
+    DIVING,
+    TIME_WASTING,
+    NEAR_MISS,
+    GREAT_CHANCE,
+    HALF_CHANCE,
+    COUNTER_ATTACK,
+    DEFENSIVE_MISTAKE,
+    SIDE_NETTING,
+
+    // POSSESSION
     POSSESSION,
 
-    CROWD_REACTION
+    // TIME
+    TIME_ADDED,
+    EXTRA_TIME_START,
+    EXTRA_TIME_END,
+
+    // PENALTY SHOOTOUT
+    PENALTY_SHOOTOUT_START,
+    PENALTY_SHOOTOUT_GOAL,
+    PENALTY_SHOOTOUT_MISS,
+
+    // SPECIAL
+    GOALKICK,
+    THROWIN,
+    KICKOFF_FIRST,
+
+    // STATS
+    STATS,
+    FORMATION,
+    CAPTAIN,
+    TACTICS,
+    PLAYER_RATING,
+
+    // CELEBRATION
+    CELEBRATION,
+    CELEBRATION_TEAM,
+
+    // REACTIONS
+    FAN_CHANT,
+    FAN_REACTION,
+    CROWD_REACTION,
+    MANAGER_REACTION,
+    COACH_SPEAK,
+
+    // MISC
+    WEATHER,
+    RECORD,
+    DERBY,
+    FINAL,
+    VAR_CHECK,
+    VAR_OVERTURN
 }

@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -33,6 +34,15 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
         visible = true
     }
 
+    // Pulse animation untuk VS
+    val pulse by animateFloatAsState(
+        targetValue = if (visible) 1f else 0.5f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(2000, easing = FastOutSlowInEasing),
+            repeatMode = RepeatMode.Reverse
+        )
+    )
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -41,28 +51,35 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
     ) {
         Column(
             modifier = Modifier
-                .fillMaxWidth(0.85f)
-                .fillMaxHeight(0.85f),
+                .fillMaxWidth(0.9f)
+                .fillMaxHeight(0.9f),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceBetween
         ) {
-            // TOP BAR - ANIMASI DARI ATAS
+            // TOP BAR
             AnimatedVisibility(
                 visible = visible,
-                enter = slideInVertically(initialOffsetY = { -it }) + fadeIn(tween(800))
+                enter = slideInVertically(initialOffsetY = { -it }) + fadeIn(tween(600))
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(
-                        text = session.competitionName.uppercase(),
-                        color = FM_GREEN,
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.ExtraBold,
-                        letterSpacing = 2.sp
-                    )
+                    Surface(
+                        color = FM_GREEN.copy(alpha = 0.1f),
+                        shape = RoundedCornerShape(4.dp),
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    ) {
+                        Text(
+                            text = session.competitionName.uppercase(),
+                            color = FM_GREEN,
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.ExtraBold,
+                            letterSpacing = 3.sp,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
+                        )
+                    }
                     Text(
                         text = session.stadiumName,
-                        color = Color.Gray,
-                        fontSize = 10.sp
+                        color = Color.Gray.copy(alpha = 0.6f),
+                        fontSize = 11.sp
                     )
                 }
             }
@@ -73,66 +90,127 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                 horizontalArrangement = Arrangement.Center,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                // HOME - ANIMASI DARI KIRI
+                // HOME
                 AnimatedVisibility(
                     visible = visible,
-                    enter = slideInHorizontally(initialOffsetX = { -it }) + fadeIn(tween(1000)),
+                    enter = slideInHorizontally(initialOffsetX = { -it }) + fadeIn(tween(800)),
                     modifier = Modifier.weight(1f)
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        ClubLogo(clubId = session.match.homeClubId, size = 70.dp)
-                        Spacer(Modifier.height(8.dp))
+                        ClubLogo(clubId = session.match.homeClubId, size = 80.dp)
+                        Spacer(Modifier.height(10.dp))
                         Text(
                             session.homeClubName,
                             color = Color.White,
-                            fontSize = 13.sp,
+                            fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             maxLines = 2
                         )
+                        Surface(
+                            color = FM_GREEN.copy(alpha = 0.1f),
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.padding(top = 4.dp)
+                        ) {
+                            Text(
+                                "HOME",
+                                color = FM_GREEN,
+                                fontSize = 8.sp,
+                                fontWeight = FontWeight.Bold,
+                                letterSpacing = 2.sp,
+                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
+                            )
+                        }
                     }
                 }
 
-                // VS - TETAP
-                Text(
-                    "VS",
-                    color = Color.Gray,
-                    fontSize = 24.sp,
-                    fontWeight = FontWeight.Black,
-                    modifier = Modifier.padding(horizontal = 16.dp)
-                )
+                // VS
+                Box(
+                    modifier = Modifier
+                        .padding(horizontal = 16.dp)
+                        .scale(pulse)
+                ) {
+                    Surface(
+                        color = FM_GREEN.copy(alpha = 0.15f),
+                        shape = RoundedCornerShape(50),
+                        modifier = Modifier.size(60.dp)
+                    ) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Text(
+                                "VS",
+                                color = FM_GREEN,
+                                fontSize = 18.sp,
+                                fontWeight = FontWeight.Black
+                            )
+                        }
+                    }
+                }
 
-                // AWAY - ANIMASI DARI KANAN
+                // AWAY
                 AnimatedVisibility(
                     visible = visible,
-                    enter = slideInHorizontally(initialOffsetX = { it }) + fadeIn(tween(1000)),
+                    enter = slideInHorizontally(initialOffsetX = { it }) + fadeIn(tween(800)),
                     modifier = Modifier.weight(1f)
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        ClubLogo(clubId = session.match.awayClubId, size = 70.dp)
-                        Spacer(Modifier.height(8.dp))
+                        ClubLogo(clubId = session.match.awayClubId, size = 80.dp)
+                        Spacer(Modifier.height(10.dp))
                         Text(
                             session.awayClubName,
                             color = Color.White,
-                            fontSize = 13.sp,
+                            fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             maxLines = 2
                         )
+                        Surface(
+                            color = Color.Red.copy(alpha = 0.1f),
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.padding(top = 4.dp)
+                        ) {
+                            Text(
+                                "AWAY",
+                                color = Color.Red,
+                                fontSize = 8.sp,
+                                fontWeight = FontWeight.Bold,
+                                letterSpacing = 2.sp,
+                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
+                            )
+                        }
                     }
                 }
             }
 
-            // BUTTON - TETAP
-            Button(
-                onClick = { viewModel.nextMatchFlowStep() },
-                colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                modifier = Modifier
-                    .width(180.dp)
-                    .height(46.dp),
-                shape = RoundedCornerShape(8.dp)
+            // BUTTON
+            AnimatedVisibility(
+                visible = visible,
+                enter = fadeIn(tween(600)) + slideInVertically(initialOffsetY = { it })
             ) {
-                Text("PREPARE LINEUP", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                Button(
+                    onClick = { viewModel.nextMatchFlowStep() },
+                    colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                    modifier = Modifier
+                        .width(200.dp)
+                        .height(52.dp)
+                        .scale(
+                            animateFloatAsState(
+                                targetValue = if (visible) 1f else 0.95f,
+                                animationSpec = infiniteRepeatable(
+                                    animation = tween(1500, easing = FastOutSlowInEasing),
+                                    repeatMode = RepeatMode.Reverse
+                                )
+                            ).value
+                        ),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Text(
+                        "PREPARE LINEUP",
+                        color = Color.Black,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 13.sp,
+                        letterSpacing = 1.sp
+                    )
+                }
             }
         }
     }

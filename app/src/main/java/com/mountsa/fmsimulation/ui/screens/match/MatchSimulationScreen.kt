@@ -1,5 +1,7 @@
 package com.mountsa.fmsimulation.ui.screens.match
 
+import androidx.compose.animation.*
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -11,6 +13,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -18,12 +21,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.mountsa.fmsimulation.core.match.event.EventType
 import com.mountsa.fmsimulation.core.match.event.MatchEvent
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
-import com.mountsa.fmsimulation.utils.AudioManager
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.delay
 
@@ -46,8 +49,13 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     var currentMinute by remember { mutableIntStateOf(0) }
     val listState = rememberLazyListState()
+    var pulseScale by remember { mutableStateOf(1f) }
 
-    // Crowd ambience: starts when the live match screen appears, stops when it's left.
+    val scale by animateFloatAsState(
+        targetValue = pulseScale,
+        animationSpec = tween(300, easing = FastOutSlowInEasing)
+    )
+
     val audioManager = viewModel.audioManager
     DisposableEffect(Unit) {
         audioManager.playCrowdAmbience()
@@ -56,8 +64,9 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     LaunchedEffect(Unit) {
         while (currentMinute < 90) {
-            delay(150) // Adjust speed as needed
+            delay(150)
             currentMinute += 1
+            pulseScale = 1f + (0.02f * (currentMinute % 10) / 10f)
         }
     }
 
@@ -68,7 +77,6 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     val currentHomeScore = visibleEvents.lastOrNull()?.scoreHome ?: 0
     val currentAwayScore = visibleEvents.lastOrNull()?.scoreAway ?: 0
 
-    // Auto-scroll to bottom of events
     LaunchedEffect(visibleEvents.size) {
         if (visibleEvents.isNotEmpty()) {
             listState.animateScrollToItem(visibleEvents.size - 1)
@@ -80,75 +88,146 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             // TOP BAR
             Row(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    ClubLogo(clubId = match.homeClubId, size = 20.dp)
+                    ClubLogo(clubId = match.homeClubId, size = 22.dp)
                     Spacer(Modifier.width(6.dp))
-                    Text(session.homeShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(session.homeShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
                 }
-                Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                Surface(
+                    color = FM_GREEN.copy(alpha = 0.15f),
+                    shape = RoundedCornerShape(4.dp),
+                    modifier = Modifier.padding(horizontal = 8.dp)
+                ) {
+                    Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp))
+                }
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
                     Spacer(Modifier.width(6.dp))
-                    ClubLogo(clubId = match.awayClubId, size = 20.dp)
+                    ClubLogo(clubId = match.awayClubId, size = 22.dp)
                 }
             }
 
-            // SCORE & TIME
+            // SCORE & TIME dengan animasi
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-                Text(currentHomeScore.toString(), color = Color.White, fontSize = 40.sp, fontWeight = FontWeight.Black)
-                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(horizontal = 20.dp)) {
-                    Text(if (currentMinute >= 90) "FT" else "$currentMinute'", color = FM_GREEN, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-                    Text("MENIT", color = Color.Gray, fontSize = 8.sp)
+                AnimatedContent(
+                    targetState = currentHomeScore,
+                    transitionSpec = { 
+                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith 
+                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 }) 
+                    }
+                ) { score ->
+                    Text(score.toString(), color = Color.White, fontSize = 44.sp, fontWeight = FontWeight.Black)
                 }
-                Text(currentAwayScore.toString(), color = Color.White, fontSize = 40.sp, fontWeight = FontWeight.Black)
+                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(horizontal = 20.dp)) {
+                    Text(if (currentMinute >= 90) "FT" else "$currentMinute'", color = FM_GREEN, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+                    Text(if (currentMinute >= 90) "FULL TIME" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
+                }
+                AnimatedContent(
+                    targetState = currentAwayScore,
+                    transitionSpec = { 
+                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith 
+                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 }) 
+                    }
+                ) { score ->
+                    Text(score.toString(), color = Color.White, fontSize = 44.sp, fontWeight = FontWeight.Black)
+                }
             }
 
             // PROGRESS BAR
-            LinearProgressIndicator(
-                progress = { currentMinute / 90f },
-                modifier = Modifier.fillMaxWidth(0.6f).align(Alignment.CenterHorizontally).height(3.dp).clip(RoundedCornerShape(2.dp)),
-                color = FM_GREEN,
-                trackColor = Color.White.copy(alpha = 0.1f)
-            )
+            Box(modifier = Modifier.fillMaxWidth(0.7f).align(Alignment.CenterHorizontally).height(4.dp).clip(RoundedCornerShape(2.dp))) {
+                LinearProgressIndicator(
+                    progress = { currentMinute / 90f },
+                    modifier = Modifier.fillMaxSize(),
+                    color = FM_GREEN,
+                    trackColor = Color.White.copy(alpha = 0.08f)
+                )
+            }
 
-            Spacer(Modifier.height(16.dp))
+            Spacer(Modifier.height(12.dp))
 
             // 3 COLUMNS SECTION
             Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                // LEFT: STATISTIK (Mocked progress based on minute)
-                SimCol(title = "STATISTIK", modifier = Modifier.weight(1f)) {
-                    val p = currentMinute / 90f
-                    StatRowSim("Shots", (match.shotsHome * p).toInt(), (match.shotsAway * p).toInt())
-                    StatRowSim("Target", (match.shotsOnTargetHome * p).toInt(), (match.shotsOnTargetAway * p).toInt())
-                    StatRowSim("Poss %", match.possessionHome, match.possessionAway)
+                // LEFT: STATISTIK
+                AnimatedVisibility(
+                    visible = true,
+                    enter = fadeIn(tween(400)) + slideInHorizontally(initialOffsetX = { -it / 4 })
+                ) {
+                    SimCol(title = "STATISTIK", modifier = Modifier.weight(1f)) {
+                        val p = currentMinute / 90f
+                        StatRowModern("Shots", (match.shotsHome * p).toInt(), (match.shotsAway * p).toInt())
+                        StatRowModern("Target", (match.shotsOnTargetHome * p).toInt(), (match.shotsOnTargetAway * p).toInt())
+                        StatRowModern("Poss %", match.possessionHome, match.possessionAway)
+                        StatRowModern("Corners", (match.cornersHome * p).toInt(), (match.cornersAway * p).toInt())
+                    }
                 }
 
-                // CENTER: EVENT PERTANDINGAN
-                SimCol(title = "EVENT", modifier = Modifier.weight(1.1f)) {
-                    LazyColumn(state = listState) {
-                        items(visibleEvents) { event ->
-                            EventText(event.minute, event.type.name.replace("_", " "))
+                // CENTER: EVENT
+                AnimatedVisibility(
+                    visible = true,
+                    enter = fadeIn(tween(400)) + scaleIn(initialScale = 0.95f)
+                ) {
+                    SimCol(title = "EVENT", modifier = Modifier.weight(1.1f)) {
+                        LazyColumn(state = listState, modifier = Modifier.fillMaxSize()) {
+                            items(visibleEvents) { event ->
+                                EventText(
+                                    min = event.minute,
+                                    text = event.type.toString().replace("_", " "),
+                                    type = event.type,
+                                    playerName = event.playerName
+                                )
+                            }
                         }
                     }
                 }
 
                 // RIGHT: LIVE COMMENTARY
-                SimCol(title = "KOMENTAR", modifier = Modifier.weight(1.2f)) {
-                    Text(
-                        text = latestCommentary,
-                        color = Color.White, fontSize = 11.sp, lineHeight = 15.sp
-                    )
+                AnimatedVisibility(
+                    visible = true,
+                    enter = fadeIn(tween(400)) + slideInHorizontally(initialOffsetX = { it / 4 })
+                ) {
+                    SimCol(title = "KOMENTAR", modifier = Modifier.weight(1.2f)) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .background(Color.White.copy(alpha = 0.02f), RoundedCornerShape(6.dp))
+                                .padding(8.dp)
+                        ) {
+                            Text(
+                                text = latestCommentary,
+                                color = Color.White,
+                                fontSize = 11.sp,
+                                lineHeight = 16.sp
+                            )
+                            // Live indicator
+                            if (currentMinute < 90) {
+                                Box(
+                                    modifier = Modifier
+                                        .align(Alignment.BottomEnd)
+                                        .size(6.dp)
+                                        .background(
+                                            color = FM_GREEN,
+                                            shape = RoundedCornerShape(50)
+                                        )
+                                )
+                            }
+                        }
+                    }
                 }
             }
 
             // FOOTER BUTTON
             if (currentMinute >= 90) {
-                Button(
-                    onClick = { viewModel.nextMatchFlowStep() },
-                    colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                    modifier = Modifier.fillMaxWidth().padding(top = 12.dp).height(40.dp),
-                    shape = RoundedCornerShape(6.dp)
+                AnimatedVisibility(
+                    visible = true,
+                    enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { it })
                 ) {
-                    Text("VIEW RESULT", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                    Button(
+                        onClick = { viewModel.nextMatchFlowStep() },
+                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                        modifier = Modifier.fillMaxWidth().padding(top = 12.dp).height(44.dp),
+                        shape = RoundedCornerShape(8.dp)
+                    ) {
+                        Text("VIEW RESULT", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    }
                 }
             }
         }
@@ -157,35 +236,64 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
 @Composable
 fun SimCol(title: String, modifier: Modifier, content: @Composable () -> Unit) {
-    Column(modifier = modifier.fillMaxHeight().background(Color.White.copy(alpha = 0.04f), RoundedCornerShape(6.dp)).padding(8.dp)) {
-        Text(title, color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)
-        Spacer(Modifier.height(8.dp))
+    Column(modifier = modifier.background(Color.White.copy(alpha = 0.03f), RoundedCornerShape(8.dp)).padding(8.dp)) {
+        Text(title, color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold, letterSpacing = 0.5.sp)
+        Spacer(Modifier.height(6.dp))
         content()
     }
 }
 
 @Composable
-fun StatRowSim(label: String, h: Int, a: Int) {
-    Column(modifier = Modifier.padding(vertical = 4.dp)) {
+fun StatRowModern(label: String, h: Int, a: Int) {
+    Column(modifier = Modifier.padding(vertical = 3.dp)) {
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Text(h.toString(), color = Color.White, fontSize = 10.sp)
-            Text(label, color = Color.Gray, fontSize = 9.sp)
-            Text(a.toString(), color = Color.White, fontSize = 10.sp)
+            Text(h.toString(), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+            Text(label, color = Color.Gray.copy(alpha = 0.6f), fontSize = 8.sp)
+            Text(a.toString(), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
         }
         val progress = if (h + a > 0) h.toFloat() / (h + a) else 0.5f
-        LinearProgressIndicator(
-            progress = { progress },
-            modifier = Modifier.fillMaxWidth().height(2.dp).clip(RoundedCornerShape(1.dp)),
-            color = FM_GREEN,
-            trackColor = Color.Red.copy(alpha = 0.3f)
-        )
+        Box(modifier = Modifier.fillMaxWidth().height(3.dp).clip(RoundedCornerShape(2.dp)).background(Color.White.copy(alpha = 0.05f))) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth(progress)
+                    .fillMaxHeight()
+                    .background(FM_GREEN)
+            )
+        }
     }
 }
 
 @Composable
-fun EventText(min: Int, text: String) {
-    Row(modifier = Modifier.padding(vertical = 3.dp)) {
-        Text("$min'", color = FM_GREEN, fontSize = 10.sp, modifier = Modifier.width(22.dp), fontWeight = FontWeight.Bold)
-        Text(text, color = Color.White, fontSize = 10.sp)
+fun EventText(min: Int, text: String, type: EventType, playerName: String = "") {
+    val color = when (type) {
+        EventType.GOAL, EventType.PENALTY_GOAL, EventType.INJURY_TIME_GOAL -> FM_GREEN
+        EventType.RED_CARD -> Color.Red
+        EventType.YELLOW_CARD -> Color.Yellow
+        EventType.GOAL_OWN -> Color(0xFFFF9800)
+        EventType.SUBSTITUTION -> Color(0xFF2196F3)
+        EventType.HALFTIME, EventType.MATCH_END -> Color(0xFF9C27B0)
+        else -> Color.White
+    }
+    
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(
+                if (type == EventType.GOAL || type == EventType.PENALTY_GOAL) 
+                    FM_GREEN.copy(alpha = 0.08f) 
+                else Color.Transparent,
+                RoundedCornerShape(4.dp)
+            )
+            .padding(horizontal = 4.dp, vertical = 2.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("$min'", color = FM_GREEN, fontSize = 10.sp, modifier = Modifier.width(22.dp), fontWeight = FontWeight.Bold)
+            Text(text, color = color, fontSize = 10.sp, fontWeight = if (type == EventType.GOAL || type == EventType.PENALTY_GOAL) FontWeight.Bold else FontWeight.Normal)
+        }
+        if (playerName.isNotEmpty()) {
+            Text(playerName, color = Color.Gray.copy(alpha = 0.6f), fontSize = 9.sp)
+        }
     }
 }

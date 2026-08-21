@@ -8,26 +8,27 @@ object CommentaryEngine {
     fun generate(
         event: MatchEvent,
         playerName: String = "",
-        teamName: String = ""
+        teamName: String = "",
+        playerIn: String = "",
+        playerOut: String = "",
+        minutesAdded: Int = 0
     ): String {
 
-        val templates =
-            CommentaryRepository
-                .get(event.type.name)
+        // Perbaiki: panggil event.type (bukan event.type.name)
+        val templates = CommentaryRepository.get(event.type.toString())
 
         if (templates.isEmpty()) {
             return ""
         }
 
-        val template =
-            templates.random(Random)
+        val template = templates.random(Random)
 
         return template
             .replace("{player}", playerName)
             .replace("{team}", teamName)
-            .replace(
-                "{score}",
-                "${event.scoreHome}-${event.scoreAway}"
-            )
+            .replace("{score}", "${event.scoreHome}-${event.scoreAway}")
+            .replace("{player_in}", playerIn)
+            .replace("{player_out}", playerOut)
+            .replace("{minutes}", minutesAdded.toString())
     }
 }
