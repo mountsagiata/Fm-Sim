@@ -8,7 +8,9 @@ import com.mountsa.fmsimulation.data.repository.DataRepository
 import com.mountsa.fmsimulation.domain.engine.ClubManager
 import com.mountsa.fmsimulation.domain.engine.LeagueManager
 import com.mountsa.fmsimulation.domain.engine.TrainingManager
-import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.withContext
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -32,26 +34,23 @@ class GameDayProcessor @Inject constructor(
     private val financialService: FinancialService
 ) {
 
-    suspend fun continueDay() {
-        val career = repository.getCareer().first() ?: return
+    suspend fun continueDay() = withContext(Dispatchers.IO) {
+        val career = repository.getCareer().firstOrNull() ?: return@withContext
         val clubId = career.selectedClubId
-        val club = repository.getClubById(clubId) ?: return
+        val club = repository.getClubById(clubId) ?: return@withContext
 
         val currentDate = career.currentDate
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = currentDate
         
-        Log.d("GameDayProcessor", "Processing day: $currentDate")
+        Log.d("GameDayProcessor", "Processing day: $currentDate on ${Thread.currentThread().name}")
 
-        // 1. SQUAD DAILY PROCESS (Item 14: Morale & Training)
         trainingManager.processDailyTraining(clubId)
         injuryService.processDailyInjuries(clubId)
         moraleService.updateDailyMorale(clubId)
 
-        // 2. CALENDAR AUTOMATION (Item 20)
         calendarService.automateCalendar(clubId, currentDate)
 
-        // 3. TRANSFER WINDOW & AI LOGIC (Item 8 & 12)
         handleTransferWindowNotifications(career, calendar)
         
         if (isTransferWindowOpen(currentDate)) {
@@ -64,7 +63,6 @@ class GameDayProcessor @Inject constructor(
             }
         }
 
-        // 4. MATCH SIMULATION (AI VS AI) (Item 11/16/22/27)
         val todaysMatches = repository.getMatchesByDate(currentDate).filter { !it.isPlayed }
 
         if (todaysMatches.isNotEmpty()) {
@@ -79,13 +77,11 @@ class GameDayProcessor @Inject constructor(
                 simulator.simulateMatch(match)
             }
             
-            // Update Standings for all leagues that had matches
             todaysMatches.mapNotNull { it.leagueId }.distinct().forEach { leagueId ->
                 leagueManager.updateStandings(leagueId)
             }
         }
 
-        // 5. PERIODIC UPDATES & FINANCIALS (Item 26)
         val isFirstOfMonth = calendar.get(Calendar.DAY_OF_MONTH) == 1
         if (isFirstOfMonth) {
             managerRatingService.updateManagerRating(clubId)
@@ -95,10 +91,8 @@ class GameDayProcessor @Inject constructor(
             financialService.processMonthlyFinancials(clubId)
         }
 
-        // Check if season is finished
         leagueManager.checkPromotionRelegation(club.leagueId)
 
-        // 6. ADVANCE DATE
         val nextDate = advanceDay(currentDate)
         repository.saveCareer(career.copy(currentDate = nextDate, updatedAt = System.currentTimeMillis()))
         
@@ -134,7 +128,7 @@ class GameDayProcessor @Inject constructor(
     }
 
     private suspend fun sendInbox(clubId: Long, subject: String, message: String, category: InboxCategory) {
-        val career = repository.getCareer().first() ?: return
+        val career = repository.getCareer().firstOrNull() ?: return
         repository.addInbox(
             InboxEntity(
                 clubId = clubId,

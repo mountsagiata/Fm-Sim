@@ -437,43 +437,46 @@ class DashboardViewModel @Inject constructor(
 
     fun finishMatchFlow() {
         val session = _matchSession.value
+        if (_isLoading.value) return // guard against double-tap re-entry
         viewModelScope.launch {
-            if (session != null) {
-                _isLoading.value = true
-                _loadingMessage.value = "Finalizing Match Results..."
-                
-                // 1. Update Standing Positions
-                session.match.leagueId?.let { leagueId ->
-                    leagueManager.updateStandings(leagueId)
-                }
-                
-                // 2. Update Manager Rating
-                managerRatingService.updateManagerRating(session.match.homeClubId)
-                
-                // 3. Post-Match Press Conference
-                pressConferenceGenerator.generatePressConference(session.match.homeClubId)
-                
-                // 4. Generate Inbox Result
-                generateMatchResultInbox(session.match)
-                
-                delay(500)
+            try {
+                if (session != null) {
+                    _isLoading.value = true
+                    _loadingMessage.value = "Finalizing Match Results..."
+                    
+                    // 1. Update Standing Positions
+                    session.match.leagueId?.let { leagueId ->
+                        leagueManager.updateStandings(leagueId)
+                    }
+                    
+                    // 2. Update Manager Rating
+                    managerRatingService.updateManagerRating(session.match.homeClubId)
+                    
+                    // 3. Post-Match Press Conference
+                    pressConferenceGenerator.generatePressConference(session.match.homeClubId)
+                    
+                    // 4. Generate Inbox Result
+                    generateMatchResultInbox(session.match)
+                    
+                    delay(500)
 
-                // 5. Process the rest of the day: this simulates the OTHER league
-                // matches scheduled on the same date (AI vs AI), runs training /
-                // injury / morale / transfer updates, and advances to the next day.
-                // Without this, other clubs never play on days the user has a
-                // match, so their standings stay stuck at 0.
-                _loadingMessage.value = "Processing other results..."
-                try {
+                    // 5. Process the rest of the day: this simulates the OTHER league
+                    // matches scheduled on the same date (AI vs AI), runs training /
+                    // injury / morale / transfer updates, and advances to the next day.
+                    // Without this, other clubs never play on days the user has a
+                    // match, so their standings stay stuck at 0.
+                    _loadingMessage.value = "Processing other results..."
                     processor.continueDay()
-                } catch (e: Exception) {
-                    e.printStackTrace()
                 }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            } finally {
+                // Always reached, even if something above threw — the user is
+                // never left stuck on the post-match screen.
+                _matchFlowState.value = MatchFlow.NONE
+                _matchSession.value = null
+                _isLoading.value = false
             }
-            
-            _matchFlowState.value = MatchFlow.NONE
-            _matchSession.value = null
-            _isLoading.value = false
         }
     }
 

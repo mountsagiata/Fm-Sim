@@ -21,6 +21,7 @@ import com.google.gson.reflect.TypeToken
 import com.mountsa.fmsimulation.core.match.event.MatchEvent
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.utils.AudioManager
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -77,10 +78,18 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     Box(modifier = Modifier.fillMaxSize().background(FM_DARK_BG).padding(12.dp)) {
         Column(modifier = Modifier.fillMaxSize()) {
             // TOP BAR
-            Row(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text(session.homeShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+            Row(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    ClubLogo(clubId = match.homeClubId, size = 20.dp)
+                    Spacer(Modifier.width(6.dp))
+                    Text(session.homeShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                }
                 Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
-                Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Spacer(Modifier.width(6.dp))
+                    ClubLogo(clubId = match.awayClubId, size = 20.dp)
+                }
             }
 
             // SCORE & TIME

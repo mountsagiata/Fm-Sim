@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardUiState
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -56,7 +57,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 horizontalArrangement = Arrangement.Center,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                ResultTeamCompact(name = session.homeClubName, score = match.homeScore, modifier = Modifier.weight(1f))
+                ResultTeamCompact(clubId = match.homeClubId, name = session.homeClubName, score = match.homeScore, modifier = Modifier.weight(1f))
                 Text(
                     "-", 
                     color = Color.White, 
@@ -64,7 +65,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     fontWeight = FontWeight.Black, 
                     modifier = Modifier.padding(horizontal = 12.dp)
                 )
-                ResultTeamCompact(name = session.awayClubName, score = match.awayScore, modifier = Modifier.weight(1f))
+                ResultTeamCompact(clubId = match.awayClubId, name = session.awayClubName, score = match.awayScore, modifier = Modifier.weight(1f))
             }
 
             Spacer(Modifier.height(24.dp))
@@ -99,8 +100,10 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
 }
 
 @Composable
-fun ResultTeamCompact(name: String, score: Int, modifier: Modifier) {
+fun ResultTeamCompact(clubId: Long, name: String, score: Int, modifier: Modifier) {
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier) {
+        ClubLogo(clubId = clubId, size = 40.dp)
+        Spacer(Modifier.height(4.dp))
         Text(
             name, 
             color = Color.White, 
