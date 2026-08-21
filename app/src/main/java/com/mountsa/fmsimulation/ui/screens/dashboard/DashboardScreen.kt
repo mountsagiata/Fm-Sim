@@ -67,6 +67,8 @@ fun DashboardScreen(
     val club by dashboardViewModel.club.collectAsStateWithLifecycle()
     val career by dashboardViewModel.career.collectAsStateWithLifecycle()
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
+    val isLoading by dashboardViewModel.isLoading.collectAsStateWithLifecycle()
+    val loadingMessage by dashboardViewModel.loadingMessage.collectAsStateWithLifecycle()
     val context = LocalContext.current
     val audioManager = dashboardViewModel.audioManager
 
@@ -229,14 +231,22 @@ fun DashboardScreen(
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Text("POST-MATCH ANALYSIS", color = Color.White, fontSize = 28.sp, fontWeight = FontWeight.ExtraBold)
-                                Text("The team is heading back to the dressing room.", color = Color.Gray, fontSize = 14.sp)
+                                Text(
+                                    if (isLoading) loadingMessage else "The team is heading back to the dressing room.",
+                                    color = Color.Gray,
+                                    fontSize = 14.sp
+                                )
                                 Spacer(Modifier.height(48.dp))
-                                Button(
-                                    onClick = { dashboardViewModel.finishMatchFlow() },
-                                    colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                                    modifier = Modifier.width(240.dp).height(56.dp)
-                                ) {
-                                    Text("RETURN TO HUB", color = Color.Black, fontWeight = FontWeight.Bold)
+                                if (isLoading) {
+                                    CircularProgressIndicator(color = FM_GREEN)
+                                } else {
+                                    Button(
+                                        onClick = { dashboardViewModel.finishMatchFlow() },
+                                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                                        modifier = Modifier.width(240.dp).height(56.dp)
+                                    ) {
+                                        Text("RETURN TO HUB", color = Color.Black, fontWeight = FontWeight.Bold)
+                                    }
                                 }
                             }
                         }
