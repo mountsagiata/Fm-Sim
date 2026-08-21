@@ -22,10 +22,41 @@ jobs:
           distribution: 'temurin'
 
       - name: Download large database asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p app/src/main/assets/database
-          curl -L -o app/src/main/assets/database/database_players.json \
-            https://github.com/mountsagiata/Fm-Sim/releases/download/assets-v1/database_players.json
+          gh release download assets-v1 \
+            --repo mountsagiata/Fm-Sim \
+            --pattern "database_players.json" \
+            --dir app/src/main/assets/database \
+            --clobber
+
+          FILE=app/src/main/assets/database/database_players.json
+          echo "## 📦 Database asset download" >> $GITHUB_STEP_SUMMARY
+          if [ -f "$FILE" ]; then
+            SIZE=$(stat -c%s "$FILE")
+            SIZE_MB=$((SIZE / 1024 / 1024))
+            echo "- File: \`$FILE\`" >> $GITHUB_STEP_SUMMARY
+            echo "- Size: ${SIZE_MB} MB" >> $GITHUB_STEP_SUMMARY
+            echo "Downloaded database_players.json: ${SIZE_MB} MB"
+            # Expected size is ~140MB. If it's suspiciously small, the
+            # download likely failed silently (e.g. auth/404 error page
+            # saved instead of the real file) — fail loudly instead of
+            # letting the build continue with broken/empty world data.
+            if [ "$SIZE_MB" -lt 50 ]; then
+              echo "❌ File is much smaller than expected (~140MB). Download probably failed." >> $GITHUB_STEP_SUMMARY
+              echo "❌ ERROR: database_players.json is only ${SIZE_MB}MB — expected ~140MB. Aborting build."
+              head -c 500 "$FILE"
+              exit 1
+            else
+              echo "✅ Size looks correct." >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "❌ File was not downloaded at all." >> $GITHUB_STEP_SUMMARY
+            echo "❌ ERROR: $FILE does not exist after download step."
+            exit 1
+          fi
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -51,3 +82,20 @@ jobs:
         with:
           name: FmSimulation-debug-apk
           path: app/build/outputs/apk/debug/*.apk
+
+      - name: Build summary
+        if: always()
+        run: |
+          echo "## 🏗️ Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Commit: \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Triggered by: ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Branch: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f app/build/outputs/apk/debug/*.apk ] 2>/dev/null || ls app/build/outputs/apk/debug/*.apk >/dev/null 2>&1; then
+            APK=$(ls app/build/outputs/apk/debug/*.apk | head -1)
+            APK_SIZE_MB=$(( $(stat -c%s "$APK") / 1024 / 1024 ))
+            echo "- APK size: ${APK_SIZE_MB} MB" >> $GITHUB_STEP_SUMMARY
+            echo "- Status: ✅ Build succeeded" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- Status: ❌ Build failed (no APK produced)" >> $GITHUB_STEP_SUMMARY
+          fi
+          
