@@ -44,6 +44,9 @@ class MainViewModel @Inject constructor(
                 // dropped straight into the dashboard.
                 if (career != null && current == Screen.CareerSetup) {
                     _screen.value = Screen.Dashboard
+                } else if (career == null && current == Screen.Dashboard) {
+                    // Career was wiped (e.g. RESET CAREER DATA) — go back to Profile.
+                    _screen.value = Screen.Profile
                 }
             }
         }

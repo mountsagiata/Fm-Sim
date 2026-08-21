@@ -468,7 +468,12 @@ class DatabaseSeeder @Inject constructor(
         }
     }
 
-    private suspend fun seedFixtures() {
+    /**
+     * Regenerates match fixtures and initializes standings for every league.
+     * Safe to call again later (e.g. after resetCareerData()) to repopulate
+     * the schedule when it was wiped for a fresh new career.
+     */
+    suspend fun seedFixtures() {
         val leagues = repository.getAllLeaguesSync()
         leagues.forEach { 
             fixtureGenerator.generateLeagueFixtures(it.id)

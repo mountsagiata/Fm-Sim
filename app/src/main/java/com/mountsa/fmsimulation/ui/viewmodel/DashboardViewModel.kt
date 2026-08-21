@@ -425,6 +425,16 @@ class DashboardViewModel @Inject constructor(
         }
     }
 
+    fun resetCareer() {
+        viewModelScope.launch {
+            audioManager.stopBackgroundMusic()
+            audioManager.stopCrowdAmbience()
+            repository.resetCareerData()
+            // MainViewModel's career observer will detect career == null
+            // and automatically navigate back to the Profile screen.
+        }
+    }
+
     fun finishMatchFlow() {
         val session = _matchSession.value
         viewModelScope.launch {

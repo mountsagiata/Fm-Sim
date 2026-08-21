@@ -21,7 +21,8 @@ data class LeagueWithTeamCount(
 
 @HiltViewModel
 class CareerSetupViewModel @Inject constructor(
-    private val repository: DataRepository
+    private val repository: DataRepository,
+    private val databaseSeeder: com.mountsa.fmsimulation.core.managers.DatabaseSeeder
 ) : ViewModel() {
 
     private val _teamCountCache = MutableStateFlow<Map<Long, Int>>(emptyMap())
@@ -163,6 +164,13 @@ class CareerSetupViewModel @Inject constructor(
                         updatedAt = System.currentTimeMillis()
                     )
                 )
+
+                _generationMessage.value = "Generating Match Fixtures..."
+                _generationProgress.value = 0.95f
+                // Must run AFTER saveCareer() above, since fixture generation
+                // reads the career's season to schedule matches correctly.
+                databaseSeeder.seedFixtures()
+
                 _generationProgress.value = 1.0f
                 _generationMessage.value = "Welcome to ${club.name}!"
                 delay(500)

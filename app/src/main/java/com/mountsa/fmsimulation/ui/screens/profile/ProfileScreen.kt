@@ -1,5 +1,6 @@
 package com.mountsa.fmsimulation.ui.screens.profile
 
+import android.content.Context
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
@@ -38,6 +39,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.mountsa.fmsimulation.R
+import java.io.File
+import java.util.UUID
 import com.mountsa.fmsimulation.data.local.entities.UserProfileEntity
 import com.mountsa.fmsimulation.ui.components.LogoHeader
 import com.mountsa.fmsimulation.ui.theme.FM_Green
@@ -380,15 +383,44 @@ fun ActiveUserItem(user: UserProfileEntity, isSelected: Boolean, onClick: () -> 
     }
 }
 
+/**
+ * Copies a picked photo-picker Uri (which only grants temporary read access)
+ * into this app's private internal storage, returning a stable file path
+ * that will still work after the app restarts. Photo Picker Uris cannot be
+ * persisted directly (takePersistableUriPermission is not supported for
+ * them), which is why avatars previously disappeared on relaunch.
+ */
+private fun persistAvatarToInternalStorage(context: Context, sourceUri: Uri): String? {
+    return try {
+        val avatarsDir = File(context.filesDir, "avatars").apply { mkdirs() }
+        val destFile = File(avatarsDir, "${UUID.randomUUID()}.jpg")
+        context.contentResolver.openInputStream(sourceUri)?.use { input ->
+            destFile.outputStream().use { output -> input.copyTo(output) }
+        }
+        destFile.absolutePath.let { "file://$it" }
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
+    }
+}
+
 @Composable
 fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
     var name by remember { mutableStateOf("") }
     var selectedUri by remember { mutableStateOf<Uri?>(null) }
+    var persistedAvatarPath by remember { mutableStateOf<String?>(null) }
     val colorScheme = MaterialTheme.colorScheme
+    val context = LocalContext.current
 
     val launcher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia(),
-        onResult = { uri -> if (uri != null) selectedUri = uri }
+        onResult = { uri ->
+            if (uri != null) {
+                selectedUri = uri
+                // Copy into internal storage right away so it survives app restarts.
+                persistedAvatarPath = persistAvatarToInternalStorage(context, uri)
+            }
+        }
     )
 
     Card(
@@ -436,7 +468,7 @@ fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
                     Text("CANCEL", color = colorScheme.onSurfaceVariant)
                 }
                 Button(
-                    onClick = { if (name.isNotBlank()) onCreate(name, selectedUri?.toString()) },
+                    onClick = { if (name.isNotBlank()) onCreate(name, persistedAvatarPath) },
                     enabled = name.isNotBlank(),
                     modifier = Modifier.weight(1f),
                     colors = ButtonDefaults.buttonColors(containerColor = FM_Green),
