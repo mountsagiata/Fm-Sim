@@ -57,12 +57,51 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     val startingXI by squadViewModel.startingXI.collectAsStateWithLifecycle()
     val showPlayerSelector by squadViewModel.showPlayerSelector.collectAsStateWithLifecycle()
     val selectedPlayer by squadViewModel.selectedPlayer.collectAsStateWithLifecycle()
+    var compactPage by remember { mutableIntStateOf(0) }
 
     LaunchedEffect(club) {
         club?.let { squadViewModel.setClubId(it.id) }
     }
 
-    Row(
+    BoxWithConstraints(Modifier.fillMaxSize()) {
+    val compact = maxWidth < 860.dp
+    if (compact) {
+        Column(Modifier.fillMaxSize()) {
+            TabRow(selectedTabIndex = compactPage, containerColor = Color.Transparent) {
+                Tab(compactPage == 0, { compactPage = 0 }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized("PITCH")) })
+                Tab(compactPage == 1, { compactPage = 1 }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized("SQUAD")) })
+            }
+            if (compactPage == 0) {
+                Box(Modifier.weight(1f).fillMaxWidth()) {
+                    TacticsPitch(selectedFormation, startingXI) { squadViewModel.openPlayerSelector(it) }
+                    IconButton(
+                        onClick = { squadViewModel.saveLineup() },
+                        modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp).size(40.dp).background(FM_GREEN, CircleShape)
+                    ) { Icon(Icons.Default.Save, contentDescription = "Save", tint = Color.Black) }
+                }
+            } else {
+                Column(Modifier.weight(1f).fillMaxWidth()) {
+                    SquadHeaderRow()
+                    LazyColumn(Modifier.weight(1f)) {
+                        items(players.sortedByDescending { it.overall }) { player ->
+                            DetailedSquadPlayerRow(player, startingXI.any { it?.id == player.id }) { squadViewModel.selectPlayer(player) }
+                        }
+                    }
+                }
+            }
+            Row(
+                Modifier.fillMaxWidth().height(54.dp).horizontalScroll(rememberScrollState()).padding(vertical = 6.dp),
+                horizontalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                Formations.DEFAULT_FORMATIONS.forEach { formation ->
+                    FormationButton(
+                        formation.name, formation.name == selectedFormation.name,
+                        { squadViewModel.selectFormation(formation) }, Modifier.width(76.dp)
+                    )
+                }
+            }
+        }
+    } else Row(
         modifier = Modifier.fillMaxSize(),
         horizontalArrangement = Arrangement.spacedBy(12.dp)
     ) {
@@ -79,7 +118,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                             startingXI = startingXI,
                             onSlotClick = { index -> squadViewModel.openPlayerSelector(index) }
                         )
-                        
+
                         // Save Button
                         IconButton(
                             onClick = { squadViewModel.saveLineup() },
@@ -113,12 +152,12 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
             ) {
                 Column(modifier = Modifier.fillMaxSize()) {
                     SquadHeaderRow()
-                    
+
                     LazyColumn(modifier = Modifier.weight(1f)) {
                         items(players.sortedByDescending { it.overall }) { player ->
                             val isStarting = startingXI.any { it?.id == player.id }
                             DetailedSquadPlayerRow(
-                                player = player, 
+                                player = player,
                                 isStarting = isStarting,
                                 onClick = { squadViewModel.selectPlayer(player) }
                             )
@@ -130,7 +169,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
             // Formation Selection Buttons
             AppColumn(modifier = Modifier.height(90.dp), title = "FORMATION") {
                 Row(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxSize().horizontalScroll(rememberScrollState()),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
@@ -140,12 +179,13 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                             name = formation.name,
                             isSelected = isSelected,
                             onClick = { squadViewModel.selectFormation(formation) },
-                            modifier = Modifier.weight(1f)
+                            modifier = Modifier.width(76.dp)
                         )
                     }
                 }
             }
         }
+    }
     }
 
     if (showPlayerSelector) {
@@ -176,7 +216,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
             ) {
                 Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null, modifier = Modifier.size(16.dp))
                 Spacer(Modifier.width(6.dp))
-                Text("BACK", color = Color.White, fontSize = 12.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("BACK"), color = Color.White, fontSize = 12.sp)
             }
 
             Spacer(Modifier.height(12.dp))
@@ -427,8 +467,8 @@ fun DetailedSquadPlayerRow(player: PlayerEntity, isStarting: Boolean, onClick: (
             .padding(vertical = 1.dp)
             .clickable { onClick() }
             .background(
-                if (isStarting) FM_GREEN.copy(alpha = 0.12f) 
-                else Color.White.copy(alpha = 0.02f), 
+                if (isStarting) FM_GREEN.copy(alpha = 0.12f)
+                else Color.White.copy(alpha = 0.02f),
                 RoundedCornerShape(4.dp)
             )
             .padding(horizontal = 4.dp, vertical = 4.dp),
@@ -506,11 +546,11 @@ fun DetailedSquadPlayerRow(player: PlayerEntity, isStarting: Boolean, onClick: (
             player.form < 45 -> Icons.Default.ArrowDropDown to Color.Red
             else -> null
         }
-        
+
         Box(modifier = Modifier.width(16.dp), contentAlignment = Alignment.Center) {
             formIcon?.let { (icon, color) ->
                 Icon(icon, contentDescription = null, tint = color, modifier = Modifier.size(16.dp))
-            } ?: Text("-", color = Color.Gray, fontSize = 9.sp)
+            } ?: Text(com.mountsa.fmsimulation.ui.localization.localized("-"), color = Color.Gray, fontSize = 9.sp)
         }
 
         // Age
@@ -543,14 +583,14 @@ fun SquadHeaderRow() {
             .padding(horizontal = 4.dp, vertical = 6.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text("#", modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
-        Text("POS", modifier = Modifier.width(30.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("#"), modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("POS"), modifier = Modifier.width(30.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Spacer(Modifier.width(28.dp))
-        Text("PLAYER", modifier = Modifier.weight(1f), fontSize = 8.sp, color = Color.Gray)
-        Text("NAT", modifier = Modifier.width(24.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
-        Text("FOR", modifier = Modifier.width(16.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
-        Text("AGE", modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
-        Text("OVR", modifier = Modifier.width(26.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.End)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("PLAYER"), modifier = Modifier.weight(1f), fontSize = 8.sp, color = Color.Gray)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("NAT"), modifier = Modifier.width(24.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("FOR"), modifier = Modifier.width(16.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("AGE"), modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("OVR"), modifier = Modifier.width(26.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.End)
     }
 }
 
@@ -690,7 +730,7 @@ fun PlayerSelectorDialog(
             color = Color(0xFF151515)
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
-                Text("Select Player", color = Color.White, fontWeight = FontWeight.Bold)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Select Player"), color = Color.White, fontWeight = FontWeight.Bold)
                 Spacer(Modifier.height(12.dp))
                 LazyColumn(modifier = Modifier.weight(1f)) {
                     items(availablePlayers.sortedByDescending { it.overall }) { player ->
@@ -715,7 +755,7 @@ fun PlayerSelectorDialog(
                                 Spacer(Modifier.width(10.dp))
                                 Column {
                                     Text(player.name, color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
-                                    Text("${player.position} | OVR: ${player.overall}", color = Color.Gray, fontSize = 10.sp)
+                                    Text(com.mountsa.fmsimulation.ui.localization.localized("${player.position} | OVR: ${player.overall}"), color = Color.Gray, fontSize = 10.sp)
                                 }
                             }
                             Icon(Icons.Default.SwapVert, contentDescription = null, tint = FM_GREEN)
@@ -724,7 +764,7 @@ fun PlayerSelectorDialog(
                     }
                 }
                 TextButton(onClick = onDismiss, modifier = Modifier.align(Alignment.End)) {
-                    Text("CANCEL", color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("CANCEL"), color = Color.Gray)
                 }
             }
         }
