@@ -4,10 +4,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -27,23 +25,32 @@ import java.util.Locale
 fun TransferHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val offers = uiState.transferOffers
+    var tab by remember { mutableIntStateOf(0) }
+    var query by remember { mutableStateOf("") }
+    var shortlist by remember { mutableStateOf(setOf<Long>()) }
 
-    Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    Column(Modifier.fillMaxSize()) {
+    TabRow(selectedTabIndex = tab, containerColor = Color.Transparent) {
+        listOf("OFFERS", "PLAYER MARKET", "SHORTLIST").forEachIndexed { index, title -> Tab(tab == index, { tab = index }, text = { Text(title, fontSize = 10.sp) }) }
+    }
+    Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         AppColumn(modifier = Modifier.weight(2f), title = "TRANSFER MARKET") {
             Column(modifier = Modifier.fillMaxSize().padding(8.dp)) {
                 Text(
-                    text = com.mountsa.fmsimulation.ui.localization.localized("INCOMING OFFERS"),
+                    text = when(tab) { 0 -> "INCOMING OFFERS"; 1 -> "AVAILABLE PLAYERS"; else -> "SHORTLIST" },
                     fontWeight = FontWeight.Bold,
                     fontSize = 10.sp,
                     color = FM_GREEN,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
 
-                if (offers.isEmpty()) {
+                if (tab != 0) OutlinedTextField(query, { query = it }, modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp), singleLine = true, placeholder = { Text("Search name or position") })
+                val marketPlayers = uiState.squadPlayers.filter { (query.isBlank() || it.name.contains(query, true) || it.position.contains(query, true)) && (tab != 2 || it.id in shortlist) }
+                if (tab == 0 && offers.isEmpty()) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                         Text(com.mountsa.fmsimulation.ui.localization.localized("No active offers"), color = Color.Gray, fontSize = 12.sp)
                     }
-                } else {
+                } else if (tab == 0) {
                     LazyColumn(
                         verticalArrangement = Arrangement.spacedBy(6.dp),
                         contentPadding = PaddingValues(bottom = 16.dp)
@@ -56,6 +63,15 @@ fun TransferHub(viewModel: DashboardViewModel) {
                             )
                         }
                     }
+                } else LazyColumn(verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                    items(marketPlayers) { player ->
+                        ListItem(
+                            headlineContent = { Text(player.shortName, color = Color.White, fontWeight = FontWeight.Bold) },
+                            supportingContent = { Text("${player.position} • OVR ${player.overall} • €${String.format(Locale.getDefault(), "%,d", player.marketValue)}", color = Color.Gray) },
+                            trailingContent = { TextButton(onClick = { shortlist = if (player.id in shortlist) shortlist - player.id else shortlist + player.id }) { Text(if (player.id in shortlist) "REMOVE" else "SHORTLIST", color = FM_GREEN, fontSize = 9.sp) } },
+                            colors = ListItemDefaults.colors(containerColor = Color.White.copy(.025f))
+                        )
+                    }
                 }
             }
         }
@@ -66,6 +82,7 @@ fun TransferHub(viewModel: DashboardViewModel) {
                 ScoutingReportCard("Transfer List", "12 Available")
             }
         }
+    }
     }
 }
 
