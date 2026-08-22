@@ -29,6 +29,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val uiState: DashboardUiState by viewModel.uiState.collectAsStateWithLifecycle()
     val session = uiState.matchSession ?: return
     val match = session.match
+    val userClubId = uiState.club?.id
+    val userIsHome = userClubId == match.homeClubId
 
     var visible by remember { mutableStateOf(false) }
 
@@ -41,17 +43,10 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val isAwayWin = match.awayScore > match.homeScore
     val isDraw = match.homeScore == match.awayScore
 
-    val resultColor = when {
-        isHomeWin -> FM_GREEN
-        isAwayWin -> Color.Red
-        else -> Color.Yellow
-    }
-
-    val resultText = when {
-        isHomeWin -> "VICTORY"
-        isAwayWin -> "DEFEAT"
-        else -> "DRAW"
-    }
+    val userWon = if (userIsHome) isHomeWin else isAwayWin
+    val userLost = if (userIsHome) isAwayWin else isHomeWin
+    val resultColor = when { userWon -> FM_GREEN; userLost -> Color(0xFFFF5252); else -> Color(0xFFFFD740) }
+    val resultText = when { userWon -> "VICTORY"; userLost -> "DEFEAT"; else -> "DRAW" }
 
     Box(
         modifier = Modifier
