@@ -19,6 +19,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.FitnessCenter
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.Campaign
+import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -411,6 +414,28 @@ fun DayCell(
                     tint = Color.Cyan.copy(alpha = 0.4f),
                     modifier = Modifier.size(14.dp).align(Alignment.BottomEnd)
                 )
+            }
+
+            Row(
+                modifier = Modifier.align(Alignment.BottomEnd),
+                horizontalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                if (model.match != null) Icon(Icons.Default.EmojiEvents, null, tint = FM_GREEN, modifier = Modifier.size(11.dp))
+                model.events.take(3).forEach { event ->
+                    val icon = when (event.type) {
+                        "TRAINING", "RECOVERY" -> Icons.Default.FitnessCenter
+                        "TRANSFER" -> Icons.Default.SwapHoriz
+                        "MEDIA", "BOARD" -> Icons.Default.Campaign
+                        else -> Icons.Default.CalendarToday
+                    }
+                    val tint = when (event.type) {
+                        "TRAINING" -> Color.Cyan
+                        "TRANSFER" -> Color(0xFFFFB74D)
+                        "MEDIA" -> Color(0xFFE040FB)
+                        else -> Color.White.copy(.75f)
+                    }
+                    Icon(icon, event.title, tint = tint, modifier = Modifier.size(11.dp))
+                }
             }
         }
     }
