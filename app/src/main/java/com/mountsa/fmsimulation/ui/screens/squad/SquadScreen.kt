@@ -50,7 +50,7 @@ fun SquadScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Squad Management") },
+                title = { Text(com.mountsa.fmsimulation.ui.localization.localized("Squad Management")) },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer
                 ),
@@ -70,7 +70,7 @@ fun SquadScreen(
                     }
 
                     TextButton(onClick = { viewModel.saveLineup() }) {
-                        Text("Save", fontWeight = FontWeight.Bold)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("Save"), fontWeight = FontWeight.Bold)
                     }
                 }
             )
@@ -126,7 +126,7 @@ fun SquadScreen(
                                 PlayerChip(player = player, size = 40)
                             }
                             if (startingXI.filterNotNull().size > 5) {
-                                Text("+${startingXI.filterNotNull().size - 5}", fontSize = 10.sp)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("+${startingXI.filterNotNull().size - 5}"), fontSize = 10.sp)
                             }
                         }
                     }
@@ -473,7 +473,7 @@ fun PlayerSelectorDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Select Player") },
+        title = { Text(com.mountsa.fmsimulation.ui.localization.localized("Select Player")) },
         text = {
             LazyColumn(
                 modifier = Modifier.height(400.dp),
@@ -511,7 +511,7 @@ fun PlayerSelectorDialog(
         },
         confirmButton = {
             TextButton(onClick = onDismiss) {
-                Text("Cancel")
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Cancel"))
             }
         }
     )
