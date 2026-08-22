@@ -36,7 +36,7 @@ fun CompetitionFixturesHub(viewModel: DashboardViewModel) {
         matches.filter { selectedLeagueId == null || it.leagueId == selectedLeagueId }.sortedBy { it.matchDate }
     }
 
-    AppColumn(Modifier.fillMaxSize(), title = "ALL FIXTURES & COMPETITIONS") {
+    AppColumn(title = "ALL FIXTURES & COMPETITIONS", modifier = Modifier.fillMaxSize()) {
         Column(Modifier.fillMaxSize().padding(8.dp)) {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp), contentPadding = PaddingValues(bottom = 8.dp)) {
                 item {
