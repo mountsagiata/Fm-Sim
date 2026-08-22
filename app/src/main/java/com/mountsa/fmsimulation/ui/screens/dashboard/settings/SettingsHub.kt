@@ -20,7 +20,7 @@ import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 private enum class SettingsSection(val title: String) { GAME("Game"), DISPLAY("Display"), AUDIO("Audio"), LANGUAGE("Language") }
 
 @Composable
-fun SettingsHub(viewModel: DashboardViewModel) {
+fun SettingsHub(viewModel: DashboardViewModel, onBack: (() -> Unit)? = null) {
     var selected by remember { mutableStateOf(SettingsSection.GAME) }
     var reset by remember { mutableStateOf(false) }
     val musicEnabled by viewModel.audioManager.musicEnabled.collectAsStateWithLifecycle()
@@ -30,7 +30,12 @@ fun SettingsHub(viewModel: DashboardViewModel) {
     val crowd by viewModel.audioManager.crowdVolume.collectAsStateWithLifecycle()
     val language by viewModel.localeManager.language.collectAsStateWithLifecycle()
 
-    BoxWithConstraints(Modifier.fillMaxSize()) {
+    Column(Modifier.fillMaxSize().background(Color.Black)) {
+    if (onBack != null) Row(Modifier.fillMaxWidth().height(48.dp).padding(horizontal = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+        TextButton(onClick = onBack) { Text("‹  BACK", color = FM_GREEN, fontWeight = FontWeight.Bold) }
+        Text("SETTINGS", color = Color.White, fontWeight = FontWeight.Black, modifier = Modifier.padding(start = 12.dp))
+    }
+    BoxWithConstraints(Modifier.weight(1f).fillMaxWidth().padding(14.dp)) {
         val compact = maxWidth < 700.dp
         if (compact) Column(Modifier.fillMaxSize()) {
             SettingsTabs(selected) { selected = it }
@@ -51,6 +56,7 @@ fun SettingsHub(viewModel: DashboardViewModel) {
             }
             SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, Modifier.weight(1f))
         }
+    }
     }
     if (reset) AlertDialog(
         onDismissRequest = { reset = false }, title = { Text(com.mountsa.fmsimulation.ui.localization.localized("Reset career data?")) },
