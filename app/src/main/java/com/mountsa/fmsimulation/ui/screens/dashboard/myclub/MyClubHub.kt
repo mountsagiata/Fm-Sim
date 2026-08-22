@@ -42,7 +42,7 @@ fun MyClubHub(viewModel: DashboardViewModel) {
     var selectedPlayer by remember { mutableStateOf<PlayerEntity?>(null) }
     var staffQuery by remember { mutableStateOf("") }
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val academy = players.filter { it.age <= 18 || it.squadRole == SquadRole.PROSPECT }
+    val academy = players.filter { it.squadRole == SquadRole.PROSPECT }
     
     Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         AppColumn(modifier = Modifier.weight(1.5f), title = "CLUB INFO") {
@@ -98,7 +98,8 @@ fun MyClubHub(viewModel: DashboardViewModel) {
                             items(uiState.scouts, key = { "hired-${it.id}" }) { scout ->
                                 Row(Modifier.fillMaxWidth().padding(horizontal = 7.dp, vertical = 4.dp), horizontalArrangement = Arrangement.SpaceBetween) {
                                     Text(scout.name, color = Color.White, fontSize = 8.5.sp, fontWeight = FontWeight.Bold)
-                                    Text("STAFF • ${scout.judgmentAbility}", color = FM_GREEN, fontSize = 7.5.sp)
+                                    val specialty = staffMarket.firstOrNull { it.name == scout.name }?.specialty ?: "SCOUTING"
+                                    Text("$specialty • ${scout.judgmentAbility}", color = FM_GREEN, fontSize = 7.5.sp)
                                 }
                             }
                             items(staffMarket.filter { candidate ->
@@ -112,7 +113,7 @@ fun MyClubHub(viewModel: DashboardViewModel) {
                                     Text(candidate.rating.toString(), color = FM_GREEN, fontSize = 12.sp, fontWeight = FontWeight.Black)
                                     Spacer(Modifier.width(6.dp))
                                     TextButton(
-                                        onClick = { viewModel.hireScout(candidate.name, candidate.nationId, candidate.rating) },
+                                        onClick = { viewModel.hireScout(candidate.name, candidate.nationId, candidate.rating, candidate.specialty) },
                                         enabled = uiState.scouts.size < 6 && uiState.scouts.none { it.name == candidate.name },
                                         contentPadding = PaddingValues(horizontal = 6.dp)
                                     ) { Text("HIRE", fontSize = 8.sp) }

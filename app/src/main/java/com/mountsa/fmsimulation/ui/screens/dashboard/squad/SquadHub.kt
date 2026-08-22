@@ -824,6 +824,7 @@ fun SquadHeaderRow() {
         Text(com.mountsa.fmsimulation.ui.localization.localized("PLAYER"), modifier = Modifier.weight(1f), fontSize = 8.sp, color = Color.Gray)
         Text(com.mountsa.fmsimulation.ui.localization.localized("NAT"), modifier = Modifier.width(24.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("FOR"), modifier = Modifier.width(16.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("STA"), modifier = Modifier.width(42.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("AGE"), modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("OVR"), modifier = Modifier.width(26.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.End)
     }

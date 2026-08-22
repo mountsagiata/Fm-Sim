@@ -51,7 +51,14 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
             Column(Modifier.widthIn(min = 100.dp, max = 150.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                 session.match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
                     LeagueLogo(leagueId = leagueId, size = 26.dp)
-                }
+                } ?: Text(
+                    session.competitionName.uppercase(),
+                    color = FM_GREEN,
+                    fontSize = 8.sp,
+                    fontWeight = FontWeight.Black,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
                 Text(
                     matchDayInfo(session.match.matchDate, session.stadiumName),
                     color = Color.Gray,

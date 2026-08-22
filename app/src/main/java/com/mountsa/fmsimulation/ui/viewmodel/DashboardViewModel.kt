@@ -483,6 +483,7 @@ class DashboardViewModel @Inject constructor(
     fun upgradeFacility(type: String) {
         viewModelScope.launch {
             val current = club.value ?: return@launch
+            val normalizedType = type.uppercase()
             val cost = when (type.uppercase()) {
                 "ACADEMY" -> 3_500_000L
                 "TRAINING" -> 4_000_000L
@@ -490,7 +491,14 @@ class DashboardViewModel @Inject constructor(
                 else -> 2_000_000L
             }
             if (current.budget < cost) return@launch
-            val upgraded = when (type.uppercase()) {
+            val alreadyAtCap = when (normalizedType) {
+                "ACADEMY" -> current.academyQuality >= 100
+                "TRAINING" -> current.attack >= 99 && current.midfield >= 99 && current.defense >= 99
+                "MEDICAL" -> current.fanSatisfaction >= 100
+                else -> current.reputation >= 100
+            }
+            if (alreadyAtCap) return@launch
+            val upgraded = when (normalizedType) {
                 "ACADEMY" -> current.copy(
                     academyQuality = (current.academyQuality + 5).coerceAtMost(100),
                     budget = current.budget - cost
@@ -514,10 +522,12 @@ class DashboardViewModel @Inject constructor(
         }
     }
 
-    fun hireScout(name: String, nationalityId: Long, rating: Int) {
+    fun hireScout(name: String, nationalityId: Long, rating: Int, specialty: String = "SCOUTING") {
         viewModelScope.launch {
             val currentClub = club.value ?: return@launch
             if (uiState.value.scouts.size >= 6) return@launch
+            val signingFee = rating.coerceIn(40, 99) * 5_000L
+            if (currentClub.budget < signingFee) return@launch
             repository.insertScout(
                 ScoutEntity(
                     clubId = currentClub.id,
@@ -528,16 +538,35 @@ class DashboardViewModel @Inject constructor(
                     adaptability = (rating - 4).coerceIn(40, 99)
                 )
             )
+            val updatedClub = when (specialty.uppercase()) {
+                "YOUTH" -> currentClub.copy(academyQuality = (currentClub.academyQuality + 2).coerceAtMost(100))
+                "GOALKEEPING" -> currentClub.copy(defense = (currentClub.defense + 1).coerceAtMost(99))
+                "FITNESS" -> currentClub.copy(
+                    attack = (currentClub.attack + 1).coerceAtMost(99),
+                    midfield = (currentClub.midfield + 1).coerceAtMost(99)
+                )
+                "MEDICAL" -> currentClub.copy(fanSatisfaction = (currentClub.fanSatisfaction + 1).coerceAtMost(100))
+                else -> currentClub.copy(reputation = (currentClub.reputation + 1).coerceAtMost(100))
+            }
+            repository.updateClub(updatedClub.copy(budget = updatedClub.budget - signingFee))
         }
     }
 
+    private val academyScoutRunning = AtomicBoolean(false)
+
     fun scoutAcademy() {
+        if (!academyScoutRunning.compareAndSet(false, true)) return
         viewModelScope.launch {
-            val current = club.value ?: return@launch
-            val cost = 250_000L
-            if (current.budget < cost) return@launch
-            youthGenerator.generateYouthIntake(current.id, count = 3)
-            repository.updateClub(current.copy(budget = current.budget - cost))
+            try {
+                val clubId = club.value?.id ?: return@launch
+                val current = repository.getClubById(clubId) ?: return@launch
+                val cost = 250_000L
+                if (current.budget < cost) return@launch
+                repository.updateClub(current.copy(budget = current.budget - cost))
+                youthGenerator.generateYouthIntake(current.id, count = 3)
+            } finally {
+                academyScoutRunning.set(false)
+            }
         }
     }
 

@@ -436,7 +436,10 @@ fun DayCell(
                         )
                     }
                 }
-                val competitionLogoId = match.leagueId ?: match.cupId
+                // Cup IDs are generated from the source league (leagueId * 100
+                // + competition suffix), while the bundled crest is keyed by
+                // the source league ID.
+                val competitionLogoId = match.leagueId ?: match.cupId?.div(100L)
                 competitionLogoId?.takeIf { it > 0L }?.let { id ->
                     LeagueLogo(
                         leagueId = id,
