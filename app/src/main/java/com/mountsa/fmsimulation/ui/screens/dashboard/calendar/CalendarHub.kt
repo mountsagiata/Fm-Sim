@@ -457,6 +457,14 @@ fun SelectedDatePanel(
             val opponent = allClubs.find { it.id == opponentId }
 
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Surface(color = FM_GREEN.copy(.14f), shape = RoundedCornerShape(20.dp)) {
+                    Text(
+                        text = when { dayMatch.cupId != null -> "CUP"; dayMatch.leagueId != null -> leagueName.uppercase(); else -> "FRIENDLY" },
+                        color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+                    )
+                }
+                Spacer(Modifier.height(10.dp))
                 Text(
                     text = opponent?.name?.uppercase() ?: "UNKNOWN OPPONENT",
                     color = Color.White,
@@ -499,8 +507,19 @@ fun SelectedDatePanel(
 
                 if (dayEvents.isEmpty()) {
                     item {
-                        Box(modifier = Modifier.fillMaxWidth().padding(top = 40.dp), contentAlignment = Alignment.Center) {
+                        Column(modifier = Modifier.fillMaxWidth().padding(top = 20.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(com.mountsa.fmsimulation.ui.localization.localized("NO EVENTS"), color = Color.Gray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            Spacer(Modifier.height(18.dp))
+                            Text("UPCOMING", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                            matches.asSequence().filter { it.matchDate > selectedDate }.sortedBy { it.matchDate }.take(3).forEach { future ->
+                                val opponentId = if (future.homeClubId == clubId) future.awayClubId else future.homeClubId
+                                val opponent = allClubs.firstOrNull { it.id == opponentId }
+                                Row(Modifier.fillMaxWidth().padding(vertical = 7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                    Text(SimpleDateFormat("dd MMM", Locale.getDefault()).format(Date(future.matchDate)), color = Color.Gray, fontSize = 10.sp)
+                                    Text(opponent?.shortName ?: "TBD", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    Text(if (future.cupId != null) "CUP" else if (future.leagueId != null) "LEAGUE" else "FRIENDLY", color = FM_GREEN, fontSize = 9.sp)
+                                }
+                            }
                         }
                     }
                 }
