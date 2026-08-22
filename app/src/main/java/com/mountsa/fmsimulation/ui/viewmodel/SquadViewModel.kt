@@ -195,10 +195,9 @@ class SquadViewModel @Inject constructor(
             attackingWidth = width ?: currentClub.attackingWidth,
             passingDirectness = directness ?: currentClub.passingDirectness
         )
-        
+        _club.value = updatedClub
         viewModelScope.launch {
             repository.updateClub(updatedClub)
-            _club.value = updatedClub
         }
     }
 
