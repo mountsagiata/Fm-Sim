@@ -38,7 +38,7 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
         ) {
             if (uiState.scouts.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("No scouts hired", color = Color.Gray, fontSize = 12.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("No scouts hired"), color = Color.Gray, fontSize = 12.sp)
                 }
             } else {
                 LazyColumn(
@@ -63,7 +63,7 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                 title = "ACTIVE ASSIGNMENTS"
             ) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("No active assignments", color = Color.Gray, fontSize = 12.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("No active assignments"), color = Color.Gray, fontSize = 12.sp)
                 }
             }
 
@@ -83,8 +83,8 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                         modifier = Modifier.size(32.dp)
                     )
                     Column {
-                        Text("FIND PLAYERS", color = Color.White, fontWeight = FontWeight.Bold)
-                        Text("Search the database for specific targets", color = Color.Gray, fontSize = 10.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("FIND PLAYERS"), color = Color.White, fontWeight = FontWeight.Bold)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("Search the database for specific targets"), color = Color.Gray, fontSize = 10.sp)
                     }
                 }
             }
@@ -110,7 +110,7 @@ fun ScoutRowItem(scout: ScoutEntity) {
                     .background(Color.DarkGray, CircleShape),
                 contentAlignment = Alignment.Center
             ) {
-                Text("👤", fontSize = 18.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("👤"), fontSize = 18.sp)
             }
             Spacer(Modifier.width(12.dp))
             Column(modifier = Modifier.weight(1f)) {
@@ -127,10 +127,10 @@ fun ScoutRowItem(scout: ScoutEntity) {
                         .background(FM_GREEN.copy(alpha = 0.2f), RoundedCornerShape(4.dp))
                         .padding(horizontal = 6.dp, vertical = 2.dp)
                 ) {
-                    Text("ASSIGNED", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("ASSIGNED"), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
                 }
             } else {
-                Text("IDLE", color = Color.Gray, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("IDLE"), color = Color.Gray, fontSize = 9.sp, fontWeight = FontWeight.Bold)
             }
         }
     }
