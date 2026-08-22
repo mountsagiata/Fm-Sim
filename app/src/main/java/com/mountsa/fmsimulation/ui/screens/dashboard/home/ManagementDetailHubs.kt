@@ -32,8 +32,9 @@ fun FinanceDetailHub(viewModel: DashboardViewModel) {
                 Text(if ((club?.budget ?: 0) > 0) "STABLE" else "ATTENTION", color = FM_GREEN, fontWeight = FontWeight.Black)
             }
         }
-        AppColumn(modifier = Modifier.weight(1.2f), title = "ECONOMIC ACTIVITY") {
-            LazyColumn(Modifier.fillMaxSize().padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Column(Modifier.weight(1.2f).fillMaxHeight(), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        AppColumn(modifier = Modifier.weight(1f), title = "ECONOMIC ACTIVITY") {
+            LazyColumn(Modifier.fillMaxSize().padding(10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(state.inboxMessages.filter { it.sender.contains("Finance", true) || it.subject.contains("financial", true) }) { message ->
                     ListItem(
                         headlineContent = { Text(message.subject, color = Color.White, fontWeight = FontWeight.Bold) },
@@ -45,6 +46,25 @@ fun FinanceDetailHub(viewModel: DashboardViewModel) {
                     item { Text("No transactions recorded yet.", color = Color.Gray) }
                 }
             }
+        }
+        AppColumn(modifier = Modifier.weight(1f), title = "TOP PLAYERS & AWARDS") {
+            Row(Modifier.fillMaxSize().padding(10.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                LeaderCard("TOP GOALS", state.topScorer?.shortName ?: "-", state.topScorer?.goals?.toString() ?: "0", Modifier.weight(1f))
+                LeaderCard("TOP ASSISTS", state.topAssister?.shortName ?: "-", state.topAssister?.assists?.toString() ?: "0", Modifier.weight(1f))
+                LeaderCard("BEST PLAYER", state.bestPlayer?.shortName ?: "-", state.bestPlayer?.let { String.format(Locale.getDefault(), "%.2f", it.averageRating) } ?: "0.00", Modifier.weight(1f))
+                LeaderCard("PLAYER AWARD", state.bestPlayer?.shortName ?: "TBD", "★", Modifier.weight(1f))
+            }
+        }
+        }
+    }
+}
+
+@Composable private fun LeaderCard(title: String, name: String, value: String, modifier: Modifier) {
+    Card(modifier.fillMaxHeight(), colors = CardDefaults.cardColors(containerColor = Color.White.copy(.035f))) {
+        Column(Modifier.fillMaxSize().padding(9.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally) {
+            Text(title, color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)
+            Text(name, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+            Text(value, color = FM_GREEN, fontSize = 18.sp, fontWeight = FontWeight.Black)
         }
     }
 }
