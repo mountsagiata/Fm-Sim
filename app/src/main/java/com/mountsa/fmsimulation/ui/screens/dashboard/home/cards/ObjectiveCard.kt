@@ -1,13 +1,10 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.home.cards
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.draw.alpha
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material3.Icon
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -46,82 +43,30 @@ fun ObjectiveCard(
                 Text(com.mountsa.fmsimulation.ui.localization.localized("No active objectives"), color = Color.Gray, fontSize = 9.sp)
             }
         } else {
-            LazyRow(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(8.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                contentPadding = PaddingValues(horizontal = 2.dp)
+            val active = objectives.filterNot { it.completed }
+            val priority = active.maxByOrNull { it.priority.ordinal } ?: objectives.first()
+            Column(
+                Modifier.fillMaxSize().padding(10.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
             ) {
-                items(objectives, key = { it.id }) { objective ->
-                    Column(
-                        Modifier.width(150.dp).fillMaxHeight(),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center
-                    ) {
-                        Icon(
-                            Icons.Default.EmojiEvents,
-                            contentDescription = objective.title,
-                            tint = FM_GREEN,
-                            modifier = Modifier.size(27.dp).alpha(if (objective.completed) 1f else .5f)
-                        )
-                        Text(
-                            if (objective.completed) "1" else "0",
-                            color = Color.White,
-                            fontSize = 10.sp,
-                            fontWeight = FontWeight.Black
-                        )
-                        ObjectiveItem(objective)
-                    }
-                }
+                Icon(
+                    Icons.Default.EmojiEvents,
+                    contentDescription = null,
+                    tint = FM_GREEN,
+                    modifier = Modifier.size(30.dp).alpha(.75f)
+                )
+                Text("${active.size} ACTIVE", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Black)
+                Text(
+                    priority.title,
+                    color = Color.White,
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text("OPEN OBJECTIVES", color = Color.Gray, fontSize = 8.sp)
             }
         }
-    }
-}
-
-@Composable
-private fun ObjectiveItem(objective: ObjectiveEntity) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = objective.title,
-                fontSize = 11.sp,
-                color = Color.White,
-                fontWeight = FontWeight.Bold,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.weight(1f),
-                textAlign = androidx.compose.ui.text.style.TextAlign.Center
-            )
-            Text(
-                text = objective.priority.name,
-                fontSize = 8.sp,
-                color = when (objective.priority.name) {
-                    "CRITICAL" -> Color.Red
-                    "HIGH" -> Color(0xFFFFA500)
-                    else -> Color.Gray
-                },
-                fontWeight = FontWeight.ExtraBold
-            )
-        }
-
-        Spacer(Modifier.height(4.dp))
-
-        val progress = if (objective.targetValue > 0) {
-            objective.currentProgress.toFloat() / objective.targetValue.toFloat()
-        } else 0f
-
-        LinearProgressIndicator(
-            progress = { progress },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(4.dp),
-            color = FM_GREEN,
-            trackColor = Color.White.copy(alpha = 0.1f)
-        )
     }
 }

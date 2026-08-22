@@ -30,7 +30,7 @@ class InjuryService @Inject constructor(
                 val remaining = player.injuryDaysRemaining - 1
                 if (remaining <= 0) {
                     player.copy(
-                        status = PlayerStatus.FIT,
+                        status = if (player.suspensionGamesRemaining > 0) PlayerStatus.SUSPENDED else PlayerStatus.FIT,
                         injuryName = "",
                         injuryDaysRemaining = 0,
                         sharpness = (player.sharpness - 15).coerceAtLeast(30)
@@ -38,7 +38,7 @@ class InjuryService @Inject constructor(
                 } else {
                     player.copy(injuryDaysRemaining = remaining)
                 }
-            } else {
+            } else if (player.status == PlayerStatus.FIT) {
                 val fatigueFloat = player.fatigue.toFloat()
                 val injuryChance = 0.0005f + ((fatigueFloat * fatigueFloat) / 150_000f)
                 if (Random.nextFloat() < injuryChance) {
@@ -54,6 +54,10 @@ class InjuryService @Inject constructor(
                 } else {
                     player
                 }
+            } else {
+                // Suspended/unavailable players are not exposed to normal training
+                // load, so they cannot receive a random training injury here.
+                player
             }
         }
 

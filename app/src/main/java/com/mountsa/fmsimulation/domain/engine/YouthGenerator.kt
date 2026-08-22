@@ -2,6 +2,7 @@
 package com.mountsa.fmsimulation.domain.engine
 
 import com.mountsa.fmsimulation.core.enums.PlayerStatus
+import com.mountsa.fmsimulation.core.enums.SquadRole
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.data.repository.DataRepository
 import javax.inject.Inject
@@ -49,6 +50,7 @@ class YouthGenerator @Inject constructor(
                     marketValue = calculatedValue,
                     wage = calculatedWage,
                     status = PlayerStatus.FIT,
+                    squadRole = SquadRole.PROSPECT,
                     fatigue = 0,
                     sharpness = 75,
                     startingIndex = -1 // Masuk ke dalam daftar cadangan/reserves awal

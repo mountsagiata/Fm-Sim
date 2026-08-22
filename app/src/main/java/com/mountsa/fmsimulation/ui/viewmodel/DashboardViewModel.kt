@@ -9,10 +9,12 @@ import com.mountsa.fmsimulation.domain.model.MatchSession
 import com.mountsa.fmsimulation.domain.services.*
 import com.mountsa.fmsimulation.domain.engine.LeagueManager
 import com.mountsa.fmsimulation.domain.engine.TransferManager
+import com.mountsa.fmsimulation.domain.engine.YouthGenerator
 import com.mountsa.fmsimulation.core.enums.InboxCategory
 import com.mountsa.fmsimulation.core.enums.TransferStatus
 import com.mountsa.fmsimulation.core.enums.ScoutAssignmentType
 import com.mountsa.fmsimulation.core.enums.PlayerHappiness
+import com.mountsa.fmsimulation.core.enums.SquadRole
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Dispatchers
@@ -59,6 +61,7 @@ class DashboardViewModel @Inject constructor(
     private val sessionBuilder: MatchSessionBuilder,
     private val leagueManager: LeagueManager,
     private val transferManager: TransferManager,
+    private val youthGenerator: YouthGenerator,
     private val managerRatingService: ManagerRatingService,
     private val pressConferenceGenerator: PressConferenceGenerator,
     private val boardObjectiveGenerator: BoardObjectiveGenerator,
@@ -115,7 +118,7 @@ class DashboardViewModel @Inject constructor(
     @OptIn(ExperimentalCoroutinesApi::class)
     val club: StateFlow<ClubEntity?> = career.flatMapLatest { c ->
         if (c == null) flowOf<ClubEntity?>(null)
-        else flow<ClubEntity?> { emit(repository.getClubById(c.selectedClubId)) }
+        else repository.getAllClubs().map { clubs -> clubs.firstOrNull { it.id == c.selectedClubId } }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), null)
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -475,6 +478,74 @@ class DashboardViewModel @Inject constructor(
 
     fun selectLeague(leagueId: Long) {
         _selectedLeagueId.value = leagueId
+    }
+
+    fun upgradeFacility(type: String) {
+        viewModelScope.launch {
+            val current = club.value ?: return@launch
+            val cost = when (type.uppercase()) {
+                "ACADEMY" -> 3_500_000L
+                "TRAINING" -> 4_000_000L
+                "MEDICAL" -> 2_750_000L
+                else -> 2_000_000L
+            }
+            if (current.budget < cost) return@launch
+            val upgraded = when (type.uppercase()) {
+                "ACADEMY" -> current.copy(
+                    academyQuality = (current.academyQuality + 5).coerceAtMost(100),
+                    budget = current.budget - cost
+                )
+                "TRAINING" -> current.copy(
+                    attack = (current.attack + 1).coerceAtMost(99),
+                    midfield = (current.midfield + 1).coerceAtMost(99),
+                    defense = (current.defense + 1).coerceAtMost(99),
+                    budget = current.budget - cost
+                )
+                "MEDICAL" -> current.copy(
+                    fanSatisfaction = (current.fanSatisfaction + 2).coerceAtMost(100),
+                    budget = current.budget - cost
+                )
+                else -> current.copy(
+                    reputation = (current.reputation + 2).coerceAtMost(100),
+                    budget = current.budget - cost
+                )
+            }
+            repository.updateClub(upgraded)
+        }
+    }
+
+    fun hireScout(name: String, nationalityId: Long, rating: Int) {
+        viewModelScope.launch {
+            val currentClub = club.value ?: return@launch
+            if (uiState.value.scouts.size >= 6) return@launch
+            repository.insertScout(
+                ScoutEntity(
+                    clubId = currentClub.id,
+                    name = name,
+                    nationalityId = nationalityId,
+                    judgmentAbility = rating.coerceIn(40, 99),
+                    judgmentPotential = (rating + 3).coerceIn(40, 99),
+                    adaptability = (rating - 4).coerceIn(40, 99)
+                )
+            )
+        }
+    }
+
+    fun scoutAcademy() {
+        viewModelScope.launch {
+            val current = club.value ?: return@launch
+            val cost = 250_000L
+            if (current.budget < cost) return@launch
+            youthGenerator.generateYouthIntake(current.id, count = 3)
+            repository.updateClub(current.copy(budget = current.budget - cost))
+        }
+    }
+
+    fun promoteAcademyPlayer(playerId: Long) {
+        viewModelScope.launch {
+            val player = repository.getPlayerById(playerId) ?: return@launch
+            repository.updatePlayer(player.copy(squadRole = SquadRole.BACKUP, morale = (player.morale + 6).coerceAtMost(100)))
+        }
     }
 
     fun swapMatchPlayer(starterId: Long, substituteId: Long) {
