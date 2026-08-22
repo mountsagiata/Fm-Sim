@@ -20,7 +20,8 @@ import javax.inject.Singleton
 class MatchSimulator @Inject constructor(
     private val repository: DataRepository,
     private val tacticEngine: TacticEngine,
-    private val moraleService: MoraleService
+    private val moraleService: MoraleService,
+    private val financialService: FinancialService
 ) {
     private val gson = Gson()
 
@@ -75,6 +76,8 @@ class MatchSimulator @Inject constructor(
         var hXG = 0f; var aXG = 0f
         
         var homeWeight = 0.5f
+        var homeSubsUsed = 0
+        var awaySubsUsed = 0
 
         val events = mutableListOf<MatchEvent>()
         events.add(EventFactory.create(0, EventType.MATCH_START, EventCategory.MATCH, 0, 0, teamName = "Kick Off"))
@@ -120,6 +123,7 @@ class MatchSimulator @Inject constructor(
                             val xG = (actingAtt / (actingAtt + defendingDef + 0.1f)) * 0.35f
                             if (isHomeEvent) hXG += xG else aXG += xG
                             if (isHomeEvent) hShots++ else aShots++
+                            playerStats[shooter.id]?.shots = (playerStats[shooter.id]?.shots ?: 0) + 1
                             
                             if (Random.nextFloat() < xG) {
                                 val isOwnGoal = Random.nextFloat() < 0.02f
@@ -130,6 +134,7 @@ class MatchSimulator @Inject constructor(
                                 } else {
                                     if (isHomeEvent) hGoals++ else aGoals++
                                     if (isHomeEvent) hOnTarget++ else aOnTarget++
+                                    playerStats[shooter.id]?.shotsOnTarget = (playerStats[shooter.id]?.shotsOnTarget ?: 0) + 1
                                     playerStats[shooter.id]?.goals = (playerStats[shooter.id]?.goals ?: 0) + 1
                                     playerStats[assister.id]?.assists = (playerStats[assister.id]?.assists ?: 0) + 1
                                     events.add(EventFactory.create(minute, EventType.GOAL, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name).copy(secondaryPlayerId = assister.id, secondaryPlayerName = assister.shortName))
@@ -137,6 +142,7 @@ class MatchSimulator @Inject constructor(
                             } else {
                                 if (Random.nextFloat() < 0.4f) { 
                                     if (isHomeEvent) hOnTarget++ else aOnTarget++
+                                    playerStats[shooter.id]?.shotsOnTarget = (playerStats[shooter.id]?.shotsOnTarget ?: 0) + 1
                                     events.add(EventFactory.create(minute, EventType.SHOT_ON_TARGET, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name)) 
                                 }
                                 else events.add(EventFactory.create(minute, EventType.SHOT, EventCategory.ATTACK, hGoals, aGoals, shooter, actingTeam.id, actingTeam.name))
@@ -144,7 +150,8 @@ class MatchSimulator @Inject constructor(
                         }
                     }
                     rand < 0.40f -> {
-                        if (minute > 60 && actingXI.size == 11) {
+                        val substitutionsUsed = if (isHomeEvent) homeSubsUsed else awaySubsUsed
+                        if (minute > 55 && substitutionsUsed < 5) {
                             val tiredPlayer = actingXI.minByOrNull { it.fitness }
                             if (tiredPlayer != null && tiredPlayer.fitness < 65) {
                                 val bench = (if (isHomeEvent) homePlayers else awayPlayers).filter { p -> !actingXI.any { it.id == p.id } && p.status == PlayerStatus.FIT }
@@ -152,6 +159,7 @@ class MatchSimulator @Inject constructor(
                                 if (sub != null) {
                                     actingXI.remove(tiredPlayer)
                                     actingXI.add(sub)
+                                    if (isHomeEvent) homeSubsUsed++ else awaySubsUsed++
                                     playerStats[sub.id] = PlayerMatchStats(sub.id, minutesPlayed = 90 - minute)
                                     playerStats[tiredPlayer.id]?.minutesPlayed = minute
                                     events.add(EventFactory.create(minute, EventType.SUBSTITUTION, EventCategory.PLAYER, hGoals, aGoals, sub, actingTeam.id, actingTeam.name).copy(secondaryPlayerId = tiredPlayer.id, secondaryPlayerName = tiredPlayer.shortName))
@@ -162,6 +170,7 @@ class MatchSimulator @Inject constructor(
                     rand < 0.50f -> {
                         val fouler = actingXI.random()
                         if (isHomeEvent) hFouls++ else aFouls++
+                        playerStats[fouler.id]?.fouls = (playerStats[fouler.id]?.fouls ?: 0) + 1
                         val isRed = Random.nextFloat() < 0.1f
                         if (isRed) {
                             actingXI.remove(fouler)
@@ -202,10 +211,11 @@ class MatchSimulator @Inject constructor(
         val motmId = playerStats.values.maxByOrNull { it.rating }?.playerId ?: -1L
 
         repository.updateMatch(match.copy(
-            homeScore = hGoals, awayScore = aGoals, isPlayed = true,
+            homeScore = hGoals, awayScore = aGoals, isPlayed = true, isSimulated = true,
             possessionHome = ((homeWeight * 100) / (homeWeight + 1f)).toInt().coerceIn(35, 65),
             possessionAway = 100 - ((homeWeight * 100) / (homeWeight + 1f)).toInt().coerceIn(35, 65),
             shotsHome = hShots, shotsAway = aShots, shotsOnTargetHome = hOnTarget, shotsOnTargetAway = aOnTarget,
+            foulsHome = hFouls, foulsAway = aFouls, cornersHome = hCorners, cornersAway = aCorners,
             yellowCardsHome = hYellow, yellowCardsAway = aYellow, redCardsHome = hRed, redCardsAway = aRed,
             xGHome = hXG, xGAway = aXG, motmPlayerId = motmId,
             playerMatchStatsJson = gson.toJson(playerStats.values.toList()),
@@ -222,11 +232,11 @@ class MatchSimulator @Inject constructor(
 
         updatePostMatchPlayersGlobal(homePlayers, homeClub.pressing, playerStats)
         updatePostMatchPlayersGlobal(awayPlayers, awayClub.pressing, playerStats)
+        financialService.processMatchDayFinancials(match.copy(homeScore = hGoals, awayScore = aGoals, isPlayed = true))
     }
 
     private fun selectLineupForCompetition(players: List<PlayerEntity>, stage: String): List<PlayerEntity> {
-        val fit = players.filter { it.status == PlayerStatus.FIT && it.fitness > 45 }
-        return fit.sortedByDescending { it.overall }.take(11)
+        return LineupSelector.select(players)
     }
 
     private suspend fun updatePostMatchPlayersGlobal(players: List<PlayerEntity>, pressing: Int, stats: Map<Long, PlayerMatchStats>) {
@@ -263,9 +273,13 @@ class MatchSimulator @Inject constructor(
     }
 
     private suspend fun getPlayers(clubId: Long, json: String): List<PlayerEntity> {
-        return if (json.isNotEmpty()) {
-            try { gson.fromJson(json, object : TypeToken<List<PlayerEntity>>() {}.type) }
-            catch (e: Exception) { repository.getPlayersByClubSync(clubId) }
-        } else repository.getPlayersByClubSync(clubId)
+        val fullSquad = repository.getPlayersByClubSync(clubId)
+        if (json.isEmpty()) return fullSquad
+        return try {
+            val snapshot: List<PlayerEntity> = gson.fromJson(json, object : TypeToken<List<PlayerEntity>>() {}.type)
+            snapshot + fullSquad.filterNot { player -> snapshot.any { it.id == player.id } }
+        } catch (e: Exception) {
+            fullSquad
+        }
     }
 }
