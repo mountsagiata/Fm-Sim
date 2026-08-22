@@ -40,11 +40,11 @@ fun SettingsHub(viewModel: DashboardViewModel) {
                 Modifier.width(190.dp).fillMaxHeight().background(Color.White.copy(.025f), RoundedCornerShape(16.dp)).padding(12.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Text("SETTINGS", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Black, modifier = Modifier.padding(8.dp))
+                Text(com.mountsa.fmsimulation.ui.localization.localized("SETTINGS"), color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Black, modifier = Modifier.padding(8.dp))
                 SettingsSection.entries.forEach { section ->
                     FilterChip(
                         selected = selected == section, onClick = { selected = section },
-                        label = { Text(section.title, modifier = Modifier.fillMaxWidth()) }, modifier = Modifier.fillMaxWidth(),
+                            label = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title), modifier = Modifier.fillMaxWidth()) }, modifier = Modifier.fillMaxWidth(),
                         colors = FilterChipDefaults.filterChipColors(selectedContainerColor = FM_GREEN.copy(.18f))
                     )
                 }
@@ -53,17 +53,17 @@ fun SettingsHub(viewModel: DashboardViewModel) {
         }
     }
     if (reset) AlertDialog(
-        onDismissRequest = { reset = false }, title = { Text("Reset career data?") },
-        text = { Text("This permanently deletes the active career, fixtures, match history and standings.") },
-        confirmButton = { TextButton(onClick = { reset = false; viewModel.resetCareer() }) { Text("RESET", color = Color.Red) } },
-        dismissButton = { TextButton(onClick = { reset = false }) { Text("CANCEL") } }
+        onDismissRequest = { reset = false }, title = { Text(com.mountsa.fmsimulation.ui.localization.localized("Reset career data?")) },
+        text = { Text(com.mountsa.fmsimulation.ui.localization.localized("This permanently deletes the active career, fixtures, match history and standings.")) },
+        confirmButton = { TextButton(onClick = { reset = false; viewModel.resetCareer() }) { Text(com.mountsa.fmsimulation.ui.localization.localized("RESET"), color = Color.Red) } },
+        dismissButton = { TextButton(onClick = { reset = false }) { Text(com.mountsa.fmsimulation.ui.localization.localized("CANCEL")) } }
     )
 }
 
 @Composable
 private fun SettingsTabs(selected: SettingsSection, onSelect: (SettingsSection) -> Unit) {
     ScrollableTabRow(selectedTabIndex = selected.ordinal, edgePadding = 8.dp, containerColor = Color.Transparent) {
-        SettingsSection.entries.forEach { section -> Tab(selected == section, { onSelect(section) }, text = { Text(section.title) }) }
+        SettingsSection.entries.forEach { section -> Tab(selected == section, { onSelect(section) }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title)) }) }
     }
 }
 
@@ -78,7 +78,7 @@ private fun SettingsPane(
             .verticalScroll(rememberScrollState()).padding(20.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        Text(section.title.uppercase(), color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp)
+        Text(com.mountsa.fmsimulation.ui.localization.localized(section.title).uppercase(), color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp)
         when (section) {
             SettingsSection.GAME -> {
                 SettingToggle("Auto-save after match", true)
@@ -87,7 +87,7 @@ private fun SettingsPane(
                 SettingToggle("Pause automatically at half-time", true)
                 HorizontalDivider(color = Color.White.copy(.08f))
                 Button(onClick = onReset, colors = ButtonDefaults.buttonColors(containerColor = Color.Red.copy(.75f))) {
-                    Text("RESET CAREER DATA", color = Color.White, fontWeight = FontWeight.Bold)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("RESET CAREER DATA"), color = Color.White, fontWeight = FontWeight.Bold)
                 }
             }
             SettingsSection.DISPLAY -> {
@@ -95,7 +95,7 @@ private fun SettingsPane(
                 SettingToggle("Show attributes as progress bars", true)
                 SettingToggle("Compact squad rows", false)
                 SettingToggle("Reduce animations", false)
-                Text("Layout adapts automatically for phones, tablets, foldables and landscape screens.", color = Color.Gray, fontSize = 12.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Layout adapts automatically for phones, tablets, foldables and landscape screens."), color = Color.Gray, fontSize = 12.sp)
             }
             SettingsSection.AUDIO -> {
                 SettingToggle("Music", musicEnabled, viewModel.audioManager::setMusicEnabled)
@@ -113,8 +113,8 @@ private fun SettingsPane(
 private fun VolumeSlider(label: String, value: Float, onChange: (Float) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Text(label, color = Color.White, fontSize = 13.sp)
-            Text("${(value * 100).toInt()}%", color = FM_GREEN, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+            Text(com.mountsa.fmsimulation.ui.localization.localized(label), color = Color.White, fontSize = 13.sp)
+            Text(com.mountsa.fmsimulation.ui.localization.localized("${(value * 100).toInt()}%"), color = FM_GREEN, fontWeight = FontWeight.Bold, fontSize = 12.sp)
         }
         Slider(
             value = value, onValueChange = onChange, modifier = Modifier.fillMaxWidth().height(32.dp),
@@ -135,7 +135,7 @@ private fun LanguageSetting(selected: String, onSelect: (String) -> Unit) {
 fun SettingToggle(label: String, initialValue: Boolean, onCheckedChange: (Boolean) -> Unit = {}) {
     var checked by remember(initialValue) { mutableStateOf(initialValue) }
     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-        Text(label, color = Color.White, fontSize = 13.sp, modifier = Modifier.weight(1f))
+        Text(com.mountsa.fmsimulation.ui.localization.localized(label), color = Color.White, fontSize = 13.sp, modifier = Modifier.weight(1f))
         Switch(checked, { checked = it; onCheckedChange(it) }, colors = SwitchDefaults.colors(checkedThumbColor = Color.Black, checkedTrackColor = FM_GREEN))
     }
 }
