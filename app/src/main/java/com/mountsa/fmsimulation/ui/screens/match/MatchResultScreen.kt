@@ -117,12 +117,12 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         fadeIn(tween(400)) + scaleIn(initialScale = 0.5f) togetherWith
                         fadeOut(tween(200)) + scaleOut(targetScale = 0.5f)
                     }
-                ) {
+                ) { homeWon ->
                     ResultTeamModern(
                         clubId = match.homeClubId,
                         name = session.homeClubName,
                         score = match.homeScore,
-                        isWinner = isHomeWin,
+                        isWinner = homeWon,
                         modifier = Modifier.weight(1f)
                     )
                 }
@@ -161,12 +161,12 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         fadeIn(tween(400)) + scaleIn(initialScale = 0.5f) togetherWith
                         fadeOut(tween(200)) + scaleOut(targetScale = 0.5f)
                     }
-                ) {
+                ) { awayWon ->
                     ResultTeamModern(
                         clubId = match.awayClubId,
                         name = session.awayClubName,
                         score = match.awayScore,
-                        isWinner = isAwayWin,
+                        isWinner = awayWon,
                         modifier = Modifier.weight(1f)
                     )
                 }
