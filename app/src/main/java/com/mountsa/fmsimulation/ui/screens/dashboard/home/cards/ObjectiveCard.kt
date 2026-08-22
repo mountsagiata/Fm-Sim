@@ -39,7 +39,7 @@ fun ObjectiveCard(
                     tint = Color.Gray.copy(alpha = 0.3f),
                     modifier = Modifier.size(32.dp)
                 )
-                Text("No active objectives", color = Color.Gray, fontSize = 10.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("No active objectives"), color = Color.Gray, fontSize = 10.sp)
             }
         } else {
             Column(
@@ -85,13 +85,13 @@ private fun ObjectiveItem(objective: ObjectiveEntity) {
                 fontWeight = FontWeight.ExtraBold
             )
         }
-        
+
         Spacer(Modifier.height(4.dp))
-        
+
         val progress = if (objective.targetValue > 0) {
             objective.currentProgress.toFloat() / objective.targetValue.toFloat()
         } else 0f
-        
+
         LinearProgressIndicator(
             progress = { progress },
             modifier = Modifier
