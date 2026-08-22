@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.sp
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardUiState
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -86,8 +87,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
             Spacer(Modifier.height(4.dp))
 
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-                Surface(color = FM_GREEN.copy(.16f), shape = RoundedCornerShape(50), modifier = Modifier.size(28.dp)) {
-                    Box(contentAlignment = Alignment.Center) { Text(session.competitionName.take(2).uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Black) }
+                match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
+                    LeagueLogo(leagueId = leagueId, size = 28.dp)
                 }
                 Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
             }

@@ -8,7 +8,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -25,6 +24,7 @@ import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import kotlinx.coroutines.delay
 
@@ -43,8 +43,8 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
         Row(Modifier.fillMaxWidth().height(58.dp), verticalAlignment = Alignment.CenterVertically) {
             TeamHeading(session.match.homeClubId, session.homeShortName, "HOME", HOME_BLUE, Modifier.weight(1f), Alignment.Start)
             Column(Modifier.width(180.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                Surface(color = FM_GREEN.copy(.14f), shape = CircleShape, modifier = Modifier.size(30.dp)) {
-                    Box(contentAlignment = Alignment.Center) { Text(session.competitionName.take(2).uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Black) }
+                session.match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
+                    LeagueLogo(leagueId = leagueId, size = 30.dp)
                 }
                 Text(session.competitionName.uppercase(), color = Color.White, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1)
             }
