@@ -31,11 +31,15 @@ import com.mountsa.fmsimulation.ui.screens.splash.FmSplashScreen
 import com.mountsa.fmsimulation.ui.theme.FootballManagerSimulationTheme
 import com.mountsa.fmsimulation.ui.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+import com.mountsa.fmsimulation.utils.LocaleManager
+import com.mountsa.fmsimulation.ui.localization.ProvideAppLanguage
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val viewModel: MainViewModel by viewModels()
+    @Inject lateinit var localeManager: LocaleManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +64,8 @@ class MainActivity : ComponentActivity() {
             WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
 
         setContent {
+            val appLanguage by localeManager.language.collectAsStateWithLifecycle()
+            ProvideAppLanguage(appLanguage) {
             FootballManagerSimulationTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     val currentScreen by viewModel.screen.collectAsStateWithLifecycle()
@@ -82,12 +88,12 @@ class MainActivity : ComponentActivity() {
                         }
                         Screen.MatchReveal -> {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text("MATCH REVEAL", color = Color.White)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("MATCH REVEAL"), color = Color.White)
                             }
                         }
                         Screen.StartingLineup -> {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text("STARTING LINEUP", color = Color.White)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("STARTING LINEUP"), color = Color.White)
                             }
                         }
                         Screen.MatchSimulation -> {
@@ -95,16 +101,17 @@ class MainActivity : ComponentActivity() {
                         }
                         Screen.MatchResult -> {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text("MATCH RESULT", color = Color.White)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("MATCH RESULT"), color = Color.White)
                             }
                         }
                         Screen.PostMatch -> {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text("POST MATCH", color = Color.White)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST MATCH"), color = Color.White)
                             }
                         }
                     }
                 }
+            }
             }
         }
     }
