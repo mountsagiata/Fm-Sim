@@ -90,13 +90,13 @@ fun CareerSetupScreen(
                     Spacer(Modifier.width(16.dp))
                     Column {
                         Text(
-                            text = "NEW CAREER",
+                            text = com.mountsa.fmsimulation.ui.localization.localized("NEW CAREER"),
                             style = MaterialTheme.typography.titleMedium,
                             color = Color.White,
                             fontWeight = FontWeight.Bold
                         )
                         Text(
-                            text = "Choose your path to glory",
+                            text = com.mountsa.fmsimulation.ui.localization.localized("Choose your path to glory"),
                             style = MaterialTheme.typography.bodySmall,
                             color = TextGray
                         )
@@ -126,7 +126,7 @@ fun CareerSetupScreen(
                         shape = RoundedCornerShape(8.dp),
                         contentPadding = PaddingValues(horizontal = 20.dp, vertical = 8.dp)
                     ) {
-                        Text("Start Game", color = if (selectedClub != null) AccentGreen else TextGray, fontSize = 14.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("Start Game"), color = if (selectedClub != null) AccentGreen else TextGray, fontSize = 14.sp)
                         Spacer(Modifier.width(4.dp))
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
@@ -349,10 +349,10 @@ fun LeagueListItem(league: LeagueEntity, teamCount: Int, isSelected: Boolean, on
         Column(modifier = Modifier.weight(1f)) {
             Text(league.name, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Division ${league.division}", color = TextGray, fontSize = 10.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Division ${league.division}"), color = TextGray, fontSize = 10.sp)
             }
         }
-        Text("$teamCount Teams", color = TextGray, fontSize = 10.sp)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("$teamCount Teams"), color = TextGray, fontSize = 10.sp)
         Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = TextGray, modifier = Modifier.size(16.dp))
     }
 }
@@ -501,7 +501,7 @@ fun SelectionPanel(
 ) {
     val alpha = if (enabled) 1f else 0.4f
     val borderColor = if (isSelected) AccentGreen.copy(alpha = 0.5f) else Color(0xFF1E293B)
-    
+
     Surface(
         modifier = modifier.fillMaxHeight(),
         color = CardBackground.copy(alpha = alpha),
