@@ -123,7 +123,9 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 ) { homeWon ->
                     ResultTeamModern(
                         clubId = match.homeClubId,
-                        name = session.homeClubName,
+                        name = session.homeShortName,
+                        sideLabel = "HOME",
+                        sideColor = Color(0xFF42A5F5),
                         score = match.homeScore,
                         isWinner = homeWon,
                         compact = compactHeight,
@@ -162,7 +164,9 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 ) { awayWon ->
                     ResultTeamModern(
                         clubId = match.awayClubId,
-                        name = session.awayClubName,
+                        name = session.awayShortName,
+                        sideLabel = "AWAY",
+                        sideColor = FM_GREEN,
                         score = match.awayScore,
                         isWinner = awayWon,
                         compact = compactHeight,
@@ -240,8 +244,10 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
 }
 
 @Composable
-fun ResultTeamModern(clubId: Long, name: String, score: Int, isWinner: Boolean, compact: Boolean = false, modifier: Modifier) {
+fun ResultTeamModern(clubId: Long, name: String, sideLabel: String, sideColor: Color, score: Int, isWinner: Boolean, compact: Boolean = false, modifier: Modifier) {
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier) {
+        Text(sideLabel, color = sideColor, fontSize = 8.sp, fontWeight = FontWeight.Black, letterSpacing = 1.sp)
+        Spacer(Modifier.height(2.dp))
         ClubLogo(clubId = clubId, size = if (compact) 36.dp else 50.dp)
         Spacer(Modifier.height(if (compact) 2.dp else 6.dp))
         Text(
