@@ -64,7 +64,7 @@ class PressConferenceGenerator @Inject constructor(
     )
 
     suspend fun generatePressConference(clubId: Long, type: PressType = PressType.PRE_MATCH) {
-        val threshold = if (type == PressType.TRANSFER) 0.15f else 0.5f
+        val threshold = if (type == PressType.TRANSFER) 0.15f else 1f
         if (Random.nextFloat() > threshold) return 
 
         val career = repository.getCareer().first() ?: return
