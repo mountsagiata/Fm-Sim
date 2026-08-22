@@ -73,6 +73,26 @@ class SquadViewModel @Inject constructor(
         _selectedFormation.value = formation
     }
 
+    fun moveStartingPlayer(fromIndex: Int, toIndex: Int) {
+        if (fromIndex !in 0..10 || toIndex !in 0..10 || fromIndex == toIndex) return
+        val lineup = _startingXI.value.toMutableList()
+        val moved = lineup[fromIndex]
+        lineup[fromIndex] = lineup[toIndex]
+        lineup[toIndex] = moved
+        _startingXI.value = lineup
+    }
+
+    fun moveFormationPosition(index: Int, xPercent: Float, yPercent: Float) {
+        val current = _selectedFormation.value
+        if (index !in current.positions.indices) return
+        val positions = current.positions.toMutableList()
+        positions[index] = positions[index].copy(
+            x = xPercent.coerceIn(7f, 93f),
+            y = yPercent.coerceIn(7f, 93f)
+        )
+        _selectedFormation.value = current.copy(name = "Custom", positions = positions)
+    }
+
     fun openPlayerSelector(index: Int) {
         selectedSlotIndex = index
         _showPlayerSelector.value = true
