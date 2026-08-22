@@ -228,7 +228,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         ),
                     shape = RoundedCornerShape(12.dp)
                 ) {
-                    Text("CONTINUE", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 14.sp, letterSpacing = 1.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("CONTINUE"), color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 14.sp, letterSpacing = 1.sp)
                 }
             }
         }
