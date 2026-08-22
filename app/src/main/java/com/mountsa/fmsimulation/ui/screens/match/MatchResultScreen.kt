@@ -53,7 +53,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
         else -> "DRAW"
     }
 
-    BoxWithConstraints(
+    Box(
         modifier = Modifier
             .fillMaxSize()
             .background(FM_DARK_BG)
@@ -117,7 +117,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         fadeIn(tween(400)) + scaleIn(initialScale = 0.5f) togetherWith
                         fadeOut(tween(200)) + scaleOut(targetScale = 0.5f)
                     }
-                ) { _ ->
+                ) {
                     ResultTeamModern(
                         clubId = match.homeClubId,
                         name = session.homeClubName,
@@ -161,7 +161,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         fadeIn(tween(400)) + scaleIn(initialScale = 0.5f) togetherWith
                         fadeOut(tween(200)) + scaleOut(targetScale = 0.5f)
                     }
-                ) { _ ->
+                ) {
                     ResultTeamModern(
                         clubId = match.awayClubId,
                         name = session.awayClubName,
