@@ -45,7 +45,9 @@ fun HomeHub(
     onNavigateToLeague: () -> Unit = {},
     onNavigateToTraining: () -> Unit = {},
     onNavigateToSquad: () -> Unit = {},
-    onNavigateToInbox: () -> Unit = {}
+    onNavigateToInbox: () -> Unit = {},
+    onNavigateToFinance: () -> Unit = {},
+    onNavigateToObjectives: () -> Unit = {}
 ) {
     var selectedCardIndex by rememberSaveable {
         mutableIntStateOf(-1)
@@ -67,11 +69,11 @@ fun HomeHub(
                 }
                 Row(Modifier.fillMaxWidth().heightIn(min = 135.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     StandingCard(Modifier.weight(1f).clickable { onNavigateToLeague() }, uiState.standing, uiState.club)
-                    FinanceCard(Modifier.weight(1f), uiState.club)
+                    FinanceCard(Modifier.weight(1f).clickable { onNavigateToFinance() }, uiState.club)
                 }
                 Row(Modifier.fillMaxWidth().heightIn(min = 135.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     NewsCard(Modifier.weight(1f).clickable { onNavigateToInbox() }, uiState.inboxMessages)
-                    ObjectiveCard(Modifier.weight(1f), uiState.objectives)
+                    ObjectiveCard(Modifier.weight(1f).clickable { onNavigateToObjectives() }, uiState.objectives)
                 }
                 UpcomingFixturesSection(Modifier.fillMaxWidth().heightIn(min = 150.dp), uiState.fixtures, onNavigateToCalendar)
                 LeagueStatsSection(Modifier.fillMaxWidth().heightIn(min = 140.dp), uiState.topScorer, uiState.topAssister, uiState.bestPlayer)
@@ -155,7 +157,7 @@ fun HomeHub(
                             color = if (isFinanceSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { selectedCardIndex = 3 },
+                        .clickable { selectedCardIndex = 3; onNavigateToFinance() },
                     club = uiState.club
                 )
 
@@ -188,7 +190,7 @@ fun HomeHub(
                             color = if (isObjectiveSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { selectedCardIndex = 5 },
+                        .clickable { selectedCardIndex = 5; onNavigateToObjectives() },
                     objectives = uiState.objectives
                 )
             }
