@@ -28,6 +28,8 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.calendar.CalendarHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDateString
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDayName
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.HomeHub
+import com.mountsa.fmsimulation.ui.screens.dashboard.home.FinanceDetailHub
+import com.mountsa.fmsimulation.ui.screens.dashboard.home.ObjectivesDetailHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.inbox.InboxHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.league.LeagueHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.myclub.MyClubHub
@@ -190,7 +192,9 @@ fun DashboardScreen(
                             onNavigateToLeague = { selectedTab = "League" },
                             onNavigateToTraining = { selectedTab = "Training" },
                             onNavigateToSquad = { selectedTab = "Squad" },
-                            onNavigateToInbox = { selectedTab = "Inbox" }
+                            onNavigateToInbox = { selectedTab = "Inbox" },
+                            onNavigateToFinance = { selectedTab = "Finance" },
+                            onNavigateToObjectives = { selectedTab = "Objectives" }
                         )
                         "Squad" -> SquadHub(dashboardViewModel, squadViewModel)
                         "League" -> LeagueHub(dashboardViewModel)
@@ -201,6 +205,8 @@ fun DashboardScreen(
                         "Club" -> MyClubHub(dashboardViewModel)
                         "Shop" -> ShopHub(dashboardViewModel)
                         "Settings" -> SettingsHub(dashboardViewModel)
+                        "Finance" -> FinanceDetailHub(dashboardViewModel)
+                        "Objectives" -> ObjectivesDetailHub(dashboardViewModel)
                     }
                 }
             }
@@ -216,6 +222,12 @@ fun DashboardScreen(
                     viewModel = dashboardViewModel,
                     onBack = { selectedTab = "Home" }
                 )
+            }
+        }
+
+        if (selectedTab == "Settings") {
+            Surface(modifier = Modifier.fillMaxSize(), color = Color.Black) {
+                SettingsHub(dashboardViewModel, onBack = { selectedTab = "Home" })
             }
         }
 
