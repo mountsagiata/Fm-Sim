@@ -163,10 +163,10 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                 }
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier.padding(horizontal = 20.dp).clickable(enabled = halfTimePaused) { halfTimePaused = false }
+                    modifier = Modifier.padding(horizontal = 20.dp)
                 ) {
                     Text(if (currentMinute >= 90) "FT" else if (halfTimePaused) "HT" else "$currentMinute'", color = FM_GREEN, fontSize = 20.sp, fontWeight = FontWeight.Bold)
-                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "TAP TO START 2ND HALF" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
+                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "HALF TIME" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
                 }
                 AnimatedContent(
                     targetState = currentAwayScore,
@@ -254,6 +254,21 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
                         listOf(2,4,8).forEach { value -> FilterChip(speed == value, { speed = value }, { Text("${value}x", fontSize = 9.sp) }) }
+                        AnimatedVisibility(
+                            visible = halfTimePaused,
+                            enter = fadeIn(tween(180)) + expandHorizontally(),
+                            exit = fadeOut(tween(120)) + shrinkHorizontally()
+                        ) {
+                            Button(
+                                onClick = { halfTimePaused = false },
+                                modifier = Modifier.height(34.dp),
+                                contentPadding = PaddingValues(horizontal = 10.dp),
+                                colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                                shape = RoundedCornerShape(7.dp)
+                            ) {
+                                Text("SECOND HALF", color = Color.Black, fontSize = 8.sp, fontWeight = FontWeight.Black)
+                            }
+                        }
                         if (!halfTimePaused && autoPaused) {
                             OutlinedButton(onClick = { autoPaused = false }, modifier = Modifier.height(34.dp), contentPadding = PaddingValues(horizontal = 10.dp)) {
                                 Text("RESUME", color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)

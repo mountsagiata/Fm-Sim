@@ -113,6 +113,12 @@ class DashboardViewModel @Inject constructor(
     )
 
     @OptIn(ExperimentalCoroutinesApi::class)
+    val managerProfile: StateFlow<UserProfileEntity?> = career.flatMapLatest { save ->
+        if (save == null) flowOf<UserProfileEntity?>(null)
+        else flow { emit(repository.getProfileById(save.managerId)) }
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), null)
+
+    @OptIn(ExperimentalCoroutinesApi::class)
     val club: StateFlow<ClubEntity?> = career.flatMapLatest { c ->
         if (c == null) flowOf<ClubEntity?>(null)
         else flow<ClubEntity?> { emit(repository.getClubById(c.selectedClubId)) }

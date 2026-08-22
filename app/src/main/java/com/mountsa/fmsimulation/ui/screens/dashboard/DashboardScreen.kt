@@ -1,10 +1,15 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.animation.togetherWith
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -17,6 +22,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -265,52 +271,11 @@ fun DashboardScreen(
                     MatchFlow.RESULT -> MatchResultScreen(dashboardViewModel)
                     MatchFlow.POST -> {
                         MatchStageBackground {
-                        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"), color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.ExtraBold)
-                                Text(
-                                    if (isLoading) loadingMessage else "The team is heading back to the dressing room.",
-                                    color = Color.Gray,
-                                    fontSize = 14.sp
-                                )
-                                if (isLoading) {
-                                    Spacer(Modifier.height(12.dp))
-                                    val stages = listOf(
-                                        "Match report & interview" to "report",
-                                        "Other fixtures & standings" to "fixtures",
-                                        "Injuries, cards & finances" to "injuries",
-                                        "Career autosave" to "saving"
-                                    )
-                                    Column(Modifier.widthIn(min = 250.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                                        stages.forEach { (label, key) ->
-                                            val active = loadingMessage.contains(key, ignoreCase = true) ||
-                                                (key == "report" && loadingMessage.contains("interview", true))
-                                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                                Box(Modifier.size(6.dp).background(if (active) FM_GREEN else Color.Gray.copy(.35f), androidx.compose.foundation.shape.CircleShape))
-                                                Spacer(Modifier.width(8.dp))
-                                                Text(label, color = if (active) Color.White else Color.Gray.copy(.55f), fontSize = 10.sp)
-                                            }
-                                        }
-                                    }
-                                }
-                                Spacer(Modifier.height(24.dp))
-                                if (isLoading) {
-                                    CircularProgressIndicator(
-                                        color = FM_GREEN,
-                                        strokeWidth = 4.dp,
-                                        modifier = Modifier.size(34.dp)
-                                    )
-                                } else {
-                                    Button(
-                                        onClick = { dashboardViewModel.finishMatchFlow() },
-                                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                                        modifier = Modifier.width(180.dp).height(38.dp)
-                                    ) {
-                                        Text(com.mountsa.fmsimulation.ui.localization.localized("RETURN TO HUB"), color = Color.Black, fontWeight = FontWeight.Bold)
-                                    }
-                                }
-                            }
-                        }
+                            PostMatchProcessingPanel(
+                                isLoading = isLoading,
+                                loadingMessage = loadingMessage,
+                                onReturn = { dashboardViewModel.finishMatchFlow() }
+                            )
                         }
                     }
                     else -> {}
@@ -356,6 +321,117 @@ fun DashboardScreen(
         }
     }
     } // end BoxWithConstraints
+}
+
+@Composable
+private fun PostMatchProcessingPanel(
+    isLoading: Boolean,
+    loadingMessage: String,
+    onReturn: () -> Unit
+) {
+    val detailMessages = remember {
+        listOf(
+            "Finalising the match report and manager interview",
+            "Updating results from every competition",
+            "Recalculating tables, player form and discipline",
+            "Applying fitness, injury and club finance changes",
+            "Saving the career before the next matchday"
+        )
+    }
+    var detailIndex by remember { mutableIntStateOf(0) }
+
+    LaunchedEffect(isLoading) {
+        while (isLoading) {
+            delay(1_350)
+            detailIndex = (detailIndex + 1) % detailMessages.size
+        }
+    }
+
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Surface(
+            modifier = Modifier.widthIn(min = 320.dp, max = 520.dp).padding(20.dp),
+            color = Color.Black.copy(alpha = .72f),
+            shape = RoundedCornerShape(14.dp),
+            border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(.08f))
+        ) {
+            Column(
+                modifier = Modifier.padding(horizontal = 22.dp, vertical = 18.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"),
+                    color = Color.White,
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.ExtraBold
+                )
+                Spacer(Modifier.height(14.dp))
+
+                if (isLoading) {
+                    LinearProgressIndicator(
+                        modifier = Modifier.fillMaxWidth().height(5.dp).clip(RoundedCornerShape(3.dp)),
+                        color = FM_GREEN,
+                        trackColor = Color.White.copy(.08f)
+                    )
+                    Spacer(Modifier.height(14.dp))
+                    AnimatedContent(
+                        targetState = loadingMessage,
+                        transitionSpec = {
+                            (fadeIn(tween(220)) + slideInVertically { it / 3 }) togetherWith
+                                (fadeOut(tween(160)) + slideOutVertically { -it / 3 })
+                        },
+                        label = "PostMatchStage"
+                    ) { message ->
+                        Text(
+                            message,
+                            color = Color.White,
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Bold,
+                            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                        )
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    AnimatedContent(
+                        targetState = detailIndex,
+                        transitionSpec = { fadeIn(tween(260)) togetherWith fadeOut(tween(180)) },
+                        label = "PostMatchDetail"
+                    ) { index ->
+                        Text(
+                            detailMessages[index],
+                            color = Color.Gray,
+                            fontSize = 10.sp,
+                            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                        )
+                    }
+                    Spacer(Modifier.height(14.dp))
+                    Row(horizontalArrangement = Arrangement.spacedBy(5.dp)) {
+                        detailMessages.indices.forEach { index ->
+                            Box(
+                                Modifier
+                                    .size(width = if (index == detailIndex) 18.dp else 6.dp, height = 5.dp)
+                                    .clip(RoundedCornerShape(3.dp))
+                                    .background(if (index == detailIndex) FM_GREEN else Color.White.copy(.18f))
+                            )
+                        }
+                    }
+                } else {
+                    Text("Post-match processing complete.", color = Color.Gray, fontSize = 12.sp)
+                    Spacer(Modifier.height(14.dp))
+                    Button(
+                        onClick = onReturn,
+                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                        modifier = Modifier.width(170.dp).height(36.dp)
+                    ) {
+                        Text(
+                            com.mountsa.fmsimulation.ui.localization.localized("RETURN TO HUB"),
+                            color = Color.Black,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 10.sp
+                        )
+                    }
+                }
+            }
+        }
+    }
 }
 
 @Composable

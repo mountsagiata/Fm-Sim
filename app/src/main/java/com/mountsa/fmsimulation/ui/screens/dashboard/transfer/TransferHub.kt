@@ -1,14 +1,22 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.transfer
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.border
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -21,6 +29,8 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.TransferOfferUiModel
 import java.util.Locale
+import coil.compose.AsyncImage
+import coil.request.ImageRequest
 
 @Composable
 fun TransferHub(viewModel: DashboardViewModel) {
@@ -46,7 +56,13 @@ fun TransferHub(viewModel: DashboardViewModel) {
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
 
-                if (tab != 0) OutlinedTextField(query, { query = it }, modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp), singleLine = true, placeholder = { Text("Search name or position") })
+                if (tab != 0) {
+                    CompactPlayerSearch(
+                        query = query,
+                        onQueryChange = { query = it },
+                        modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp)
+                    )
+                }
                 val marketPlayers = allPlayers.filter {
                     it.clubId != uiState.club?.id &&
                         (query.isBlank() || it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true)) &&
@@ -98,7 +114,7 @@ fun TransferHub(viewModel: DashboardViewModel) {
         AppColumn(modifier = Modifier.weight(1f), title = "SCOUTING") {
             Column(modifier = Modifier.padding(8.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 ScoutingReportCard("Top Targets", "3 Players Found")
-                ScoutingReportCard("Youth Intake", "Next in 4 months")
+                ScoutingReportCard("Youth Intake", "Next in 4 months", avatarAsset = "database/faces/0.webp")
                 ScoutingReportCard("Transfer List", "12 Available")
             }
         }
@@ -195,15 +211,70 @@ fun TransferOfferItem(
 }
 
 @Composable
-fun ScoutingReportCard(title: String, subtitle: String) {
+fun ScoutingReportCard(title: String, subtitle: String, avatarAsset: String? = null) {
     Surface(
         color = Color.White.copy(alpha = 0.03f),
         shape = RoundedCornerShape(6.dp),
         modifier = Modifier.fillMaxWidth()
     ) {
-        Column(modifier = Modifier.padding(10.dp)) {
-            Text(title, fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color.White)
-            Text(subtitle, fontSize = 9.sp, color = Color.Gray)
+        Row(
+            modifier = Modifier.padding(9.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            if (avatarAsset != null) {
+                AsyncImage(
+                    model = ImageRequest.Builder(LocalContext.current)
+                        .data("file:///android_asset/$avatarAsset")
+                        .crossfade(true)
+                        .build(),
+                    contentDescription = title,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.size(32.dp)
+                )
+            }
+            Column(Modifier.weight(1f)) {
+                Text(title, fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                Text(subtitle, fontSize = 9.sp, color = Color.Gray)
+            }
+        }
+    }
+}
+
+@Composable
+private fun CompactPlayerSearch(
+    query: String,
+    onQueryChange: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        modifier = modifier.height(38.dp).border(1.dp, FM_GREEN.copy(.45f), RoundedCornerShape(7.dp)),
+        color = Color.White.copy(.025f),
+        shape = RoundedCornerShape(7.dp)
+    ) {
+        Row(
+            modifier = Modifier.fillMaxSize().padding(horizontal = 9.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Search, contentDescription = null, tint = Color.Gray, modifier = Modifier.size(16.dp))
+            Spacer(Modifier.width(7.dp))
+            BasicTextField(
+                value = query,
+                onValueChange = onQueryChange,
+                modifier = Modifier.weight(1f),
+                singleLine = true,
+                textStyle = LocalTextStyle.current.copy(color = Color.White, fontSize = 11.sp),
+                cursorBrush = SolidColor(FM_GREEN),
+                decorationBox = { innerField ->
+                    if (query.isBlank()) Text("Search name or position", color = Color.Gray, fontSize = 10.sp)
+                    innerField()
+                }
+            )
+            if (query.isNotEmpty()) {
+                IconButton(onClick = { onQueryChange("") }, modifier = Modifier.size(24.dp)) {
+                    Icon(Icons.Default.Close, contentDescription = "Clear search", tint = Color.Gray, modifier = Modifier.size(14.dp))
+                }
+            }
         }
     }
 }

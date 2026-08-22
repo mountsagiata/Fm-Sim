@@ -74,9 +74,13 @@ fun LeagueHub(viewModel: DashboardViewModel) {
                     Icon(Icons.Default.ChevronRight, contentDescription = "Next league", tint = FM_GREEN)
                 }
             }
-            TabRow(selectedTabIndex = selectedTab, containerColor = Color.Transparent) {
-                Tab(selectedTab == 0, { selectedTab = 0 }, text = { Text("TABLE", fontSize = 10.sp) })
-                Tab(selectedTab == 1, { selectedTab = 1 }, text = { Text("TOP PLAYERS & AWARDS", fontSize = 10.sp) })
+            TabRow(
+                selectedTabIndex = selectedTab,
+                containerColor = Color.Transparent,
+                modifier = Modifier.height(34.dp)
+            ) {
+                Tab(selectedTab == 0, { selectedTab = 0 }, modifier = Modifier.height(34.dp), text = { Text("TABLE", fontSize = 9.sp) })
+                Tab(selectedTab == 1, { selectedTab = 1 }, modifier = Modifier.height(34.dp), text = { Text("TOP PLAYERS & AWARDS", fontSize = 9.sp) })
             }
 
             if (selectedTab == 0) {
