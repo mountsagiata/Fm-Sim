@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -45,7 +45,7 @@ jobs:
 
       - name: Upload lint report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: lint-report-${{ github.run_number }}
           path: app/build/reports/lint-results-debug.html
@@ -66,7 +66,7 @@ jobs:
           ls -la release-out/
 
       - name: Upload APK as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: FmSimulation-V1.0.${{ github.run_number }}
           path: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
@@ -78,10 +78,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 1
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: FmSimulation-V1.0.${{ github.run_number }}
           path: release-out
