@@ -58,7 +58,7 @@ data class DayGridModel(
 fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val leagueName by viewModel.leagueName.collectAsStateWithLifecycle()
-    
+
     val seasonStart = remember {
         Calendar.getInstance().apply {
             set(2025, Calendar.JULY, 1)
@@ -74,7 +74,7 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
         }
     }
-    
+
     var currentMonth by remember {
         mutableStateOf(Calendar.getInstance().apply {
             if (uiState.currentDate > 0) {
@@ -273,10 +273,10 @@ fun CalendarGrid(
             cellCal.set(Calendar.SECOND, 0)
             cellCal.set(Calendar.MILLISECOND, 0)
             val timestamp = cellCal.timeInMillis
-            
+
             val dayMatch = matches.find { isSameDayFast(cellCal, it.matchDate) }
             val dayEvents = events.filter { isSameDayFast(cellCal, it.eventDate) }
-            
+
             days.add(
                 DayGridModel(
                     dayNumber = i,
@@ -326,7 +326,7 @@ fun DayCell(
 ) {
     val isMatchDay = model.match != null
     val isTraining = model.events.any { it.type == "TRAINING" }
-    
+
     val infiniteTransition = rememberInfiniteTransition(label = "SelectedOutline")
     val outlineAlpha by infiniteTransition.animateFloat(
         initialValue = 0.55f,
@@ -363,7 +363,7 @@ fun DayCell(
             if (isMatchDay) {
                 val match = model.match!!
                 val isPlayed = match.isPlayed
-                
+
                 Column(
                     modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally,
@@ -381,7 +381,7 @@ fun DayCell(
                         Spacer(Modifier.width(4.dp))
                         ClubLogo(clubId = match.awayClubId, size = 18.dp)
                     }
-                    
+
                     if (isPlayed) {
                         val isHome = match.homeClubId == clubId
                         val userScore = if (isHome) match.homeScore else match.awayScore
@@ -455,7 +455,7 @@ fun SelectedDatePanel(
             val isHome = dayMatch.homeClubId == clubId
             val opponentId = if (isHome) dayMatch.awayClubId else dayMatch.homeClubId
             val opponent = allClubs.find { it.id == opponentId }
-            
+
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
                     text = opponent?.name?.uppercase() ?: "UNKNOWN OPPONENT",
@@ -464,20 +464,20 @@ fun SelectedDatePanel(
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center
                 )
-                
+
                 Spacer(Modifier.height(16.dp))
-                
+
                 ClubLogo(clubId = opponentId, size = 120.dp)
-                
+
                 Spacer(Modifier.height(16.dp))
-                
+
                 Text(
                     text = if (isHome) "HOME" else "AWAY",
                     color = FM_GREEN,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.ExtraBold
                 )
-                
+
                 if (dayMatch.isPlayed) {
                     Spacer(Modifier.height(12.dp))
                     Text(
@@ -496,11 +496,11 @@ fun SelectedDatePanel(
                 items(dayEvents) { event ->
                     EventCard(event)
                 }
-                
+
                 if (dayEvents.isEmpty()) {
                     item {
                         Box(modifier = Modifier.fillMaxWidth().padding(top = 40.dp), contentAlignment = Alignment.Center) {
-                            Text("NO EVENTS", color = Color.Gray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("NO EVENTS"), color = Color.Gray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
                         }
                     }
                 }
@@ -527,7 +527,7 @@ fun EventCard(event: CalendarEventEntity) {
                 "TRAINING" -> Color.Cyan
                 else -> Color.White
             }
-            
+
             Icon(icon, null, tint = color, modifier = Modifier.size(20.dp))
             Spacer(Modifier.width(12.dp))
             Column {
