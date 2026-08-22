@@ -41,7 +41,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
         visible = true
     }
 
-    BoxWithConstraints(
+    Box(
         modifier = Modifier
             .fillMaxSize()
             .background(FM_DARK_BG)
