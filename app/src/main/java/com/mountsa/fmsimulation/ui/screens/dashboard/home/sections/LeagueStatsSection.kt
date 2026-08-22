@@ -1,6 +1,7 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.home.sections
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.clickable
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.NavigateNext
 import androidx.compose.material3.Icon
@@ -21,7 +22,8 @@ fun LeagueStatsSection(
     modifier: Modifier = Modifier,
     topScorer: PlayerEntity?,
     topAssister: PlayerEntity?,
-    bestPlayer: PlayerEntity?
+    bestPlayer: PlayerEntity?,
+    onNavigateToLeague: () -> Unit = {}
 ) {
 
     AppColumn(
@@ -29,6 +31,7 @@ fun LeagueStatsSection(
         title = "LEAGUE STATS",
         headerAction = {
             Row(
+                modifier = Modifier.clickable { onNavigateToLeague() },
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(

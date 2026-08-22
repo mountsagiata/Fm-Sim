@@ -2,9 +2,11 @@ package com.mountsa.fmsimulation.ui.screens.dashboard.myclub
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -14,10 +16,16 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.components.FacilityItem
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
+import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
+import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 
 @Composable
 fun MyClubHub(viewModel: DashboardViewModel) {
     val club by viewModel.club.collectAsStateWithLifecycle()
+    val players by viewModel.squadPlayers.collectAsStateWithLifecycle()
+    var rightTab by remember { mutableIntStateOf(0) }
+    var selectedPlayer by remember { mutableStateOf<PlayerEntity?>(null) }
     
     Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         AppColumn(modifier = Modifier.weight(1.5f), title = "CLUB INFO") {
@@ -29,11 +37,51 @@ fun MyClubHub(viewModel: DashboardViewModel) {
             }
         }
         AppColumn(modifier = Modifier.weight(1f), title = "FACILITIES") {
-            Column(modifier = Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                FacilityItem("Medical Center", 0.85f)
-                FacilityItem("Training Pitch", 0.90f)
-                FacilityItem("Data Hub", 0.60f)
-                FacilityItem("Youth Academy", 0.75f)
+            Column(Modifier.fillMaxSize()) {
+                TabRow(selectedTabIndex = rightTab, containerColor = Color.Transparent) {
+                    Tab(rightTab == 0, { rightTab = 0 }, text = { Text("FACILITIES", fontSize = 9.sp) })
+                    Tab(rightTab == 1, { rightTab = 1 }, text = { Text("PLAYER TALKS", fontSize = 9.sp) })
+                }
+                if (rightTab == 0) {
+                    Column(modifier = Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FacilityItem("Medical Center", 0.85f)
+                        FacilityItem("Training Pitch", 0.90f)
+                        FacilityItem("Data Hub", 0.60f)
+                        FacilityItem("Youth Academy", 0.75f)
+                    }
+                } else if (selectedPlayer == null) {
+                    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(8.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        items(players, key = { it.id }) { player ->
+                            Row(
+                                Modifier.fillMaxWidth().clickable { selectedPlayer = player }.padding(6.dp),
+                                verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
+                            ) {
+                                PlayerAvatar(player, 31.dp)
+                                Spacer(Modifier.width(8.dp))
+                                Column(Modifier.weight(1f)) {
+                                    Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    Text("Morale ${player.morale} • ${player.happiness.name}", color = Color.Gray, fontSize = 8.sp)
+                                }
+                                Text("TALK", color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Black)
+                            }
+                        }
+                    }
+                } else {
+                    Column(Modifier.fillMaxSize().padding(12.dp), horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally) {
+                        PlayerAvatar(selectedPlayer!!, 56.dp)
+                        Spacer(Modifier.height(6.dp))
+                        Text(selectedPlayer!!.name, color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                        Text("Morale ${selectedPlayer!!.morale} • ${selectedPlayer!!.happiness.name}", color = Color.Gray, fontSize = 9.sp)
+                        Spacer(Modifier.height(10.dp))
+                        listOf("PRAISE" to "Praise form", "PROMISE" to "Promise minutes", "WARN" to "Warn discipline").forEach { (action, label) ->
+                            OutlinedButton(
+                                onClick = { viewModel.interactWithPlayer(selectedPlayer!!.id, action); selectedPlayer = null },
+                                modifier = Modifier.fillMaxWidth().height(34.dp)
+                            ) { Text(label, color = FM_GREEN, fontSize = 9.sp) }
+                        }
+                        TextButton(onClick = { selectedPlayer = null }) { Text("BACK", color = Color.Gray, fontSize = 9.sp) }
+                    }
+                }
             }
         }
     }

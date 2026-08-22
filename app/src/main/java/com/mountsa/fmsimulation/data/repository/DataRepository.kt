@@ -157,7 +157,7 @@ class DataRepository @Inject constructor(
     suspend fun insertScout(scout: ScoutEntity) = scoutDao.insertScout(scout)
     suspend fun updateScout(scout: ScoutEntity) = scoutDao.updateScout(scout)
     fun getAssignmentsForScout(scoutId: Long): Flow<List<ScoutAssignmentEntity>> = scoutDao.getAssignmentsForScout(scoutId)
-    suspend fun insertAssignment(assignment: ScoutAssignmentEntity) = scoutDao.insertAssignment(assignment)
+    suspend fun insertAssignment(assignment: ScoutAssignmentEntity): Long = scoutDao.insertAssignment(assignment)
     suspend fun deleteAssignment(assignmentId: Long) = scoutDao.deleteAssignment(assignmentId)
 
     // ======================================
@@ -171,6 +171,7 @@ class DataRepository @Inject constructor(
     fun getInbox(clubId: Long): Flow<List<InboxEntity>> = inboxDao.getInbox(clubId)
     fun getUnreadInboxCount(clubId: Long): Flow<Int> = inboxDao.unreadCount(clubId)
     suspend fun addInbox(inbox: InboxEntity) = inboxDao.insertInbox(inbox)
+    suspend fun updateInbox(inbox: InboxEntity) = inboxDao.updateInbox(inbox)
     suspend fun markInboxAsRead(inboxId: Long) = inboxDao.markAsRead(inboxId)
 
     fun getOffersForClub(clubId: Long): Flow<List<TransferOfferEntity>> = transferDao.getOffersForClub(clubId)

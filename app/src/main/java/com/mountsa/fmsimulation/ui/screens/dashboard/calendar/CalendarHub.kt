@@ -5,6 +5,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -13,6 +14,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -30,8 +32,6 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.foundation.horizontalScroll
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -89,6 +89,16 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
 
     var selectedDate by remember { mutableLongStateOf(if (uiState.currentDate > 0) uiState.currentDate else System.currentTimeMillis()) }
 
+    LaunchedEffect(uiState.currentDate) {
+        if (uiState.currentDate > 0L) {
+            selectedDate = uiState.currentDate
+            currentMonth = Calendar.getInstance().apply {
+                timeInMillis = uiState.currentDate
+                set(Calendar.DAY_OF_MONTH, 1)
+            }
+        }
+    }
+
     val matches = uiState.allMatches
     val events = uiState.calendarEvents
     val currentDate = uiState.currentDate
@@ -137,7 +147,7 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
 
             // Month Slider
-            Box(modifier = Modifier.width(260.dp).height(40.dp)) {
+            Box(modifier = Modifier.weight(1f).widthIn(min = 220.dp, max = 520.dp).height(40.dp)) {
                 val listState = rememberLazyListState()
                 LaunchedEffect(selectedMonthIndex) {
                     listState.animateScrollToItem(index = maxOf(0, selectedMonthIndex - 2))
@@ -168,6 +178,13 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
                             modifier = Modifier
                                 .clickable {
                                     currentMonth = seasonMonths[index].clone() as Calendar
+                                    selectedDate = (currentMonth.clone() as Calendar).apply {
+                                        set(Calendar.DAY_OF_MONTH, 1)
+                                        set(Calendar.HOUR_OF_DAY, 0)
+                                        set(Calendar.MINUTE, 0)
+                                        set(Calendar.SECOND, 0)
+                                        set(Calendar.MILLISECOND, 0)
+                                    }.timeInMillis
                                 }
                                 .padding(horizontal = 10.dp, vertical = 6.dp)
                         )
@@ -175,10 +192,14 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
                 }
             }
 
-            Spacer(Modifier.width(24.dp))
+            Spacer(Modifier.weight(.15f))
 
             // User Club Info
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.End,
+                modifier = Modifier.widthIn(min = 150.dp, max = 230.dp)
+            ) {
                 Column(horizontalAlignment = Alignment.End) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Box(modifier = Modifier.size(6.dp).background(FM_GREEN, CircleShape))
@@ -278,7 +299,10 @@ fun CalendarGrid(
             val timestamp = cellCal.timeInMillis
 
             val dayMatch = matches.find { isSameDayFast(cellCal, it.matchDate) }
-            val dayEvents = events.filter { isSameDayFast(cellCal, it.eventDate) }
+            val storedEvents = events.filter { isSameDayFast(cellCal, it.eventDate) }
+            val dayEvents = storedEvents.ifEmpty {
+                plannedEventsForDate(clubId, timestamp, matches)
+            }
 
             days.add(
                 DayGridModel(
@@ -300,22 +324,27 @@ fun CalendarGrid(
         days
     }
 
-    LazyVerticalGrid(
-        columns = GridCells.Fixed(7),
-        modifier = Modifier.fillMaxSize(),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        userScrollEnabled = false
-    ) {
-        items(gridData) { model ->
-            DayCell(
-                model = model,
-                clubId = clubId,
-                allClubs = allClubs,
-                onClick = {
-                    if (model.timestamp != -1L) onDateClick(model.timestamp)
-                }
-            )
+    BoxWithConstraints(Modifier.fillMaxSize()) {
+        val gap = if (maxHeight < 420.dp) 4.dp else 7.dp
+        val rowHeight = ((maxHeight - gap * 5) / 6).coerceAtLeast(42.dp)
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(7),
+            modifier = Modifier.fillMaxSize(),
+            horizontalArrangement = Arrangement.spacedBy(gap),
+            verticalArrangement = Arrangement.spacedBy(gap),
+            userScrollEnabled = false
+        ) {
+            items(gridData) { model ->
+                DayCell(
+                    model = model,
+                    clubId = clubId,
+                    allClubs = allClubs,
+                    modifier = Modifier.height(rowHeight),
+                    onClick = {
+                        if (model.timestamp != -1L) onDateClick(model.timestamp)
+                    }
+                )
+            }
         }
     }
 }
@@ -325,6 +354,7 @@ fun DayCell(
     model: DayGridModel,
     clubId: Long,
     allClubs: List<ClubEntity>,
+    modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {
     val isMatchDay = model.match != null
@@ -339,9 +369,8 @@ fun DayCell(
     )
 
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .aspectRatio(1.2f)
             .alpha(if (model.isCurrentMonth) 1f else 0.28f)
             .clip(RoundedCornerShape(12.dp))
             .background(Color(0xFF05090D))
@@ -423,13 +452,14 @@ fun DayCell(
                 if (model.match != null) Icon(Icons.Default.EmojiEvents, null, tint = FM_GREEN, modifier = Modifier.size(11.dp))
                 model.events.take(3).forEach { event ->
                     val icon = when (event.type) {
-                        "TRAINING", "RECOVERY" -> Icons.Default.FitnessCenter
+                        "TRAINING", "RECOVERY", "REST" -> Icons.Default.FitnessCenter
                         "TRANSFER" -> Icons.Default.SwapHoriz
                         "MEDIA", "BOARD" -> Icons.Default.Campaign
                         else -> Icons.Default.CalendarToday
                     }
                     val tint = when (event.type) {
                         "TRAINING" -> Color.Cyan
+                        "RECOVERY", "REST" -> Color(0xFF80CBC4)
                         "TRANSFER" -> Color(0xFFFFB74D)
                         "MEDIA" -> Color(0xFFE040FB)
                         else -> Color.White.copy(.75f)
@@ -453,7 +483,10 @@ fun SelectedDatePanel(
 ) {
     val cal = remember(selectedDate) { Calendar.getInstance().apply { timeInMillis = selectedDate } }
     val dayMatch = matches.find { isSameDayFast(cal, it.matchDate) }
-    val dayEvents = events.filter { isSameDayFast(cal, it.eventDate) }
+    val storedEvents = events.filter { isSameDayFast(cal, it.eventDate) }
+    val dayEvents = storedEvents.ifEmpty {
+        plannedEventsForDate(clubId, selectedDate, matches)
+    }
 
     Column(
         modifier = Modifier
@@ -564,11 +597,16 @@ fun EventCard(event: CalendarEventEntity) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             val icon = when (event.type) {
-                "TRAINING" -> Icons.Default.FitnessCenter
+                "TRAINING", "RECOVERY", "REST" -> Icons.Default.FitnessCenter
+                "TRANSFER" -> Icons.Default.SwapHoriz
+                "MEDIA", "BOARD" -> Icons.Default.Campaign
                 else -> Icons.Default.CalendarToday
             }
             val color = when (event.type) {
                 "TRAINING" -> Color.Cyan
+                "RECOVERY", "REST" -> Color(0xFF80CBC4)
+                "TRANSFER" -> Color(0xFFFFB74D)
+                "MEDIA", "BOARD" -> Color(0xFFE040FB)
                 else -> Color.White
             }
 
@@ -582,6 +620,50 @@ fun EventCard(event: CalendarEventEntity) {
             }
         }
     }
+}
+
+private fun plannedEventsForDate(
+    clubId: Long,
+    timestamp: Long,
+    matches: List<MatchEntity>
+): List<CalendarEventEntity> {
+    val calendar = Calendar.getInstance().apply { timeInMillis = timestamp }
+    if (matches.any { isSameDayFast(calendar, it.matchDate) }) return emptyList()
+    val previousDay = (calendar.clone() as Calendar).apply { add(Calendar.DAY_OF_MONTH, -1) }
+    val nextDay = (calendar.clone() as Calendar).apply { add(Calendar.DAY_OF_MONTH, 1) }
+    val playedYesterday = matches.any { isSameDayFast(previousDay, it.matchDate) }
+    val matchTomorrow = matches.any { isSameDayFast(nextDay, it.matchDate) }
+    val event = when {
+        playedYesterday -> CalendarEventEntity(
+            clubId = clubId,
+            eventDate = timestamp,
+            type = "RECOVERY",
+            title = "Recovery",
+            description = "Regeneration and medical review after matchday."
+        )
+        matchTomorrow -> CalendarEventEntity(
+            clubId = clubId,
+            eventDate = timestamp,
+            type = "MEDIA",
+            title = "Match preparation",
+            description = "Tactical briefing and pre-match media duties."
+        )
+        calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY -> CalendarEventEntity(
+            clubId = clubId,
+            eventDate = timestamp,
+            type = "REST",
+            title = "Rest day",
+            description = "Squad recovery and individual treatment."
+        )
+        else -> CalendarEventEntity(
+            clubId = clubId,
+            eventDate = timestamp,
+            type = "TRAINING",
+            title = "Training",
+            description = "Scheduled technical, physical and tactical work."
+        )
+    }
+    return listOf(event)
 }
 
 private fun isSameDayFast(cal1: Calendar, timestamp: Long): Boolean {

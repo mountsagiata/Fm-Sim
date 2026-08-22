@@ -11,11 +11,16 @@ import com.mountsa.fmsimulation.domain.engine.LeagueManager
 import com.mountsa.fmsimulation.domain.engine.TransferManager
 import com.mountsa.fmsimulation.core.enums.InboxCategory
 import com.mountsa.fmsimulation.core.enums.TransferStatus
+import com.mountsa.fmsimulation.core.enums.ScoutAssignmentType
+import com.mountsa.fmsimulation.core.enums.PlayerHappiness
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
+import java.util.concurrent.atomic.AtomicBoolean
 import javax.inject.Inject
 
 data class MatchUiModel(
@@ -56,6 +61,7 @@ class DashboardViewModel @Inject constructor(
     private val transferManager: TransferManager,
     private val managerRatingService: ManagerRatingService,
     private val pressConferenceGenerator: PressConferenceGenerator,
+    private val boardObjectiveGenerator: BoardObjectiveGenerator,
     val audioManager: com.mountsa.fmsimulation.utils.AudioManager,
     val localeManager: com.mountsa.fmsimulation.utils.LocaleManager
 ) : ViewModel() {
@@ -63,13 +69,33 @@ class DashboardViewModel @Inject constructor(
     val allPlayers: StateFlow<List<PlayerEntity>> = repository.getAllPlayers()
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
+    val allLeagues: StateFlow<List<LeagueEntity>> = repository.getAllLeagues()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    val worldMatches: StateFlow<List<MatchEntity>> = repository.getUpcomingMatches()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    private val _selectedLeagueId = MutableStateFlow(-1L)
+    val selectedLeagueId: StateFlow<Long> = _selectedLeagueId.asStateFlow()
+
+    @OptIn(ExperimentalCoroutinesApi::class)
+    val selectedLeagueStandings: StateFlow<List<StandingEntity>> = _selectedLeagueId
+        .flatMapLatest { leagueId ->
+            if (leagueId <= 0L) flowOf(emptyList()) else repository.getLeagueStandings(leagueId)
+        }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
     private val gson = Gson()
     
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
+    private val matchFinalizing = AtomicBoolean(false)
 
     private val _loadingMessage = MutableStateFlow("Processing...")
     val loadingMessage: StateFlow<String> = _loadingMessage.asStateFlow()
+
+    private val _autosaveVisible = MutableStateFlow(false)
+    val autosaveVisible: StateFlow<Boolean> = _autosaveVisible.asStateFlow()
 
     private val _matchFlowState = MutableStateFlow(MatchFlow.NONE)
     val matchFlowState: StateFlow<MatchFlow> = _matchFlowState.asStateFlow()
@@ -124,9 +150,14 @@ class DashboardViewModel @Inject constructor(
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), "")
 
     @OptIn(ExperimentalCoroutinesApi::class)
-    val nextMatch: StateFlow<MatchUiModel?> = club.flatMapLatest { cl ->
-        if (cl == null) flowOf(null)
-        else repository.getNextMatchFlow(cl.id).map { match ->
+    val nextMatch: StateFlow<MatchUiModel?> = combine(club, career) { cl, cr -> cl to cr }
+        .flatMapLatest { (cl, cr) ->
+        if (cl == null || cr == null) flowOf(null)
+        else repository.getMatchesForClub(cl.id).map { matches ->
+            val match = matches
+                .asSequence()
+                .filter { !it.isPlayed && it.matchDate >= cr.currentDate }
+                .minByOrNull { it.matchDate }
             if (match == null) null
             else {
                 val homeClub = repository.getClubById(match.homeClubId)
@@ -313,6 +344,10 @@ class DashboardViewModel @Inject constructor(
         viewModelScope.launch {
             club.collectLatest { cl ->
                 if (cl != null) {
+                    if (_selectedLeagueId.value <= 0L) _selectedLeagueId.value = cl.leagueId
+                    if (repository.getObjectives(cl.id).first().isEmpty()) {
+                        boardObjectiveGenerator.generateSeasonObjectives(cl.id)
+                    }
                     launch { repository.getTopScorersByLeague(cl.leagueId, 1).collect { _topScorer.value = it.firstOrNull() } }
                     launch { repository.getTopAssistsByLeague(cl.leagueId, 1).collect { _topAssister.value = it.firstOrNull() } }
                     launch { repository.getTopPlayersByLeague(cl.leagueId, 1).collect { _bestPlayer.value = it.firstOrNull() } }
@@ -345,9 +380,6 @@ class DashboardViewModel @Inject constructor(
                     _isLoading.value = true
                     _loadingMessage.value = "Advancing to next day..."
 
-                    // Delay buatan agar user melihat loading (Efek FM)
-                    delay(500)
-
                     processor.continueDay()
                 }
             } catch (e: Exception) {
@@ -362,10 +394,8 @@ class DashboardViewModel @Inject constructor(
         viewModelScope.launch {
             _isLoading.value = true
             _loadingMessage.value = "Preparing Matchday..."
-            delay(800) // Delay persiapan
-            
             try {
-                val session = sessionBuilder.build(matchEntity)
+                val session = withContext(Dispatchers.IO) { sessionBuilder.build(matchEntity) }
                 _matchSession.value = session
                 _matchFlowState.value = MatchFlow.REVEAL
             } catch (e: Exception) {
@@ -390,7 +420,10 @@ class DashboardViewModel @Inject constructor(
                 MatchFlow.SIMULATION -> {
                     _matchFlowState.value = MatchFlow.RESULT
                 }
-                MatchFlow.RESULT -> _matchFlowState.value = MatchFlow.POST
+                MatchFlow.RESULT -> {
+                    _matchFlowState.value = MatchFlow.POST
+                    finishMatchFlow()
+                }
                 MatchFlow.POST -> {
                     finishMatchFlow()
                 }
@@ -415,10 +448,11 @@ class DashboardViewModel @Inject constructor(
         val session = _matchSession.value ?: return
         _isLoading.value = true
         _loadingMessage.value = "Calculating Tactics..."
-        delay(1000)
         try {
-            matchSimulator.simulateMatch(session.match)
-            val updatedMatch = repository.getMatchById(session.match.id)
+            val updatedMatch = withContext(Dispatchers.IO) {
+                matchSimulator.simulateMatch(session.match)
+                repository.getMatchById(session.match.id)
+            }
             if (updatedMatch != null) {
                 _matchSession.value = session.copy(match = updatedMatch)
             }
@@ -431,12 +465,16 @@ class DashboardViewModel @Inject constructor(
 
     fun resetCareer() {
         viewModelScope.launch {
-            audioManager.stopBackgroundMusic()
             audioManager.stopCrowdAmbience()
             repository.resetCareerData()
+            audioManager.playBackgroundMusic()
             // MainViewModel's career observer will detect career == null
             // and automatically navigate back to the Profile screen.
         }
+    }
+
+    fun selectLeague(leagueId: Long) {
+        _selectedLeagueId.value = leagueId
     }
 
     fun swapMatchPlayer(starterId: Long, substituteId: Long) {
@@ -458,39 +496,39 @@ class DashboardViewModel @Inject constructor(
 
     fun finishMatchFlow() {
         val session = _matchSession.value
-        if (_isLoading.value) return // guard against double-tap re-entry
+        if (!matchFinalizing.compareAndSet(false, true)) return
         viewModelScope.launch {
             try {
                 if (session != null) {
                     _isLoading.value = true
-                    _loadingMessage.value = "Finalizing Match Results..."
+                    _loadingMessage.value = "Creating match report and interview..."
                     
-                    // 1. Update Standing Positions
-                    session.match.leagueId?.let { leagueId ->
-                        leagueManager.updateStandings(leagueId)
+                    withContext(Dispatchers.IO) {
+                        // Standings and manager rating are updated once by the day
+                        // processor after every AI fixture has finished. Running them
+                        // here as well doubled the most expensive post-match work.
+                        pressConferenceGenerator.generatePressConference(
+                            club.value?.id ?: session.match.homeClubId,
+                            PressType.POST_MATCH
+                        )
+                        generateMatchResultInbox(session.match)
                     }
-                    
-                    // 2. Update Manager Rating
-                    managerRatingService.updateManagerRating(session.match.homeClubId)
-                    
-                    // 3. Post-Match Press Conference
-                    pressConferenceGenerator.generatePressConference(
-                        club.value?.id ?: session.match.homeClubId,
-                        PressType.POST_MATCH
-                    )
-                    
-                    // 4. Generate Inbox Result
-                    generateMatchResultInbox(session.match)
-                    
-                    delay(500)
 
-                    // 5. Process the rest of the day: this simulates the OTHER league
+                    // Process the rest of the day: this simulates the OTHER league
                     // matches scheduled on the same date (AI vs AI), runs training /
                     // injury / morale / transfer updates, and advances to the next day.
                     // Without this, other clubs never play on days the user has a
                     // match, so their standings stay stuck at 0.
-                    _loadingMessage.value = "Processing other results..."
+                    _loadingMessage.value = "Simulating other fixtures and competition tables..."
                     processor.continueDay()
+                    withContext(Dispatchers.IO) {
+                        session.match.leagueId?.let { leagueManager.updateStandings(it) }
+                        club.value?.id?.let { managerRatingService.updateManagerRating(it) }
+                    }
+                    _loadingMessage.value = "Saving injuries, cards, finances and career progress..."
+                    _autosaveVisible.value = true
+                    delay(750)
+                    _autosaveVisible.value = false
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -500,6 +538,8 @@ class DashboardViewModel @Inject constructor(
                 _matchFlowState.value = MatchFlow.NONE
                 _matchSession.value = null
                 _isLoading.value = false
+                _autosaveVisible.value = false
+                matchFinalizing.set(false)
             }
         }
     }
@@ -552,10 +592,132 @@ class DashboardViewModel @Inject constructor(
             if (status == TransferStatus.ACCEPTED) {
                 _isLoading.value = true
                 _loadingMessage.value = "Finalizing Transfer Documents..."
-                delay(1000)
                 transferManager.processTransfer(updatedOffer)
                 _isLoading.value = false
             }
+        }
+    }
+
+    fun buyPlayer(playerId: Long) {
+        viewModelScope.launch {
+            val buyer = club.value ?: return@launch
+            val player = repository.getPlayerById(playerId) ?: return@launch
+            if (player.clubId == buyer.id) return@launch
+            val price = player.releaseClause.takeIf { it > 0L } ?: player.marketValue.coerceAtLeast(1L)
+            if (buyer.budget < price) {
+                repository.addInbox(
+                    InboxEntity(
+                        clubId = buyer.id,
+                        sender = "Finance Director",
+                        subject = "Transfer blocked: insufficient budget",
+                        message = "The €${String.format("%,d", price)} transfer for ${player.name} exceeds the available budget.",
+                        category = InboxCategory.TRANSFER,
+                        timestamp = career.value?.currentDate ?: System.currentTimeMillis()
+                    )
+                )
+                return@launch
+            }
+
+            _isLoading.value = true
+            _loadingMessage.value = "Completing transfer for ${player.shortName}..."
+            try {
+                val offer = TransferOfferEntity(
+                    playerId = player.id,
+                    buyerClubId = buyer.id,
+                    sellerClubId = player.clubId,
+                    offerAmount = price,
+                    wageOffered = player.wage.coerceAtLeast(1L),
+                    deadlineDate = career.value?.currentDate ?: System.currentTimeMillis(),
+                    status = TransferStatus.ACCEPTED
+                )
+                val offerId = repository.insertOffer(offer)
+                transferManager.processTransfer(offer.copy(id = offerId))
+                repository.addInbox(
+                    InboxEntity(
+                        clubId = buyer.id,
+                        sender = "Transfer Department",
+                        subject = "TRANSFER NEWS: ${player.shortName} joins ${buyer.shortName}",
+                        message = "${player.name} has completed a €${String.format("%,d", price)} transfer and is now available in your squad.",
+                        category = InboxCategory.TRANSFER,
+                        timestamp = career.value?.currentDate ?: System.currentTimeMillis()
+                    )
+                )
+            } finally {
+                _isLoading.value = false
+            }
+        }
+    }
+
+    fun assignScoutToPlayer(scout: ScoutEntity, player: PlayerEntity) {
+        viewModelScope.launch {
+            val start = career.value?.currentDate ?: System.currentTimeMillis()
+            val assignmentId = repository.insertAssignment(
+                ScoutAssignmentEntity(
+                    scoutId = scout.id,
+                    type = ScoutAssignmentType.POSITION,
+                    targetId = player.id,
+                    position = player.position,
+                    minAge = player.age,
+                    maxAge = player.age,
+                    minPotential = player.potential,
+                    progress = 100,
+                    startDate = start,
+                    endDate = start
+                )
+            )
+            repository.updateScout(scout.copy(assignmentId = assignmentId))
+            repository.updatePlayer(player.copy(scoutingKnowledge = 100))
+            repository.addInbox(
+                InboxEntity(
+                    clubId = scout.clubId,
+                    sender = scout.name,
+                    subject = "Scouting report complete: ${player.shortName}",
+                    message = "The report is complete. Overall ${player.overall}, potential ${player.potential}, value €${String.format("%,d", player.marketValue)}.",
+                    category = InboxCategory.SCOUTING,
+                    timestamp = start
+                )
+            )
+        }
+    }
+
+    fun interactWithPlayer(playerId: Long, interaction: String) {
+        viewModelScope.launch {
+            val player = repository.getPlayerById(playerId) ?: return@launch
+            val moraleDelta = when (interaction) {
+                "PRAISE" -> 6
+                "PROMISE" -> 3
+                "WARN" -> -4
+                else -> 1
+            }
+            val morale = (player.morale + moraleDelta).coerceIn(0, 100)
+            val happiness = when {
+                morale >= 88 -> PlayerHappiness.DELIGHTED
+                morale >= 72 -> PlayerHappiness.HAPPY
+                morale >= 55 -> PlayerHappiness.CONTENT
+                morale >= 35 -> PlayerHappiness.CONCERNED
+                else -> PlayerHappiness.UNHAPPY
+            }
+            repository.updatePlayer(player.copy(morale = morale, happiness = happiness))
+        }
+    }
+
+    fun answerPressInterview(message: InboxEntity, option: PressOption) {
+        if (message.isActioned) return
+        viewModelScope.launch {
+            career.value?.let { cr ->
+                repository.saveCareer(cr.copy(managerRating = (cr.managerRating + option.ratingImpact).coerceIn(0, 100)))
+            }
+            val players = club.value?.id?.let { repository.getPlayersByClubSync(it) }.orEmpty()
+            repository.updatePlayers(players.map { it.copy(morale = (it.morale + option.moraleImpact).coerceIn(0, 100)) })
+            repository.updateInbox(
+                message.copy(
+                    message = "${message.message}\n\nYour answer: ${option.text}",
+                    actionData = "",
+                    isRead = true,
+                    isActioned = true
+                )
+            )
+            _selectedInboxMessage.value = message.copy(actionData = "", isRead = true, isActioned = true)
         }
     }
 }

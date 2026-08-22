@@ -32,6 +32,11 @@ class AudioManager @Inject constructor(
     private val _crowdVolume = MutableStateFlow(prefs.getFloat(KEY_CROWD_VOLUME, 0.5f))
     val crowdVolume: StateFlow<Float> = _crowdVolume
 
+    data class TrackAnnouncement(val sequence: Long, val title: String)
+
+    private val _trackAnnouncement = MutableStateFlow<TrackAnnouncement?>(null)
+    val trackAnnouncement: StateFlow<TrackAnnouncement?> = _trackAnnouncement
+
     fun setMusicEnabled(enabled: Boolean) {
         _musicEnabled.value = enabled
         prefs.edit().putBoolean(KEY_MUSIC, enabled).apply()
@@ -121,25 +126,47 @@ class AudioManager @Inject constructor(
     // --- LONG-FORM AUDIO (MediaPlayer): background music & crowd ambience ---
     private var musicPlayer: MediaPlayer? = null
     private var crowdPlayer: MediaPlayer? = null
-    private var currentTrack: Int = 0
+    private data class MusicTrack(val resourceId: Int, val title: String)
+    private val playlist = listOf(
+        MusicTrack(R.raw.soundtrack1, "Touchline Dreams"),
+        MusicTrack(R.raw.soundtrack2, "Matchday Pulse")
+    )
+    private var currentTrackIndex = -1
+    private var announcementSequence = 0L
 
     /**
      * Starts looping background music. Alternates between Soundtrack1 and
      * Soundtrack2 each time it's (re)started from a stopped state. No-op if
      * the user has music disabled in Settings.
      */
+    @Synchronized
     fun playBackgroundMusic() {
         if (!_musicEnabled.value) return
         if (musicPlayer?.isPlaying == true) return
-        stopBackgroundMusic()
-        currentTrack = if (currentTrack == 0) R.raw.soundtrack1 else R.raw.soundtrack2
-        musicPlayer = MediaPlayer.create(context, currentTrack)?.apply {
-            isLooping = true
-            setVolume(_musicVolume.value, _musicVolume.value)
-            start()
+        if (musicPlayer != null) {
+            musicPlayer?.start()
+            return
         }
+        startNextTrack()
     }
 
+    @Synchronized
+    private fun startNextTrack() {
+        if (!_musicEnabled.value || playlist.isEmpty()) return
+        musicPlayer?.release()
+        currentTrackIndex = (currentTrackIndex + 1).mod(playlist.size)
+        val track = playlist[currentTrackIndex]
+        musicPlayer = MediaPlayer.create(context, track.resourceId)?.apply {
+            isLooping = false
+            setVolume(_musicVolume.value, _musicVolume.value)
+            setOnCompletionListener { startNextTrack() }
+            start()
+        }
+        announcementSequence += 1
+        _trackAnnouncement.value = TrackAnnouncement(announcementSequence, track.title)
+    }
+
+    @Synchronized
     fun stopBackgroundMusic() {
         musicPlayer?.release()
         musicPlayer = null

@@ -55,10 +55,13 @@ class MatchSimulator @Inject constructor(
         if (homeStartingXI.isEmpty() || awayStartingXI.isEmpty()) return
 
         val playerStats = mutableMapOf<Long, PlayerMatchStats>()
+        val matchInjuries = mutableMapOf<Long, Pair<String, Int>>()
         (homeStartingXI + awayStartingXI).forEach { playerStats[it.id] = PlayerMatchStats(it.id) }
 
         val homeTactic = tacticEngine.calculateTacticImpact(homeClub)
         val awayTactic = tacticEngine.calculateTacticImpact(awayClub)
+        val homeRoleImpact = tacticEngine.calculateRoleImpact(homeStartingXI, loadTacticalRoles(homeClub.id))
+        val awayRoleImpact = tacticEngine.calculateRoleImpact(awayStartingXI, loadTacticalRoles(awayClub.id))
 
         fun calculatePerf(p: PlayerEntity): Float {
             val sharpnessEffect = (p.sharpness / 100f) * 0.15f
@@ -85,13 +88,13 @@ class MatchSimulator @Inject constructor(
         for (minute in 1..90) {
             if (minute == 45) events.add(EventFactory.create(45, EventType.HALFTIME, EventCategory.MATCH, hGoals, aGoals))
             
-            val hAtt = (homeStartingXI.sumOf { ((it.shooting + it.pace) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.att
-            val hMid = (homeStartingXI.sumOf { ((it.passing + it.dribbling) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.mid
-            val hDef = (homeStartingXI.sumOf { ((it.defending + it.physical) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.def
+            val hAtt = (homeStartingXI.sumOf { ((it.shooting + it.pace) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.att * homeRoleImpact.att
+            val hMid = (homeStartingXI.sumOf { ((it.passing + it.dribbling) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.mid * homeRoleImpact.mid
+            val hDef = (homeStartingXI.sumOf { ((it.defending + it.physical) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * homeTactic.def * homeRoleImpact.def
             
-            val aAtt = (awayStartingXI.sumOf { ((it.shooting + it.pace) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.att
-            val aMid = (awayStartingXI.sumOf { ((it.passing + it.dribbling) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.mid
-            val aDef = (awayStartingXI.sumOf { ((it.defending + it.physical) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.def
+            val aAtt = (awayStartingXI.sumOf { ((it.shooting + it.pace) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.att * awayRoleImpact.att
+            val aMid = (awayStartingXI.sumOf { ((it.passing + it.dribbling) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.mid * awayRoleImpact.mid
+            val aDef = (awayStartingXI.sumOf { ((it.defending + it.physical) * calculatePerf(it)).toDouble() } / 11.0).toFloat() * awayTactic.def * awayRoleImpact.def
 
             homeWeight = (hMid / (hMid + aMid + 0.1f)) * 1.1f
             
@@ -187,6 +190,25 @@ class MatchSimulator @Inject constructor(
                         if (isHomeEvent) hCorners++ else aCorners++
                         events.add(EventFactory.create(minute, EventType.CORNER, EventCategory.ATTACK, hGoals, aGoals, teamId = actingTeam.id, teamName = actingTeam.name))
                     }
+                    rand < 0.58f -> {
+                        val injured = actingXI.randomOrNull()
+                        if (injured != null) {
+                            val injury = listOf(
+                                "Hamstring strain" to Random.nextInt(7, 22),
+                                "Ankle sprain" to Random.nextInt(5, 18),
+                                "Muscle fatigue" to Random.nextInt(3, 10),
+                                "Knee knock" to Random.nextInt(8, 28)
+                            ).random()
+                            matchInjuries[injured.id] = injury
+                            actingXI.remove(injured)
+                            events.add(
+                                EventFactory.create(
+                                    minute, EventType.INJURY, EventCategory.PLAYER,
+                                    hGoals, aGoals, injured, actingTeam.id, actingTeam.name
+                                ).copy(commentary = "${injured.shortName} is forced off with a ${injury.first.lowercase()}.")
+                            )
+                        }
+                    }
                 }
             }
         }
@@ -230,8 +252,8 @@ class MatchSimulator @Inject constructor(
         moraleService.applyMatchResultImpact(match.homeClubId, hGoals > aGoals, hGoals == aGoals)
         moraleService.applyMatchResultImpact(match.awayClubId, aGoals > hGoals, hGoals == aGoals)
 
-        updatePostMatchPlayersGlobal(homePlayers, homeClub.pressing, playerStats)
-        updatePostMatchPlayersGlobal(awayPlayers, awayClub.pressing, playerStats)
+        updatePostMatchPlayersGlobal(homePlayers, homeClub.pressing, playerStats, matchInjuries)
+        updatePostMatchPlayersGlobal(awayPlayers, awayClub.pressing, playerStats, matchInjuries)
         financialService.processMatchDayFinancials(match.copy(homeScore = hGoals, awayScore = aGoals, isPlayed = true))
     }
 
@@ -239,24 +261,49 @@ class MatchSimulator @Inject constructor(
         return LineupSelector.select(players)
     }
 
-    private suspend fun updatePostMatchPlayersGlobal(players: List<PlayerEntity>, pressing: Int, stats: Map<Long, PlayerMatchStats>) {
+    private suspend fun updatePostMatchPlayersGlobal(
+        players: List<PlayerEntity>,
+        pressing: Int,
+        stats: Map<Long, PlayerMatchStats>,
+        matchInjuries: Map<Long, Pair<String, Int>>
+    ) {
         val updated = players.map { p ->
-            val s = stats[p.id] ?: return@map p
+            val s = stats[p.id]
+            if (s == null) {
+                if (p.status == PlayerStatus.SUSPENDED && p.suspensionGamesRemaining > 0) {
+                    val remaining = (p.suspensionGamesRemaining - 1).coerceAtLeast(0)
+                    return@map p.copy(
+                        suspensionGamesRemaining = remaining,
+                        status = if (remaining == 0) PlayerStatus.FIT else PlayerStatus.SUSPENDED
+                    )
+                }
+                return@map p
+            }
             var status = p.status
             var susp = p.suspensionGamesRemaining
+            val accumulatedYellow = p.yellowCards + s.yellowCards
+            var savedYellow = accumulatedYellow
             if (s.redCards > 0) { status = PlayerStatus.SUSPENDED; susp = 3 }
-            else if (p.yellowCards + s.yellowCards >= 5) { status = PlayerStatus.SUSPENDED; susp = 1 }
+            else if (accumulatedYellow >= 5) {
+                status = PlayerStatus.SUSPENDED
+                susp = 1
+                savedYellow = accumulatedYellow % 5
+            }
+            val injury = matchInjuries[p.id]
+            if (injury != null) status = PlayerStatus.INJURED
 
             p.copy(
                 appearances = p.appearances + 1,
                 goals = p.goals + s.goals,
                 assists = p.assists + s.assists,
-                yellowCards = p.yellowCards + s.yellowCards,
+                yellowCards = savedYellow,
                 redCards = p.redCards + s.redCards,
                 averageRating = if (p.appearances == 0) s.rating else ((p.averageRating * p.appearances) + s.rating) / (p.appearances + 1),
                 fitness = (p.fitness - (10 + (pressing / 10) + Random.nextInt(0, 5))).coerceAtLeast(0),
                 status = status,
-                suspensionGamesRemaining = susp
+                suspensionGamesRemaining = susp,
+                injuryName = injury?.first ?: p.injuryName,
+                injuryDaysRemaining = injury?.second ?: p.injuryDaysRemaining
             )
         }
         repository.updatePlayers(updated)
@@ -281,5 +328,12 @@ class MatchSimulator @Inject constructor(
         } catch (e: Exception) {
             fullSquad
         }
+    }
+
+    private suspend fun loadTacticalRoles(clubId: Long): Map<Long, String> {
+        val json = repository.getMetadata("TACTICAL_ROLES_$clubId") ?: return emptyMap()
+        return runCatching {
+            gson.fromJson<Map<Long, String>>(json, object : TypeToken<Map<Long, String>>() {}.type)
+        }.getOrDefault(emptyMap())
     }
 }

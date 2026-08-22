@@ -53,14 +53,15 @@ class GameDayProcessor @Inject constructor(
 
         handleTransferWindowNotifications(career, calendar)
         
-        if (isTransferWindowOpen(currentDate)) {
+        val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
+        val transferSimulationDay = dayOfWeek == Calendar.MONDAY || dayOfWeek == Calendar.THURSDAY
+        if (isTransferWindowOpen(currentDate) && transferSimulationDay) {
             transferRumorService.generateRumors(clubId)
             transferOfferGenerator.generateRandomOffers(clubId)
             aiTransferEngine.processAIClubsTransfers()
-            
-            if (isDeadlineDay(calendar)) {
-                pressConferenceGenerator.generatePressConference(clubId, PressType.TRANSFER)
-            }
+        }
+        if (isTransferWindowOpen(currentDate) && isDeadlineDay(calendar)) {
+            pressConferenceGenerator.generatePressConference(clubId, PressType.TRANSFER)
         }
 
         val todaysMatches = repository.getMatchesByDate(currentDate).filter { !it.isPlayed }
@@ -83,7 +84,9 @@ class GameDayProcessor @Inject constructor(
         }
 
         val isFirstOfMonth = calendar.get(Calendar.DAY_OF_MONTH) == 1
-        if (isFirstOfMonth) {
+        val isCareerOpeningDay = calendar.get(Calendar.MONTH) == Calendar.AUGUST &&
+            calendar.get(Calendar.DAY_OF_MONTH) == 1 && career.season.startsWith(calendar.get(Calendar.YEAR).toString())
+        if (isFirstOfMonth && !isCareerOpeningDay) {
             managerRatingService.updateManagerRating(clubId)
             clubManager.updateAllClubsOverall()
             contractService.checkUnhappyContracts(clubId)
@@ -91,7 +94,10 @@ class GameDayProcessor @Inject constructor(
             financialService.processMonthlyFinancials(clubId)
         }
 
-        leagueManager.checkPromotionRelegation(club.leagueId)
+        // Promotion and relegation are season-end operations, not daily work.
+        if (calendar.get(Calendar.MONTH) == Calendar.JUNE && calendar.get(Calendar.DAY_OF_MONTH) == 1) {
+            leagueManager.checkPromotionRelegation(club.leagueId)
+        }
 
         val nextDate = advanceDay(currentDate)
         repository.saveCareer(career.copy(currentDate = nextDate, updatedAt = System.currentTimeMillis()))

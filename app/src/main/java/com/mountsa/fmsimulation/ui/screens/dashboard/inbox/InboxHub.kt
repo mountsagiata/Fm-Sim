@@ -4,8 +4,11 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -17,6 +20,10 @@ import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.components.InboxCard
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDateString
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
+import com.mountsa.fmsimulation.domain.services.PressOption
+import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 @Composable
 fun InboxHub(viewModel: DashboardViewModel) {
@@ -68,6 +75,31 @@ fun InboxHub(viewModel: DashboardViewModel) {
                         color = Color.LightGray,
                         lineHeight = 18.sp
                     )
+                    val pressOptions = remember(selectedMessage.id, selectedMessage.actionData) {
+                        if (selectedMessage.actionData.isBlank()) emptyList() else runCatching {
+                            Gson().fromJson<List<PressOption>>(
+                                selectedMessage.actionData,
+                                object : TypeToken<List<PressOption>>() {}.type
+                            ) ?: emptyList()
+                        }.getOrDefault(emptyList())
+                    }
+                    if (pressOptions.isNotEmpty() && !selectedMessage.isActioned) {
+                        Spacer(Modifier.height(14.dp))
+                        Text("YOUR ANSWER", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Black)
+                        Spacer(Modifier.height(6.dp))
+                        LazyColumn(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                            items(pressOptions, key = { it.id }) { option ->
+                                Button(
+                                    onClick = { viewModel.answerPressInterview(selectedMessage, option) },
+                                    modifier = Modifier.fillMaxWidth().heightIn(min = 36.dp),
+                                    colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(.07f)),
+                                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp)
+                                ) {
+                                    Text(option.text, color = Color.White, fontSize = 10.sp, lineHeight = 13.sp)
+                                }
+                            }
+                        }
+                    }
                 }
             } else {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {

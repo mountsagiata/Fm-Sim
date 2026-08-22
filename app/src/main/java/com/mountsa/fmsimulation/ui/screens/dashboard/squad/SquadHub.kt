@@ -1,5 +1,7 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.squad
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.border
@@ -42,6 +44,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
@@ -74,6 +77,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     val showPlayerSelector by squadViewModel.showPlayerSelector.collectAsStateWithLifecycle()
     val selectedPlayer by squadViewModel.selectedPlayer.collectAsStateWithLifecycle()
     val tacticsClub by squadViewModel.club.collectAsStateWithLifecycle()
+    val tacticalRoles by squadViewModel.tacticalRoles.collectAsStateWithLifecycle()
     var compactPage by remember { mutableIntStateOf(0) }
     var widePanel by remember { mutableIntStateOf(0) }
 
@@ -84,6 +88,9 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     BoxWithConstraints(Modifier.fillMaxSize()) {
     val compact = maxWidth < 600.dp
     if (compact) {
+        if (selectedPlayer != null) {
+            PlayerDetailView(player = selectedPlayer!!, onClose = { squadViewModel.selectPlayer(null) })
+        } else {
         Column(Modifier.fillMaxSize()) {
             TabRow(selectedTabIndex = compactPage, containerColor = Color.Transparent) {
                 Tab(compactPage == 0, { compactPage = 0 }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized("PITCH")) })
@@ -128,6 +135,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                     )
                 }
             }
+        }
         }
     } else Row(
         modifier = Modifier.fillMaxSize(),
@@ -240,31 +248,53 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                     LazyColumn(Modifier.fillMaxSize().padding(8.dp)) {
                         items(startingXI.filterNotNull(), key = { it.id }) { player ->
                             var expanded by remember(player.id) { mutableStateOf(false) }
-                            Box {
+                            val options = tacticalRoleOptions(player.position)
+                            val selectedRole = tacticalRoles[player.id] ?: options.first().first
+                            Column(
+                                Modifier.fillMaxWidth()
+                                    .background(Color.White.copy(alpha = .025f), RoundedCornerShape(7.dp))
+                            ) {
                                 Row(
-                                    Modifier.fillMaxWidth().clickable { expanded = true }.padding(8.dp),
+                                    Modifier.fillMaxWidth().clickable { expanded = !expanded }.padding(horizontal = 10.dp, vertical = 8.dp),
                                     horizontalArrangement = Arrangement.SpaceBetween,
                                     verticalAlignment = Alignment.CenterVertically
                                 ) {
                                     Column {
-                                        Text(player.shortName, color = Color.White, fontSize = 11.sp)
+                                        Text(player.shortName, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
                                         Text(player.position, color = Color.Gray, fontSize = 9.sp)
                                     }
                                     Row(verticalAlignment = Alignment.CenterVertically) {
-                                        Text(player.squadRole.name.replace("_", " "), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
-                                        Icon(Icons.Default.ArrowDropDown, null, tint = FM_GREEN)
+                                        Text(selectedRole, color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                                        Icon(if (expanded) Icons.Default.ArrowDropUp else Icons.Default.ArrowDropDown, null, tint = FM_GREEN)
                                     }
                                 }
-                                DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
-                                    SquadRole.entries.forEach { role ->
-                                        DropdownMenuItem(
-                                            text = { Text(role.name.replace("_", " ")) },
-                                            onClick = { squadViewModel.updatePlayerRole(player, role); expanded = false }
-                                        )
+
+                                AnimatedVisibility(expanded) {
+                                    Column(
+                                        Modifier.fillMaxWidth().padding(start = 10.dp, end = 10.dp, bottom = 8.dp),
+                                        verticalArrangement = Arrangement.spacedBy(5.dp)
+                                    ) {
+                                        options.forEach { (role, instruction) ->
+                                            val active = role == selectedRole
+                                            Surface(
+                                                modifier = Modifier.fillMaxWidth().clickable {
+                                                    squadViewModel.updateTacticalRole(player.id, role)
+                                                    expanded = false
+                                                },
+                                                color = if (active) FM_GREEN.copy(.15f) else Color(0xFF11161A),
+                                                shape = RoundedCornerShape(6.dp),
+                                                border = BorderStroke(1.dp, if (active) FM_GREEN else Color.White.copy(.07f))
+                                            ) {
+                                                Column(Modifier.padding(horizontal = 9.dp, vertical = 6.dp)) {
+                                                    Text(role, color = if (active) FM_GREEN else Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                                    Text(instruction, color = Color.Gray, fontSize = 8.sp, maxLines = 2)
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
-                            HorizontalDivider(color = Color.White.copy(.06f))
+                            Spacer(Modifier.height(6.dp))
                         }
                     }
                 }
@@ -280,6 +310,52 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
             onDismiss = { squadViewModel.closePlayerSelector() }
         )
     }
+}
+
+private fun tacticalRoleOptions(position: String): List<Pair<String, String>> = when (position.uppercase()) {
+    "GK" -> listOf(
+        "Goalkeeper" to "Hold position, claim crosses and distribute safely.",
+        "Sweeper Keeper" to "Defend space behind the line and start attacks quickly."
+    )
+    "CB", "LCB", "RCB" -> listOf(
+        "Central Defender" to "Protect the box and keep the defensive line compact.",
+        "Ball Playing Defender" to "Break lines with passes from the back.",
+        "Stopper" to "Step out early and challenge the striker aggressively.",
+        "Cover" to "Drop behind the line and sweep through balls."
+    )
+    "LB", "RB", "LWB", "RWB" -> listOf(
+        "Full Back" to "Balance defensive cover with supporting overlaps.",
+        "Wing Back" to "Provide width and attack the outside channel.",
+        "Inverted Wing Back" to "Move into midfield when the team has possession."
+    )
+    "CDM", "DM" -> listOf(
+        "Anchor" to "Hold in front of the centre-backs and screen counters.",
+        "Ball Winning Midfielder" to "Press, tackle and recover possession.",
+        "Deep Lying Playmaker" to "Set the tempo from a deeper position."
+    )
+    "CM", "LCM", "RCM" -> listOf(
+        "Central Midfielder" to "Connect defence and attack with positional discipline.",
+        "Box To Box" to "Support both boxes with energetic forward runs.",
+        "Deep Lying Playmaker" to "Control buildup and switch the point of attack.",
+        "Mezzala" to "Drift into the half-space and create overloads."
+    )
+    "CAM", "AM" -> listOf(
+        "Advanced Playmaker" to "Find pockets and create the final pass.",
+        "Attacking Midfielder" to "Drive at the defence and support the striker.",
+        "Shadow Striker" to "Make late runs beyond the centre-forward."
+    )
+    "LW", "RW", "LM", "RM" -> listOf(
+        "Winger" to "Stay wide, beat the full-back and deliver crosses.",
+        "Inside Forward" to "Cut inside to shoot or combine around the box.",
+        "Wide Playmaker" to "Create from the flank and move into passing lanes."
+    )
+    else -> listOf(
+        "Finisher" to "Attack the box and prioritize high-quality shooting positions.",
+        "Target Man" to "Hold up the ball and bring runners into play.",
+        "Pressing Forward" to "Lead the press and force rushed buildup.",
+        "Deep Lying Forward" to "Drop between the lines and link midfield.",
+        "Poacher" to "Stay on the shoulder and focus on penalty-area chances."
+    )
 }
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -317,6 +393,25 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                val ratingColor = when {
+                    player.overall >= 85 -> Color(0xFFFFD54F)
+                    player.overall >= 75 -> FM_GREEN
+                    else -> Color(0xFF64B5F6)
+                }
+                Column(
+                    Modifier.fillMaxWidth()
+                        .background(
+                            Brush.linearGradient(listOf(ratingColor.copy(.42f), Color(0xFF11151B), Color.Black)),
+                            RoundedCornerShape(18.dp)
+                        )
+                        .border(1.dp, ratingColor.copy(.8f), RoundedCornerShape(18.dp))
+                        .padding(12.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Text(player.overall.toString(), color = ratingColor, fontSize = 24.sp, fontWeight = FontWeight.Black)
+                    Text(player.position, color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
+                }
                 Box(
                     modifier = Modifier
                         .size(100.dp) // Ukuran avatar diperbesar agar lebih jelas
@@ -374,6 +469,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                 )
 
                 Spacer(Modifier.height(16.dp))
+                }
             }
 
             // --- Pengelompokan Data Statistik Berdasarkan Kategori ---
@@ -884,22 +980,33 @@ private fun TacticsInstructionPanel(
 @Composable
 private fun InstructionSlider(label: String, value: Int, onValueChange: (Int) -> Unit) {
     var trackWidth by remember { mutableIntStateOf(1) }
+    var localValue by remember(value) { mutableFloatStateOf(value.toFloat()) }
     Column {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text(label, color = Color.LightGray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
             Text(value.toString(), color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
         }
         Box(
-            Modifier.fillMaxWidth().height(30.dp).onSizeChanged { trackWidth = it.width }
-                .pointerInput(trackWidth) { detectTapGestures { point -> onValueChange((point.x / trackWidth * 100).roundToInt().coerceIn(0, 100)) } }
-                .pointerInput(trackWidth) { detectDragGestures { change, _ -> change.consume(); onValueChange((change.position.x / trackWidth * 100).roundToInt().coerceIn(0, 100)) } },
+            Modifier.fillMaxWidth().height(30.dp).onSizeChanged { trackWidth = it.width },
             contentAlignment = Alignment.CenterStart
         ) {
-            Box(Modifier.fillMaxWidth().height(7.dp).clip(CircleShape).background(Color.White.copy(.12f)))
-            Box(Modifier.fillMaxWidth(value / 100f).height(7.dp).clip(CircleShape).background(FM_GREEN))
+            Slider(
+                value = localValue,
+                onValueChange = { changed ->
+                    localValue = changed
+                    onValueChange(changed.roundToInt().coerceIn(0, 100))
+                },
+                valueRange = 0f..100f,
+                modifier = Modifier.fillMaxWidth(),
+                colors = SliderDefaults.colors(
+                    thumbColor = Color.Transparent,
+                    activeTrackColor = FM_GREEN,
+                    inactiveTrackColor = Color.White.copy(.12f)
+                )
+            )
             Box(
-                Modifier.offset { IntOffset(((trackWidth - 18.dp.roundToPx()) * value / 100f).roundToInt(), 0) }
-                    .size(18.dp).background(FM_GREEN, CircleShape).border(3.dp, Color(0xFF173D1C), CircleShape)
+                Modifier.offset { IntOffset(((trackWidth - 14.dp.roundToPx()) * localValue / 100f).roundToInt(), 0) }
+                    .size(14.dp).background(FM_GREEN, CircleShape).border(2.dp, Color(0xFF173D1C), CircleShape)
             )
         }
     }

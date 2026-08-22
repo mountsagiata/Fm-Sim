@@ -16,7 +16,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
@@ -49,10 +48,10 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val resultColor = when { userWon -> FM_GREEN; userLost -> Color(0xFFFF5252); else -> Color(0xFFFFD740) }
     val resultText = when { userWon -> "VICTORY"; userLost -> "DEFEAT"; else -> "DRAW" }
 
+    MatchStageBackground {
     BoxWithConstraints(
         modifier = Modifier
             .fillMaxSize()
-            .background(FM_DARK_BG)
             .padding(16.dp)
     ) {
         val compactHeight = maxHeight < 480.dp
@@ -63,48 +62,11 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = if (compactHeight) Arrangement.Top else Arrangement.Center
         ) {
-            // HEADER
-            AnimatedVisibility(
-                visible = visible && !isDraw,
-                enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { -it / 2 })
-            ) {
-                Surface(
-                    color = resultColor.copy(alpha = 0.1f),
-                    shape = RoundedCornerShape(8.dp),
-                    modifier = Modifier.padding(bottom = 4.dp)
-                ) {
-                    Text(
-                        resultText,
-                        color = resultColor,
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 14.sp,
-                        letterSpacing = 3.sp,
-                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 6.dp)
-                    )
-                }
-            }
-
-            Spacer(Modifier.height(4.dp))
-
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(7.dp)) {
                 match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
                     LeagueLogo(leagueId = leagueId, size = 28.dp)
                 }
                 Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
-            }
-
-            // TEXT "FULL TIME"
-            AnimatedVisibility(
-                visible = visible,
-                enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { -it / 2 })
-            ) {
-                Text(
-                    "FULL TIME",
-                    color = Color.Gray.copy(alpha = 0.5f),
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 11.sp,
-                    letterSpacing = 4.sp
-                )
             }
 
             Spacer(Modifier.height(if (compactHeight) 4.dp else 12.dp))
@@ -139,6 +101,22 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     enter = scaleIn(tween(500)) + fadeIn(tween(500))
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(92.dp)) {
+                        Text(
+                            "FT",
+                            color = Color.Gray.copy(alpha = .75f),
+                            fontWeight = FontWeight.Black,
+                            fontSize = 9.sp,
+                            letterSpacing = 1.5.sp
+                        )
+                        Spacer(Modifier.height(2.dp))
+                        Text(
+                            resultText,
+                            color = resultColor,
+                            fontWeight = FontWeight.Black,
+                            fontSize = 8.sp,
+                            letterSpacing = 1.5.sp
+                        )
+                        Spacer(Modifier.height(3.dp))
                         Surface(
                             color = Color.White.copy(alpha = 0.05f),
                             shape = RoundedCornerShape(50),
@@ -224,8 +202,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     onClick = { viewModel.nextMatchFlowStep() },
                     colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
                     modifier = Modifier
-                        .width(220.dp)
-                        .height(if (compactHeight) 36.dp else 42.dp)
+                        .width(180.dp)
+                        .height(if (compactHeight) 34.dp else 38.dp)
                         .scale(
                             animateFloatAsState(
                                 targetValue = if (visible) 1f else 0.95f,
@@ -241,6 +219,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 }
             }
         }
+    }
     }
 }
 
@@ -269,24 +248,9 @@ fun ResultTeamModern(clubId: Long, name: String, sideLabel: String, sideColor: C
             Text(
                 s.toString(),
                 color = if (isWinner) FM_GREEN else Color.White.copy(alpha = 0.4f),
-                fontSize = if (compact) 38.sp else 52.sp,
+                fontSize = if (compact) 24.sp else 30.sp,
                 fontWeight = if (isWinner) FontWeight.Black else FontWeight.Light
             )
-        }
-        if (isWinner) {
-            Surface(
-                color = FM_GREEN.copy(alpha = 0.15f),
-                shape = RoundedCornerShape(12.dp)
-            ) {
-                Text(
-                    "WINNER",
-                    color = FM_GREEN,
-                    fontSize = 7.sp,
-                    fontWeight = FontWeight.Bold,
-                    letterSpacing = 1.sp,
-                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 2.dp)
-                )
-            }
         }
     }
 }

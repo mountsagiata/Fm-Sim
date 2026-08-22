@@ -16,6 +16,7 @@ class BoardObjectiveGenerator @Inject constructor(
     suspend fun generateSeasonObjectives(clubId: Long) {
         val club = repository.getClubById(clubId) ?: return
         val career = repository.getCareer().first() ?: return
+        val leagueName = repository.getLeagueName(club.leagueId)
 
         // Ekstrak tahun akhir kompetisi dari format string "2027/2028" -> 2028
         val currentSeasonName = career.season
@@ -39,8 +40,8 @@ class BoardObjectiveGenerator @Inject constructor(
 
         objectives.add(ObjectiveEntity(
             clubId = clubId,
-            title = "League Finish",
-            description = "Finish the season in position $targetPosition or higher.",
+            title = if (targetPosition == 1) "Win $leagueName" else "$leagueName: Top $targetPosition",
+            description = if (targetPosition == 1) "Win the $leagueName title." else "Finish the season in position $targetPosition or higher.",
             targetValue = targetPosition,
             priority = ObjectivePriority.HIGH,
             deadlineDate = deadline

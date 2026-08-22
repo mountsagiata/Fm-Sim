@@ -45,7 +45,12 @@ fun SettingsHub(viewModel: DashboardViewModel, onBack: (() -> Unit)? = null) {
         val compact = maxWidth < 700.dp
         if (compact) Column(Modifier.fillMaxSize()) {
             SettingsTabs(selected) { selected = it }
-            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, onBack, Modifier.fillMaxSize())
+            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, Modifier.weight(1f).fillMaxWidth())
+            onBack?.let {
+                TextButton(onClick = it, modifier = Modifier.align(Alignment.Start).height(34.dp)) {
+                    Text("‹  BACK", color = FM_GREEN, fontWeight = FontWeight.Bold)
+                }
+            }
         } else Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
             Column(
                 Modifier.width(190.dp).fillMaxHeight().background(Color.White.copy(.025f), RoundedCornerShape(16.dp)).padding(12.dp),
@@ -55,12 +60,18 @@ fun SettingsHub(viewModel: DashboardViewModel, onBack: (() -> Unit)? = null) {
                 SettingsSection.entries.forEach { section ->
                     FilterChip(
                         selected = selected == section, onClick = { selected = section },
-                            label = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title), modifier = Modifier.fillMaxWidth()) }, modifier = Modifier.fillMaxWidth(),
+                            label = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title), modifier = Modifier.fillMaxWidth()) }, modifier = Modifier.fillMaxWidth().height(38.dp),
                         colors = FilterChipDefaults.filterChipColors(selectedContainerColor = FM_GREEN.copy(.18f))
                     )
                 }
+                Spacer(Modifier.weight(1f))
+                onBack?.let {
+                    OutlinedButton(onClick = it, modifier = Modifier.fillMaxWidth().height(36.dp)) {
+                        Text("‹  BACK", color = FM_GREEN, fontWeight = FontWeight.Bold)
+                    }
+                }
             }
-            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, onBack, Modifier.weight(1f))
+            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, Modifier.weight(1f))
         }
     }
     }
@@ -83,12 +94,12 @@ private fun SettingsTabs(selected: SettingsSection, onSelect: (SettingsSection) 
 private fun SettingsPane(
     section: SettingsSection, musicEnabled: Boolean, sfxEnabled: Boolean,
     music: Float, sfx: Float, crowd: Float, language: String,
-    viewModel: DashboardViewModel, onReset: () -> Unit, onBack: (() -> Unit)?, modifier: Modifier
+    viewModel: DashboardViewModel, onReset: () -> Unit, modifier: Modifier
 ) {
     Column(
         modifier.fillMaxHeight().background(Color.White.copy(.025f), RoundedCornerShape(16.dp))
             .verticalScroll(rememberScrollState()).padding(12.dp),
-        verticalArrangement = Arrangement.spacedBy(6.dp)
+        verticalArrangement = Arrangement.spacedBy(4.dp)
     ) {
         Text(com.mountsa.fmsimulation.ui.localization.localized(section.title).uppercase(), color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp)
         when (section) {
@@ -118,10 +129,6 @@ private fun SettingsPane(
             }
             SettingsSection.LANGUAGE -> {
                 LanguageSetting(language, viewModel.localeManager::setLanguage)
-                if (onBack != null) {
-                    Spacer(Modifier.height(8.dp))
-                    OutlinedButton(onClick = onBack, modifier = Modifier.width(150.dp).height(38.dp)) { Text("‹  BACK", color = FM_GREEN, fontWeight = FontWeight.Bold) }
-                }
             }
         }
     }
@@ -143,7 +150,7 @@ private fun VolumeSlider(label: String, value: Float, onChange: (Float) -> Unit)
         ) {
             Box(Modifier.fillMaxWidth().height(5.dp).clip(CircleShape).background(Color.White.copy(.12f)))
             Box(Modifier.fillMaxWidth(value).height(5.dp).clip(CircleShape).background(FM_GREEN))
-            Box(Modifier.offset { IntOffset(((widthPx - 16.dp.roundToPx()) * value).roundToInt(), 0) }.size(16.dp).background(FM_GREEN, CircleShape).border(3.dp, Color.Black, CircleShape))
+            Box(Modifier.offset { IntOffset(((widthPx - 14.dp.roundToPx()) * value).roundToInt(), 0) }.size(14.dp).background(FM_GREEN, CircleShape).border(2.dp, Color.Black, CircleShape))
         }
     }
 }
@@ -151,7 +158,7 @@ private fun VolumeSlider(label: String, value: Float, onChange: (Float) -> Unit)
 @Composable
 private fun LanguageSetting(selected: String, onSelect: (String) -> Unit) {
     val languages = linkedMapOf("system" to "System default", "id" to "Bahasa Indonesia", "en" to "English", "pt" to "Português", "ja" to "日本語")
-    languages.forEach { (tag, label) -> Row(Modifier.fillMaxWidth().height(42.dp), verticalAlignment = Alignment.CenterVertically) {
+    languages.forEach { (tag, label) -> Row(Modifier.fillMaxWidth().height(34.dp), verticalAlignment = Alignment.CenterVertically) {
         RadioButton(selected == tag, { onSelect(tag) }, modifier = Modifier.scale(.8f)); Text(label, color = Color.White, modifier = Modifier.padding(start = 6.dp), fontSize = 13.sp)
     } }
 }
@@ -159,8 +166,8 @@ private fun LanguageSetting(selected: String, onSelect: (String) -> Unit) {
 @Composable
 fun SettingToggle(label: String, initialValue: Boolean, onCheckedChange: (Boolean) -> Unit = {}) {
     var checked by remember(initialValue) { mutableStateOf(initialValue) }
-    Row(Modifier.fillMaxWidth().height(44.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().height(36.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
         Text(com.mountsa.fmsimulation.ui.localization.localized(label), color = Color.White, fontSize = 13.sp, modifier = Modifier.weight(1f))
-        Switch(checked, { checked = it; onCheckedChange(it) }, modifier = Modifier.scale(.78f), colors = SwitchDefaults.colors(checkedThumbColor = Color.Black, checkedTrackColor = FM_GREEN))
+        Switch(checked, { checked = it; onCheckedChange(it) }, modifier = Modifier.scale(.7f), colors = SwitchDefaults.colors(checkedThumbColor = Color.Black, checkedTrackColor = FM_GREEN))
     }
 }

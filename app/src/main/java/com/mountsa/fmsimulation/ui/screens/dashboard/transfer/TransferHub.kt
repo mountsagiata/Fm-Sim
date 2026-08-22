@@ -17,6 +17,7 @@ import com.mountsa.fmsimulation.core.enums.TransferStatus
 import com.mountsa.fmsimulation.ui.components.AppButton
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.TransferOfferUiModel
 import java.util.Locale
@@ -46,7 +47,11 @@ fun TransferHub(viewModel: DashboardViewModel) {
                 )
 
                 if (tab != 0) OutlinedTextField(query, { query = it }, modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp), singleLine = true, placeholder = { Text("Search name or position") })
-                val marketPlayers = allPlayers.filter { (query.isBlank() || it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true)) && (tab != 2 || it.id in shortlist) }
+                val marketPlayers = allPlayers.filter {
+                    it.clubId != uiState.club?.id &&
+                        (query.isBlank() || it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true)) &&
+                        (tab != 2 || it.id in shortlist)
+                }
                 if (tab == 0 && offers.isEmpty()) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                         Text(com.mountsa.fmsimulation.ui.localization.localized("No active offers"), color = Color.Gray, fontSize = 12.sp)
@@ -67,9 +72,23 @@ fun TransferHub(viewModel: DashboardViewModel) {
                 } else LazyColumn(verticalArrangement = Arrangement.spacedBy(5.dp)) {
                     items(marketPlayers) { player ->
                         ListItem(
+                            leadingContent = { PlayerAvatar(player, 34.dp) },
                             headlineContent = { Text(player.shortName, color = Color.White, fontWeight = FontWeight.Bold) },
                             supportingContent = { Text("${player.position} • OVR ${player.overall} • €${String.format(Locale.getDefault(), "%,d", player.marketValue)}", color = Color.Gray) },
-                            trailingContent = { TextButton(onClick = { shortlist = if (player.id in shortlist) shortlist - player.id else shortlist + player.id }) { Text(if (player.id in shortlist) "REMOVE" else "SHORTLIST", color = FM_GREEN, fontSize = 9.sp) } },
+                            trailingContent = {
+                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                    TextButton(onClick = { shortlist = if (player.id in shortlist) shortlist - player.id else shortlist + player.id }) {
+                                        Text(if (player.id in shortlist) "REMOVE" else "SHORTLIST", color = Color.Gray, fontSize = 8.sp)
+                                    }
+                                    Button(
+                                        onClick = { viewModel.buyPlayer(player.id) },
+                                        enabled = (uiState.club?.budget ?: 0L) >= (player.releaseClause.takeIf { it > 0L } ?: player.marketValue),
+                                        modifier = Modifier.height(30.dp),
+                                        contentPadding = PaddingValues(horizontal = 10.dp),
+                                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)
+                                    ) { Text("BUY", color = Color.Black, fontSize = 9.sp, fontWeight = FontWeight.Black) }
+                                }
+                            },
                             colors = ListItemDefaults.colors(containerColor = Color.White.copy(.025f))
                         )
                     }

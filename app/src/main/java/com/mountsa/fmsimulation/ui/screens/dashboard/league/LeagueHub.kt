@@ -3,11 +3,18 @@ package com.mountsa.fmsimulation.ui.screens.dashboard.league
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ChevronLeft
+import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -17,22 +24,62 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mountsa.fmsimulation.data.local.entities.StandingEntity
+import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 
 @Composable
 fun LeagueHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val standings = uiState.leagueStandings
+    val standings by viewModel.selectedLeagueStandings.collectAsStateWithLifecycle()
+    val leagues by viewModel.allLeagues.collectAsStateWithLifecycle()
+    val selectedLeagueId by viewModel.selectedLeagueId.collectAsStateWithLifecycle()
+    val selectedLeague = leagues.firstOrNull { it.id == selectedLeagueId }
     val userClubId = uiState.club?.id ?: -1L
+    val allPlayers by viewModel.allPlayers.collectAsStateWithLifecycle()
+    val leagueClubIds = remember(uiState.allClubs, selectedLeagueId) {
+        uiState.allClubs.filter { it.leagueId == selectedLeagueId }.map { it.id }.toSet()
+    }
+    val leaguePlayers = remember(allPlayers, leagueClubIds) { allPlayers.filter { it.clubId in leagueClubIds } }
+    var selectedTab by remember { mutableIntStateOf(0) }
 
     AppColumn(
         modifier = Modifier.fillMaxSize(),
-        title = uiState.club?.let { "LEAGUE TABLE" } ?: "LEAGUE"
+        title = ""
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
+            Row(
+                Modifier.fillMaxWidth().height(42.dp),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val currentIndex = leagues.indexOfFirst { it.id == selectedLeagueId }.coerceAtLeast(0)
+                IconButton(onClick = { leagues.getOrNull((currentIndex - 1).coerceAtLeast(0))?.let { viewModel.selectLeague(it.id) } }) {
+                    Icon(Icons.Default.ChevronLeft, contentDescription = "Previous league", tint = FM_GREEN)
+                }
+                selectedLeague?.let { LeagueLogo(it.id, 26.dp) }
+                Text(
+                    selectedLeague?.name?.uppercase() ?: "LEAGUE TABLE",
+                    color = Color.White,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Black,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.widthIn(min = 160.dp).padding(horizontal = 8.dp)
+                )
+                IconButton(onClick = { leagues.getOrNull((currentIndex + 1).coerceAtMost(leagues.lastIndex))?.let { viewModel.selectLeague(it.id) } }) {
+                    Icon(Icons.Default.ChevronRight, contentDescription = "Next league", tint = FM_GREEN)
+                }
+            }
+            TabRow(selectedTabIndex = selectedTab, containerColor = Color.Transparent) {
+                Tab(selectedTab == 0, { selectedTab = 0 }, text = { Text("TABLE", fontSize = 10.sp) })
+                Tab(selectedTab == 1, { selectedTab = 1 }, text = { Text("TOP PLAYERS & AWARDS", fontSize = 10.sp) })
+            }
+
+            if (selectedTab == 0) {
             StandingHeader()
 
             LazyColumn(
@@ -46,6 +93,72 @@ fun LeagueHub(viewModel: DashboardViewModel) {
                         isUserClub = entry.clubId == userClubId,
                         allClubs = uiState.allClubs
                     )
+                }
+            }
+            } else {
+                PlayerLeaderboards(leaguePlayers)
+            }
+        }
+    }
+}
+
+@Composable
+private fun PlayerLeaderboards(players: List<PlayerEntity>) {
+    val scorers = players.sortedWith(compareByDescending<PlayerEntity> { it.goals }.thenByDescending { it.averageRating }).take(10)
+    val assisters = players.sortedWith(compareByDescending<PlayerEntity> { it.assists }.thenByDescending { it.averageRating }).take(10)
+    val rated = players.sortedWith(compareByDescending<PlayerEntity> { it.averageRating }.thenByDescending { it.appearances }).take(10)
+    val awards = rated.take(5)
+
+    BoxWithConstraints(Modifier.fillMaxSize().padding(8.dp)) {
+        val compact = maxWidth < 720.dp
+        if (compact) {
+            Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    PlayerLeaderColumn("TOP GOALS", scorers, { it.goals.toString() }, Modifier.weight(1f))
+                    PlayerLeaderColumn("TOP ASSISTS", assisters, { it.assists.toString() }, Modifier.weight(1f))
+                }
+                Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    PlayerLeaderColumn("BEST RATING", rated, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
+                    PlayerLeaderColumn("PLAYER AWARDS", awards, { "★" }, Modifier.weight(1f))
+                }
+            }
+        } else {
+            Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                PlayerLeaderColumn("TOP GOALS", scorers, { it.goals.toString() }, Modifier.weight(1f))
+                PlayerLeaderColumn("TOP ASSISTS", assisters, { it.assists.toString() }, Modifier.weight(1f))
+                PlayerLeaderColumn("BEST RATING", rated, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
+                PlayerLeaderColumn("PLAYER AWARDS", awards, { "★" }, Modifier.weight(1f))
+            }
+        }
+    }
+}
+
+@Composable
+private fun PlayerLeaderColumn(
+    title: String,
+    players: List<PlayerEntity>,
+    value: (PlayerEntity) -> String,
+    modifier: Modifier = Modifier
+) {
+    Surface(modifier, color = Color.White.copy(.025f), shape = RoundedCornerShape(8.dp)) {
+        Column(Modifier.fillMaxSize()) {
+            Text(title, color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Black, modifier = Modifier.padding(10.dp))
+            LazyColumn(Modifier.fillMaxSize()) {
+                items(players, key = { it.id }) { player ->
+                    Row(
+                        Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 6.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("${players.indexOf(player) + 1}", color = Color.Gray, fontSize = 9.sp, modifier = Modifier.width(20.dp))
+                        PlayerAvatar(player, 26.dp)
+                        Spacer(Modifier.width(6.dp))
+                        Column(Modifier.weight(1f)) {
+                            Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+                            Text(player.position, color = Color.Gray, fontSize = 8.sp)
+                        }
+                        Text(value(player), color = FM_GREEN, fontSize = 12.sp, fontWeight = FontWeight.Black)
+                    }
+                    HorizontalDivider(color = Color.White.copy(.045f))
                 }
             }
         }

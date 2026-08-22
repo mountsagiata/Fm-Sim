@@ -8,20 +8,25 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import coil.compose.AsyncImage
+import coil.request.ImageRequest
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
-import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
@@ -39,7 +44,8 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
     var selectedStarterId by remember { mutableStateOf<Long?>(null) }
     LaunchedEffect(Unit) { delay(160); visible = true }
 
-    Column(Modifier.fillMaxSize().background(FM_DARK_BG).padding(12.dp)) {
+    MatchStageBackground {
+    Column(Modifier.fillMaxSize().padding(12.dp)) {
         Row(Modifier.fillMaxWidth().height(58.dp), verticalAlignment = Alignment.CenterVertically) {
             TeamHeading(session.match.homeClubId, session.homeShortName, "HOME", HOME_BLUE, Modifier.weight(1f), Alignment.Start)
             Column(Modifier.width(180.dp), horizontalAlignment = Alignment.CenterHorizontally) {
@@ -47,6 +53,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
                     LeagueLogo(leagueId = leagueId, size = 30.dp)
                 }
                 Text(session.competitionName.uppercase(), color = Color.White, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+                Text(matchDayInfo(session.match.matchDate, session.stadiumName), color = Color.Gray, fontSize = 7.sp, maxLines = 1)
             }
             TeamHeading(session.match.awayClubId, session.awayShortName, "AWAY", FM_GREEN, Modifier.weight(1f), Alignment.End)
         }
@@ -61,6 +68,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
             modifier = Modifier.align(Alignment.CenterHorizontally).width(220.dp).height(38.dp),
             colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN), shape = RoundedCornerShape(7.dp)
         ) { Text("KICK OFF", color = Color.Black, fontSize = 12.sp, fontWeight = FontWeight.Black, letterSpacing = 1.sp) }
+    }
     }
 }
 
@@ -87,11 +95,41 @@ private fun LineupColumn(players: List<PlayerEntity>, color: Color, fromLeft: Bo
                         .clickable(enabled = enabled) { onSelect(player.id) }.padding(horizontal = 10.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Text("${index + 1}", color = color, fontSize = 10.sp, fontWeight = FontWeight.Bold, modifier = Modifier.width(24.dp))
+                    Text(
+                        (player.shirtNumber.takeIf { it > 0 } ?: (index + 1)).toString(),
+                        color = color,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.width(24.dp)
+                    )
+                    LineupAvatar(player)
+                    Spacer(Modifier.width(8.dp))
                     Text(player.shortName, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Medium, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
                     Text(player.position, color = color, fontSize = 10.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.End)
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun LineupAvatar(player: PlayerEntity) {
+    Box(
+        modifier = Modifier.size(27.dp).clip(CircleShape).background(Color.DarkGray),
+        contentAlignment = Alignment.Center
+    ) {
+        if (player.avatarAsset.isNotBlank()) {
+            AsyncImage(
+                model = ImageRequest.Builder(LocalContext.current)
+                    .data("file:///android_asset/${player.avatarAsset}")
+                    .crossfade(true)
+                    .build(),
+                contentDescription = player.shortName,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
+        } else {
+            Text(player.shirtNumber.toString(), color = Color.White, fontSize = 9.sp, fontWeight = FontWeight.Bold)
         }
     }
 }
