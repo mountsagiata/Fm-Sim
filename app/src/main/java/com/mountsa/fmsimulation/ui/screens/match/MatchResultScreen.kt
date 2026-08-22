@@ -64,7 +64,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
         ) {
             // HEADER
             AnimatedVisibility(
-                visible = visible,
+                visible = visible && !isDraw,
                 enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { -it / 2 })
             ) {
                 Surface(
@@ -84,6 +84,13 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
             }
 
             Spacer(Modifier.height(4.dp))
+
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                Surface(color = FM_GREEN.copy(.16f), shape = RoundedCornerShape(50), modifier = Modifier.size(28.dp)) {
+                    Box(contentAlignment = Alignment.Center) { Text(session.competitionName.take(2).uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Black) }
+                }
+                Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+            }
 
             // TEXT "FULL TIME"
             AnimatedVisibility(
@@ -128,7 +135,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     visible = visible,
                     enter = scaleIn(tween(500)) + fadeIn(tween(500))
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(92.dp)) {
                         Surface(
                             color = Color.White.copy(alpha = 0.05f),
                             shape = RoundedCornerShape(50),
@@ -143,12 +150,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                                 )
                             }
                         }
-                        Text(
-                            match.stage ?: "",
-                            color = Color.Gray.copy(alpha = 0.3f),
-                            fontSize = 7.sp,
-                            letterSpacing = 1.sp
-                        )
                     }
                 }
 
@@ -218,8 +219,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     onClick = { viewModel.nextMatchFlowStep() },
                     colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
                     modifier = Modifier
-                        .fillMaxWidth(0.7f)
-                        .height(if (compactHeight) 40.dp else 50.dp)
+                        .width(220.dp)
+                        .height(if (compactHeight) 36.dp else 42.dp)
                         .scale(
                             animateFloatAsState(
                                 targetValue = if (visible) 1f else 0.95f,
