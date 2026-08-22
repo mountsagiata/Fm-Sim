@@ -471,7 +471,10 @@ class DashboardViewModel @Inject constructor(
                     managerRatingService.updateManagerRating(session.match.homeClubId)
                     
                     // 3. Post-Match Press Conference
-                    pressConferenceGenerator.generatePressConference(session.match.homeClubId)
+                    pressConferenceGenerator.generatePressConference(
+                        club.value?.id ?: session.match.homeClubId,
+                        PressType.POST_MATCH
+                    )
                     
                     // 4. Generate Inbox Result
                     generateMatchResultInbox(session.match)
