@@ -80,7 +80,7 @@ fun MyClubHub(viewModel: DashboardViewModel) {
                 if (rightTab == 0) {
                     Column(modifier = Modifier.padding(10.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
                         FacilityUpgradeRow("Medical Center", (club?.fanSatisfaction ?: 50), "MEDICAL") { viewModel.upgradeFacility(it) }
-                        FacilityUpgradeRow("Training Ground", listOf(club?.attack ?: 0, club?.midfield ?: 0, club?.defense ?: 0).average().toInt(), "TRAINING") { viewModel.upgradeFacility(it) }
+                        FacilityUpgradeRow("Training Ground", club?.localNationBias ?: 70, "TRAINING") { viewModel.upgradeFacility(it) }
                         FacilityUpgradeRow("Data & Recruitment", club?.reputation ?: 50, "DATA") { viewModel.upgradeFacility(it) }
                         FacilityUpgradeRow("Youth Academy", club?.academyQuality ?: 50, "ACADEMY") { viewModel.upgradeFacility(it) }
                     }

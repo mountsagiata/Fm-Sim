@@ -493,7 +493,7 @@ class DashboardViewModel @Inject constructor(
             if (current.budget < cost) return@launch
             val alreadyAtCap = when (normalizedType) {
                 "ACADEMY" -> current.academyQuality >= 100
-                "TRAINING" -> current.attack >= 99 && current.midfield >= 99 && current.defense >= 99
+                "TRAINING" -> current.localNationBias >= 100
                 "MEDICAL" -> current.fanSatisfaction >= 100
                 else -> current.reputation >= 100
             }
@@ -507,6 +507,7 @@ class DashboardViewModel @Inject constructor(
                     attack = (current.attack + 1).coerceAtMost(99),
                     midfield = (current.midfield + 1).coerceAtMost(99),
                     defense = (current.defense + 1).coerceAtMost(99),
+                    localNationBias = (current.localNationBias + 5).coerceAtMost(100),
                     budget = current.budget - cost
                 )
                 "MEDICAL" -> current.copy(

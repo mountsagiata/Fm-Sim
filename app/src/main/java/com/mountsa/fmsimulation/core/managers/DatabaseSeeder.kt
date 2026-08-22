@@ -301,9 +301,14 @@ class DatabaseSeeder @Inject constructor(
                     ?: squad.sortedByDescending { it.overall }.take(take).map { it.overall }.average().toInt()
             }
 
-            val attack = lineRating(setOf("ST", "CF", "LW", "RW", "LF", "RF"), 5)
-            val midfield = lineRating(setOf("CM", "CAM", "CDM", "LM", "RM", "AM"), 6)
-            val defense = lineRating(setOf("GK", "CB", "LB", "RB", "LWB", "RWB"), 7)
+            // localNationBias is already durable in existing saves and is unused
+            // by the current youth generator. Values above the seeded baseline
+            // therefore act as the paid Training Ground level without requiring
+            // a destructive Room schema migration.
+            val trainingBonus = ((club.localNationBias - 70).coerceAtLeast(0) / 5).coerceAtMost(6)
+            val attack = (lineRating(setOf("ST", "CF", "LW", "RW", "LF", "RF"), 5) + trainingBonus).coerceAtMost(99)
+            val midfield = (lineRating(setOf("CM", "CAM", "CDM", "LM", "RM", "AM"), 6) + trainingBonus).coerceAtMost(99)
+            val defense = (lineRating(setOf("GK", "CB", "LB", "RB", "LWB", "RWB"), 7) + trainingBonus).coerceAtMost(99)
             val overall = ((attack * .34f) + (midfield * .33f) + (defense * .33f)).toInt()
             if (club.attack != attack || club.midfield != midfield || club.defense != defense || club.overall != overall) {
                 repository.updateClub(
