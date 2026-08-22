@@ -17,11 +17,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
@@ -52,6 +54,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.core.enums.Mentality
+import com.mountsa.fmsimulation.core.enums.SquadRole
 import com.mountsa.fmsimulation.domain.models.Formation
 import com.mountsa.fmsimulation.domain.models.Formations
 import com.mountsa.fmsimulation.ui.components.AppColumn
@@ -97,6 +100,11 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                         onClick = { squadViewModel.saveLineup() },
                         modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp).size(40.dp).background(FM_GREEN, CircleShape)
                     ) { Icon(Icons.Default.Save, contentDescription = "Save", tint = Color.Black) }
+                    FilledTonalButton(
+                        onClick = squadViewModel::autoFillLineup,
+                        modifier = Modifier.align(Alignment.BottomStart).padding(10.dp).height(38.dp),
+                        colors = ButtonDefaults.filledTonalButtonColors(containerColor = FM_GREEN.copy(.18f))
+                    ) { Text("AUTO XI", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold) }
                 }
             } else {
                 Column(Modifier.weight(1f).fillMaxWidth()) {
@@ -150,6 +158,23 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                                 .background(FM_GREEN, CircleShape)
                         ) {
                             Icon(Icons.Default.Save, contentDescription = "Save", tint = Color.Black)
+                        }
+                        Column(Modifier.align(Alignment.BottomStart).padding(12.dp)) {
+                            val chemistry = lineupChemistry(startingXI)
+                            Text("CHEMISTRY $chemistry%", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            LinearProgressIndicator(
+                                progress = { chemistry / 100f },
+                                modifier = Modifier.width(150.dp).height(4.dp),
+                                color = FM_GREEN,
+                                trackColor = Color.White.copy(.12f)
+                            )
+                            Spacer(Modifier.height(5.dp))
+                            FilledTonalButton(
+                                onClick = squadViewModel::autoFillLineup,
+                                modifier = Modifier.height(32.dp),
+                                contentPadding = PaddingValues(horizontal = 12.dp),
+                                colors = ButtonDefaults.filledTonalButtonColors(containerColor = FM_GREEN.copy(.18f))
+                            ) { Text("AUTO FILL", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold) }
                         }
                     }
                 }
@@ -212,10 +237,31 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                 2 -> TacticsInstructionPanel(club = club, onChange = squadViewModel::updateTactics, modifier = Modifier.weight(1f))
                 else -> AppColumn(modifier = Modifier.weight(1f), title = "PLAYER ROLES") {
                     LazyColumn(Modifier.fillMaxSize().padding(8.dp)) {
-                        items(startingXI.filterNotNull()) { player ->
-                            Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                                Text(player.shortName, color = Color.White, fontSize = 11.sp)
-                                Text(player.position, color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                        items(startingXI.filterNotNull(), key = { it.id }) { player ->
+                            var expanded by remember(player.id) { mutableStateOf(false) }
+                            Box {
+                                Row(
+                                    Modifier.fillMaxWidth().clickable { expanded = true }.padding(8.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Column {
+                                        Text(player.shortName, color = Color.White, fontSize = 11.sp)
+                                        Text(player.position, color = Color.Gray, fontSize = 9.sp)
+                                    }
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Text(player.squadRole.name.replace("_", " "), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                                        Icon(Icons.Default.ArrowDropDown, null, tint = FM_GREEN)
+                                    }
+                                }
+                                DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+                                    SquadRole.entries.forEach { role ->
+                                        DropdownMenuItem(
+                                            text = { Text(role.name.replace("_", " ")) },
+                                            onClick = { squadViewModel.updatePlayerRole(player, role); expanded = false }
+                                        )
+                                    }
+                                }
                             }
                             HorizontalDivider(color = Color.White.copy(.06f))
                         }
@@ -836,23 +882,35 @@ private fun TacticsInstructionPanel(
 
 @Composable
 private fun InstructionSlider(label: String, value: Int, onValueChange: (Int) -> Unit) {
+    var trackWidth by remember { mutableIntStateOf(1) }
     Column {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text(label, color = Color.LightGray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
             Text(value.toString(), color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
         }
-        Slider(
-            value = value.toFloat(),
-            onValueChange = { onValueChange(it.roundToInt()) },
-            valueRange = 0f..100f,
-            modifier = Modifier.fillMaxWidth().height(28.dp),
-            colors = SliderDefaults.colors(
-                thumbColor = FM_GREEN,
-                activeTrackColor = FM_GREEN,
-                inactiveTrackColor = Color.White.copy(.12f)
+        Box(
+            Modifier.fillMaxWidth().height(30.dp).onSizeChanged { trackWidth = it.width }
+                .pointerInput(trackWidth) { detectTapGestures { point -> onValueChange((point.x / trackWidth * 100).roundToInt().coerceIn(0, 100)) } }
+                .pointerInput(trackWidth) { detectDragGestures { change, _ -> change.consume(); onValueChange((change.position.x / trackWidth * 100).roundToInt().coerceIn(0, 100)) } },
+            contentAlignment = Alignment.CenterStart
+        ) {
+            Box(Modifier.fillMaxWidth().height(7.dp).clip(CircleShape).background(Color.White.copy(.12f)))
+            Box(Modifier.fillMaxWidth(value / 100f).height(7.dp).clip(CircleShape).background(FM_GREEN))
+            Box(
+                Modifier.offset { IntOffset(((trackWidth - 18.dp.roundToPx()) * value / 100f).roundToInt(), 0) }
+                    .size(18.dp).background(FM_GREEN, CircleShape).border(3.dp, Color(0xFF173D1C), CircleShape)
             )
-        )
+        }
     }
+}
+
+private fun lineupChemistry(players: List<PlayerEntity?>): Int {
+    val xi = players.filterNotNull()
+    if (xi.size < 2) return xi.size * 5
+    val attributes = xi.map { (it.passing + it.vision + it.composure + it.positioning + it.morale) / 5 }.average()
+    val fitness = xi.map { it.fitness }.average()
+    val leaders = xi.count { it.squadRole == SquadRole.STAR || it.squadRole == SquadRole.IMPORTANT } * .8
+    return (attributes * .65 + fitness * .25 + leaders).roundToInt().coerceIn(0, 100)
 }
 
 @Composable
