@@ -22,6 +22,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.mountsa.fmsimulation.core.match.event.EventType
@@ -30,6 +32,8 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
+import com.mountsa.fmsimulation.domain.models.Formations
+import com.mountsa.fmsimulation.ui.screens.dashboard.squad.TacticsPitch
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.delay
 
@@ -57,6 +61,10 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     var rightTab by remember { mutableIntStateOf(0) }
     var mentality by remember { mutableStateOf("MID") }
     var showSquad by remember { mutableStateOf(false) }
+    var selectedMatchStarter by remember { mutableStateOf<Long?>(null) }
+    val userIsHome = uiState.club?.id == match.homeClubId
+    val matchLineup = if (userIsHome) session.homeLineup else session.awayLineup
+    val matchBench = if (userIsHome) session.homeBench else session.awayBench
     val listState = rememberLazyListState()
     var pulseScale by remember { mutableStateOf(1f) }
 
@@ -255,12 +263,48 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             }
         }
     }
-    if (showSquad) AlertDialog(
-        onDismissRequest = { showSquad = false },
-        title = { Text("SQUAD & TACTICAL CHANGES") },
-        text = { LazyColumn(Modifier.heightIn(max = 280.dp)) { items(uiState.squadPlayers) { Text("${it.shortName}  •  ${it.position}  •  ${it.fitness}%", modifier = Modifier.fillMaxWidth().padding(6.dp)) } } },
-        confirmButton = { TextButton(onClick = { showSquad = false; autoPaused = false }) { Text("APPLY & RESUME", color = FM_GREEN) } }
-    )
+    if (showSquad) Dialog(onDismissRequest = { showSquad = false }, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Surface(Modifier.fillMaxWidth(.92f).fillMaxHeight(.9f), color = Color(0xFF0B0D0F), shape = RoundedCornerShape(14.dp)) {
+            Column(Modifier.fillMaxSize().padding(12.dp)) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                    Text("SQUAD & TACTICS", color = Color.White, fontSize = 15.sp, fontWeight = FontWeight.Black)
+                    TextButton(onClick = { showSquad = false }) { Text("CLOSE", color = Color.Gray) }
+                }
+                Row(Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Box(Modifier.weight(1.2f).fillMaxHeight()) {
+                        TacticsPitch(
+                            formation = Formations.DEFAULT_FORMATIONS.first(),
+                            startingXI = matchLineup.map { it as com.mountsa.fmsimulation.data.local.entities.PlayerEntity? },
+                            onSlotClick = { index -> selectedMatchStarter = matchLineup.getOrNull(index)?.id }
+                        )
+                    }
+                    Column(Modifier.weight(.8f).fillMaxHeight()) {
+                        Text("SUBSTITUTES", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                        LazyColumn(Modifier.weight(1f)) {
+                            items(matchBench) { player ->
+                                Row(
+                                    Modifier.fillMaxWidth().clickable(enabled = selectedMatchStarter != null) {
+                                        selectedMatchStarter?.let { viewModel.swapMatchPlayer(it, player.id) }
+                                        selectedMatchStarter = null
+                                    }.padding(8.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween
+                                ) {
+                                    Text(player.shortName, color = Color.White, fontSize = 10.sp)
+                                    Text("${player.position}  ${player.fitness}%", color = FM_GREEN, fontSize = 9.sp)
+                                }
+                                HorizontalDivider(color = Color.White.copy(.06f))
+                            }
+                        }
+                        Text("INSTRUCTIONS", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                            listOf("DEF", "MID", "ATT").forEach { item -> FilterChip(mentality == item, { mentality = item }, { Text(item, fontSize = 8.sp) }, modifier = Modifier.weight(1f)) }
+                        }
+                        Button(onClick = { showSquad = false; autoPaused = false }, Modifier.fillMaxWidth().height(36.dp), colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)) { Text("APPLY & RESUME", color = Color.Black, fontSize = 10.sp, fontWeight = FontWeight.Bold) }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @Composable
