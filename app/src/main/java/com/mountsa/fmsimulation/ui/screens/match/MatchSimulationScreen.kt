@@ -3,6 +3,8 @@ package com.mountsa.fmsimulation.ui.screens.match
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -117,9 +119,9 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
                 AnimatedContent(
                     targetState = currentHomeScore,
-                    transitionSpec = { 
-                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith 
-                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 }) 
+                    transitionSpec = {
+                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith
+                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 })
                     }
                 ) { score ->
                     Text(score.toString(), color = Color.White, fontSize = 44.sp, fontWeight = FontWeight.Black)
@@ -130,9 +132,9 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                 }
                 AnimatedContent(
                     targetState = currentAwayScore,
-                    transitionSpec = { 
-                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith 
-                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 }) 
+                    transitionSpec = {
+                        fadeIn(tween(300)) + slideInVertically(initialOffsetY = { -it / 2 }) togetherWith
+                        fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 })
                     }
                 ) { score ->
                     Text(score.toString(), color = Color.White, fontSize = 44.sp, fontWeight = FontWeight.Black)
@@ -163,18 +165,19 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         Column {
-                            Text("HALF-TIME", color = FM_GREEN, fontWeight = FontWeight.Black, fontSize = 14.sp)
-                            Text("Review events, statistics and make tactical changes.", color = Color.Gray, fontSize = 10.sp)
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("HALF-TIME"), color = FM_GREEN, fontWeight = FontWeight.Black, fontSize = 14.sp)
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("Review events, statistics and make tactical changes."), color = Color.Gray, fontSize = 10.sp)
                         }
                         Button(onClick = { halfTimePaused = false }, colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)) {
-                            Text("START SECOND HALF", color = Color.Black, fontWeight = FontWeight.Bold)
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("START SECOND HALF"), color = Color.Black, fontWeight = FontWeight.Bold)
                         }
                     }
                 }
             }
 
             // 3 COLUMNS SECTION
-            Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Box(Modifier.weight(1f).fillMaxWidth().horizontalScroll(rememberScrollState())) {
+            Row(modifier = Modifier.widthIn(min = 900.dp).fillMaxHeight(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 // LEFT: STATISTIK
                 AnimatedVisibility(
                     visible = true,
@@ -242,6 +245,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     }
                 }
             }
+            }
 
             // FOOTER BUTTON
             if (currentMinute >= 90) {
@@ -255,7 +259,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         modifier = Modifier.fillMaxWidth().padding(top = 12.dp).height(44.dp),
                         shape = RoundedCornerShape(8.dp)
                     ) {
-                        Text("VIEW RESULT", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("VIEW RESULT"), color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 13.sp)
                     }
                 }
             }
@@ -303,13 +307,13 @@ fun EventText(min: Int, text: String, type: EventType, playerName: String = "") 
         EventType.HALFTIME, EventType.MATCH_END -> Color(0xFF9C27B0)
         else -> Color.White
     }
-    
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .background(
-                if (type == EventType.GOAL || type == EventType.PENALTY_GOAL) 
-                    FM_GREEN.copy(alpha = 0.08f) 
+                if (type == EventType.GOAL || type == EventType.PENALTY_GOAL)
+                    FM_GREEN.copy(alpha = 0.08f)
                 else Color.Transparent,
                 RoundedCornerShape(4.dp)
             )
@@ -318,7 +322,7 @@ fun EventText(min: Int, text: String, type: EventType, playerName: String = "") 
         verticalAlignment = Alignment.CenterVertically
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Text("$min'", color = FM_GREEN, fontSize = 10.sp, modifier = Modifier.width(22.dp), fontWeight = FontWeight.Bold)
+            Text(com.mountsa.fmsimulation.ui.localization.localized("$min'"), color = FM_GREEN, fontSize = 10.sp, modifier = Modifier.width(22.dp), fontWeight = FontWeight.Bold)
             Text(text, color = color, fontSize = 10.sp, fontWeight = if (type == EventType.GOAL || type == EventType.PENALTY_GOAL) FontWeight.Bold else FontWeight.Normal)
         }
         if (playerName.isNotEmpty()) {
