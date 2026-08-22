@@ -7,6 +7,8 @@ data class MatchSession(
     val match: MatchEntity,
     val homeLineup: List<PlayerEntity>,
     val awayLineup: List<PlayerEntity>,
+    val homeBench: List<PlayerEntity> = emptyList(),
+    val awayBench: List<PlayerEntity> = emptyList(),
     val homeClubName: String,
     val awayClubName: String,
     val homeShortName: String,

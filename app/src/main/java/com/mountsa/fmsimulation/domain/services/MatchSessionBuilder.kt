@@ -33,11 +33,7 @@ class MatchSessionBuilder @Inject constructor(
                     it.startingIndex in 0..10
                 }
                 .ifEmpty {
-                    homePlayers
-                        .sortedByDescending {
-                            it.overall
-                        }
-                        .take(11)
+                    LineupSelector.select(homePlayers)
                 }
 
         val awayLineup =
@@ -46,11 +42,7 @@ class MatchSessionBuilder @Inject constructor(
                     it.startingIndex in 0..10
                 }
                 .ifEmpty {
-                    awayPlayers
-                        .sortedByDescending {
-                            it.overall
-                        }
-                        .take(11)
+                    LineupSelector.select(awayPlayers)
                 }
 
         val leagueName =
@@ -65,6 +57,8 @@ class MatchSessionBuilder @Inject constructor(
             match = match,
             homeLineup = homeLineup,
             awayLineup = awayLineup,
+            homeBench = homePlayers.filterNot { candidate -> homeLineup.any { it.id == candidate.id } }.sortedByDescending { it.overall }.take(12),
+            awayBench = awayPlayers.filterNot { candidate -> awayLineup.any { it.id == candidate.id } }.sortedByDescending { it.overall }.take(12),
             homeClubName = homeClub?.name ?: "Home",
             awayClubName = awayClub?.name ?: "Away",
             homeShortName = homeClub?.shortName ?: "HME",

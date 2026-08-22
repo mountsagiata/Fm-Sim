@@ -21,9 +21,14 @@ fun SettingsHub(viewModel: DashboardViewModel) {
     var showResetConfirm by remember { mutableStateOf(false) }
     val musicEnabled by viewModel.audioManager.musicEnabled.collectAsStateWithLifecycle()
     val sfxEnabled by viewModel.audioManager.sfxEnabled.collectAsStateWithLifecycle()
+    val musicVolume by viewModel.audioManager.musicVolume.collectAsStateWithLifecycle()
+    val sfxVolume by viewModel.audioManager.sfxVolume.collectAsStateWithLifecycle()
+    val crowdVolume by viewModel.audioManager.crowdVolume.collectAsStateWithLifecycle()
+    val language by viewModel.localeManager.language.collectAsStateWithLifecycle()
 
-    Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        AppColumn(modifier = Modifier.weight(2f), title = "GAME SETTINGS") {
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+      val compact = maxWidth < 720.dp
+      val settingsContent: @Composable ColumnScope.() -> Unit = {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
@@ -44,6 +49,12 @@ fun SettingsHub(viewModel: DashboardViewModel) {
                     initialValue = musicEnabled,
                     onCheckedChange = { viewModel.audioManager.setMusicEnabled(it) }
                 )
+                VolumeSetting("Music volume", musicVolume, viewModel.audioManager::setMusicVolume)
+                VolumeSetting("Sound effects volume", sfxVolume, viewModel.audioManager::setSfxVolume)
+                VolumeSetting("Crowd volume", crowdVolume, viewModel.audioManager::setCrowdVolume)
+
+                Text("LANGUAGE", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = FM_GREEN)
+                LanguageSetting(language, viewModel.localeManager::setLanguage)
                 SettingToggle(
                     label = "Sound Effects (SFX)",
                     initialValue = sfxEnabled,
@@ -60,8 +71,8 @@ fun SettingsHub(viewModel: DashboardViewModel) {
                     Text("RESET CAREER DATA", color = Color.White, fontWeight = FontWeight.Bold)
                 }
             }
-        }
-        AppColumn(modifier = Modifier.weight(1f), title = "ABOUT") {
+      }
+      val aboutContent: @Composable ColumnScope.() -> Unit = {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
@@ -85,7 +96,22 @@ fun SettingsHub(viewModel: DashboardViewModel) {
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
             }
+      }
+
+      if (compact) {
+        Column(
+          modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()),
+          verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+          AppColumn(modifier = Modifier.fillMaxWidth().heightIn(min = 560.dp), title = "GAME SETTINGS", content = settingsContent)
+          AppColumn(modifier = Modifier.fillMaxWidth().heightIn(min = 260.dp), title = "ABOUT", content = aboutContent)
         }
+      } else {
+        Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+          AppColumn(modifier = Modifier.weight(2f), title = "GAME SETTINGS", content = settingsContent)
+          AppColumn(modifier = Modifier.weight(1f), title = "ABOUT", content = aboutContent)
+        }
+      }
     }
 
     if (showResetConfirm) {
@@ -107,6 +133,36 @@ fun SettingsHub(viewModel: DashboardViewModel) {
                 }
             }
         )
+    }
+}
+
+@Composable
+private fun VolumeSetting(label: String, value: Float, onValueChange: (Float) -> Unit) {
+    Column {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Text(label, fontSize = 13.sp, color = Color.White)
+            Text("${(value * 100).toInt()}%", fontSize = 12.sp, color = FM_GREEN)
+        }
+        Slider(value = value, onValueChange = onValueChange, valueRange = 0f..1f)
+    }
+}
+
+@Composable
+private fun LanguageSetting(selected: String, onLanguageSelected: (String) -> Unit) {
+    var expanded by remember { mutableStateOf(false) }
+    val languages = linkedMapOf("system" to "System", "id" to "Bahasa Indonesia", "en" to "English", "pt" to "Português", "ja" to "日本語")
+    Box {
+        OutlinedButton(onClick = { expanded = true }, modifier = Modifier.fillMaxWidth()) {
+            Text(languages[selected] ?: "System", modifier = Modifier.weight(1f))
+        }
+        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+            languages.forEach { (tag, label) ->
+                DropdownMenuItem(text = { Text(label) }, onClick = {
+                    expanded = false
+                    onLanguageSelected(tag)
+                })
+            }
+        }
     }
 }
 

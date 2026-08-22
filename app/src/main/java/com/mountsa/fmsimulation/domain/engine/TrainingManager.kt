@@ -16,11 +16,14 @@ class TrainingManager @Inject constructor(
         if (players.isEmpty()) return
 
         val updatedPlayers = players.map { player ->
-            if (player.status == PlayerStatus.INJURED) return@map player
+            if (player.status == PlayerStatus.INJURED) {
+                return@map player.copy(fitness = (player.fitness + 2).coerceAtMost(100))
+            }
 
             // Basic training logic
             val sharpnessGain = Random.nextInt(1, 4)
-            val fatigueGain = Random.nextInt(2, 6)
+            val fatigueGain = Random.nextInt(1, 4)
+            val recovery = if (player.fitness < 90) Random.nextInt(2, 5) else 1
             
             // Growth progress based on age
             val growthBonus = if (player.age < 23) Random.nextInt(5, 15) else Random.nextInt(1, 5)
@@ -28,6 +31,7 @@ class TrainingManager @Inject constructor(
             val updatedPlayer = player.copy(
                 sharpness = (player.sharpness + sharpnessGain).coerceAtMost(100),
                 fatigue = (player.fatigue + fatigueGain).coerceAtMost(100),
+                fitness = (player.fitness + recovery - fatigueGain / 2).coerceIn(0, 100),
                 growthProgress = player.growthProgress + growthBonus
             )
 

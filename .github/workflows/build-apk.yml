@@ -4,22 +4,29 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch: {}  # Tetap bisa dijalankan manual
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -34,7 +41,15 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew testDebugUnitTest lintDebug assembleDebug --stacktrace
+
+      - name: Upload lint report
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: lint-report-${{ github.run_number }}
+          path: app/build/reports/lint-results-debug.html
+          if-no-files-found: ignore
 
       - name: Prepare APK file
         run: |
@@ -50,35 +65,34 @@ jobs:
           
           ls -la release-out/
 
-      - name: Create Release
-        id: create_release
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: FmSimulation-V1.0.${{ github.run_number }}
+          path: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
+
+  release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - uses: actions/download-artifact@v5
+        with:
+          name: FmSimulation-V1.0.${{ github.run_number }}
+          path: release-out
+      - name: Publish verified APK
         uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v1.0.${{ github.run_number }}
           name: "FM Simulation V1.0.${{ github.run_number }}"
           files: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
           body: |
-            ## 🚀 FM Simulation V1.0.${{ github.run_number }}
-            
-            **📋 Info Build:**
-            - Trigger: ${{ github.event_name }}
-            - Commit: `${{ env.SHORT_HASH }}`
-            - Build Number: #${{ github.run_number }}
-            - Date: ${{ github.event.head_commit.timestamp }}
-            
-            ---
-            
-            **📝 Changelog:**
-            
-            ${{ env.COMMIT_MSG }}
-            
-            ---
-            
-            **📦 Download:**
-            - [FmSimulation-V1.0.${{ github.run_number }}.apk](${{ github.server_url }}/${{ github.repository }}/releases/download/v1.0.${{ github.run_number }}/FmSimulation-V1.0.${{ github.run_number }}.apk)
-
-      - name: Upload APK as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: FmSimulation-V1.0.${{ github.run_number }}
-          path: release-out/FmSimulation-V1.0.${{ github.run_number }}.apk
+            Verified by unit tests, Android lint, and assembleDebug.
+            Commit: `${{ github.sha }}`

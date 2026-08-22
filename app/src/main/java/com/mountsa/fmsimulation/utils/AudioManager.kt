@@ -23,6 +23,15 @@ class AudioManager @Inject constructor(
     private val _sfxEnabled = MutableStateFlow(prefs.getBoolean(KEY_SFX, true))
     val sfxEnabled: StateFlow<Boolean> = _sfxEnabled
 
+    private val _musicVolume = MutableStateFlow(prefs.getFloat(KEY_MUSIC_VOLUME, 0.4f))
+    val musicVolume: StateFlow<Float> = _musicVolume
+
+    private val _sfxVolume = MutableStateFlow(prefs.getFloat(KEY_SFX_VOLUME, 1f))
+    val sfxVolume: StateFlow<Float> = _sfxVolume
+
+    private val _crowdVolume = MutableStateFlow(prefs.getFloat(KEY_CROWD_VOLUME, 0.5f))
+    val crowdVolume: StateFlow<Float> = _crowdVolume
+
     fun setMusicEnabled(enabled: Boolean) {
         _musicEnabled.value = enabled
         prefs.edit().putBoolean(KEY_MUSIC, enabled).apply()
@@ -37,6 +46,26 @@ class AudioManager @Inject constructor(
     fun setSfxEnabled(enabled: Boolean) {
         _sfxEnabled.value = enabled
         prefs.edit().putBoolean(KEY_SFX, enabled).apply()
+    }
+
+    fun setMusicVolume(volume: Float) {
+        val safeVolume = volume.coerceIn(0f, 1f)
+        _musicVolume.value = safeVolume
+        prefs.edit().putFloat(KEY_MUSIC_VOLUME, safeVolume).apply()
+        musicPlayer?.setVolume(safeVolume, safeVolume)
+    }
+
+    fun setSfxVolume(volume: Float) {
+        val safeVolume = volume.coerceIn(0f, 1f)
+        _sfxVolume.value = safeVolume
+        prefs.edit().putFloat(KEY_SFX_VOLUME, safeVolume).apply()
+    }
+
+    fun setCrowdVolume(volume: Float) {
+        val safeVolume = volume.coerceIn(0f, 1f)
+        _crowdVolume.value = safeVolume
+        prefs.edit().putFloat(KEY_CROWD_VOLUME, safeVolume).apply()
+        crowdPlayer?.setVolume(safeVolume, safeVolume)
     }
 
     // --- SHORT SFX (SoundPool) ---
@@ -57,31 +86,36 @@ class AudioManager @Inject constructor(
     /** Generic click sound for buttons / navigation (uses confirm.ogg). */
     fun playClickSound() {
         if (!_sfxEnabled.value) return
-        soundPool.play(confirmSoundId, 1f, 1f, 0, 0, 1f)
+        playSound(confirmSoundId)
     }
 
     /** For confirm / continue actions. */
     fun playConfirmSound() {
         if (!_sfxEnabled.value) return
-        soundPool.play(confirmSoundId, 1f, 1f, 0, 0, 1f)
+        playSound(confirmSoundId)
     }
 
     /** For back / discard / cancel actions. */
     fun playBackSound() {
         if (!_sfxEnabled.value) return
-        soundPool.play(backSoundId, 1f, 1f, 0, 0, 1f)
+        playSound(backSoundId)
     }
 
     /** For inbox / notification alerts. */
     fun playNotificationSound() {
         if (!_sfxEnabled.value) return
-        soundPool.play(notificationSoundId, 1f, 1f, 0, 0, 1f)
+        playSound(notificationSoundId)
     }
 
     /** Kept for backward-compat call sites. */
     fun playSuccessSound() {
         if (!_sfxEnabled.value) return
-        soundPool.play(notificationSoundId, 1f, 1f, 0, 0, 1f)
+        playSound(notificationSoundId)
+    }
+
+    private fun playSound(soundId: Int) {
+        val volume = _sfxVolume.value
+        soundPool.play(soundId, volume, volume, 0, 0, 1f)
     }
 
     // --- LONG-FORM AUDIO (MediaPlayer): background music & crowd ambience ---
@@ -101,7 +135,7 @@ class AudioManager @Inject constructor(
         currentTrack = if (currentTrack == 0) R.raw.soundtrack1 else R.raw.soundtrack2
         musicPlayer = MediaPlayer.create(context, currentTrack)?.apply {
             isLooping = true
-            setVolume(0.4f, 0.4f)
+            setVolume(_musicVolume.value, _musicVolume.value)
             start()
         }
     }
@@ -117,7 +151,7 @@ class AudioManager @Inject constructor(
         if (crowdPlayer?.isPlaying == true) return
         crowdPlayer = MediaPlayer.create(context, R.raw.crowd1)?.apply {
             isLooping = true
-            setVolume(0.5f, 0.5f)
+            setVolume(_crowdVolume.value, _crowdVolume.value)
             start()
         }
     }
@@ -136,5 +170,8 @@ class AudioManager @Inject constructor(
     companion object {
         private const val KEY_MUSIC = "music_enabled"
         private const val KEY_SFX = "sfx_enabled"
+        private const val KEY_MUSIC_VOLUME = "music_volume"
+        private const val KEY_SFX_VOLUME = "sfx_volume"
+        private const val KEY_CROWD_VOLUME = "crowd_volume"
     }
 }

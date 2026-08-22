@@ -3,6 +3,7 @@ package com.mountsa.fmsimulation.ui.screens.match
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -28,15 +29,19 @@ import kotlinx.coroutines.delay
 fun StartingLineupScreen(viewModel: DashboardViewModel) {
     val uiState: DashboardUiState by viewModel.uiState.collectAsStateWithLifecycle()
     val session = uiState.matchSession ?: return
+    val userIsHome = uiState.club?.id == session.match.homeClubId
+    val userLineup = if (userIsHome) session.homeLineup else session.awayLineup
+    val userBench = if (userIsHome) session.homeBench else session.awayBench
 
     var visible by remember { mutableStateOf(false) }
+    var selectedStarterId by remember { mutableStateOf<Long?>(null) }
 
     LaunchedEffect(Unit) {
         delay(200)
         visible = true
     }
 
-    BoxWithConstraints(
+    Box(
         modifier = Modifier
             .fillMaxSize()
             .background(FM_DARK_BG)
@@ -80,7 +85,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
                     modifier = Modifier.padding(8.dp),
                     verticalArrangement = Arrangement.spacedBy(2.dp)
                 ) {
-                    items(session.homeLineup.filter { it.startingIndex in 0..10 }) { player ->
+                    items(userLineup, key = { it.id }) { player ->
                         AnimatedVisibility(
                             visible = visible,
                             enter = slideInHorizontally(
@@ -90,8 +95,25 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
                                 animationSpec = tween(400, delayMillis = player.startingIndex * 50)
                             )
                         ) {
-                            PlayerRow(player.name, player.position, player.startingIndex)
+                            PlayerRow(
+                                player.name,
+                                player.position,
+                                userLineup.indexOfFirst { it.id == player.id },
+                                selected = selectedStarterId == player.id,
+                                onClick = { selectedStarterId = if (selectedStarterId == player.id) null else player.id }
+                            )
                         }
+                    }
+                    item {
+                        Text("SUBSTITUTES", color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(12.dp))
+                    }
+                    items(userBench, key = { "bench-${it.id}" }) { player ->
+                        PlayerRow(player.name, player.position, player.shirtNumber, onClick = {
+                            selectedStarterId?.let { starterId ->
+                                viewModel.swapMatchPlayer(starterId, player.id)
+                                selectedStarterId = null
+                            }
+                        })
                     }
                 }
             }
@@ -134,14 +156,15 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
 }
 
 @Composable
-fun PlayerRow(name: String, position: String, index: Int) {
+fun PlayerRow(name: String, position: String, index: Int, selected: Boolean = false, onClick: () -> Unit = {}) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .background(
-                color = if (index % 2 == 0) Color.White.copy(alpha = 0.03f) else Color.Transparent,
+                color = if (selected) FM_GREEN.copy(alpha = 0.18f) else if (index % 2 == 0) Color.White.copy(alpha = 0.03f) else Color.Transparent,
                 shape = RoundedCornerShape(6.dp)
             )
+            .clickable(onClick = onClick)
             .padding(horizontal = 12.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically

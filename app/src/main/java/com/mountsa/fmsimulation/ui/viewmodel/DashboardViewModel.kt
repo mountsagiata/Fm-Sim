@@ -56,7 +56,8 @@ class DashboardViewModel @Inject constructor(
     private val transferManager: TransferManager,
     private val managerRatingService: ManagerRatingService,
     private val pressConferenceGenerator: PressConferenceGenerator,
-    val audioManager: com.mountsa.fmsimulation.utils.AudioManager
+    val audioManager: com.mountsa.fmsimulation.utils.AudioManager,
+    val localeManager: com.mountsa.fmsimulation.utils.LocaleManager
 ) : ViewModel() {
 
     private val gson = Gson()
@@ -433,6 +434,23 @@ class DashboardViewModel @Inject constructor(
             // MainViewModel's career observer will detect career == null
             // and automatically navigate back to the Profile screen.
         }
+    }
+
+    fun swapMatchPlayer(starterId: Long, substituteId: Long) {
+        val session = _matchSession.value ?: return
+        val userIsHome = career.value?.selectedClubId == session.match.homeClubId
+        val currentLineup = if (userIsHome) session.homeLineup else session.awayLineup
+        val currentBench = if (userIsHome) session.homeBench else session.awayBench
+        val starter = currentLineup.firstOrNull { it.id == starterId } ?: return
+        val substitute = currentBench.firstOrNull { it.id == substituteId } ?: return
+        val starterIndex = currentLineup.indexOfFirst { it.id == starterId }
+        val substituteIndex = currentBench.indexOfFirst { it.id == substituteId }
+        if (starterIndex < 0 || substituteIndex < 0) return
+
+        val lineup = currentLineup.toMutableList().apply { set(starterIndex, substitute) }
+        val bench = currentBench.toMutableList().apply { set(substituteIndex, starter) }
+        _matchSession.value = if (userIsHome) session.copy(homeLineup = lineup, homeBench = bench)
+        else session.copy(awayLineup = lineup, awayBench = bench)
     }
 
     fun finishMatchFlow() {
