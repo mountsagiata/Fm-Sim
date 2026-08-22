@@ -25,7 +25,8 @@ import javax.inject.Inject
 fun ClubLogo(
     clubId: Long,
     size: Dp = 32.dp,
-    repository: DataRepository? = null
+    repository: DataRepository? = null,
+    modifier: Modifier = Modifier
 ) {
     var logoAsset by remember { mutableStateOf<String?>(null) }
 
@@ -41,7 +42,7 @@ fun ClubLogo(
     }
 
     Box(
-        modifier = Modifier.size(size),
+        modifier = modifier.size(size),
         contentAlignment = Alignment.Center
     ) {
         if (logoAsset != null) {

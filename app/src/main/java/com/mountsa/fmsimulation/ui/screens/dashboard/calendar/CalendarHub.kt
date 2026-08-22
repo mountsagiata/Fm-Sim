@@ -21,7 +21,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.FitnessCenter
-import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.Campaign
 import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material3.*
@@ -358,8 +357,6 @@ fun DayCell(
     onClick: () -> Unit
 ) {
     val isMatchDay = model.match != null
-    val isTraining = model.events.any { it.type == "TRAINING" }
-
     val infiniteTransition = rememberInfiniteTransition(label = "SelectedOutline")
     val outlineAlpha by infiniteTransition.animateFloat(
         initialValue = 0.55f,
@@ -382,6 +379,20 @@ fun DayCell(
             .clickable(enabled = model.isCurrentMonth) { onClick() }
             .padding(6.dp)
     ) {
+        if (isMatchDay) {
+            val match = model.match!!
+            match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
+                com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo(
+                    leagueId = leagueId,
+                    size = 44.dp,
+                    modifier = Modifier
+                        .align(Alignment.TopStart)
+                        .offset(x = (-8).dp, y = (-8).dp)
+                        .alpha(.16f)
+                )
+            }
+        }
+
         // DATE
         Text(
             text = model.dayNumber.toString(),
@@ -436,21 +447,13 @@ fun DayCell(
                         )
                     }
                 }
-            } else if (isTraining) {
-                Icon(
-                    Icons.Default.FitnessCenter,
-                    contentDescription = null,
-                    tint = Color.Cyan.copy(alpha = 0.4f),
-                    modifier = Modifier.size(14.dp).align(Alignment.BottomEnd)
-                )
             }
 
             Row(
                 modifier = Modifier.align(Alignment.BottomEnd),
                 horizontalArrangement = Arrangement.spacedBy(2.dp)
             ) {
-                if (model.match != null) Icon(Icons.Default.EmojiEvents, null, tint = FM_GREEN, modifier = Modifier.size(11.dp))
-                model.events.take(3).forEach { event ->
+                model.events.take(2).forEach { event ->
                     val icon = when (event.type) {
                         "TRAINING", "RECOVERY", "REST" -> Icons.Default.FitnessCenter
                         "TRANSFER" -> Icons.Default.SwapHoriz
@@ -464,7 +467,15 @@ fun DayCell(
                         "MEDIA" -> Color(0xFFE040FB)
                         else -> Color.White.copy(.75f)
                     }
-                    Icon(icon, event.title, tint = tint, modifier = Modifier.size(11.dp))
+                    Icon(icon, event.title, tint = tint.copy(alpha = .72f), modifier = Modifier.size(10.dp))
+                }
+                if (model.events.size > 2) {
+                    Text(
+                        "+${model.events.size - 2}",
+                        color = Color.White.copy(.6f),
+                        fontSize = 7.sp,
+                        fontWeight = FontWeight.Bold
+                    )
                 }
             }
         }
