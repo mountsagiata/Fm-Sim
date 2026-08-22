@@ -27,8 +27,8 @@ fun TeamOverviewCard(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 10.dp, vertical = 4.dp),
-            verticalArrangement = Arrangement.SpaceEvenly
+                .padding(horizontal = 10.dp, vertical = 2.dp),
+            verticalArrangement = Arrangement.spacedBy(3.dp)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -48,7 +48,7 @@ fun TeamOverviewCard(
                     Text(com.mountsa.fmsimulation.ui.localization.localized("OVR"), fontSize = 10.sp, color = Color.Gray)
                     Text(
                         text = (club?.overall ?: 0).toString(),
-                        fontSize = 24.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.ExtraBold,
                         color = FM_GREEN
                     )
@@ -64,7 +64,7 @@ fun TeamOverviewCard(
                     Text(com.mountsa.fmsimulation.ui.localization.localized("ACADEMY"), fontSize = 9.sp, color = Color.Gray)
                     Text(
                         text = "${club?.academyQuality ?: 0}/100",
-                        fontSize = 11.sp,
+                        fontSize = 9.sp,
                         color = Color.White,
                         fontWeight = FontWeight.Bold
                     )
@@ -73,7 +73,7 @@ fun TeamOverviewCard(
                     Text(com.mountsa.fmsimulation.ui.localization.localized("AI PERSONALITY"), fontSize = 9.sp, color = Color.Gray)
                     Text(
                         text = club?.managerPersonality?.name?.replace("_", " ") ?: "BALANCED",
-                        fontSize = 11.sp,
+                        fontSize = 9.sp,
                         color = FM_GREEN,
                         fontWeight = FontWeight.Bold
                     )
