@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -39,12 +40,14 @@ import coil.request.ImageRequest
 
 @Composable
 fun HomeHub(
-    viewModel: DashboardViewModel, 
+    viewModel: DashboardViewModel,
     onNavigateToCalendar: () -> Unit = {},
     onNavigateToLeague: () -> Unit = {},
     onNavigateToTraining: () -> Unit = {},
     onNavigateToSquad: () -> Unit = {},
-    onNavigateToInbox: () -> Unit = {}
+    onNavigateToInbox: () -> Unit = {},
+    onNavigateToFinance: () -> Unit = {},
+    onNavigateToObjectives: () -> Unit = {}
 ) {
     var selectedCardIndex by rememberSaveable {
         mutableIntStateOf(-1)
@@ -53,6 +56,29 @@ fun HomeHub(
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     Box(modifier = Modifier.fillMaxSize()) {
+        BoxWithConstraints(Modifier.fillMaxSize()) {
+        val compact = maxWidth < 600.dp
+        if (compact) {
+            Column(
+                Modifier.fillMaxSize().verticalScroll(androidx.compose.foundation.rememberScrollState()),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row(Modifier.fillMaxWidth().heightIn(min = 150.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    NextMatchCard(Modifier.weight(1f), uiState.nextMatch, uiState.isLoading) { viewModel.onContinueClick() }
+                    TeamOverviewCard(Modifier.weight(1f).clickable { onNavigateToSquad() }, uiState.club)
+                }
+                Row(Modifier.fillMaxWidth().heightIn(min = 135.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    StandingCard(Modifier.weight(1f).clickable { onNavigateToLeague() }, uiState.standing, uiState.club)
+                    FinanceCard(Modifier.weight(1f).clickable { onNavigateToFinance() }, uiState.club)
+                }
+                Row(Modifier.fillMaxWidth().heightIn(min = 135.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    NewsCard(Modifier.weight(1f).clickable { onNavigateToInbox() }, uiState.inboxMessages)
+                    ObjectiveCard(Modifier.weight(1f).clickable { onNavigateToObjectives() }, uiState.objectives)
+                }
+                UpcomingFixturesSection(Modifier.fillMaxWidth().heightIn(min = 150.dp), uiState.fixtures, onNavigateToCalendar)
+                LeagueStatsSection(Modifier.fillMaxWidth().heightIn(min = 140.dp), uiState.topScorer, uiState.topAssister, uiState.bestPlayer)
+            }
+        } else {
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -90,7 +116,7 @@ fun HomeHub(
                             color = if (isTeamOverviewSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { 
+                        .clickable {
                             selectedCardIndex = 1
                             onNavigateToSquad()
                         },
@@ -108,7 +134,7 @@ fun HomeHub(
                             color = if (isStandingSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { 
+                        .clickable {
                             selectedCardIndex = 2
                             onNavigateToLeague()
                         },
@@ -131,7 +157,7 @@ fun HomeHub(
                             color = if (isFinanceSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { selectedCardIndex = 3 },
+                        .clickable { selectedCardIndex = 3; onNavigateToFinance() },
                     club = uiState.club
                 )
 
@@ -146,7 +172,7 @@ fun HomeHub(
                             color = if (isNewsSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { 
+                        .clickable {
                             selectedCardIndex = 4
                             onNavigateToInbox()
                         },
@@ -164,7 +190,7 @@ fun HomeHub(
                             color = if (isObjectiveSelected) Color.LightGray else Color.Transparent,
                             shape = RoundedCornerShape(12.dp)
                         )
-                        .clickable { selectedCardIndex = 5 },
+                        .clickable { selectedCardIndex = 5; onNavigateToObjectives() },
                     objectives = uiState.objectives
                 )
             }
@@ -187,6 +213,8 @@ fun HomeHub(
                     bestPlayer = uiState.bestPlayer
                 )
             }
+        }
+        }
         }
 
         // Loading Overlay
@@ -214,7 +242,7 @@ fun HomeHub(
                         letterSpacing = 1.sp
                     )
                     Text(
-                        text = "Simulating football world...",
+                        text = com.mountsa.fmsimulation.ui.localization.localized("Simulating football world..."),
                         color = Color.Gray,
                         fontSize = 12.sp,
                         modifier = Modifier.padding(top = 8.dp)
@@ -296,8 +324,8 @@ fun FixtureCard(date: Long, opponent: String, opponentClubId: Long) {
             }
             Spacer(Modifier.width(12.dp))
             Column(verticalArrangement = Arrangement.Center) {
-                Text("League Match", fontSize = 8.sp, color = Color.Gray)
-                Text("vs $opponent", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("League Match"), fontSize = 8.sp, color = Color.Gray)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("vs $opponent"), fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color.White)
             }
 
             Spacer(Modifier.weight(1f))
@@ -332,7 +360,7 @@ fun TopPlayerStat(category: String, name: String, value: String, avatarAsset: St
                         contentScale = ContentScale.Crop
                     )
                 } else {
-                    Text("👤", modifier = Modifier.wrapContentSize(), fontSize = 12.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("👤"), modifier = Modifier.wrapContentSize(), fontSize = 12.sp)
                 }
             }
         }

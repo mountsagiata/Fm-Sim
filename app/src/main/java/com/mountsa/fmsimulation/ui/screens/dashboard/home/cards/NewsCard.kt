@@ -33,7 +33,7 @@ fun NewsCard(
         ) {
             if (messages.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("No news available", color = Color.Gray, fontSize = 10.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("No news available"), color = Color.Gray, fontSize = 10.sp)
                 }
             } else {
                 messages.take(4).forEach { message ->
@@ -62,7 +62,7 @@ fun NewsRowItem(message: InboxEntity) {
                     .size(6.dp)
                     .background(getCategoryColor(message.category), CircleShape)
             )
-            
+
             Text(
                 text = message.subject,
                 fontSize = 9.sp,
@@ -72,7 +72,7 @@ fun NewsRowItem(message: InboxEntity) {
                 overflow = TextOverflow.Ellipsis
             )
         }
-        
+
         if (!message.isRead) {
             Box(
                 modifier = Modifier

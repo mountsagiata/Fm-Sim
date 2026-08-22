@@ -74,8 +74,8 @@ fun TrainingHub(viewModel: DashboardViewModel) {
                 title = "ACADEMY FOCUS"
             ) {
                 Column(modifier = Modifier.padding(12.dp)) {
-                    Text("Youth Development", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
-                    Text("Quality: ${uiState.club?.academyQuality ?: 0}/100", color = FM_GREEN, fontSize = 11.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("Youth Development"), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("Quality: ${uiState.club?.academyQuality ?: 0}/100"), color = FM_GREEN, fontSize = 11.sp)
                     Spacer(Modifier.height(8.dp))
                     LinearProgressIndicator(
                         progress = { (uiState.club?.academyQuality ?: 0) / 100f },
@@ -102,17 +102,17 @@ fun TrainingPlayerRow(player: PlayerEntity) {
         ) {
             Text(player.position, color = Color.Gray, fontSize = 9.sp, fontWeight = FontWeight.Bold, modifier = Modifier.width(24.dp))
             Text(player.shortName, color = Color.White, fontSize = 12.sp, modifier = Modifier.weight(1f))
-            
+
             Column(horizontalAlignment = Alignment.End) {
-                Text("SHARPNESS", color = Color.Gray, fontSize = 8.sp)
-                Text("${player.sharpness}%", color = if (player.sharpness > 70) FM_GREEN else Color.Yellow, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("SHARPNESS"), color = Color.Gray, fontSize = 8.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("${player.sharpness}%"), color = if (player.sharpness > 70) FM_GREEN else Color.Yellow, fontSize = 11.sp, fontWeight = FontWeight.Bold)
             }
-            
+
             Spacer(Modifier.width(16.dp))
-            
+
             Column(horizontalAlignment = Alignment.End) {
-                Text("FATIGUE", color = Color.Gray, fontSize = 8.sp)
-                Text("${player.fatigue}%", color = if (player.fatigue > 50) Color.Red else Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("FATIGUE"), color = Color.Gray, fontSize = 8.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("${player.fatigue}%"), color = if (player.fatigue > 50) Color.Red else Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -127,7 +127,7 @@ fun TrainingFocusItem(label: String, progress: Float, icon: androidx.compose.ui.
         Column(modifier = Modifier.weight(1f)) {
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 Text(label, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
-                Text("${(progress * 100).toInt()}%", color = Color.Gray, fontSize = 10.sp)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("${(progress * 100).toInt()}%"), color = Color.Gray, fontSize = 10.sp)
             }
             Spacer(Modifier.height(4.dp))
             LinearProgressIndicator(

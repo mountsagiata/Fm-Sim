@@ -19,6 +19,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.FitnessCenter
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.Campaign
+import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -58,7 +61,7 @@ data class DayGridModel(
 fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val leagueName by viewModel.leagueName.collectAsStateWithLifecycle()
-    
+
     val seasonStart = remember {
         Calendar.getInstance().apply {
             set(2025, Calendar.JULY, 1)
@@ -74,7 +77,7 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
         }
     }
-    
+
     var currentMonth by remember {
         mutableStateOf(Calendar.getInstance().apply {
             if (uiState.currentDate > 0) {
@@ -196,48 +199,43 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
         }
 
-        // --- TWO COLUMN LAYOUT ---
-        Row(
-            modifier = Modifier.fillMaxSize(),
-            horizontalArrangement = Arrangement.spacedBy(18.dp)
-        ) {
-            // LEFT: CALENDAR
-            Box(
-                modifier = Modifier
-                    .weight(2.2f)
-                    .fillMaxHeight()
-            ) {
-                CalendarGrid(
-                    calendar = currentMonth,
-                    matches = matches,
-                    events = events,
-                    today = currentDate,
-                    selectedDate = selectedDate,
-                    clubId = clubId,
-                    allClubs = allClubs,
-                    leagueName = leagueName,
-                    onDateClick = { selectedDate = it }
-                )
+        BoxWithConstraints(Modifier.fillMaxSize()) {
+            val compact = maxWidth < 760.dp || maxHeight > maxWidth
+            val calendarContent: @Composable (Modifier) -> Unit = { modifier ->
+                Box(modifier) {
+                    CalendarGrid(
+                        calendar = currentMonth, matches = matches, events = events,
+                        today = currentDate, selectedDate = selectedDate, clubId = clubId,
+                        allClubs = allClubs, leagueName = leagueName,
+                        onDateClick = { selectedDate = it }
+                    )
+                }
+            }
+            val detailContent: @Composable (Modifier) -> Unit = { modifier ->
+                Surface(
+                    modifier = modifier,
+                    color = Color.Black.copy(alpha = 0.22f),
+                    shape = RoundedCornerShape(18.dp),
+                    border = BorderStroke(1.dp, Color.White.copy(alpha = 0.05f))
+                ) {
+                    SelectedDatePanel(
+                        selectedDate = selectedDate, matches = matches, events = events,
+                        clubId = clubId, allClubs = allClubs, leagueName = leagueName,
+                        currentDate = currentDate
+                    )
+                }
             }
 
-            // RIGHT: SELECTED DATE PANEL
-            Surface(
-                modifier = Modifier
-                    .weight(0.8f)
-                    .fillMaxHeight(),
-                color = Color.Black.copy(alpha = 0.22f),
-                shape = RoundedCornerShape(22.dp),
-                border = BorderStroke(1.dp, Color.White.copy(alpha = 0.05f))
-            ) {
-                SelectedDatePanel(
-                    selectedDate = selectedDate,
-                    matches = matches,
-                    events = events,
-                    clubId = clubId,
-                    allClubs = allClubs,
-                    leagueName = leagueName,
-                    currentDate = currentDate
-                )
+            if (compact) {
+                Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    calendarContent(Modifier.fillMaxWidth().weight(1.45f))
+                    detailContent(Modifier.fillMaxWidth().weight(.8f))
+                }
+            } else {
+                Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                    calendarContent(Modifier.weight(2.2f).fillMaxHeight())
+                    detailContent(Modifier.weight(.8f).fillMaxHeight())
+                }
             }
         }
     }
@@ -278,10 +276,10 @@ fun CalendarGrid(
             cellCal.set(Calendar.SECOND, 0)
             cellCal.set(Calendar.MILLISECOND, 0)
             val timestamp = cellCal.timeInMillis
-            
+
             val dayMatch = matches.find { isSameDayFast(cellCal, it.matchDate) }
             val dayEvents = events.filter { isSameDayFast(cellCal, it.eventDate) }
-            
+
             days.add(
                 DayGridModel(
                     dayNumber = i,
@@ -331,7 +329,7 @@ fun DayCell(
 ) {
     val isMatchDay = model.match != null
     val isTraining = model.events.any { it.type == "TRAINING" }
-    
+
     val infiniteTransition = rememberInfiniteTransition(label = "SelectedOutline")
     val outlineAlpha by infiniteTransition.animateFloat(
         initialValue = 0.55f,
@@ -368,7 +366,7 @@ fun DayCell(
             if (isMatchDay) {
                 val match = model.match!!
                 val isPlayed = match.isPlayed
-                
+
                 Column(
                     modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally,
@@ -386,7 +384,7 @@ fun DayCell(
                         Spacer(Modifier.width(4.dp))
                         ClubLogo(clubId = match.awayClubId, size = 18.dp)
                     }
-                    
+
                     if (isPlayed) {
                         val isHome = match.homeClubId == clubId
                         val userScore = if (isHome) match.homeScore else match.awayScore
@@ -416,6 +414,28 @@ fun DayCell(
                     tint = Color.Cyan.copy(alpha = 0.4f),
                     modifier = Modifier.size(14.dp).align(Alignment.BottomEnd)
                 )
+            }
+
+            Row(
+                modifier = Modifier.align(Alignment.BottomEnd),
+                horizontalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                if (model.match != null) Icon(Icons.Default.EmojiEvents, null, tint = FM_GREEN, modifier = Modifier.size(11.dp))
+                model.events.take(3).forEach { event ->
+                    val icon = when (event.type) {
+                        "TRAINING", "RECOVERY" -> Icons.Default.FitnessCenter
+                        "TRANSFER" -> Icons.Default.SwapHoriz
+                        "MEDIA", "BOARD" -> Icons.Default.Campaign
+                        else -> Icons.Default.CalendarToday
+                    }
+                    val tint = when (event.type) {
+                        "TRAINING" -> Color.Cyan
+                        "TRANSFER" -> Color(0xFFFFB74D)
+                        "MEDIA" -> Color(0xFFE040FB)
+                        else -> Color.White.copy(.75f)
+                    }
+                    Icon(icon, event.title, tint = tint, modifier = Modifier.size(11.dp))
+                }
             }
         }
     }
@@ -460,8 +480,16 @@ fun SelectedDatePanel(
             val isHome = dayMatch.homeClubId == clubId
             val opponentId = if (isHome) dayMatch.awayClubId else dayMatch.homeClubId
             val opponent = allClubs.find { it.id == opponentId }
-            
+
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Surface(color = FM_GREEN.copy(.14f), shape = RoundedCornerShape(20.dp)) {
+                    Text(
+                        text = when { dayMatch.cupId != null -> "CUP"; dayMatch.leagueId != null -> leagueName.uppercase(); else -> "FRIENDLY" },
+                        color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+                    )
+                }
+                Spacer(Modifier.height(10.dp))
                 Text(
                     text = opponent?.name?.uppercase() ?: "UNKNOWN OPPONENT",
                     color = Color.White,
@@ -469,20 +497,20 @@ fun SelectedDatePanel(
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center
                 )
-                
+
                 Spacer(Modifier.height(16.dp))
-                
+
                 ClubLogo(clubId = opponentId, size = 120.dp)
-                
+
                 Spacer(Modifier.height(16.dp))
-                
+
                 Text(
                     text = if (isHome) "HOME" else "AWAY",
                     color = FM_GREEN,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.ExtraBold
                 )
-                
+
                 if (dayMatch.isPlayed) {
                     Spacer(Modifier.height(12.dp))
                     Text(
@@ -501,11 +529,22 @@ fun SelectedDatePanel(
                 items(dayEvents) { event ->
                     EventCard(event)
                 }
-                
+
                 if (dayEvents.isEmpty()) {
                     item {
-                        Box(modifier = Modifier.fillMaxWidth().padding(top = 40.dp), contentAlignment = Alignment.Center) {
-                            Text("NO EVENTS", color = Color.Gray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                        Column(modifier = Modifier.fillMaxWidth().padding(top = 20.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("NO EVENTS"), color = Color.Gray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            Spacer(Modifier.height(18.dp))
+                            Text("UPCOMING", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                            matches.asSequence().filter { it.matchDate > selectedDate }.sortedBy { it.matchDate }.take(3).forEach { future ->
+                                val opponentId = if (future.homeClubId == clubId) future.awayClubId else future.homeClubId
+                                val opponent = allClubs.firstOrNull { it.id == opponentId }
+                                Row(Modifier.fillMaxWidth().padding(vertical = 7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                    Text(SimpleDateFormat("dd MMM", Locale.getDefault()).format(Date(future.matchDate)), color = Color.Gray, fontSize = 10.sp)
+                                    Text(opponent?.shortName ?: "TBD", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    Text(if (future.cupId != null) "CUP" else if (future.leagueId != null) "LEAGUE" else "FRIENDLY", color = FM_GREEN, fontSize = 9.sp)
+                                }
+                            }
                         }
                     }
                 }
@@ -532,7 +571,7 @@ fun EventCard(event: CalendarEventEntity) {
                 "TRAINING" -> Color.Cyan
                 else -> Color.White
             }
-            
+
             Icon(icon, null, tint = color, modifier = Modifier.size(20.dp))
             Spacer(Modifier.width(12.dp))
             Column {

@@ -81,6 +81,7 @@ class DataRepository @Inject constructor(
     // PLAYER
     // ======================================
 
+    fun getAllPlayers(): Flow<List<PlayerEntity>> = playerDao.getAllPlayers()
     fun getPlayersByClub(clubId: Long): Flow<List<PlayerEntity>> = playerDao.getPlayersByClub(clubId)
     suspend fun getPlayersByClubSync(clubId: Long): List<PlayerEntity> = playerDao.getPlayersByClubSync(clubId)
     suspend fun getPlayerById(playerId: Long): PlayerEntity? = playerDao.getPlayerById(playerId)

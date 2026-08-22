@@ -55,7 +55,7 @@ fun ProfileScreen(
     val users by viewModel.profiles.collectAsStateWithLifecycle()
     val selectedUser by viewModel.selectedProfile.collectAsStateWithLifecycle()
     val hasSave by viewModel.hasSave.collectAsStateWithLifecycle()
-    
+
     var showCreateForm by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableIntStateOf(0) }
     val context = LocalContext.current
@@ -226,7 +226,7 @@ fun ProfileScreen(
                                         colors = ButtonDefaults.buttonColors(containerColor = FM_Green),
                                         shape = RoundedCornerShape(6.dp)
                                     ) {
-                                        Text("CONTINUE CAREER", color = Color.Black, fontWeight = FontWeight.Black)
+                                        Text(com.mountsa.fmsimulation.ui.localization.localized("CONTINUE CAREER"), color = Color.Black, fontWeight = FontWeight.Black)
                                     }
                                 }
 
@@ -239,7 +239,7 @@ fun ProfileScreen(
                                     border = BorderStroke(1.dp, FM_Green),
                                     shape = RoundedCornerShape(6.dp)
                                 ) {
-                                    Text("START NEW CAREER", color = FM_Green, fontWeight = FontWeight.Bold)
+                                    Text(com.mountsa.fmsimulation.ui.localization.localized("START NEW CAREER"), color = FM_Green, fontWeight = FontWeight.Bold)
                                 }
                             }
                         }
@@ -265,7 +265,7 @@ fun InitialCreateButton(onClick: () -> Unit) {
         }
         Spacer(modifier = Modifier.height(12.dp))
         Text(
-            text = "NEW MANAGER",
+            text = com.mountsa.fmsimulation.ui.localization.localized("NEW MANAGER"),
             color = colorScheme.onSurface,
             fontWeight = FontWeight.Bold,
             fontSize = 12.sp,
@@ -433,7 +433,7 @@ fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
             modifier = Modifier.padding(24.dp).verticalScroll(rememberScrollState()),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text("CREATE NEW PROFILE", color = colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 16.sp, letterSpacing = 1.sp)
+            Text(com.mountsa.fmsimulation.ui.localization.localized("CREATE NEW PROFILE"), color = colorScheme.onSurface, fontWeight = FontWeight.Bold, fontSize = 16.sp, letterSpacing = 1.sp)
             Spacer(modifier = Modifier.height(20.dp))
             Box(
                 modifier = Modifier
@@ -454,7 +454,7 @@ fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
             OutlinedTextField(
                 value = name,
                 onValueChange = { if (it.length <= 20) name = it },
-                placeholder = { Text("Manager Name", fontSize = 12.sp) },
+                placeholder = { Text(com.mountsa.fmsimulation.ui.localization.localized("Manager Name"), fontSize = 12.sp) },
                 singleLine = true,
                 modifier = Modifier.fillMaxWidth(),
                 colors = OutlinedTextFieldDefaults.colors(
@@ -465,7 +465,7 @@ fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
             Spacer(modifier = Modifier.height(24.dp))
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 TextButton(onClick = onCancel, modifier = Modifier.weight(1f)) {
-                    Text("CANCEL", color = colorScheme.onSurfaceVariant)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("CANCEL"), color = colorScheme.onSurfaceVariant)
                 }
                 Button(
                     onClick = { if (name.isNotBlank()) onCreate(name, persistedAvatarPath) },
@@ -474,7 +474,7 @@ fun CreateUserForm(onCancel: () -> Unit, onCreate: (String, String?) -> Unit) {
                     colors = ButtonDefaults.buttonColors(containerColor = FM_Green),
                     shape = RoundedCornerShape(6.dp)
                 ) {
-                    Text("CREATE", color = Color.Black, fontWeight = FontWeight.Bold)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("CREATE"), color = Color.Black, fontWeight = FontWeight.Bold)
                 }
             }
         }

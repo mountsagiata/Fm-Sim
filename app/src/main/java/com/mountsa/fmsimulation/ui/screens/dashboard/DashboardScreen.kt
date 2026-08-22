@@ -28,6 +28,8 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.calendar.CalendarHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDateString
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDayName
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.HomeHub
+import com.mountsa.fmsimulation.ui.screens.dashboard.home.FinanceDetailHub
+import com.mountsa.fmsimulation.ui.screens.dashboard.home.ObjectivesDetailHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.inbox.InboxHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.league.LeagueHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.myclub.MyClubHub
@@ -128,7 +130,7 @@ fun DashboardScreen(
                                 contentScale = ContentScale.Fit
                             )
                         } else {
-                            Text("🛡️", fontSize = 20.sp)
+                            Text(com.mountsa.fmsimulation.ui.localization.localized("🛡️"), fontSize = 20.sp)
                         }
                     }
                 }
@@ -185,12 +187,14 @@ fun DashboardScreen(
                 Box(modifier = Modifier.fillMaxSize().padding(horizontal = contentPadding, vertical = 8.dp)) {
                     when (selectedTab) {
                         "Home" -> HomeHub(
-                            dashboardViewModel, 
+                            dashboardViewModel,
                             onNavigateToCalendar = { selectedTab = "Calendar" },
                             onNavigateToLeague = { selectedTab = "League" },
                             onNavigateToTraining = { selectedTab = "Training" },
                             onNavigateToSquad = { selectedTab = "Squad" },
-                            onNavigateToInbox = { selectedTab = "Inbox" }
+                            onNavigateToInbox = { selectedTab = "Inbox" },
+                            onNavigateToFinance = { selectedTab = "Finance" },
+                            onNavigateToObjectives = { selectedTab = "Objectives" }
                         )
                         "Squad" -> SquadHub(dashboardViewModel, squadViewModel)
                         "League" -> LeagueHub(dashboardViewModel)
@@ -201,6 +205,8 @@ fun DashboardScreen(
                         "Club" -> MyClubHub(dashboardViewModel)
                         "Shop" -> ShopHub(dashboardViewModel)
                         "Settings" -> SettingsHub(dashboardViewModel)
+                        "Finance" -> FinanceDetailHub(dashboardViewModel)
+                        "Objectives" -> ObjectivesDetailHub(dashboardViewModel)
                     }
                 }
             }
@@ -219,6 +225,12 @@ fun DashboardScreen(
             }
         }
 
+        if (selectedTab == "Settings") {
+            Surface(modifier = Modifier.fillMaxSize(), color = Color.Black) {
+                SettingsHub(dashboardViewModel, onBack = { selectedTab = "Home" })
+            }
+        }
+
         // --- MATCH FLOW OVERLAY ---
         if (matchFlow != MatchFlow.NONE) {
             Surface(
@@ -233,7 +245,7 @@ fun DashboardScreen(
                     MatchFlow.POST -> {
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                Text("POST-MATCH ANALYSIS", color = Color.White, fontSize = 28.sp, fontWeight = FontWeight.ExtraBold)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"), color = Color.White, fontSize = 28.sp, fontWeight = FontWeight.ExtraBold)
                                 Text(
                                     if (isLoading) loadingMessage else "The team is heading back to the dressing room.",
                                     color = Color.Gray,
@@ -241,14 +253,18 @@ fun DashboardScreen(
                                 )
                                 Spacer(Modifier.height(48.dp))
                                 if (isLoading) {
-                                    CircularProgressIndicator(color = FM_GREEN)
+                                    CircularProgressIndicator(
+                                        color = FM_GREEN,
+                                        strokeWidth = 4.dp,
+                                        modifier = Modifier.size(44.dp)
+                                    )
                                 } else {
                                     Button(
                                         onClick = { dashboardViewModel.finishMatchFlow() },
                                         colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
                                         modifier = Modifier.width(240.dp).height(56.dp)
                                     ) {
-                                        Text("RETURN TO HUB", color = Color.Black, fontWeight = FontWeight.Bold)
+                                        Text(com.mountsa.fmsimulation.ui.localization.localized("RETURN TO HUB"), color = Color.Black, fontWeight = FontWeight.Bold)
                                     }
                                 }
                             }
@@ -309,27 +325,30 @@ fun TopBar(
     val leagueName by dashboardViewModel.leagueName.collectAsStateWithLifecycle()
     val currentDate = career?.currentDate ?: System.currentTimeMillis()
 
+    BoxWithConstraints(Modifier.fillMaxWidth()) {
+    val compact = maxWidth < 600.dp
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 24.dp, vertical = 12.dp),
+            .heightIn(min = 54.dp)
+            .padding(horizontal = if (compact) 8.dp else 24.dp, vertical = if (compact) 6.dp else 12.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Column {
+        Column(modifier = Modifier.weight(1f).widthIn(min = 80.dp)) {
             Text(
                 text = club?.name ?: "Manchester United",
                 fontWeight = FontWeight.ExtraBold,
-                fontSize = 20.sp,
+                fontSize = if (compact) 14.sp else 20.sp,
                 color = Color.White
             )
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            if (!compact) Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     text = leagueName.ifEmpty { "Premier League" },
                     fontSize = 12.sp,
                     color = Color.Gray
                 )
-                Text("  |  ", fontSize = 12.sp, color = Color.Gray)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("  |  "), fontSize = 12.sp, color = Color.Gray)
                 Text(
                     text = club?.shortName ?: "MUN",
                     fontSize = 12.sp,
@@ -340,15 +359,15 @@ fun TopBar(
 
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(14.dp)
+            horizontalArrangement = Arrangement.spacedBy(if (compact) 6.dp else 14.dp)
         ) {
             Surface(
                 shape = RoundedCornerShape(12.dp),
                 color = FM_CARD_BG,
-                modifier = Modifier.height(40.dp)
+                modifier = Modifier.height(if (compact) 34.dp else 40.dp)
             ) {
                 Row(
-                    modifier = Modifier.padding(horizontal = 16.dp),
+                    modifier = Modifier.padding(horizontal = if (compact) 8.dp else 16.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Icon(
@@ -360,7 +379,7 @@ fun TopBar(
                     Spacer(Modifier.width(4.dp))
                     Text(
                         text = "€${String.format(Locale.getDefault(), "%,d", (club?.budget ?: 0L) / 1_000_000)}M",
-                        fontSize = 16.sp,
+                        fontSize = if (compact) 12.sp else 16.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.White
                     )
@@ -373,7 +392,7 @@ fun TopBar(
                 color = if (isInboxSelected) FM_GREEN.copy(alpha = 0.15f) else FM_CARD_BG,
                 border = if (isInboxSelected) androidx.compose.foundation.BorderStroke(1.5.dp, FM_GREEN) else null,
                 modifier = Modifier
-                    .size(40.dp)
+                    .size(if (compact) 34.dp else 40.dp)
                     .clickable { onInboxClick() }
             ) {
                 Box(contentAlignment = Alignment.Center) {
@@ -396,7 +415,7 @@ fun TopBar(
                     shape = RoundedCornerShape(12.dp),
                     color = if (isCalendarSelected) FM_GREEN.copy(alpha = 0.15f) else FM_CARD_BG,
                     border = if (isCalendarSelected) androidx.compose.foundation.BorderStroke(1.5.dp, FM_GREEN) else null,
-                    modifier = Modifier.size(40.dp)
+                    modifier = Modifier.size(if (compact) 34.dp else 40.dp)
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
@@ -408,7 +427,7 @@ fun TopBar(
                     }
                 }
 
-                Column(verticalArrangement = Arrangement.Center) {
+                if (!compact) Column(verticalArrangement = Arrangement.Center) {
                     Text(
                         text = getDayName(currentDate),
                         fontSize = 12.sp,
@@ -431,7 +450,7 @@ fun TopBar(
                 color = if (isSettingsSelected) FM_GREEN.copy(alpha = 0.15f) else FM_CARD_BG,
                 border = if (isSettingsSelected) androidx.compose.foundation.BorderStroke(1.5.dp, FM_GREEN) else null,
                 modifier = Modifier
-                    .size(40.dp)
+                    .size(if (compact) 34.dp else 40.dp)
                     .clickable { onSettingsClick() }
             ) {
                 Box(contentAlignment = Alignment.Center) {
@@ -444,5 +463,6 @@ fun TopBar(
                 }
             }
         }
+    }
     }
 }

@@ -38,13 +38,13 @@ fun ShopHub(viewModel: DashboardViewModel) {
         AppColumn(modifier = Modifier.weight(2f), title = "EXCLUSIVE SHOP") {
             Column(modifier = Modifier.padding(12.dp)) {
                 Text(
-                    text = "UNLOCK PREMIUM FEATURES",
+                    text = com.mountsa.fmsimulation.ui.localization.localized("UNLOCK PREMIUM FEATURES"),
                     fontWeight = FontWeight.Bold,
                     fontSize = 10.sp,
                     color = FM_GREEN,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
-                
+
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(130.dp),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -63,18 +63,18 @@ fun ShopHub(viewModel: DashboardViewModel) {
                 }
             }
         }
-        
+
         AppColumn(modifier = Modifier.weight(1f), title = "CURRENCY & SUBSCRIPTION") {
             Column(modifier = Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                Text("Manager Points: 1,250", fontWeight = FontWeight.Bold, fontSize = 14.sp, color = Color.White)
-                Text("Membership: FREE", fontSize = 12.sp, color = Color.Gray)
-                
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Manager Points: 1,250"), fontWeight = FontWeight.Bold, fontSize = 14.sp, color = Color.White)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Membership: FREE"), fontSize = 12.sp, color = Color.Gray)
+
                 androidx.compose.material3.Button(
                     onClick = { },
                     modifier = Modifier.fillMaxWidth(),
                     colors = androidx.compose.material3.ButtonDefaults.buttonColors(containerColor = FM_GREEN)
                 ) {
-                    Text("GO PREMIUM", color = Color.Black, fontWeight = FontWeight.Bold)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("GO PREMIUM"), color = Color.Black, fontWeight = FontWeight.Bold)
                 }
             }
         }

@@ -1,190 +1,166 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.settings
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
+import kotlin.math.roundToInt
+
+private enum class SettingsSection(val title: String) { GAME("Game"), DISPLAY("Display"), AUDIO("Audio"), LANGUAGE("Language") }
 
 @Composable
-fun SettingsHub(viewModel: DashboardViewModel) {
-    var showResetConfirm by remember { mutableStateOf(false) }
+fun SettingsHub(viewModel: DashboardViewModel, onBack: (() -> Unit)? = null) {
+    var selected by remember { mutableStateOf(SettingsSection.GAME) }
+    var reset by remember { mutableStateOf(false) }
     val musicEnabled by viewModel.audioManager.musicEnabled.collectAsStateWithLifecycle()
     val sfxEnabled by viewModel.audioManager.sfxEnabled.collectAsStateWithLifecycle()
-    val musicVolume by viewModel.audioManager.musicVolume.collectAsStateWithLifecycle()
-    val sfxVolume by viewModel.audioManager.sfxVolume.collectAsStateWithLifecycle()
-    val crowdVolume by viewModel.audioManager.crowdVolume.collectAsStateWithLifecycle()
+    val music by viewModel.audioManager.musicVolume.collectAsStateWithLifecycle()
+    val sfx by viewModel.audioManager.sfxVolume.collectAsStateWithLifecycle()
+    val crowd by viewModel.audioManager.crowdVolume.collectAsStateWithLifecycle()
     val language by viewModel.localeManager.language.collectAsStateWithLifecycle()
 
-    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-      val compact = maxWidth < 720.dp
-      val settingsContent: @Composable ColumnScope.() -> Unit = {
+    Column(Modifier.fillMaxSize().background(Color.Black)) {
+    BoxWithConstraints(Modifier.weight(1f).fillMaxWidth().padding(14.dp)) {
+        val compact = maxWidth < 700.dp
+        if (compact) Column(Modifier.fillMaxSize()) {
+            SettingsTabs(selected) { selected = it }
+            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, onBack, Modifier.fillMaxSize())
+        } else Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
             Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .verticalScroll(rememberScrollState())
-                    .padding(16.dp),
-                verticalArrangement = Arrangement.spacedBy(20.dp)
+                Modifier.width(190.dp).fillMaxHeight().background(Color.White.copy(.025f), RoundedCornerShape(16.dp)).padding(12.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                SettingToggle("Auto-Save after Match", true)
-                SettingToggle("Show Attributes as Progress Bars", true)
-                SettingToggle("Enable Match Commentary", true)
-                SettingToggle("Show Player Faces", false)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("SETTINGS"), color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Black, modifier = Modifier.padding(8.dp))
+                SettingsSection.entries.forEach { section ->
+                    FilterChip(
+                        selected = selected == section, onClick = { selected = section },
+                            label = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title), modifier = Modifier.fillMaxWidth()) }, modifier = Modifier.fillMaxWidth(),
+                        colors = FilterChipDefaults.filterChipColors(selectedContainerColor = FM_GREEN.copy(.18f))
+                    )
+                }
+            }
+            SettingsPane(selected, musicEnabled, sfxEnabled, music, sfx, crowd, language, viewModel, { reset = true }, onBack, Modifier.weight(1f))
+        }
+    }
+    }
+    if (reset) AlertDialog(
+        onDismissRequest = { reset = false }, title = { Text(com.mountsa.fmsimulation.ui.localization.localized("Reset career data?")) },
+        text = { Text(com.mountsa.fmsimulation.ui.localization.localized("This permanently deletes the active career, fixtures, match history and standings.")) },
+        confirmButton = { TextButton(onClick = { reset = false; viewModel.resetCareer() }) { Text(com.mountsa.fmsimulation.ui.localization.localized("RESET"), color = Color.Red) } },
+        dismissButton = { TextButton(onClick = { reset = false }) { Text(com.mountsa.fmsimulation.ui.localization.localized("CANCEL")) } }
+    )
+}
 
-                Spacer(Modifier.height(4.dp))
-                Text("AUDIO", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = FM_GREEN)
+@Composable
+private fun SettingsTabs(selected: SettingsSection, onSelect: (SettingsSection) -> Unit) {
+    ScrollableTabRow(selectedTabIndex = selected.ordinal, edgePadding = 8.dp, containerColor = Color.Transparent) {
+        SettingsSection.entries.forEach { section -> Tab(selected == section, { onSelect(section) }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized(section.title)) }) }
+    }
+}
 
-                SettingToggle(
-                    label = "Music",
-                    initialValue = musicEnabled,
-                    onCheckedChange = { viewModel.audioManager.setMusicEnabled(it) }
-                )
-                VolumeSetting("Music volume", musicVolume, viewModel.audioManager::setMusicVolume)
-                VolumeSetting("Sound effects volume", sfxVolume, viewModel.audioManager::setSfxVolume)
-                VolumeSetting("Crowd volume", crowdVolume, viewModel.audioManager::setCrowdVolume)
-
-                Text("LANGUAGE", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = FM_GREEN)
+@Composable
+private fun SettingsPane(
+    section: SettingsSection, musicEnabled: Boolean, sfxEnabled: Boolean,
+    music: Float, sfx: Float, crowd: Float, language: String,
+    viewModel: DashboardViewModel, onReset: () -> Unit, onBack: (() -> Unit)?, modifier: Modifier
+) {
+    Column(
+        modifier.fillMaxHeight().background(Color.White.copy(.025f), RoundedCornerShape(16.dp))
+            .verticalScroll(rememberScrollState()).padding(12.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp)
+    ) {
+        Text(com.mountsa.fmsimulation.ui.localization.localized(section.title).uppercase(), color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp)
+        when (section) {
+            SettingsSection.GAME -> {
+                SettingToggle("Auto-save after match", true)
+                SettingToggle("Enable match commentary", true)
+                SettingToggle("Confirm before advancing on matchday", true)
+                SettingToggle("Pause automatically at half-time", true)
+                HorizontalDivider(color = Color.White.copy(.08f))
+                Button(onClick = onReset, colors = ButtonDefaults.buttonColors(containerColor = Color.Red.copy(.75f))) {
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("RESET CAREER DATA"), color = Color.White, fontWeight = FontWeight.Bold)
+                }
+            }
+            SettingsSection.DISPLAY -> {
+                SettingToggle("Show player faces", true)
+                SettingToggle("Show attributes as progress bars", true)
+                SettingToggle("Compact squad rows", false)
+                SettingToggle("Reduce animations", false)
+                Text(com.mountsa.fmsimulation.ui.localization.localized("Layout adapts automatically for phones, tablets, foldables and landscape screens."), color = Color.Gray, fontSize = 12.sp)
+            }
+            SettingsSection.AUDIO -> {
+                SettingToggle("Music", musicEnabled, viewModel.audioManager::setMusicEnabled)
+                VolumeSlider("Music", music, viewModel.audioManager::setMusicVolume)
+                SettingToggle("Sound effects", sfxEnabled, viewModel.audioManager::setSfxEnabled)
+                VolumeSlider("Sound effects", sfx, viewModel.audioManager::setSfxVolume)
+                VolumeSlider("Crowd", crowd, viewModel.audioManager::setCrowdVolume)
+            }
+            SettingsSection.LANGUAGE -> {
                 LanguageSetting(language, viewModel.localeManager::setLanguage)
-                SettingToggle(
-                    label = "Sound Effects (SFX)",
-                    initialValue = sfxEnabled,
-                    onCheckedChange = { viewModel.audioManager.setSfxEnabled(it) }
-                )
-                
-                Spacer(Modifier.height(10.dp))
-                
-                Button(
-                    onClick = { showResetConfirm = true },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.Red.copy(alpha = 0.7f)),
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("RESET CAREER DATA", color = Color.White, fontWeight = FontWeight.Bold)
+                if (onBack != null) {
+                    Spacer(Modifier.height(8.dp))
+                    OutlinedButton(onClick = onBack, modifier = Modifier.width(150.dp).height(38.dp)) { Text("‹  BACK", color = FM_GREEN, fontWeight = FontWeight.Bold) }
                 }
             }
-      }
-      val aboutContent: @Composable ColumnScope.() -> Unit = {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .verticalScroll(rememberScrollState())
-                    .padding(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text("Football Manager Simulation", fontWeight = FontWeight.Bold, fontSize = 14.sp, color = Color.White)
-                Text("Version 1.9.0", fontSize = 11.sp, color = Color.Gray)
-                Spacer(Modifier.height(24.dp))
-                Text("Developed by Mountsa", fontSize = 10.sp, color = Color.Gray)
-                Text("© 2024 All Rights Reserved", fontSize = 10.sp, color = Color.Gray)
-                
-                Spacer(Modifier.height(24.dp))
-                
-                Text(
-                    "Support & Feedback",
-                    fontSize = 11.sp,
-                    color = FM_GREEN,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.padding(bottom = 8.dp)
-                )
-            }
-      }
-
-      if (compact) {
-        Column(
-          modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()),
-          verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-          AppColumn(modifier = Modifier.fillMaxWidth().heightIn(min = 560.dp), title = "GAME SETTINGS", content = settingsContent)
-          AppColumn(modifier = Modifier.fillMaxWidth().heightIn(min = 260.dp), title = "ABOUT", content = aboutContent)
         }
-      } else {
-        Row(modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-          AppColumn(modifier = Modifier.weight(2f), title = "GAME SETTINGS", content = settingsContent)
-          AppColumn(modifier = Modifier.weight(1f), title = "ABOUT", content = aboutContent)
-        }
-      }
-    }
-
-    if (showResetConfirm) {
-        AlertDialog(
-            onDismissRequest = { showResetConfirm = false },
-            title = { Text("Reset Career Data?") },
-            text = { Text("This permanently deletes your current career, match history, and standings. This cannot be undone.") },
-            confirmButton = {
-                TextButton(onClick = {
-                    showResetConfirm = false
-                    viewModel.resetCareer()
-                }) {
-                    Text("RESET", color = Color.Red, fontWeight = FontWeight.Bold)
-                }
-            },
-            dismissButton = {
-                TextButton(onClick = { showResetConfirm = false }) {
-                    Text("CANCEL")
-                }
-            }
-        )
     }
 }
 
 @Composable
-private fun VolumeSetting(label: String, value: Float, onValueChange: (Float) -> Unit) {
-    Column {
+private fun VolumeSlider(label: String, value: Float, onChange: (Float) -> Unit) {
+    var widthPx by remember { mutableIntStateOf(1) }
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Text(label, fontSize = 13.sp, color = Color.White)
-            Text("${(value * 100).toInt()}%", fontSize = 12.sp, color = FM_GREEN)
+            Text(com.mountsa.fmsimulation.ui.localization.localized(label), color = Color.White, fontSize = 13.sp)
+            Text(com.mountsa.fmsimulation.ui.localization.localized("${(value * 100).toInt()}%"), color = FM_GREEN, fontWeight = FontWeight.Bold, fontSize = 12.sp)
         }
-        Slider(value = value, onValueChange = onValueChange, valueRange = 0f..1f)
+        Box(
+            Modifier.fillMaxWidth().height(28.dp).onSizeChanged { widthPx = it.width }
+                .pointerInput(widthPx) { detectTapGestures { onChange((it.x / widthPx).coerceIn(0f, 1f)) } }
+                .pointerInput(widthPx) { detectDragGestures { change, _ -> change.consume(); onChange((change.position.x / widthPx).coerceIn(0f, 1f)) } },
+            contentAlignment = Alignment.CenterStart
+        ) {
+            Box(Modifier.fillMaxWidth().height(5.dp).clip(CircleShape).background(Color.White.copy(.12f)))
+            Box(Modifier.fillMaxWidth(value).height(5.dp).clip(CircleShape).background(FM_GREEN))
+            Box(Modifier.offset { IntOffset(((widthPx - 16.dp.roundToPx()) * value).roundToInt(), 0) }.size(16.dp).background(FM_GREEN, CircleShape).border(3.dp, Color.Black, CircleShape))
+        }
     }
 }
 
 @Composable
-private fun LanguageSetting(selected: String, onLanguageSelected: (String) -> Unit) {
-    var expanded by remember { mutableStateOf(false) }
-    val languages = linkedMapOf("system" to "System", "id" to "Bahasa Indonesia", "en" to "English", "pt" to "Português", "ja" to "日本語")
-    Box {
-        OutlinedButton(onClick = { expanded = true }, modifier = Modifier.fillMaxWidth()) {
-            Text(languages[selected] ?: "System", modifier = Modifier.weight(1f))
-        }
-        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
-            languages.forEach { (tag, label) ->
-                DropdownMenuItem(text = { Text(label) }, onClick = {
-                    expanded = false
-                    onLanguageSelected(tag)
-                })
-            }
-        }
-    }
+private fun LanguageSetting(selected: String, onSelect: (String) -> Unit) {
+    val languages = linkedMapOf("system" to "System default", "id" to "Bahasa Indonesia", "en" to "English", "pt" to "Português", "ja" to "日本語")
+    languages.forEach { (tag, label) -> Row(Modifier.fillMaxWidth().height(42.dp), verticalAlignment = Alignment.CenterVertically) {
+        RadioButton(selected == tag, { onSelect(tag) }, modifier = Modifier.scale(.8f)); Text(label, color = Color.White, modifier = Modifier.padding(start = 6.dp), fontSize = 13.sp)
+    } }
 }
 
 @Composable
 fun SettingToggle(label: String, initialValue: Boolean, onCheckedChange: (Boolean) -> Unit = {}) {
     var checked by remember(initialValue) { mutableStateOf(initialValue) }
-    Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        Text(label, fontSize = 13.sp, color = Color.White)
-        Switch(
-            checked = checked,
-            onCheckedChange = {
-                checked = it
-                onCheckedChange(it)
-            },
-            colors = SwitchDefaults.colors(
-                checkedThumbColor = FM_GREEN,
-                checkedTrackColor = FM_GREEN.copy(alpha = 0.3f)
-            )
-        )
+    Row(Modifier.fillMaxWidth().height(44.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+        Text(com.mountsa.fmsimulation.ui.localization.localized(label), color = Color.White, fontSize = 13.sp, modifier = Modifier.weight(1f))
+        Switch(checked, { checked = it; onCheckedChange(it) }, modifier = Modifier.scale(.78f), colors = SwitchDefaults.colors(checkedThumbColor = Color.Black, checkedTrackColor = FM_GREEN))
     }
 }

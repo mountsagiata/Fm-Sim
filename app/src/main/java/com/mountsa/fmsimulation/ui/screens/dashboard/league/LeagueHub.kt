@@ -34,7 +34,7 @@ fun LeagueHub(viewModel: DashboardViewModel) {
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             StandingHeader()
-            
+
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(bottom = 16.dp)
@@ -61,16 +61,16 @@ fun StandingHeader() {
             .padding(horizontal = 12.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text("#", modifier = Modifier.width(24.dp), fontSize = 10.sp, color = Color.Gray, fontWeight = FontWeight.Bold)
-        Text("CLUB", modifier = Modifier.weight(1f), fontSize = 10.sp, color = Color.Gray, fontWeight = FontWeight.Bold)
-        
+        Text(com.mountsa.fmsimulation.ui.localization.localized("#"), modifier = Modifier.width(24.dp), fontSize = 10.sp, color = Color.Gray, fontWeight = FontWeight.Bold)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("CLUB"), modifier = Modifier.weight(1f), fontSize = 10.sp, color = Color.Gray, fontWeight = FontWeight.Bold)
+
         Row(modifier = Modifier.width(160.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
-            HeaderText("P")
-            HeaderText("W")
-            HeaderText("D")
-            HeaderText("L")
-            HeaderText("GD")
-            HeaderText("PTS")
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("P"))
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("W"))
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("D"))
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("L"))
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("GD"))
+            HeaderText(com.mountsa.fmsimulation.ui.localization.localized("PTS"))
         }
     }
 }
@@ -96,7 +96,7 @@ fun StandingRow(
 ) {
     val club = allClubs.find { it.id == entry.clubId }
     val bgColor = if (isUserClub) FM_GREEN.copy(alpha = 0.15f) else Color.Transparent
-    
+
     Surface(
         color = bgColor,
         modifier = Modifier.fillMaxWidth()

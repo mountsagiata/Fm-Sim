@@ -29,6 +29,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val uiState: DashboardUiState by viewModel.uiState.collectAsStateWithLifecycle()
     val session = uiState.matchSession ?: return
     val match = session.match
+    val userClubId = uiState.club?.id
+    val userIsHome = userClubId == match.homeClubId
 
     var visible by remember { mutableStateOf(false) }
 
@@ -41,34 +43,28 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val isAwayWin = match.awayScore > match.homeScore
     val isDraw = match.homeScore == match.awayScore
 
-    val resultColor = when {
-        isHomeWin -> FM_GREEN
-        isAwayWin -> Color.Red
-        else -> Color.Yellow
-    }
+    val userWon = if (userIsHome) isHomeWin else isAwayWin
+    val userLost = if (userIsHome) isAwayWin else isHomeWin
+    val resultColor = when { userWon -> FM_GREEN; userLost -> Color(0xFFFF5252); else -> Color(0xFFFFD740) }
+    val resultText = when { userWon -> "VICTORY"; userLost -> "DEFEAT"; else -> "DRAW" }
 
-    val resultText = when {
-        isHomeWin -> "VICTORY"
-        isAwayWin -> "DEFEAT"
-        else -> "DRAW"
-    }
-
-    Box(
+    BoxWithConstraints(
         modifier = Modifier
             .fillMaxSize()
             .background(FM_DARK_BG)
             .padding(16.dp)
     ) {
+        val compactHeight = maxHeight < 480.dp
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState()),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            verticalArrangement = if (compactHeight) Arrangement.Top else Arrangement.Center
         ) {
             // HEADER
             AnimatedVisibility(
-                visible = visible,
+                visible = visible && !isDraw,
                 enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { -it / 2 })
             ) {
                 Surface(
@@ -89,6 +85,13 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
 
             Spacer(Modifier.height(4.dp))
 
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                Surface(color = FM_GREEN.copy(.16f), shape = RoundedCornerShape(50), modifier = Modifier.size(28.dp)) {
+                    Box(contentAlignment = Alignment.Center) { Text(session.competitionName.take(2).uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Black) }
+                }
+                Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+            }
+
             // TEXT "FULL TIME"
             AnimatedVisibility(
                 visible = visible,
@@ -103,7 +106,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 )
             }
 
-            Spacer(Modifier.height(12.dp))
+            Spacer(Modifier.height(if (compactHeight) 4.dp else 12.dp))
 
             // SCORE SECTION
             Row(
@@ -120,9 +123,12 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 ) { homeWon ->
                     ResultTeamModern(
                         clubId = match.homeClubId,
-                        name = session.homeClubName,
+                        name = session.homeShortName,
+                        sideLabel = "HOME",
+                        sideColor = Color(0xFF42A5F5),
                         score = match.homeScore,
                         isWinner = homeWon,
+                        compact = compactHeight,
                         modifier = Modifier.weight(1f)
                     )
                 }
@@ -131,7 +137,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     visible = visible,
                     enter = scaleIn(tween(500)) + fadeIn(tween(500))
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(92.dp)) {
                         Surface(
                             color = Color.White.copy(alpha = 0.05f),
                             shape = RoundedCornerShape(50),
@@ -146,12 +152,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                                 )
                             }
                         }
-                        Text(
-                            match.stage ?: "",
-                            color = Color.Gray.copy(alpha = 0.3f),
-                            fontSize = 7.sp,
-                            letterSpacing = 1.sp
-                        )
                     }
                 }
 
@@ -164,15 +164,18 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 ) { awayWon ->
                     ResultTeamModern(
                         clubId = match.awayClubId,
-                        name = session.awayClubName,
+                        name = session.awayShortName,
+                        sideLabel = "AWAY",
+                        sideColor = FM_GREEN,
                         score = match.awayScore,
                         isWinner = awayWon,
+                        compact = compactHeight,
                         modifier = Modifier.weight(1f)
                     )
                 }
             }
 
-            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.height(if (compactHeight) 8.dp else 20.dp))
 
             // STATS CARD
             AnimatedVisibility(
@@ -191,7 +194,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                             ).value
                         )
                 ) {
-                    Column(modifier = Modifier.padding(14.dp)) {
+                    Column(modifier = Modifier.padding(if (compactHeight) 8.dp else 14.dp)) {
                         Text(
                             "MATCH STATS",
                             color = Color.Gray.copy(alpha = 0.5f),
@@ -209,7 +212,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 }
             }
 
-            Spacer(Modifier.height(24.dp))
+            Spacer(Modifier.height(if (compactHeight) 8.dp else 24.dp))
 
             // CONTINUE BUTTON
             AnimatedVisibility(
@@ -220,8 +223,8 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     onClick = { viewModel.nextMatchFlowStep() },
                     colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
                     modifier = Modifier
-                        .fillMaxWidth(0.7f)
-                        .height(50.dp)
+                        .width(220.dp)
+                        .height(if (compactHeight) 36.dp else 42.dp)
                         .scale(
                             animateFloatAsState(
                                 targetValue = if (visible) 1f else 0.95f,
@@ -233,7 +236,7 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                         ),
                     shape = RoundedCornerShape(12.dp)
                 ) {
-                    Text("CONTINUE", color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 14.sp, letterSpacing = 1.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("CONTINUE"), color = Color.Black, fontWeight = FontWeight.Bold, fontSize = 14.sp, letterSpacing = 1.sp)
                 }
             }
         }
@@ -241,14 +244,16 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
 }
 
 @Composable
-fun ResultTeamModern(clubId: Long, name: String, score: Int, isWinner: Boolean, modifier: Modifier) {
+fun ResultTeamModern(clubId: Long, name: String, sideLabel: String, sideColor: Color, score: Int, isWinner: Boolean, compact: Boolean = false, modifier: Modifier) {
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier) {
-        ClubLogo(clubId = clubId, size = 50.dp)
-        Spacer(Modifier.height(6.dp))
+        Text(sideLabel, color = sideColor, fontSize = 8.sp, fontWeight = FontWeight.Black, letterSpacing = 1.sp)
+        Spacer(Modifier.height(2.dp))
+        ClubLogo(clubId = clubId, size = if (compact) 36.dp else 50.dp)
+        Spacer(Modifier.height(if (compact) 2.dp else 6.dp))
         Text(
             name,
             color = if (isWinner) Color.White else Color.White.copy(alpha = 0.5f),
-            fontSize = 14.sp,
+            fontSize = if (compact) 11.sp else 14.sp,
             fontWeight = if (isWinner) FontWeight.Bold else FontWeight.Normal,
             textAlign = androidx.compose.ui.text.style.TextAlign.Center,
             maxLines = 2
@@ -263,7 +268,7 @@ fun ResultTeamModern(clubId: Long, name: String, score: Int, isWinner: Boolean, 
             Text(
                 s.toString(),
                 color = if (isWinner) FM_GREEN else Color.White.copy(alpha = 0.4f),
-                fontSize = 52.sp,
+                fontSize = if (compact) 38.sp else 52.sp,
                 fontWeight = if (isWinner) FontWeight.Black else FontWeight.Light
             )
         }

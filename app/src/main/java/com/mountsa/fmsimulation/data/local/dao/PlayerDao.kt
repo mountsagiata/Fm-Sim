@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface PlayerDao {
 
+    @Query("SELECT * FROM players ORDER BY overall DESC")
+    fun getAllPlayers(): Flow<List<PlayerEntity>>
+
     @Insert(
         onConflict =
             OnConflictStrategy.REPLACE

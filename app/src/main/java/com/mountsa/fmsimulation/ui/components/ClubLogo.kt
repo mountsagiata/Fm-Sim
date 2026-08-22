@@ -55,7 +55,7 @@ fun ClubLogo(
                 contentScale = ContentScale.Fit
             )
         } else {
-            Text("🛡️", fontSize = size.value.sp)
+            Text(com.mountsa.fmsimulation.ui.localization.localized("🛡️"), fontSize = size.value.sp)
         }
     }
 }

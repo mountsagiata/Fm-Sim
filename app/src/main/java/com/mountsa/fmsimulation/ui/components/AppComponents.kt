@@ -45,7 +45,7 @@ fun AppColumn(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = title.uppercase(),
+                    text = com.mountsa.fmsimulation.ui.localization.localized(title).uppercase(),
                     fontSize = 8.sp,
                     fontWeight = FontWeight.ExtraBold,
                     color = Color(0xFF00FF5F),
@@ -85,7 +85,7 @@ fun AppButton(
         ),
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 0.dp)
     ) {
-        Text(text = text, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+        Text(text = com.mountsa.fmsimulation.ui.localization.localized(text), fontSize = 12.sp, fontWeight = FontWeight.Bold)
     }
 }
 
@@ -219,7 +219,7 @@ fun FacilityItem(name: String, progress: Float) {
     Column(modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text(name, fontSize = 10.sp, color = Color.White)
-            Text("${(progress * 100).toInt()}%", fontSize = 9.sp, color = Color(0xFF00FF5F))
+            Text(com.mountsa.fmsimulation.ui.localization.localized("${(progress * 100).toInt()}%"), fontSize = 9.sp, color = Color(0xFF00FF5F))
         }
         Spacer(Modifier.height(4.dp))
         LinearProgressIndicator(

@@ -27,8 +27,8 @@ fun TeamOverviewCard(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 10.dp, vertical = 4.dp),
-            verticalArrangement = Arrangement.SpaceEvenly
+                .padding(horizontal = 10.dp, vertical = 2.dp),
+            verticalArrangement = Arrangement.spacedBy(3.dp)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -40,15 +40,15 @@ fun TeamOverviewCard(
                     StatRowGreen(label = "MID", value = club?.midfield ?: 0)
                     StatRowGreen(label = "DEF", value = club?.defense ?: 0)
                 }
-                
+
                 Spacer(Modifier.width(12.dp))
-                
+
                 // Overall Display
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("OVR", fontSize = 10.sp, color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("OVR"), fontSize = 10.sp, color = Color.Gray)
                     Text(
                         text = (club?.overall ?: 0).toString(),
-                        fontSize = 24.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.ExtraBold,
                         color = FM_GREEN
                     )
@@ -61,19 +61,19 @@ fun TeamOverviewCard(
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Column {
-                    Text("ACADEMY", fontSize = 9.sp, color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("ACADEMY"), fontSize = 9.sp, color = Color.Gray)
                     Text(
                         text = "${club?.academyQuality ?: 0}/100",
-                        fontSize = 11.sp,
+                        fontSize = 9.sp,
                         color = Color.White,
                         fontWeight = FontWeight.Bold
                     )
                 }
                 Column(horizontalAlignment = Alignment.End) {
-                    Text("AI PERSONALITY", fontSize = 9.sp, color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("AI PERSONALITY"), fontSize = 9.sp, color = Color.Gray)
                     Text(
                         text = club?.managerPersonality?.name?.replace("_", " ") ?: "BALANCED",
-                        fontSize = 11.sp,
+                        fontSize = 9.sp,
                         color = FM_GREEN,
                         fontWeight = FontWeight.Bold
                     )
@@ -86,7 +86,7 @@ fun TeamOverviewCard(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 Column(modifier = Modifier.weight(1f)) {
-                    Text("BOARD SATISFACTION", fontSize = 8.sp, color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("BOARD SATISFACTION"), fontSize = 8.sp, color = Color.Gray)
                     LinearProgressIndicator(
                         progress = { (club?.boardSatisfaction ?: 100) / 100f },
                         modifier = Modifier.fillMaxWidth().height(3.dp),
@@ -95,7 +95,7 @@ fun TeamOverviewCard(
                     )
                 }
                 Column(modifier = Modifier.weight(1f)) {
-                    Text("FAN SATISFACTION", fontSize = 8.sp, color = Color.Gray)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("FAN SATISFACTION"), fontSize = 8.sp, color = Color.Gray)
                     LinearProgressIndicator(
                         progress = { (club?.fanSatisfaction ?: 100) / 100f },
                         modifier = Modifier.fillMaxWidth().height(3.dp),
