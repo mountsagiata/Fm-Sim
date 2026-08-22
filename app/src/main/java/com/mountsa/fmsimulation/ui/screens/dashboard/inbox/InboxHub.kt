@@ -71,7 +71,7 @@ fun InboxHub(viewModel: DashboardViewModel) {
                 }
             } else {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("Select a message to read", color = Color.Gray, fontSize = 12.sp)
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("Select a message to read"), color = Color.Gray, fontSize = 12.sp)
                 }
             }
         }
