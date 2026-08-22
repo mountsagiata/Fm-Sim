@@ -60,6 +60,9 @@ class DashboardViewModel @Inject constructor(
     val localeManager: com.mountsa.fmsimulation.utils.LocaleManager
 ) : ViewModel() {
 
+    val allPlayers: StateFlow<List<PlayerEntity>> = repository.getAllPlayers()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
     private val gson = Gson()
     
     private val _isLoading = MutableStateFlow(false)
