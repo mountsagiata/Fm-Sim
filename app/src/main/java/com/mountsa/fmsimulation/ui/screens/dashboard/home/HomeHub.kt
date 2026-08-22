@@ -55,7 +55,7 @@ fun HomeHub(
 
     Box(modifier = Modifier.fillMaxSize()) {
         BoxWithConstraints(Modifier.fillMaxSize()) {
-        val compact = maxWidth < 900.dp || maxHeight < 520.dp
+        val compact = maxWidth < 600.dp
         if (compact) {
             Column(
                 Modifier.fillMaxSize().verticalScroll(androidx.compose.foundation.rememberScrollState()),
