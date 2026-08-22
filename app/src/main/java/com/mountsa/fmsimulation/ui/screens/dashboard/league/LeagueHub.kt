@@ -7,6 +7,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ChevronLeft
+import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -25,25 +28,52 @@ import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 
 @Composable
 fun LeagueHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val standings = uiState.leagueStandings
+    val standings by viewModel.selectedLeagueStandings.collectAsStateWithLifecycle()
+    val leagues by viewModel.allLeagues.collectAsStateWithLifecycle()
+    val selectedLeagueId by viewModel.selectedLeagueId.collectAsStateWithLifecycle()
+    val selectedLeague = leagues.firstOrNull { it.id == selectedLeagueId }
     val userClubId = uiState.club?.id ?: -1L
     val allPlayers by viewModel.allPlayers.collectAsStateWithLifecycle()
-    val leagueClubIds = remember(uiState.allClubs, uiState.club?.leagueId) {
-        uiState.allClubs.filter { it.leagueId == uiState.club?.leagueId }.map { it.id }.toSet()
+    val leagueClubIds = remember(uiState.allClubs, selectedLeagueId) {
+        uiState.allClubs.filter { it.leagueId == selectedLeagueId }.map { it.id }.toSet()
     }
     val leaguePlayers = remember(allPlayers, leagueClubIds) { allPlayers.filter { it.clubId in leagueClubIds } }
     var selectedTab by remember { mutableIntStateOf(0) }
 
     AppColumn(
         modifier = Modifier.fillMaxSize(),
-        title = uiState.club?.let { "LEAGUE TABLE" } ?: "LEAGUE"
+        title = ""
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
+            Row(
+                Modifier.fillMaxWidth().height(42.dp),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val currentIndex = leagues.indexOfFirst { it.id == selectedLeagueId }.coerceAtLeast(0)
+                IconButton(onClick = { leagues.getOrNull((currentIndex - 1).coerceAtLeast(0))?.let { viewModel.selectLeague(it.id) } }) {
+                    Icon(Icons.Default.ChevronLeft, contentDescription = "Previous league", tint = FM_GREEN)
+                }
+                selectedLeague?.let { LeagueLogo(it.id, 26.dp) }
+                Text(
+                    selectedLeague?.name?.uppercase() ?: "LEAGUE TABLE",
+                    color = Color.White,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Black,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.widthIn(min = 160.dp).padding(horizontal = 8.dp)
+                )
+                IconButton(onClick = { leagues.getOrNull((currentIndex + 1).coerceAtMost(leagues.lastIndex))?.let { viewModel.selectLeague(it.id) } }) {
+                    Icon(Icons.Default.ChevronRight, contentDescription = "Next league", tint = FM_GREEN)
+                }
+            }
             TabRow(selectedTabIndex = selectedTab, containerColor = Color.Transparent) {
                 Tab(selectedTab == 0, { selectedTab = 0 }, text = { Text("TABLE", fontSize = 10.sp) })
                 Tab(selectedTab == 1, { selectedTab = 1 }, text = { Text("TOP PLAYERS & AWARDS", fontSize = 10.sp) })
@@ -120,6 +150,8 @@ private fun PlayerLeaderColumn(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text("${players.indexOf(player) + 1}", color = Color.Gray, fontSize = 9.sp, modifier = Modifier.width(20.dp))
+                        PlayerAvatar(player, 26.dp)
+                        Spacer(Modifier.width(6.dp))
                         Column(Modifier.weight(1f)) {
                             Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1)
                             Text(player.position, color = Color.Gray, fontSize = 8.sp)

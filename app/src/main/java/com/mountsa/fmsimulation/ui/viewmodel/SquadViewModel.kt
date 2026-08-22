@@ -2,6 +2,8 @@ package com.mountsa.fmsimulation.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.mountsa.fmsimulation.core.enums.Mentality
 import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
@@ -17,6 +19,7 @@ import javax.inject.Inject
 class SquadViewModel @Inject constructor(
     private val repository: DataRepository
 ) : ViewModel() {
+    private val gson = Gson()
 
     private val _clubId = MutableStateFlow<Long?>(null)
     val clubId = _clubId.asStateFlow()
@@ -59,10 +62,20 @@ class SquadViewModel @Inject constructor(
                     // Load current lineup
                     val squad = repository.getPlayersByClubSync(id)
                     val starters = MutableList<PlayerEntity?>(11) { null }
-                    squad.filter { it.startingIndex in 0..10 }.forEach { 
+                    squad.filter { it.startingIndex in 0..10 }.forEach {
                         starters[it.startingIndex] = it
                     }
                     _startingXI.value = starters
+                    _tacticalRoles.value = repository.getMetadata(tacticalRoleKey(id))
+                        ?.let { json ->
+                            runCatching {
+                                gson.fromJson<Map<Long, String>>(
+                                    json,
+                                    object : TypeToken<Map<Long, String>>() {}.type
+                                )
+                            }.getOrNull()
+                        }
+                        .orEmpty()
                 }
             }
         }
@@ -124,8 +137,16 @@ class SquadViewModel @Inject constructor(
     }
 
     fun updateTacticalRole(playerId: Long, role: String) {
-        _tacticalRoles.update { current -> current + (playerId to role) }
+        val updated = _tacticalRoles.value + (playerId to role)
+        _tacticalRoles.value = updated
+        _clubId.value?.let { id ->
+            viewModelScope.launch {
+                repository.saveMetadata(tacticalRoleKey(id), gson.toJson(updated))
+            }
+        }
     }
+
+    private fun tacticalRoleKey(clubId: Long) = "TACTICAL_ROLES_$clubId"
 
     fun openPlayerSelector(index: Int) {
         selectedSlotIndex = index

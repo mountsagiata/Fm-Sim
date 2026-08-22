@@ -1,5 +1,10 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -27,9 +32,11 @@ import com.mountsa.fmsimulation.data.local.entities.SaveCareerEntity
 import com.mountsa.fmsimulation.ui.screens.dashboard.calendar.CalendarHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDateString
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDayName
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.HomeHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.FinanceDetailHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.ObjectivesDetailHub
+import com.mountsa.fmsimulation.ui.screens.dashboard.fixtures.CompetitionFixturesHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.inbox.InboxHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.league.LeagueHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.myclub.MyClubHub
@@ -46,6 +53,7 @@ import com.mountsa.fmsimulation.ui.viewmodel.SquadViewModel
 import androidx.compose.foundation.layout.BoxWithConstraints
 import com.mountsa.fmsimulation.utils.AudioManager
 import java.util.Locale
+import kotlinx.coroutines.delay
 
 val FM_GREEN = Color(0xFF00FF5F)
 val FM_DARK_BG = Color(0xFF080808)
@@ -58,7 +66,7 @@ private val ICON_SIZE = 22.dp
 private val CORNER_RADIUS = 12.dp
 
 /** Number of items in the sidebar (logo + 8 menu entries), used to size items to fit. */
-private const val SIDEBAR_SLOT_COUNT = 9
+private const val SIDEBAR_SLOT_COUNT = 10
 
 @Composable
 fun DashboardScreen(
@@ -71,20 +79,30 @@ fun DashboardScreen(
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
     val isLoading by dashboardViewModel.isLoading.collectAsStateWithLifecycle()
     val loadingMessage by dashboardViewModel.loadingMessage.collectAsStateWithLifecycle()
-    val context = LocalContext.current
     val audioManager = dashboardViewModel.audioManager
+    val autosaveVisible by dashboardViewModel.autosaveVisible.collectAsStateWithLifecycle()
+    val trackAnnouncement by audioManager.trackAnnouncement.collectAsStateWithLifecycle()
+    var showTrackAnnouncement by remember { mutableStateOf(false) }
+    val context = LocalContext.current
 
     // Background music: plays while on the dashboard, pauses during the live
     // match simulation (crowd ambience takes over then), resumes afterwards.
     DisposableEffect(Unit) {
         audioManager.playBackgroundMusic()
-        onDispose { audioManager.stopBackgroundMusic() }
+        onDispose { }
     }
     LaunchedEffect(matchFlow) {
         if (matchFlow == MatchFlow.SIMULATION) {
             audioManager.stopBackgroundMusic()
         } else {
             audioManager.playBackgroundMusic()
+        }
+    }
+    LaunchedEffect(trackAnnouncement?.sequence) {
+        if (trackAnnouncement != null && matchFlow != MatchFlow.SIMULATION) {
+            showTrackAnnouncement = true
+            delay(2_800)
+            showTrackAnnouncement = false
         }
     }
 
@@ -148,6 +166,7 @@ fun DashboardScreen(
                         Triple("Home", Icons.Default.Home, "Home"),
                         Triple("Squad", Icons.Default.Groups, "Squad"),
                         Triple("League", Icons.Default.TableRows, "League"),
+                        Triple("Fixtures", Icons.Default.EventNote, "Fixtures"),
                         Triple("Training", Icons.Default.FitnessCenter, "Training"),
                         Triple("Transfer", Icons.Default.SwapHoriz, "Transfers"),
                         Triple("Scouting", Icons.Default.PersonSearch, "Scouting"),
@@ -194,10 +213,12 @@ fun DashboardScreen(
                             onNavigateToSquad = { selectedTab = "Squad" },
                             onNavigateToInbox = { selectedTab = "Inbox" },
                             onNavigateToFinance = { selectedTab = "Finance" },
-                            onNavigateToObjectives = { selectedTab = "Objectives" }
+                            onNavigateToObjectives = { selectedTab = "Objectives" },
+                            onNavigateToFixtures = { selectedTab = "Fixtures" }
                         )
                         "Squad" -> SquadHub(dashboardViewModel, squadViewModel)
                         "League" -> LeagueHub(dashboardViewModel)
+                        "Fixtures" -> CompetitionFixturesHub(dashboardViewModel)
                         "Training" -> TrainingHub(dashboardViewModel)
                         "Inbox" -> InboxHub(dashboardViewModel)
                         "Transfer" -> TransferHub(dashboardViewModel)
@@ -252,6 +273,26 @@ fun DashboardScreen(
                                     color = Color.Gray,
                                     fontSize = 14.sp
                                 )
+                                if (isLoading) {
+                                    Spacer(Modifier.height(12.dp))
+                                    val stages = listOf(
+                                        "Match report & interview" to "report",
+                                        "Other fixtures & standings" to "fixtures",
+                                        "Injuries, cards & finances" to "injuries",
+                                        "Career autosave" to "saving"
+                                    )
+                                    Column(Modifier.widthIn(min = 250.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                                        stages.forEach { (label, key) ->
+                                            val active = loadingMessage.contains(key, ignoreCase = true) ||
+                                                (key == "report" && loadingMessage.contains("interview", true))
+                                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                                Box(Modifier.size(6.dp).background(if (active) FM_GREEN else Color.Gray.copy(.35f), androidx.compose.foundation.shape.CircleShape))
+                                                Spacer(Modifier.width(8.dp))
+                                                Text(label, color = if (active) Color.White else Color.Gray.copy(.55f), fontSize = 10.sp)
+                                            }
+                                        }
+                                    }
+                                }
                                 Spacer(Modifier.height(24.dp))
                                 if (isLoading) {
                                     CircularProgressIndicator(
@@ -273,6 +314,43 @@ fun DashboardScreen(
                         }
                     }
                     else -> {}
+                }
+            }
+        }
+
+        AnimatedVisibility(
+            visible = showTrackAnnouncement && matchFlow != MatchFlow.SIMULATION,
+            modifier = Modifier.align(Alignment.TopEnd).padding(top = 72.dp, end = 18.dp),
+            enter = slideInHorizontally(initialOffsetX = { it }) + fadeIn(),
+            exit = slideOutHorizontally(targetOffsetX = { it }) + fadeOut()
+        ) {
+            Surface(
+                color = Color(0xEE111418),
+                shape = RoundedCornerShape(10.dp),
+                border = androidx.compose.foundation.BorderStroke(1.dp, FM_GREEN.copy(.35f))
+            ) {
+                Row(
+                    Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Icon(Icons.Default.Album, contentDescription = null, tint = FM_GREEN, modifier = Modifier.size(18.dp))
+                    Text(trackAnnouncement?.title.orEmpty(), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                }
+            }
+        }
+
+        AnimatedVisibility(
+            visible = autosaveVisible,
+            modifier = Modifier.align(Alignment.TopEnd).padding(18.dp),
+            enter = slideInHorizontally(initialOffsetX = { it }) + fadeIn(),
+            exit = slideOutHorizontally(targetOffsetX = { it }) + fadeOut()
+        ) {
+            Surface(color = Color(0xEE102218), shape = RoundedCornerShape(9.dp)) {
+                Row(Modifier.padding(horizontal = 12.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Default.CloudDone, null, tint = FM_GREEN, modifier = Modifier.size(16.dp))
+                    Spacer(Modifier.width(7.dp))
+                    Text("CAREER AUTOSAVED", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Black)
                 }
             }
         }
@@ -337,7 +415,12 @@ fun TopBar(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Column(modifier = Modifier.weight(1f).widthIn(min = 80.dp)) {
+        Row(modifier = Modifier.weight(1f).widthIn(min = 80.dp), verticalAlignment = Alignment.CenterVertically) {
+            club?.leagueId?.takeIf { it > 0L }?.let { leagueId ->
+                LeagueLogo(leagueId = leagueId, size = if (compact) 24.dp else 32.dp)
+                Spacer(Modifier.width(if (compact) 6.dp else 9.dp))
+            }
+        Column {
             Text(
                 text = club?.name ?: "Manchester United",
                 fontWeight = FontWeight.ExtraBold,
@@ -357,6 +440,7 @@ fun TopBar(
                     color = Color.Gray
                 )
             }
+        }
         }
 
         Row(

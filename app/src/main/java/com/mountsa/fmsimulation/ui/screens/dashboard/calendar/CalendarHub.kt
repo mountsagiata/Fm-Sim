@@ -5,6 +5,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -13,6 +14,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -118,6 +120,7 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
+                .horizontalScroll(rememberScrollState())
                 .padding(bottom = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -321,22 +324,27 @@ fun CalendarGrid(
         days
     }
 
-    LazyVerticalGrid(
-        columns = GridCells.Fixed(7),
-        modifier = Modifier.fillMaxSize(),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        userScrollEnabled = false
-    ) {
-        items(gridData) { model ->
-            DayCell(
-                model = model,
-                clubId = clubId,
-                allClubs = allClubs,
-                onClick = {
-                    if (model.timestamp != -1L) onDateClick(model.timestamp)
-                }
-            )
+    BoxWithConstraints(Modifier.fillMaxSize()) {
+        val gap = if (maxHeight < 420.dp) 4.dp else 7.dp
+        val rowHeight = ((maxHeight - gap * 5) / 6).coerceAtLeast(42.dp)
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(7),
+            modifier = Modifier.fillMaxSize(),
+            horizontalArrangement = Arrangement.spacedBy(gap),
+            verticalArrangement = Arrangement.spacedBy(gap),
+            userScrollEnabled = false
+        ) {
+            items(gridData) { model ->
+                DayCell(
+                    model = model,
+                    clubId = clubId,
+                    allClubs = allClubs,
+                    modifier = Modifier.height(rowHeight),
+                    onClick = {
+                        if (model.timestamp != -1L) onDateClick(model.timestamp)
+                    }
+                )
+            }
         }
     }
 }
@@ -346,6 +354,7 @@ fun DayCell(
     model: DayGridModel,
     clubId: Long,
     allClubs: List<ClubEntity>,
+    modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {
     val isMatchDay = model.match != null
@@ -360,9 +369,8 @@ fun DayCell(
     )
 
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .aspectRatio(1.2f)
             .alpha(if (model.isCurrentMonth) 1f else 0.28f)
             .clip(RoundedCornerShape(12.dp))
             .background(Color(0xFF05090D))

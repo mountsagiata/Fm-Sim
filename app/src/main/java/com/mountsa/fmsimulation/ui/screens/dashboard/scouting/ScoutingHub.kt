@@ -21,6 +21,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mountsa.fmsimulation.data.local.entities.ScoutEntity
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.PlayerAvatar
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 
 @Composable
@@ -84,10 +85,31 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                         placeholder = { Text("Name or position") }, modifier = Modifier.fillMaxWidth()
                     )
                     if (query.isNotBlank()) LazyColumn(Modifier.fillMaxWidth()) {
-                        items(allPlayers.filter { it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true) }.take(20)) { player ->
-                            Row(Modifier.fillMaxWidth().clickable(enabled = selectedScout != null) { query = "Assigned: ${player.shortName}" }.padding(7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                                Text(player.shortName, color = Color.White, fontSize = 10.sp)
-                                Text("${player.position} • ${player.overall}", color = FM_GREEN, fontSize = 10.sp)
+                        items(allPlayers.filter { it.clubId != uiState.club?.id && (it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true)) }.take(20)) { player ->
+                            Row(
+                                Modifier.fillMaxWidth().padding(vertical = 5.dp, horizontal = 4.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                PlayerAvatar(player, 31.dp)
+                                Spacer(Modifier.width(7.dp))
+                                Column(Modifier.weight(1f)) {
+                                    Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    Text("${player.position} • OVR ${player.overall}", color = Color.Gray, fontSize = 8.sp)
+                                }
+                                OutlinedButton(
+                                    onClick = { selectedScout?.let { viewModel.assignScoutToPlayer(it, player) } },
+                                    enabled = selectedScout != null,
+                                    modifier = Modifier.height(28.dp),
+                                    contentPadding = PaddingValues(horizontal = 8.dp)
+                                ) { Text("SCOUT", color = FM_GREEN, fontSize = 8.sp) }
+                                Spacer(Modifier.width(4.dp))
+                                Button(
+                                    onClick = { viewModel.buyPlayer(player.id) },
+                                    modifier = Modifier.height(28.dp),
+                                    contentPadding = PaddingValues(horizontal = 8.dp),
+                                    colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)
+                                ) { Text("BUY", color = Color.Black, fontSize = 8.sp, fontWeight = FontWeight.Black) }
                             }
                         }
                     }

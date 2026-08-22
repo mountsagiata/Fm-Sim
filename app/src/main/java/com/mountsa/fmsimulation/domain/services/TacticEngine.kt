@@ -62,5 +62,30 @@ class TacticEngine @Inject constructor() {
         return TacticImpact(att, mid, def)
     }
 
+    fun calculateRoleImpact(players: List<PlayerEntity>, roles: Map<Long, String>): TacticImpact {
+        var att = 1f
+        var mid = 1f
+        var def = 1f
+        players.forEach { player ->
+            when (roles[player.id]) {
+                "Finisher", "Poacher", "Inside Forward" -> att += .012f
+                "Target Man", "Pressing Forward", "Winger" -> att += .007f
+                "Advanced Playmaker", "Deep Lying Playmaker", "Mezzala" -> mid += .012f
+                "Box to Box", "Ball Winning Midfielder" -> {
+                    mid += .007f
+                    def += .005f
+                }
+                "Ball Playing Defender", "Sweeper Keeper" -> mid += .006f
+                "Central Defender", "Stopper", "Cover", "Full Back" -> def += .012f
+                "Wing Back" -> {
+                    att += .005f
+                    def += .006f
+                }
+                "Goalkeeper" -> def += .008f
+            }
+        }
+        return TacticImpact(att.coerceAtMost(1.12f), mid.coerceAtMost(1.12f), def.coerceAtMost(1.12f))
+    }
+
     data class TacticImpact(val att: Float, val mid: Float, val def: Float)
 }

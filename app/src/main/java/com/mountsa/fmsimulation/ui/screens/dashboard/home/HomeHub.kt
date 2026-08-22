@@ -47,7 +47,8 @@ fun HomeHub(
     onNavigateToSquad: () -> Unit = {},
     onNavigateToInbox: () -> Unit = {},
     onNavigateToFinance: () -> Unit = {},
-    onNavigateToObjectives: () -> Unit = {}
+    onNavigateToObjectives: () -> Unit = {},
+    onNavigateToFixtures: () -> Unit = {}
 ) {
     var selectedCardIndex by rememberSaveable {
         mutableIntStateOf(-1)
@@ -75,7 +76,7 @@ fun HomeHub(
                     NewsCard(Modifier.weight(1f).clickable { onNavigateToInbox() }, uiState.inboxMessages)
                     ObjectiveCard(Modifier.weight(1f).clickable { onNavigateToObjectives() }, uiState.objectives)
                 }
-                UpcomingFixturesSection(Modifier.fillMaxWidth().heightIn(min = 150.dp), uiState.fixtures, onNavigateToCalendar)
+                UpcomingFixturesSection(Modifier.fillMaxWidth().heightIn(min = 150.dp), uiState.fixtures, onNavigateToFixtures)
                 LeagueStatsSection(Modifier.fillMaxWidth().heightIn(min = 140.dp), uiState.topScorer, uiState.topAssister, uiState.bestPlayer, onNavigateToLeague)
             }
         } else {
@@ -202,7 +203,7 @@ fun HomeHub(
                 UpcomingFixturesSection(
                     modifier = Modifier.weight(4.1f),
                     fixtures = uiState.fixtures,
-                    onNavigateToCalendar = onNavigateToCalendar
+                    onNavigateToCalendar = onNavigateToFixtures
                 )
 
                 // 8. Top Player

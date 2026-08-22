@@ -15,11 +15,17 @@ class TransferManager @Inject constructor(
         if (offer.status != TransferStatus.ACCEPTED) return
 
         val player = repository.getPlayerById(offer.playerId) ?: return
+        val usedNumbers = repository.getPlayersByClubSync(offer.buyerClubId)
+            .map { it.shirtNumber }
+            .filter { it > 0 }
+            .toSet()
+        val newShirtNumber = (1..99).firstOrNull { it !in usedNumbers } ?: 0
         
         // Update player's club and contract details
         val updatedPlayer = player.copy(
             clubId = offer.buyerClubId,
             wage = offer.wageOffered,
+            shirtNumber = newShirtNumber,
             startingIndex = -1 // Move to reserves of new club initially
         )
         

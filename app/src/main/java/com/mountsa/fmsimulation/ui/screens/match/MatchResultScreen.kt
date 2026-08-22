@@ -69,20 +69,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                 Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
             }
 
-            // TEXT "FULL TIME"
-            AnimatedVisibility(
-                visible = visible,
-                enter = fadeIn(tween(400)) + slideInVertically(initialOffsetY = { -it / 2 })
-            ) {
-                Text(
-                    "FULL TIME",
-                    color = Color.Gray.copy(alpha = 0.5f),
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 11.sp,
-                    letterSpacing = 4.sp
-                )
-            }
-
             Spacer(Modifier.height(if (compactHeight) 4.dp else 12.dp))
 
             // SCORE SECTION
@@ -115,6 +101,14 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                     enter = scaleIn(tween(500)) + fadeIn(tween(500))
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(92.dp)) {
+                        Text(
+                            "FT",
+                            color = Color.Gray.copy(alpha = .75f),
+                            fontWeight = FontWeight.Black,
+                            fontSize = 9.sp,
+                            letterSpacing = 1.5.sp
+                        )
+                        Spacer(Modifier.height(2.dp))
                         Text(
                             resultText,
                             color = resultColor,
@@ -254,7 +248,7 @@ fun ResultTeamModern(clubId: Long, name: String, sideLabel: String, sideColor: C
             Text(
                 s.toString(),
                 color = if (isWinner) FM_GREEN else Color.White.copy(alpha = 0.4f),
-                fontSize = if (compact) 28.sp else 36.sp,
+                fontSize = if (compact) 24.sp else 30.sp,
                 fontWeight = if (isWinner) FontWeight.Black else FontWeight.Light
             )
         }

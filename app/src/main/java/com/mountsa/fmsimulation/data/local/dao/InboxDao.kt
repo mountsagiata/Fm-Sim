@@ -15,6 +15,9 @@ interface InboxDao {
         inbox: InboxEntity
     )
 
+    @Update
+    suspend fun updateInbox(inbox: InboxEntity)
+
     @Query(
         """
         SELECT * FROM inbox

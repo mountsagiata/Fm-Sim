@@ -92,10 +92,6 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     val visibleEvents = events.filter { it.minute <= currentMinute }
     val latestEvent = visibleEvents.lastOrNull()
-    val latestCommentary = latestEvent?.commentary?.takeIf { it.isNotBlank() }
-        ?: latestEvent?.let(::fallbackCommentary)
-        ?: "The teams are ready. Live commentary will appear here."
-
     val currentHomeScore = visibleEvents.lastOrNull()?.scoreHome ?: 0
     val currentAwayScore = visibleEvents.lastOrNull()?.scoreAway ?: 0
 
@@ -135,13 +131,8 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     Spacer(Modifier.width(6.dp))
                     Text(session.homeShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
                 }
-                Surface(
-                    color = FM_GREEN.copy(alpha = 0.15f),
-                    shape = RoundedCornerShape(4.dp),
-                    modifier = Modifier.padding(horizontal = 8.dp)
-                ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Row(
-                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(5.dp)
                     ) {
@@ -150,6 +141,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         }
                         Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)
                     }
+                    Text(matchDayInfo(match.matchDate, session.stadiumName), color = Color.Gray, fontSize = 6.5.sp, maxLines = 1)
                 }
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
@@ -167,11 +159,14 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 })
                     }
                 ) { score ->
-                    Text(score.toString(), color = Color.White, fontSize = 30.sp, fontWeight = FontWeight.Black)
+                    Text(score.toString(), color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.Black)
                 }
-                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(horizontal = 20.dp)) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.padding(horizontal = 20.dp).clickable(enabled = halfTimePaused) { halfTimePaused = false }
+                ) {
                     Text(if (currentMinute >= 90) "FT" else if (halfTimePaused) "HT" else "$currentMinute'", color = FM_GREEN, fontSize = 20.sp, fontWeight = FontWeight.Bold)
-                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "HALF-TIME" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
+                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "TAP TO START 2ND HALF" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
                 }
                 AnimatedContent(
                     targetState = currentAwayScore,
@@ -180,7 +175,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         fadeOut(tween(200)) + slideOutVertically(targetOffsetY = { it / 2 })
                     }
                 ) { score ->
-                    Text(score.toString(), color = Color.White, fontSize = 30.sp, fontWeight = FontWeight.Black)
+                    Text(score.toString(), color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.Black)
                 }
             }
 
@@ -234,7 +229,23 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     Box(Modifier.weight(1f).fillMaxWidth().background(Color.White.copy(.03f), RoundedCornerShape(8.dp)).padding(8.dp)) {
                         when (rightTab) {
                             0 -> LazyColumn(state = listState, modifier = Modifier.fillMaxSize()) { items(visibleEvents) { event -> EventText(event.minute, event.type.name.replace("_", " "), event.type, event.playerName) } }
-                            1 -> Text(latestCommentary, color = Color.White, fontSize = 11.sp, lineHeight = 16.sp)
+                            1 -> LazyColumn(
+                                modifier = Modifier.fillMaxSize(),
+                                verticalArrangement = Arrangement.spacedBy(4.dp)
+                            ) {
+                                if (visibleEvents.isEmpty()) {
+                                    item {
+                                        Text(
+                                            "The teams are ready. Live commentary will appear here.",
+                                            color = Color.Gray,
+                                            fontSize = 10.sp
+                                        )
+                                    }
+                                }
+                                items(visibleEvents) { event ->
+                                    CommentaryRow(event)
+                                }
+                            }
                             else -> Column { val p = currentMinute / 90f; StatRowModern("Shots", (match.shotsHome*p).toInt(), (match.shotsAway*p).toInt()); StatRowModern("Target", (match.shotsOnTargetHome*p).toInt(), (match.shotsOnTargetAway*p).toInt()); StatRowModern("Poss %", match.possessionHome, match.possessionAway); StatRowModern("Corners", (match.cornersHome*p).toInt(), (match.cornersAway*p).toInt()) }
                         }
                     }
@@ -243,14 +254,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
                         listOf(2,4,8).forEach { value -> FilterChip(speed == value, { speed = value }, { Text("${value}x", fontSize = 9.sp) }) }
-                        if (halfTimePaused) {
-                            Button(
-                                onClick = { halfTimePaused = false },
-                                modifier = Modifier.height(34.dp),
-                                contentPadding = PaddingValues(horizontal = 10.dp),
-                                colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)
-                            ) { Text("2ND HALF", color = Color.Black, fontSize = 8.sp, fontWeight = FontWeight.Black) }
-                        } else if (autoPaused) {
+                        if (!halfTimePaused && autoPaused) {
                             OutlinedButton(onClick = { autoPaused = false }, modifier = Modifier.height(34.dp), contentPadding = PaddingValues(horizontal = 10.dp)) {
                                 Text("RESUME", color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)
                             }
@@ -707,6 +711,27 @@ fun EventText(min: Int, text: String, type: EventType, playerName: String = "") 
         if (playerName.isNotEmpty()) {
             Text(playerName, color = Color.Gray.copy(alpha = 0.6f), fontSize = 9.sp)
         }
+    }
+}
+
+@Composable
+private fun CommentaryRow(event: MatchEvent) {
+    val commentary = event.commentary.takeIf { it.isNotBlank() } ?: fallbackCommentary(event)
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.White.copy(alpha = .025f), RoundedCornerShape(5.dp))
+            .padding(horizontal = 7.dp, vertical = 5.dp),
+        verticalAlignment = Alignment.Top
+    ) {
+        Text(
+            "${event.minute}'",
+            color = FM_GREEN,
+            fontSize = 10.sp,
+            fontWeight = FontWeight.Black,
+            modifier = Modifier.width(30.dp)
+        )
+        Text(commentary, color = Color.White, fontSize = 10.sp, lineHeight = 14.sp)
     }
 }
 

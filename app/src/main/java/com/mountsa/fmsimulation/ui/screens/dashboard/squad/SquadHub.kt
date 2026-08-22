@@ -44,6 +44,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
@@ -87,6 +88,9 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     BoxWithConstraints(Modifier.fillMaxSize()) {
     val compact = maxWidth < 600.dp
     if (compact) {
+        if (selectedPlayer != null) {
+            PlayerDetailView(player = selectedPlayer!!, onClose = { squadViewModel.selectPlayer(null) })
+        } else {
         Column(Modifier.fillMaxSize()) {
             TabRow(selectedTabIndex = compactPage, containerColor = Color.Transparent) {
                 Tab(compactPage == 0, { compactPage = 0 }, text = { Text(com.mountsa.fmsimulation.ui.localization.localized("PITCH")) })
@@ -131,6 +135,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                     )
                 }
             }
+        }
         }
     } else Row(
         modifier = Modifier.fillMaxSize(),
@@ -388,6 +393,25 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                val ratingColor = when {
+                    player.overall >= 85 -> Color(0xFFFFD54F)
+                    player.overall >= 75 -> FM_GREEN
+                    else -> Color(0xFF64B5F6)
+                }
+                Column(
+                    Modifier.fillMaxWidth()
+                        .background(
+                            Brush.linearGradient(listOf(ratingColor.copy(.42f), Color(0xFF11151B), Color.Black)),
+                            RoundedCornerShape(18.dp)
+                        )
+                        .border(1.dp, ratingColor.copy(.8f), RoundedCornerShape(18.dp))
+                        .padding(12.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Text(player.overall.toString(), color = ratingColor, fontSize = 24.sp, fontWeight = FontWeight.Black)
+                    Text(player.position, color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
+                }
                 Box(
                     modifier = Modifier
                         .size(100.dp) // Ukuran avatar diperbesar agar lebih jelas
@@ -445,6 +469,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                 )
 
                 Spacer(Modifier.height(16.dp))
+                }
             }
 
             // --- Pengelompokan Data Statistik Berdasarkan Kategori ---

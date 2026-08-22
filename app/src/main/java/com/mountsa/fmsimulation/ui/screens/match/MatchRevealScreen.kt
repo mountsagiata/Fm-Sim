@@ -73,6 +73,11 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                         color = Color.Gray.copy(alpha = 0.6f),
                         fontSize = 11.sp
                     )
+                    Text(
+                        text = matchDayInfo(session.match.matchDate, session.stadiumName),
+                        color = Color.White.copy(alpha = .62f),
+                        fontSize = 9.sp
+                    )
                 }
             }
 

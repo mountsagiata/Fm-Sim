@@ -59,10 +59,9 @@ class GameDayProcessor @Inject constructor(
             transferRumorService.generateRumors(clubId)
             transferOfferGenerator.generateRandomOffers(clubId)
             aiTransferEngine.processAIClubsTransfers()
-            
-            if (isDeadlineDay(calendar)) {
-                pressConferenceGenerator.generatePressConference(clubId, PressType.TRANSFER)
-            }
+        }
+        if (isTransferWindowOpen(currentDate) && isDeadlineDay(calendar)) {
+            pressConferenceGenerator.generatePressConference(clubId, PressType.TRANSFER)
         }
 
         val todaysMatches = repository.getMatchesByDate(currentDate).filter { !it.isPlayed }

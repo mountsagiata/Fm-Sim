@@ -53,6 +53,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
                     LeagueLogo(leagueId = leagueId, size = 30.dp)
                 }
                 Text(session.competitionName.uppercase(), color = Color.White, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+                Text(matchDayInfo(session.match.matchDate, session.stadiumName), color = Color.Gray, fontSize = 7.sp, maxLines = 1)
             }
             TeamHeading(session.match.awayClubId, session.awayShortName, "AWAY", FM_GREEN, Modifier.weight(1f), Alignment.End)
         }
@@ -94,7 +95,13 @@ private fun LineupColumn(players: List<PlayerEntity>, color: Color, fromLeft: Bo
                         .clickable(enabled = enabled) { onSelect(player.id) }.padding(horizontal = 10.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Text("${index + 1}", color = color, fontSize = 10.sp, fontWeight = FontWeight.Bold, modifier = Modifier.width(24.dp))
+                    Text(
+                        (player.shirtNumber.takeIf { it > 0 } ?: (index + 1)).toString(),
+                        color = color,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.width(24.dp)
+                    )
                     LineupAvatar(player)
                     Spacer(Modifier.width(8.dp))
                     Text(player.shortName, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Medium, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
