@@ -1,17 +1,22 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.squad
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items as gridItems
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.HorizontalDivider
@@ -32,7 +37,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -42,6 +50,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
+import com.mountsa.fmsimulation.data.local.entities.ClubEntity
+import com.mountsa.fmsimulation.core.enums.Mentality
 import com.mountsa.fmsimulation.domain.models.Formation
 import com.mountsa.fmsimulation.domain.models.Formations
 import com.mountsa.fmsimulation.ui.components.AppColumn
@@ -49,6 +59,8 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.ui.viewmodel.SquadViewModel
 import java.util.Locale
+import kotlin.math.pow
+import kotlin.math.roundToInt
 
 @Composable
 fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewModel) {
@@ -59,6 +71,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     val showPlayerSelector by squadViewModel.showPlayerSelector.collectAsStateWithLifecycle()
     val selectedPlayer by squadViewModel.selectedPlayer.collectAsStateWithLifecycle()
     var compactPage by remember { mutableIntStateOf(0) }
+    var widePanel by remember { mutableIntStateOf(0) }
 
     LaunchedEffect(club) {
         club?.let { squadViewModel.setClubId(it.id) }
@@ -74,7 +87,12 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
             }
             if (compactPage == 0) {
                 Box(Modifier.weight(1f).fillMaxWidth()) {
-                    TacticsPitch(selectedFormation, startingXI) { squadViewModel.openPlayerSelector(it) }
+                    TacticsPitch(
+                        selectedFormation, startingXI,
+                        onSlotClick = { squadViewModel.openPlayerSelector(it) },
+                        onPlayerMove = squadViewModel::moveStartingPlayer,
+                        onPositionMove = squadViewModel::moveFormationPosition
+                    )
                     IconButton(
                         onClick = { squadViewModel.saveLineup() },
                         modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp).size(40.dp).background(FM_GREEN, CircleShape)
@@ -91,13 +109,13 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                 }
             }
             Row(
-                Modifier.fillMaxWidth().height(54.dp).horizontalScroll(rememberScrollState()).padding(vertical = 6.dp),
+                Modifier.fillMaxWidth().height(82.dp).horizontalScroll(rememberScrollState()).padding(vertical = 4.dp),
                 horizontalArrangement = Arrangement.spacedBy(6.dp)
             ) {
                 Formations.DEFAULT_FORMATIONS.forEach { formation ->
                     FormationButton(
                         formation.name, formation.name == selectedFormation.name,
-                        { squadViewModel.selectFormation(formation) }, Modifier.width(76.dp)
+                        { squadViewModel.selectFormation(formation) }, Modifier.width(92.dp)
                     )
                 }
             }
@@ -117,7 +135,9 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                         TacticsPitch(
                             formation = selectedFormation,
                             startingXI = startingXI,
-                            onSlotClick = { index -> squadViewModel.openPlayerSelector(index) }
+                            onSlotClick = { index -> squadViewModel.openPlayerSelector(index) },
+                            onPlayerMove = squadViewModel::moveStartingPlayer,
+                            onPositionMove = squadViewModel::moveFormationPosition
                         )
 
                         // Save Button
@@ -144,44 +164,61 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
         // --- Kolom Kanan: Squad List & Formation Selection ---
         Column(
             modifier = Modifier.weight(0.9f),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            // Squad List
-            AppColumn(
-                modifier = Modifier.weight(1f),
-                title = ""
-            ) {
-                Column(modifier = Modifier.fillMaxSize()) {
-                    SquadHeaderRow()
+            TabRow(selectedTabIndex = widePanel, containerColor = Color(0xFF0D1115)) {
+                listOf("SQUAD", "FORMATION", "INSTRUCTIONS", "ROLES").forEachIndexed { index, title ->
+                    Tab(
+                        selected = widePanel == index,
+                        onClick = { widePanel = index },
+                        text = { Text(title, fontSize = 10.sp, maxLines = 1) }
+                    )
+                }
+            }
 
-                    LazyColumn(modifier = Modifier.weight(1f)) {
-                        items(players.sortedByDescending { it.overall }) { player ->
-                            val isStarting = startingXI.any { it?.id == player.id }
-                            DetailedSquadPlayerRow(
-                                player = player,
-                                isStarting = isStarting,
-                                onClick = { squadViewModel.selectPlayer(player) }
+            when (widePanel) {
+                0 -> AppColumn(modifier = Modifier.weight(1f), title = "") {
+                    Column(modifier = Modifier.fillMaxSize()) {
+                        SquadHeaderRow()
+                        LazyColumn(modifier = Modifier.weight(1f)) {
+                            items(players.sortedByDescending { it.overall }) { player ->
+                                val isStarting = startingXI.any { it?.id == player.id }
+                                DetailedSquadPlayerRow(
+                                    player = player,
+                                    isStarting = isStarting,
+                                    onClick = { squadViewModel.selectPlayer(player) }
+                                )
+                            }
+                        }
+                    }
+                }
+                1 -> AppColumn(modifier = Modifier.weight(1f), title = "FORMATION") {
+                    LazyVerticalGrid(
+                        columns = GridCells.Adaptive(96.dp),
+                        modifier = Modifier.fillMaxSize().padding(8.dp),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        gridItems(Formations.DEFAULT_FORMATIONS) { formation ->
+                            FormationButton(
+                                formation.name,
+                                formation.name == selectedFormation.name,
+                                { squadViewModel.selectFormation(formation) },
+                                Modifier.fillMaxWidth()
                             )
                         }
                     }
                 }
-            }
-
-            // Formation Selection Buttons
-            AppColumn(modifier = Modifier.height(90.dp), title = "FORMATION") {
-                Row(
-                    modifier = Modifier.fillMaxSize().horizontalScroll(rememberScrollState()),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    Formations.DEFAULT_FORMATIONS.forEach { formation ->
-                        val isSelected = formation.name == selectedFormation.name
-                        FormationButton(
-                            name = formation.name,
-                            isSelected = isSelected,
-                            onClick = { squadViewModel.selectFormation(formation) },
-                            modifier = Modifier.width(76.dp)
-                        )
+                2 -> TacticsInstructionPanel(club = club, onChange = squadViewModel::updateTactics, modifier = Modifier.weight(1f))
+                else -> AppColumn(modifier = Modifier.weight(1f), title = "PLAYER ROLES") {
+                    LazyColumn(Modifier.fillMaxSize().padding(8.dp)) {
+                        items(startingXI.filterNotNull()) { player ->
+                            Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                Text(player.shortName, color = Color.White, fontSize = 11.sp)
+                                Text(player.position, color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            }
+                            HorizontalDivider(color = Color.White.copy(.06f))
+                        }
                     }
                 }
             }
@@ -609,7 +646,9 @@ fun getPositionColor(pos: String): Color {
 fun TacticsPitch(
     formation: Formation,
     startingXI: List<PlayerEntity?>,
-    onSlotClick: (Int) -> Unit
+    onSlotClick: (Int) -> Unit,
+    onPlayerMove: (Int, Int) -> Unit = { _, _ -> },
+    onPositionMove: (Int, Float, Float) -> Unit = { _, _, _ -> }
 ) {
     BoxWithConstraints(
         modifier = Modifier
@@ -619,6 +658,9 @@ fun TacticsPitch(
     ) {
         val width = maxWidth
         val height = maxHeight
+        val density = androidx.compose.ui.platform.LocalDensity.current
+        val widthPx = with(density) { width.toPx() }
+        val heightPx = with(density) { height.toPx() }
 
         androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize()) {
             val stroke = 1.dp.toPx()
@@ -634,11 +676,46 @@ fun TacticsPitch(
             val player = startingXI.getOrNull(index)
             val xOffset = (pos.x / 100f) * width.value
             val yOffset = (pos.y / 100f) * height.value
+            var dragX by remember(formation.name, index) { mutableFloatStateOf(0f) }
+            var dragY by remember(formation.name, index) { mutableFloatStateOf(0f) }
 
             Box(
                 modifier = Modifier
                     .offset(x = xOffset.dp - 24.dp, y = yOffset.dp - 24.dp)
+                    .offset { IntOffset(dragX.roundToInt(), dragY.roundToInt()) }
                     .size(48.dp)
+                    .pointerInput(formation.name, index, player?.id) {
+                        detectDragGestures(
+                            onDrag = { change, amount ->
+                                change.consume()
+                                dragX += amount.x
+                                dragY += amount.y
+                            },
+                            onDragEnd = {
+                                val finalX = (pos.x / 100f) * widthPx + dragX
+                                val finalY = (pos.y / 100f) * heightPx + dragY
+                                val nearest = formation.positions.indices.minByOrNull { target ->
+                                    val targetPos = formation.positions[target]
+                                    val tx = targetPos.x / 100f * widthPx
+                                    val ty = targetPos.y / 100f * heightPx
+                                    (tx - finalX).pow(2) + (ty - finalY).pow(2)
+                                } ?: index
+                                val nearestPos = formation.positions[nearest]
+                                val distance = kotlin.math.sqrt(
+                                    ((nearestPos.x / 100f * widthPx) - finalX).pow(2) +
+                                        ((nearestPos.y / 100f * heightPx) - finalY).pow(2)
+                                )
+                                if (player != null && nearest != index && distance < 72.dp.toPx()) {
+                                    onPlayerMove(index, nearest)
+                                } else {
+                                    onPositionMove(index, finalX / widthPx * 100f, finalY / heightPx * 100f)
+                                }
+                                dragX = 0f
+                                dragY = 0f
+                            },
+                            onDragCancel = { dragX = 0f; dragY = 0f }
+                        )
+                    }
                     .clickable { onSlotClick(index) },
                 contentAlignment = Alignment.Center
             ) {
@@ -699,15 +776,34 @@ fun PlayerPitchIcon(player: PlayerEntity?, posLabel: String) {
 
 @Composable
 fun FormationButton(name: String, isSelected: Boolean, onClick: () -> Unit, modifier: Modifier) {
+    val formation = Formations.DEFAULT_FORMATIONS.firstOrNull { it.name == name }
     Surface(
         modifier = modifier
-            .height(32.dp)
+            .height(78.dp)
             .clickable { onClick() },
         shape = RoundedCornerShape(6.dp),
         color = if (isSelected) FM_GREEN.copy(alpha = 0.25f) else Color.White.copy(alpha = 0.05f),
         border = if (isSelected) androidx.compose.foundation.BorderStroke(1.dp, FM_GREEN) else null
     ) {
-        Box(contentAlignment = Alignment.Center) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+            Canvas(
+                modifier = Modifier
+                    .width(54.dp)
+                    .height(46.dp)
+                    .background(Color(0xFF173D1C), RoundedCornerShape(4.dp))
+            ) {
+                val line = Color.White.copy(alpha = .28f)
+                drawRect(line, style = Stroke(1.dp.toPx()))
+                drawLine(line, Offset(0f, size.height / 2), Offset(size.width, size.height / 2), 1.dp.toPx())
+                formation?.positions?.forEach { position ->
+                    drawCircle(
+                        color = if (isSelected) FM_GREEN else Color.White,
+                        radius = 2.2.dp.toPx(),
+                        center = Offset(position.x / 100f * size.width, position.y / 100f * size.height)
+                    )
+                }
+            }
+            Spacer(Modifier.height(3.dp))
             Text(
                 name,
                 fontSize = 10.sp,
@@ -715,6 +811,47 @@ fun FormationButton(name: String, isSelected: Boolean, onClick: () -> Unit, modi
                 color = if (isSelected) FM_GREEN else Color.White
             )
         }
+    }
+}
+
+@Composable
+private fun TacticsInstructionPanel(
+    club: ClubEntity?,
+    onChange: (Mentality?, Int?, Int?, Int?, Int?, Int?) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    AppColumn(modifier = modifier, title = "TEAM INSTRUCTIONS") {
+        Column(
+            Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 14.dp, vertical = 8.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            InstructionSlider("TEMPO", club?.tempo ?: 50) { onChange(null, it, null, null, null, null) }
+            InstructionSlider("PRESSING", club?.pressing ?: 50) { onChange(null, null, it, null, null, null) }
+            InstructionSlider("DEFENSIVE LINE", club?.defensiveLine ?: 50) { onChange(null, null, null, it, null, null) }
+            InstructionSlider("WIDTH", club?.attackingWidth ?: 50) { onChange(null, null, null, null, it, null) }
+            InstructionSlider("DIRECTNESS", club?.passingDirectness ?: 50) { onChange(null, null, null, null, null, it) }
+        }
+    }
+}
+
+@Composable
+private fun InstructionSlider(label: String, value: Int, onValueChange: (Int) -> Unit) {
+    Column {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Text(label, color = Color.LightGray, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+            Text(value.toString(), color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+        }
+        Slider(
+            value = value.toFloat(),
+            onValueChange = { onValueChange(it.roundToInt()) },
+            valueRange = 0f..100f,
+            modifier = Modifier.fillMaxWidth().height(28.dp),
+            colors = SliderDefaults.colors(
+                thumbColor = FM_GREEN,
+                activeTrackColor = FM_GREEN,
+                inactiveTrackColor = Color.White.copy(.12f)
+            )
+        )
     }
 }
 
