@@ -65,7 +65,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     }
 
     BoxWithConstraints(Modifier.fillMaxSize()) {
-    val compact = maxWidth < 860.dp
+    val compact = maxWidth < 600.dp
     if (compact) {
         Column(Modifier.fillMaxSize()) {
             TabRow(selectedTabIndex = compactPage, containerColor = Color.Transparent) {
