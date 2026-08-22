@@ -196,48 +196,43 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
             }
         }
 
-        // --- TWO COLUMN LAYOUT ---
-        Row(
-            modifier = Modifier.fillMaxSize(),
-            horizontalArrangement = Arrangement.spacedBy(18.dp)
-        ) {
-            // LEFT: CALENDAR
-            Box(
-                modifier = Modifier
-                    .weight(2.2f)
-                    .fillMaxHeight()
-            ) {
-                CalendarGrid(
-                    calendar = currentMonth,
-                    matches = matches,
-                    events = events,
-                    today = currentDate,
-                    selectedDate = selectedDate,
-                    clubId = clubId,
-                    allClubs = allClubs,
-                    leagueName = leagueName,
-                    onDateClick = { selectedDate = it }
-                )
+        BoxWithConstraints(Modifier.fillMaxSize()) {
+            val compact = maxWidth < 760.dp || maxHeight > maxWidth
+            val calendarContent: @Composable (Modifier) -> Unit = { modifier ->
+                Box(modifier) {
+                    CalendarGrid(
+                        calendar = currentMonth, matches = matches, events = events,
+                        today = currentDate, selectedDate = selectedDate, clubId = clubId,
+                        allClubs = allClubs, leagueName = leagueName,
+                        onDateClick = { selectedDate = it }
+                    )
+                }
+            }
+            val detailContent: @Composable (Modifier) -> Unit = { modifier ->
+                Surface(
+                    modifier = modifier,
+                    color = Color.Black.copy(alpha = 0.22f),
+                    shape = RoundedCornerShape(18.dp),
+                    border = BorderStroke(1.dp, Color.White.copy(alpha = 0.05f))
+                ) {
+                    SelectedDatePanel(
+                        selectedDate = selectedDate, matches = matches, events = events,
+                        clubId = clubId, allClubs = allClubs, leagueName = leagueName,
+                        currentDate = currentDate
+                    )
+                }
             }
 
-            // RIGHT: SELECTED DATE PANEL
-            Surface(
-                modifier = Modifier
-                    .weight(0.8f)
-                    .fillMaxHeight(),
-                color = Color.Black.copy(alpha = 0.22f),
-                shape = RoundedCornerShape(22.dp),
-                border = BorderStroke(1.dp, Color.White.copy(alpha = 0.05f))
-            ) {
-                SelectedDatePanel(
-                    selectedDate = selectedDate,
-                    matches = matches,
-                    events = events,
-                    clubId = clubId,
-                    allClubs = allClubs,
-                    leagueName = leagueName,
-                    currentDate = currentDate
-                )
+            if (compact) {
+                Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    calendarContent(Modifier.fillMaxWidth().weight(1.45f))
+                    detailContent(Modifier.fillMaxWidth().weight(.8f))
+                }
+            } else {
+                Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                    calendarContent(Modifier.weight(2.2f).fillMaxHeight())
+                    detailContent(Modifier.weight(.8f).fillMaxHeight())
+                }
             }
         }
     }
