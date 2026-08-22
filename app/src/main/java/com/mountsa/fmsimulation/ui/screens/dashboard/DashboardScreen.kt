@@ -82,6 +82,7 @@ fun DashboardScreen(
     val club by dashboardViewModel.club.collectAsStateWithLifecycle()
     val career by dashboardViewModel.career.collectAsStateWithLifecycle()
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
+    val matchSession by dashboardViewModel.matchSession.collectAsStateWithLifecycle()
     val isLoading by dashboardViewModel.isLoading.collectAsStateWithLifecycle()
     val loadingMessage by dashboardViewModel.loadingMessage.collectAsStateWithLifecycle()
     val audioManager = dashboardViewModel.audioManager
@@ -266,7 +267,7 @@ fun DashboardScreen(
                     MatchFlow.RESULT -> MatchResultScreen(dashboardViewModel)
                     MatchFlow.POST -> MatchStageBackground {
                         PostMatchProgress(
-                            leagueId = dashboardViewModel.matchSession.value?.match?.leagueId,
+                            leagueId = matchSession?.match?.leagueId,
                             message = if (isLoading) loadingMessage else "The team is heading back to the dressing room."
                         )
                     }
