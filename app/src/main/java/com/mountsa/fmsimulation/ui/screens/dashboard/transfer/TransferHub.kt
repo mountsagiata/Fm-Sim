@@ -32,16 +32,16 @@ fun TransferHub(viewModel: DashboardViewModel) {
         AppColumn(modifier = Modifier.weight(2f), title = "TRANSFER MARKET") {
             Column(modifier = Modifier.fillMaxSize().padding(8.dp)) {
                 Text(
-                    text = "INCOMING OFFERS",
+                    text = com.mountsa.fmsimulation.ui.localization.localized("INCOMING OFFERS"),
                     fontWeight = FontWeight.Bold,
                     fontSize = 10.sp,
                     color = FM_GREEN,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
-                
+
                 if (offers.isEmpty()) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        Text("No active offers", color = Color.Gray, fontSize = 12.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("No active offers"), color = Color.Gray, fontSize = 12.sp)
                     }
                 } else {
                     LazyColumn(
@@ -95,7 +95,7 @@ fun TransferOfferItem(
                         color = Color.Gray
                     )
                 }
-                
+
                 Surface(
                     color = when(offer.status) {
                         TransferStatus.PENDING -> Color.Yellow.copy(alpha = 0.2f)
@@ -119,9 +119,9 @@ fun TransferOfferItem(
                     )
                 }
             }
-            
+
             Spacer(Modifier.height(8.dp))
-            
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
@@ -133,18 +133,18 @@ fun TransferOfferItem(
                     fontWeight = FontWeight.Bold,
                     color = FM_GREEN
                 )
-                
+
                 if (offer.status == TransferStatus.PENDING) {
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         AppButton(
-                            text = "Reject",
+                            text = com.mountsa.fmsimulation.ui.localization.localized("Reject"),
                             onClick = onReject,
                             containerColor = Color.Red.copy(alpha = 0.8f),
                             contentColor = Color.White,
                             modifier = Modifier.height(28.dp)
                         )
                         AppButton(
-                            text = "Accept",
+                            text = com.mountsa.fmsimulation.ui.localization.localized("Accept"),
                             onClick = onAccept,
                             containerColor = FM_GREEN,
                             contentColor = Color.Black,
