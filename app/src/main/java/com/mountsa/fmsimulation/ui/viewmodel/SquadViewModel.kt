@@ -3,6 +3,7 @@ package com.mountsa.fmsimulation.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mountsa.fmsimulation.core.enums.Mentality
+import com.mountsa.fmsimulation.core.enums.SquadRole
 import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.data.repository.DataRepository
@@ -91,6 +92,39 @@ class SquadViewModel @Inject constructor(
             y = yPercent.coerceIn(7f, 93f)
         )
         _selectedFormation.value = current.copy(name = "Custom", positions = positions)
+    }
+
+    fun autoFillLineup() {
+        val available = players.value
+            .filter { it.status.name == "FIT" }
+            .toMutableList()
+        val selected = MutableList<PlayerEntity?>(11) { null }
+        _selectedFormation.value.positions.forEachIndexed { index, slot ->
+            val best = available.maxByOrNull { player -> positionFit(player, slot.name) }
+            selected[index] = best
+            if (best != null) available.remove(best)
+        }
+        _startingXI.value = selected
+    }
+
+    private fun positionFit(player: PlayerEntity, slot: String): Int {
+        val positions = (listOf(player.position) + player.secondaryPosition.split(",", "/"))
+            .map { it.trim().uppercase() }
+        val target = slot.uppercase()
+        val exact = if (target in positions) 30 else 0
+        val lineFit = when (target) {
+            "GK" -> if (player.position == "GK") 25 else -80
+            "CB", "LB", "RB", "LWB", "RWB" -> player.defending / 3
+            "CDM", "CM", "CAM", "LM", "RM" -> (player.passing + player.vision + player.stamina) / 9
+            else -> (player.shooting + player.dribbling + player.pace) / 9
+        }
+        return player.overall + exact + lineFit + player.fitness / 10 + player.morale / 10
+    }
+
+    fun updatePlayerRole(player: PlayerEntity, role: SquadRole) {
+        viewModelScope.launch {
+            repository.updatePlayer(player.copy(squadRole = role))
+        }
     }
 
     fun openPlayerSelector(index: Int) {
