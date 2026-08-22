@@ -55,14 +55,14 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
             ) {
                 Column {
                     Text(
-                        text = "STARTING XI",
+                        text = com.mountsa.fmsimulation.ui.localization.localized("STARTING XI"),
                         color = Color.White,
                         fontSize = 24.sp,
                         fontWeight = FontWeight.ExtraBold,
                         letterSpacing = 1.sp
                     )
                     Text(
-                        text = "Finalize tactics & prepare for battle",
+                        text = com.mountsa.fmsimulation.ui.localization.localized("Finalize tactics & prepare for battle"),
                         color = Color.Gray.copy(alpha = 0.7f),
                         fontSize = 12.sp
                     )
@@ -105,7 +105,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
                         }
                     }
                     item {
-                        Text("SUBSTITUTES", color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(12.dp))
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("SUBSTITUTES"), color = FM_GREEN, fontSize = 11.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(12.dp))
                     }
                     items(userBench, key = { "bench-${it.id}" }) { player ->
                         PlayerRow(player.name, player.position, player.shirtNumber, onClick = {
