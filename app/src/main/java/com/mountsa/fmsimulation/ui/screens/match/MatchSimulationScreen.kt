@@ -48,6 +48,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     }
 
     var currentMinute by remember { mutableIntStateOf(0) }
+    var halfTimePaused by remember { mutableStateOf(false) }
     val listState = rememberLazyListState()
     var pulseScale by remember { mutableStateOf(1f) }
 
@@ -64,6 +65,10 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     LaunchedEffect(Unit) {
         while (currentMinute < 90) {
+            if (currentMinute == 45) {
+                halfTimePaused = true
+                while (halfTimePaused) delay(100)
+            }
             delay(150)
             currentMinute += 1
             pulseScale = 1f + (0.02f * (currentMinute % 10) / 10f)
@@ -71,8 +76,10 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     }
 
     val visibleEvents = events.filter { it.minute <= currentMinute }
-    val latestCommentary = visibleEvents.lastOrNull { it.commentary.isNotEmpty() }?.commentary 
-        ?: "Pertandingan sedang berlangsung..."
+    val latestEvent = visibleEvents.lastOrNull()
+    val latestCommentary = latestEvent?.commentary?.takeIf { it.isNotBlank() }
+        ?: latestEvent?.let(::fallbackCommentary)
+        ?: "The teams are ready. Live commentary will appear here."
 
     val currentHomeScore = visibleEvents.lastOrNull()?.scoreHome ?: 0
     val currentAwayScore = visibleEvents.lastOrNull()?.scoreAway ?: 0
@@ -143,6 +150,28 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             }
 
             Spacer(Modifier.height(12.dp))
+
+            AnimatedVisibility(visible = halfTimePaused) {
+                Surface(
+                    color = Color(0xFF17231B),
+                    shape = RoundedCornerShape(10.dp),
+                    modifier = Modifier.fillMaxWidth().padding(bottom = 10.dp)
+                ) {
+                    Row(
+                        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Column {
+                            Text("HALF-TIME", color = FM_GREEN, fontWeight = FontWeight.Black, fontSize = 14.sp)
+                            Text("Review events, statistics and make tactical changes.", color = Color.Gray, fontSize = 10.sp)
+                        }
+                        Button(onClick = { halfTimePaused = false }, colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)) {
+                            Text("START SECOND HALF", color = Color.Black, fontWeight = FontWeight.Bold)
+                        }
+                    }
+                }
+            }
 
             // 3 COLUMNS SECTION
             Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -296,4 +325,21 @@ fun EventText(min: Int, text: String, type: EventType, playerName: String = "") 
             Text(playerName, color = Color.Gray.copy(alpha = 0.6f), fontSize = 9.sp)
         }
     }
+}
+
+private fun fallbackCommentary(event: MatchEvent): String = when (event.type) {
+    EventType.MATCH_START, EventType.KICKOFF_FIRST -> "Kick-off. Both teams settle into their shape."
+    EventType.HALFTIME -> "The referee signals half-time. Time for the managers to adjust."
+    EventType.SECOND_HALF -> "The second half is underway."
+    EventType.GOAL, EventType.PENALTY_GOAL -> "GOAL! ${event.playerName.ifBlank { event.teamName }} finds the net."
+    EventType.SHOT, EventType.SHOT_ON_TARGET -> "${event.playerName.ifBlank { event.teamName }} gets a shot away."
+    EventType.SAVE, EventType.BIG_SAVE, EventType.GOAL_KEEPER_SAVE -> "A strong save keeps the score unchanged."
+    EventType.CORNER -> "Corner to ${event.teamName.ifBlank { "the attacking side" }}."
+    EventType.FOUL -> "The referee stops play for a foul."
+    EventType.YELLOW_CARD -> "Yellow card for ${event.playerName.ifBlank { "the offender" }}."
+    EventType.RED_CARD -> "Red card! ${event.playerName.ifBlank { "A player" }} is sent off."
+    EventType.SUBSTITUTION -> "A substitution changes the shape of ${event.teamName.ifBlank { "the team" }}."
+    EventType.INJURY -> "Play is stopped while ${event.playerName.ifBlank { "the player" }} receives treatment."
+    EventType.MATCH_END -> "Full-time. The referee brings the match to an end."
+    else -> "${event.minute}' ${event.type.name.replace('_', ' ').lowercase().replaceFirstChar { it.uppercase() }}."
 }
