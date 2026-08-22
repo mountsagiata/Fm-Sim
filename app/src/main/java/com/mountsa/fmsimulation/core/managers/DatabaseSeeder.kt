@@ -66,6 +66,7 @@ class DatabaseSeeder @Inject constructor(
                 seedAll()
                 metadataDao.insertMetadata(AppMetadataEntity("DB_VERSION", CURRENT_DB_VERSION))
             } else {
+                refreshClubRatingsFromSquads()
                 _loadingMessage.value = "Loading assets..."
                 delay(600) 
                 _progress.value = 0.45f
@@ -106,6 +107,7 @@ class DatabaseSeeder @Inject constructor(
 
         _loadingMessage.value = "Seeding Players..."
         seedPlayers()
+        refreshClubRatingsFromSquads()
 
         _loadingMessage.value = "Generating Fixtures..."
         seedFixtures()
@@ -271,6 +273,53 @@ class DatabaseSeeder @Inject constructor(
             }
         } catch (e: Exception) {
             Log.e("DatabaseSeeder", "Seed Players Failed: ${e.message}")
+        }
+    }
+
+    /**
+     * Rebuild club strength from the actual database squads. Older installs used
+     * the same hard-coded 75 for every club, which made career selection and the
+     * match engine ignore the supplied player database. This updates only rating
+     * fields, preserving budgets, tactics and career progress.
+     */
+    private suspend fun refreshClubRatingsFromSquads() {
+        val clubs = repository.getAllClubsSync()
+        clubs.forEach { club ->
+            val squad = repository.getPlayersByClubSync(club.id)
+            if (squad.isEmpty()) return@forEach
+
+            fun lineRating(positions: Set<String>, take: Int): Int {
+                val candidates = squad.filter { player ->
+                    val roles = (listOf(player.position) + player.secondaryPosition.split(','))
+                        .map { it.trim().uppercase() }
+                    roles.any { it in positions }
+                }.sortedByDescending { it.overall }.take(take)
+                return candidates.takeIf { it.isNotEmpty() }
+                    ?.map { it.overall }
+                    ?.average()
+                    ?.toInt()
+                    ?: squad.sortedByDescending { it.overall }.take(take).map { it.overall }.average().toInt()
+            }
+
+            // localNationBias is already durable in existing saves and is unused
+            // by the current youth generator. Values above the seeded baseline
+            // therefore act as the paid Training Ground level without requiring
+            // a destructive Room schema migration.
+            val trainingBonus = ((club.localNationBias - 70).coerceAtLeast(0) / 5).coerceAtMost(6)
+            val attack = (lineRating(setOf("ST", "CF", "LW", "RW", "LF", "RF"), 5) + trainingBonus).coerceAtMost(99)
+            val midfield = (lineRating(setOf("CM", "CAM", "CDM", "LM", "RM", "AM"), 6) + trainingBonus).coerceAtMost(99)
+            val defense = (lineRating(setOf("GK", "CB", "LB", "RB", "LWB", "RWB"), 7) + trainingBonus).coerceAtMost(99)
+            val overall = ((attack * .34f) + (midfield * .33f) + (defense * .33f)).toInt()
+            if (club.attack != attack || club.midfield != midfield || club.defense != defense || club.overall != overall) {
+                repository.updateClub(
+                    club.copy(
+                        attack = attack.coerceIn(40, 99),
+                        midfield = midfield.coerceIn(40, 99),
+                        defense = defense.coerceIn(40, 99),
+                        overall = overall.coerceIn(40, 99)
+                    )
+                )
+            }
         }
     }
 

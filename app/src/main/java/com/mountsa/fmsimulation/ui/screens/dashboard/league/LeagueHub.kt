@@ -22,9 +22,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.layout.ContentScale
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import coil.compose.AsyncImage
 import com.mountsa.fmsimulation.data.local.entities.StandingEntity
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
+import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.ui.components.AppColumn
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
@@ -96,14 +99,14 @@ fun LeagueHub(viewModel: DashboardViewModel) {
                 }
             }
             } else {
-                PlayerLeaderboards(leaguePlayers)
+                PlayerLeaderboards(leaguePlayers, uiState.allClubs)
             }
         }
     }
 }
 
 @Composable
-private fun PlayerLeaderboards(players: List<PlayerEntity>) {
+private fun PlayerLeaderboards(players: List<PlayerEntity>, clubs: List<ClubEntity>) {
     val scorers = players.sortedWith(compareByDescending<PlayerEntity> { it.goals }.thenByDescending { it.averageRating }).take(10)
     val assisters = players.sortedWith(compareByDescending<PlayerEntity> { it.assists }.thenByDescending { it.averageRating }).take(10)
     val rated = players.sortedWith(compareByDescending<PlayerEntity> { it.averageRating }.thenByDescending { it.appearances }).take(10)
@@ -114,20 +117,20 @@ private fun PlayerLeaderboards(players: List<PlayerEntity>) {
         if (compact) {
             Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    PlayerLeaderColumn("TOP GOALS", scorers, { it.goals.toString() }, Modifier.weight(1f))
-                    PlayerLeaderColumn("TOP ASSISTS", assisters, { it.assists.toString() }, Modifier.weight(1f))
+                    PlayerLeaderColumn("TOP GOALS", scorers, clubs, { it.goals.toString() }, Modifier.weight(1f))
+                    PlayerLeaderColumn("TOP ASSISTS", assisters, clubs, { it.assists.toString() }, Modifier.weight(1f))
                 }
                 Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    PlayerLeaderColumn("BEST RATING", rated, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
-                    PlayerLeaderColumn("PLAYER AWARDS", awards, { "★" }, Modifier.weight(1f))
+                    PlayerLeaderColumn("BEST RATING", rated, clubs, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
+                    PlayerLeaderColumn("PLAYER AWARDS", awards, clubs, { "★" }, Modifier.weight(1f))
                 }
             }
         } else {
             Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                PlayerLeaderColumn("TOP GOALS", scorers, { it.goals.toString() }, Modifier.weight(1f))
-                PlayerLeaderColumn("TOP ASSISTS", assisters, { it.assists.toString() }, Modifier.weight(1f))
-                PlayerLeaderColumn("BEST RATING", rated, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
-                PlayerLeaderColumn("PLAYER AWARDS", awards, { "★" }, Modifier.weight(1f))
+                PlayerLeaderColumn("TOP GOALS", scorers, clubs, { it.goals.toString() }, Modifier.weight(1f))
+                PlayerLeaderColumn("TOP ASSISTS", assisters, clubs, { it.assists.toString() }, Modifier.weight(1f))
+                PlayerLeaderColumn("BEST RATING", rated, clubs, { String.format("%.2f", it.averageRating) }, Modifier.weight(1f))
+                PlayerLeaderColumn("PLAYER AWARDS", awards, clubs, { "★" }, Modifier.weight(1f))
             }
         }
     }
@@ -137,6 +140,7 @@ private fun PlayerLeaderboards(players: List<PlayerEntity>) {
 private fun PlayerLeaderColumn(
     title: String,
     players: List<PlayerEntity>,
+    clubs: List<ClubEntity>,
     value: (PlayerEntity) -> String,
     modifier: Modifier = Modifier
 ) {
@@ -154,7 +158,23 @@ private fun PlayerLeaderColumn(
                         Spacer(Modifier.width(6.dp))
                         Column(Modifier.weight(1f)) {
                             Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1)
-                            Text(player.position, color = Color.Gray, fontSize = 8.sp)
+                            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                                ClubLogo(player.clubId, 12.dp)
+                                if (player.flagAsset.isNotBlank()) {
+                                    AsyncImage(
+                                        model = "file:///android_asset/${player.flagAsset}",
+                                        contentDescription = "Country",
+                                        modifier = Modifier.size(width = 14.dp, height = 9.dp),
+                                        contentScale = ContentScale.Fit
+                                    )
+                                }
+                                Text(
+                                    "${clubs.firstOrNull { it.id == player.clubId }?.shortName ?: "-"} • ${player.position}",
+                                    color = Color.Gray,
+                                    fontSize = 7.5.sp,
+                                    maxLines = 1
+                                )
+                            }
                         }
                         Text(value(player), color = FM_GREEN, fontSize = 12.sp, fontWeight = FontWeight.Black)
                     }

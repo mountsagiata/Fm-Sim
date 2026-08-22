@@ -3,8 +3,10 @@ package com.mountsa.fmsimulation.ui.screens.dashboard
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -17,7 +19,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -33,6 +37,7 @@ import com.mountsa.fmsimulation.ui.screens.dashboard.calendar.CalendarHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDateString
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.getDayName
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.HomeHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.FinanceDetailHub
 import com.mountsa.fmsimulation.ui.screens.dashboard.home.ObjectivesDetailHub
@@ -77,6 +82,7 @@ fun DashboardScreen(
     val club by dashboardViewModel.club.collectAsStateWithLifecycle()
     val career by dashboardViewModel.career.collectAsStateWithLifecycle()
     val matchFlow by dashboardViewModel.matchFlowState.collectAsStateWithLifecycle()
+    val matchSession by dashboardViewModel.matchSession.collectAsStateWithLifecycle()
     val isLoading by dashboardViewModel.isLoading.collectAsStateWithLifecycle()
     val loadingMessage by dashboardViewModel.loadingMessage.collectAsStateWithLifecycle()
     val audioManager = dashboardViewModel.audioManager
@@ -129,7 +135,8 @@ fun DashboardScreen(
                     .padding(top = 16.dp, bottom = 8.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Club Logo
+                // Competition identity lives in the rail. The club crest belongs
+                // beside the club name in the top bar (not the other way around).
                 Surface(
                     modifier = Modifier.size(itemSize),
                     shape = RoundedCornerShape(CORNER_RADIUS),
@@ -137,15 +144,10 @@ fun DashboardScreen(
                     border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.1f))
                 ) {
                     Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
-                        if (club?.logoAsset?.isNotEmpty() == true) {
-                            AsyncImage(
-                                model = ImageRequest.Builder(LocalContext.current)
-                                    .data("file:///android_asset/${club?.logoAsset}")
-                                    .crossfade(true)
-                                    .build(),
-                                contentDescription = club?.name,
-                                modifier = Modifier.fillMaxSize().padding(8.dp),
-                                contentScale = ContentScale.Fit
+                        if ((club?.leagueId ?: 0L) > 0L) {
+                            LeagueLogo(
+                                leagueId = club!!.leagueId,
+                                size = (itemSize.value * .7f).dp
                             )
                         } else {
                             Text(com.mountsa.fmsimulation.ui.localization.localized("🛡️"), fontSize = 20.sp)
@@ -263,55 +265,11 @@ fun DashboardScreen(
                     MatchFlow.LINEUP -> StartingLineupScreen(dashboardViewModel)
                     MatchFlow.SIMULATION -> MatchSimulationScreen(dashboardViewModel)
                     MatchFlow.RESULT -> MatchResultScreen(dashboardViewModel)
-                    MatchFlow.POST -> {
-                        MatchStageBackground {
-                        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"), color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.ExtraBold)
-                                Text(
-                                    if (isLoading) loadingMessage else "The team is heading back to the dressing room.",
-                                    color = Color.Gray,
-                                    fontSize = 14.sp
-                                )
-                                if (isLoading) {
-                                    Spacer(Modifier.height(12.dp))
-                                    val stages = listOf(
-                                        "Match report & interview" to "report",
-                                        "Other fixtures & standings" to "fixtures",
-                                        "Injuries, cards & finances" to "injuries",
-                                        "Career autosave" to "saving"
-                                    )
-                                    Column(Modifier.widthIn(min = 250.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                                        stages.forEach { (label, key) ->
-                                            val active = loadingMessage.contains(key, ignoreCase = true) ||
-                                                (key == "report" && loadingMessage.contains("interview", true))
-                                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                                Box(Modifier.size(6.dp).background(if (active) FM_GREEN else Color.Gray.copy(.35f), androidx.compose.foundation.shape.CircleShape))
-                                                Spacer(Modifier.width(8.dp))
-                                                Text(label, color = if (active) Color.White else Color.Gray.copy(.55f), fontSize = 10.sp)
-                                            }
-                                        }
-                                    }
-                                }
-                                Spacer(Modifier.height(24.dp))
-                                if (isLoading) {
-                                    CircularProgressIndicator(
-                                        color = FM_GREEN,
-                                        strokeWidth = 4.dp,
-                                        modifier = Modifier.size(34.dp)
-                                    )
-                                } else {
-                                    Button(
-                                        onClick = { dashboardViewModel.finishMatchFlow() },
-                                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                                        modifier = Modifier.width(180.dp).height(38.dp)
-                                    ) {
-                                        Text(com.mountsa.fmsimulation.ui.localization.localized("RETURN TO HUB"), color = Color.Black, fontWeight = FontWeight.Bold)
-                                    }
-                                }
-                            }
-                        }
-                        }
+                    MatchFlow.POST -> MatchStageBackground {
+                        PostMatchProgress(
+                            leagueId = matchSession?.match?.leagueId,
+                            message = if (isLoading) loadingMessage else "The team is heading back to the dressing room."
+                        )
                     }
                     else -> {}
                 }
@@ -359,6 +317,47 @@ fun DashboardScreen(
 }
 
 @Composable
+private fun PostMatchProgress(leagueId: Long?, message: String) {
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"),
+                color = Color.White,
+                fontSize = 22.sp,
+                fontWeight = FontWeight.ExtraBold
+            )
+            Spacer(Modifier.height(16.dp))
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                leagueId?.takeIf { it > 0L }?.let { LeagueLogo(it, 26.dp) }
+                Box(Modifier.widthIn(min = 280.dp, max = 520.dp).height(34.dp), contentAlignment = Alignment.Center) {
+                    androidx.compose.animation.AnimatedContent(
+                        targetState = message,
+                        transitionSpec = { fadeIn(tween(220)) togetherWith fadeOut(tween(180)) },
+                        label = "post_match_update"
+                    ) { update ->
+                        Text(update, color = Color.LightGray, fontSize = 13.sp, maxLines = 1)
+                    }
+                    Box(
+                        Modifier.align(Alignment.CenterStart).fillMaxHeight().width(42.dp)
+                            .background(Brush.horizontalGradient(listOf(Color.Black, Color.Transparent)))
+                    )
+                    Box(
+                        Modifier.align(Alignment.CenterEnd).fillMaxHeight().width(42.dp)
+                            .background(Brush.horizontalGradient(listOf(Color.Transparent, Color.Black)))
+                    )
+                }
+            }
+            Spacer(Modifier.height(20.dp))
+            LinearProgressIndicator(
+                modifier = Modifier.width(260.dp).height(4.dp).clip(RoundedCornerShape(3.dp)),
+                color = FM_GREEN,
+                trackColor = Color.White.copy(.08f)
+            )
+        }
+    }
+}
+
+@Composable
 fun SidebarItem(
     icon: androidx.compose.ui.graphics.vector.ImageVector,
     label: String,
@@ -403,10 +402,23 @@ fun TopBar(
     onCalendarClick: () -> Unit
 ) {
     val leagueName by dashboardViewModel.leagueName.collectAsStateWithLifecycle()
+    val uiState by dashboardViewModel.uiState.collectAsStateWithLifecycle()
     val currentDate = career?.currentDate ?: System.currentTimeMillis()
+    val news = remember(uiState.inboxMessages) {
+        uiState.inboxMessages.filter { it.subject.isNotBlank() }.take(8)
+    }
+    var newsIndex by remember { mutableIntStateOf(0) }
+    LaunchedEffect(news.size) {
+        newsIndex = 0
+        while (news.size > 1) {
+            delay(4_200)
+            newsIndex = (newsIndex + 1) % news.size
+        }
+    }
 
     BoxWithConstraints(Modifier.fillMaxWidth()) {
-    val compact = maxWidth < 600.dp
+    val availableWidth = maxWidth
+    val compact = availableWidth < 600.dp
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -416,8 +428,8 @@ fun TopBar(
         verticalAlignment = Alignment.CenterVertically
     ) {
         Row(modifier = Modifier.weight(1f).widthIn(min = 80.dp), verticalAlignment = Alignment.CenterVertically) {
-            club?.leagueId?.takeIf { it > 0L }?.let { leagueId ->
-                LeagueLogo(leagueId = leagueId, size = if (compact) 24.dp else 32.dp)
+            club?.id?.takeIf { it > 0L }?.let { clubId ->
+                ClubLogo(clubId = clubId, size = if (compact) 24.dp else 32.dp)
                 Spacer(Modifier.width(if (compact) 6.dp else 9.dp))
             }
         Column {
@@ -441,6 +453,30 @@ fun TopBar(
                 )
             }
         }
+        }
+
+        if (!compact && availableWidth >= 840.dp) {
+            Box(
+                Modifier.weight(.8f).padding(horizontal = 16.dp).height(32.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                androidx.compose.animation.AnimatedContent(
+                    targetState = news.getOrNull(newsIndex)?.subject ?: "GLOBAL FOOTBALL NEWS",
+                    transitionSpec = { fadeIn(tween(260)) togetherWith fadeOut(tween(220)) },
+                    label = "global_news_ticker"
+                ) { headline ->
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                        Box(Modifier.size(5.dp).background(FM_GREEN, androidx.compose.foundation.shape.CircleShape))
+                        Text(
+                            headline.uppercase(),
+                            color = Color.LightGray,
+                            fontSize = 9.sp,
+                            fontWeight = FontWeight.Bold,
+                            maxLines = 1
+                        )
+                    }
+                }
+            }
         }
 
         Row(

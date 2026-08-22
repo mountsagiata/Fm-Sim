@@ -45,10 +45,14 @@ class MatchSessionBuilder @Inject constructor(
                     LineupSelector.select(awayPlayers)
                 }
 
-        val leagueName =
-            repository.getLeagueName(
-                match.leagueId ?: 0L
-            )
+        val competitionName = when {
+            match.leagueId != null -> repository.getLeagueName(match.leagueId)
+            match.stage == "FRIENDLY" -> "Friendly"
+            match.stage.startsWith("DOMESTIC_CUP") -> "Domestic Cup"
+            match.stage.startsWith("CONTINENTAL") -> "Continental Cup"
+            match.cupId != null -> "Cup"
+            else -> match.stage.replace('_', ' ').lowercase().replaceFirstChar { it.uppercase() }
+        }
 
         val homeClub = repository.getClubById(match.homeClubId)
         val awayClub = repository.getClubById(match.awayClubId)
@@ -63,7 +67,7 @@ class MatchSessionBuilder @Inject constructor(
             awayClubName = awayClub?.name ?: "Away",
             homeShortName = homeClub?.shortName ?: "HME",
             awayShortName = awayClub?.shortName ?: "AWY",
-            competitionName = leagueName,
+            competitionName = competitionName,
             stadiumName = homeClub?.stadium ?: "Home Stadium",
             weather = "Clear",
             kickoffTime = "20:00"

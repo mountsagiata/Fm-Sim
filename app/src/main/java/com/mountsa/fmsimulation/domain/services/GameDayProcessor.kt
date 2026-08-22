@@ -11,6 +11,9 @@ import com.mountsa.fmsimulation.domain.engine.TrainingManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -73,9 +76,14 @@ class GameDayProcessor @Inject constructor(
                 pressConferenceGenerator.generatePressConference(clubId, PressType.PRE_MATCH)
             }
 
-            for (match in todaysMatches) {
-                if (match.homeClubId == clubId || match.awayClubId == clubId) continue 
-                simulator.simulateMatch(match)
+            // Fixtures are independent until the table aggregation below. Running
+            // them concurrently keeps every event/injury/result but removes the
+            // long serial post-match wait on leagues with many matches.
+            coroutineScope {
+                todaysMatches
+                    .filterNot { it.homeClubId == clubId || it.awayClubId == clubId }
+                    .map { match -> async { simulator.simulateMatch(match) } }
+                    .awaitAll()
             }
             
             todaysMatches.mapNotNull { it.leagueId }.distinct().forEach { leagueId ->

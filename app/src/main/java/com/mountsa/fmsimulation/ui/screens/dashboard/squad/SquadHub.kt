@@ -366,22 +366,6 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
         title = "PLAYER DETAILS"
     ) {
         Column(modifier = Modifier.fillMaxSize().padding(12.dp)) {
-            // Tombol Back: elemen TETAP (bukan didorong via weight-spacer), jadi
-            // selalu terlihat di layar sekecil apapun, tidak pernah ikut hilang.
-            Button(
-                onClick = onClose,
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.1f)),
-                shape = RoundedCornerShape(6.dp),
-                modifier = Modifier.fillMaxWidth().height(38.dp),
-                contentPadding = PaddingValues(0.dp)
-            ) {
-                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null, modifier = Modifier.size(16.dp))
-                Spacer(Modifier.width(6.dp))
-                Text(com.mountsa.fmsimulation.ui.localization.localized("BACK"), color = Color.White, fontSize = 12.sp)
-            }
-
-            Spacer(Modifier.height(12.dp))
-
             Row(
                 modifier = Modifier.fillMaxSize(),
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -389,7 +373,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
             // --- Kolom 1: Avatar & Info Dasar (Center Aligned), scrollable jika layar pendek ---
             Column(
                 modifier = Modifier
-                    .weight(1.2f)
+                    .weight(1.55f)
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -434,7 +418,7 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
 
                 // Player Name
                 Text(
-                    text = player.name,
+                    text = player.shortName,
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
                     fontSize = 15.sp, // Diperbesar dari 13.sp
@@ -467,6 +451,9 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
                 )
+
+                Spacer(Modifier.height(8.dp))
+                PlayerAvailabilityStrip(player)
 
                 Spacer(Modifier.height(16.dp))
                 }
@@ -518,10 +505,22 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
             // --- Kolom 2: Swipeable Stats Container ---
             Column(
                 modifier = Modifier
-                    .weight(2.8f) // Diperluas agar porsi stats lebih dominan
+                    .weight(2.45f)
                     .fillMaxHeight(),
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
+                Button(
+                    onClick = onClose,
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.08f)),
+                    shape = RoundedCornerShape(6.dp),
+                    modifier = Modifier.align(Alignment.End).width(108.dp).height(34.dp),
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp)
+                ) {
+                    Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null, modifier = Modifier.size(15.dp))
+                    Spacer(Modifier.width(5.dp))
+                    Text(com.mountsa.fmsimulation.ui.localization.localized("BACK"), color = Color.White, fontSize = 10.sp)
+                }
+                Spacer(Modifier.height(6.dp))
                 // Horizontal Pager Utama untuk swipe stats
                 HorizontalPager(
                     state = pagerState,
@@ -591,6 +590,49 @@ fun PlayerDetailView(player: PlayerEntity, onClose: () -> Unit) {
                     }
                 }
             }
+            }
+        }
+    }
+}
+
+@Composable
+private fun PlayerAvailabilityStrip(player: PlayerEntity) {
+    val mood = when {
+        player.morale >= 85 -> "● HAPPY"
+        player.morale >= 60 -> "● CALM"
+        else -> "● LOW"
+    }
+    val moodColor = when {
+        player.morale >= 85 -> FM_GREEN
+        player.morale >= 60 -> Color(0xFFFFD54F)
+        else -> Color(0xFFFF6B6B)
+    }
+    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Text("STAMINA ${player.fitness}%", color = Color.LightGray, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+            Text(mood, color = moodColor, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+        }
+        LinearProgressIndicator(
+            progress = { player.fitness.coerceIn(0, 100) / 100f },
+            modifier = Modifier.fillMaxWidth().height(4.dp).clip(RoundedCornerShape(3.dp)),
+            color = if (player.fitness >= 65) FM_GREEN else Color(0xFFFFB74D),
+            trackColor = Color.White.copy(.1f)
+        )
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            if (player.yellowCards > 0) Text("■ ${player.yellowCards}", color = Color(0xFFFFD54F), fontSize = 9.sp)
+            if (player.redCards > 0) Text("■ ${player.redCards}", color = Color(0xFFFF5252), fontSize = 9.sp)
+            if (player.injuryDaysRemaining > 0) {
+                Text(
+                    "✚ ${player.injuryName.ifBlank { "INJURY" }} • ${player.injuryDaysRemaining}D",
+                    color = Color(0xFFFF6B6B),
+                    fontSize = 8.5.sp,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+            } else if (player.suspensionGamesRemaining > 0) {
+                Text("SUSPENDED • ${player.suspensionGamesRemaining}", color = Color(0xFFFFB74D), fontSize = 8.5.sp)
+            } else {
+                Text("FIT", color = FM_GREEN, fontSize = 8.5.sp, fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -734,6 +776,18 @@ fun DetailedSquadPlayerRow(player: PlayerEntity, isStarting: Boolean, onClick: (
             } ?: Text(com.mountsa.fmsimulation.ui.localization.localized("-"), color = Color.Gray, fontSize = 9.sp)
         }
 
+        Column(Modifier.width(42.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text("⚡${player.fitness}", color = if (player.fitness >= 65) FM_GREEN else Color(0xFFFFB74D), fontSize = 7.5.sp)
+            val availability = when {
+                player.injuryDaysRemaining > 0 -> "✚${player.injuryDaysRemaining}D" to Color(0xFFFF5252)
+                player.suspensionGamesRemaining > 0 -> "SUS" to Color(0xFFFFB74D)
+                player.redCards > 0 -> "■${player.redCards}" to Color(0xFFFF5252)
+                player.yellowCards > 0 -> "■${player.yellowCards}" to Color(0xFFFFD54F)
+                else -> "●${player.morale}" to if (player.morale >= 60) FM_GREEN else Color(0xFFFFB74D)
+            }
+            Text(availability.first, color = availability.second, fontSize = 7.sp, maxLines = 1)
+        }
+
         // Age
         Text(
             text = player.age.toString(),
@@ -770,6 +824,7 @@ fun SquadHeaderRow() {
         Text(com.mountsa.fmsimulation.ui.localization.localized("PLAYER"), modifier = Modifier.weight(1f), fontSize = 8.sp, color = Color.Gray)
         Text(com.mountsa.fmsimulation.ui.localization.localized("NAT"), modifier = Modifier.width(24.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("FOR"), modifier = Modifier.width(16.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
+        Text(com.mountsa.fmsimulation.ui.localization.localized("STA"), modifier = Modifier.width(42.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("AGE"), modifier = Modifier.width(22.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.Center)
         Text(com.mountsa.fmsimulation.ui.localization.localized("OVR"), modifier = Modifier.width(26.dp), fontSize = 8.sp, color = Color.Gray, textAlign = TextAlign.End)
     }

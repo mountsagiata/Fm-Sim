@@ -19,9 +19,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.FitnessCenter
-import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.Campaign
 import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material3.*
@@ -42,6 +40,7 @@ import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.data.local.entities.MatchEntity
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import java.text.SimpleDateFormat
 import java.util.*
@@ -242,7 +241,8 @@ fun CalendarHub(viewModel: DashboardViewModel, onBack: () -> Unit) {
                     SelectedDatePanel(
                         selectedDate = selectedDate, matches = matches, events = events,
                         clubId = clubId, allClubs = allClubs, leagueName = leagueName,
-                        currentDate = currentDate
+                        currentDate = currentDate,
+                        onSelectDate = { selectedDate = it }
                     )
                 }
             }
@@ -436,6 +436,17 @@ fun DayCell(
                         )
                     }
                 }
+                // Cup IDs are generated from the source league (leagueId * 100
+                // + competition suffix), while the bundled crest is keyed by
+                // the source league ID.
+                val competitionLogoId = match.leagueId ?: match.cupId?.div(100L)
+                competitionLogoId?.takeIf { it > 0L }?.let { id ->
+                    LeagueLogo(
+                        leagueId = id,
+                        size = 22.dp,
+                        modifier = Modifier.align(Alignment.BottomStart).alpha(.5f)
+                    )
+                }
             } else if (isTraining) {
                 Icon(
                     Icons.Default.FitnessCenter,
@@ -449,13 +460,12 @@ fun DayCell(
                 modifier = Modifier.align(Alignment.BottomEnd),
                 horizontalArrangement = Arrangement.spacedBy(2.dp)
             ) {
-                if (model.match != null) Icon(Icons.Default.EmojiEvents, null, tint = FM_GREEN, modifier = Modifier.size(11.dp))
                 model.events.take(3).forEach { event ->
                     val icon = when (event.type) {
                         "TRAINING", "RECOVERY", "REST" -> Icons.Default.FitnessCenter
                         "TRANSFER" -> Icons.Default.SwapHoriz
                         "MEDIA", "BOARD" -> Icons.Default.Campaign
-                        else -> Icons.Default.CalendarToday
+                        else -> Icons.Default.Campaign
                     }
                     val tint = when (event.type) {
                         "TRAINING" -> Color.Cyan
@@ -479,7 +489,8 @@ fun SelectedDatePanel(
     clubId: Long,
     allClubs: List<ClubEntity>,
     leagueName: String,
-    currentDate: Long
+    currentDate: Long,
+    onSelectDate: (Long) -> Unit
 ) {
     val cal = remember(selectedDate) { Calendar.getInstance().apply { timeInMillis = selectedDate } }
     val dayMatch = matches.find { isSameDayFast(cal, it.matchDate) }
@@ -572,9 +583,19 @@ fun SelectedDatePanel(
                             matches.asSequence().filter { it.matchDate > selectedDate }.sortedBy { it.matchDate }.take(3).forEach { future ->
                                 val opponentId = if (future.homeClubId == clubId) future.awayClubId else future.homeClubId
                                 val opponent = allClubs.firstOrNull { it.id == opponentId }
-                                Row(Modifier.fillMaxWidth().padding(vertical = 7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                Row(
+                                    Modifier.fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .clickable { onSelectDate(future.matchDate) }
+                                        .padding(horizontal = 7.dp, vertical = 7.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
                                     Text(SimpleDateFormat("dd MMM", Locale.getDefault()).format(Date(future.matchDate)), color = Color.Gray, fontSize = 10.sp)
-                                    Text(opponent?.shortName ?: "TBD", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
+                                        ClubLogo(opponentId, 18.dp)
+                                        Text(opponent?.shortName ?: "TBD", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                    }
                                     Text(if (future.cupId != null) "CUP" else if (future.leagueId != null) "LEAGUE" else "FRIENDLY", color = FM_GREEN, fontSize = 9.sp)
                                 }
                             }
@@ -600,7 +621,7 @@ fun EventCard(event: CalendarEventEntity) {
                 "TRAINING", "RECOVERY", "REST" -> Icons.Default.FitnessCenter
                 "TRANSFER" -> Icons.Default.SwapHoriz
                 "MEDIA", "BOARD" -> Icons.Default.Campaign
-                else -> Icons.Default.CalendarToday
+                else -> Icons.Default.Campaign
             }
             val color = when (event.type) {
                 "TRAINING" -> Color.Cyan

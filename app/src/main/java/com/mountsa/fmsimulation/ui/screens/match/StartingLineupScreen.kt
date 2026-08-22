@@ -46,14 +46,26 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
 
     MatchStageBackground {
     Column(Modifier.fillMaxSize().padding(12.dp)) {
-        Row(Modifier.fillMaxWidth().height(58.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(Modifier.fillMaxWidth().height(52.dp), verticalAlignment = Alignment.CenterVertically) {
             TeamHeading(session.match.homeClubId, session.homeShortName, "HOME", HOME_BLUE, Modifier.weight(1f), Alignment.Start)
-            Column(Modifier.width(180.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Column(Modifier.widthIn(min = 100.dp, max = 150.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                 session.match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
-                    LeagueLogo(leagueId = leagueId, size = 30.dp)
-                }
-                Text(session.competitionName.uppercase(), color = Color.White, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1)
-                Text(matchDayInfo(session.match.matchDate, session.stadiumName), color = Color.Gray, fontSize = 7.sp, maxLines = 1)
+                    LeagueLogo(leagueId = leagueId, size = 26.dp)
+                } ?: Text(
+                    session.competitionName.uppercase(),
+                    color = FM_GREEN,
+                    fontSize = 8.sp,
+                    fontWeight = FontWeight.Black,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text(
+                    matchDayInfo(session.match.matchDate, session.stadiumName),
+                    color = Color.Gray,
+                    fontSize = 7.sp,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
             TeamHeading(session.match.awayClubId, session.awayShortName, "AWAY", FM_GREEN, Modifier.weight(1f), Alignment.End)
         }
@@ -65,7 +77,7 @@ fun StartingLineupScreen(viewModel: DashboardViewModel) {
         }
         Button(
             onClick = viewModel::nextMatchFlowStep,
-            modifier = Modifier.align(Alignment.CenterHorizontally).width(220.dp).height(38.dp),
+            modifier = Modifier.align(Alignment.CenterHorizontally).widthIn(min = 150.dp, max = 190.dp).height(36.dp),
             colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN), shape = RoundedCornerShape(7.dp)
         ) { Text("KICK OFF", color = Color.Black, fontSize = 12.sp, fontWeight = FontWeight.Black, letterSpacing = 1.sp) }
     }

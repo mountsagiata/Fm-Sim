@@ -161,12 +161,9 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                 ) { score ->
                     Text(score.toString(), color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.Black)
                 }
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier.padding(horizontal = 20.dp).clickable(enabled = halfTimePaused) { halfTimePaused = false }
-                ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(horizontal = 20.dp)) {
                     Text(if (currentMinute >= 90) "FT" else if (halfTimePaused) "HT" else "$currentMinute'", color = FM_GREEN, fontSize = 20.sp, fontWeight = FontWeight.Bold)
-                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "TAP TO START 2ND HALF" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
+                    Text(if (currentMinute >= 90) "FULL TIME" else if (halfTimePaused) "HALF TIME" else "MENIT", color = Color.Gray, fontSize = 7.sp, letterSpacing = 1.sp)
                 }
                 AnimatedContent(
                     targetState = currentAwayScore,
@@ -187,6 +184,27 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     color = FM_GREEN,
                     trackColor = Color.White.copy(alpha = 0.08f)
                 )
+            }
+
+            AnimatedVisibility(
+                visible = halfTimePaused,
+                enter = fadeIn(tween(220)) + expandVertically(),
+                exit = fadeOut(tween(160)) + shrinkVertically()
+            ) {
+                Row(
+                    Modifier.fillMaxWidth().padding(top = 7.dp),
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    Button(
+                        onClick = { halfTimePaused = false },
+                        modifier = Modifier.widthIn(min = 150.dp, max = 210.dp).height(34.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
+                        shape = RoundedCornerShape(7.dp),
+                        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 0.dp)
+                    ) {
+                        Text("START SECOND HALF", color = Color.Black, fontSize = 9.sp, fontWeight = FontWeight.Black)
+                    }
+                }
             }
 
             Spacer(Modifier.height(12.dp))

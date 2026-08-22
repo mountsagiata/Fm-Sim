@@ -29,9 +29,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
     val uiState: DashboardUiState by viewModel.uiState.collectAsStateWithLifecycle()
     val session = uiState.matchSession ?: return
     val match = session.match
-    val userClubId = uiState.club?.id
-    val userIsHome = userClubId == match.homeClubId
-
     var visible by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {
@@ -41,12 +38,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
 
     val isHomeWin = match.homeScore > match.awayScore
     val isAwayWin = match.awayScore > match.homeScore
-    val isDraw = match.homeScore == match.awayScore
-
-    val userWon = if (userIsHome) isHomeWin else isAwayWin
-    val userLost = if (userIsHome) isAwayWin else isHomeWin
-    val resultColor = when { userWon -> FM_GREEN; userLost -> Color(0xFFFF5252); else -> Color(0xFFFFD740) }
-    val resultText = when { userWon -> "VICTORY"; userLost -> "DEFEAT"; else -> "DRAW" }
 
     MatchStageBackground {
     BoxWithConstraints(
@@ -106,14 +97,6 @@ fun MatchResultScreen(viewModel: DashboardViewModel) {
                             color = Color.Gray.copy(alpha = .75f),
                             fontWeight = FontWeight.Black,
                             fontSize = 9.sp,
-                            letterSpacing = 1.5.sp
-                        )
-                        Spacer(Modifier.height(2.dp))
-                        Text(
-                            resultText,
-                            color = resultColor,
-                            fontWeight = FontWeight.Black,
-                            fontSize = 8.sp,
                             letterSpacing = 1.5.sp
                         )
                         Spacer(Modifier.height(3.dp))

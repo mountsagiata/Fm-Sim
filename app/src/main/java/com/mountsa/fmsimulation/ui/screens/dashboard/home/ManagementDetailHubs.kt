@@ -20,20 +20,46 @@ import java.util.Locale
 @Composable
 fun FinanceDetailHub(viewModel: DashboardViewModel) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val career by viewModel.career.collectAsStateWithLifecycle()
     val club = state.club
+    val weeklyPlayerWages = state.squadPlayers.sumOf { it.wage }
+    val managerWeeklySalary = ((career?.managerRating ?: 75) * 1_250L).coerceAtLeast(25_000L)
     Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-        AppColumn(modifier = Modifier.weight(.8f), title = "CLUB FINANCE") {
-            Column(Modifier.fillMaxSize().padding(18.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                FinanceLine("Available budget", club?.budget ?: 0)
-                FinanceLine("Weekly wage commitment", state.squadPlayers.sumOf { it.wage })
-                FinanceLine("Squad market value", state.squadPlayers.sumOf { it.marketValue })
+        AppColumn(modifier = Modifier.weight(.82f), title = "FINANCIAL CONTROL") {
+            Column(Modifier.fillMaxSize().padding(14.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                FinanceLine("Club balance", club?.budget ?: 0)
+                FinanceLine("Transfer budget", career?.transferBudget ?: club?.budget ?: 0)
+                FinanceLine("Player wages / week", weeklyPlayerWages)
+                FinanceLine("Manager salary / week", managerWeeklySalary)
+                FinanceLine("Wage budget / week", club?.wageBudget ?: 0)
                 HorizontalDivider(color = Color.White.copy(.08f))
-                Text("Financial health", color = Color.Gray, fontSize = 11.sp)
+                val wageLimit = club?.wageBudget?.takeIf { it > 0L } ?: (weeklyPlayerWages * 12 / 10)
+                val wageUsage = if (wageLimit > 0) weeklyPlayerWages.toFloat() / wageLimit else 0f
+                Text("WAGE CONTROL ${(wageUsage * 100).toInt()}%", color = Color.Gray, fontSize = 9.sp)
+                LinearProgressIndicator(
+                    progress = { wageUsage.coerceIn(0f, 1f) },
+                    modifier = Modifier.fillMaxWidth().height(5.dp),
+                    color = if (wageUsage < .9f) FM_GREEN else Color(0xFFFF6B6B)
+                )
                 Text(if ((club?.budget ?: 0) > 0) "STABLE" else "ATTENTION", color = FM_GREEN, fontWeight = FontWeight.Black)
             }
         }
-        AppColumn(modifier = Modifier.weight(1.2f).fillMaxHeight(), title = "ECONOMIC ACTIVITY") {
-            LazyColumn(Modifier.fillMaxSize().padding(10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        AppColumn(modifier = Modifier.weight(1f).fillMaxHeight(), title = "WAGE STRUCTURE") {
+            LazyColumn(Modifier.fillMaxSize().padding(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                items(state.squadPlayers.sortedByDescending { it.wage }, key = { it.id }) { player ->
+                    Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 5.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Column(Modifier.weight(1f)) {
+                            Text(player.shortName, color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            Text("${player.position} • ${player.squadRole.name.replace('_', ' ')}", color = Color.Gray, fontSize = 8.sp)
+                        }
+                        Text("€${String.format(Locale.getDefault(), "%,d", player.wage)}", color = FM_GREEN, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                    }
+                    HorizontalDivider(color = Color.White.copy(.045f))
+                }
+            }
+        }
+        AppColumn(modifier = Modifier.weight(1.05f).fillMaxHeight(), title = "ECONOMIC ACTIVITY") {
+            LazyColumn(Modifier.fillMaxSize().padding(8.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 items(state.inboxMessages.filter { it.sender.contains("Finance", true) || it.subject.contains("financial", true) }) { message ->
                     ListItem(
                         headlineContent = { Text(message.subject, color = Color.White, fontWeight = FontWeight.Bold) },
