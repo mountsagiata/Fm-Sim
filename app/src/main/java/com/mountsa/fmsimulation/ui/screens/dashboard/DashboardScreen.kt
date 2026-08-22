@@ -94,13 +94,16 @@ fun DashboardScreen(
     val availableForItems = maxHeight - estimatedChromeHeight
     val rawItemSize = availableForItems / SIDEBAR_SLOT_COUNT
     val itemSize = rawItemSize.coerceIn(ITEM_SIZE_MIN, ITEM_SIZE_MAX)
+    val compactWidth = maxWidth < 600.dp
+    val sidebarWidth = if (compactWidth) 56.dp else SIDEBAR_WIDTH
+    val contentPadding = if (compactWidth) 6.dp else 16.dp
 
     Box(modifier = Modifier.fillMaxSize()) {
         Row(modifier = Modifier.fillMaxSize().background(Color.Black)) {
             // --- LEFT SIDEBAR ---
             Column(
                 modifier = Modifier
-                    .width(SIDEBAR_WIDTH)
+                    .width(sidebarWidth)
                     .fillMaxHeight()
                     .background(Color.Black)
                     .padding(top = 16.dp, bottom = 8.dp),
@@ -179,7 +182,7 @@ fun DashboardScreen(
                     onCalendarClick = { selectedTab = "Calendar" }
                 )
 
-                Box(modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 8.dp)) {
+                Box(modifier = Modifier.fillMaxSize().padding(horizontal = contentPadding, vertical = 8.dp)) {
                     when (selectedTab) {
                         "Home" -> HomeHub(
                             dashboardViewModel, 
