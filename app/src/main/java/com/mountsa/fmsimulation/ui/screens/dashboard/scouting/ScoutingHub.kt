@@ -1,6 +1,7 @@
 package com.mountsa.fmsimulation.ui.screens.dashboard.scouting
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -9,8 +10,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -26,6 +26,8 @@ import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 @Composable
 fun ScoutingHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    var selectedScout by remember { mutableStateOf<ScoutEntity?>(null) }
+    var query by remember { mutableStateOf("") }
 
     Row(
         modifier = Modifier.fillMaxSize(),
@@ -47,7 +49,7 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     items(uiState.scouts) { scout ->
-                        ScoutRowItem(scout)
+                        ScoutRowItem(scout, selectedScout?.id == scout.id) { selectedScout = scout }
                     }
                 }
             }
@@ -63,28 +65,30 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                 title = "ACTIVE ASSIGNMENTS"
             ) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text(com.mountsa.fmsimulation.ui.localization.localized("No active assignments"), color = Color.Gray, fontSize = 12.sp)
+                    Text(
+                        selectedScout?.let { "${it.name} selected • choose a player below" } ?: "Select a scout to start an assignment",
+                        color = if (selectedScout != null) FM_GREEN else Color.Gray, fontSize = 12.sp
+                    )
                 }
             }
 
             AppColumn(
-                modifier = Modifier.height(120.dp),
+                modifier = Modifier.weight(1.25f),
                 title = "PLAYER SEARCH"
             ) {
-                Row(
-                    modifier = Modifier.fillMaxSize().padding(12.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    Icon(
-                        Icons.Default.Search,
-                        contentDescription = null,
-                        tint = FM_GREEN,
-                        modifier = Modifier.size(32.dp)
+                Column(Modifier.fillMaxSize().padding(8.dp)) {
+                    OutlinedTextField(
+                        value = query, onValueChange = { query = it }, singleLine = true,
+                        leadingIcon = { Icon(Icons.Default.Search, null) },
+                        placeholder = { Text("Name or position") }, modifier = Modifier.fillMaxWidth()
                     )
-                    Column {
-                        Text(com.mountsa.fmsimulation.ui.localization.localized("FIND PLAYERS"), color = Color.White, fontWeight = FontWeight.Bold)
-                        Text(com.mountsa.fmsimulation.ui.localization.localized("Search the database for specific targets"), color = Color.Gray, fontSize = 10.sp)
+                    if (query.isNotBlank()) LazyColumn(Modifier.fillMaxWidth()) {
+                        items(uiState.squadPlayers.filter { it.name.contains(query, true) || it.position.contains(query, true) }.take(8)) { player ->
+                            Row(Modifier.fillMaxWidth().clickable(enabled = selectedScout != null) { query = "Assigned: ${player.shortName}" }.padding(7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                Text(player.shortName, color = Color.White, fontSize = 10.sp)
+                                Text("${player.position} • ${player.overall}", color = FM_GREEN, fontSize = 10.sp)
+                            }
+                        }
                     }
                 }
             }
@@ -93,14 +97,15 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
 }
 
 @Composable
-fun ScoutRowItem(scout: ScoutEntity) {
+fun ScoutRowItem(scout: ScoutEntity, selected: Boolean = false, onClick: () -> Unit = {}) {
     Surface(
-        color = Color.White.copy(alpha = 0.05f),
+        color = if (selected) FM_GREEN.copy(alpha = .13f) else Color.White.copy(alpha = 0.05f),
         shape = RoundedCornerShape(8.dp)
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
+                .clickable { onClick() }
                 .padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
