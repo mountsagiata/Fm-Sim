@@ -22,7 +22,7 @@ fun FinanceDetailHub(viewModel: DashboardViewModel) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val club = state.club
     Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-        AppColumn(Modifier.weight(.8f), "CLUB FINANCE") {
+        AppColumn(modifier = Modifier.weight(.8f), title = "CLUB FINANCE") {
             Column(Modifier.fillMaxSize().padding(18.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 FinanceLine("Available budget", club?.budget ?: 0)
                 FinanceLine("Weekly wage commitment", state.squadPlayers.sumOf { it.wage })
@@ -32,7 +32,7 @@ fun FinanceDetailHub(viewModel: DashboardViewModel) {
                 Text(if ((club?.budget ?: 0) > 0) "STABLE" else "ATTENTION", color = FM_GREEN, fontWeight = FontWeight.Black)
             }
         }
-        AppColumn(Modifier.weight(1.2f), "ECONOMIC ACTIVITY") {
+        AppColumn(modifier = Modifier.weight(1.2f), title = "ECONOMIC ACTIVITY") {
             LazyColumn(Modifier.fillMaxSize().padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 items(state.inboxMessages.filter { it.sender.contains("Finance", true) || it.subject.contains("financial", true) }) { message ->
                     ListItem(
@@ -59,7 +59,7 @@ fun FinanceDetailHub(viewModel: DashboardViewModel) {
 @Composable
 fun ObjectivesDetailHub(viewModel: DashboardViewModel) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
-    AppColumn(Modifier.fillMaxSize(), "BOARD OBJECTIVES") {
+    AppColumn(modifier = Modifier.fillMaxSize(), title = "BOARD OBJECTIVES") {
         LazyColumn(Modifier.fillMaxSize().padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             items(state.objectives) { objective ->
                 Card(colors = CardDefaults.cardColors(containerColor = Color.White.copy(.035f))) {
