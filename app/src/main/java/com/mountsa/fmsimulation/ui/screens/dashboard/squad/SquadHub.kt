@@ -73,6 +73,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
     val startingXI by squadViewModel.startingXI.collectAsStateWithLifecycle()
     val showPlayerSelector by squadViewModel.showPlayerSelector.collectAsStateWithLifecycle()
     val selectedPlayer by squadViewModel.selectedPlayer.collectAsStateWithLifecycle()
+    val tacticsClub by squadViewModel.club.collectAsStateWithLifecycle()
     var compactPage by remember { mutableIntStateOf(0) }
     var widePanel by remember { mutableIntStateOf(0) }
 
@@ -234,7 +235,7 @@ fun SquadHub(dashboardViewModel: DashboardViewModel, squadViewModel: SquadViewMo
                         }
                     }
                 }
-                2 -> TacticsInstructionPanel(club = club, onChange = squadViewModel::updateTactics, modifier = Modifier.weight(1f))
+                2 -> TacticsInstructionPanel(club = tacticsClub, onChange = squadViewModel::updateTactics, modifier = Modifier.weight(1f))
                 else -> AppColumn(modifier = Modifier.weight(1f), title = "PLAYER ROLES") {
                     LazyColumn(Modifier.fillMaxSize().padding(8.dp)) {
                         items(startingXI.filterNotNull(), key = { it.id }) { player ->
