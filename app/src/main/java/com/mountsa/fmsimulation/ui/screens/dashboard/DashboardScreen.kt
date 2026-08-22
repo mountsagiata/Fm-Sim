@@ -3,6 +3,7 @@ package com.mountsa.fmsimulation.ui.screens.dashboard
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
@@ -18,6 +19,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.layout.ContentScale
@@ -414,7 +416,8 @@ fun TopBar(
     }
 
     BoxWithConstraints(Modifier.fillMaxWidth()) {
-    val compact = maxWidth < 600.dp
+    val availableWidth = maxWidth
+    val compact = availableWidth < 600.dp
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -451,7 +454,7 @@ fun TopBar(
         }
         }
 
-        if (!compact && maxWidth >= 840.dp) {
+        if (!compact && availableWidth >= 840.dp) {
             Box(
                 Modifier.weight(.8f).padding(horizontal = 16.dp).height(32.dp),
                 contentAlignment = Alignment.Center
