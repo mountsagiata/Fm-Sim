@@ -33,6 +33,7 @@ import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import com.mountsa.fmsimulation.domain.models.Formations
 import com.mountsa.fmsimulation.ui.screens.dashboard.squad.TacticsPitch
@@ -123,7 +124,16 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                     shape = RoundedCornerShape(4.dp),
                     modifier = Modifier.padding(horizontal = 8.dp)
                 ) {
-                    Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp))
+                    Row(
+                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(5.dp)
+                    ) {
+                        match.leagueId?.takeIf { it > 0L }?.let { leagueId ->
+                            LeagueLogo(leagueId = leagueId, size = 18.dp)
+                        }
+                        Text(session.competitionName.uppercase(), color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold)
+                    }
                 }
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(session.awayShortName, color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
@@ -198,8 +208,12 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         LiveTacticalPitch(
                             homeLineup = session.homeLineup,
                             awayLineup = session.awayLineup,
+                            homeBench = session.homeBench,
+                            awayBench = session.awayBench,
                             homeClubId = match.homeClubId,
+                            awayClubId = match.awayClubId,
                             currentMinute = currentMinute,
+                            visibleEvents = visibleEvents,
                             latestEvent = latestEvent,
                             speed = speed,
                             isPaused = halfTimePaused || autoPaused || currentMinute >= 90,
@@ -330,15 +344,25 @@ private data class RenderedPitchEntity(
 private fun LiveTacticalPitch(
     homeLineup: List<PlayerEntity>,
     awayLineup: List<PlayerEntity>,
+    homeBench: List<PlayerEntity>,
+    awayBench: List<PlayerEntity>,
     homeClubId: Long,
+    awayClubId: Long,
     currentMinute: Int,
+    visibleEvents: List<MatchEvent>,
     latestEvent: MatchEvent?,
     speed: Int,
     isPaused: Boolean,
     modifier: Modifier = Modifier
 ) {
-    val homeEntities = remember(homeLineup) { buildPitchEntities(homeLineup, isHome = true) }
-    val awayEntities = remember(awayLineup) { buildPitchEntities(awayLineup, isHome = false) }
+    val activeHomeLineup = remember(homeLineup, homeBench, visibleEvents, homeClubId) {
+        replayVisibleLineup(homeLineup, homeBench, visibleEvents, homeClubId)
+    }
+    val activeAwayLineup = remember(awayLineup, awayBench, visibleEvents, awayClubId) {
+        replayVisibleLineup(awayLineup, awayBench, visibleEvents, awayClubId)
+    }
+    val homeEntities = remember(activeHomeLineup) { buildPitchEntities(activeHomeLineup, isHome = true) }
+    val awayEntities = remember(activeAwayLineup) { buildPitchEntities(activeAwayLineup, isHome = false) }
     val entities = remember(homeEntities, awayEntities) { homeEntities + awayEntities }
 
     val motionPhase = remember { Animatable(0f) }
@@ -552,7 +576,9 @@ private fun buildPitchEntities(
                     isHome = isHome,
                     position = player.position.uppercase(),
                     baseX = if (isHome) homeX else 1f - homeX,
-                    baseY = (index + 1f) / (orderedPlayers.size + 1f),
+                    baseY = ((index + 1f) / (orderedPlayers.size + 1f)).let { homeY ->
+                        if (isHome) homeY else 1f - homeY
+                    },
                     motionSeed = ((player.id % 997L).toFloat() / 997f) * (2f * PI.toFloat())
                 )
             }
@@ -564,6 +590,45 @@ private fun positionBand(position: String): Int = when (position.uppercase()) {
     "LB", "LWB", "CB", "LCB", "RCB", "RB", "RWB" -> 1
     "CDM", "DM", "CM", "LCM", "RCM", "CAM", "LM", "RM" -> 2
     else -> 3
+}
+
+private fun replayVisibleLineup(
+    startingLineup: List<PlayerEntity>,
+    bench: List<PlayerEntity>,
+    visibleEvents: List<MatchEvent>,
+    clubId: Long
+): List<PlayerEntity> {
+    val availablePlayers = (startingLineup + bench).associateBy { it.id }
+    val activePlayers = startingLineup.take(11).toMutableList()
+
+    visibleEvents
+        .asSequence()
+        .filter { it.teamId == clubId }
+        .sortedBy { it.minute }
+        .forEach { event ->
+            when (event.type) {
+                EventType.RED_CARD,
+                EventType.SECOND_YELLOW -> {
+                    event.playerId?.let { dismissedId ->
+                        activePlayers.removeAll { it.id == dismissedId }
+                    }
+                }
+
+                EventType.SUBSTITUTION -> {
+                    val incoming = event.playerId?.let(availablePlayers::get)
+                    val outgoingIndex = event.secondaryPlayerId?.let { outgoingId ->
+                        activePlayers.indexOfFirst { it.id == outgoingId }
+                    } ?: -1
+                    if (incoming != null && outgoingIndex >= 0 && activePlayers.none { it.id == incoming.id }) {
+                        activePlayers[outgoingIndex] = incoming
+                    }
+                }
+
+                else -> Unit
+            }
+        }
+
+    return activePlayers
 }
 
 private fun verticalPositionPriority(position: String): Int = when (position.uppercase()) {
