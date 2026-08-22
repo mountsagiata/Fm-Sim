@@ -3,6 +3,8 @@ package com.mountsa.fmsimulation.ui.screens.match
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -15,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -49,6 +52,11 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
 
     var currentMinute by remember { mutableIntStateOf(0) }
     var halfTimePaused by remember { mutableStateOf(false) }
+    var autoPaused by remember { mutableStateOf(false) }
+    var speed by remember { mutableIntStateOf(2) }
+    var rightTab by remember { mutableIntStateOf(0) }
+    var mentality by remember { mutableStateOf("MID") }
+    var showSquad by remember { mutableStateOf(false) }
     val listState = rememberLazyListState()
     var pulseScale by remember { mutableStateOf(1f) }
 
@@ -69,7 +77,8 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                 halfTimePaused = true
                 while (halfTimePaused) delay(100)
             }
-            delay(150)
+            while (autoPaused) delay(100)
+            delay(800L / speed)
             currentMinute += 1
             pulseScale = 1f + (0.02f * (currentMinute % 10) / 10f)
         }
@@ -87,6 +96,10 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
     LaunchedEffect(visibleEvents.size) {
         if (visibleEvents.isNotEmpty()) {
             listState.animateScrollToItem(visibleEvents.size - 1)
+            val event = visibleEvents.last()
+            if (event.minute == currentMinute && event.type in setOf(EventType.GOAL, EventType.RED_CARD, EventType.INJURY, EventType.PENALTY_GOAL)) {
+                autoPaused = true
+            }
         }
     }
 
@@ -173,74 +186,55 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                 }
             }
 
-            // 3 COLUMNS SECTION
-            Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                // LEFT: STATISTIK
-                AnimatedVisibility(
-                    visible = true,
-                    enter = fadeIn(tween(400)) + slideInHorizontally(initialOffsetX = { -it / 4 })
-                ) {
-                    SimCol(title = "STATISTIK", modifier = Modifier.weight(1f)) {
-                        val p = currentMinute / 90f
-                        StatRowModern("Shots", (match.shotsHome * p).toInt(), (match.shotsAway * p).toInt())
-                        StatRowModern("Target", (match.shotsOnTargetHome * p).toInt(), (match.shotsOnTargetAway * p).toInt())
-                        StatRowModern("Poss %", match.possessionHome, match.possessionAway)
-                        StatRowModern("Corners", (match.cornersHome * p).toInt(), (match.cornersAway * p).toInt())
-                    }
-                }
-
-                // CENTER: EVENT
-                AnimatedVisibility(
-                    visible = true,
-                    enter = fadeIn(tween(400)) + scaleIn(initialScale = 0.95f)
-                ) {
-                    SimCol(title = "EVENT", modifier = Modifier.weight(1.1f)) {
-                        LazyColumn(state = listState, modifier = Modifier.fillMaxSize()) {
-                            items(visibleEvents) { event ->
-                                EventText(
-                                    min = event.minute,
-                                    text = event.type.toString().replace("_", " "),
-                                    type = event.type,
-                                    playerName = event.playerName
-                                )
+            Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                Column(Modifier.weight(1.25f).fillMaxHeight(), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                    Surface(Modifier.weight(1f).fillMaxWidth(), color = Color(0xFF123817), shape = RoundedCornerShape(10.dp)) {
+                        Canvas(Modifier.fillMaxSize().padding(10.dp)) {
+                            val line = Color.White.copy(.35f)
+                            drawRect(line, style = androidx.compose.ui.graphics.drawscope.Stroke(1.dp.toPx()))
+                            drawLine(line, Offset(size.width / 2, 0f), Offset(size.width / 2, size.height), 1.dp.toPx())
+                            drawCircle(line, size.height * .18f, Offset(size.width / 2, size.height / 2), style = androidx.compose.ui.graphics.drawscope.Stroke(1.dp.toPx()))
+                            repeat(10) { i ->
+                                val phase = (currentMinute * (i + 2) * .017f) % 1f
+                                drawCircle(if (i % 2 == 0) FM_GREEN else Color(0xFFFF5252), 4.dp.toPx(), Offset(size.width * (.12f + phase * .76f), size.height * (.12f + (i % 5) * .19f)))
                             }
+                        }
+                    }
+                    Column(Modifier.fillMaxWidth().background(Color.White.copy(.035f), RoundedCornerShape(8.dp)).padding(8.dp)) {
+                        Text("ATTACK MOMENTUM", color = FM_GREEN, fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                        Spacer(Modifier.height(5.dp))
+                        Row(Modifier.fillMaxWidth().height(8.dp).clip(RoundedCornerShape(5.dp))) {
+                            Box(Modifier.weight((currentMinute % 60 + 20).toFloat()).fillMaxHeight().background(FM_GREEN))
+                            Box(Modifier.weight((80 - currentMinute % 60).toFloat()).fillMaxHeight().background(Color(0xFFFF5252)))
                         }
                     }
                 }
 
-                // RIGHT: LIVE COMMENTARY
-                AnimatedVisibility(
-                    visible = true,
-                    enter = fadeIn(tween(400)) + slideInHorizontally(initialOffsetX = { it / 4 })
-                ) {
-                    SimCol(title = "KOMENTAR", modifier = Modifier.weight(1.2f)) {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .background(Color.White.copy(alpha = 0.02f), RoundedCornerShape(6.dp))
-                                .padding(8.dp)
-                        ) {
-                            Text(
-                                text = latestCommentary,
-                                color = Color.White,
-                                fontSize = 11.sp,
-                                lineHeight = 16.sp
-                            )
-                            // Live indicator
-                            if (currentMinute < 90) {
-                                Box(
-                                    modifier = Modifier
-                                        .align(Alignment.BottomEnd)
-                                        .size(6.dp)
-                                        .background(
-                                            color = FM_GREEN,
-                                            shape = RoundedCornerShape(50)
-                                        )
-                                )
-                            }
+                Column(Modifier.weight(1f).fillMaxHeight()) {
+                    TabRow(selectedTabIndex = rightTab, containerColor = Color.Transparent) {
+                        listOf("LIVE EVENT", "COMMENTARY", "STATS").forEachIndexed { index, title ->
+                            Tab(rightTab == index, { rightTab = index }, text = { Text(title, fontSize = 9.sp) })
                         }
                     }
+                    Box(Modifier.weight(1f).fillMaxWidth().background(Color.White.copy(.03f), RoundedCornerShape(8.dp)).padding(8.dp)) {
+                        when (rightTab) {
+                            0 -> LazyColumn(state = listState, modifier = Modifier.fillMaxSize()) { items(visibleEvents) { event -> EventText(event.minute, event.type.name.replace("_", " "), event.type, event.playerName) } }
+                            1 -> Text(latestCommentary, color = Color.White, fontSize = 11.sp, lineHeight = 16.sp)
+                            else -> Column { val p = currentMinute / 90f; StatRowModern("Shots", (match.shotsHome*p).toInt(), (match.shotsAway*p).toInt()); StatRowModern("Target", (match.shotsOnTargetHome*p).toInt(), (match.shotsOnTargetAway*p).toInt()); StatRowModern("Poss %", match.possessionHome, match.possessionAway); StatRowModern("Corners", (match.cornersHome*p).toInt(), (match.cornersAway*p).toInt()) }
+                        }
+                    }
+                    Row(Modifier.fillMaxWidth().padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(5.dp)) {
+                        listOf("DEF", "MID", "ATT").forEach { option -> FilterChip(mentality == option, { mentality = option }, { Text(option, fontSize = 9.sp) }, modifier = Modifier.weight(1f)) }
+                    }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
+                        listOf(2,4,8).forEach { value -> FilterChip(speed == value, { speed = value }, { Text("${value}x", fontSize = 9.sp) }) }
+                        Button(onClick = { showSquad = true }, modifier = Modifier.weight(1f).height(34.dp), contentPadding = PaddingValues(4.dp), colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN)) { Text("SQUAD / TACTICS", color = Color.Black, fontSize = 8.sp, fontWeight = FontWeight.Bold) }
+                    }
                 }
+            }
+
+            if (autoPaused) Row(Modifier.fillMaxWidth().padding(top = 5.dp), horizontalArrangement = Arrangement.End) {
+                Button(onClick = { autoPaused = false }, colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN), modifier = Modifier.height(34.dp)) { Text("RESUME", color = Color.Black, fontWeight = FontWeight.Bold) }
             }
 
             // FOOTER BUTTON
@@ -261,6 +255,12 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             }
         }
     }
+    if (showSquad) AlertDialog(
+        onDismissRequest = { showSquad = false },
+        title = { Text("SQUAD & TACTICAL CHANGES") },
+        text = { LazyColumn(Modifier.heightIn(max = 280.dp)) { items(uiState.squadPlayers) { Text("${it.shortName}  •  ${it.position}  •  ${it.fitness}%", modifier = Modifier.fillMaxWidth().padding(6.dp)) } } },
+        confirmButton = { TextButton(onClick = { showSquad = false; autoPaused = false }) { Text("APPLY & RESUME", color = FM_GREEN) } }
+    )
 }
 
 @Composable
