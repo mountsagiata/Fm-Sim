@@ -65,7 +65,7 @@ fun NextMatchCard(
                             size = 32.dp
                         )
                     } else {
-                        Text("🛡️", fontSize = 24.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("🛡️"), fontSize = 24.sp)
                     }
 
                     Spacer(Modifier.height(2.dp))
@@ -97,7 +97,7 @@ fun NextMatchCard(
                             size = 32.dp
                         )
                     } else {
-                        Text("🛡️", fontSize = 24.sp)
+                        Text(com.mountsa.fmsimulation.ui.localization.localized("🛡️"), fontSize = 24.sp)
                     }
 
                     Spacer(Modifier.height(2.dp))
