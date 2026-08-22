@@ -26,6 +26,7 @@ import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 @Composable
 fun ScoutingHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val allPlayers by viewModel.allPlayers.collectAsStateWithLifecycle()
     var selectedScout by remember { mutableStateOf<ScoutEntity?>(null) }
     var query by remember { mutableStateOf("") }
 
@@ -83,7 +84,7 @@ fun ScoutingHub(viewModel: DashboardViewModel) {
                         placeholder = { Text("Name or position") }, modifier = Modifier.fillMaxWidth()
                     )
                     if (query.isNotBlank()) LazyColumn(Modifier.fillMaxWidth()) {
-                        items(uiState.squadPlayers.filter { it.name.contains(query, true) || it.position.contains(query, true) }.take(8)) { player ->
+                        items(allPlayers.filter { it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true) }.take(20)) { player ->
                             Row(Modifier.fillMaxWidth().clickable(enabled = selectedScout != null) { query = "Assigned: ${player.shortName}" }.padding(7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
                                 Text(player.shortName, color = Color.White, fontSize = 10.sp)
                                 Text("${player.position} • ${player.overall}", color = FM_GREEN, fontSize = 10.sp)
