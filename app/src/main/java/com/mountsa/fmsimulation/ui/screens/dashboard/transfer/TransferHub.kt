@@ -25,6 +25,7 @@ import java.util.Locale
 fun TransferHub(viewModel: DashboardViewModel) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val offers = uiState.transferOffers
+    val allPlayers by viewModel.allPlayers.collectAsStateWithLifecycle()
     var tab by remember { mutableIntStateOf(0) }
     var query by remember { mutableStateOf("") }
     var shortlist by remember { mutableStateOf(setOf<Long>()) }
@@ -45,7 +46,7 @@ fun TransferHub(viewModel: DashboardViewModel) {
                 )
 
                 if (tab != 0) OutlinedTextField(query, { query = it }, modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp), singleLine = true, placeholder = { Text("Search name or position") })
-                val marketPlayers = uiState.squadPlayers.filter { (query.isBlank() || it.name.contains(query, true) || it.position.contains(query, true)) && (tab != 2 || it.id in shortlist) }
+                val marketPlayers = allPlayers.filter { (query.isBlank() || it.name.contains(query.trim(), true) || it.shortName.contains(query.trim(), true) || it.position.contains(query.trim(), true)) && (tab != 2 || it.id in shortlist) }
                 if (tab == 0 && offers.isEmpty()) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                         Text(com.mountsa.fmsimulation.ui.localization.localized("No active offers"), color = Color.Gray, fontSize = 12.sp)
