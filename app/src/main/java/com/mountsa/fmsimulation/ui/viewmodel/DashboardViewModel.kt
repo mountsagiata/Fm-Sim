@@ -13,9 +13,10 @@ import com.mountsa.fmsimulation.core.enums.InboxCategory
 import com.mountsa.fmsimulation.core.enums.TransferStatus
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 data class MatchUiModel(
@@ -124,9 +125,14 @@ class DashboardViewModel @Inject constructor(
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), "")
 
     @OptIn(ExperimentalCoroutinesApi::class)
-    val nextMatch: StateFlow<MatchUiModel?> = club.flatMapLatest { cl ->
-        if (cl == null) flowOf(null)
-        else repository.getNextMatchFlow(cl.id).map { match ->
+    val nextMatch: StateFlow<MatchUiModel?> = combine(club, career) { cl, cr -> cl to cr }
+        .flatMapLatest { (cl, cr) ->
+        if (cl == null || cr == null) flowOf(null)
+        else repository.getMatchesForClub(cl.id).map { matches ->
+            val match = matches
+                .asSequence()
+                .filter { !it.isPlayed && it.matchDate >= cr.currentDate }
+                .minByOrNull { it.matchDate }
             if (match == null) null
             else {
                 val homeClub = repository.getClubById(match.homeClubId)
@@ -345,9 +351,6 @@ class DashboardViewModel @Inject constructor(
                     _isLoading.value = true
                     _loadingMessage.value = "Advancing to next day..."
 
-                    // Delay buatan agar user melihat loading (Efek FM)
-                    delay(500)
-
                     processor.continueDay()
                 }
             } catch (e: Exception) {
@@ -362,10 +365,8 @@ class DashboardViewModel @Inject constructor(
         viewModelScope.launch {
             _isLoading.value = true
             _loadingMessage.value = "Preparing Matchday..."
-            delay(800) // Delay persiapan
-            
             try {
-                val session = sessionBuilder.build(matchEntity)
+                val session = withContext(Dispatchers.IO) { sessionBuilder.build(matchEntity) }
                 _matchSession.value = session
                 _matchFlowState.value = MatchFlow.REVEAL
             } catch (e: Exception) {
@@ -390,7 +391,10 @@ class DashboardViewModel @Inject constructor(
                 MatchFlow.SIMULATION -> {
                     _matchFlowState.value = MatchFlow.RESULT
                 }
-                MatchFlow.RESULT -> _matchFlowState.value = MatchFlow.POST
+                MatchFlow.RESULT -> {
+                    _matchFlowState.value = MatchFlow.POST
+                    finishMatchFlow()
+                }
                 MatchFlow.POST -> {
                     finishMatchFlow()
                 }
@@ -415,10 +419,11 @@ class DashboardViewModel @Inject constructor(
         val session = _matchSession.value ?: return
         _isLoading.value = true
         _loadingMessage.value = "Calculating Tactics..."
-        delay(1000)
         try {
-            matchSimulator.simulateMatch(session.match)
-            val updatedMatch = repository.getMatchById(session.match.id)
+            val updatedMatch = withContext(Dispatchers.IO) {
+                matchSimulator.simulateMatch(session.match)
+                repository.getMatchById(session.match.id)
+            }
             if (updatedMatch != null) {
                 _matchSession.value = session.copy(match = updatedMatch)
             }
@@ -465,26 +470,18 @@ class DashboardViewModel @Inject constructor(
                     _isLoading.value = true
                     _loadingMessage.value = "Finalizing Match Results..."
                     
-                    // 1. Update Standing Positions
-                    session.match.leagueId?.let { leagueId ->
-                        leagueManager.updateStandings(leagueId)
+                    withContext(Dispatchers.IO) {
+                        // Standings and manager rating are updated once by the day
+                        // processor after every AI fixture has finished. Running them
+                        // here as well doubled the most expensive post-match work.
+                        pressConferenceGenerator.generatePressConference(
+                            club.value?.id ?: session.match.homeClubId,
+                            PressType.POST_MATCH
+                        )
+                        generateMatchResultInbox(session.match)
                     }
-                    
-                    // 2. Update Manager Rating
-                    managerRatingService.updateManagerRating(session.match.homeClubId)
-                    
-                    // 3. Post-Match Press Conference
-                    pressConferenceGenerator.generatePressConference(
-                        club.value?.id ?: session.match.homeClubId,
-                        PressType.POST_MATCH
-                    )
-                    
-                    // 4. Generate Inbox Result
-                    generateMatchResultInbox(session.match)
-                    
-                    delay(500)
 
-                    // 5. Process the rest of the day: this simulates the OTHER league
+                    // Process the rest of the day: this simulates the OTHER league
                     // matches scheduled on the same date (AI vs AI), runs training /
                     // injury / morale / transfer updates, and advances to the next day.
                     // Without this, other clubs never play on days the user has a
@@ -552,7 +549,6 @@ class DashboardViewModel @Inject constructor(
             if (status == TransferStatus.ACCEPTED) {
                 _isLoading.value = true
                 _loadingMessage.value = "Finalizing Transfer Documents..."
-                delay(1000)
                 transferManager.processTransfer(updatedOffer)
                 _isLoading.value = false
             }

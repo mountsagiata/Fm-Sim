@@ -243,31 +243,33 @@ fun DashboardScreen(
                     MatchFlow.SIMULATION -> MatchSimulationScreen(dashboardViewModel)
                     MatchFlow.RESULT -> MatchResultScreen(dashboardViewModel)
                     MatchFlow.POST -> {
+                        MatchStageBackground {
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"), color = Color.White, fontSize = 28.sp, fontWeight = FontWeight.ExtraBold)
+                                Text(com.mountsa.fmsimulation.ui.localization.localized("POST-MATCH ANALYSIS"), color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.ExtraBold)
                                 Text(
                                     if (isLoading) loadingMessage else "The team is heading back to the dressing room.",
                                     color = Color.Gray,
                                     fontSize = 14.sp
                                 )
-                                Spacer(Modifier.height(48.dp))
+                                Spacer(Modifier.height(24.dp))
                                 if (isLoading) {
                                     CircularProgressIndicator(
                                         color = FM_GREEN,
                                         strokeWidth = 4.dp,
-                                        modifier = Modifier.size(44.dp)
+                                        modifier = Modifier.size(34.dp)
                                     )
                                 } else {
                                     Button(
                                         onClick = { dashboardViewModel.finishMatchFlow() },
                                         colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
-                                        modifier = Modifier.width(240.dp).height(56.dp)
+                                        modifier = Modifier.width(180.dp).height(38.dp)
                                     ) {
                                         Text(com.mountsa.fmsimulation.ui.localization.localized("RETURN TO HUB"), color = Color.Black, fontWeight = FontWeight.Bold)
                                     }
                                 }
                             }
+                        }
                         }
                     }
                     else -> {}

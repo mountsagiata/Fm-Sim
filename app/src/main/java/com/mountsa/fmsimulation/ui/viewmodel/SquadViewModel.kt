@@ -3,7 +3,6 @@ package com.mountsa.fmsimulation.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mountsa.fmsimulation.core.enums.Mentality
-import com.mountsa.fmsimulation.core.enums.SquadRole
 import com.mountsa.fmsimulation.data.local.entities.ClubEntity
 import com.mountsa.fmsimulation.data.local.entities.PlayerEntity
 import com.mountsa.fmsimulation.data.repository.DataRepository
@@ -44,6 +43,9 @@ class SquadViewModel @Inject constructor(
 
     private val _selectedPlayer = MutableStateFlow<PlayerEntity?>(null)
     val selectedPlayer = _selectedPlayer.asStateFlow()
+
+    private val _tacticalRoles = MutableStateFlow<Map<Long, String>>(emptyMap())
+    val tacticalRoles = _tacticalRoles.asStateFlow()
 
     private var selectedSlotIndex: Int = -1
 
@@ -121,10 +123,8 @@ class SquadViewModel @Inject constructor(
         return player.overall + exact + lineFit + player.fitness / 10 + player.morale / 10
     }
 
-    fun updatePlayerRole(player: PlayerEntity, role: SquadRole) {
-        viewModelScope.launch {
-            repository.updatePlayer(player.copy(squadRole = role))
-        }
+    fun updateTacticalRole(playerId: Long, role: String) {
+        _tacticalRoles.update { current -> current + (playerId to role) }
     }
 
     fun openPlayerSelector(index: Int) {

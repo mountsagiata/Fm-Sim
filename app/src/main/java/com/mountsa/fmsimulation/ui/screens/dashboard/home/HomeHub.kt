@@ -76,7 +76,7 @@ fun HomeHub(
                     ObjectiveCard(Modifier.weight(1f).clickable { onNavigateToObjectives() }, uiState.objectives)
                 }
                 UpcomingFixturesSection(Modifier.fillMaxWidth().heightIn(min = 150.dp), uiState.fixtures, onNavigateToCalendar)
-                LeagueStatsSection(Modifier.fillMaxWidth().heightIn(min = 140.dp), uiState.topScorer, uiState.topAssister, uiState.bestPlayer)
+                LeagueStatsSection(Modifier.fillMaxWidth().heightIn(min = 140.dp), uiState.topScorer, uiState.topAssister, uiState.bestPlayer, onNavigateToLeague)
             }
         } else {
         Column(
@@ -210,7 +210,8 @@ fun HomeHub(
                     modifier = Modifier.weight(2f),
                     topScorer = uiState.topScorer,
                     topAssister = uiState.topAssister,
-                    bestPlayer = uiState.bestPlayer
+                    bestPlayer = uiState.bestPlayer,
+                    onNavigateToLeague = onNavigateToLeague
                 )
             }
         }

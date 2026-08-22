@@ -15,9 +15,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mountsa.fmsimulation.ui.screens.dashboard.FM_DARK_BG
 import com.mountsa.fmsimulation.ui.screens.dashboard.FM_GREEN
 import com.mountsa.fmsimulation.ui.screens.dashboard.components.ClubLogo
+import com.mountsa.fmsimulation.ui.screens.dashboard.components.LeagueLogo
 import com.mountsa.fmsimulation.ui.viewmodel.DashboardViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.delay
@@ -43,12 +43,8 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
         )
     )
 
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(FM_DARK_BG),
-        contentAlignment = Alignment.Center
-    ) {
+    MatchStageBackground {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Column(
             modifier = Modifier
                 .fillMaxWidth(0.9f)
@@ -62,18 +58,14 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                 enter = slideInVertically(initialOffsetY = { -it }) + fadeIn(tween(600))
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Surface(
-                        color = FM_GREEN.copy(alpha = 0.1f),
-                        shape = RoundedCornerShape(4.dp),
-                        modifier = Modifier.padding(bottom = 4.dp)
-                    ) {
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        session.match.leagueId?.takeIf { it > 0L }?.let { LeagueLogo(it, 28.dp) }
                         Text(
                             text = session.competitionName.uppercase(),
                             color = FM_GREEN,
-                            fontSize = 14.sp,
+                            fontSize = 13.sp,
                             fontWeight = FontWeight.ExtraBold,
-                            letterSpacing = 3.sp,
-                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
+                            letterSpacing = 2.sp
                         )
                     }
                     Text(
@@ -100,27 +92,14 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                         ClubLogo(clubId = session.match.homeClubId, size = 80.dp)
                         Spacer(Modifier.height(10.dp))
                         Text(
-                            session.homeClubName,
+                            session.homeShortName,
                             color = Color.White,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             maxLines = 2
                         )
-                        Surface(
-                            color = FM_GREEN.copy(alpha = 0.1f),
-                            shape = RoundedCornerShape(12.dp),
-                            modifier = Modifier.padding(top = 4.dp)
-                        ) {
-                            Text(
-                                "HOME",
-                                color = FM_GREEN,
-                                fontSize = 8.sp,
-                                fontWeight = FontWeight.Bold,
-                                letterSpacing = 2.sp,
-                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
-                            )
-                        }
+                        Text("HOME", color = Color(0xFF42A5F5), fontSize = 8.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
                     }
                 }
 
@@ -156,27 +135,14 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                         ClubLogo(clubId = session.match.awayClubId, size = 80.dp)
                         Spacer(Modifier.height(10.dp))
                         Text(
-                            session.awayClubName,
+                            session.awayShortName,
                             color = Color.White,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             maxLines = 2
                         )
-                        Surface(
-                            color = Color.Red.copy(alpha = 0.1f),
-                            shape = RoundedCornerShape(12.dp),
-                            modifier = Modifier.padding(top = 4.dp)
-                        ) {
-                            Text(
-                                "AWAY",
-                                color = Color.Red,
-                                fontSize = 8.sp,
-                                fontWeight = FontWeight.Bold,
-                                letterSpacing = 2.sp,
-                                modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
-                            )
-                        }
+                        Text("AWAY", color = FM_GREEN, fontSize = 8.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
                     }
                 }
             }
@@ -190,8 +156,8 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                     onClick = { viewModel.nextMatchFlowStep() },
                     colors = ButtonDefaults.buttonColors(containerColor = FM_GREEN),
                     modifier = Modifier
-                        .width(200.dp)
-                        .height(52.dp)
+                        .width(180.dp)
+                        .height(40.dp)
                         .scale(
                             animateFloatAsState(
                                 targetValue = if (visible) 1f else 0.95f,
@@ -213,5 +179,6 @@ fun MatchRevealScreen(viewModel: DashboardViewModel) {
                 }
             }
         }
+    }
     }
 }
