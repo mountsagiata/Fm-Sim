@@ -3,8 +3,6 @@ package com.mountsa.fmsimulation.ui.screens.match
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -176,8 +174,7 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
             }
 
             // 3 COLUMNS SECTION
-            Box(Modifier.weight(1f).fillMaxWidth().horizontalScroll(rememberScrollState())) {
-            Row(modifier = Modifier.widthIn(min = 900.dp).fillMaxHeight(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Row(modifier = Modifier.weight(1f).fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 // LEFT: STATISTIK
                 AnimatedVisibility(
                     visible = true,
@@ -244,7 +241,6 @@ fun MatchSimulationScreen(viewModel: DashboardViewModel) {
                         }
                     }
                 }
-            }
             }
 
             // FOOTER BUTTON
