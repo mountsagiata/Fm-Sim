@@ -241,7 +241,11 @@ fun DashboardScreen(
                                 )
                                 Spacer(Modifier.height(48.dp))
                                 if (isLoading) {
-                                    CircularProgressIndicator(color = FM_GREEN)
+                                    CircularProgressIndicator(
+                                        color = FM_GREEN,
+                                        strokeWidth = 4.dp,
+                                        modifier = Modifier.size(44.dp)
+                                    )
                                 } else {
                                     Button(
                                         onClick = { dashboardViewModel.finishMatchFlow() },
@@ -310,7 +314,7 @@ fun TopBar(
     val currentDate = career?.currentDate ?: System.currentTimeMillis()
 
     BoxWithConstraints(Modifier.fillMaxWidth()) {
-    val compact = maxWidth < 760.dp
+    val compact = maxWidth < 600.dp
     Row(
         modifier = Modifier
             .fillMaxWidth()
